@@ -258,6 +258,19 @@ habit); and a row needs two independent sources to agree before it is trusted.
 See [content/README.md](content/README.md) for the loop, and run
 `npm run lang:selftest` to exercise it against deliberately broken replies.
 
+What there is, all HSK 1 (2.0):
+
+| | |
+| --- | --- |
+| **Sentences** | 302, chosen by moment — hungry, sleepy, picked up — and at random while idle |
+| **Conversations** | 60 two-creature exchanges; nearby pets start them and answer each other |
+| **Names** | 118, per species; every pet has one, with pinyin and meaning on its card |
+| **Ledger** | *what they said to you* — every line you have been shown, pinyin on hover |
+
+Settings → *They speak* switches back to the English grunts. The current content
+was verified by Claude; see *Who verified what* in content/README.md for how to
+find and re-check it.
+
 ## Debugging
 
 `DESKMUDGIN_DEBUG=1` prints one line every two seconds per window saying which

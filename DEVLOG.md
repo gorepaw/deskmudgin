@@ -597,10 +597,56 @@ exists to teach tones. Pinyin is now 12px Segoe UI. The planned boot-time tofu
 probe was not built: Chromium falls back per-glyph to any installed CJK face, so
 a missing YaHei degrades rather than boxes; the sheet is the check instead.
 
+## The rest of the Language Update
+
+**Ledger vocabulary.** A `said` category files each course line the first time
+a bubble shows it, with pinyin and English on hover — no count, as with traits.
+Main re-reads heard lines' wording from the course at startup, because a line
+corrected after being filed (p255 lost a wrong "Let's") would otherwise teach
+the old gloss forever.
+
+**Conversations.** 60 verified two-creature exchanges, each one corpus row with
+turns joined by ｜ so it is verified as a unit. `turnsOf` splits one into
+ordinary entries, so the bubble and the ledger needed no changes. The
+`converse` behaviour keeps the one-brain rule: a speaker publishes
+`pet.utterance` about itself; a listener's own brain reads it through
+`ctx.near` and chooses to answer. Nobody tells anybody what to say. Verified
+live: 我想吃东西。→ 这儿有苹果。→ 谢谢！ passed between a Mudgin and a Sephin,
+each on its own cue.
+
+**Names.** 118 verified, per species. `PetSave.zh` holds 汉字/pinyin/gloss;
+`name` stays as the identity underneath. Duplicates are composed as 豆豆二号,
+"Beanie No. 2", from verified parts. Three things found on the way:
+- *Every name would have vanished within 20 seconds.* `mergeColony` replaced
+  each pet wholesale with what a window sent, and windows never see `zh`. It now
+  lays the window's fields over main's record, which protects any future
+  main-owned field too.
+- *The visible pets got the numbered names.* Naming ran in file order, where the
+  resting pets come first; everyone on the desktop was 红豆四号. Now: out first,
+  then longest-kept.
+- *蛋蛋 ("Egg")* is child-speak for testicles. The reviewer renamed it 小蛋; a
+  second judge heard the same slang in that, so it was dropped. A contested name
+  is not worth keeping.
+
+**Reviewer disagreements** are now a recurring fact, not an accident. One
+exchange reviewer rejected compounds of HSK 1 words (吃饭, 好吃, 明天见) that the
+phrase reviewers had accepted, and another said 这儿 is off the list where the
+wordlist reviewer said it is on. The course rule is written down here so it
+stays one rule: **compounds built from HSK 1 words are accepted.** Where
+reviewers genuinely disagree about naturalness, the line is dropped rather than
+a side picked.
+
+## Source control
+
+There was none until 2026-09-24: the whole project was a directory. It is now
+[github.com/gorepaw/deskmudgin](https://github.com/gorepaw/deskmudgin), public.
+`.gitattributes` forces LF — the content pipeline writes LF TSVs on purpose and
+Windows' CRLF conversion would show every row as changed.
+
 ## What is not built
 
-Of the Language Update: the ledger's vocabulary section (Phase 1), pets holding
-exchanges with each other (Phase 2), and Chinese names (Phase 3).
+Nothing from either plan. Deferred: breeding, Sephin maturity, Spanish, HSK 2,
+and interactive exercises built on the course.
 
 From the Collection Update, nothing. Ideas that were explicitly deferred:
 

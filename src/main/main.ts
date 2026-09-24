@@ -335,7 +335,13 @@ const takenZh = (): string[] => colony.flatMap(p => (p.zh ? [p.zh.script] : []))
  */
 function nameEveryone(): void {
   let changed = false
-  for (const p of colony) {
+  // Who gets named first decides who gets the plain names and who gets 二号.
+  // File order handed the resting pets the plain ones and every pet actually
+  // on the desktop a number — 红豆四号 for the one you look at every day. So:
+  // the ones out on the desktop first, then the longest-kept.
+  const order = [...colony].sort((a, b) =>
+    Number(b.out) - Number(a.out) || a.adoptedAt - b.adoptedAt)
+  for (const p of order) {
     if (p.zh) continue
     const r = sampler(hashSeed(p.id) || 1)
     const zh = pickZhName(p.species, takenZh(), n => r.int(0, n - 1))
