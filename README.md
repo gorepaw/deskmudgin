@@ -266,6 +266,10 @@ What there is, all HSK 1 (2.0):
 | **Conversations** | 60 two-creature exchanges; nearby pets start them and answer each other |
 | **Names** | 118, per species; every pet has one, with pinyin and meaning on its card |
 | **Ledger** | *what they said to you* — every line you have been shown, pinyin on hover |
+| **Dictionary** | the Matron's menu → *The dictionary*: every word by HSK level, every phrase, every conversation, with a ✓ on what you have been shown |
+
+Settings has two sliders, **Bubbles stay** and **Conversations stay** (0.5×–4×,
+1.5× by default), so a sentence you are still reading does not vanish.
 
 Settings → *They speak* switches back to the English grunts. The current content
 was verified by Claude; see *Who verified what* in content/README.md for how to

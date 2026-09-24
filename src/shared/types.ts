@@ -204,6 +204,14 @@ export interface Settings {
    * existed picks it up on load.
    */
   language: LanguageId
+  /**
+   * How long speech bubbles stay up, as a multiple of the natural time — long
+   * enough to read three lines. More than 1 by default: a sentence you are
+   * trying to learn should not vanish while you are still on the pinyin.
+   */
+  speechScale: number
+  /** The same, for conversations between two creatures, set separately. */
+  talkScale: number
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -220,6 +228,8 @@ export const DEFAULT_SETTINGS: Settings = {
   newcomerLayer: 'overlay',
   theme: 'pewter',
   language: 'zh',
+  speechScale: 1.5,
+  talkScale: 1.5,
 }
 
 /**

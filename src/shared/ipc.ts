@@ -24,7 +24,7 @@ import type { LayerMode, PetSave, Settings, WorldSnapshot } from './types'
  * happen to line up.
  */
 export interface UiRequest {
-  panel: 'menu' | 'manager' | 'ledger' | 'settings' | 'pet' | 'starter'
+  panel: 'menu' | 'manager' | 'ledger' | 'dictionary' | 'settings' | 'pet' | 'starter'
   /** Roughly where it was asked for, in DIP screen coordinates. */
   x: number
   y: number

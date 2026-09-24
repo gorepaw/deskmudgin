@@ -23,7 +23,8 @@ import type { Creature } from './pet/creature'
 import { Fx } from './art/fx'
 import { sfx, setVolume } from './audio/sfx'
 import { say, setLanguage } from './pet/lines'
-import { setOnShown } from './ui/speech'
+import { DictionaryPanel, type Tab } from './ui/dictionary'
+import { setOnShown, setSpeechScale } from './ui/speech'
 import type { HeardLine } from '../shared/ledger'
 import { setTimeScale, FAST_SCALE } from '../shared/clock'
 import { Matron } from './ui/matron'
@@ -67,6 +68,7 @@ async function boot(): Promise<void> {
   // this only has to happen once here and again on every settings change.
   applyTheme(cfg.theme)
   setLanguage(cfg.language)
+  setSpeechScale(cfg.speechScale, cfg.talkScale)
   // Before anything constructs a behaviour: the scale is read at the moment a
   // wait is rolled, and the first rolls happen on the first tick.
   if (bridge.isFast) setTimeScale(FAST_SCALE)
@@ -143,6 +145,7 @@ async function boot(): Promise<void> {
       case 'menu': ui.open(new MenuPanel(), at); break
       case 'manager': ui.open(new ManagerPanel()); break
       case 'ledger': ui.open(new LedgerPanel()); break
+      case 'dictionary': ui.open(new DictionaryPanel((req.id as Tab | undefined) ?? 'words')); break
       case 'settings': ui.open(new SettingsPanel()); break
       case 'starter': ui.open(new StarterPanel()); break
       case 'pet': if (req.id) ui.open(new PetCardPanel(req.id), at); break
@@ -430,6 +433,7 @@ async function boot(): Promise<void> {
     setVolume(cfg.volume)
     colony.setScale(cfg.scale)
     setLanguage(cfg.language)
+    setSpeechScale(cfg.speechScale, cfg.talkScale)
     if (cfg.theme !== wasTheme) {
       applyTheme(cfg.theme)
       // A theme changes every pixel of every open panel, including the parts

@@ -636,6 +636,23 @@ stays one rule: **compounds built from HSK 1 words are accepted.** Where
 reviewers genuinely disagree about naturalness, the line is dropped rather than
 a side picked.
 
+## Reading time, and the dictionary
+
+Two sliders: ordinary bubbles and conversations, separately. `speechSeconds` is
+the single rule for how long a bubble stays; a conversation paces itself by
+`talkSeconds` and hands the bubble an exact duration, so its partner waits
+precisely as long as the line is on screen and the everyday slider does not
+stretch conversations twice. The panel kit gained a slider that previews while
+dragged and saves once on release.
+
+The dictionary reads the ledger: a phrase is seen once a bubble showed it, a
+conversation once every turn has, a word once it appeared inside anything said.
+Unseen entries stay readable — it is a reference first. Its first draft marked
+seen and unseen with a filled dot and a hollow ring, and in the Windows 95 theme
+both came out navy at 4px: every entry looked seen. It is a tick or nothing now.
+The words course (`zh-hsk1-words`) is built for the first time for it; until now
+the wordlist only ever validated phrases.
+
 ## Source control
 
 There was none until 2026-09-24: the whole project was a directory. It is now

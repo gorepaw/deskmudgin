@@ -61,7 +61,7 @@ export interface BehaviorCtx {
   dt: number
   /** Seconds since the app started. */
   now: number
-  say(text: Utterance, seconds?: number): void
+  say(text: Utterance, seconds?: number, exact?: boolean): void
   sfx: {
     hop(): void
     chomp(): void

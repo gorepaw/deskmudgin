@@ -20,7 +20,8 @@ import type { Behavior, BehaviorCtx } from '../brain'
 import type { Pet } from '../pet'
 import { clamp } from '../../engine/math'
 import { slow } from '../../../shared/clock'
-import { dwellSeconds, turnsOf, type Entry } from '../../../shared/lang/types'
+import { turnsOf, type Entry } from '../../../shared/lang/types'
+import { talkSeconds } from '../../ui/speech'
 import { canConverse, pickExchange } from '../lines'
 
 /** How near another creature has to be to talk to, in DIP. Close enough to
@@ -56,8 +57,10 @@ export function createConverse(): Behavior {
 
   function speak(ctx: BehaviorCtx): void {
     const line = turns[mine]
-    const dwell = dwellSeconds(line)
-    ctx.say(line, dwell)
+    // Timed by the same rule the bubble uses, so the partner waits exactly as
+    // long as this line is actually on screen — player's setting included.
+    const dwell = talkSeconds(line)
+    ctx.say(line, dwell, true)
     ctx.pet.utterance = { exchange: exchange!, turn: mine, toward: partner!, at: ctx.now, dwell }
     mine += 2
     waitingSince = ctx.now

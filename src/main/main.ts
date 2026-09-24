@@ -772,7 +772,9 @@ app.whenReady().then(() => {
       const p = colony.find(m => m.name.toLowerCase() === name) ?? colony[0]
       if (p) openPanel({ panel: 'pet', id: p.id, ...at })
     } else {
-      openPanel({ panel: wantPanel as UiRequest['panel'], ...at })
+      // `dictionary:talk` opens a panel on a given tab.
+      const [panel, id] = wantPanel.split(':')
+      openPanel({ panel: panel as UiRequest['panel'], id, ...at })
     }
   }
   // Mudgins bloom while the app is running, and nothing else notices. Once a

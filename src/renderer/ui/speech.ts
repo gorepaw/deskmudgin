@@ -43,6 +43,30 @@ const MAX_W = 340
 let onShown: ((e: Entry) => void) | null = null
 export const setOnShown = (fn: ((e: Entry) => void) | null): void => { onShown = fn }
 
+/** The player's "how long bubbles stay" settings, as multipliers: one for
+ *  everything a creature says on its own, one for conversations. Separate
+ *  because a conversation is read as a sequence — someone may want remarks to
+ *  flash past but exchanges to linger, or the other way round. */
+let scale = 1
+let talkScale = 1
+export const setSpeechScale = (s: number, talk: number): void => { scale = s; talkScale = talk }
+
+/** How long one turn of a conversation stays up. The conversation paces
+ *  itself by this, and hands it to the bubble as an exact duration. */
+export const talkSeconds = (e: Entry): number => dwellSeconds(e) * talkScale
+
+/**
+ * How long a bubble saying `u` stays up, in seconds.
+ *
+ * The one place that decides it, so everything that has to wait on a bubble —
+ * a conversation waiting for the other creature to finish — waits exactly as
+ * long as the bubble is actually shown. A course line gets at least long enough
+ * to read its three lines; then the player's setting stretches everything.
+ */
+export function speechSeconds(u: Utterance, requested = 2): number {
+  return Math.max(requested, isEntry(u) ? dwellSeconds(u) : 0) * scale
+}
+
 /** Where the bubble sits, relative to the anchor at his head. */
 interface Layout { w: number; h: number; x: number; y: number }
 
@@ -53,14 +77,13 @@ export class Speech {
   /** Measured width of the current utterance, 0 until the first draw. */
   private measured = 0
 
-  say(u: Utterance, seconds = 2): void {
+  /** `exact` takes `seconds` as given — for a caller, like a conversation,
+   *  that has already decided precisely how long its line should stay. */
+  say(u: Utterance, seconds = 2, exact = false): void {
     // No queue on purpose. He has few thoughts; the newest one replaces the
     // last, and a backlog of croaks would keep talking long after the moment.
     this.said = u
-    // A lesson stays up long enough to read three lines: a floor that grows
-    // with the sentence, whatever the caller asked for.
-    const floor = isEntry(u) ? dwellSeconds(u) : 0
-    this.life = this.max = Math.max(seconds, floor)
+    this.life = this.max = exact ? seconds : speechSeconds(u, seconds)
     this.measured = 0
     if (isEntry(u)) onShown?.(u)
   }

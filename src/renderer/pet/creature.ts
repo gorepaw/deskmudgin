@@ -68,7 +68,7 @@ export class Creature {
       near: (x, r) => this.hood?.near(this.pet, x, r) ?? NOBODY,
       matron: null,
       world, fx, rng: this.rng, dt: 0, now: 0,
-      say: (t, s) => this.speech.say(t, s),
+      say: (t, s, e) => this.speech.say(t, s, e),
       sfx,
     }
   }

@@ -11,6 +11,7 @@ import type { Painter } from '../engine/painter'
 import { Panel, PAD, ROW_H, UI, THEMES, themeById } from './panel'
 import { ManagerPanel } from './manager'
 import { LedgerPanel } from './ledger'
+import { DictionaryPanel } from './dictionary'
 
 const BTN_H = 32
 const GAP = 7
@@ -21,6 +22,15 @@ const SWATCH_H = 32
  *  which is too narrow to tell a bevel from a gradient. */
 const SWATCH_COLS = 6
 
+/** The bubble-duration sliders run from half as long to four times as long,
+ *  in steps of a tenth — fine enough to tune, coarse enough to land on 1.5×. */
+const SCALE_MIN = 0.5
+const SCALE_MAX = 4
+const toT = (v: number): number => (v - SCALE_MIN) / (SCALE_MAX - SCALE_MIN)
+const fromT = (t: number): number =>
+  Math.round((SCALE_MIN + t * (SCALE_MAX - SCALE_MIN)) * 10) / 10
+const times = (v: number): string => `${v.toFixed(1)}×`
+
 export class MenuPanel extends Panel {
   readonly id = 'menu'
   readonly title = 'The Matron'
@@ -29,7 +39,7 @@ export class MenuPanel extends Panel {
   // Tall enough for five buttons and the rule between them. It was 250, which
   // clipped "Close DeskMudgin" off the bottom edge — the content runs to 256
   // and nothing here is scrollable.
-  constructor() { super(238, 282) }
+  constructor() { super(238, 321) }
 
   protected override body(g: Painter, _now: number, top: number): void {
     const w = this.w - PAD * 2
@@ -42,6 +52,7 @@ export class MenuPanel extends Panel {
 
     item('open:manager', 'Who is out', true)
     item('open:ledger', 'What we have seen')
+    item('open:dictionary', 'The dictionary')
     item('open:settings', 'Settings')
 
     y += 4
@@ -57,6 +68,7 @@ export class MenuPanel extends Panel {
     switch (id) {
       case 'open:manager': this.host.open(new ManagerPanel()); break
       case 'open:ledger': this.host.open(new LedgerPanel()); break
+      case 'open:dictionary': this.host.open(new DictionaryPanel()); break
       case 'open:settings': this.host.open(new SettingsPanel()); break
       case 'cmd:summon':
         void b.invoke('command:run', 'summon')
@@ -77,7 +89,7 @@ export class SettingsPanel extends Panel {
   private fore = 0
   private back = 0
 
-  constructor() { super(320, 668) }
+  constructor() { super(320, 752) }
 
   override async mount(): Promise<void> {
     const colony = await this.host.bridge.invoke('colony:get')
@@ -158,7 +170,13 @@ export class SettingsPanel extends Panel {
       { note: 'HSK 1' })
     y += ROW_H
     this.option(g, 'lang:en', PAD, y, w, 'Grunts, in English', cfg.language === 'en')
-    y += ROW_H + 6
+    y += ROW_H + 8
+    const speech = this.drafts.get('speech') ?? cfg.speechScale
+    const talk = this.drafts.get('talk') ?? cfg.talkScale
+    this.slider(g, 'speech', PAD, y, w, toT(speech), 'Bubbles stay', times(speech))
+    y += 38
+    this.slider(g, 'talk', PAD, y, w, toT(talk), 'Conversations stay', times(talk))
+    y += 38
 
     this.rule(g, y, this.w, 'look')
     y += 12
@@ -241,6 +259,17 @@ export class SettingsPanel extends Panel {
   /** Total height the swatch grid occupies, including its caption. */
   static swatchBlock(): number {
     return Math.ceil(THEMES.length / SWATCH_COLS) * (SWATCH_H + 6) + 14
+  }
+
+  /** A slider's value while it is being dragged, before it is saved. */
+  private drafts = new Map<string, number>()
+
+  protected override onSlide(id: string, t: number, done: boolean): void {
+    const v = fromT(t)
+    if (!done) { this.drafts.set(id, v); return }
+    this.drafts.delete(id)
+    const key = id === 'talk' ? 'talkScale' : 'speechScale'
+    void this.host.bridge.invoke('settings:patch', { [key]: v })
   }
 
   /** Where they are right now, in words rather than a pair of lying radios. */

@@ -136,6 +136,11 @@ export abstract class Panel {
   down(x: number, y: number): void {
     const id = this.hits.at(x - this.x, y - this.y)
     if (id === 'panel:close') { this.host.close(this); return }
+    if (id?.startsWith('slider:')) {
+      this.sliding = id.slice(7)
+      this.slideTo(x - this.x, false)
+      return
+    }
     if (id === 'panel:header') {
       this.dragging = true
       this.dragDx = this.x - x
@@ -148,6 +153,7 @@ export abstract class Panel {
   move(x: number, y: number): void {
     this.px = x - this.x
     this.py = y - this.y
+    if (this.sliding) { this.slideTo(this.px, false); return }
     if (this.dragging) {
       this.x = x + this.dragDx
       this.y = y + this.dragDy
@@ -158,6 +164,11 @@ export abstract class Panel {
   }
 
   up(x: number, y: number): void {
+    if (this.sliding) {
+      this.slideTo(x - this.x, true)
+      this.sliding = null
+      return
+    }
     this.dragging = false
     this.onUp(x - this.x, y - this.y, this.hits.at(x - this.x, y - this.y))
   }
@@ -173,6 +184,45 @@ export abstract class Panel {
   protected onMove(_x: number, _y: number): void {}
   protected onUp(_x: number, _y: number, _id: string | null): void {}
   protected onWheel(_x: number, _y: number, _dy: number): void {}
+  /**
+   * A slider moved. `t` is 0..1 along its track. `done` is false while it is
+   * being dragged — preview it — and true once on release, which is when to
+   * save: a drag is dozens of moves, and each one need not write settings.
+   */
+  protected onSlide(_id: string, _t: number, _done: boolean): void {}
+
+  // ── Sliders ────────────────────────────────────────────────────────────────
+  /** The slider being dragged, if any. The UI layer keeps the pointer on this
+   *  panel for the whole drag, so running off the end still tracks. */
+  private sliding: string | null = null
+  /** Where each slider's track was last drawn, for turning x into a value. */
+  private tracks = new Map<string, { x: number; w: number }>()
+
+  private slideTo(x: number, done: boolean): void {
+    const tr = this.sliding && this.tracks.get(this.sliding)
+    if (!tr || !this.sliding) return
+    this.onSlide(this.sliding, Math.max(0, Math.min(1, (x - tr.x) / tr.w)), done)
+  }
+
+  /** A labelled slider: label left, value right, track below. `t` is 0..1. */
+  protected slider(
+    g: Painter, id: string, x: number, y: number, w: number,
+    t: number, label: string, value: string,
+  ): void {
+    g.text(label, x, y + 7, { size: 12, color: UI.text, align: 'left' })
+    g.text(value, x + w, y + 7, { size: 11, color: UI.highlight, align: 'right' })
+    const ty = y + 22
+    const tx = x + 7
+    const tw = w - 14
+    this.tracks.set(id, { x: tx, w: tw })
+    // Generous hit area: a 4px track is a hard thing to grab.
+    this.hits.add(`slider:${id}`, x, ty - 9, w, 18)
+    const hot = this.sliding === id || this.hits.at(this.px, this.py) === `slider:${id}`
+    g.roundRect(tx, ty - 2, tw, 4, 2).fill({ color: UI.row, alpha: 1 })
+    g.roundRect(tx, ty - 2, tw * t, 4, 2).fill({ color: UI.accent, alpha: 0.9 })
+    g.circle(tx + tw * t, ty, hot ? 7 : 6).fill({ color: hot ? UI.highlight : UI.accent })
+    g.circle(tx + tw * t, ty, hot ? 7 : 6).stroke({ width: 1, color: UI.edge, alpha: 0.8 })
+  }
 
   // ── Drawing ────────────────────────────────────────────────────────────────
 
@@ -397,13 +447,13 @@ export abstract class Panel {
 
   /** Trim a string to fit, with an ellipsis. Panels are narrow and pet names
    *  are user-supplied; anything that can overflow is run through this. */
-  protected fit(g: Painter, s: string, size: number, maxW: number): string {
-    if (g.measure(s, size) <= maxW) return s
+  protected fit(g: Painter, s: string, size: number, maxW: number, font?: string): string {
+    if (g.measure(s, size, font) <= maxW) return s
     let lo = 0
     let hi = s.length
     while (lo < hi) {
       const mid = (lo + hi + 1) >> 1
-      if (g.measure(`${s.slice(0, mid)}…`, size) <= maxW) lo = mid
+      if (g.measure(`${s.slice(0, mid)}…`, size, font) <= maxW) lo = mid
       else hi = mid - 1
     }
     return `${s.slice(0, lo)}…`
