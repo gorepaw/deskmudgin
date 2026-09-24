@@ -1,0 +1,31 @@
+id	verdict	fix_script	fix_reading	fix_english	note
+x001	ok				
+x002	ok				
+x003	ok				
+x004	ok				
+x005	ok				
+x006	ok				
+x007	ok				
+x008	ok				
+x009	ok				
+x010	ok				
+x011	ok				
+x012	fix	再见！｜明天再见！	Zài jiàn! | Míng tiān zài jiàn!		见 alone is not an HSK1 (2.0) word (only 再见 and 看见 are on the 150-word list); 明天再见 keeps "see you tomorrow" using only listed vocabulary.
+x013	ok				
+x014	ok				
+x015	ok				
+x016	ok				
+x017	ok				
+x018	ok				
+x019	ok				
+x020	fix	你吃东西了吗？｜我没有吃东西。｜我们去吃东西。	Nǐ chī dōng xi le ma? | Wǒ méi yǒu chī dōng xi. | Wǒ men qù chī dōng xi.		饭 alone is not an HSK1 (2.0) word (only 米饭 and 饭馆 are listed), so 吃饭 is out of vocabulary; replaced with 吃东西, already used elsewhere in this set, meaning is preserved.
+x021	ok				
+x022	ok				
+x023	fix	你喜欢这个吗？｜我很喜欢！	Nǐ xǐ huan zhè ge ma? | Wǒ hěn xǐ huan!	Do you like this? | I like it a lot!	好吃 is not on the HSK1 (2.0) list (only 好 and 吃 separately are); swapped for 喜欢 to keep a natural exchange within vocabulary.
+x024	ok				
+x025	ok				
+x026	ok				
+x027	ok				
+x028	ok				
+x029	ok				
+x030	fix			Did you sleep? | No.	你睡觉了吗 uses the 了...吗 completion pattern ("Did you go to sleep?"), not a past-state question; "Were you asleep?" mistranslates the aspect, so the English is corrected.

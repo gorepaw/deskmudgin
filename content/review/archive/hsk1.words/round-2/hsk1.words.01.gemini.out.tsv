@@ -1,0 +1,8 @@
+id	verdict	fix_script	fix_reading	fix_english	note
+w028	ok				On HSK 1 (2.0) list; fàn diàn correct; restaurant is the HSK 1 sense, hotel also valid.
+w151	ok				HSK 1 lists 这 paired with 这儿; erhua zhèr correct.
+w152	ok				HSK 1 lists 那 paired with 那儿; erhua nàr correct.
+
+## Missing
+
+This batch is a partial slice (3 of ~150 words), so most of the list is necessarily absent. All three entries are genuine HSK 1 (2.0) words; none is non-HSK 1. The natural companion 哪儿 (nǎr, where) should be present elsewhere in the list alongside 这儿/那儿, together with the base forms 这 (zhè), 那 (nà), 哪 (nǎ).

@@ -1,0 +1,51 @@
+# Blind back-translation by a Claude agent that saw only the hanzi, chunk 02.
+see
+(measure word for money; piece)
+come
+teacher
+(completed action particle)
+cold
+inside
+six
+mom
+(question particle)
+buy
+cat
+it doesn't matter
+not have
+cooked rice
+name
+tomorrow
+which
+where
+that
+(question particle; "what about")
+can
+you
+year
+daughter
+friend
+beautiful
+apple
+seven
+front
+money
+please
+go
+hot
+person
+know
+three
+store
+up
+morning
+few
+who
+what
+ten
+time
+is
+book
+water
+fruit
+sleep

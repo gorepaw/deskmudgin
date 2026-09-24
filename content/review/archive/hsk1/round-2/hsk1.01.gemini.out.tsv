@@ -1,0 +1,6 @@
+id	verdict	fix_script	fix_reading	fix_english	note
+p048	ok
+p105	ok
+p228	ok
+p229	ok
+p230	fix	请开电脑。	Qǐng kāi diàn nǎo.		打 is not HSK1 on its own in this project's list — it only appears inside 打电话; the compound 打开 isn't listed either. 开 alone is HSK1 (to open/turn on) and 请开电脑 is natural and unambiguous. This mirrors the precedent on p229's history, where 开车 was rejected for the same reason (车 only exists inside 出租车).

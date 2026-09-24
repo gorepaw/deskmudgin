@@ -1,0 +1,153 @@
+id	script	reading	english	tags	status	checks	note
+w001	爱	ài	love	hsk1	verified	claude-blind,claude-review	
+w002	八	bā	eight	hsk1	verified	claude-blind,claude-review	
+w003	爸爸	bà ba	dad	hsk1	verified	claude-blind,claude-review	
+w004	杯子	bēi zi	cup	hsk1	verified	claude-blind,claude-review	
+w005	北京	běi jīng	Beijing	hsk1	verified	claude-blind,claude-review	
+w006	本	běn	(measure word for books)	hsk1	verified	claude-blind,claude-review	
+w007	不客气	bú kè qi	you're welcome	hsk1	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind pass agreed on meaning; review's only objection was the tone, now fixed by a verified override
+w008	不	bù	not; no	hsk1	verified	claude-blind,claude-review	
+w009	菜	cài	dish; vegetable	hsk1	verified	claude-blind,claude-review	
+w010	茶	chá	tea	hsk1	verified	claude-blind,claude-review	
+w011	吃	chī	to eat	hsk1	verified	claude-blind,claude-review	
+w012	出租车	chū zū chē	taxi	hsk1	verified	claude-blind,claude-review	
+w013	打电话	dǎ diàn huà	to make a phone call	hsk1	verified	claude-blind,claude-review	
+w014	大	dà	big	hsk1	verified	claude-blind,claude-review	
+w015	的	de	(possessive particle)	hsk1	verified	claude-blind,claude-review	
+w016	点	diǎn	o'clock; a little	hsk1	verified	claude-blind,claude-review	
+w017	电脑	diàn nǎo	computer	hsk1	verified	claude-blind,claude-review	
+w018	电视	diàn shì	television	hsk1	verified	claude-blind,claude-review	
+w019	电影	diàn yǐng	film	hsk1	verified	claude-blind,claude-review	
+w020	东西	dōng xi	thing	hsk1	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind pass agreed on meaning; review's only objection was the tone, now fixed by a verified override
+w021	都	dōu	all; both	hsk1	verified	claude-blind,claude-review	
+w022	读	dú	to read	hsk1	verified	claude-blind,claude-review	
+w023	对不起	duì bu qǐ	sorry	hsk1	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind pass agreed on meaning; review's only objection was the tone, now fixed by a verified override
+w024	多	duō	many; much	hsk1	verified	claude-blind,claude-review	
+w025	多少	duō shao	how many; how much	hsk1	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind pass agreed on meaning; review's only objection was the tone, now fixed by a verified override
+w026	儿子	ér zi	son	hsk1	verified	claude-blind,claude-review	
+w027	二	èr	two	hsk1	verified	claude-blind,claude-review	
+w028	饭店	fàn diàn	restaurant; hotel	hsk1	verified	claude-blind,claude-review	
+w029	飞机	fēi jī	aeroplane	hsk1	verified	claude-blind,claude-review	
+w030	分钟	fēn zhōng	minute	hsk1	verified	claude-blind,claude-review	
+w031	高兴	gāo xìng	happy	hsk1	verified	claude-blind,claude-review	
+w032	个	gè	(general measure word)	hsk1	verified	claude-blind,claude-review	
+w033	工作	gōng zuò	work; to work	hsk1	verified	claude-blind,claude-review	
+w034	狗	gǒu	dog	hsk1	verified	claude-blind,claude-review	
+w035	汉语	hàn yǔ	Chinese language	hsk1	verified	claude-blind,claude-review	
+w036	好	hǎo	good	hsk1	verified	claude-blind,claude-review	
+w037	号	hào	number; day of the month	hsk1	verified	claude-blind,claude-review	
+w038	喝	hē	to drink	hsk1	verified	claude-blind,claude-review	
+w039	和	hé	and	hsk1	verified	claude-blind,claude-review	
+w040	很	hěn	very	hsk1	verified	claude-blind,claude-review	
+w041	后面	hòu mian	behind	hsk1	verified	claude-blind,claude-review	
+w042	回	huí	to return	hsk1	verified	claude-blind,claude-review	
+w043	会	huì	can; to know how to	hsk1	verified	claude-blind,claude-review	
+w044	几	jǐ	how many; several	hsk1	verified	claude-blind,claude-review	
+w045	家	jiā	home; family	hsk1	verified	claude-blind,claude-review	
+w046	叫	jiào	to be called	hsk1	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind gloss is a synonym (call/to be called, can/able to, say/speak, beautiful/pretty, is/to be)
+w047	今天	jīn tiān	today	hsk1	verified	claude-blind,claude-review	
+w048	九	jiǔ	nine	hsk1	verified	claude-blind,claude-review	
+w049	开	kāi	to open; to drive	hsk1	verified	claude-blind,claude-review	
+w050	看	kàn	to look; to watch	hsk1	verified	claude-blind,claude-review	
+w051	看见	kàn jiàn	to see	hsk1	verified	claude-blind,claude-review	
+w052	块	kuài	(measure word for money)	hsk1	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind gloss is a synonym (call/to be called, can/able to, say/speak, beautiful/pretty, is/to be)
+w053	来	lái	to come	hsk1	verified	claude-blind,claude-review	
+w054	老师	lǎo shī	teacher	hsk1	verified	claude-blind,claude-review	
+w055	了	le	(aspect particle)	hsk1	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind pass agreed on meaning; review's only objection was the tone, now fixed by a verified override
+w056	冷	lěng	cold	hsk1	verified	claude-blind,claude-review	
+w057	里	lǐ	inside	hsk1	verified	claude-blind,claude-review	
+w058	六	liù	six	hsk1	verified	claude-blind,claude-review	
+w059	妈妈	mā ma	mum	hsk1	verified	claude-blind,claude-review	
+w060	吗	ma	(question particle)	hsk1	verified	claude-blind,claude-review	
+w061	买	mǎi	to buy	hsk1	verified	claude-blind,claude-review	
+w062	猫	māo	cat	hsk1	verified	claude-blind,claude-review	
+w063	没关系	méi guān xi	it doesn't matter	hsk1	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind pass agreed on meaning; review's only objection was the tone, now fixed by a verified override
+w064	没有	méi yǒu	to not have	hsk1	verified	claude-blind,claude-review	
+w065	米饭	mǐ fàn	cooked rice	hsk1	verified	claude-blind,claude-review	
+w066	名字	míng zi	name	hsk1	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind pass agreed on meaning; review's only objection was the tone, now fixed by a verified override
+w067	明天	míng tiān	tomorrow	hsk1	verified	claude-blind,claude-review	
+w068	哪	nǎ	which	hsk1	verified	claude-blind,claude-review	
+w069	哪儿	nǎr	where	hsk1	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind pass agreed on meaning; review's only objection was the tone, now fixed by a verified override
+w070	那	nà	that	hsk1	verified	claude-blind,claude-review	
+w071	呢	ne	(question particle)	hsk1	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind gloss is a synonym (call/to be called, can/able to, say/speak, beautiful/pretty, is/to be)
+w072	能	néng	to be able to	hsk1	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind gloss is a synonym (call/to be called, can/able to, say/speak, beautiful/pretty, is/to be)
+w073	你	nǐ	you	hsk1	verified	claude-blind,claude-review	
+w074	年	nián	year	hsk1	verified	claude-blind,claude-review	
+w075	女儿	nǚ ér	daughter	hsk1	verified	claude-blind,claude-review	
+w076	朋友	péng you	friend	hsk1	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind pass agreed on meaning; review's only objection was the tone, now fixed by a verified override
+w077	漂亮	piào liang	pretty	hsk1	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind gloss is a synonym (call/to be called, can/able to, say/speak, beautiful/pretty, is/to be)
+w078	苹果	píng guǒ	apple	hsk1	verified	claude-blind,claude-review	
+w079	七	qī	seven	hsk1	verified	claude-blind,claude-review	
+w080	前面	qián mian	in front	hsk1	verified	claude-blind,claude-review	
+w081	钱	qián	money	hsk1	verified	claude-blind,claude-review	
+w082	请	qǐng	please	hsk1	verified	claude-blind,claude-review	
+w083	去	qù	to go	hsk1	verified	claude-blind,claude-review	
+w084	热	rè	hot	hsk1	verified	claude-blind,claude-review	
+w085	人	rén	person	hsk1	verified	claude-blind,claude-review	
+w086	认识	rèn shi	to know (someone)	hsk1	verified	claude-blind,claude-review	
+w087	三	sān	three	hsk1	verified	claude-blind,claude-review	
+w088	商店	shāng diàn	shop	hsk1	verified	claude-blind,claude-review	
+w089	上	shàng	up; on	hsk1	verified	claude-blind,claude-review	
+w090	上午	shàng wǔ	morning	hsk1	verified	claude-blind,claude-review	
+w091	少	shǎo	few; little	hsk1	verified	claude-blind,claude-review	
+w092	谁	shéi	who	hsk1	verified	claude-blind,claude-review	
+w093	什么	shén me	what	hsk1	verified	claude-blind,claude-review	
+w094	十	shí	ten	hsk1	verified	claude-blind,claude-review	
+w095	时候	shí hou	time; moment	hsk1	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind pass agreed on meaning; review's only objection was the tone, now fixed by a verified override
+w096	是	shì	to be	hsk1	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind gloss is a synonym (call/to be called, can/able to, say/speak, beautiful/pretty, is/to be)
+w097	书	shū	book	hsk1	verified	claude-blind,claude-review	
+w098	水	shuǐ	water	hsk1	verified	claude-blind,claude-review	
+w099	水果	shuǐ guǒ	fruit	hsk1	verified	claude-blind,claude-review	
+w100	睡觉	shuì jiào	to sleep	hsk1	verified	claude-blind,claude-review	
+w101	说	shuō	to speak	hsk1	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind gloss is a synonym (call/to be called, can/able to, say/speak, beautiful/pretty, is/to be)
+w102	四	sì	four	hsk1	verified	claude-blind,claude-review	
+w103	岁	suì	years of age	hsk1	verified	claude-blind,claude-review	
+w104	他	tā	he; him	hsk1	verified	claude-blind,claude-review	
+w105	她	tā	she; her	hsk1	verified	claude-blind,claude-review	
+w106	太	tài	too	hsk1	verified	claude-blind,claude-review	
+w107	天气	tiān qì	weather	hsk1	verified	claude-blind,claude-review	
+w108	听	tīng	to listen	hsk1	verified	claude-blind,claude-review	
+w109	同学	tóng xué	classmate	hsk1	verified	claude-blind,claude-review	
+w110	喂	wèi	hello (on the phone)	hsk1	verified	claude-blind,claude-review	
+w111	我	wǒ	I; me	hsk1	verified	claude-blind,claude-review	
+w112	我们	wǒ men	we; us	hsk1	verified	claude-blind,claude-review	
+w113	五	wǔ	five	hsk1	verified	claude-blind,claude-review	
+w114	喜欢	xǐ huan	to like	hsk1	verified	claude-blind,claude-review	
+w115	下	xià	down; under	hsk1	verified	claude-blind,claude-review	
+w116	下午	xià wǔ	afternoon	hsk1	verified	claude-blind,claude-review	
+w117	下雨	xià yǔ	to rain	hsk1	verified	claude-blind,claude-review	
+w118	先生	xiān sheng	mister	hsk1	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind pass agreed on meaning; review's only objection was the tone, now fixed by a verified override
+w119	现在	xiàn zài	now	hsk1	verified	claude-blind,claude-review	
+w120	想	xiǎng	to want; to think	hsk1	verified	claude-blind,claude-review	
+w121	小	xiǎo	small	hsk1	verified	claude-blind,claude-review	
+w122	小姐	xiǎo jiě	miss	hsk1	verified	claude-blind,claude-review	
+w123	些	xiē	some	hsk1	verified	claude-blind,claude-review	
+w124	写	xiě	to write	hsk1	verified	claude-blind,claude-review	
+w125	谢谢	xiè xie	thanks	hsk1	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind pass agreed on meaning; review's only objection was the tone, now fixed by a verified override
+w126	星期	xīng qī	week	hsk1	verified	claude-blind,claude-review	
+w127	学生	xué sheng	student	hsk1	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind pass agreed on meaning; review's only objection was the tone, now fixed by a verified override
+w128	学习	xué xí	to study	hsk1	verified	claude-blind,claude-review	
+w129	学校	xué xiào	school	hsk1	verified	claude-blind,claude-review	
+w130	一	yī	one	hsk1	verified	claude-blind,claude-review	
+w131	一点儿	yì diǎnr	a little	hsk1	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind pass agreed on meaning; review's only objection was the tone, now fixed by a verified override
+w132	衣服	yī fu	clothes	hsk1	verified	claude-blind,claude-review	
+w133	医生	yī shēng	doctor	hsk1	verified	claude-blind,claude-review	
+w134	医院	yī yuàn	hospital	hsk1	verified	claude-blind,claude-review	
+w135	椅子	yǐ zi	chair	hsk1	verified	claude-blind,claude-review	
+w136	有	yǒu	to have	hsk1	verified	claude-blind,claude-review	
+w137	月	yuè	month	hsk1	verified	claude-blind,claude-review	
+w138	在	zài	at; in	hsk1	verified	claude-blind,claude-review	
+w139	再见	zài jiàn	goodbye	hsk1	verified	claude-blind,claude-review	
+w140	怎么	zěn me	how	hsk1	verified	claude-blind,claude-review	
+w141	怎么样	zěn me yàng	how about	hsk1	verified	claude-blind,claude-review	
+w142	这	zhè	this	hsk1	verified	claude-blind,claude-review	
+w143	中国	zhōng guó	China	hsk1	verified	claude-blind,claude-review	
+w144	中午	zhōng wǔ	noon	hsk1	verified	claude-blind,claude-review	
+w145	住	zhù	to live; to stay	hsk1	verified	claude-blind,claude-review	
+w146	桌子	zhuō zi	table	hsk1	verified	claude-blind,claude-review	
+w147	字	zì	character; word	hsk1	verified	claude-blind,claude-review	
+w148	昨天	zuó tiān	yesterday	hsk1	verified	claude-blind,claude-review	
+w149	坐	zuò	to sit	hsk1	verified	claude-blind,claude-review	
+w150	做	zuò	to do; to make	hsk1	verified	claude-blind,claude-review	
+w151	这儿	zhèr	here	hsk1	verified	claude-blind,claude-review	
+w152	那儿	nàr	there	hsk1	verified	claude-blind,claude-review	

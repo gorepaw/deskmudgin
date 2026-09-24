@@ -1,0 +1,24 @@
+id	script	reading	english	tags	status	checks	note
+o001	不客气	bú kè qi		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard 现代汉语词典/HSK citation forms; reviewer proposed, Claude confirmed
+o002	东西	dōng xi		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard 现代汉语词典/HSK citation forms; reviewer proposed, Claude confirmed
+o003	对不起	duì bu qǐ		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard 现代汉语词典/HSK citation forms; reviewer proposed, Claude confirmed
+o004	多少	duō shao		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard 现代汉语词典/HSK citation forms; reviewer proposed, Claude confirmed
+o005	了	le		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard 现代汉语词典/HSK citation forms; reviewer proposed, Claude confirmed
+o006	没关系	méi guān xi		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard 现代汉语词典/HSK citation forms; reviewer proposed, Claude confirmed
+o007	名字	míng zi		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard 现代汉语词典/HSK citation forms; reviewer proposed, Claude confirmed
+o008	哪儿	nǎr		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard 现代汉语词典/HSK citation forms; reviewer proposed, Claude confirmed
+o009	朋友	péng you		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard 现代汉语词典/HSK citation forms; reviewer proposed, Claude confirmed
+o010	时候	shí hou		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard 现代汉语词典/HSK citation forms; reviewer proposed, Claude confirmed
+o011	先生	xiān sheng		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard 现代汉语词典/HSK citation forms; reviewer proposed, Claude confirmed
+o012	谢谢	xiè xie		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard 现代汉语词典/HSK citation forms; reviewer proposed, Claude confirmed
+o013	学生	xué sheng		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard 现代汉语词典/HSK citation forms; reviewer proposed, Claude confirmed
+o014	一点儿	yì diǎnr		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard 现代汉语词典/HSK citation forms; reviewer proposed, Claude confirmed
+o015	这儿	zhèr		from-review	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard 现代汉语词典/HSK citation forms; reviewer proposed, Claude confirmed
+o016	那儿	nàr		from-review	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard 现代汉语词典/HSK citation forms; reviewer proposed, Claude confirmed
+o017	谁	shéi		from-review	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard 现代汉语词典/HSK citation forms; reviewer proposed, Claude confirmed
+o018	看看	kàn kan		from-review	verified	claude-review,claude-adjudicated	reduplicated verb, second syllable neutral (review of p105/p227)
+o019	下面	xià mian		from-review	verified	claude-review,claude-adjudicated	现代汉语词典 xià·mian (review of p161)
+o020	后面	hòu mian		from-review	verified	claude-review,claude-adjudicated	现代汉语词典 hòu·mian (review of p244)
+o021	前面	qián mian		from-review	verified	claude-review,claude-adjudicated	same class as 后面, kept consistent
+o022	椅子上	yǐ zi shang		from-review	verified	claude-review,claude-adjudicated	locative 上 after a noun is neutral (review of p288)
+o023	桌子上	zhuō zi shang		from-review	verified	claude-review,claude-adjudicated	same locative 上 as 椅子上

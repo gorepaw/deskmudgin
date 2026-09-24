@@ -1,0 +1,57 @@
+id	verdict	fix_script	fix_reading	fix_english	note
+w051	ok				
+w052	ok				
+w053	ok				
+w054	ok				
+w055	fix		le		As an aspect/modal particle 了 is read le (neutral); liǎo is the verb "to finish/understand"
+w056	ok				
+w057	ok				
+w058	ok				
+w059	ok				
+w060	ok				
+w061	ok				
+w062	ok				
+w063	fix		méi guān xi		关系 in 没关系 is neutral: méi guānxi (HSK list and 现代汉语词典)
+w064	ok				Official HSK 1 entry is 没 méi (adv.), normally taught as 没/没有; keeping 没有 is acceptable
+w065	ok				
+w066	fix		míng zi		名字 has neutral second syllable: míngzi
+w067	ok				
+w068	ok				
+w069	fix		nǎr		Erhua is one syllable nǎr, not two syllables with a second-tone ér; this is a real error not a spacing choice
+w070	ok				
+w071	ok				
+w072	ok				
+w073	ok				
+w074	ok				
+w075	ok				
+w076	fix		péng you		朋友 has neutral second syllable: péngyou
+w077	ok				
+w078	ok				
+w079	ok				
+w080	ok				Dictionaries give qiánmian with neutral 面 but HSK list and Standard Course use qiánmiàn; both acceptable
+w081	ok				
+w082	ok				
+w083	ok				
+w084	ok				
+w085	ok				
+w086	ok				
+w087	ok				
+w088	ok				
+w089	ok				
+w090	ok				
+w091	ok				
+w092	ok				shuí is a valid reading but shéi is the more common colloquial form and is what the HSK list uses; consider shéi
+w093	ok				
+w094	ok				
+w095	fix		shí hou		时候 has neutral second syllable: shíhou
+w096	ok				
+w097	ok				
+w098	ok				
+w099	ok				
+w100	ok				
+
+## Missing
+
+- Missing: 那儿 (nàr, there). The official list pairs 那（那儿）just as it pairs 哪（哪儿）; since this batch gives 哪儿 its own entry (w069), 那儿 should be added for consistency, or 哪儿 folded into 哪.
+- 没 vs 没有: the official HSK 1 entry is 没 méi (not). The draft has 没有 (w064) instead. That is acceptable as the usual taught form, but if you want an exact match to the list, the headword is 没.
+- Not HSK 1: none. Every entry in this batch is on the HSK 1 (2.0) list.

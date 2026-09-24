@@ -1,0 +1,56 @@
+id	verdict	fix_script	fix_reading	fix_english	note
+w101	ok				
+w102	ok				
+w103	ok				
+w104	ok				
+w105	ok				
+w106	ok				
+w107	ok				
+w108	ok				
+w109	ok				
+w110	ok				
+w111	ok				
+w112	ok				
+w113	ok				
+w114	ok				
+w115	ok				
+w116	ok				
+w117	ok				
+w118	fix		xiān sheng		先生 meaning "mister" has neutral 生: xiānsheng (现代汉语词典 xiān·sheng; HSK list xiānsheng)
+w119	ok				
+w120	ok				
+w121	ok				
+w122	ok				
+w123	ok				
+w124	ok				
+w125	fix		xiè xie		Reduplicated 谢谢 has neutral second syllable: xièxie
+w126	ok				
+w127	fix		xué sheng		学生 has neutral 生: xuésheng (现代汉语词典 xué·sheng; HSK list xuésheng)
+w128	ok				
+w129	ok				
+w130	ok				
+w131	fix		yì diǎnr		Erhua is one syllable diǎnr, not diǎn plus a separate ér; yì sandhi is correct textbook practice
+w132	ok				
+w133	ok				
+w134	ok				
+w135	ok				
+w136	ok				
+w137	ok				
+w138	ok				
+w139	ok				
+w140	ok				
+w141	ok				
+w142	ok				
+w143	ok				
+w144	ok				
+w145	ok				
+w146	ok				
+w147	ok				
+w148	ok				
+w149	ok				
+w150	ok				
+
+## Missing
+
+- Missing: 这儿 (zhèr, here). The official list pairs 这（这儿）, like 哪（哪儿）and 那（那儿）; add it if 哪儿 keeps its own entry.
+- Not HSK 1: none. Every entry in this batch is on the HSK 1 (2.0) list.

@@ -1,0 +1,6 @@
+# LF everywhere. The content pipeline writes LF TSVs on purpose — they are
+# diffed, pasted into spreadsheets and read back by scripts — and a checkout
+# that converts them to CRLF would show every row as changed.
+* text=auto eol=lf
+*.png binary
+*.ico binary

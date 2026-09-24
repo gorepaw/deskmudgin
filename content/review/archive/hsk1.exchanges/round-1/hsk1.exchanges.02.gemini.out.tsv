@@ -1,0 +1,31 @@
+id	verdict	fix_script	fix_reading	fix_english	note
+x031	ok
+x032	ok
+x033	ok
+x034	ok
+x035	ok
+x036	ok
+x037	ok
+x038	ok
+x039	ok
+x040	ok
+x041	ok
+x042	ok
+x043	ok
+x044	ok
+x045	ok
+x046	ok
+x047	ok
+x048	ok
+x049	ok
+x050	ok
+x051	ok
+x052	ok
+x053	ok
+x054	ok
+x055	fix	你的猫在哪儿？｜在桌子下。	Nǐ de māo zài nǎr? | Zài zhuō zi xià.		下面 (xiàmian) is not in the official 150-word HSK1 (2.0) list — only 下, 前面, 后面, 里面 are. Dropped 面; "在桌子下" still means "under the table" and stays in-scope.
+x056	ok
+x057	fix	你想坐这个椅子吗？｜好的，谢谢。	Nǐ xiǎng zuò zhè ge yǐ zi ma? | Hǎo de, xiè xie.	Do you want to sit in this chair? | Okay, thanks.	这儿 is not in the official 150-word HSK1 (2.0) list — only 哪儿 is listed, not 这儿/那儿. Reworded to "this chair" (这个椅子, all in-scope) to keep the same offering-a-seat sense.
+x058	ok
+x059	ok
+x060	ok

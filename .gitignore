@@ -1,0 +1,7 @@
+node_modules/
+out/
+dist/
+release/
+*.log
+# Local Claude Code permissions for this machine — not project settings.
+.claude/settings.local.json

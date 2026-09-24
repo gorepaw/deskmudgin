@@ -1,0 +1,51 @@
+# Blind back-translation by a Claude agent that saw only the hanzi, chunk 01.
+love
+eight
+dad
+cup
+Beijing
+(measure word for books)
+you're welcome
+not
+dish
+tea
+eat
+taxi
+make a phone call
+big
+(possessive particle)
+o'clock
+computer
+television
+movie
+thing
+all
+read
+sorry
+many
+how many
+son
+two
+restaurant
+airplane
+minute
+happy
+(general measure word)
+work
+dog
+Chinese language
+good
+number
+drink
+and
+very
+behind
+return
+can
+how many
+home
+call
+today
+nine
+open
+look

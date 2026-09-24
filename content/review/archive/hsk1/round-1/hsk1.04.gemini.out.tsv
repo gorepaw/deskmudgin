@@ -1,0 +1,62 @@
+id	verdict	fix_script	fix_reading	fix_english	note
+p184	ok				
+p185	ok				
+p186	ok				
+p187	ok				
+p188	ok				
+p189	ok				
+p190	ok				
+p191	ok				
+p192	ok				
+p193	ok				
+p194	ok				
+p195	ok				
+p196	ok				
+p197	ok				
+p198	ok				
+p199	ok				
+p200	ok				
+p201	ok				
+p202	ok				
+p203	ok				
+p204	ok				
+p205	ok				
+p206	ok				
+p207	ok				
+p208	ok				
+p209	ok				
+p210	ok				
+p211	ok				
+p212	ok				
+p213	ok				
+p214	ok				
+p215	ok				
+p216	ok				
+p217	ok				
+p218	ok				
+p219	ok				
+p220	ok				
+p221	ok				
+p222	ok				
+p223	ok				
+p224	ok				
+p225	ok				
+p226	ok				
+p227	fix		Wǒ xiǎng kàn kan.		Reduplicated verb: second 看 is neutral tone.
+p228	fix	我不会写这个字。	Wǒ bú huì xiě zhè ge zì.	I can't write this character.	汉字 is not on the HSK 1 list; 字 is.
+p229	fix	你会做饭吗？	Nǐ huì zuò fàn ma?	Can you cook?	车/开车 is not HSK 1 (only 出租车 is); replaced with an HSK 1 skill.
+p230	fix	请打开电脑。	Qǐng dǎ kāi diàn nǎo.		打开 is the standard verb for turning on a computer; bare 开电脑 is colloquial and clipped. Both 打 and 开 are HSK 1.
+p231	ok				
+p232	ok				
+p233	ok				
+p234	ok				
+p235	ok				
+p236	ok				
+p237	ok				
+p238	ok				
+p239	ok				
+p240	ok				
+p241	ok				
+p242	ok				
+p243	ok				
+p244	fix		Yī yuàn zài xué xiào hòu mian.		后面 is hòu·mian with neutral 面 in the standard dictionary reading.

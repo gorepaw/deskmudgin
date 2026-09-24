@@ -1,0 +1,9 @@
+# Gemini's reply for hsk1.exchanges, chunk 01 — 1 entries.
+#
+# Paste the whole of hsk1.exchanges.01.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_script<tab>fix_reading<tab>fix_english<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+# and copy it back out — that turns the columns into real tabs.

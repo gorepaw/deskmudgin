@@ -1,0 +1,57 @@
+id	verdict	fix_script	fix_reading	fix_english	note
+w001	ok				
+w002	ok				
+w003	ok				
+w004	ok				
+w005	ok				
+w006	ok				
+w007	fix		bú kè qi		客气 is kèqi with neutral 气 (现代汉语词典 kè·qi); bú sandhi is correct
+w008	ok				
+w009	ok				
+w010	ok				
+w011	ok				
+w012	ok				
+w013	ok				
+w014	ok				
+w015	ok				
+w016	ok				
+w017	ok				
+w018	ok				
+w019	ok				
+w020	fix		dōng xi		东西 meaning "thing" has neutral second syllable; dōngxī means east and west
+w021	ok				
+w022	ok				
+w023	fix		duì bu qǐ		Standard citation duìbuqǐ with neutral 不 (现代汉语词典 duì·buqǐ; HSK list duìbuqǐ)
+w024	ok				
+w025	fix		duō shao		Interrogative "how many/how much" is duōshao with neutral 少 (现代汉语词典 duō·shao; HSK list duōshao); duōshǎo is the "more or less" sense
+w026	ok				
+w027	ok				
+w028	fix	饭店	fàn diàn	restaurant; hotel	HSK 1 list has 饭店 not 饭馆; 饭馆 is not on the HSK 1 (2.0) list
+w029	ok				
+w030	ok				
+w031	ok				
+w032	ok				
+w033	ok				
+w034	ok				
+w035	ok				
+w036	ok				
+w037	ok				
+w038	ok				
+w039	ok				
+w040	ok				
+w041	ok				Dictionaries give hòumian with neutral 面 but HSK list and Standard Course use hòumiàn; both acceptable
+w042	ok				
+w043	ok				
+w044	ok				
+w045	ok				
+w046	ok				
+w047	ok				
+w048	ok				
+w049	ok				
+w050	ok				
+
+## Missing
+
+- Missing from this batch: 饭店 (fàndiàn, restaurant; hotel). It is the HSK 1 word; the draft's 饭馆 (w028) should be replaced by it (see fix above).
+- Not HSK 1: 饭馆 (w028) is not on the HSK 1 (2.0) list.
+- Everything else in the 爱–看 alphabetical range of the official list is present.

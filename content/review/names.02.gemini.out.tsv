@@ -1,0 +1,60 @@
+id	verdict	fix_script	fix_reading	fix_english	note
+n061	ok				
+n062	fix		yuán yuan		Reduplicated pet name: neutral 2nd syllable, yuán yuan - cf. the real giant pandas Tuan Tuan and Yuan Yuan, whose names are spoken this way.
+n063	fix		tuán tuan		Reduplicated pet name: neutral 2nd syllable, tuán tuan (same "Tuan Tuan / Yuan Yuan" precedent as 圆圆).
+n064	ok				
+n065	fix		zhū zhu		Reduplicated pet name: neutral 2nd syllable, zhū zhu.
+n066	fix		bèi bei		Reduplicated pet name: neutral 2nd syllable, bèi bei - one of the most common real Chinese baby/pet nicknames.
+n067	ok				
+n068	fix		làng lang		Reduplicated pet name: neutral 2nd syllable, làng lang. Note: 浪 alone can slangily mean "loose/promiscuous," but reduplicated in a sea-creature context it clearly reads as "wave" (or the affectionate term for strays, as in the documentary 浪浪別哭); not a real concern here.
+n069	ok				
+n070	fix		hǎi hai		Reduplicated pet name: neutral 2nd syllable, hǎi hai.
+n071	ok				
+n072	fix		shuǐ shui		Reduplicated pet name: neutral 2nd syllable, shuǐ shui.
+n073	fix		dī di		Reduplicated pet name: neutral 2nd syllable, dī di. Minor note: 滴滴 is also the name of a major ride-hailing app in China; unlikely to confuse young learners but worth knowing.
+n074	fix		lù lu		Reduplicated pet name: neutral 2nd syllable, lù lu - common real nickname (Lulu).
+n075	fix		yuè yue		Reduplicated pet name: neutral 2nd syllable, yuè yue.
+n076	ok				
+n077	fix		xīng xing		星星 ("stars") is a standard dictionary word with neutral tone on the 2nd syllable: xīng xing, not xīng xīng.
+n078	ok				
+n079	ok				
+n080	ok				
+n081	fix		bīng bing		Reduplicated pet name: neutral 2nd syllable, bīng bing.
+n082	ok				
+n083	ok				
+n084	fix		duǒ duo		Reduplicated pet name: neutral 2nd syllable, duǒ duo - common real nickname (Duoduo).
+n085	fix		yín yin		Reduplicated pet name: neutral 2nd syllable, yín yin. Less common as an actual name than 贝贝/豆豆 but follows the same productive nickname pattern; still plausible.
+n086	ok				
+n087	fix		cháo chao		Reduplicated pet name: neutral 2nd syllable, cháo chao. Bonus: 潮 also slangily means "trendy/cool" in modern Mandarin, a nice double meaning here, not a problem.
+n088	ok				
+n089	ok				
+n090	ok				
+n091	fix		táng tang		Reduplicated pet name: neutral 2nd syllable, táng tang.
+n092	fix		tián tian		Reduplicated pet name: neutral 2nd syllable, tián tian.
+n093	ok				
+n094	ok				
+n095	ok				
+n096	fix		qiú qiu		Reduplicated pet name: neutral 2nd syllable, qiú qiu - one of the most common real Chinese pet names for round pets.
+n097	fix	小蛋	xiǎo dàn		Reduplicated 蛋蛋 is widely used in casual/child-speak Mandarin as a cutesy euphemism for testicles (parents commonly use it with toddler boys) - a real connotation risk for a kids' app, even though "egg" is the obvious primary reading here. Suggest 小蛋 (xiǎo dàn, "Little Egg") instead, which keeps the egg concept without the reduplicated form that carries the slang meaning. "Egg" still works as the gloss.
+n098	fix		gǔn gun		Reduplicated pet name: neutral 2nd syllable, gǔn gun - 滚滚 is a well-known affectionate nickname for pandas in Chinese internet slang, always said this way.
+n099	fix		dū du		Reduplicated pet name: neutral 2nd syllable, dū du - common real pet name (Dudu).
+n100	fix		lè le		Reduplicated pet name: neutral 2nd syllable, lè le - common real nickname (also a well-known panda's name).
+n101	fix		xiào xiao		Reduplicated pet name: neutral 2nd syllable, xiào xiao.
+n102	fix		jìng jing		Reduplicated pet name: neutral 2nd syllable, jìng jing.
+n103	fix		ān an		Reduplicated pet name: neutral 2nd syllable, ān an.
+n104	ok				
+n105	ok				
+n106	ok				
+n107	ok				
+n108	ok				
+n109	ok				
+n110	ok				
+n111	fix		jīng jing		Reduplicated pet name: neutral 2nd syllable, jīng jing. Uncommon coinage but follows the standard nickname-doubling pattern; plausible enough, not a real word to conflict with.
+n112	ok				
+n113	ok				
+n114	ok				
+n115	ok				
+n116	fix		mǐ mi		Reduplicated pet name: neutral 2nd syllable, mǐ mi.
+n117	ok				
+n118	ok				
+n119	ok				

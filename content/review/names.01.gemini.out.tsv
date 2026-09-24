@@ -1,0 +1,61 @@
+id	verdict	fix_script	fix_reading	fix_english	note
+n001	fix		ní ni		Reduplicated pet name: 2nd syllable is neutral in natural speech (cf. dou dou), not ní ní.
+n002	ok				
+n003	ok				
+n004	fix		ní ba		泥巴 takes neutral tone on 巴 (light suffix, like 尾巴 wěiba/嘴巴 zuǐba), not ní bā.
+n005	ok				
+n006	fix		dòu dou		Standard spoken reading of this pet name has neutral 2nd syllable: dòu dou, not dòu dòu.
+n007	ok				
+n008	fix		bāo zi		子 is neutral tone here: bāo zi, not bāo zǐ.
+n009	ok				
+n010	ok				
+n011	ok				
+n012	fix		dūn dun		Reduplicated pet name: 2nd syllable neutral, dūn dun (cf. mascot Bing Dwen Dwen's colloquial reading).
+n013	fix		pàng pang		Reduplicated pet-name/adjective: neutral 2nd syllable, pàng pang, is the natural spoken form.
+n014	fix		guā gua		As an address/name (not the set phrase 呱呱叫), 2nd syllable goes neutral: guā gua. Good thematic fit for a frog (croak).
+n015	fix		tuán zi		子 is neutral tone here: tuán zi, not tuán zǐ.
+n016	ok				
+n017	ok				
+n018	ok				
+n019	ok				
+n020	ok				
+n021	fix		tái tai		Reduplicated pet name: neutral 2nd syllable, tái tai. Note: 苔 (moss) is a literary character, so this coinage reads a little bookish/unusual as a pet name, though not wrong or offensive.
+n022	ok				青青 is also a common real given name and a classical set phrase (青青河边草), both of which keep full tone on both syllables, so leaving as qīng qīng is defensible; not flagging as an error.
+n023	fix		cǎo cao		As a pet name (not the adverb "hastily," which keeps full tone), neutral 2nd syllable is standard: cǎo cao.
+n024	ok				
+n025	ok				
+n026	fix		yá ya		Reduplicated pet name: neutral 2nd syllable, yá ya.
+n027	ok				
+n028	ok				
+n029	fix		hé tao		核桃 (walnut) takes neutral tone on 桃 in standard speech: hé tao, not hé táo.
+n030	fix		lì zi		子 is neutral tone here: lì zi, not lì zǐ.
+n031	ok				
+n032	ok				
+n033	ok				
+n034	ok				
+n035	fix		jiǎo zi		子 is neutral tone here: jiǎo zi, not jiǎo zǐ.
+n036	fix		wō tou		窝头 takes neutral tone on 头, like 馒头/石头: wō tou, not wō tóu.
+n037	ok				
+n038	ok				
+n039	ok				
+n040	ok				
+n041	ok				
+n042	fix		tǔ tu		Reduplicated pet name: neutral 2nd syllable, tǔ tu.
+n043	ok				
+n044	fix	坑洼	kēng wā		坑坑 on its own is incomplete/unnatural - Chinese almost always says 坑坑洼洼 or the plain compound 坑洼 (kēngwā, "bumpy/pitted"). Bare reduplicated 坑坑 reads like a drafting artifact rather than a name a Chinese speaker would coin. Suggest replacing with 坑洼; "Pothole" still works as the gloss.
+n045	ok				
+n046	fix		hān han		Reduplicated pet name: neutral 2nd syllable, hān han. (憨 is affectionate/endearing, not insulting - fits "dim but lovable" well.)
+n047	fix		bèn ben		Reduplicated pet name: neutral 2nd syllable, bèn ben. Used this way it reads as fond teasing ("silly one"), not an insult.
+n048	fix		dāi dai		Reduplicated pet name: neutral 2nd syllable, dāi dai. Fits the popular "呆萌" (adorably dopey) aesthetic well.
+n049	fix		lǎn lan		Reduplicated pet name: neutral 2nd syllable, lǎn lan.
+n050	fix		gū gu		Reduplicated pet name: neutral 2nd syllable, gū gu.
+n051	fix		dōng dong		Reduplicated pet name: neutral 2nd syllable, dōng dong.
+n052	fix		niú niu		Reduplicated pet name: neutral 2nd syllable, niú niu. Very common real nickname.
+n053	fix		hǔ zi		子 is neutral tone here: hǔ zi, not hǔ zǐ. 虎子 is a warm, traditional nickname (brave/lively boy), reads well here.
+n054	ok				铁蛋 ("iron egg") is a genuine, warm rustic nickname wishing toughness/durability on a child - reads as affectionate, not mocking. Good fit for a tough little mud creature.
+n055	ok				
+n056	ok				二狗 ("Second Dog") is an authentic ultra-rustic Chinese nickname pattern. On a person today it can read as a bit of a hillbilly joke, but for a small, deliberately ugly-endearing mud frog the goofy, unpretentious flavor actually fits the brief well and reads as affectionate-in-context rather than a put-down. "Doggo" is a loose but fitting gloss.
+n057	fix			Sturdy	"Big Sturdy" reads awkwardly as an English name (two stacked adjectives); a single word like "Sturdy" matches the house style (cf. Chunky, Chubby, Dopey) and is still accurate. 大壮 itself is a genuine, warm rustic nickname, no connotation issue.
+n058	fix			Shadow	"Blackie" is accurate for 小黑 (a very common real nickname for a black pet) but reads as dated/racially loaded in English. Suggest a neutral color-based gloss like "Shadow" instead.
+n059	ok				阿土 ("Ah-Tu") follows a genuine warm Southern-Chinese naming pattern (阿+character). 土 can mean "unsophisticated/bumpkin," but in this affectionate 阿- form it reads as fond self-deprecating humor, fitting an earthy mud creature, not an insult.
+n060	fix		pào pao		Reduplicated pet name: neutral 2nd syllable, pào pao.

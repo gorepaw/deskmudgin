@@ -1,0 +1,51 @@
+# Blind back-translation by a Claude agent that saw only the hanzi, chunk 03.
+say
+four
+years old
+he
+she
+too
+weather
+listen
+classmate
+hello (on the phone)
+I
+we
+five
+like
+down
+afternoon
+rain
+mister
+now
+want
+small
+miss
+some
+write
+thank you
+week
+student
+study
+school
+one
+a little
+clothes
+doctor
+hospital
+chair
+have
+month
+at
+goodbye
+how
+how about
+this
+China
+noon
+live
+table
+character
+yesterday
+sit
+do
