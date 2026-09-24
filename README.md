@@ -23,9 +23,9 @@ A **Ganorok Matron** stands in the bottom-right corner — the app's front door.
 Click her for the menu; pets wander over and lean on her, and she warms up when
 they do.
 
-> **Build state:** the collection update is complete — species, genomes, per-pet
-> layers, the Matron and her panels, the wild-pet loop and Mudgin maturity.
-> See [DEVLOG.md](DEVLOG.md).
+> **Build state:** the collection update and the language update are both
+> complete — they speak Chinese (HSK 1), hold conversations, carry Chinese
+> names, and the Matron keeps a dictionary. See [DEVLOG.md](DEVLOG.md).
 
 ## Running
 

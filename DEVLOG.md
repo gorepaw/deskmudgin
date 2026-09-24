@@ -5,21 +5,35 @@ Working notes for whoever picks this up next. The user-facing docs are in
 [docs/plan-language-update.md](docs/plan-language-update.md); the Collection
 Update's plan predates source control and survives only as this log.
 
-**Status: Collection Update, all four phases complete and verified.**
+**Status: Collection Update and Language Update both complete and verified.**
+Source: [github.com/gorepaw/deskmudgin](https://github.com/gorepaw/deskmudgin).
 
 ---
 
 ## Where things stand
 
-| Phase | State |
+| Work | State |
 | --- | --- |
-| 1 — layers, species, genome, Sephin | **done, verified on the real desktop** |
-| 2 — Matron, panel system, manager, ledger, cuddle | **done, verified on the real desktop** |
-| 3 — wild pets, adoption, starter choice | **done, verified on the real desktop** |
-| 4 — mudgin maturity, flower, progress bar | **done, verified on the real desktop** |
+| Collection 1–4 — layers, species, genome, Matron, panels, wild pets, maturity | **done, verified on the real desktop** |
+| Post-plan — throwing, eleven themes, no cap, neighbour index | **done** |
+| Language 0 — verification pipeline (`tools/lang-*`, `content/`) | **done, self-tested** |
+| Language 1 — Chinese speech bubbles, ledger vocabulary | **done, verified live** |
+| Language 2 — two-creature conversations (`converse`) | **done, verified live** |
+| Language 3 — Chinese names for every pet | **done, verified live** |
+| Bubble-duration sliders; the dictionary panel | **done, verified live** |
 
-Everything typechecks (`npm run typecheck`) and builds. ~8,400 lines across 62
-TS files. The approved plan is finished.
+Content, all HSK 1 (2.0), all verified by Claude agents and marked `claude-*`
+in `checks` for a later human pass: 152 words, 302 sentences, 60 conversations,
+118 names, 74 pinyin overrides.
+
+Everything typechecks (`npm run typecheck`) and builds. ~13,000 lines across 86
+TS/MJS files, excluding generated courses. Checks: `npm run lang:selftest`,
+`tools/wild-cycle.mjs`, `tools/neighbors-check.mjs`.
+
+**Open with the user:** I offered to clear the ledger's `said` entries from
+2026-09-24 — 369 lines were "shown" in an hour only because I woke 13 pets and
+made them lonely for a conversation test, which ticked 149/152 words in the
+dictionary. Not done unless they say so.
 
 ---
 
@@ -29,9 +43,10 @@ Understand these and the rest reads itself.
 
 **1. A window is the unit of simulation.** Each window runs its own renderer
 process with its own `Colony` holding only the pets assigned to it. Two windows
-share no state and need none — every cross-pet rule (`ctx.others`: personal
-space, icon claims, nearest-to-cursor) is a within-layer concern, and only the
-underlay can see desktop icons.
+share no state and need none — every cross-pet rule (`ctx.near(x, radius)`:
+personal space, icon claims, nearest-to-cursor, the Matron's shoulder,
+conversation partners) is a within-layer concern, and only the underlay can see
+desktop icons.
 
 This is what makes `stageMode` a **partition function, not a fork**
 (`main/stage/host.ts` → `rosterFor`):
