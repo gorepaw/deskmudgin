@@ -1,0 +1,98 @@
+# Gemini's reply for hsk2.words, chunk 01 — 75 entries.
+#
+# Paste the whole of hsk2.words.01.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_script<tab>fix_reading<tab>fix_english<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+# and copy it back out — that turns the columns into real tabs.
+id	verdict	fix_script	fix_reading	fix_english	note
+h2w001	ok
+h2w002	ok
+h2w003	ok
+h2w004	ok
+h2w005	ok
+h2w006	ok
+h2w007	ok
+h2w008	ok
+h2w009	ok
+h2w010	ok
+h2w011	ok
+h2w012	ok
+h2w013	ok
+h2w014	ok
+h2w015	ok
+h2w016	ok
+h2w017	ok
+h2w018	ok
+h2w019	fix		de		Structural particle 得 (as in 跑得快) is neutral tone: de, not dé — dé/děi are the other readings of this character but don't fit "after a verb" here.
+h2w020	ok
+h2w021	ok
+h2w022	ok
+h2w023	ok
+h2w024	ok
+h2w025	ok
+h2w026	ok
+h2w027	ok
+h2w028	ok
+h2w029	fix		gào su		Standard reading has a neutral tone on the second syllable: gàosu, not gàosù.
+h2w030	ok
+h2w031	ok
+h2w032	ok
+h2w033	ok
+h2w034	ok
+h2w035	fix		guo		As the experiential-aspect particle after a verb (e.g. 去过), 过 is neutral tone: guo, not guò. Contrast with 着 (h2w143 in chunk 2), which the same source already gave correctly as neutral "zhe".
+h2w036	ok
+h2w037	ok
+h2w038	ok
+h2w039	ok
+h2w040	ok
+h2w041	ok
+h2w042	ok
+h2w043	ok
+h2w044	ok
+h2w045	ok
+h2w046	ok
+h2w047	ok
+h2w048	ok
+h2w049	ok
+h2w050	ok
+h2w051	ok
+h2w052	ok
+h2w053	ok
+h2w054	ok
+h2w055	ok
+h2w056	ok
+h2w057	ok
+h2w058	ok
+h2w059	ok
+h2w060	ok
+h2w061	ok
+h2w062	ok
+h2w063	ok
+h2w064	ok
+h2w065	ok
+h2w066	ok
+h2w067	ok
+h2w068	ok
+h2w069	ok
+h2w070	ok
+h2w071	ok
+h2w072	ok
+h2w073	ok
+h2w074	ok
+h2w075	ok
+
+## Missing
+
+Not HSK2 (wrongly leveled) among these 75: none. All 75 checked out as genuine HSK2 (2012) additions — none duplicate an HSK1 word (I checked each against the official HSK1 150-word list) and none looked like they actually belong at HSK3.
+
+HSK2 words that appear to be missing from this batch's alphabetic range (吧–您). These are recalled from the official 2012 list rather than looked up, so treat them as good-faith leads rather than a guaranteed-complete gap list:
+- 公园 gōngyuán — "park"
+- 关 / 关上 guān / guānshang — "to close; to turn off"
+- 还是 háishi — "or; had better"
+- 火车站 huǒchēzhàn — "train station"
+- 见面 jiànmiàn — "to meet up"
+- 今年 jīnnián — "this year"
+- 离开 líkāi — "to leave"

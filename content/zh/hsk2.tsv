@@ -1,0 +1,450 @@
+id	script	reading	english	tags	status	checks	note
+	我想吃面条。		I want to eat noodles.	hungry
+	我想吃鸡蛋。		I want to eat eggs.	hungry
+	我想喝牛奶。		I want to drink milk.	hungry
+	你有西瓜吗？		Do you have any watermelon?	hungry
+	我想吃羊肉。		I want to eat lamb.	hungry
+	我要吃饭！		I want to eat!	hungry
+	我们什么时候吃饭？还要等吗？		When do we eat? Do we still have to wait?	hungry
+	有没有好吃的？		Is there anything tasty?	hungry
+	给我一点儿吃的吧。		Give me a little something to eat.	hungry
+	这儿有鱼吗？		Is there any fish here?	hungry
+	我已经一天没吃东西了。		I haven't eaten anything all day.	hungry
+	快给我吃的！		Quick, give me something to eat!	hungry
+	我可以吃这个吗？		Can I eat this?	hungry,chew
+	还有牛奶吗？		Is there any milk left?	hungry
+	饭准备好了吗？		Is the food ready?	hungry
+	我想吃苹果和西瓜。		I want to eat apples and watermelon.	hungry
+	我最喜欢吃鱼。		I like eating fish the most.	hungry,random
+	我要喝咖啡。		I want coffee.	hungry
+	我等了很长时间了。		I've been waiting a long time.	hungry,lonely
+	中午我们吃面条吧。		Let's have noodles for lunch.	hungry,random
+	您好！		Hello! (polite)	greet
+	欢迎！		Welcome!	greet
+	欢迎你来！		Glad you came!	greet
+	欢迎回来！		Welcome back!	greet
+	早上好！		Good morning!	greet,wake
+	晚上好！		Good evening!	greet
+	你身体好吗？		How is your health?	greet
+	你最近怎么样？		How have you been lately?	greet
+	大家好！		Hello, everyone!	greet
+	你也在这儿！		You're here too!	greet
+	你今天忙吗？		Are you busy today?	greet
+	您贵姓？		What is your surname? (polite)	greet
+	你睡得好吗？		Did you sleep well?	greet,wake
+	你还在吗？		Are you still there?	greet,lonely
+	我到了！		I've arrived!	greet
+	这个真好吃！		This is really tasty!	chew,fed
+	这个没有鱼好吃。		This isn't as tasty as fish.	chew
+	我吃完了！		I've finished eating!	chew
+	我还要吃。		I want to eat more.	chew
+	真好吃！		So tasty!	chew,fed
+	我正在吃东西呢。		I'm eating right now.	chew
+	别看我，我在吃。		Don't look at me, I'm eating.	chew
+	这个比苹果好吃。		This is tastier than apples.	chew
+	我吃了两个。		I ate two.	chew
+	别吃那个！		Don't eat that!	chew,random
+	我累了。		I'm tired.	tired
+	我太累了。		I'm too tired.	tired
+	我想休息一下。		I want to rest for a bit.	tired
+	我要去睡觉了。		I'm going to bed.	tired
+	我已经很累了。		I'm already very tired.	tired
+	我想早点儿睡觉。		I want to go to bed a bit early.	tired
+	让我休息一下吧。		Let me rest for a bit.	tired
+	我今天非常累。		I'm extremely tired today.	tired
+	我不想起床。		I don't want to get up.	tired,wake
+	别说话，我想睡觉。		Don't talk, I want to sleep.	tired
+	我走不动了。		I can't walk any further.	tired
+	我们休息一下吧。		Let's take a break.	tired,random
+	我很快乐！		I'm very happy!	happy
+	今天真好！		Today is really great!	happy
+	我非常高兴！		I'm extremely happy!	happy
+	我最喜欢你了！		I like you the most!	happy,pet
+	你真好！		You're really nice!	happy,fed
+	我觉得很好。		I feel great.	happy
+	我想唱歌！		I want to sing!	happy
+	我们一起跳舞吧！		Let's dance together!	happy
+	你看，我在笑！		Look, I'm smiling!	happy
+	我每天都很快乐。		I'm happy every day.	happy
+	生日快乐！		Happy birthday!	happy,random
+	大家都去哪儿了？		Where did everyone go?	lonely
+	没有人和我玩。		Nobody plays with me.	lonely
+	谁来和我玩？		Who will come and play with me?	lonely
+	我等你很长时间了。		I've been waiting for you for a long time.	lonely
+	你什么时候回来？我等你。		When are you coming back? I'll wait for you.	lonely
+	我一个人，真没意思。		On my own, it's really boring.	lonely
+	你们都很忙吗？		Are you all busy?	lonely
+	我想和大家一起玩。		I want to play with everyone.	lonely
+	我想坐你旁边。		I want to sit next to you.	lonely,pet
+	别这样！		Don't do that!	grabbed,dropped
+	你要做什么？		What are you going to do?	grabbed
+	我们要去哪儿？		Where are we going?	grabbed
+	太高了！		Too high!	grabbed
+	让我下去！		Let me down!	grabbed
+	快让我下来！		Quick, let me down!	grabbed
+	我不要！		I don't want to!	grabbed
+	慢一点儿！		Slow down!	grabbed
+	你为什么这样做？		Why did you do that?	dropped
+	别再这样了！		Don't do that again!	dropped
+	这不对！		That's not right!	dropped
+	你做错了。		You did it wrong.	dropped
+	谢谢您！		Thank you! (polite)	fed
+	真好吃，谢谢！		Really tasty, thanks!	fed
+	我最喜欢吃这个。		This is my favourite thing to eat.	fed
+	我还想吃！		I want more!	fed
+	我吃得很好。		I ate well.	fed
+	你给我的菜很好吃。		The food you gave me is very tasty.	fed
+	再来一次！		Once more!	pet
+	别走！		Don't go!	pet,lonely
+	我最喜欢这样了。		I like this the most.	pet
+	你可以再来一次吗？		Can you do it once more?	pet
+	真好！		That's really nice!	pet
+	你对我真好。		You're really good to me.	pet,fed
+	我要走了。		I'm going to go.	goodbye
+	晚上见！		See you tonight!	goodbye
+	我先走了，再见！		I'll go first, bye!	goodbye
+	慢走！		Take care! (to someone leaving)	goodbye
+	您慢走。		Take care. (polite, to someone leaving)	goodbye
+	明天早上见。		See you tomorrow morning.	goodbye
+	我起床了！		I'm up!	wake
+	现在几点了？我睡了多长时间？		What time is it? How long did I sleep?	wake
+	我还想睡。		I still want to sleep.	wake,tired
+	我睡得很好。		I slept well.	wake
+	已经晚上了吗？		Is it already evening?	wake
+	我睡了十个小时。		I slept for ten hours.	wake
+	今天是晴天。		It's sunny today.	random
+	今天是阴天。		It's overcast today.	random
+	外面下雪了！		It's snowing outside!	random
+	明天可能下雨。		It might rain tomorrow.	random
+	今天比昨天冷。		Today is colder than yesterday.	random
+	今天天气非常好。		The weather is extremely good today.	random
+	下雪了，我们出去玩吧！		It's snowing, let's go out and play!	random
+	我喜欢下雪。		I like it when it snows.	random
+	外面很冷，多穿点儿衣服。		It's cold outside, put on more clothes.	random
+	今天太热了，我想去游泳。		It's too hot today, I want to go swimming.	random
+	明天是晴天吗？		Will it be sunny tomorrow?	random
+	天阴了，可能要下雨。		The sky has clouded over; it might rain.	random
+	我有一个哥哥。		I have an older brother.	random
+	我姐姐是医生。		My older sister is a doctor.	random
+	我弟弟六岁。		My younger brother is six.	random
+	我妹妹很漂亮。		My younger sister is very pretty.	random
+	他是我丈夫。		He is my husband.	random
+	她是我妻子。		She is my wife.	random
+	你有孩子吗？		Do you have children?	random
+	我哥哥比我高。		My older brother is taller than me.	random
+	你有几个姐姐？		How many older sisters do you have?	random
+	我的孩子喜欢踢足球。		My child likes playing football.	random
+	我们几点上课？		What time is our class?	random
+	今天有考试。		There's an exam today.	random
+	这个题我不会。		I can't do this question.	random
+	我不懂这个问题。		I don't understand this question.	random
+	你懂了吗？		Do you understand?	random
+	我懂了！		I get it!	random
+	老师在教室里。		The teacher is in the classroom.	random
+	我要准备考试。		I need to prepare for the exam.	random
+	考试开始了！		The exam has started!	random
+	你考得怎么样？		How did your exam go?	random
+	我可以问你一个问题吗？		Can I ask you a question?	random
+	请回答我的问题。		Please answer my question.	random
+	我学习汉语已经一年了。		I've been studying Chinese for a year now.	random
+	这个字是什么意思？		What does this character mean?	random
+	你说的是什么意思？		What do you mean?	random
+	我不知道。		I don't know.	random
+	你知道吗？		Do you know?	random
+	我知道了！		Got it!	random
+	铅笔在桌子上。		The pencil is on the table.	random
+	我找不到我的铅笔了。		I can't find my pencil.	random
+	这是我第一次来北京。		This is my first time in Beijing.	random
+	我哥哥在公司工作。		My older brother works at a company.	random
+	我要去上班了。		I'm off to work.	random
+	你每天几点上班？		What time do you start work every day?	random
+	他工作很忙。		He's very busy with work.	random
+	我今天不上班。		I'm not working today.	random
+	我喜欢打篮球。		I like playing basketball.	random
+	我们一起去踢足球吧！		Let's go play football together!	random
+	我每天早上跑步。		I run every morning.	random
+	你会游泳吗？		Can you swim?	random
+	我游得很快。		I swim fast.	random
+	运动对身体好。		Exercise is good for your health.	random
+	他跑得非常快。		He runs extremely fast.	random
+	你喜欢什么运动？		What sport do you like?	random
+	我们去唱歌吧！		Let's go singing!	random
+	她跳舞跳得很好。		She dances very well.	random
+	太贵了！		Too expensive!	random
+	这个很便宜。		This is very cheap.	random
+	有没有便宜一点儿的？		Is there a cheaper one?	random
+	我想买一件衣服。		I want to buy a piece of clothing.	random
+	你喜欢什么颜色？		What colour do you like?	random
+	我最喜欢红色。		My favourite colour is red.	random
+	我觉得白的好看。		I think the white one looks nicer.	random
+	他穿着一件黑衣服。		He's wearing black clothes.	random
+	这儿卖西瓜吗？		Do they sell watermelon here?	random
+	商店几点开门？		What time does the shop open?	random
+	这个比那个贵。		This one is more expensive than that one.	random
+	我没有时间。		I don't have time.	random
+	你有时间吗？		Do you have time?	random
+	你的生日是几月几号？		When is your birthday?	random
+	今天是我的生日！		Today is my birthday!	random,happy
+	我去年去了北京。		I went to Beijing last year.	random
+	我已经吃饭了。		I've already eaten.	random,fed
+	他已经走了。		He's already gone.	random
+	我等了一个小时。		I waited for an hour.	random
+	还有十分钟。		There are still ten minutes.	random
+	我们快点儿走吧！		Let's hurry up and go!	random
+	时间到了！		Time's up!	random
+	每天都很忙。		Every day is busy.	random
+	我每天八点起床。		I get up at eight every day.	random
+	晚上我们去看电影吧。		Let's go see a movie tonight.	random
+	我想去旅游。		I want to go travelling.	random
+	机场离这儿远吗？		Is the airport far from here?	random
+	医院离这儿很近。		The hospital is very close to here.	random
+	我们坐公共汽车去吧。		Let's take the bus.	random
+	我们住在宾馆。		We're staying at a hotel.	random
+	你的房间在哪儿？		Where is your room?	random
+	往左边走。		Go to the left.	random
+	往右边走。		Go to the right.	random
+	学校在医院旁边。		The school is next to the hospital.	random
+	商店在右边。		The shop is on the right.	random
+	我从北京来。		I come from Beijing.	random
+	你从哪儿来？		Where do you come from?	random
+	北京离这儿很远。		Beijing is far from here.	random
+	路上车很多。		There are lots of cars on the road.	random
+	飞机票很贵。		Plane tickets are expensive.	random
+	我买到票了！		I got the tickets!	random
+	你去过中国吗？		Have you been to China?	random
+	我去过北京。		I've been to Beijing.	random
+	你的眼睛很漂亮。		Your eyes are very pretty.	random,pet
+	我有一个很大的眼睛。		I have one very big eye.	random
+	猫在门外面。		The cat is outside the door.	random
+	它是我的猫。		It's my cat.	random
+	它叫什么名字？		What's its name?	random
+	你说得对。		You're right.	random
+	我觉得你说得对。		I think you're right.	random
+	我也是！		Me too!	random
+	我也不知道。		I don't know either.	random
+	真的吗？		Really?	random
+	真的！		Really!	random
+	为什么？		Why?	random
+	为什么不呢？		Why not?	random
+	因为我喜欢。		Because I like it.	random
+	因为下雨，所以我没去。		Because it rained, I didn't go.	random
+	虽然很累，但是我很高兴。		Although I'm tired, I'm happy.	random,happy
+	虽然外面很冷，但是我想出去玩。		Although it's cold outside, I want to go out and play.	random
+	你别笑！		Don't laugh!	random
+	他笑了。		He laughed.	random
+	你在笑什么？		What are you laughing at?	random
+	我正在看书。		I'm reading right now.	random
+	他正在打电话。		He's on the phone right now.	random
+	我在找我的手机。		I'm looking for my phone.	random
+	你看见我的手表了吗？		Have you seen my watch?	random
+	我的手机在哪儿？		Where's my phone?	random
+	给我打电话吧。		Give me a call.	random
+	我告诉你一件事情。		Let me tell you something.	random
+	别告诉他！		Don't tell him!	random
+	你能帮助我吗？		Can you help me?	random
+	谢谢你的帮助。		Thank you for your help.	random
+	我来介绍一下。		Let me introduce everyone.	random
+	请进！		Please come in!	random,greet
+	请等一下。		Please wait a moment.	random
+	等等我！		Wait for me!	random
+	我们一起走吧。		Let's go together.	random
+	你走得太快了！		You're walking too fast!	random
+	我不想洗衣服。		I don't want to do the laundry.	random
+	我去洗手。		I'm going to wash my hands.	random
+	他在看报纸。		He's reading the newspaper.	random
+	我喜欢喝咖啡。		I like drinking coffee.	random
+	咖啡太热了。		The coffee is too hot.	random
+	我每天早上喝牛奶。		I drink milk every morning.	random
+	我不吃羊肉。		I don't eat lamb.	random
+	这家饭店的菜很好吃。		The food at this restaurant is very tasty.	random
+	服务员，我们要两杯茶。		Waiter, we'd like two cups of tea.	random
+	我生病了。		I'm sick.	random
+	你要吃药。		You need to take medicine.	random
+	你身体怎么样？		How are you feeling?	random
+	我明天要去医院。		I have to go to the hospital tomorrow.	random
+	多喝水，多休息。		Drink lots of water and get lots of rest.	random
+	门开着。		The door is open.	random
+	请开门！		Please open the door!	random
+	你在外面吗？		Are you outside?	random
+	外面有人。		There's someone outside.	random
+	我们进去吧。		Let's go in.	random
+	你出来！		Come out!	random
+	我不想出去。		I don't want to go out.	random
+	我可以进来吗？		May I come in?	random
+	他出去了。		He's gone out.	random
+	那个人是男的还是女的？		Is that person a man or a woman?	random
+	你姓什么？		What's your surname?	random
+	我有两百块钱。		I have two hundred yuan.	random
+	一千块太贵了！		A thousand yuan is too expensive!	random
+	我是第一！		I'm number one!	random,happy
+	我最高！		I'm the tallest!	random
+	你比我快。		You're faster than me.	random
+	他比我大两岁。		He's two years older than me.	random
+	这个比那个好。		This one is better than that one.	random
+	我没有你高。		I'm not as tall as you.	random
+	这是新的吗？		Is this new?	random
+	我有一个新手机。		I have a new phone.	random
+	我喜欢你的新衣服。		I like your new clothes.	random
+	这本书我看完了。		I've finished reading this book.	random
+	你做完了吗？		Are you done?	random
+	我还没做完。		I haven't finished yet.	random
+	我们开始吧！		Let's begin!	random
+	我们什么时候开始？		When do we start?	random
+	你准备好了吗？		Are you ready?	random
+	我准备好了！		I'm ready!	random
+	我希望明天是晴天。		I hope it's sunny tomorrow.	random
+	我希望你快乐。		I hope you're happy.	random
+	可能吧。		Maybe.	random
+	这样可以吗？		Is this OK?	random
+	不可以！		No, you can't!	random,grabbed
+	我可以坐这儿吗？		May I sit here?	random
+	你要去哪儿？		Where are you going?	random
+	我要这个。		I want this one.	random
+	我什么都不要。		I don't want anything.	random
+	我们一起去吧！		Let's go together!	random
+	我们一起吃饭吧。		Let's eat together.	random
+	我也想去。		I want to go too.	random
+	你也喜欢猫吗？		Do you like cats too?	random
+	他也是学生。		He's a student too.	random
+	就是这个！		This is the one!	random
+	我就在这儿。		I'm right here.	random,lonely
+	我就来！		I'm coming right away!	random
+	他还没来。		He hasn't come yet.	random
+	还有问题吗？		Any more questions?	random
+	我还是学生。		I'm still a student.	random
+	对不起，我错了。		Sorry, I was wrong.	random
+	你错了。		You're wrong.	random
+	没错！		That's right!	random
+	这个对吗？		Is this right?	random
+	你到哪儿了？		Where are you now?	random
+	我们到家了。		We're home.	random
+	我从学校回来了。		I'm back from school.	random
+	你往左边看。		Look to the left.	random
+	左边是我家。		My home is on the left.	random
+	你说话太快了。		You talk too fast.	random
+	请说慢一点儿。		Please speak a bit more slowly.	random
+	别说话！		Don't talk!	random
+	他不想说话。		He doesn't want to talk.	random
+	我没听懂。		I didn't understand what I heard.	random
+	你听懂了吗？		Did you understand?	random
+	我听不懂。		I can't understand.	random
+	我唱得不好。		I don't sing well.	random
+	你唱歌唱得真好！		You sing really well!	random
+	小猫正在睡觉。		The kitten is sleeping.	random
+	狗在外面跑。		The dog is running around outside.	random
+	送你一个苹果。		Here, an apple for you.	random
+	这是我送你的。		This is a gift from me to you.	random
+	谢谢你送我这个。		Thank you for giving me this.	random
+	妈妈不让我出去玩。		Mum won't let me go out to play.	random
+	让我看看！		Let me see!	random
+	让我想想。		Let me think.	random
+	我们玩得很高兴。		We had a great time.	random,happy
+	你想玩什么？		What do you want to play?	random
+	别玩手机了！		Stop playing on your phone!	random
+	你每天几点睡觉？		What time do you go to bed every day?	random
+	我今天起得很早。		I got up very early today.	random
+	你起床了吗？		Are you up?	random,wake
+	快起床！		Get up!	random,wake
+	他还在睡觉。		He's still sleeping.	random
+	今天晚上你做什么？		What are you doing tonight?	random
+	我晚上要学习。		I have to study tonight.	random
+	下午我们去跑步吧。		Let's go running this afternoon.	random
+	每个星期我都去游泳。		I go swimming every week.	random
+	我们学校有很多教室。		Our school has a lot of classrooms.	random
+	我的房间很小。		My room is very small.	random
+	你的房间真大！		Your room is really big!	random
+	我没见过雪。		I've never seen snow.	random
+	雪是白的。		Snow is white.	random
+	西瓜里面是红的。		Watermelon is red inside.	random
+	你的眼睛是什么颜色？		What colour are your eyes?	random
+	他穿着红衣服。		He's wearing red clothes.	random
+	我今天穿什么？		What shall I wear today?	random
+	这件衣服太长了。		This piece of clothing is too long.	random
+	他很高。		He is tall.	random
+	我不高，但是我很快。		I'm not tall, but I'm fast.	random
+	虽然我很小，但是我吃得很多。		Although I'm small, I eat a lot.	random,hungry
+	因为今天下雪，所以我们不去学校。		Because it's snowing today, we're not going to school.	random
+	你为什么不高兴？		Why aren't you happy?	random
+	你为什么在这儿？		Why are you here?	random
+	他为什么还没来？		Why hasn't he come yet?	random
+	你怎么知道？		How do you know?	random
+	我知道你是谁。		I know who you are.	random
+	你知道他在哪儿吗？		Do you know where he is?	random
+	我不知道怎么说。		I don't know how to say it.	random
+	你觉得怎么样？		What do you think?	random
+	我觉得有点儿冷。		I feel a little cold.	random
+	这个问题很好。		That's a good question.	random
+	没问题！		No problem!	random
+	我有一个问题。		I have a question.	random
+	这是什么意思？		What does this mean?	random
+	有意思！		Interesting!	random
+	这本书很有意思。		This book is very interesting.	random
+	那个电影有意思吗？		Is that movie interesting?	random
+	你来一下。		Come here a moment.	random
+	我看一下。		Let me take a look.	random
+	我想一下。		Let me think for a moment.	random
+	我的手表很贵。		My watch is expensive.	random
+	我的手机没电了。		My phone is out of battery.	random
+	这是今天的报纸。		This is today's newspaper.	random
+	我在机场等你。		I'll wait for you at the airport.	random
+	飞机几点到？		What time does the plane arrive?	random
+	我坐飞机去旅游。		I'm flying off on a trip.	random
+	你住在几号房间？		Which room are you staying in?	random
+	他坐公共汽车上班。		He takes the bus to work.	random
+	公共汽车来了！		The bus is here!	random
+	公司离我家很远。		The company is far from my home.	random
+	走路去要多长时间？		How long does it take to walk there?	random
+	学校离我家不远。		The school isn't far from my home.	random
+	我们走路去吧。		Let's walk there.	random
+	我家旁边有个商店。		There's a shop next to my home.	random
+	你坐我旁边吧。		Sit next to me.	random,lonely
+	她是我们的新同学。		She's our new classmate.	random
+	大家都来了吗？		Is everyone here?	random
+	大家一起唱吧！		Everyone, sing together!	random
+	我给你打电话。		I'll call you.	random
+	我给你买了一个西瓜。		I bought you a watermelon.	random
+	这是给你的。		This is for you.	random
+	我们去外面吃饭吧。		Let's eat out.	random
+	你想吃米饭还是面条？		Do you want rice or noodles?	random
+	鸡蛋很便宜。		Eggs are cheap.	random
+	茶比咖啡好喝。		Tea tastes better than coffee.	random
+	西瓜是我最喜欢的水果。		Watermelon is my favourite fruit.	random
+	你吃过羊肉吗？		Have you ever eaten lamb?	random
+	我没去过北京。		I've never been to Beijing.	random
+	今天是几月几日？		What's the date today?	random
+	一年有三百六十五天。		A year has three hundred and sixty-five days.	random
+	我有一千个问题！		I have a thousand questions!	random
+	我们两个人一起去。		The two of us will go together.	random
+	那个男人是谁？		Who is that man?	random
+	您请坐。		Please have a seat.	random,greet
+	您想喝什么？		What would you like to drink?	random
+	它在哪儿？		Where is it?	random
+	我喜欢它。		I like it.	random
+	别看！		Don't look!	random
+	你真的要走吗？		Are you really leaving?	random,lonely
+	我真的不知道。		I really don't know.	random
+	这个真大！		This is really big!	random
+	你真高！		You're really tall!	random
+	今天真冷！		It's really cold today!	random
+	你是我最好的朋友。		You're my best friend.	random,pet
+	我最不喜欢考试。		I like exams least of all.	random
+	我准备了很多吃的。		I've prepared lots of food.	random
+	我希望能去中国。		I hope I can go to China.	random
+	他可能不来了。		He might not come.	random
+	我可能错了。		I might be wrong.	random
+	我已经知道了。		I already know.	random
+	已经十点了！		It's already ten o'clock!	random
+	你在等谁？		Who are you waiting for?	random
+	你等我一下。		Wait for me a moment.	random
+	他在找你。		He's looking for you.	random
+	我找到了！		I found it!	random
+	你找什么？		What are you looking for?	random
+	这儿的东西都很便宜。		Everything here is cheap.	random
+	西瓜怎么卖？		How much is the watermelon?	random
+	这个卖完了。		This is sold out.	random
+	你会打篮球吗？		Can you play basketball?	random
+	我不会跳舞。		I can't dance.	random
+	我身体很好。		I'm in good health.	random
+	你要多运动。		You should exercise more.	random
+	跑步很累。		Running is tiring.	random
+	游泳很有意思。		Swimming is fun.	random

@@ -9,7 +9,9 @@
 
 import type { Painter } from '../engine/painter'
 import type { Box } from '../engine/stage'
-import { PAL } from '../art/palette'
+import { UI } from './theme'
+import * as chrome from './chrome'
+import type { Trace } from './chrome'
 import { clamp } from '../engine/math'
 import { dwellSeconds, isEntry, type Entry, type Utterance } from '../../shared/lang/types'
 import { LANGUAGES } from '../../shared/lang'
@@ -29,6 +31,10 @@ const READING = 12
 const READING_FONT = '"Segoe UI", "Microsoft YaHei", sans-serif'
 const GLOSS = 10
 const GAP = 3
+/** Half the tail's width at its base, and how far it reaches below. */
+const TAIL = 5
+const TAIL_H = 6
+const MIN_W = 2 * (10 + TAIL + 2) + 4
 /** Wider than a grunt's cap: a sentence and its pinyin need the room, and
  *  wrapping three parallel lines would break the line-for-line correspondence
  *  that makes them readable together. */
@@ -65,6 +71,22 @@ export const talkSeconds = (e: Entry): number => dwellSeconds(e) * talkScale
  */
 export function speechSeconds(u: Utterance, requested = 2): number {
   return Math.max(requested, isEntry(u) ? dwellSeconds(u) : 0) * scale
+}
+
+/**
+ * A rounded box with the tail folded into its bottom edge at `tx`, as one path.
+ * `arcTo` with a radius of 0 is a square corner, so square themes need no
+ * second shape.
+ */
+function outline(g: Painter, x: number, y: number, w: number, h: number, r: number, tx: number): void {
+  const b = y + h
+  g.moveTo(x + r, y)
+    .arcTo(x + w, y, x + w, b, r)
+    .arcTo(x + w, b, x, b, r)
+    .lineTo(tx + TAIL, b).lineTo(tx, b + TAIL_H).lineTo(tx - TAIL, b)
+    .arcTo(x, b, x, y, r)
+    .arcTo(x, y, x + w, y, r)
+    .close()
 }
 
 /** Where the bubble sits, relative to the anchor at his head. */
@@ -116,8 +138,11 @@ export class Speech {
       u.english.length * 6.5) + PAD * 2 + 4)
   }
 
-  private layout(ax: number, ay: number, worldW: number, w: number): Layout {
+  private layout(ax: number, ay: number, worldW: number, measured: number): Layout {
     const h = this.height
+    // Never narrower than two rounded corners with the tail between them, or a
+    // one-character grunt has nowhere flat to hang its tail from.
+    const w = Math.max(measured, MIN_W)
     const x = clamp(ax - w / 2, 4, Math.max(4, worldW - w - 4))
     return { w, h, x, y: ay - h - 10 }
   }
@@ -150,26 +175,36 @@ export class Speech {
     // pops. `max` guards against a bubble shorter than its own fades.
     const a = Math.min(clamp((this.max - this.life) / 0.12), clamp(this.life / 0.3))
 
-    g.roundRect(x, y, w, h, 6).fill({ color: PAL.bubbleFill, alpha: 0.9 * a })
-    g.roundRect(x, y, w, h, 6).stroke({ width: 1, color: PAL.bubbleEdge, alpha: 0.9 * a })
-    // Tail, clamped to stay attached when the bubble slid away from him.
-    const tx = clamp(ax, x + 10, x + w - 10)
-    g.poly([tx - 5, y + h - 1, tx + 5, y + h - 1, tx, y + h + 6])
-      .fill({ color: PAL.bubbleFill, alpha: 0.9 * a })
+    // Drawn through the theme's own chrome, so a bubble belongs to the same
+    // interface as the menus: an XP bubble has the blue caption band, an Aqua
+    // one its stripes and sheen, an amber one its scanlines. One outline runs
+    // round the tail as well, so the border is continuous instead of a rounded
+    // box with a triangle pressed against it.
+    const r = Math.min(UI.radius, 10, h / 2)
+    // The tail stays on the flat part of the bottom edge, clear of the corners,
+    // even when the bubble has slid sideways away from him at a screen edge.
+    const tx = clamp(ax, x + r + TAIL + 2, x + w - r - TAIL - 2)
+    const trace: Trace = p => outline(p, x, y, w, h, r, tx)
+    const area = { x, y, w, h: h + TAIL_H }
+    chrome.body(g, trace, area, a)
+    chrome.band(g, trace, area, 3, a)
+    chrome.sheen(g, trace, { x, y, w, h }, a)
+    chrome.edge(g, trace, a)
 
     const cx = x + w / 2
     if (!isEntry(u)) {
-      g.text(u, cx, y + h / 2, { size: GRUNT, color: PAL.text, alpha: a })
+      g.text(u, cx, y + h / 2, { size: GRUNT, color: UI.text, alpha: a })
     } else {
       let ly = y + PAD + SCRIPT / 2 + 1
-      g.text(u.script, cx, ly, { size: SCRIPT, color: PAL.text, alpha: a, font: script })
+      g.text(u.script, cx, ly, { size: SCRIPT, color: UI.text, alpha: a, font: script })
       ly += SCRIPT / 2 + GAP
       if (u.reading) {
-        g.text(u.reading, cx, ly + READING / 2, { size: READING, color: PAL.reading, alpha: a, font: READING_FONT })
+        g.text(u.reading, cx, ly + READING / 2, { size: READING, color: UI.accent, alpha: a, font: READING_FONT })
         ly += READING + GAP
       }
-      g.text(u.english, cx, ly + GLOSS / 2, { size: GLOSS, color: PAL.gloss, alpha: 0.85 * a })
+      g.text(u.english, cx, ly + GLOSS / 2, { size: GLOSS, color: UI.dim, alpha: a })
     }
+    chrome.glass(g, trace, area, a)
     return { x: x - 2, y: y - 2, width: w + 4, height: h + 12 }
   }
 }

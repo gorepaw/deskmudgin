@@ -17,7 +17,7 @@
 
 import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'node:fs'
 import { readTsv } from './lang/tsv.mjs'
-import { derive, allowedChars, loadOverrides, validate } from './lang/zh.mjs'
+import { derive, allowedChars, loadOverrides, validate, wordsPath, LEVELS } from './lang/zh.mjs'
 
 const [corpusPath, ...flags] = process.argv.slice(2)
 if (!corpusPath) {
@@ -39,17 +39,23 @@ const outPath = `src/shared/lang/generated/${course}.ts`
 
 const rows = readTsv(corpusPath)
 const overrideCount = loadOverrides()
+if (kind !== 'names' && !LEVELS.includes(level)) {
+  console.error(`unknown level "${level}" — pass --level, one of ${LEVELS.join(' ')}`)
+  process.exit(2)
+}
 // Names are not held to the course vocabulary: a name is a name, glossed, and a
 // learner meets 珍珠 as what it is called rather than as a word to use.
-const chars = kind === 'words' || kind === 'names' ? null : allowedChars()
+const chars = kind === 'words' || kind === 'names' ? null : allowedChars(level)
 
 // The wordlist gates everything built on top of it, so an empty one is a
 // sequencing mistake rather than a content mistake, and it gets its own message
 // — "「爱」is not in the wordlist" is true but sends you looking in the wrong file.
-if (chars && chars.size === 0) {
+// A course with nothing verified in it has nothing to check, and is written out
+// empty — that is how a level exists in the app before its content does.
+if (chars && chars.size === 0 && rows.some(r => r.status === 'verified')) {
   console.error(`refusing to build ${course}: the wordlist has no verified rows yet.`)
   console.error('  A phrase course is validated against its course vocabulary, so')
-  console.error('  content/zh/hsk1.words.tsv has to go through the loop first.')
+  console.error(`  ${wordsPath(level)} has to go through the loop first.`)
   process.exit(1)
 }
 

@@ -1,0 +1,85 @@
+# Google Translate's English for hsk2.words, chunk 01 — 75 entries.
+#
+# 1. Open hsk2.words.01.gt.txt and copy all of it.
+# 2. Paste into Google Translate, Chinese → English.
+# 3. Copy the English side and paste it below, replacing nothing above.
+#
+# One line per entry, in the order sent, and nothing else. Lines starting
+# with # are ignored. The join is line position, so a different number of
+# lines is refused rather than guessed at — if that happens, paste again
+# rather than trying to patch it up by hand.
+(particle: suggestion)
+white
+hundred
+help
+newspaper
+compare; than
+don't
+hotel
+long
+sing a song
+go out; exit
+wear; put on
+time; occurrence (measure word)
+from
+wrong
+play basketball
+everyone
+arrive; to
+(particle: degree complement)
+wait
+younger brother
+first
+understand
+correct; toward
+room
+very
+waiter; attendant
+tall; high
+tell
+older brother
+give
+bus
+company
+expensive
+(particle: past experience)
+still; also
+child
+delicious
+black
+red
+welcome
+answer
+airport
+egg
+(measure word: item, piece)
+classroom
+older sister
+introduce
+enter
+near
+then; right away
+feel; think
+coffee
+begin; start
+exam; test
+maybe; possible
+can; may
+class; lesson
+fast; quick
+happy
+tired
+from (distance)
+two
+zero
+road
+travel
+sell
+slow
+busy
+every
+younger sister
+door
+noodles
+male
+you (polite)

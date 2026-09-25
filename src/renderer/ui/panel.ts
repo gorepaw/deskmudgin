@@ -27,6 +27,8 @@ import { box, union, type Box } from '../engine/stage'
 // the next frame — see ui/theme.ts.
 export { UI, THEMES, applyTheme, DEFAULT_THEME, themeById } from './theme'
 import { UI } from './theme'
+import * as chrome from './chrome'
+import type { Trace } from './chrome'
 
 export const PAD = 12
 export const HEADER = 26
@@ -231,15 +233,11 @@ export abstract class Panel {
     const rad = UI.radius
     g.save().translate(this.x, this.y)
 
-    // Body. Two strokes: a dark one to separate the panel from a light
-    // wallpaper, and the accent inside it. On a bright desktop a single accent
-    // outline reads as a smudge.
-    g.roundRect(0, 0, this.w, this.h, rad).fill({ color: UI.fill, alpha: UI.bodyAlpha })
-    if (UI.pinstripe) this.pinstripes(g, rad)
-    g.roundRect(0.5, 0.5, this.w - 1, this.h - 1, rad)
-      .stroke({ width: 2, color: 0x000000, alpha: 0.5 })
-    g.roundRect(0.5, 0.5, this.w - 1, this.h - 1, rad)
-      .stroke({ width: UI.border, color: UI.accent, alpha: UI.titleBar ? 0.9 : 0.55 })
+    // Body and border, through the same chrome a speech bubble uses.
+    const area = { x: 0, y: 0, w: this.w, h: this.h }
+    const outer: Trace = p => p.roundRect(0, 0, this.w, this.h, rad)
+    chrome.body(g, outer, area)
+    chrome.edge(g, p => p.roundRect(0.5, 0.5, this.w - 1, this.h - 1, rad))
 
     // Header. The whole bar is the drag handle, in every theme.
     this.hits.add('panel:header', 0, 0, this.w - HEADER, HEADER)
@@ -280,36 +278,9 @@ export abstract class Panel {
     this.body(g, now, top)
     // Over the content, because a tube's lines are on the glass rather than in
     // the picture.
-    if (UI.scanlines) this.scanlines(g, rad)
+    chrome.glass(g, outer, area)
     g.restore()
     this.hits.end()
-  }
-
-  /** Aqua's brushed stripes: a hairline every four pixels, barely there. Any
-   *  stronger and text sitting on them becomes hard to read. */
-  private pinstripes(g: Painter, rad: number): void {
-    g.save()
-    g.ctx.beginPath()
-    g.ctx.roundRect(0, 0, this.w, this.h, rad)
-    g.ctx.clip()
-    for (let y = 2; y < this.h; y += 4) {
-      g.moveTo(0, y + 0.5).lineTo(this.w, y + 0.5)
-        .stroke({ width: 1, color: 0x000000, alpha: 0.045 })
-    }
-    g.restore()
-  }
-
-  /** A phosphor tube, seen close up. Every third row, dark, and drawn last. */
-  private scanlines(g: Painter, rad: number): void {
-    g.save()
-    g.ctx.beginPath()
-    g.ctx.roundRect(0, 0, this.w, this.h, rad)
-    g.ctx.clip()
-    for (let y = 0; y < this.h; y += 3) {
-      g.moveTo(0, y + 0.5).lineTo(this.w, y + 0.5)
-        .stroke({ width: 1, color: 0x000000, alpha: 0.3 })
-    }
-    g.restore()
   }
 
   /** Panel contents. `top` is the first free y below the header and subtitle. */

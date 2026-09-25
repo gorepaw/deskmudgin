@@ -96,6 +96,14 @@ same colony the underlay is already animating and you would see everyone twice.
 
 ## Verification tooling (use it, it earns its keep)
 
+**Look at sheets offscreen: `npm run build:web && npm run snap -- <sheet> <out.png>`.**
+It renders into a hidden offscreen window, writes a PNG and exits on its own,
+with a 20s hard timeout behind it. It has no single-instance lock and saves
+nothing, so it runs beside a live colony. Do not launch the visible
+`DESKMUDGIN_CONTACT` sheets on someone's desktop: one was once left full-screen
+and always-on-top when a session ended, and the only way out was a reboot.
+`themes` draws every bubble in every theme, on a dark and a light wallpaper.
+
 **`DESKMUDGIN_CONTACT=1`** — the overlay window draws a grid of freshly rolled
 genomes with their trait names on an opaque backdrop
 (`renderer/debug/contact.ts`). Add `?seed=N` to re-roll the population.

@@ -1,0 +1,85 @@
+# Google Translate's English for hsk2.words, chunk 02 — 75 entries.
+#
+# 1. Open hsk2.words.02.gt.txt and copy all of it.
+# 2. Paste into Google Translate, Chinese → English.
+# 3. Copy the English side and paste it below, replacing nothing above.
+#
+# One line per entry, in the order sent, and nothing else. Lines starting
+# with # are ignored. The join is line position, so a different number of
+# lines is refused rather than guessed at — if that happens, paste again
+# rather than trying to patch it up by hand.
+milk
+female; woman
+beside; next to
+run; jog
+cheap
+ticket
+wife
+get up (from bed)
+thousand
+pencil
+sunny; clear (weather)
+last year
+let; make
+day; sun
+go to work
+body; health
+fall ill
+birthday
+time
+matter; thing
+wristwatch
+mobile phone
+speak; talk
+give (as a gift); send; see off
+(grammar pattern: although...but)
+it
+play soccer
+question; problem (in a test)
+dance
+outside
+finish
+play
+evening; night
+toward
+why
+ask
+question; problem
+watermelon
+hope
+wash
+hour
+laugh; smile
+new
+surname
+rest
+snow
+color
+eye
+mutton; lamb meat
+medicine
+want; need; will
+also; too
+together
+(particle: briefly, a bit)
+already
+meaning
+(grammar pattern: because...so)
+overcast; cloudy
+swim
+right side
+fish
+far
+exercise; sports
+again
+morning
+husband
+look for
+(particle: ongoing action)
+real; really
+(adverb: currently, in the process of)
+know
+prepare
+walk; leave
+most
+left side

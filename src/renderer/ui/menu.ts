@@ -12,6 +12,7 @@ import { Panel, PAD, ROW_H, UI, THEMES, themeById } from './panel'
 import { ManagerPanel } from './manager'
 import { LedgerPanel } from './ledger'
 import { DictionaryPanel } from './dictionary'
+import { ZH_LEVELS, isReady, levelById } from '../../shared/lang/levels'
 
 const BTN_H = 32
 const GAP = 7
@@ -89,7 +90,7 @@ export class SettingsPanel extends Panel {
   private fore = 0
   private back = 0
 
-  constructor() { super(320, 752) }
+  constructor() { super(320, 782) }
 
   override async mount(): Promise<void> {
     const colony = await this.host.bridge.invoke('colony:get')
@@ -166,9 +167,21 @@ export class SettingsPanel extends Panel {
 
     this.rule(g, y, this.w, 'they speak')
     y += 12
+    const level = levelById(cfg.level)
     this.option(g, 'lang:zh', PAD, y, w, '中文 — Chinese, with pinyin', cfg.language === 'zh',
-      { note: 'HSK 1' })
+      { note: level.label })
     y += ROW_H
+    // The level, as a row of buttons under the Chinese option it belongs to.
+    // A level whose sentences are not verified yet is shown but not offered:
+    // choosing it would only fall back to the one below.
+    g.text('level', PAD + 26, y + 11, { size: 10, color: UI.dim, align: 'left' })
+    const bw = 58
+    ZH_LEVELS.forEach((l, i) => {
+      const ready = isReady(l)
+      this.button(g, `level:${l.id}`, PAD + 70 + i * (bw + 6), y, bw, 22, l.label,
+        { primary: l === level, disabled: !ready || cfg.language !== 'zh', size: 11 })
+    })
+    y += 30
     this.option(g, 'lang:en', PAD, y, w, 'Grunts, in English', cfg.language === 'en')
     y += ROW_H + 8
     const speech = this.drafts.get('speech') ?? cfg.speechScale
@@ -312,6 +325,10 @@ export class SettingsPanel extends Panel {
         break
       default:
         if (id?.startsWith('theme:')) void b.invoke('settings:patch', { theme: id.slice(6) })
+        else if (id?.startsWith('level:')) void b.invoke('settings:patch', { level: id.slice(6) })
+        else if (id?.startsWith('disabled:level:')) {
+          this.flash(this.host.settings().language === 'zh' ? 'not verified yet' : 'for the Chinese setting')
+        }
     }
   }
 }

@@ -22,7 +22,7 @@ import type { Invoke, InvokeChannel, Push, PushChannel, UiRequest } from '../sha
 import { describe, describeFlower } from '../shared/describe'
 import { ageOf } from '../shared/maturity'
 import { record, recordHeard, type LedgerEntry } from '../shared/ledger'
-import { COURSE as ZH_HSK1 } from '../shared/lang/generated/zh-hsk1'
+import { everyLine } from '../shared/lang/levels'
 import { setTimeScale, FAST_SCALE } from '../shared/clock'
 import { StageHost, type StageWindow } from './stage/host'
 import { WildWatch } from './wild'
@@ -72,14 +72,14 @@ let settings: Settings = { ...loadSettings() }
 let colony: PetSave[] = loadColony()
 /** Every trait name ever encountered. Grows only — see shared/ledger.ts. */
 let ledger: LedgerEntry[] = loadLedger()
-// Re-read the wording of every line already heard from the current course.
+// Re-read the wording of every line already heard, from every level.
 // A line can be corrected after it was filed — p255 lost a wrong "Let's" — and
 // the renderer never re-reports a line it has filed, so without this the
 // ledger would teach the old gloss forever. `recordHeard` keeps first-heard
 // dates, and nothing is ever removed.
 {
   const heardIds = new Set(ledger.filter(e => e.category === 'said').map(e => e.key.slice(5)))
-  const fresh = ZH_HSK1.entries.filter(e => heardIds.has(e.id))
+  const fresh = everyLine().filter(e => heardIds.has(e.id))
     .map(e => ({ id: e.id, script: e.script, reading: e.reading, english: e.english }))
   const next = recordHeard(ledger, fresh, Date.now())
   if (next) { ledger = next; saveLedger(ledger) }

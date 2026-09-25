@@ -17,11 +17,28 @@
 // the same verification as everything else rather than being a hand-edit.
 // =============================================================================
 
+import { basename } from 'node:path'
 import { pinyin, customPinyin } from 'pinyin-pro'
 import { readTsv } from './tsv.mjs'
 
 export const OVERRIDES_PATH = 'content/zh/overrides.tsv'
-export const WORDS_PATH = 'content/zh/hsk1.words.tsv'
+
+/**
+ * The levels, lowest first. HSK is cumulative — an HSK 2 sentence may use every
+ * HSK 1 word — so a level's vocabulary is its own wordlist plus every one below.
+ */
+export const LEVELS = ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5', 'hsk6']
+export const wordsPath = level => `content/zh/${level}.words.tsv`
+
+/**
+ * Which level a corpus belongs to, from its file name: `hsk2.tsv`,
+ * `hsk2.words.tsv` and `hsk2.exchanges.tsv` are all HSK 2. The name is already
+ * how the corpus files are told apart, so this adds no second thing to keep in
+ * step; a file that names no level (names.tsv) is held to none.
+ */
+export function levelOf(corpusPath) {
+  return basename(corpusPath).match(/^(hsk\d)\./)?.[1] ?? null
+}
 
 /** Punctuation a phrase may contain besides Han characters. Full-width, because
  *  half-width commas in Chinese text are a tell that it was written by someone
@@ -88,11 +105,24 @@ function tidy(script, raw) {
   return s
 }
 
-/** The characters this course is allowed to use, from the verified wordlist. */
-export function allowedChars() {
-  const words = readTsv(WORDS_PATH).filter(r => r.status === 'verified')
+/**
+ * The characters a level's courses may use: every verified word at that level
+ * and below. A level whose own wordlist has nothing verified yet returns an
+ * empty set rather than the levels beneath it — otherwise HSK 2 phrases would
+ * be checked against HSK 1 alone and refused for words that are simply not
+ * verified yet, which blames the content for a sequencing mistake.
+ */
+export function allowedChars(level = 'hsk1') {
+  const top = LEVELS.indexOf(level)
+  if (top < 0) throw new Error(`unknown level "${level}"`)
+  const own = readTsv(wordsPath(level)).filter(r => r.status === 'verified')
+  if (!own.length) return new Set()
   const set = new Set()
-  for (const w of words) for (const ch of w.script) set.add(ch)
+  for (const lv of LEVELS.slice(0, top + 1)) {
+    for (const w of readTsv(wordsPath(lv)).filter(r => r.status === 'verified')) {
+      for (const ch of w.script) set.add(ch)
+    }
+  }
   return set
 }
 

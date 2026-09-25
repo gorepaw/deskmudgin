@@ -1,0 +1,107 @@
+# Gemini's reply for hsk2.words, chunk 02 — 75 entries.
+#
+# Paste the whole of hsk2.words.02.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_script<tab>fix_reading<tab>fix_english<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+# and copy it back out — that turns the columns into real tabs.
+id	verdict	fix_script	fix_reading	fix_english	note
+h2w076	ok
+h2w077	ok
+h2w078	ok
+h2w079	ok
+h2w080	ok
+h2w081	ok
+h2w082	fix		qī zi		子 here is the neutral-tone suffix: qīzi, not qī zǐ. "zǐ" (3rd tone) is simply the wrong syllable, not just the wrong tone mark.
+h2w083	ok
+h2w084	ok
+h2w085	ok
+h2w086	ok
+h2w087	ok
+h2w088	ok
+h2w089	ok
+h2w090	ok
+h2w091	ok
+h2w092	ok
+h2w093	ok
+h2w094	ok
+h2w095	fix		shì qing		Standard reading has a neutral tone on the second syllable: shìqing, not shìqíng.
+h2w096	ok
+h2w097	ok
+h2w098	ok
+h2w099	ok
+h2w100	ok
+h2w101	ok
+h2w102	ok
+h2w103	ok
+h2w104	ok
+h2w105	ok
+h2w106	ok
+h2w107	ok
+h2w108	fix		wǎn shang		Standard reading has a neutral tone on 上: wǎnshang, not wǎnshàng — same neutral-tone pattern as 谢谢.
+h2w109	ok
+h2w110	ok
+h2w111	ok
+h2w112	ok
+h2w113	ok
+h2w114	ok
+h2w115	ok
+h2w116	ok
+h2w117	ok
+h2w118	ok
+h2w119	ok
+h2w120	ok
+h2w121	ok
+h2w122	ok
+h2w123	fix		yǎn jing		Standard reading has a neutral tone on the second syllable: yǎnjing, not yǎnjīng.
+h2w124	ok
+h2w125	ok
+h2w126	ok
+h2w127	ok
+h2w128	ok
+h2w129	ok
+h2w130	ok
+h2w131	fix		yì si		Standard reading has a neutral tone on the second syllable: yìsi, not yìsī — a classic neutral-tone miss, same pattern as 谢谢.
+h2w132	ok
+h2w133	ok
+h2w134	ok
+h2w135	fix		yòu bian		Standard reading has a neutral tone on 边: yòubian, not yòubiān.
+h2w136	ok
+h2w137	ok
+h2w138	ok
+h2w139	ok
+h2w140	fix		zǎo shang		Standard reading has a neutral tone on 上: zǎoshang, not zǎoshàng — same pattern as 晚上 (h2w108).
+h2w141	ok
+h2w142	ok
+h2w143	ok
+h2w144	ok
+h2w145	ok
+h2w146	ok
+h2w147	ok
+h2w148	ok
+h2w149	ok
+h2w150	fix		zuǒ bian		Standard reading has a neutral tone on 边: zuǒbian, not zuǒbiān. (I left 旁边 as pángbiān, full tone — that one does not take the neutral-边 pattern in standard dictionaries.)
+
+## Missing
+
+Not HSK2 (wrongly leveled) among these 75: none. All 75 checked out as genuine HSK2 (2012) additions — none duplicate an HSK1 word (checked against the official HSK1 150-word list) and none looked like they actually belong at HSK3.
+
+HSK2 words that appear to be missing from this batch's alphabetic range (牛奶–左边). These are recalled from the official 2012 list rather than looked up, so treat them as good-faith leads rather than a guaranteed-complete gap list:
+- 骑自行车 qí zìxíngchē — "to ride a bicycle"
+- 然后 ránhòu — "then; afterwards"
+- 上课 shàngkè — "to attend class"
+- 生气 shēngqì — "to get angry"
+- 忘记 wàngjì — "to forget"
+- 一样 yíyàng — "same; alike"
+- 一直 yìzhí — "always; continuously"
+- 以后 yǐhòu — "afterwards"
+- 以前 yǐqián — "before; previously"
+- 应该 yīnggāi — "should"
+- 又 yòu — "again; also"
+- 中间 zhōngjiān — "middle"
+- 周末 zhōumò — "weekend"
+- 自己 zìjǐ — "oneself"
+- 最后 zuìhòu — "finally; last"
+- 作业 zuòyè — "homework"

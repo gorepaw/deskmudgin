@@ -22,7 +22,7 @@ import { Colony } from './pet/colony'
 import type { Creature } from './pet/creature'
 import { Fx } from './art/fx'
 import { sfx, setVolume } from './audio/sfx'
-import { say, setLanguage } from './pet/lines'
+import { say, setLanguage, setLevel } from './pet/lines'
 import { DictionaryPanel, type Tab } from './ui/dictionary'
 import { setOnShown, setSpeechScale } from './ui/speech'
 import type { HeardLine } from '../shared/ledger'
@@ -68,6 +68,7 @@ async function boot(): Promise<void> {
   // this only has to happen once here and again on every settings change.
   applyTheme(cfg.theme)
   setLanguage(cfg.language)
+  setLevel(cfg.level)
   setSpeechScale(cfg.speechScale, cfg.talkScale)
   // Before anything constructs a behaviour: the scale is read at the moment a
   // wait is rolled, and the first rolls happen on the first tick.
@@ -433,6 +434,7 @@ async function boot(): Promise<void> {
     setVolume(cfg.volume)
     colony.setScale(cfg.scale)
     setLanguage(cfg.language)
+    setLevel(cfg.level)
     setSpeechScale(cfg.speechScale, cfg.talkScale)
     if (cfg.theme !== wasTheme) {
       applyTheme(cfg.theme)
@@ -685,10 +687,12 @@ async function contactSheet(): Promise<void> {
   // one Mudgin per row, aged across the columns.
   const growth = bridge.isContact === 'growth'
   // DESKMUDGIN_CONTACT=speech draws every verified course line as a bubble.
-  const { SpeechSheet } = await import('./debug/speechsheet')
+  // DESKMUDGIN_CONTACT=themes draws the same bubbles in every theme.
+  const { SpeechSheet, ThemeSheet } = await import('./debug/speechsheet')
   const page = params.get('page')
   const build = () => bridge.isContact === 'speech'
     ? new SpeechSheet(window.innerWidth, window.innerHeight, page === null ? null : Number(page))
+    : bridge.isContact === 'themes' ? new ThemeSheet(window.innerWidth, window.innerHeight)
     : new ContactSheet(window.innerWidth, window.innerHeight, seed, growth)
   let sheet = build()
   window.addEventListener('resize', () => { stage.resize(); sheet = build() })

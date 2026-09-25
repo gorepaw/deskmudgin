@@ -100,6 +100,25 @@ export class Painter {
   quadTo(cx: number, cy: number, x: number, y: number): this {
     this.begin(); this.ctx.quadraticCurveTo(cx, cy, x, y); return this
   }
+  /** A rounded corner toward (x1,y1) ending along the line to (x2,y2). For
+   *  outlines that are not a plain rounded rect — a speech bubble with its
+   *  tail — so the border can run round the whole shape in one path. */
+  arcTo(x1: number, y1: number, x2: number, y2: number, r: number): this {
+    this.begin(); this.ctx.arcTo(x1, y1, x2, y2, Math.max(0, r)); return this
+  }
+  close(): this { if (this.open) this.ctx.closePath(); return this }
+
+  /**
+   * Clip to the open path, consuming it like a fill would. Must sit inside a
+   * save()/restore() pair — a clip is part of the saved state, and outside one
+   * it would outlive the shape that set it.
+   */
+  clip(): this {
+    if (!this.open) return this
+    this.ctx.clip()
+    this.open = false
+    return this
+  }
 
   // ── Consumers ──────────────────────────────────────────────────────────────
   fill(paint: Paint): this {

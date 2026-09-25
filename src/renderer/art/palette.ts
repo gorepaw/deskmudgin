@@ -17,14 +17,6 @@ export const PAL = {
   zzz: 0x9fb8d8,
   heart: 0xff6fd0,
   spark: 0xc8a951,      // galanova gold
-
-  bubbleFill: 0x14142a,
-  bubbleEdge: 0x3a3a5e,
-  text: 0xc8c8d8,
-  /** Pinyin under the characters: readable, but a step behind them. */
-  reading: 0xa9b6d6,
-  /** The English gloss: the quietest line in the bubble. */
-  gloss: 0x8f8fa8,
 } as const
 
 /** Mood tints the hide slightly: sulking goes grey, delighted goes warm. */

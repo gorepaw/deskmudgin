@@ -22,6 +22,7 @@
 import { writeFileSync, mkdirSync, existsSync } from 'node:fs'
 import { basename } from 'node:path'
 import { readTsv } from './lang/tsv.mjs'
+import { levelOf } from './lang/zh.mjs'
 
 const [corpusPath, ...flags] = process.argv.slice(2)
 if (!corpusPath) {
@@ -52,31 +53,41 @@ if (!todo.length) {
 
 mkdirSync('content/review', { recursive: true })
 
+// The level the prompt names. HSK is cumulative, so a phrase at level N may use
+// every word up to N, while a wordlist at level N is only what N adds.
+const level = levelOf(corpusPath) ?? 'hsk1'
+const rank = Number(level.slice(3))
+const HSK = `HSK ${rank}`
+const SCOPE = rank === 1 ? '**HSK 1 vocabulary**' : `**HSK 1–${rank} vocabulary** (the levels are cumulative)`
+const WORDLIST = rank === 1
+  ? `the **HSK 1 (2.0) vocabulary list** — the classic 150-word list`
+  : `the **${HSK} (2.0) vocabulary list** — the words ${HSK} adds on top of the levels below it, not the cumulative list`
+
 const ASK = {
-  words: `These are drafted entries for the **HSK 1 (2.0) vocabulary list** — the classic 150-word list.
+  words: `These are drafted entries for ${WORDLIST}.
 
 For every row, check:
-1. Is the Chinese actually on the official HSK 1 list?
+1. Is the Chinese actually on the official ${HSK} list?${rank > 1 ? ` (A word that belongs to a lower level is wrong here — say which level in \`note\` and \`drop\` it.)` : ''}
 2. Does the English gloss match the word?
 3. Is the pinyin correct, **including tone marks and neutral tones**? (It was generated mechanically, so treat it as a claim to check, not as given. Pay attention to neutral-tone second syllables such as 谢谢 and to 一/不 tone sandhi.)
 4. Is it Simplified, not Traditional?`,
 
-  phrases: `These are drafted phrases for a beginner Chinese learning app. Each is spoken by a small cartoon creature living on the user's desktop, and must use **only HSK 1 vocabulary**.
+  phrases: `These are drafted phrases for a beginner Chinese learning app. Each is spoken by a small cartoon creature living on the user's desktop, and must use only ${SCOPE}.
 
 For every row, check:
 1. Does the Chinese mean the English?
 2. Is the pinyin correct, **including tone marks and neutral tones**? (It was generated mechanically — treat it as a claim to check. Watch neutral tones and 一/不 sandhi.)
 3. Is it natural — would a native speaker actually say this, or is it translated-sounding?
-4. Is it within HSK 1 vocabulary?
+4. Is it within ${HSK} vocabulary, counting every level below it?
 5. Is it Simplified, not Traditional?`,
 
-  exchanges: `These are drafted **short conversations** for a beginner Chinese learning app, held between two small cartoon creatures on the user's desktop. Each row is one whole exchange; turns are separated by ｜ in the Chinese and by " | " in the pinyin and English, and the speakers alternate (turn 1 is creature A, turn 2 is creature B, and so on). Only **HSK 1 vocabulary** may be used.
+  exchanges: `These are drafted **short conversations** for a beginner Chinese learning app, held between two small cartoon creatures on the user's desktop. Each row is one whole exchange; turns are separated by ｜ in the Chinese and by " | " in the pinyin and English, and the speakers alternate (turn 1 is creature A, turn 2 is creature B, and so on). Only ${SCOPE} may be used.
 
 For every row, check the exchange **as a whole**:
 1. Does each turn mean its English, turn for turn?
 2. Is each reply a natural answer to what was just said — would two native speakers actually have this exchange? A correct sentence that does not answer the previous turn makes the row wrong.
 3. Is the pinyin correct, **including tone marks and neutral tones**? (Generated mechanically — treat it as a claim. Syllable-by-syllable spacing is the house style; do not fix spacing.)
-4. Is it within HSK 1 vocabulary, and Simplified?
+4. Is it within ${HSK} vocabulary (counting every level below), and Simplified?
 
 If you fix a row, give the **whole** corrected exchange in each fix column you use, keeping the ｜ and " | " separators and the same number of turns in every column.`,
 
@@ -174,7 +185,7 @@ ${table}
 ${kind === 'words' ? `
 ## One extra question
 
-After the TSV block, list any HSK 1 words that are **missing** from this batch, and any listed here that are **not** HSK 1. Put that after the TSV, under a heading \`## Missing\`.
+After the TSV block, list any ${HSK} words that are **missing** from this batch, and any listed here that are **not** ${HSK}. Put that after the TSV, under a heading \`## Missing\`.
 ` : ''}`, 'utf8')
 }
 

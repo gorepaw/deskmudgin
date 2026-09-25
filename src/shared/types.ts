@@ -212,6 +212,12 @@ export interface Settings {
   speechScale: number
   /** The same, for conversations between two creatures, set separately. */
   talkScale: number
+  /**
+   * Which level they speak at — `hsk1`, `hsk2`. Cumulative: at HSK 2 they
+   * still say HSK 1 things, less often. A string rather than a union, like
+   * `theme`, so a save naming a level this build lacks falls back to HSK 1.
+   */
+  level: string
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -230,6 +236,7 @@ export const DEFAULT_SETTINGS: Settings = {
   language: 'zh',
   speechScale: 1.5,
   talkScale: 1.5,
+  level: 'hsk1',
 }
 
 /**

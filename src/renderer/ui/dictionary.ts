@@ -18,9 +18,7 @@ import type { LedgerEntry } from '../../shared/ledger'
 import type { Entry } from '../../shared/lang/types'
 import { turnsOf } from '../../shared/lang/types'
 import { LANGUAGES } from '../../shared/lang'
-import { COURSE as PHRASES } from '../../shared/lang/generated/zh-hsk1'
-import { COURSE as EXCHANGES } from '../../shared/lang/generated/zh-hsk1-exchanges'
-import { COURSE as WORDS } from '../../shared/lang/generated/zh-hsk1-words'
+import { ZH_LEVELS, type Level } from '../../shared/lang/levels'
 import type { Painter } from '../engine/painter'
 import { Panel, PAD, HEADER, UI } from './panel'
 
@@ -34,17 +32,16 @@ const FILTER_LABEL: Record<Filter, string> = { all: 'showing all', seen: 'seen o
 const ZH = LANGUAGES.zh.font
 const PY = '"Segoe UI", sans-serif'
 
-/**
- * Every word course, lowest level first. One today; HSK 2 is another entry
- * here and nothing else changes — the words tab groups by level on its own.
- */
-const WORD_COURSES = [WORDS]
+/** The levels with anything in them, lowest first — a level whose content is
+ *  not verified yet has nothing to list and no heading either. */
+const levels = (pick: (l: Level) => readonly Entry[]): Level[] =>
+  ZH_LEVELS.filter(l => pick(l).length > 0)
 
 /** Pinyin with the tone marks taken off, for alphabetical order. */
 const plain = (s: string): string => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
 
 /** A drawable row: its height, and how to draw it at a given y. */
-interface Row { h: number; draw: (g: Painter, y: number) => void }
+interface Row { h: number; draw: (g: Painter, y: number) => void; heading?: boolean }
 
 export class DictionaryPanel extends Panel {
   readonly id = 'dictionary'
@@ -59,6 +56,7 @@ export class DictionaryPanel extends Panel {
   private heard = new Set<string>()
   /** Everything those lines said, joined, for finding words inside them. */
   private heardText = ''
+  private heardLines: string[] = []
 
   constructor(tab: Tab = 'words') {
     super(480, 560)
@@ -69,7 +67,8 @@ export class DictionaryPanel extends Panel {
     const ledger: LedgerEntry[] = await this.host.bridge.invoke('ledger:get')
     const said = ledger.filter(e => e.category === 'said')
     this.heard = new Set(said.map(e => e.key.slice('said:'.length)))
-    this.heardText = said.map(e => e.label).join('｜')
+    this.heardLines = said.map(e => e.label)
+    this.heardText = this.heardLines.join('｜')
   }
 
   override refresh(): void { void this.mount() }
@@ -78,6 +77,14 @@ export class DictionaryPanel extends Panel {
    *  below the controls instead of at a guessed offset that ran into them. */
   private listTop = HEADER + 90
   private get listH(): number { return this.h - this.listTop - 12 }
+
+  /** Met in something they said. A paired word — 虽然…但是 — counts once both
+   *  halves have turned up in the same line, since that is how it is used. */
+  private met(script: string): boolean {
+    const parts = script.split('…').filter(Boolean)
+    if (parts.length < 2) return this.heardText.includes(script)
+    return this.heardLines.some(line => parts.every(p => line.includes(p)))
+  }
 
   private keep(seen: boolean): boolean {
     return this.filter === 'all' || (this.filter === 'seen') === seen
@@ -98,19 +105,25 @@ export class DictionaryPanel extends Panel {
       .stroke({ width: 2, color: UI.good, cap: 'round' })
   }
 
+  /** A level's heading: its name and how many entries follow. */
+  private heading(label: string, n: number, what: string): Row {
+    return {
+      h: 26,
+      heading: true,
+      draw: (g, y) => g.text(`${label} · ${n} ${what}`, PAD, y + 15,
+        { size: 11, color: UI.accent, align: 'left' }),
+    }
+  }
+
   private wordRows(w: number): Row[] {
     const rows: Row[] = []
-    for (const course of WORD_COURSES) {
-      const words = [...course.entries]
+    for (const level of levels(l => l.words.entries)) {
+      const words = [...level.words.entries]
         .sort((a, b) => plain(a.reading).localeCompare(plain(b.reading)) || a.script.localeCompare(b.script))
-        .filter(e => this.keep(this.heardText.includes(e.script)))
-      rows.push({
-        h: 26,
-        draw: (g, y) => g.text(`${course.level.toUpperCase()} · ${words.length} words`, PAD, y + 15,
-          { size: 11, color: UI.accent, align: 'left' }),
-      })
+        .filter(e => this.keep(this.met(e.script)))
+      rows.push(this.heading(level.label, words.length, 'words'))
       for (const e of words) {
-        const seen = this.heardText.includes(e.script)
+        const seen = this.met(e.script)
         rows.push({
           h: 24,
           draw: (g, y) => {
@@ -145,28 +158,38 @@ export class DictionaryPanel extends Panel {
   }
 
   private phraseRows(w: number): Row[] {
-    return PHRASES.entries
-      .filter(e => this.keep(this.heard.has(e.id)))
-      .map(e => this.lineRow(e, this.heard.has(e.id), PAD, w))
+    return levels(l => l.phrases.entries).flatMap(level => {
+      const shown = level.phrases.entries.filter(e => this.keep(this.heard.has(e.id)))
+      return [
+        this.heading(level.label, shown.length, 'sentences'),
+        ...shown.map(e => this.lineRow(e, this.heard.has(e.id), PAD, w)),
+      ]
+    })
   }
 
   private talkRows(w: number): Row[] {
     const rows: Row[] = []
-    for (const x of EXCHANGES.entries) {
-      const turns = turnsOf(x)
-      // Seen as a whole once every turn has been on your screen; each turn is
-      // marked on its own, since a conversation cut short shows you half of it.
-      const all = turns.every(t => this.heard.has(t.id))
-      if (!this.keep(all)) continue
-      turns.forEach((t, i) => {
-        const r = this.lineRow(t, this.heard.has(t.id), PAD + 8, w - 8, i % 2 ? 'B' : 'A')
-        rows.push(i === 0 ? { h: r.h + 6, draw: (g, y) => r.draw(g, y + 6) } : r)
-      })
-      rows.push({
-        h: 10,
-        draw: (g, y) => g.moveTo(PAD, y + 5).lineTo(PAD + w, y + 5)
-          .stroke({ width: 1, color: UI.edge, alpha: 0.35 }),
-      })
+    for (const level of levels(l => l.exchanges.entries)) {
+      const start = rows.length
+      let n = 0
+      for (const x of level.exchanges.entries) {
+        const turns = turnsOf(x)
+        // Seen as a whole once every turn has been on your screen; each turn is
+        // marked on its own, since a conversation cut short shows you half of it.
+        const all = turns.every(t => this.heard.has(t.id))
+        if (!this.keep(all)) continue
+        n++
+        turns.forEach((t, i) => {
+          const r = this.lineRow(t, this.heard.has(t.id), PAD + 8, w - 8, i % 2 ? 'B' : 'A')
+          rows.push(i === 0 ? { h: r.h + 6, draw: (g, y) => r.draw(g, y + 6) } : r)
+        })
+        rows.push({
+          h: 10,
+          draw: (g, y) => g.moveTo(PAD, y + 5).lineTo(PAD + w, y + 5)
+            .stroke({ width: 1, color: UI.edge, alpha: 0.35 }),
+        })
+      }
+      rows.splice(start, 0, this.heading(level.label, n, 'conversations'))
     }
     return rows
   }
@@ -203,7 +226,7 @@ export class DictionaryPanel extends Panel {
       if (y + r.h >= y0 && y <= y0 + this.listH) r.draw(g, y)
       y += r.h
     }
-    if (!rows.length) {
+    if (rows.every(r => r.heading)) {
       g.text(this.filter === 'seen' ? 'nothing here yet — they will get to it' : 'you have seen all of these',
         this.w / 2, y0 + 40, { size: 11, color: UI.dim })
     }
