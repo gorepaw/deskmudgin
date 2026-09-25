@@ -1,0 +1,14 @@
+# Gemini's reply for names.es, chunk 01 — 4 entries.
+#
+# Paste the whole of names.es.01.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_gloss<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+# and copy it back out — that turns the columns into real tabs.
+id	verdict	fix_gloss	note
+n065	fix	Perlina	Perlita duplicates n064 (珍珠), already verified with that exact nickname; Perlina keeps the pearl/bead sense (珠 bead/pearl) with a different diminutive, unused elsewhere, no bad connotation
+n073	fix	Chorrito	Gotita duplicates n119 (雨滴), already verified with that exact nickname; Chorrito (a little trickle/splash) keeps the drip/droplet sense without duplicating, common neutral word across Latin America
+n086	ok		
+n105	ok		

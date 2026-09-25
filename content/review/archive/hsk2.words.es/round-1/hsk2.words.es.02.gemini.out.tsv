@@ -1,0 +1,80 @@
+# Gemini's reply for hsk2.words.es, chunk 02 — 70 entries.
+#
+# Paste the whole of hsk2.words.es.02.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_gloss<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+# and copy it back out — that turns the columns into real tabs.
+id	verdict	fix_gloss	note
+h2w081	ok		
+h2w082	ok		
+h2w083	ok		
+h2w084	ok		
+h2w085	ok		
+h2w086	ok		
+h2w087	ok		
+h2w088	ok		
+h2w089	ok		
+h2w090	ok		
+h2w091	ok		
+h2w092	ok		
+h2w093	ok		
+h2w094	ok		
+h2w095	ok		
+h2w096	ok		
+h2w097	ok		
+h2w098	ok		
+h2w099	fix	regalar; acompañar (a alguien que se va)	送 in the "see off" sense means to walk/ride with someone as they leave; bare "despedir" reads first as "to fire (an employee)" to a Spanish speaker, which is the wrong picture entirely
+h2w100	ok		
+h2w101	ok		
+h2w102	ok		
+h2w103	ok		
+h2w104	ok		
+h2w105	ok		
+h2w106	ok		
+h2w107	ok		
+h2w108	ok		
+h2w109	ok		
+h2w110	ok		
+h2w111	ok		
+h2w112	ok		
+h2w113	ok		
+h2w114	fix	desear	希望 is "to hope", but "esperar" is already used for 等 (h1 w020, "to wait"); esperar alone is genuinely ambiguous between "wait" and "hope" in Spanish, so keeping both words on "esperar" doubles that confusion — desear keeps 希望 unambiguous
+h2w115	ok		
+h2w116	ok		
+h2w117	ok		
+h2w118	ok		
+h2w119	ok		
+h2w120	ok		
+h2w121	ok		
+h2w122	ok		
+h2w123	ok		
+h2w124	ok		
+h2w125	ok		
+h2w126	ok		
+h2w127	ok		
+h2w128	ok		
+h2w129	fix	un momento; un poco	一下 softens a verb into "do it briefly/a bit" (等一下 = wait a moment); "una vez" reads as counting occurrences ("once"), which is really 一次's job, not 一下's
+h2w130	ok		
+h2w131	ok		
+h2w132	ok		
+h2w133	ok		
+h2w134	ok		
+h2w135	ok		
+h2w136	fix	pez; pescado	鱼 covers both the living animal and the food, same as English "fish"; "pescado" alone only covers the food sense (a live fish in a story or pond is a "pez", not a "pescado")
+h2w137	ok		
+h2w138	ok		
+h2w139	ok		
+h2w140	fix	la mañana	早上 means "morning"; plain "mañana" collides with 明天 ("tomorrow" = mañana). The noun with the article marks it as "the morning", not the adverb "tomorrow"
+h2w141	ok		
+h2w142	ok		
+h2w143	ok		
+h2w144	ok		
+h2w145	ok		
+h2w146	ok		
+h2w147	ok		
+h2w148	ok		
+h2w149	fix	el más	最 is the superlative marker ("the most/-est", e.g. 最好 = the best), not the comparative "more"; bare "más" reads as comparative and loses that distinction
+h2w150	ok		

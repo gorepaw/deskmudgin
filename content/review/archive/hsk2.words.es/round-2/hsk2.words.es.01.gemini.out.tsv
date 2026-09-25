@@ -1,0 +1,22 @@
+# Gemini's reply for hsk2.words.es, chunk 01 — 12 entries.
+#
+# Paste the whole of hsk2.words.es.01.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_gloss<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+# and copy it back out — that turns the columns into real tabs.
+id	verdict	fix_gloss	note
+h2w001	ok		
+h2w007	ok		
+h2w027	ok		
+h2w057	ok		
+h2w062	ok		
+h2w099	ok		
+h2w101	ok		
+h2w114	ok		
+h2w129	ok		
+h2w136	ok		
+h2w140	ok		
+h2w149	fix	más (superlativo)	最 is a bare superlative adverb; el más hardcodes a masculine article it does not carry (el/la más grande, la más bonita)

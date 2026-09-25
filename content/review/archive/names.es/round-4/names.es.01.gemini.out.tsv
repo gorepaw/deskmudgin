@@ -1,0 +1,13 @@
+# Gemini's reply for names.es, chunk 01 — 3 entries.
+#
+# Paste the whole of names.es.01.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_gloss<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+# and copy it back out — that turns the columns into real tabs.
+id	verdict	fix_gloss	note
+n058	ok		
+n065	fix	Perlín	Perlina is the lone "-ina" name in the whole file; house style pairs a duplicate-avoiding second name with "-ín" (Lodín, Burbujín, Honguín, Estrellín, Marín, Platín, Frijolín, Piedrín...). Perlín keeps the bead/pearl sense of 珠 without duplicating n064 Perlita and matches that pattern.
+n073	fix	Gotín	Chorrito means a little trickle/squirt of liquid, not a drop, so it drifts from the verified English "Droplet" (滴 = drop). Gotita is taken by n119, but Gotín keeps the drop meaning intact and follows the same duplicate-avoiding "-ín" pattern used throughout the file, unused elsewhere.

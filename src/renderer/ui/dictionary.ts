@@ -16,11 +16,12 @@
 
 import type { LedgerEntry } from '../../shared/ledger'
 import type { Entry } from '../../shared/lang/types'
-import { turnsOf } from '../../shared/lang/types'
+import { glossesOf, turnsOf } from '../../shared/lang/types'
 import { LANGUAGES } from '../../shared/lang'
 import { ZH_LEVELS, type Level } from '../../shared/lang/levels'
 import type { Painter } from '../engine/painter'
 import { Panel, PAD, HEADER, UI } from './panel'
+import { currentGloss } from '../pet/lines'
 
 export type Tab = 'words' | 'phrases' | 'talk'
 type Filter = 'all' | 'seen' | 'unseen'
@@ -130,7 +131,7 @@ export class DictionaryPanel extends Panel {
             this.mark(g, PAD + 5, y + 12, seen)
             g.text(e.script, PAD + 18, y + 12, { size: 15, color: UI.text, align: 'left', font: ZH })
             g.text(e.reading, PAD + 96, y + 12, { size: 12, color: UI.highlight, align: 'left', font: PY })
-            g.text(this.fit(g, e.english, 11, w - 190), PAD + 186, y + 12,
+            g.text(this.fit(g, glossesOf(e, currentGloss()).join(' · '), 11, w - 190), PAD + 186, y + 12,
               { size: 11, color: UI.dim, align: 'left' })
           },
         })
@@ -140,8 +141,9 @@ export class DictionaryPanel extends Panel {
   }
 
   private lineRow(e: Entry, seen: boolean, x: number, w: number, lead = ''): Row {
+    const glosses = glossesOf(e, currentGloss())
     return {
-      h: 50,
+      h: 36 + 14 * glosses.length,
       draw: (g, y) => {
         this.mark(g, x + 5, y + 12, seen)
         const sx = x + 18
@@ -151,8 +153,8 @@ export class DictionaryPanel extends Panel {
           { size: 15, color: UI.text, align: 'left', font: ZH })
         g.text(this.fit(g, e.reading, 12, w - (lx - PAD), PY), lx, y + 29,
           { size: 12, color: UI.highlight, align: 'left', font: PY })
-        g.text(this.fit(g, e.english, 11, w - (lx - PAD)), lx, y + 43,
-          { size: 11, color: UI.dim, align: 'left' })
+        glosses.forEach((t, i) => g.text(this.fit(g, t, 11, w - (lx - PAD)), lx, y + 43 + i * 14,
+          { size: 11, color: UI.dim, align: 'left' }))
       },
     }
   }

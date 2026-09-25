@@ -25,6 +25,13 @@ export interface Entry {
    *  language does not need one. **Always derived, never authored.** */
   readonly reading: string
   readonly english: string
+  /**
+   * The meaning in Spanish, for learners who read Spanish. Absent until a
+   * Spanish gloss for this line has passed its own two checks — the Chinese
+   * being verified says nothing about a translation of it — and read through
+   * `glossesOf`, which falls back to English while it is absent.
+   */
+  readonly spanish?: string
   /** Which moments this suits: `idle`, `hungry`, `greet`, `random`… A creature
    *  asks for a tag, not for a specific line. */
   readonly tags: readonly string[]
@@ -70,6 +77,22 @@ export type Utterance = string | Entry
 
 export const isEntry = (u: Utterance): u is Entry => typeof u !== 'string'
 
+/** Which meaning a learner reads under the Chinese: English, Spanish, or both. */
+export type GlossMode = 'en' | 'es' | 'both'
+
+/**
+ * The meaning lines to show for an entry, in order. The one rule every reader
+ * of a course follows, so the bubble, the dictionary and a pet's card never
+ * disagree: Spanish not verified yet falls back to English rather than to
+ * nothing, and "both" shows English above Spanish when there is Spanish.
+ */
+export function glossesOf(e: { english: string; spanish?: string }, mode: GlossMode): string[] {
+  const es = e.spanish ?? ''
+  if (mode === 'es') return [es || e.english]
+  if (mode === 'both' && es) return [e.english, es]
+  return [e.english]
+}
+
 /**
  * How long a line stays up, in seconds: long enough to read three lines. The
  * speech bubble uses it as a floor, and a conversation uses it to know when
@@ -84,13 +107,16 @@ export const dwellSeconds = (e: Entry): number => 3 + [...e.script].length * 0.2
  * Chinese and " | " in the pinyin and English — and taken apart only here, so
  * a turn is exactly what a bubble already knows how to draw and the ledger
  * already knows how to file (`x012.1`). The build refuses a row whose turn
- * counts disagree, so the three splits line up by construction.
+ * counts disagree, so the splits line up by construction — a Spanish gloss's
+ * included.
  */
 export function turnsOf(e: Entry): Entry[] {
   const zh = e.script.split('｜')
   const py = e.reading ? e.reading.split(' | ') : []
   const en = e.english.split(' | ')
+  const es = e.spanish ? e.spanish.split(' | ') : []
   return zh.map((script, i) => ({
     id: `${e.id}.${i}`, script, reading: py[i] ?? '', english: en[i] ?? '', tags: e.tags,
+    ...(es[i] ? { spanish: es[i] } : {}),
   }))
 }

@@ -11,6 +11,7 @@
 import type { SpeciesId } from './genome'
 import { COURSE as ZH_NAMES } from './lang/generated/zh-names'
 import type { ZhName } from './types'
+import { glossesOf, type GlossMode } from './lang/types'
 
 const MUDGIN_NAMES: readonly string[] = [
   'Mudgin', 'Grub', 'Nub', 'Blort', 'Sog', 'Pib', 'Hodge', 'Munt',
@@ -107,6 +108,23 @@ export function pickZhName(
     if (!used.has(script)) return name(script, `${base.reading} ${r} hào`, `${base.english} No. ${i}`)
   }
   return name(base.script, base.reading, base.english)
+}
+
+/**
+ * What a Chinese name means, in the learner's gloss language.
+ *
+ * The name stored on a pet carries only its English meaning, so the Spanish is
+ * found again in the verified names course: by the base name (豆豆 of 豆豆二号)
+ * and its English. A numbered name is composed the same way the English one
+ * was — "Frijolito n.º 2" — from verified parts and a numeral. A name whose
+ * Spanish is not verified shows its English, like every other gloss.
+ */
+export function nameGloss(zh: ZhName, mode: GlossMode): string {
+  const numbered = zh.gloss.match(/^(.*) No\. (\d+)$/)
+  const english = numbered ? numbered[1] : zh.gloss
+  const base = ZH_NAMES.entries.find(e => e.english === english && zh.script.startsWith(e.script))
+  const spanish = base?.spanish ? (numbered ? `${base.spanish} n.º ${numbered[2]}` : base.spanish) : undefined
+  return glossesOf({ english: zh.gloss, spanish }, mode).join(' · ')
 }
 
 /**

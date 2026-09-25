@@ -14,6 +14,10 @@ import { LedgerPanel } from './ledger'
 import { DictionaryPanel } from './dictionary'
 import { ZH_LEVELS, isReady, levelById } from '../../shared/lang/levels'
 import { frameOf } from './frames'
+import type { GlossMode } from '../../shared/lang/types'
+
+/** The meaning shown under the Chinese, as Settings offers it. */
+const GLOSSES: readonly [GlossMode, string][] = [['en', 'English'], ['es', 'Español'], ['both', 'Both']]
 
 const BTN_H = 32
 const GAP = 7
@@ -92,7 +96,7 @@ export class SettingsPanel extends Panel {
   private back = 0
 
   // Tall enough for the swatch grid, which gains a row every six themes.
-  constructor() { super(320, 692 + SettingsPanel.swatchBlock()) }
+  constructor() { super(320, 722 + SettingsPanel.swatchBlock()) }
 
   override async mount(): Promise<void> {
     const colony = await this.host.bridge.invoke('colony:get')
@@ -182,6 +186,14 @@ export class SettingsPanel extends Panel {
       const ready = isReady(l)
       this.button(g, `level:${l.id}`, PAD + 70 + i * (bw + 6), y, bw, 22, l.label,
         { primary: l === level, disabled: !ready || cfg.language !== 'zh', size: 11 })
+    })
+    y += 30
+    // What the Chinese is glossed in. Spanish not verified yet shows as
+    // English, so every choice here is safe whatever state the content is in.
+    g.text('meaning', PAD + 26, y + 11, { size: 10, color: UI.dim, align: 'left' })
+    GLOSSES.forEach(([id, label], i) => {
+      this.button(g, `gloss:${id}`, PAD + 70 + i * (64 + 6), y, 64, 22, label,
+        { primary: cfg.gloss === id, disabled: cfg.language !== 'zh', size: 11 })
     })
     y += 30
     this.option(g, 'lang:en', PAD, y, w, 'Grunts, in English', cfg.language === 'en')
@@ -330,7 +342,8 @@ export class SettingsPanel extends Panel {
       default:
         if (id?.startsWith('theme:')) void b.invoke('settings:patch', { theme: id.slice(6) })
         else if (id?.startsWith('level:')) void b.invoke('settings:patch', { level: id.slice(6) })
-        else if (id?.startsWith('disabled:level:')) {
+        else if (id?.startsWith('gloss:')) void b.invoke('settings:patch', { gloss: id.slice(6) as GlossMode })
+        else if (id?.startsWith('disabled:level:') || id?.startsWith('disabled:gloss:')) {
           this.flash(this.host.settings().language === 'zh' ? 'not verified yet' : 'for the Chinese setting')
         }
     }

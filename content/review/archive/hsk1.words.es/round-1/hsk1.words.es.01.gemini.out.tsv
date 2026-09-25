@@ -1,0 +1,90 @@
+# Gemini's reply for hsk1.words.es, chunk 01 — 80 entries.
+#
+# Paste the whole of hsk1.words.es.01.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_gloss<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+# and copy it back out — that turns the columns into real tabs.
+id	verdict	fix_gloss	note
+w001	ok		
+w002	ok		
+w003	ok		
+w004	fix	vaso; taza	杯子 is the generic word for a drinking cup/glass; "taza" alone narrows it to a handled cup only
+w005	ok		
+w006	ok		
+w007	ok		
+w008	ok		
+w009	fix	plato; verdura	"platillo" is a Mexican-regionalism diminutive; "plato" is the neutral term for a dish/course
+w010	ok		
+w011	ok		
+w012	ok		
+w013	ok		
+w014	ok		
+w015	ok		
+w016	ok		
+w017	ok		
+w018	ok		
+w019	ok		
+w020	ok		
+w021	ok		
+w022	ok		
+w023	ok		
+w024	ok		
+w025	ok		
+w026	ok		
+w027	ok		
+w028	ok		
+w029	ok		
+w030	ok		
+w031	ok		
+w032	ok		
+w033	ok		
+w034	ok		
+w035	ok		
+w036	ok		
+w037	ok		
+w038	ok		
+w039	ok		
+w040	ok		
+w041	ok		
+w042	ok		
+w043	fix	saber (hacer algo)	会 is the learned-skill "know how to"; keeping "poder" here collides with 能 (w072), which already owns "poder"
+w044	ok		
+w045	ok		
+w046	ok		
+w047	ok		
+w048	ok		
+w049	ok		
+w050	fix	mirar	看 is the plain act of looking/watching; "ver" belongs to 看见 (w051, "to see/perceive"), so listing it here blurs that distinction
+w051	ok		
+w052	ok		
+w053	ok		
+w054	ok		
+w055	ok		
+w056	ok		
+w057	ok		
+w058	ok		
+w059	ok		
+w060	ok		
+w061	ok		
+w062	ok		
+w063	ok		
+w064	ok		
+w065	fix	arroz	米饭 is just cooked/steamed rice as food; "arroz cocido" is redundant and unnatural — a Spanish speaker just says "arroz"
+w066	ok		
+w067	ok		
+w068	ok		
+w069	ok		
+w070	ok		
+w071	fix	(partícula interrogativa: ¿y...?)	呢 and 吗 (w060) are both glossed identically as "(partícula interrogativa)"; 呢 is specifically the follow-up/confirmation particle (你呢? = ¿y tú?), so it needs its own tag
+w072	ok		
+w073	ok		
+w074	ok		
+w075	ok		
+w076	ok		
+w077	ok		
+w078	ok		
+w079	ok		
+w080	ok		

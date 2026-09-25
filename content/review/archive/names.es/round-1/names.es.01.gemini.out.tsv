@@ -1,0 +1,71 @@
+# Gemini's reply for names.es, chunk 01 — 60 entries.
+#
+# Paste the whole of names.es.01.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_gloss<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+# and copy it back out — that turns the columns into real tabs.
+
+id	verdict	fix_gloss	note
+n001	ok		
+n002	ok		
+n003	ok		
+n004	fix	Fanguito	"Barrito" reads as "grano/barro en la cara" (pimple) or as the trumpeting sound an elephant makes (barritar), not "little mud"; "fanguito" (from fango) keeps the mud sense without the false friend.
+n005	ok		
+n006	ok		
+n007	ok		
+n008	ok		
+n009	ok		
+n010	ok		
+n011	ok		
+n012	ok		
+n013	ok		
+n014	ok		
+n015	ok		
+n016	fix	Arrocito Pegajoso	糯米 is glutinous/sticky RICE specifically; "Pegajosito" drops "rice" entirely and just says "sticky", losing the referent.
+n017	ok		
+n018	fix	Honguín	"Seta" is the Iberian/Spain term for mushroom; the app already uses the neutral LatAm "hongo" in n017 (Hongito), so the little-mushroom variant should follow the same root and the established "-ín" pattern used elsewhere (Piedrita/Piedrín, Frijolito/Frijolín).
+n019	ok		
+n020	ok		
+n021	ok		
+n022	ok		
+n023	ok		
+n024	ok		
+n025	ok		
+n026	ok		
+n027	ok		
+n028	ok		
+n029	ok		
+n030	ok		
+n031	ok		
+n032	ok		
+n033	ok		
+n034	ok		
+n035	fix	Bolita Rellena	"Empanadita" names a specific, very different LatAm food (a baked/fried pastry turnover), not a boiled/steamed jiaozi dumpling; "bolita rellena" (little stuffed ball) matches the shape without the false food association, and fits the "Bolita de X" family used for n015/n034/etc.
+n036	ok		
+n037	ok		
+n038	ok		
+n039	fix	Frijolito Mungo	"Frijolito Verde" reads as the green string bean (ejote/judía verde) to most Spanish speakers, not the mung bean; "frijol mungo" is the standard term and avoids that mix-up.
+n040	ok		
+n041	fix	Edamamito	"Habita" names the fava bean (haba), a different legume from edamame (young soybean); "edamame" is now a recognized loanword in Spanish and keeps the reference accurate.
+n042	ok		
+n043	ok		
+n044	ok		
+n045	ok		
+n046	ok		
+n047	ok		
+n048	fix	Lerdito	呆呆 (dozy/spacy) already sits next to n046 Bobito and n047 Tontito, two near-synonyms for "silly"; three near-identical glosses in a row are hard for a learner to tell apart, and "lerdito" (slow/dreamy) better matches "dozy" specifically. (Also, if kept, standard spelling is "zonzo/zonzito", not "sonso".)
+n049	ok		
+n050	fix	Gorgotito	"Gorgorito" means a vocal trill/warble (as in singing), not a liquid/stomach gurgle; "gorgotito" (from gorgoteo) matches "Gurgle".
+n051	ok		
+n052	ok		
+n053	ok		
+n054	ok		
+n055	ok		
+n056	ok		
+n057	ok		
+n058	fix	Negrito	This glosses the English name "Shadow" instead of the Chinese: 小黑 means "little black (one)", the classic affectionate name for a dark-furred pet — "Negrito" is the natural, very common Spanish equivalent.
+n059	ok		
+n060	ok		

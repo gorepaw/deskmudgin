@@ -21,13 +21,23 @@ export const COLUMNS = [
   'id', 'script', 'reading', 'english', 'tags', 'status', 'checks', 'note',
 ]
 
+/**
+ * A gloss file (`hsk1.es.tsv`): another language's meaning for each line of a
+ * course, beside copies of the line it glosses — so a reviewer sees the
+ * Chinese, and so a later change to the line is noticed and the gloss sent
+ * back for checking. `gloss` is the translation being verified.
+ */
+export const GLOSS_COLUMNS = [
+  'id', 'script', 'reading', 'english', 'gloss', 'status', 'checks', 'note',
+]
+
 export function readTsv(path) {
   if (!existsSync(path)) return []
   const text = readFileSync(path, 'utf8').replace(/^﻿/, '')
   const lines = text.split(/\r?\n/).filter(l => l.trim() !== '')
   if (!lines.length) return []
   const header = lines[0].split('\t').map(h => h.trim())
-  return lines.slice(1).map((line, i) => {
+  const rows = lines.slice(1).map((line, i) => {
     const cells = line.split('\t')
     const row = {}
     header.forEach((h, c) => { row[h] = (cells[c] ?? '').trim() })
@@ -36,9 +46,14 @@ export function readTsv(path) {
     Object.defineProperty(row, '_line', { value: i + 2, enumerable: false })
     return row
   })
+  // The file's own column order travels with its rows, so writing them back
+  // keeps every column — a gloss file's included — rather than quietly
+  // narrowing the file to the default set.
+  Object.defineProperty(rows, 'columns', { value: header, enumerable: false })
+  return rows
 }
 
-export function writeTsv(path, rows, columns = COLUMNS) {
+export function writeTsv(path, rows, columns = rows.columns ?? COLUMNS) {
   const out = [columns.join('\t')]
   for (const row of rows) {
     const cells = columns.map(c => {

@@ -1,0 +1,60 @@
+¡Hola! | ¡Hola!
+¿Cómo estás? | Estoy muy bien, gracias. ¿Y tú? | Estoy bien.
+¡Hola a todos! | ¡Hola!
+¿Dónde estás? | ¡Estoy aquí!
+¿Quién está ahí? | ¡Soy yo!
+¿Qué estás haciendo? | Estoy comiendo algo.
+¿Qué estás viendo? | Te estoy viendo a ti.
+¿Lo conoces? | No lo conozco.
+¿Quién es él? | Es mi amigo.
+¿Somos amigos? | ¡Sí! Somos amigos.
+¿Tienes amigos? | Sí, tú eres mi amigo.
+¡Adiós! | ¡Nos vemos mañana!
+¡Gracias! | De nada.
+¡Lo siento! | No importa.
+¡Qué bonita eres! | ¡Gracias!
+Tu ropa es muy bonita. | ¡Gracias!
+Te amo. | ¡Gracias! Estoy muy feliz.
+¿Te gusta aquí? | Me gusta mucho aquí.
+¿Qué quieres comer? | Quiero comer arroz.
+¿Ya comiste? | No he comido. | Vamos a comer.
+Quiero comer algo. | Aquí hay manzanas. | ¡Gracias!
+¿Qué es esto? | Esto es una manzana. | ¿Puedo comerla? | ¡Sí, puedes!
+¿Esto es sabroso? | ¡Muy delicioso!
+¿Qué fruta te gusta? | Me gustan las manzanas.
+¿Qué quieres tomar? | Quiero tomar té. | Está bien.
+Por favor, toma té. | Gracias, me gusta mucho tomar té.
+¿Te gusta comer comida china? | ¡Me gusta mucho!
+¿Qué comemos al mediodía? | Comemos arroz.
+¿Quieres dormir? | Tengo muchas ganas de dormir.
+¿Ya dormiste? | No.
+¿Qué hora es? | Son las tres. | Quiero dormir.
+¿Quieres volver a casa? | Sí, quiero dormir.
+¿Cómo está el clima hoy? | Hoy hace mucho calor.
+Hoy hace mucho frío. | Sí, ¡hace demasiado frío!
+¿Lloverá mañana? | Sí, lloverá.
+¡Está lloviendo! | Vamos a casa.
+¿Tienes frío? | Tengo mucho frío.
+¿Tienes calor? | No tengo calor.
+¿Adónde vas? | Voy a la tienda. | ¿Qué quieres comprar? | Quiero comprar manzanas.
+¿Cuánto cuesta esto? | Tres yuanes. | ¡Es demasiado!
+¿Cuántos años tienes? | Tengo ocho años. ¿Y tú? | Tengo nueve años.
+¿Cuántas personas hay en tu familia? | Mi familia tiene cinco personas.
+¿Sabes hablar chino? | Sé hablar un poco.
+¿Estás aprendiendo chino? | Sí, el chino es muy bueno.
+¿Sabes escribir este carácter? | No sé.
+¿Eres maestro? | No, soy estudiante.
+¿Qué día es hoy? | Hoy es sábado. | ¡Qué bien!
+¿Esto es tuyo? | No, es de él.
+¿Te gustan los gatos? | Me gustan mucho los gatos.
+¿Te gustan los perros? | No me gustan.
+¿Te gusta leer? | Sí, amo leer.
+¿Quieres ver una película? | ¡Bien! Vamos a ver una película.
+¿Quieres ir a Pekín? | ¡Sí! Pekín es muy grande.
+¿Puedes venir a mi casa? | ¡Sí! ¿Cuándo? | Mañana por la mañana.
+¿Dónde está tu gato? | Está debajo de la mesa.
+No tengo dinero. | No importa, yo tengo.
+¿Quieres sentarte en esta silla? | Está bien, gracias.
+¡Siéntate! | Gracias.
+¿Vas al hospital? | No voy.
+¡Te vi! | ¡Hola!

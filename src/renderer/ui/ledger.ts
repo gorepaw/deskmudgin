@@ -18,6 +18,13 @@ import { CATEGORY_LABEL, CATEGORY_ORDER } from '../../shared/ledger'
 import type { Painter } from '../engine/painter'
 import { Panel, PAD, HEADER, UI } from './panel'
 import { LANGUAGES } from '../../shared/lang'
+import { everyLine } from '../../shared/lang/levels'
+import { glossesOf, type Entry } from '../../shared/lang/types'
+import { currentGloss } from '../pet/lines'
+
+/** Every line a bubble can show, by id — built on first use, not at import. */
+let byId: Map<string, Entry> | null = null
+const lineById = (): Map<string, Entry> => (byId ??= new Map(everyLine().map(e => [e.id, e])))
 
 const CHIP_H = 22
 const CHIP_GAP = 5
@@ -118,7 +125,11 @@ export class LedgerPanel extends Panel {
       if (hovered.category === 'said') {
         // The lesson again, in the footer: pinyin and meaning on demand, so
         // the chips themselves can be read as a test of what you remember.
-        g.text(`${hovered.reading ?? ''} — ${hovered.gloss ?? ''}`, this.w / 2, this.h - 24,
+        // The ledger filed the English when the line was heard; the Spanish is
+        // found by the line's id, so a gloss verified later still shows.
+        const line = lineById().get(hovered.key.slice('said:'.length))
+        const meaning = glossesOf(line ?? { english: hovered.gloss ?? '' }, currentGloss()).join(' · ')
+        g.text(`${hovered.reading ?? ''} — ${meaning}`, this.w / 2, this.h - 24,
           { size: 11, color: UI.text, font: '"Segoe UI", sans-serif' })
         g.text(`first heard ${d.toLocaleDateString()}`, this.w / 2, this.h - 10,
           { size: 9, color: UI.dim })

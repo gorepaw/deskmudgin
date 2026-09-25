@@ -1,0 +1,85 @@
+# Google Translate's Spanish for hsk2.es, chunk 05 — 75 entries.
+#
+# 1. Open hsk2.es.05.gt.txt and copy all of it.
+# 2. Paste into Google Translate, Chinese → Spanish.
+# 3. Copy the Spanish side and paste it below, replacing nothing above.
+#
+# One line per entry, in the order sent, and nothing else. Lines starting
+# with # are ignored. The join is line position, so a different number of
+# lines is refused rather than guessed at — if that happens, paste again
+# rather than trying to patch it up by hand.
+Quiero esto.
+No quiero nada.
+¡Vamos juntos!
+Comamos juntos.
+Yo también quiero ir.
+¿A ti también te gustan los gatos?
+Él también es estudiante.
+¡Es justo esto!
+Estoy justo aquí.
+¡Ya voy!
+Él todavía no ha llegado.
+¿Todavía hay preguntas?
+Todavía soy estudiante.
+Lo siento, me equivoqué.
+Te equivocaste.
+¡Correcto!
+¿Esto está bien?
+¿Dónde estás?
+Ya llegamos a casa.
+Regresé de la escuela.
+Mira hacia la izquierda.
+A la izquierda está mi casa.
+Hablas demasiado rápido.
+Habla más despacio, por favor.
+¡No hables!
+Él no quiere hablar.
+No entendí.
+¿Entendiste?
+No puedo entender.
+No canto bien.
+¡Cantas muy bien!
+El gatito está durmiendo.
+El perro corre afuera.
+Te regalo una manzana.
+Esto es un regalo mío para ti.
+Gracias por regalarme esto.
+Mi mamá no me deja salir a jugar.
+¡Déjame ver!
+Déjame pensar.
+Nos divertimos mucho.
+¿A qué quieres jugar?
+¡Deja de jugar con el celular!
+¿A qué hora te duermes todos los días?
+Hoy me levanté muy temprano.
+¿Ya te levantaste?
+¡Levántate rápido!
+Él todavía está durmiendo.
+¿Qué vas a hacer esta noche?
+Voy a estudiar esta noche.
+Vamos a correr por la tarde.
+Voy a nadar todas las semanas.
+Nuestra escuela tiene muchos salones de clase.
+Mi habitación es muy pequeña.
+¡Tu habitación es muy grande!
+Nunca he visto la nieve.
+La nieve es blanca.
+Por dentro la sandía es roja.
+¿De qué color son tus ojos?
+Él lleva puesta ropa roja.
+¿Qué me pongo hoy?
+Esta ropa es demasiado larga.
+Él es muy alto.
+No soy alto, pero soy muy rápido.
+Aunque soy pequeño, como mucho.
+Como hoy nieva, no vamos a la escuela.
+¿Por qué no estás contento?
+¿Por qué estás aquí?
+¿Por qué él todavía no ha llegado?
+¿Cómo lo sabes?
+Sé quién eres.
+¿Sabes dónde está él?
+No sé cómo decirlo.
+¿Qué te parece?
+Siento que hace un poco de frío.
+Esta pregunta es muy buena.

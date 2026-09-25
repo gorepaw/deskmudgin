@@ -1,0 +1,6 @@
+1	¡Es muy poco!
+2	Amo la comida china.
+3	Amo tomar té.
+4	Amo leer libros.
+5	Amo dormir.
+6	Amo comer.

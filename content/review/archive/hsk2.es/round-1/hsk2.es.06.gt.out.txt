@@ -1,0 +1,84 @@
+# Google Translate's Spanish for hsk2.es, chunk 06 — 74 entries.
+#
+# 1. Open hsk2.es.06.gt.txt and copy all of it.
+# 2. Paste into Google Translate, Chinese → Spanish.
+# 3. Copy the Spanish side and paste it below, replacing nothing above.
+#
+# One line per entry, in the order sent, and nothing else. Lines starting
+# with # are ignored. The join is line position, so a different number of
+# lines is refused rather than guessed at — if that happens, paste again
+# rather than trying to patch it up by hand.
+¡No hay problema!
+Tengo una pregunta.
+¿Qué significa esto?
+¡Qué interesante!
+Este libro es muy interesante.
+¿Es interesante esa película?
+Ven un momento.
+Déjame ver.
+Déjame pensar.
+Mi reloj es muy caro.
+A mi celular se le acabó la batería.
+Este es el periódico de hoy.
+Te espero en el aeropuerto.
+¿A qué hora llega el avión?
+Viajo en avión.
+¿En qué habitación te hospedas?
+Él va al trabajo en autobús.
+¡Ya llegó el autobús!
+La empresa está muy lejos de mi casa.
+¿Cuánto tiempo se tarda caminando?
+La escuela no está lejos de mi casa.
+Vamos caminando.
+Hay una tienda al lado de mi casa.
+Siéntate a mi lado.
+Ella es nuestra nueva compañera de clase.
+¿Ya llegaron todos?
+¡Cantemos todos juntos!
+Te voy a llamar.
+Te compré una sandía.
+Esto es para ti.
+Vamos a comer afuera.
+¿Quieres comer arroz o fideos?
+El huevo es muy barato.
+El té sabe mejor que el café.
+La sandía es mi fruta favorita.
+¿Has comido carne de cordero?
+Nunca he ido a Beijing.
+¿Qué fecha es hoy?
+Un año tiene trescientos sesenta y cinco días.
+¡Tengo mil preguntas!
+Vamos los dos juntos.
+¿Quién es ese hombre?
+Tome asiento, por favor.
+¿Qué desea tomar?
+¿Dónde está?
+Me gusta.
+¡No mires!
+¿De verdad te vas?
+De verdad no lo sé.
+¡Esto es muy grande!
+¡Eres muy alto!
+¡Hoy hace mucho frío!
+Eres mi mejor amigo.
+Lo que menos me gusta son los exámenes.
+Preparé mucha comida.
+Espero poder ir a China.
+Puede que él ya no venga.
+Puede que me haya equivocado.
+Ya lo sé.
+¡Ya son las diez!
+¿A quién esperas?
+Espérame un momento.
+Él te está buscando.
+¡Ya lo encontré!
+¿Qué buscas?
+Todo aquí es muy barato.
+¿A cómo está la sandía?
+Esto ya se vendió.
+¿Sabes jugar baloncesto?
+No sé bailar.
+Tengo buena salud.
+Debes hacer más ejercicio.
+Correr cansa mucho.
+Nadar es muy divertido.

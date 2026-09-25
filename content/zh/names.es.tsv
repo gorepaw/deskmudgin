@@ -1,0 +1,119 @@
+id	script	reading	english	gloss	status	checks	note
+n001	泥泥	ní ni	Muddy	Lodito	verified	claude-blind,claude-review	
+n002	小泥	xiǎo ní	Little Mud	Lodín	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n003	泥球	ní qiú	Mudball	Bola de Lodo	verified	claude-blind,claude-review	
+n004	泥巴	ní ba	Mud	Fanguito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: a different nickname for the same meaning; the blind reading of a coined nickname rarely matches word for word
+n005	土豆	tǔ dòu	Potato	Papita	verified	claude-blind,claude-review	
+n006	豆豆	dòu dou	Beanie	Frijolito	verified	claude-blind,claude-review	
+n007	小豆	xiǎo dòu	Little Bean	Frijolín	verified	claude-blind,claude-review	
+n008	包子	bāo zi	Bun	Panecito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n009	馒头	mán tou	Steamed Bun	Bollito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n010	石头	shí tou	Rocky	Piedrita	verified	claude-blind,claude-review	
+n011	小石	xiǎo shí	Pebble	Piedrín	verified	claude-blind,claude-review	
+n012	墩墩	dūn dun	Chunky	Rechonchito	verified	claude-blind,claude-review	
+n013	胖胖	pàng pang	Chubby	Gordito	verified	claude-blind,claude-review	
+n014	呱呱	guā gua	Croaky	Croaquito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n015	团子	tuán zi	Dumpling Ball	Bolita de Masa	verified	claude-blind,claude-review	
+n016	糯米	nuò mǐ	Sticky Rice	Arrocito Pegajoso	verified	claude-blind,claude-review	
+n017	蘑菇	mó gu	Mushroom	Honguito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: a different nickname for the same meaning; the blind reading of a coined nickname rarely matches word for word
+n018	小菇	xiǎo gū	Little Mushroom	Honguín	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: a different nickname for the same meaning; the blind reading of a coined nickname rarely matches word for word
+n019	木头	mù tou	Woody	Maderita	verified	claude-blind,claude-review	
+n020	小树	xiǎo shù	Sapling	Arbolito	verified	claude-blind,claude-review	
+n021	苔苔	tái tai	Mossy	Musguito	verified	claude-blind,claude-review	
+n022	青青	qīng qīng	Greenie	Verdecito	verified	claude-blind,claude-review	
+n023	草草	cǎo cao	Grassy	Pastito	verified	claude-blind,claude-review	
+n024	小草	xiǎo cǎo	Little Grass	Hierbita	verified	claude-blind,claude-review	
+n025	叶子	yè zi	Leafy	Hojita	verified	claude-blind,claude-review	
+n026	芽芽	yá ya	Sprout	Brotecito	verified	claude-blind,claude-review	
+n027	小芽	xiǎo yá	Little Sprout	Brotín	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n028	花生	huā shēng	Peanut	Manicito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n029	核桃	hé tao	Walnut	Nuecita	verified	claude-blind,claude-review	
+n030	栗子	lì zi	Chestnut	Castañita	verified	claude-blind,claude-review	
+n031	红薯	hóng shǔ	Sweet Potato	Camotito	verified	claude-blind,claude-review	
+n032	山药	shān yào	Yam	Ñamito	verified	claude-blind,claude-review	
+n033	芋头	yù tou	Taro	Tarito	verified	claude-blind,claude-review	
+n034	芋圆	yù yuán	Taro Ball	Bolita de Taro	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n035	饺子	jiǎo zi	Dumpling	Bolita Rellena	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: a different nickname for the same meaning; the blind reading of a coined nickname rarely matches word for word
+n036	窝头	wō tou	Cornbread	Panecito de Maíz	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n037	煤球	méi qiú	Coal Ball	Carboncito	verified	claude-blind,claude-review	
+n038	黑豆	hēi dòu	Black Bean	Frijolito Negro	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n039	绿豆	lǜ dòu	Mung Bean	Frijolito Mungo	verified	claude-blind,claude-review	
+n040	红豆	hóng dòu	Red Bean	Frijolito Rojo	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n041	毛豆	máo dòu	Edamame	Edamamito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: a different nickname for the same meaning; the blind reading of a coined nickname rarely matches word for word
+n042	土土	tǔ tu	Earthy	Tierrita	verified	claude-blind,claude-review	
+n043	小土	xiǎo tǔ	Little Dirt	Tierrín	verified	claude-blind,claude-review	
+n044	坑洼	kēng wā	Pothole	Bachecito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n045	疙瘩	gē da	Lumpy	Grumito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n046	憨憨	hān han	Dopey	Bobito	verified	claude-blind,claude-review	
+n047	笨笨	bèn ben	Silly	Tontito	verified	claude-blind,claude-review	
+n048	呆呆	dāi dai	Dozy	Lerdito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: a different nickname for the same meaning; the blind reading of a coined nickname rarely matches word for word
+n049	懒懒	lǎn lan	Lazy	Flojito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n050	咕咕	gū gu	Gurgle	Gorgotito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: a different nickname for the same meaning; the blind reading of a coined nickname rarely matches word for word
+n051	咚咚	dōng dong	Thump	Golpecito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n052	牛牛	niú niu	Bull	Torito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n053	虎子	hǔ zi	Tiger Cub	Tigrito	verified	claude-blind,claude-review	
+n054	铁蛋	tiě dàn	Iron Egg	Huevito de Hierro	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n055	石蛋	shí dàn	Stone Egg	Huevito de Piedra	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n056	二狗	èr gǒu	Doggo	Perrito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n057	大壮	dà zhuàng	Sturdy	Fortachón	verified	claude-blind,claude-review	
+n058	小黑	xiǎo hēi	Shadow	Sombrita	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reads the literal colour (Negrito, ruled out); Sombrita follows the verified English, Shadow
+n059	阿土	ā tǔ	Dusty	Polvito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n060	泡泡	pào pao	Bubbles	Burbujita	verified	claude-blind,claude-review	
+n061	小泡	xiǎo pào	Little Bubble	Burbujín	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n062	圆圆	yuán yuan	Roundy	Redondito	verified	claude-blind,claude-review	
+n063	团团	tuán tuan	Roly	Rollizito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: a different nickname for the same meaning; the blind reading of a coined nickname rarely matches word for word
+n064	珍珠	zhēn zhū	Pearl	Perlita	verified	claude-blind,claude-review	
+n065	珠珠	zhū zhu	Beady	Perlín	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: reviewers cycled between forms over rounds 1-4; ended by adjudication: the round-4 reviewer's form, whose meaning (pearl, drop) the blind key confirmed and which collides with no other name
+n066	贝贝	bèi bei	Shelly	Cascarita	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: a different nickname for the same meaning; the blind reading of a coined nickname rarely matches word for word
+n067	小贝	xiǎo bèi	Little Shell	Cascarín	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: a different nickname for the same meaning; the blind reading of a coined nickname rarely matches word for word
+n068	浪浪	làng lang	Wavy	Olita	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: a different nickname for the same meaning; the blind reading of a coined nickname rarely matches word for word
+n069	小浪	xiǎo làng	Little Wave	Ondita	verified	claude-blind,claude-review	
+n070	海海	hǎi hai	Sea	Marcito	verified	claude-blind,claude-review	
+n071	小海	xiǎo hǎi	Little Sea	Marín	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: a different nickname for the same meaning; the blind reading of a coined nickname rarely matches word for word
+n072	水水	shuǐ shui	Watery	Agüita	verified	claude-blind,claude-review	
+n073	滴滴	dī di	Droplet	Gotín	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: reviewers cycled between forms over rounds 1-4; ended by adjudication: the round-4 reviewer's form, whose meaning (pearl, drop) the blind key confirmed and which collides with no other name
+n074	露露	lù lu	Dewy	Rocío	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n075	月月	yuè yue	Moony	Lunita	verified	claude-blind,claude-review	
+n076	小月	xiǎo yuè	Little Moon	Lunín	verified	claude-blind,claude-review	
+n077	星星	xīng xing	Starry	Estrellita	verified	claude-blind,claude-review	
+n078	小星	xiǎo xīng	Little Star	Estrellín	verified	claude-blind,claude-review	
+n079	汤圆	tāng yuán	Sweet Dumpling	Bolita Dulce	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n080	雪球	xuě qiú	Snowball	Bola de Nieve	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n081	冰冰	bīng bing	Icy	Hielito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: a different nickname for the same meaning; the blind reading of a coined nickname rarely matches word for word
+n082	小冰	xiǎo bīng	Little Ice	Hielín	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: a different nickname for the same meaning; the blind reading of a coined nickname rarely matches word for word
+n083	云朵	yún duǒ	Cloud	Nubecita	verified	claude-blind,claude-review	
+n084	朵朵	duǒ duo	Fluffy	Pelusita	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: a different nickname for the same meaning; the blind reading of a coined nickname rarely matches word for word
+n085	银银	yín yin	Silvery	Plateadito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: a different nickname for the same meaning; the blind reading of a coined nickname rarely matches word for word
+n086	小银	xiǎo yín	Little Silver	Platín	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: the blind reading is the very name ruled out for its other meaning (plata = money; concha = vulgar in the Río de la Plata)
+n087	潮潮	cháo chao	Tidey	Mareíta	verified	claude-blind,claude-review	
+n088	泡芙	pào fú	Cream Puff	Cremosito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n089	布丁	bù dīng	Pudding	Pudincito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n090	果冻	guǒ dòng	Jelly	Gelatinita	verified	claude-blind,claude-review	
+n091	糖糖	táng tang	Sugar	Azucarita	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n092	甜甜	tián tian	Sweetie	Dulcecito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n093	奶糖	nǎi táng	Toffee	Caramelito	verified	claude-blind,claude-review	
+n094	棉花	mián huā	Cotton	Algodoncito	verified	claude-blind,claude-review	
+n095	丸子	wán zi	Meatball	Albondiguita	verified	claude-blind,claude-review	
+n096	球球	qiú qiu	Ballie	Pelotita	verified	claude-blind,claude-review	
+n098	滚滚	gǔn gun	Rolly	Rodadita	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: a different nickname for the same meaning; the blind reading of a coined nickname rarely matches word for word
+n099	嘟嘟	dū du	Pouty	Pucherito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: a different nickname for the same meaning; the blind reading of a coined nickname rarely matches word for word
+n100	乐乐	lè le	Cheery	Alegrito	verified	claude-blind,claude-review	
+n101	笑笑	xiào xiao	Smiley	Sonrisita	verified	claude-blind,claude-review	
+n102	静静	jìng jing	Quiet	Calladito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n103	安安	ān an	Peaceful	Tranquilito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n104	宝宝	bǎo bao	Baby	Bebito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n105	贝壳	bèi ké	Seashell	Nacarita	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: the blind reading is the very name ruled out for its other meaning (plata = money; concha = vulgar in the Río de la Plata)
+n106	海星	hǎi xīng	Starfish	Estrellamar	verified	claude-blind,claude-review	
+n107	海螺	hǎi luó	Conch	Caracolita	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n108	浪花	làng huā	Sea Spray	Espumita	verified	claude-blind,claude-review	
+n109	水母	shuǐ mǔ	Jellyfish	Medusita	verified	claude-blind,claude-review	
+n110	小鲸	xiǎo jīng	Little Whale	Ballenín	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: a different nickname for the same meaning; the blind reading of a coined nickname rarely matches word for word
+n111	鲸鲸	jīng jing	Whaley	Ballenita	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: a different nickname for the same meaning; the blind reading of a coined nickname rarely matches word for word
+n112	企鹅	qǐ é	Penguin	Pingüinito	verified	claude-blind,claude-review	
+n113	豆腐	dòu fu	Tofu	Tofito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n114	年糕	nián gāo	Rice Cake	Pastelito de Arroz	verified	claude-blind,claude-review	
+n115	元宵	yuán xiāo	Lantern Dumpling	Farolito	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind nickname is a different but equivalent nickname for the same meaning
+n116	米米	mǐ mi	Rice Grain	Arrocito	verified	claude-blind,claude-review	
+n117	月饼	yuè bǐng	Mooncake	Pastelito de Luna	verified	claude-blind,claude-review	
+n118	小雨	xiǎo yǔ	Drizzle	Lluvita	verified	claude-blind,claude-review	
+n119	雨滴	yǔ dī	Raindrop	Gotita	verified	claude-blind,claude-review	

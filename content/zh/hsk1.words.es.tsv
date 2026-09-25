@@ -1,0 +1,153 @@
+id	script	reading	english	gloss	status	checks	note
+w001	爱	ài	love	amar	verified	claude-blind,claude-review	
+w002	八	bā	eight	ocho	verified	claude-blind,claude-review	
+w003	爸爸	bà ba	dad	papá	verified	claude-blind,claude-review	
+w004	杯子	bēi zi	cup	vaso; taza	verified	claude-blind,claude-review	
+w005	北京	běi jīng	Beijing	Pekín	verified	claude-blind,claude-review	
+w006	本	běn	(measure word for books)	(clasificador para libros)	verified	claude-blind,claude-review	
+w007	不客气	bú kè qi	you're welcome	de nada	verified	claude-blind,claude-review	
+w008	不	bù	not; no	no	verified	claude-blind,claude-review	
+w009	菜	cài	dish; vegetable	plato; verdura	verified	claude-blind,claude-review	
+w010	茶	chá	tea	té	verified	claude-blind,claude-review	
+w011	吃	chī	to eat	comer	verified	claude-blind,claude-review	
+w012	出租车	chū zū chē	taxi	taxi	verified	claude-blind,claude-review	
+w013	打电话	dǎ diàn huà	to make a phone call	llamar por teléfono	verified	claude-blind,claude-review	
+w014	大	dà	big	grande	verified	claude-blind,claude-review	
+w015	的	de	(possessive particle)	(partícula posesiva)	verified	claude-blind,claude-review	
+w016	点	diǎn	o'clock; a little	en punto; un poco	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+w017	电脑	diàn nǎo	computer	computadora	verified	claude-blind,claude-review	
+w018	电视	diàn shì	television	televisión	verified	claude-blind,claude-review	
+w019	电影	diàn yǐng	film	película	verified	claude-blind,claude-review	
+w020	东西	dōng xi	thing	cosa	verified	claude-blind,claude-review	
+w021	都	dōu	all; both	todos; ambos	verified	claude-blind,claude-review	
+w022	读	dú	to read	leer	verified	claude-blind,claude-review	
+w023	对不起	duì bu qǐ	sorry	lo siento	verified	claude-blind,claude-review	
+w024	多	duō	many; much	mucho	verified	claude-blind,claude-review	
+w025	多少	duō shao	how many; how much	cuánto	verified	claude-blind,claude-review	
+w026	儿子	ér zi	son	hijo	verified	claude-blind,claude-review	
+w027	二	èr	two	dos	verified	claude-blind,claude-review	
+w028	饭店	fàn diàn	restaurant; hotel	restaurante; hotel	verified	claude-blind,claude-review	
+w029	飞机	fēi jī	aeroplane	avión	verified	claude-blind,claude-review	
+w030	分钟	fēn zhōng	minute	minuto	verified	claude-blind,claude-review	
+w031	高兴	gāo xìng	happy	feliz; contento	verified	claude-blind,claude-review	
+w032	个	gè	(general measure word)	(clasificador general)	verified	claude-blind,claude-review	
+w033	工作	gōng zuò	work; to work	trabajo; trabajar	verified	claude-blind,claude-review	
+w034	狗	gǒu	dog	perro	verified	claude-blind,claude-review	
+w035	汉语	hàn yǔ	Chinese language	idioma chino	verified	claude-blind,claude-review	
+w036	好	hǎo	good	bueno	verified	claude-blind,claude-review	
+w037	号	hào	number; day of the month	número; día del mes	verified	claude-blind,claude-review	
+w038	喝	hē	to drink	beber	verified	claude-blind,claude-review	
+w039	和	hé	and	y	verified	claude-blind,claude-review	
+w040	很	hěn	very	muy	verified	claude-blind,claude-review	
+w041	后面	hòu mian	behind	detrás	verified	claude-blind,claude-review	
+w042	回	huí	to return	regresar	verified	claude-blind,claude-review	
+w043	会	huì	can; to know how to	saber (hacer algo)	verified	claude-blind,claude-review	
+w044	几	jǐ	how many; several	cuántos; varios	verified	claude-blind,claude-review	
+w045	家	jiā	home; family	casa; familia	verified	claude-blind,claude-review	
+w046	叫	jiào	to be called	llamarse	verified	claude-blind,claude-review	
+w047	今天	jīn tiān	today	hoy	verified	claude-blind,claude-review	
+w048	九	jiǔ	nine	nueve	verified	claude-blind,claude-review	
+w049	开	kāi	to open; to drive	abrir; conducir	verified	claude-blind,claude-review	
+w050	看	kàn	to look; to watch	mirar	verified	claude-blind,claude-review	
+w051	看见	kàn jiàn	to see	ver	verified	claude-blind,claude-review	
+w052	块	kuài	(measure word for money)	(clasificador para dinero)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+w053	来	lái	to come	venir	verified	claude-blind,claude-review	
+w054	老师	lǎo shī	teacher	maestro	verified	claude-blind,claude-review	
+w055	了	le	(aspect particle)	(partícula de aspecto)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+w056	冷	lěng	cold	frío	verified	claude-blind,claude-review	
+w057	里	lǐ	inside	dentro	verified	claude-blind,claude-review	
+w058	六	liù	six	seis	verified	claude-blind,claude-review	
+w059	妈妈	mā ma	mum	mamá	verified	claude-blind,claude-review	
+w060	吗	ma	(question particle)	(partícula interrogativa)	verified	claude-blind,claude-review	
+w061	买	mǎi	to buy	comprar	verified	claude-blind,claude-review	
+w062	猫	māo	cat	gato	verified	claude-blind,claude-review	
+w063	没关系	méi guān xi	it doesn't matter	no importa	verified	claude-blind,claude-review	
+w064	没有	méi yǒu	to not have	no tener	verified	claude-blind,claude-review	
+w065	米饭	mǐ fàn	cooked rice	arroz	verified	claude-blind,claude-review	
+w066	名字	míng zi	name	nombre	verified	claude-blind,claude-review	
+w067	明天	míng tiān	tomorrow	mañana	verified	claude-blind,claude-review	
+w068	哪	nǎ	which	cuál	verified	claude-blind,claude-review	
+w069	哪儿	nǎr	where	dónde	verified	claude-blind,claude-review	
+w070	那	nà	that	ese; aquel	verified	claude-blind,claude-review	
+w071	呢	ne	(question particle)	(partícula interrogativa: ¿y...?)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: same particle; ours adds the ¿y…? use that tells it from 吗
+w072	能	néng	to be able to	poder	verified	claude-blind,claude-review	
+w073	你	nǐ	you	tú	verified	claude-blind,claude-review	
+w074	年	nián	year	año	verified	claude-blind,claude-review	
+w075	女儿	nǚ ér	daughter	hija	verified	claude-blind,claude-review	
+w076	朋友	péng you	friend	amigo	verified	claude-blind,claude-review	
+w077	漂亮	piào liang	pretty	bonito	verified	claude-blind,claude-review	
+w078	苹果	píng guǒ	apple	manzana	verified	claude-blind,claude-review	
+w079	七	qī	seven	siete	verified	claude-blind,claude-review	
+w080	前面	qián mian	in front	delante	verified	claude-blind,claude-review	
+w081	钱	qián	money	dinero	verified	claude-blind,claude-review	
+w082	请	qǐng	please	por favor	verified	claude-blind,claude-review	
+w083	去	qù	to go	ir	verified	claude-blind,claude-review	
+w084	热	rè	hot	caliente	verified	claude-blind,claude-review	
+w085	人	rén	person	persona	verified	claude-blind,claude-review	
+w086	认识	rèn shi	to know (someone)	conocer (a alguien)	verified	claude-blind,claude-review	
+w087	三	sān	three	tres	verified	claude-blind,claude-review	
+w088	商店	shāng diàn	shop	tienda	verified	claude-blind,claude-review	
+w089	上	shàng	up; on	arriba; sobre	verified	claude-blind,claude-review	
+w090	上午	shàng wǔ	morning	la mañana	verified	claude-blind,claude-review	
+w091	少	shǎo	few; little	poco	verified	claude-blind,claude-review	
+w092	谁	shéi	who	quién	verified	claude-blind,claude-review	
+w093	什么	shén me	what	qué	verified	claude-blind,claude-review	
+w094	十	shí	ten	diez	verified	claude-blind,claude-review	
+w095	时候	shí hou	time; moment	tiempo; momento	verified	claude-blind,claude-review	
+w096	是	shì	to be	ser	verified	claude-blind,claude-review	
+w097	书	shū	book	libro	verified	claude-blind,claude-review	
+w098	水	shuǐ	water	agua	verified	claude-blind,claude-review	
+w099	水果	shuǐ guǒ	fruit	fruta	verified	claude-blind,claude-review	
+w100	睡觉	shuì jiào	to sleep	dormir	verified	claude-blind,claude-review	
+w101	说	shuō	to speak	hablar	verified	claude-blind,claude-review	
+w102	四	sì	four	cuatro	verified	claude-blind,claude-review	
+w103	岁	suì	years of age	años (de edad)	verified	claude-blind,claude-review	
+w104	他	tā	he; him	él	verified	claude-blind,claude-review	
+w105	她	tā	she; her	ella	verified	claude-blind,claude-review	
+w106	太	tài	too	demasiado	verified	claude-blind,claude-review	
+w107	天气	tiān qì	weather	clima	verified	claude-blind,claude-review	
+w108	听	tīng	to listen	escuchar	verified	claude-blind,claude-review	
+w109	同学	tóng xué	classmate	compañero de clase	verified	claude-blind,claude-review	
+w110	喂	wèi	hello (on the phone)	aló (al teléfono)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+w111	我	wǒ	I; me	yo	verified	claude-blind,claude-review	
+w112	我们	wǒ men	we; us	nosotros	verified	claude-blind,claude-review	
+w113	五	wǔ	five	cinco	verified	claude-blind,claude-review	
+w114	喜欢	xǐ huan	to like	gustar	verified	claude-blind,claude-review	
+w115	下	xià	down; under	abajo; debajo	verified	claude-blind,claude-review	
+w116	下午	xià wǔ	afternoon	tarde	verified	claude-blind,claude-review	
+w117	下雨	xià yǔ	to rain	llover	verified	claude-blind,claude-review	
+w118	先生	xiān sheng	mister	señor	verified	claude-blind,claude-review	
+w119	现在	xiàn zài	now	ahora	verified	claude-blind,claude-review	
+w120	想	xiǎng	to want; to think	querer; pensar	verified	claude-blind,claude-review	
+w121	小	xiǎo	small	pequeño	verified	claude-blind,claude-review	
+w122	小姐	xiǎo jiě	miss	señorita	verified	claude-blind,claude-review	
+w123	些	xiē	some	algunos	verified	claude-blind,claude-review	
+w124	写	xiě	to write	escribir	verified	claude-blind,claude-review	
+w125	谢谢	xiè xie	thanks	gracias	verified	claude-blind,claude-review	
+w126	星期	xīng qī	week	semana	verified	claude-blind,claude-review	
+w127	学生	xué sheng	student	estudiante	verified	claude-blind,claude-review	
+w128	学习	xué xí	to study	estudiar	verified	claude-blind,claude-review	
+w129	学校	xué xiào	school	escuela	verified	claude-blind,claude-review	
+w130	一	yī	one	uno	verified	claude-blind,claude-review	
+w131	一点儿	yì diǎnr	a little	un poco	verified	claude-blind,claude-review	
+w132	衣服	yī fu	clothes	ropa	verified	claude-blind,claude-review	
+w133	医生	yī shēng	doctor	médico	verified	claude-blind,claude-review	
+w134	医院	yī yuàn	hospital	hospital	verified	claude-blind,claude-review	
+w135	椅子	yǐ zi	chair	silla	verified	claude-blind,claude-review	
+w136	有	yǒu	to have	tener	verified	claude-blind,claude-review	
+w137	月	yuè	month	mes	verified	claude-blind,claude-review	
+w138	在	zài	at; in	en	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+w139	再见	zài jiàn	goodbye	adiós	verified	claude-blind,claude-review	
+w140	怎么	zěn me	how	cómo	verified	claude-blind,claude-review	
+w141	怎么样	zěn me yàng	how about	qué tal	verified	claude-blind,claude-review	
+w142	这	zhè	this	este	verified	claude-blind,claude-review	
+w143	中国	zhōng guó	China	China	verified	claude-blind,claude-review	
+w144	中午	zhōng wǔ	noon	mediodía	verified	claude-blind,claude-review	
+w145	住	zhù	to live; to stay	vivir; alojarse	verified	claude-blind,claude-review	
+w146	桌子	zhuō zi	table	mesa	verified	claude-blind,claude-review	
+w147	字	zì	character; word	carácter (escrito)	verified	claude-blind,claude-review	
+w148	昨天	zuó tiān	yesterday	ayer	verified	claude-blind,claude-review	
+w149	坐	zuò	to sit	sentarse	verified	claude-blind,claude-review	
+w150	做	zuò	to do; to make	hacer	verified	claude-blind,claude-review	
+w151	这儿	zhèr	here	aquí	verified	claude-blind,claude-review	
+w152	那儿	nàr	there	allí	verified	claude-blind,claude-review	

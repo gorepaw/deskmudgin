@@ -31,6 +31,7 @@ anyone.
 | `zh/hsk1.words.tsv` | the course vocabulary — every phrase is validated against it |
 | `zh/hsk1.tsv` | the phrase corpus |
 | `zh/overrides.tsv` | pinyin corrections, where the deriver is wrong |
+| `zh/*.es.tsv` | Spanish glosses, one file per course (see *Glosses*) |
 | `review/` | what goes out and what comes back — the audit trail |
 
 Statuses: `draft` → `verified` / `rejected`, or `conflict` when the two sources
@@ -114,6 +115,30 @@ one source agreeing alone, a fabricated tone correction, a dropped row, a
 missing verdict, a short Google Translate paste, a desynced reading. All of those
 failure modes are silent in real use, so they are made loud here. It restores
 anything it touched.
+
+## Glosses in other languages
+
+A learner can read the meaning in Spanish instead of English, or both
+(Settings → *they speak* → **meaning**). A Spanish gloss is a claim of its own
+— the Chinese being verified says nothing about a translation of it — so it
+has its own file beside each course and goes through the same loop:
+
+```
+node tools/gloss-sync.mjs content/zh/hsk1.tsv --lang es     # lay out hsk1.es.tsv
+node tools/gloss-fill.mjs content/zh/hsk1.es.tsv drafts.tsv  # drafts: id<TAB>spanish
+npm run lang:export content/zh/hsk1.es.tsv                   # Chinese → Spanish blind, plus a review
+npm run lang:ingest content/zh/hsk1.es.tsv
+npm run lang:build  content/zh/hsk1.tsv -- --course zh-hsk1   # joins verified Spanish by id
+```
+
+- The gloss file carries copies of each line's Chinese and English. If the
+  line is corrected later, `gloss-sync` sends its Spanish back to `draft`, and
+  the build will not ship a gloss checked against a different sentence.
+- The blind key translates the **Chinese** into Spanish; the reviewer judges
+  the Spanish against the Chinese, with the English only as a hint of intent.
+- Neutral Latin American Spanish: *tú*, *ustedes*, no *vosotros*.
+- Anything not verified shows as English in the app, so a half-finished
+  language never leaves a blank line.
 
 ## Adding a language
 

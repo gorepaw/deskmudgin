@@ -14,9 +14,9 @@ import type { Painter } from '../engine/painter'
 import { speciesOf } from '../species'
 import { defaultPose } from '../art/pose'
 import { Panel, PAD, UI } from './panel'
-import { shownName } from '../../shared/names'
+import { nameGloss, shownName } from '../../shared/names'
 import { LANGUAGES } from '../../shared/lang'
-import { currentLanguage } from '../pet/lines'
+import { currentGloss, currentLanguage } from '../pet/lines'
 
 /** How long the release button stays armed before it disarms itself. */
 const CONFIRM_T = 4
@@ -62,7 +62,7 @@ export class PetCardPanel extends Panel {
     // means, beside it in the header.
     if (zh) {
       const after = PAD + g.measure(title, 15, font) + 10
-      g.text(this.fit(g, `${zh.reading} · ${zh.gloss}`, 10, this.w - after - 40), after, 15,
+      g.text(this.fit(g, `${zh.reading} · ${nameGloss(zh, currentGloss())}`, 10, this.w - after - 40), after, 15,
         { size: 10, color: UI.dim, align: 'left', font: '"Segoe UI", sans-serif' })
     }
 

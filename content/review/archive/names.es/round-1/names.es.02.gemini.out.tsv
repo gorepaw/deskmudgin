@@ -1,0 +1,69 @@
+# Gemini's reply for names.es, chunk 02 — 58 entries.
+#
+# Paste the whole of names.es.02.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_gloss<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+# and copy it back out — that turns the columns into real tabs.
+
+id	verdict	fix_gloss	note
+n061	ok		
+n062	ok		
+n063	fix	Rollizito	"Bolita" alone is too generic and blends into the "Bolita de X" family used for n015/n034/n079/n080; 团团 means round/plump ("Roly"), so "rollizito" (from rollizo, plump) matches the meaning and gives this creature its own identity.
+n064	ok		
+n065	fix	Canicita	"Cuenta" overwhelmingly means "bill/account" in everyday Spanish; "cuentita" reads as "little bill", not "little bead". "Canicita" (little marble) reads unambiguously as a small round bead-like thing.
+n066	fix	Cascarita	"Concha" is common/neutral for "shell" in most of Latin America but is vulgar slang for female genitalia in the Río de la Plata region (Argentina/Uruguay/Paraguay) — risky for neutral pan-LatAm content. "Cascarita" (little shell/husk) sidesteps that.
+n067	fix	Cascarín	Same "concha" concern as n066; paired with the fix there using the established "-ín" little-form pattern.
+n068	fix	Olita	Plural "Olitas" reads as "waves" rather than an individual creature's name; every other entry in the set is a singular nickname (cf. Ondita right below it).
+n069	ok		
+n070	fix	Marcito	"Marito" isn't a real diminutive of "mar" (which takes "-cito": amor→amorcito, mar→marcito); also swaps with n071 so the set follows its own convention (reduplicated form gets the regular diminutive, "little X" form gets "-ín").
+n071	fix	Marín	Currently duplicates the (corrected) n070 gloss. As the "little X" (小海) entry it should take the "-ín" pattern used elsewhere (Piedrín, Frijolín, Lunín), giving "Marín" and avoiding the collision.
+n072	fix	Agüita	Missing the required dieresis: "agua" → "agüita" (the ü keeps the /gw/ sound before i). "Aguita" as written is a common but incorrect spelling.
+n073	fix	Gotín	"Goterita" evokes "gotera" (a leak/drip stain, e.g. a roof leak), not a small drop. The plain diminutive of "gota" is "gotita", but that's already used for n089 (雨滴/Raindrop); "gotín" keeps the correct root while avoiding the collision.
+n074	ok		
+n075	ok		
+n076	ok		
+n077	ok		
+n078	ok		
+n079	ok		
+n080	ok		
+n081	fix	Hielito	"Helado" means "ice cream" as a noun in everyday LatAm Spanish, so "Heladito" reads as "little ice cream", not "icy". "Hielito" (from hielo, ice) is unambiguous, and also restores the set's own pattern (reduplicated 冰冰 form gets the regular diminutive).
+n082	fix	Hielín	Currently duplicates the (corrected) n081 gloss. As the "little X" (小冰) entry it should take the "-ín" pattern, giving "Hielín" and avoiding the collision with n081.
+n083	ok		
+n084	fix	Pelusita	"Esponjita" evokes a bath/kitchen sponge, not "fluffy". "Pelusita" (little fuzz/fluff, from pelusa) matches the texture meant by 朵朵/"Fluffy" and doesn't collide with n094's "Algodoncito".
+n085	fix	Plateadito	"Plata" very commonly means "money" in colloquial LatAm Spanish ("no tengo plata"), so "Platita" is likely to be read as "a little money" rather than "silvery". "Plateadito" (from plateado, silver-colored) avoids that.
+n086	fix	Plateadín	Same "plata" = money concern as n085; paired fix using the set's own "-ín" pattern for the little-form.
+n087	fix	Mareíta	潮 means tide, not coast; "Costerita" (from costa, coast) shifts the meaning. "Mareíta" (from marea, tide) matches "Tidey" accurately.
+n088	ok		
+n089	ok		
+n090	ok		
+n091	ok		
+n092	ok		
+n093	ok		
+n094	ok		
+n095	ok		
+n096	ok		
+n098	fix	Rodadita	"Ruedita" means "little wheel" (an object), but 滚滚/"Rolly" is about the rolling/tumbling motion. "Rodadita" (from rodar, to roll) matches the action, and avoids colliding with n063's corrected "Rollizito" (plumpness, a different nuance of the same English "Roly"/"Rolly").
+n099	fix	Pucherito	"Mofletito" is about chubby cheeks, not the pouting expression itself. "Pucherito" (from "hacer pucheros", the standard idiom for a child's pout) is the precise, natural match for "Pouty".
+n100	ok		
+n101	ok		
+n102	ok		
+n103	ok		
+n104	ok		
+n105	ok		Minor same-family caution as n066/n067: "conchuela" shares the "concha" root, but it's a distinct, less common word (a small-clam/shell term) and is unlikely to trigger the Río de la Plata vulgar reading the way plain "concha" does. Leaving as is.
+n106	ok		"Estrellamar" isn't the dictionary form (which is "estrella de mar", two words) but reads clearly as a star+sea portmanteau and works fine as a cute proper-name-style nickname.
+n107	ok		
+n108	ok		
+n109	ok		
+n110	fix	Ballenín	Currently uses the regular-diminutive "-ita" form, but this is the "little X" (小鲸) entry, which should take the set's "-ín" pattern; swaps with n111.
+n111	fix	Ballenita	Currently uses "-ín", but 鲸鲸 is the reduplicated/base form, which elsewhere gets the regular diminutive matching the noun's gender (ballena is feminine → Ballenita); swaps with n110, also removing the duplicate-gloss collision between the two.
+n112	ok		
+n113	ok		
+n114	ok		
+n115	ok		
+n116	ok		
+n117	ok		
+n118	ok		
+n119	ok		

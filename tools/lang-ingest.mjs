@@ -39,13 +39,34 @@ const rows = readTsv(corpusPath)
 const by = process.argv.includes('--by') ? process.argv[process.argv.indexOf('--by') + 1] : 'outside'
 const [BLIND, JUDGE] = by === 'claude' ? ['claude-blind', 'claude-review'] : ['gt', 'gemini']
 
+/**
+ * A gloss file (`hsk1.es.tsv`) is checked for its gloss: the blind reading is a
+ * translation of the Chinese into the gloss's language, compared against the
+ * `gloss` column rather than `english`, and a reviewer's fix arrives in
+ * `fix_gloss`. The Chinese itself is not under review there, so nothing about
+ * scripts or readings is touched.
+ */
+const glossLang = basename(corpusPath).match(/\.([a-z]{2})\.tsv$/)?.[1] ?? null
+const field = glossLang ? 'gloss' : 'english'
+
+/** Words too common to count as agreement, per language. */
+const STOP = {
+  en: ['a', 'an', 'the', 'to', 'of', 'is', 'are', 'some'],
+  es: ['el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas', 'de', 'del', 'al', 'a', 'que', 'y', 'o',
+    'es', 'son', 'lo', 'se', 'me', 'te', 'le', 'les', 'mi', 'tu', 'su', 'por', 'para', 'con', 'en', 'muy', 'ya'],
+}
+const stop = new Set(STOP[glossLang ?? 'en'] ?? [])
+
+/** Accents folded away, so "está" and "esta" — which a hurried back-
+ *  translation will confuse — do not score as different words. */
+const fold = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
+
 /** Strip everything that is style rather than meaning, so "to eat" and "Eat"
  *  and "eat; to consume" all compare as the same claim. */
-const norm = s => s.toLowerCase()
+const norm = s => fold(s)
   .replace(/\(.*?\)/g, ' ')
-  .replace(/\b(a|an|the|to|of|is|are|some)\b/g, ' ')
   .replace(/[^a-z0-9\s]/g, ' ')
-  .split(/\s+/).filter(Boolean)
+  .split(/\s+/).filter(t => t && !stop.has(t))
 
 /**
  * Words that mean the same thing and differ only by dialect or register.
@@ -70,7 +91,7 @@ function agree(mine, theirs) {
   // all parenthetical and "some" is all stopword — and two empties used to
   // score 0, so identical strings were reported as disagreeing. Compare them
   // whole before comparing them as tokens.
-  const flat = s => s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()
+  const flat = s => fold(s).replace(/[^a-z0-9]+/g, ' ').trim()
   if (flat(mine) === flat(theirs)) return 1
   const a = new Set(norm(mine).map(canon))
   const b = new Set(norm(theirs).map(canon))
@@ -150,6 +171,17 @@ for (const tag of chunks) {
     process.exit(1)
   }
 
+  // A blind reply is one plain line per entry. A tab in one means the paste
+  // brought numbering or columns with it — the translation would land in the
+  // corpus with "12<tab>" in front of it — so it is refused here, by name,
+  // rather than failing later in the writer with a message about a field.
+  const tabbed = gt.findIndex(l => l.includes('	'))
+  if (tabbed >= 0) {
+    console.error(`chunk ${tag}: line ${tabbed + 1} of the blind reply contains a tab ("${gt[tabbed]}").`)
+    console.error('  Replies are plain text, one translation per line — paste again without numbers or columns.')
+    process.exit(1)
+  }
+
   const gemini = parseGeminiTsv(gmLines)
   if (!gemini) {
     console.error(`chunk ${tag}: no TSV block found in the Gemini reply (expected a line starting "id<tab>verdict")`)
@@ -170,7 +202,7 @@ for (const tag of chunks) {
     if (!row) return
     const back = gt[i]
     const g = verdicts.get(row.id)
-    const score = agree(row.english, back)
+    const score = agree(row[field], back)
     const gtOk = score >= AGREES
 
     if (!g) {
@@ -187,6 +219,31 @@ for (const tag of chunks) {
       row.note = g.note || `dropped by ${JUDGE}`
       report.rejected++
       detail.push(['x', row, g.note || 'dropped'])
+      return
+    }
+
+    if (g.verdict === 'fix' && glossLang) {
+      // Only the gloss is under review in a gloss file; the Chinese beside it
+      // was verified elsewhere and is left alone whatever the reviewer says.
+      // A fix that changes a conversation's number of turns is refused and the
+      // row keeps its gloss: HSK 1's first Spanish round took a one-turn fix to
+      // a two-turn exchange and would have shipped it half-translated had the
+      // build not stopped it. The reviewer's note still goes on the row.
+      const turns = s => s.split(' | ').length
+      if (g.fix_gloss && turns(g.fix_gloss) !== row.script.split('｜').length) {
+        row.status = 'conflict'
+        row.checks = ''
+        row.note = `reviewer's fix had ${turns(g.fix_gloss)} turn(s) for ${row.script.split('｜').length} — not applied ("${g.fix_gloss}"; ${g.note || 'no reason given'})`
+        report.conflict++
+        detail.push(['~', row, 'fix refused: wrong number of turns'])
+        return
+      }
+      if (g.fix_gloss) row.gloss = g.fix_gloss
+      row.status = 'conflict'
+      row.checks = ''
+      row.note = `reviewer proposed a fix (${g.note || 'no reason given'}); blind reading was "${back}" · re-check next round`
+      report.conflict++
+      detail.push(['~', row, g.note || 'fixed, needs re-check'])
       return
     }
 
@@ -275,7 +332,7 @@ if (archivedTo) {
 if (detail.length) {
   console.log('\nneeding attention:')
   for (const [mark, row, why] of detail.slice(0, 40)) {
-    console.log(`  ${mark} ${row.id}  ${row.script}  ${row.english}`)
+    console.log(`  ${mark} ${row.id}  ${row.script}  ${row[field]}`)
     console.log(`      ${why}`)
   }
   if (detail.length > 40) console.log(`  …and ${detail.length - 40} more, in the corpus`)

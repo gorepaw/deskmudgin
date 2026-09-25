@@ -1,0 +1,71 @@
+# Gemini's reply for hsk1.exchanges.es, chunk 01 — 60 entries.
+#
+# Paste the whole of hsk1.exchanges.es.01.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_gloss<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+# and copy it back out — that turns the columns into real tabs.
+
+id	verdict	fix_gloss	note
+x001	ok		
+x002	ok		
+x003	ok		
+x004	ok		
+x005	ok		
+x006	ok		
+x007	ok		
+x008	ok		
+x009	ok		
+x010	ok		
+x011	ok		
+x012	ok		
+x013	ok		
+x014	ok		
+x015	ok		
+x016	ok		
+x017	ok		
+x018	ok		
+x019	ok		
+x020	ok		
+x021	ok		
+x022	ok		
+x023	ok		
+x024	ok		
+x025	ok		
+x026	ok		
+x027	ok		
+x028	ok		
+x029	ok		
+x030	ok		
+x031	ok		
+x032	ok		
+x033	ok		
+x034	ok		
+x035	ok		
+x036	ok		
+x037	ok		
+x038	ok		
+x039	ok		
+x040	ok		
+x041	ok		
+x042	ok		
+x043	ok		
+x044	ok		
+x045	ok		
+x046	ok		
+x047	ok		
+x048	ok		
+x049	ok		
+x050	ok		
+x051	fix	Sí, me encanta leer.	"Amo leer" calques English "I love reading"; a native speaker says "me encanta leer".
+x052	ok		
+x053	ok		
+x054	ok		
+x055	ok		
+x056	fix	No hay problema, yo sí tengo.	Bare "yo tengo" trails off oddly as a reply; "yo sí tengo" reads as a natural complete answer.
+x057	ok		
+x058	ok		
+x059	ok		
+x060	ok		

@@ -11,7 +11,7 @@
 // =============================================================================
 
 import type { Rng } from '../engine/math'
-import type { Entry, LanguageId, Utterance } from '../../shared/lang/types'
+import type { Entry, GlossMode, LanguageId, Utterance } from '../../shared/lang/types'
 import { DEFAULT_LEVEL, ZH_LEVELS, upTo } from '../../shared/lang/levels'
 
 export const LINES = {
@@ -60,6 +60,12 @@ let language: LanguageId = 'zh'
  *  the default font: every creature speaks the same language. */
 export const setLanguage = (id: LanguageId): void => { language = id }
 export const currentLanguage = (): LanguageId => language
+
+let gloss: GlossMode = 'en'
+/** Which meaning shows under the Chinese. Global like the language, and read
+ *  at draw time by everything that shows a line. */
+export const setGloss = (m: GlossMode): void => { gloss = m }
+export const currentGloss = (): GlossMode => gloss
 
 /**
  * How often a creature reaches for the chosen level rather than one below it.

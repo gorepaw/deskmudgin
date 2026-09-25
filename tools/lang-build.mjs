@@ -88,6 +88,52 @@ for (const row of verified) {
   }
 }
 
+// ── Glosses ────────────────────────────────────────────────────────────────
+// A course's glosses in other languages live beside it (`hsk1.es.tsv`) and are
+// joined here by id. A gloss ships only if it is verified by two keys itself
+// AND was checked against the line as it stands now — a gloss of a sentence
+// that has since been corrected is a gloss of a different sentence. Anything
+// else simply is not there, and the app shows English in its place.
+const GLOSSES = { es: 'spanish' }
+const glossed = new Map()
+const glossCounts = []
+for (const [lang, key] of Object.entries(GLOSSES)) {
+  const path = corpusPath.replace(/\.tsv$/, `.${lang}.tsv`)
+  const glossRows = readTsv(path)
+  if (!glossRows.length) continue
+  let used = 0
+  for (const gRow of glossRows.filter(r => r.status === 'verified')) {
+    const line = verified.find(r => r.id === gRow.id)
+    if (!line || line.script !== gRow.script || line.english !== gRow.english) continue
+    const keys = gRow.checks.split(',')
+    const blind = keys.some(k => ['gt', 'claude-blind', 'human', 'claude-adjudicated'].includes(k))
+    const judge = keys.some(k => k === 'gemini' || k === 'claude-review' || k === 'human')
+    if (!blind || !judge) {
+      fatal.push(`${path} line ${gRow._line} (${gRow.id}): marked verified but checks="${gRow.checks}" — the two-key rule was not satisfied`)
+      continue
+    }
+    const want = line.script.split('｜').length
+    if (gRow.gloss.split(' | ').length !== want) {
+      fatal.push(`${path} line ${gRow._line} (${gRow.id}): ${want} turn(s) in the Chinese but the gloss has ${gRow.gloss.split(' | ').length} — separate turns with " | "`)
+      continue
+    }
+    // Two creatures must never share a name in any language: a pet list with
+    // two "Perlita"s is a bug the learner sees. Names only — two sentences
+    // may well mean the same thing.
+    if (kind === 'names') {
+      const twin = [...glossed.entries()].find(([, g]) => g[key] === gRow.gloss)
+      if (twin) {
+        fatal.push(`${path} line ${gRow._line} (${gRow.id}): "${gRow.gloss}" is already ${twin[0]}'s name`)
+        continue
+      }
+    }
+    if (!glossed.has(gRow.id)) glossed.set(gRow.id, {})
+    glossed.get(gRow.id)[key] = gRow.gloss
+    used++
+  }
+  glossCounts.push(`${used} ${lang}`)
+}
+
 if (fatal.length) {
   console.error(`refusing to build ${course} — ${fatal.length} problem(s):\n`)
   for (const f of fatal.slice(0, 30)) console.error('  ' + f)
@@ -99,8 +145,9 @@ if (fatal.length) {
 const body = verified.map(r => {
   const tags = r.tags.split(',').map(t => t.trim()).filter(Boolean)
   const cell = s => JSON.stringify(s)
+  const extra = Object.entries(glossed.get(r.id) ?? {}).map(([k, v]) => ` ${k}: ${cell(v)},`).join('')
   return `  { id: ${cell(r.id)}, script: ${cell(r.script)}, reading: ${cell(r.reading)},`
-    + ` english: ${cell(r.english)}, tags: [${tags.map(cell).join(', ')}] },`
+    + ` english: ${cell(r.english)},${extra} tags: [${tags.map(cell).join(', ')}] },`
 }).join('\n')
 
 const claudeOnly = verified.filter(r => r.checks.includes('claude') && !r.checks.includes('human')).length
@@ -134,7 +181,7 @@ const changed = !existsSync(outPath) || readFileSync(outPath, 'utf8') !== out
 if (changed) writeFileSync(outPath, out, 'utf8')
 
 const counts = rows.reduce((a, r) => ({ ...a, [r.status]: (a[r.status] ?? 0) + 1 }), {})
-console.log(`${course}: ${verified.length} verified of ${rows.length}`)
+console.log(`${course}: ${verified.length} verified of ${rows.length}${glossCounts.length ? ` · glosses: ${glossCounts.join(", ")}` : ""}`)
 console.log('  ' + Object.entries(counts).map(([k, v]) => `${k} ${v}`).join('   '))
 console.log(`  ${changed ? 'written to' : 'unchanged'} ${outPath}`)
 if (!verified.length) {

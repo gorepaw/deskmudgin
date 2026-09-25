@@ -1,0 +1,85 @@
+# Google Translate's Spanish for hsk2.es, chunk 04 — 75 entries.
+#
+# 1. Open hsk2.es.04.gt.txt and copy all of it.
+# 2. Paste into Google Translate, Chinese → Spanish.
+# 3. Copy the Spanish side and paste it below, replacing nothing above.
+#
+# One line per entry, in the order sent, and nothing else. Lines starting
+# with # are ignored. The join is line position, so a different number of
+# lines is refused rather than guessed at — if that happens, paste again
+# rather than trying to patch it up by hand.
+¿Por qué?
+¿Por qué no?
+Porque me gustas, por eso vine.
+Porque llovía, por eso no fui.
+Aunque estoy muy cansado, estoy muy contento.
+Aunque afuera hace mucho frío, quiero salir a jugar.
+¡No te rías!
+Él se rió.
+¿De qué te ríes?
+Estoy leyendo un libro.
+Él está hablando por teléfono.
+Estoy buscando mi celular.
+¿Viste mi reloj?
+¿Dónde está mi celular?
+Llámame.
+Te voy a contar algo.
+¡No le digas!
+¿Puedes ayudarme?
+Gracias por tu ayuda.
+Déjame presentarte.
+¡Pasa!
+Espera un momento, por favor.
+¡Espérame!
+Vámonos juntos.
+¡Caminas demasiado rápido!
+No quiero lavar la ropa.
+Voy a lavarme las manos.
+Él está leyendo el periódico.
+Me gusta tomar café.
+El café está demasiado caliente.
+Tomo leche todas las mañanas.
+No como carne de cordero.
+La comida de este restaurante está muy rica.
+Mesero, queremos dos tazas de té.
+Estoy enfermo.
+Tienes que tomar medicina.
+¿Cómo está tu salud?
+Mañana tengo que ir al hospital.
+Toma más agua y descansa más.
+La puerta está abierta.
+¡Abre la puerta, por favor!
+¿Estás afuera?
+Hay alguien afuera.
+Entremos.
+¡Sal!
+No quiero salir.
+¿Puedo entrar?
+Él salió.
+¿Esa persona es hombre o mujer?
+¿Cuál es tu apellido?
+Tengo doscientos yuanes.
+¡Mil yuanes es demasiado caro!
+¡Soy el primero!
+¡Soy el más alto!
+Eres más rápido que yo.
+Él es dos años mayor que yo.
+Esto es mejor que aquello.
+No soy tan alto como tú.
+¿Esto es nuevo?
+Tengo un celular nuevo.
+Me gusta tu ropa nueva.
+Ya terminé de leer este libro.
+¿Ya terminaste?
+Todavía no termino.
+¡Empecemos!
+¿Cuándo empezamos?
+¿Ya estás listo?
+¡Ya estoy listo!
+Espero que mañana esté soleado.
+Espero que seas feliz.
+Tal vez.
+¿Está bien así?
+¡No se puede!
+¿Puedo sentarme aquí?
+¿Adónde vas?

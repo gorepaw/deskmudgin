@@ -1,0 +1,85 @@
+# Google Translate's Spanish for hsk2.es, chunk 02 — 75 entries.
+#
+# 1. Open hsk2.es.02.gt.txt and copy all of it.
+# 2. Paste into Google Translate, Chinese → Spanish.
+# 3. Copy the Spanish side and paste it below, replacing nothing above.
+#
+# One line per entry, in the order sent, and nothing else. Lines starting
+# with # are ignored. The join is line position, so a different number of
+# lines is refused rather than guessed at — if that happens, paste again
+# rather than trying to patch it up by hand.
+Quiero jugar con todos.
+Quiero sentarme a tu lado.
+¡No hagas eso!
+¿Qué vas a hacer?
+¿Adónde vamos?
+¡Está muy alto!
+¡Déjame bajar!
+¡Déjame bajar rápido!
+¡No quiero!
+¡Más despacio!
+¿Por qué haces eso?
+¡No lo vuelvas a hacer!
+¡Esto no está bien!
+Lo hiciste mal.
+¡Gracias!
+¡Está muy rico, gracias!
+Esto es lo que más me gusta comer.
+¡Todavía quiero comer más!
+Comí muy bien.
+El platillo que me diste está muy rico.
+¡Otra vez!
+¡No te vayas!
+Esto es lo que más me gusta.
+¿Puedes hacerlo otra vez?
+¡Qué bien!
+Eres muy bueno conmigo.
+Ya me voy.
+¡Nos vemos en la noche!
+Me voy primero, ¡adiós!
+¡Que te vaya bien!
+Que le vaya bien.
+Nos vemos mañana por la mañana.
+¡Ya me levanté!
+¿Qué hora es? ¿Cuánto tiempo dormí?
+Todavía quiero dormir.
+Dormí muy bien.
+¿Ya es de noche?
+Dormí diez horas.
+Hoy está soleado.
+Hoy está nublado.
+¡Está nevando afuera!
+Puede que mañana llueva.
+Hoy hace más frío que ayer.
+Hoy hace muy buen tiempo.
+¡Está nevando, salgamos a jugar!
+Me gusta la nieve.
+Afuera hace frío, ponte más ropa.
+Hoy hace mucho calor, quiero ir a nadar.
+¿Mañana va a estar soleado?
+Está nublado, puede que vaya a llover.
+Tengo un hermano mayor.
+Mi hermana mayor es doctora.
+Mi hermano menor tiene seis años.
+Mi hermana menor es muy bonita.
+Él es mi esposo.
+Ella es mi esposa.
+¿Tienes hijos?
+Mi hermano mayor es más alto que yo.
+¿Cuántas hermanas mayores tienes?
+A mi hijo le gusta jugar fútbol.
+¿A qué hora empieza la clase?
+Hoy hay examen.
+No sé hacer esta pregunta.
+No entiendo esta pregunta.
+¿Entendiste?
+¡Ya entendí!
+El maestro está en el salón de clases.
+Tengo que prepararme para el examen.
+¡El examen ha comenzado!
+¿Cómo te fue en el examen?
+¿Puedo hacerte una pregunta?
+Por favor responde mi pregunta.
+Ya llevo un año estudiando chino.
+¿Qué significa esta palabra?
+¿Qué quieres decir?

@@ -13,9 +13,9 @@ import { UI } from './theme'
 import * as chrome from './chrome'
 import type { Trace } from './chrome'
 import { clamp } from '../engine/math'
-import { dwellSeconds, isEntry, type Entry, type Utterance } from '../../shared/lang/types'
+import { dwellSeconds, glossesOf, isEntry, type Entry, type Utterance } from '../../shared/lang/types'
 import { LANGUAGES } from '../../shared/lang'
-import { currentLanguage } from '../pet/lines'
+import { currentGloss, currentLanguage } from '../pet/lines'
 
 const PAD = 7
 const GRUNT = 12
@@ -117,9 +117,14 @@ export class Speech {
 
   update(dt: number): void { if (this.life > 0) this.life -= dt }
 
+  /** The meaning lines under the Chinese — one, or English and Spanish. */
+  private glosses(u: Entry): string[] { return glossesOf(u, currentGloss()) }
+
   private get height(): number {
     if (!this.said || !isEntry(this.said)) return GRUNT + PAD * 2
-    return PAD * 2 + SCRIPT + GAP + READING + GAP + GLOSS + (this.said.reading ? 0 : -READING - GAP)
+    const n = this.glosses(this.said).length
+    return PAD * 2 + SCRIPT + GAP + READING + GAP + GLOSS * n + GAP * (n - 1)
+      + (this.said.reading ? 0 : -READING - GAP)
   }
 
   /**
@@ -135,7 +140,7 @@ export class Speech {
     if (!u) return 0
     if (!isEntry(u)) return Math.min(220, u.length * 7.5 + PAD * 2)
     return Math.min(MAX_W, Math.max(u.script.length * SCRIPT, u.reading.length * 6.5,
-      u.english.length * 6.5) + PAD * 2 + 4)
+      ...this.glosses(u).map(t => t.length * 6.5)) + PAD * 2 + 4)
   }
 
   private layout(ax: number, ay: number, worldW: number, measured: number): Layout {
@@ -167,7 +172,7 @@ export class Speech {
         ? Math.min(MAX_W, Math.max(
             g.measure(u.script, SCRIPT, script),
             u.reading ? g.measure(u.reading, READING, READING_FONT) : 0,
-            g.measure(u.english, GLOSS)) + PAD * 2 + 4)
+            ...this.glosses(u).map(t => g.measure(t, GLOSS))) + PAD * 2 + 4)
         : Math.min(220, g.measure(u, GRUNT) + PAD * 2)
     }
     const { w, h, x, y } = this.layout(ax, ay, worldW, this.measured)
@@ -204,7 +209,10 @@ export class Speech {
         g.text(u.reading, cx, ly + READING / 2, { size: READING, color: UI.accent, alpha: a, font: READING_FONT })
         ly += READING + GAP
       }
-      g.text(u.english, cx, ly + GLOSS / 2, { size: GLOSS, color: UI.dim, alpha: a })
+      for (const t of this.glosses(u)) {
+        g.text(t, cx, ly + GLOSS / 2, { size: GLOSS, color: UI.dim, alpha: a })
+        ly += GLOSS + GAP
+      }
     }
     chrome.glass(g, trace, area, a)
     const m = 2 + chrome.frame().reach

@@ -1,0 +1,85 @@
+# Google Translate's Spanish for hsk2.es, chunk 01 — 75 entries.
+#
+# 1. Open hsk2.es.01.gt.txt and copy all of it.
+# 2. Paste into Google Translate, Chinese → Spanish.
+# 3. Copy the Spanish side and paste it below, replacing nothing above.
+#
+# One line per entry, in the order sent, and nothing else. Lines starting
+# with # are ignored. The join is line position, so a different number of
+# lines is refused rather than guessed at — if that happens, paste again
+# rather than trying to patch it up by hand.
+Quiero comer fideos.
+Quiero comer huevo.
+Quiero beber leche.
+¿Tienes sandía?
+Quiero comer carne de cordero.
+¡Quiero comer!
+¿Cuándo vamos a comer? ¿Todavía hay que esperar?
+¿Hay algo rico para comer?
+Dame algo de comer.
+¿Hay pescado aquí?
+Ya llevo un día sin comer nada.
+¡Dame de comer rápido!
+¿Puedo comer esto?
+¿Todavía hay leche?
+¿Ya está lista la comida?
+Quiero comer manzana y sandía.
+Lo que más me gusta comer es pescado.
+Quiero tomar café.
+Ya llevo mucho tiempo esperando.
+Comamos fideos al mediodía.
+¡Hola!
+¡Bienvenido!
+¡Bienvenido, qué bueno que viniste!
+¡Bienvenido de vuelta!
+¡Buenos días!
+¡Buenas noches!
+¿Cómo está tu salud?
+¿Cómo has estado últimamente?
+¡Hola a todos!
+¡Tú también estás aquí!
+¿Estás ocupado hoy?
+¿Cuál es su apellido?
+¿Dormiste bien?
+¿Todavía estás ahí?
+¡Ya llegué!
+¡Esto está muy rico!
+Esto no está tan rico como el pescado.
+¡Ya terminé de comer!
+Todavía quiero comer más.
+¡Qué rico!
+Estoy comiendo algo.
+No me mires, estoy comiendo.
+Esto está más rico que la manzana.
+Comí dos.
+¡No comas eso!
+Estoy cansado.
+Estoy muy cansado.
+Quiero descansar un poco.
+Me voy a dormir.
+Ya estoy muy cansado.
+Hoy quiero descansar más temprano.
+Déjame descansar un poco.
+Hoy estoy muy cansado.
+No quiero levantarme.
+No hables, quiero dormir.
+Ya no puedo caminar más.
+Descansemos un poco.
+¡Soy muy feliz!
+¡Hoy es un gran día!
+¡Estoy muy contento!
+¡Eres a quien más quiero!
+¡Eres muy bueno!
+Me siento muy bien.
+¡Quiero cantar!
+¡Bailemos juntos!
+Mira, ¡estoy riendo!
+Soy feliz todos los días.
+¡Feliz cumpleaños!
+¿Adónde se fueron todos?
+Nadie juega conmigo.
+¿Quién viene a jugar conmigo?
+Llevo mucho tiempo esperándote.
+¿Cuándo vuelves? Te espero.
+Estoy solo, qué aburrido.
+¿Están todos ocupados?

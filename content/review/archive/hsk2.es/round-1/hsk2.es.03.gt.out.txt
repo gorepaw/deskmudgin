@@ -1,0 +1,85 @@
+# Google Translate's Spanish for hsk2.es, chunk 03 — 75 entries.
+#
+# 1. Open hsk2.es.03.gt.txt and copy all of it.
+# 2. Paste into Google Translate, Chinese → Spanish.
+# 3. Copy the Spanish side and paste it below, replacing nothing above.
+#
+# One line per entry, in the order sent, and nothing else. Lines starting
+# with # are ignored. The join is line position, so a different number of
+# lines is refused rather than guessed at — if that happens, paste again
+# rather than trying to patch it up by hand.
+No lo sé.
+¿Lo sabes?
+¡Ya lo sé!
+El lápiz está sobre la mesa.
+No encuentro mi lápiz.
+Esta es la primera vez que vengo a Beijing.
+Mi hermano mayor trabaja en una empresa.
+Ya me voy a trabajar.
+¿A qué hora entras a trabajar todos los días?
+Está muy ocupado con el trabajo.
+Hoy no trabajo.
+Me gusta jugar baloncesto.
+¡Vamos a jugar fútbol juntos!
+Corro todas las mañanas.
+¿Sabes nadar?
+Nado muy rápido.
+El ejercicio es bueno para la salud.
+Él corre muy rápido.
+¿Qué deporte te gusta?
+¡Vamos a cantar!
+Ella baila muy bien.
+¡Es muy caro!
+Esto es muy barato.
+¿Hay algo más barato?
+Quiero comprar una prenda de ropa.
+¿Qué color te gusta?
+Lo que más me gusta es el rojo.
+Creo que el blanco se ve bien.
+Él lleva puesta una ropa negra.
+¿Aquí venden sandía?
+¿A qué hora abre la tienda?
+Esto es más caro que aquello.
+No tengo tiempo.
+¿Tienes tiempo?
+¿Cuándo es tu cumpleaños?
+¡Hoy es mi cumpleaños!
+El año pasado fui a Beijing.
+Ya comí.
+Él ya se fue.
+Esperé una hora.
+Todavía quedan diez minutos.
+¡Vámonos rápido!
+¡Se acabó el tiempo!
+Todos los días estoy muy ocupado.
+Me levanto a las ocho todos los días.
+Vamos a ver una película esta noche.
+Quiero ir de viaje.
+¿Está lejos el aeropuerto de aquí?
+El hospital está muy cerca de aquí.
+Vamos en autobús.
+Nos hospedamos en un hotel.
+¿Dónde está tu habitación?
+Ve hacia la izquierda.
+Ve hacia la derecha.
+La escuela está al lado del hospital.
+La tienda está a la derecha.
+Vengo de Beijing.
+¿De dónde vienes?
+Beijing está muy lejos de aquí.
+Hay mucho tráfico en el camino.
+Los boletos de avión son muy caros.
+¡Ya conseguí el boleto!
+¿Has estado en China?
+He estado en Beijing.
+Tus ojos son muy bonitos.
+Tengo un ojo muy grande.
+El gato está afuera de la puerta.
+Es mi gato.
+¿Cómo se llama?
+Tienes razón.
+Creo que tienes razón.
+¡Yo también!
+Yo tampoco lo sé.
+¿De verdad?
+¡De verdad!

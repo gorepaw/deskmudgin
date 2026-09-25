@@ -1,0 +1,84 @@
+# Gemini's reply for hsk1.es, chunk 04 — 74 entries.
+#
+# Paste the whole of hsk1.es.04.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_gloss<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+# and copy it back out — that turns the columns into real tabs.
+id	verdict	fix_gloss	note
+p231	ok		
+p232	ok		
+p233	ok		
+p234	ok		
+p235	ok		
+p236	ok		
+p237	ok		
+p238	ok		
+p239	ok		
+p240	fix	¡Es demasiado poco!	Chinese 太少了 uses 太 ("too"), like 太热了/太大了 nearby which are all glossed with "demasiado"; "muy poco" only means "very little", losing the excessive/insufficient sense
+p241	ok		
+p242	ok		
+p243	ok		
+p244	ok		
+p245	ok		
+p246	ok		
+p247	ok		
+p248	ok		
+p249	ok		
+p250	ok		
+p251	ok		
+p252	ok		
+p253	ok		
+p254	ok		
+p255	ok		
+p256	ok		
+p257	ok		
+p258	ok		
+p259	ok		
+p260	ok		
+p261	ok		
+p262	ok		
+p263	ok		
+p264	ok		
+p265	ok		
+p266	ok		
+p267	ok		
+p268	ok		
+p269	ok		
+p270	ok		
+p271	ok		
+p272	ok		
+p273	ok		
+p274	ok		
+p275	ok		
+p276	ok		
+p277	ok		
+p278	ok		
+p279	ok		
+p280	ok		
+p281	ok		
+p282	ok		
+p283	ok		
+p284	ok		
+p285	ok		
+p286	ok		
+p287	ok		
+p288	ok		
+p289	ok		
+p290	ok		
+p291	ok		
+p292	ok		
+p293	ok		
+p294	ok		
+p295	ok		
+p296	ok		
+p297	ok		
+p298	ok		
+p299	ok		
+p300	fix	Me encanta la comida china.	"Amar" reads stiff/anglicized applied to food; a native speaker says "me encanta" for things one loves (amar is for people, as correctly used in p241 for family)
+p301	fix	Me encanta tomar té.	Same issue as p300: "amar" plus inanimate object/activity is unnatural register; "encantar" is the natural equivalent
+p302	fix	Me encanta leer.	Same issue as p300: unnatural to say "amo leer" in casual neutral Spanish; "me encanta leer" is what a native speaker says
+p303	fix	Me encanta dormir.	Same issue as p300: "amo dormir" is stiff/calque-like; "me encanta dormir" is the natural phrase
+p304	fix	Me encanta comer.	Same issue as p300: "amo comer" is unnatural register for a casual line; "me encanta comer" is natural

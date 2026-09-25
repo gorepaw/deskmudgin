@@ -780,6 +780,47 @@ to one file literally named `proof$t.png`.
 Dictionary panels (on a stub host) and bubbles in one theme — render it with
 `npm run snap -- chrome out.png 1520 860 theme=manuscript`.
 
+## Spanish glosses
+
+Settings → *they speak* → **meaning**: English, Español, or Both. It changes the
+meaning line under the Chinese — bubbles, the dictionary, the ledger footer and
+pet names — and nothing else; the interface stays English.
+
+**Shape.** A Spanish gloss is a claim of its own, so it lives in its own file
+beside each course (`hsk1.es.tsv`: id, the line's script/reading/English as
+context, `gloss`, status, checks) and a verified Chinese row is never touched
+by adding one. `gloss-sync` lays the file out from the verified course and
+sends a gloss back to draft if its line changes; `gloss-fill` takes plain
+`id<TAB>spanish` drafts and only ever fills drafts; export/ingest recognise a
+`.es.tsv` by name and check `gloss` instead of `english` (blind key: Chinese →
+Spanish; accent-folding, Spanish stopwords); the build joins verified glosses
+by id and ships `spanish` on each entry. `Entry.spanish` is optional and read
+only through `glossesOf`, which falls back to English — an unverified gloss
+shows English, never a blank line. Neutral Latin American Spanish throughout.
+
+**Content:** all 1,289 lines (words, sentences, conversations, names) verified
+by the same two keys, `claude-*` provenance as ever. Four rounds.
+
+**What the checks caught:** 明天 and 上午 both glossed *mañana*; 字 as *palabra*
+(that is 词); *amo* for things (*me encanta*); *súper* for 非常; *yuanes es*;
+and in the names, the most important: *Concha/Conchín* (vulgar in the Río de la
+Plata), *Almejita* (vulgar in the Caribbean — the replacement for the
+replacement), *Barrito* (a pimple), *Platita* (money), *Negrito* (a racial
+reading), and three exact duplicates between creatures. The reviewers then
+cycled 滴滴 between *Gotín* and alternatives for three rounds; it was ended
+by adjudication, on the course rule that reviewers are not asked forever.
+
+**Tooling found wanting, and fixed:**
+- `writeTsv` wrote a fixed column list — it would have silently dropped the
+  `gloss` column of every file it rewrote. It now writes the columns the file
+  was read with.
+- Ingest applied a reviewer's one-turn fix to a two-turn conversation. The
+  build refused it, but ingest now refuses it first and keeps the old gloss.
+- A blind reply came back numbered (`1<TAB>…`) and crashed the writer with a
+  message about a field; ingest now names the chunk and line instead.
+- Nothing stopped two creatures sharing a Spanish name. The build now refuses
+  a duplicate name gloss.
+
 ## What is not built
 
 Nothing from either plan. Deferred: breeding, Sephin maturity, Spanish, HSK 3

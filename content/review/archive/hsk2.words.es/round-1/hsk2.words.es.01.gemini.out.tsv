@@ -1,0 +1,90 @@
+# Gemini's reply for hsk2.words.es, chunk 01 — 80 entries.
+#
+# Paste the whole of hsk2.words.es.01.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_gloss<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+# and copy it back out — that turns the columns into real tabs.
+id	verdict	fix_gloss	note
+h2w001	fix	(partícula de sugerencia o de confirmación)	The other particle entries in this set (的, 了, 吗, 呢, 得, 过, 着) use a plain "(partícula...)" tag; this one instead embeds literal translations ("vamos a…; ¿verdad?"), which breaks that pattern and reads as two unrelated senses rather than one particle
+h2w002	ok		
+h2w003	ok		
+h2w004	ok		
+h2w005	ok		
+h2w006	ok		
+h2w007	fix	no (para prohibir algo)	别 is the prohibitive "don't (do that)!", distinct from plain negation 不 (which is already glossed simply "no"); bare "no" loses that and makes the two indistinguishable
+h2w008	ok		
+h2w009	ok		
+h2w010	ok		
+h2w011	ok		
+h2w012	ok		
+h2w013	ok		
+h2w014	ok		
+h2w015	ok		
+h2w016	ok		
+h2w017	ok		
+h2w018	ok		
+h2w019	ok		
+h2w020	ok		
+h2w021	ok		
+h2w022	ok		
+h2w023	ok		
+h2w024	ok		
+h2w025	ok		
+h2w026	ok		
+h2w027	fix	mesero; empleado de servicio	"encargado" reads as "manager/person in charge", which overstates 服务员 (entry-level service staff — waiter, hotel attendant, clerk)
+h2w028	ok		
+h2w029	ok		
+h2w030	ok		
+h2w031	ok		
+h2w032	ok		
+h2w033	ok		
+h2w034	ok		
+h2w035	ok		
+h2w036	ok		
+h2w037	ok		
+h2w038	ok		
+h2w039	ok		
+h2w040	ok		
+h2w041	ok		
+h2w042	ok		
+h2w043	ok		
+h2w044	ok		
+h2w045	ok		
+h2w046	ok		
+h2w047	ok		
+h2w048	ok		
+h2w049	ok		
+h2w050	ok		
+h2w051	ok		
+h2w052	ok		
+h2w053	ok		
+h2w054	ok		
+h2w055	ok		
+h2w056	ok		
+h2w057	fix	poder (tener permiso)	可以 is permission ("may"); plain "poder" is already used for 能 (h1 w072) and risks merging with 会/能, which this HSK set otherwise keeps distinct (know-how vs. ability vs. permission)
+h2w058	ok		
+h2w059	ok		
+h2w060	ok		
+h2w061	ok		
+h2w062	fix	de	离 is a neutral distance/time reference ("X离Y近/远" = "X is near/far from Y"), not "far" by itself — "lejos de" wrongly bakes in "far", and it can be near just as easily (离这儿很近 = close to here, not far)
+h2w063	ok		
+h2w064	ok		
+h2w065	ok		
+h2w066	ok		
+h2w067	ok		
+h2w068	ok		
+h2w069	ok		
+h2w070	ok		
+h2w071	ok		
+h2w072	ok		
+h2w073	ok		
+h2w074	ok		
+h2w075	ok		
+h2w076	ok		
+h2w077	ok		
+h2w078	ok		
+h2w079	ok		
+h2w080	ok		

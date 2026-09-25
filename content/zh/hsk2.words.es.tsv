@@ -1,0 +1,151 @@
+id	script	reading	english	gloss	status	checks	note
+h2w001	吧	ba	(suggestion particle) let's…; …right?	(partícula de sugerencia o de confirmación)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent description
+h2w002	白	bái	white	blanco	verified	claude-blind,claude-review	
+h2w003	百	bǎi	hundred	cien	verified	claude-blind,claude-review	
+h2w004	帮助	bāng zhù	to help	ayudar	verified	claude-blind,claude-review	
+h2w005	报纸	bào zhǐ	newspaper	periódico	verified	claude-blind,claude-review	
+h2w006	比	bǐ	than; compared with	que; comparado con	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+h2w007	别	bié	don't	no (para prohibir algo)	verified	claude-blind,claude-review	
+h2w008	宾馆	bīn guǎn	hotel	hotel	verified	claude-blind,claude-review	
+h2w009	长	cháng	long	largo	verified	claude-blind,claude-review	
+h2w010	唱歌	chàng gē	to sing	cantar	verified	claude-blind,claude-review	
+h2w011	出	chū	to go out; to come out	salir	verified	claude-blind,claude-review	
+h2w012	穿	chuān	to wear; to put on	vestir; ponerse	verified	claude-blind,claude-review	
+h2w013	次	cì	(measure word for times)	(clasificador para veces)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+h2w014	从	cóng	from	desde	verified	claude-blind,claude-review	
+h2w015	错	cuò	wrong	incorrecto	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+h2w016	打篮球	dǎ lán qiú	to play basketball	jugar baloncesto	verified	claude-blind,claude-review	
+h2w017	大家	dà jiā	everyone	todos	verified	claude-blind,claude-review	
+h2w018	到	dào	to arrive; to	llegar; a	verified	claude-blind,claude-review	
+h2w019	得	de	(structural particle after a verb)	(partícula estructural después de un verbo)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+h2w020	等	děng	to wait	esperar	verified	claude-blind,claude-review	
+h2w021	弟弟	dì di	younger brother	hermano menor	verified	claude-blind,claude-review	
+h2w022	第一	dì yī	first	primero	verified	claude-blind,claude-review	
+h2w023	懂	dǒng	to understand	entender	verified	claude-blind,claude-review	
+h2w024	对	duì	correct; towards	correcto; hacia	verified	claude-blind,claude-review	
+h2w025	房间	fáng jiān	room	habitación	verified	claude-blind,claude-review	
+h2w026	非常	fēi cháng	very; extremely	muy; sumamente	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+h2w027	服务员	fú wù yuán	waiter; attendant	mesero; empleado de servicio	verified	claude-blind,claude-review	
+h2w028	高	gāo	tall; high	alto	verified	claude-blind,claude-review	
+h2w029	告诉	gào su	to tell	decir; contar	verified	claude-blind,claude-review	
+h2w030	哥哥	gē ge	older brother	hermano mayor	verified	claude-blind,claude-review	
+h2w031	给	gěi	to give; for	dar; para	verified	claude-blind,claude-review	
+h2w032	公共汽车	gōng gòng qì chē	bus	autobús	verified	claude-blind,claude-review	
+h2w033	公司	gōng sī	company	empresa	verified	claude-blind,claude-review	
+h2w034	贵	guì	expensive	caro	verified	claude-blind,claude-review	
+h2w035	过	guo	(particle for past experience)	(partícula de experiencia pasada)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+h2w036	还	hái	still; also	todavía; también	verified	claude-blind,claude-review	
+h2w037	孩子	hái zi	child	niño	verified	claude-blind,claude-review	
+h2w038	好吃	hǎo chī	tasty	sabroso	verified	claude-blind,claude-review	
+h2w039	黑	hēi	black	negro	verified	claude-blind,claude-review	
+h2w040	红	hóng	red	rojo	verified	claude-blind,claude-review	
+h2w041	欢迎	huān yíng	welcome	bienvenido	verified	claude-blind,claude-review	
+h2w042	回答	huí dá	to answer	responder	verified	claude-blind,claude-review	
+h2w043	机场	jī chǎng	airport	aeropuerto	verified	claude-blind,claude-review	
+h2w044	鸡蛋	jī dàn	egg	huevo	verified	claude-blind,claude-review	
+h2w045	件	jiàn	(measure word for clothes and matters)	(clasificador para ropa y asuntos)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+h2w046	教室	jiào shì	classroom	salón de clases	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+h2w047	姐姐	jiě jie	older sister	hermana mayor	verified	claude-blind,claude-review	
+h2w048	介绍	jiè shào	to introduce	presentar	verified	claude-blind,claude-review	
+h2w049	进	jìn	to enter	entrar	verified	claude-blind,claude-review	
+h2w050	近	jìn	near	cerca	verified	claude-blind,claude-review	
+h2w051	就	jiù	just; right away	justo; enseguida	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+h2w052	觉得	jué de	to feel; to think	sentir; pensar	verified	claude-blind,claude-review	
+h2w053	咖啡	kā fēi	coffee	café	verified	claude-blind,claude-review	
+h2w054	开始	kāi shǐ	to begin	empezar	verified	claude-blind,claude-review	
+h2w055	考试	kǎo shì	exam	examen	verified	claude-blind,claude-review	
+h2w056	可能	kě néng	maybe; possible	quizás; posible	verified	claude-blind,claude-review	
+h2w057	可以	kě yǐ	can; may	poder (tener permiso)	verified	claude-blind,claude-review	
+h2w058	课	kè	class; lesson	clase; lección	verified	claude-blind,claude-review	
+h2w059	快	kuài	fast	rápido	verified	claude-blind,claude-review	
+h2w060	快乐	kuài lè	happy	feliz	verified	claude-blind,claude-review	
+h2w061	累	lèi	tired	cansado	verified	claude-blind,claude-review	
+h2w062	离	lí	away from	(indica distancia) de	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent description
+h2w063	两	liǎng	two (of something)	dos	verified	claude-blind,claude-review	
+h2w064	零	líng	zero	cero	verified	claude-blind,claude-review	
+h2w065	路	lù	road	camino	verified	claude-blind,claude-review	
+h2w066	旅游	lǚ yóu	to travel	viajar	verified	claude-blind,claude-review	
+h2w067	卖	mài	to sell	vender	verified	claude-blind,claude-review	
+h2w068	慢	màn	slow	lento	verified	claude-blind,claude-review	
+h2w069	忙	máng	busy	ocupado	verified	claude-blind,claude-review	
+h2w070	每	měi	every	cada	verified	claude-blind,claude-review	
+h2w071	妹妹	mèi mei	younger sister	hermana menor	verified	claude-blind,claude-review	
+h2w072	门	mén	door	puerta	verified	claude-blind,claude-review	
+h2w073	面条	miàn tiáo	noodles	fideos	verified	claude-blind,claude-review	
+h2w074	男	nán	male	masculino	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+h2w075	您	nín	you (polite)	usted	verified	claude-blind,claude-review	
+h2w076	牛奶	niú nǎi	milk	leche	verified	claude-blind,claude-review	
+h2w077	女	nǚ	female	femenino	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+h2w078	旁边	páng biān	beside	al lado	verified	claude-blind,claude-review	
+h2w079	跑步	pǎo bù	to run; to jog	correr	verified	claude-blind,claude-review	
+h2w080	便宜	pián yi	cheap	barato	verified	claude-blind,claude-review	
+h2w081	票	piào	ticket	boleto	verified	claude-blind,claude-review	
+h2w082	妻子	qī zi	wife	esposa	verified	claude-blind,claude-review	
+h2w083	起床	qǐ chuáng	to get up	levantarse	verified	claude-blind,claude-review	
+h2w084	千	qiān	thousand	mil	verified	claude-blind,claude-review	
+h2w085	铅笔	qiān bǐ	pencil	lápiz	verified	claude-blind,claude-review	
+h2w086	晴	qíng	sunny	soleado	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+h2w087	去年	qù nián	last year	el año pasado	verified	claude-blind,claude-review	
+h2w088	让	ràng	to let; to make (someone do)	dejar; hacer (que alguien haga algo)	verified	claude-blind,claude-review	
+h2w089	日	rì	day; date	día; fecha	verified	claude-blind,claude-review	
+h2w090	上班	shàng bān	to go to work	ir al trabajo	verified	claude-blind,claude-review	
+h2w091	身体	shēn tǐ	body; health	cuerpo; salud	verified	claude-blind,claude-review	
+h2w092	生病	shēng bìng	to get sick	enfermarse	verified	claude-blind,claude-review	
+h2w093	生日	shēng rì	birthday	cumpleaños	verified	claude-blind,claude-review	
+h2w094	时间	shí jiān	time	tiempo	verified	claude-blind,claude-review	
+h2w095	事情	shì qing	matter; thing	asunto; cosa	verified	claude-blind,claude-review	
+h2w096	手表	shǒu biǎo	wristwatch	reloj de pulsera	verified	claude-blind,claude-review	
+h2w097	手机	shǒu jī	mobile phone	celular	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+h2w098	说话	shuō huà	to speak; to talk	hablar	verified	claude-blind,claude-review	
+h2w099	送	sòng	to give (as a gift); to see off	regalar; acompañar (a alguien que se va)	verified	claude-blind,claude-review	
+h2w100	虽然…但是	suī rán … dàn shì	although… (but)	aunque… (pero)	verified	claude-blind,claude-review	
+h2w101	它	tā	it	él; ella (cosa o animal)	verified	claude-blind,claude-review	
+h2w102	踢足球	tī zú qiú	to play football	jugar fútbol	verified	claude-blind,claude-review	
+h2w103	题	tí	question (on a test)	pregunta (de examen)	verified	claude-blind,claude-review	
+h2w104	跳舞	tiào wǔ	to dance	bailar	verified	claude-blind,claude-review	
+h2w105	外	wài	outside	afuera	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+h2w106	完	wán	to finish	terminar	verified	claude-blind,claude-review	
+h2w107	玩	wán	to play	jugar	verified	claude-blind,claude-review	
+h2w108	晚上	wǎn shang	evening	noche	verified	claude-blind,claude-review	
+h2w109	往	wǎng	towards	hacia	verified	claude-blind,claude-review	
+h2w110	为什么	wèi shén me	why	por qué	verified	claude-blind,claude-review	
+h2w111	问	wèn	to ask	preguntar	verified	claude-blind,claude-review	
+h2w112	问题	wèn tí	question; problem	pregunta; problema	verified	claude-blind,claude-review	
+h2w113	西瓜	xī guā	watermelon	sandía	verified	claude-blind,claude-review	
+h2w114	希望	xī wàng	to hope	desear	verified	claude-blind,claude-review	
+h2w115	洗	xǐ	to wash	lavar	verified	claude-blind,claude-review	
+h2w116	小时	xiǎo shí	hour	hora	verified	claude-blind,claude-review	
+h2w117	笑	xiào	to laugh; to smile	reír; sonreír	verified	claude-blind,claude-review	
+h2w118	新	xīn	new	nuevo	verified	claude-blind,claude-review	
+h2w119	姓	xìng	surname; to be surnamed	apellido; apellidarse	verified	claude-blind,claude-review	
+h2w120	休息	xiū xi	to rest	descansar	verified	claude-blind,claude-review	
+h2w121	雪	xuě	snow	nieve	verified	claude-blind,claude-review	
+h2w122	颜色	yán sè	colour	color	verified	claude-blind,claude-review	
+h2w123	眼睛	yǎn jing	eye	ojo	verified	claude-blind,claude-review	
+h2w124	羊肉	yáng ròu	mutton; lamb	carne de cordero	verified	claude-blind,claude-review	
+h2w125	药	yào	medicine	medicina	verified	claude-blind,claude-review	
+h2w126	要	yào	to want; will	querer; ir a (auxiliar de futuro)	verified	claude-blind,claude-review	
+h2w127	也	yě	also; too	también	verified	claude-blind,claude-review	
+h2w128	一起	yì qǐ	together	juntos	verified	claude-blind,claude-review	
+h2w129	一下	yí xià	(a quick) once; a bit	un momento; un poco	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent description
+h2w130	已经	yǐ jīng	already	ya	verified	claude-blind,claude-review	
+h2w131	意思	yì si	meaning	significado	verified	claude-blind,claude-review	
+h2w132	因为…所以	yīn wèi … suǒ yǐ	because… (so)	porque… (así que)	verified	claude-blind,claude-review	
+h2w133	阴	yīn	cloudy; overcast	nublado	verified	claude-blind,claude-review	
+h2w134	游泳	yóu yǒng	to swim	nadar	verified	claude-blind,claude-review	
+h2w135	右边	yòu bian	right side	derecha	verified	claude-blind,claude-review	
+h2w136	鱼	yú	fish	pez; pescado	verified	claude-blind,claude-review	
+h2w137	远	yuǎn	far	lejos	verified	claude-blind,claude-review	
+h2w138	运动	yùn dòng	sport; to exercise	deporte; hacer ejercicio	verified	claude-blind,claude-review	
+h2w139	再	zài	again	otra vez	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+h2w140	早上	zǎo shang	morning	la mañana	verified	claude-blind,claude-review	
+h2w141	丈夫	zhàng fu	husband	esposo	verified	claude-blind,claude-review	
+h2w142	找	zhǎo	to look for	buscar	verified	claude-blind,claude-review	
+h2w143	着	zhe	(particle for a continuing state)	(partícula de estado continuo)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+h2w144	真	zhēn	really; truly	realmente; verdaderamente	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+h2w145	正在	zhèng zài	in the middle of (doing)	en este momento (indica una acción en curso)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: equivalent Spanish description, or the intended sense per the verified English
+h2w146	知道	zhī dào	to know	saber	verified	claude-blind,claude-review	
+h2w147	准备	zhǔn bèi	to prepare	preparar	verified	claude-blind,claude-review	
+h2w148	走	zǒu	to walk; to leave	caminar; irse	verified	claude-blind,claude-review	
+h2w149	最	zuì	most	más (indica superlativo)	verified	claude-blind,claude-review	
+h2w150	左边	zuǒ bian	left side	izquierda	verified	claude-blind,claude-review	

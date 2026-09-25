@@ -5,7 +5,7 @@
 // =============================================================================
 
 import { rollMudgin, sampler, hashSeed, type Genes, type SpeciesId } from './genome'
-import type { LanguageId } from './lang/types'
+import type { GlossMode, LanguageId } from './lang/types'
 
 /**
  * Which plane the Mudgin lives on. This is the axis the whole app is built
@@ -218,6 +218,11 @@ export interface Settings {
    * `theme`, so a save naming a level this build lacks falls back to HSK 1.
    */
   level: string
+  /**
+   * The meaning shown under the Chinese: English, Spanish, or both. Spanish
+   * that is not verified yet shows as English, so any setting is always safe.
+   */
+  gloss: GlossMode
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -237,6 +242,7 @@ export const DEFAULT_SETTINGS: Settings = {
   speechScale: 1.5,
   talkScale: 1.5,
   level: 'hsk1',
+  gloss: 'en',
 }
 
 /**

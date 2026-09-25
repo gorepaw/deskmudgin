@@ -1,0 +1,58 @@
+¡Hola! | ¡Hola! ¿Estás ocupado hoy? | No estoy ocupado, estoy muy feliz.
+¿Cómo estás? | Estoy muy bien, ¿y tú? | Yo también estoy muy bien.
+¿Eres el nuevo compañero? ¡Bienvenido! | ¡Gracias! ¡Seamos amigos!
+Hola, ¿cuál es tu apellido? | Mi apellido es Gao, ¿y el tuyo? | Mi apellido es Bai.
+Hoy estás muy feliz, ¿por qué? | ¡Porque hoy es mi cumpleaños!
+¿Jugamos juntos mañana, sí? | ¡Sí, qué bien!
+¡Buenos días! | ¡Buenos días! ¿A qué hora te levantaste? | Me levanté a las siete.
+Hola, ¿adónde vas hoy? | Voy a la escuela, ¿y tú? | Voy a la tienda.
+¡Hola! ¿Qué quieres hacer hoy? | Quiero ir a nadar, ¿y tú? | Quiero descansar.
+¿Qué quieres comer? | Quiero comer fideos, ¿y tú? | Quiero comer huevo.
+¿Están ricos estos fideos? | ¡Muy ricos! Come un poco tú también.
+¿Quieres tomar café o leche? | Quiero tomar café, gracias.
+¿Qué te parece esta sandía? | Está muy rica, me gusta mucho.
+Mesero, quiero un fideo con huevo. | Está bien, espere un momento.
+¿Cuánto cuesta esto? | Es muy barato, tres yuanes. | ¡Qué bien, compro uno!
+Esta manzana es muy cara. | Sí, pero es muy deliciosa.
+¿Estás preparando la cena? | Sí, estoy haciendo fideos con huevo.
+¿Ya comiste? | Todavía no, quiero comer ahora.
+¡Vamos juntos al restaurante a comer! | Bien, yo también quiero comer pescado.
+¿Has comido carne de cordero? | Sí, la he comido, es muy deliciosa, pero es un poco cara.
+¿Crees que el café es rico? | Es rico, me gusta mucho el café.
+¿Nevará mañana? | Puede que sí, hace mucho frío.
+¿Hoy está soleado o nublado? | Está nublado, puede que vaya a llover.
+¡Está nevando afuera! | ¿De verdad? ¡Vamos a jugar afuera!
+Hoy hace muchísimo calor, ¿tienes calor? | Yo también tengo mucho calor, quiero ir a nadar.
+¿Cómo está el clima ahora? | Ahora hace mucho frío, pero mañana estará despejado.
+Está lloviendo, vamos a casa. | Bien, esperemos un momento y luego nos vamos.
+¡Hoy el clima está buenísimo! | Sí, vamos juntos a jugar afuera.
+¿A qué hora te duermes? | Me duermo a las diez de la noche, ¿y tú? | Yo me duermo a las once.
+¿Estás muy cansado hoy? | Muy cansado, quiero descansar temprano.
+¿A qué hora te levantas? | Me levanto a las siete de la mañana.
+¿Dormiste bien anoche? | Dormí muy bien, ahora no estoy cansado.
+¿Cuántas horas dormiste ayer? | Dormí ocho horas.
+¿Tienes hermano mayor? | No, pero tengo un hermano menor y una hermana menor.
+¿En qué trabaja tu hermana mayor? | Trabaja en una empresa.
+¿Qué deporte te gusta? | Me gusta jugar fútbol, ¿y tú? | Me gusta jugar baloncesto.
+¿Corres todos los días? | Sí, corro todos los días, tengo muy buena salud.
+¿Hay examen mañana? | Sí, es un examen de chino, estoy un poco ocupado.
+¿Entiendes esta pregunta? | No entiendo, ¿me puedes decir? | Sí, te voy a ayudar.
+El maestro hizo una pregunta, ¿la respondiste? | La respondí, pero creo que me equivoqué.
+¿Dónde está tu celular? | Está encima de la mesa.
+¿Dónde está el hotel? ¿Está lejos de aquí? | No está lejos, está muy cerca, está a tu derecha.
+¿Cómo se llega al aeropuerto? | Sigue adelante, el aeropuerto está a la izquierda.
+¿Cuánto cuesta esta ropa? | No es cara, es muy barata. | ¡Qué bien, la compro!
+¿Quieres comprar un lápiz? | Sí, también quiero comprar un periódico.
+¿Adónde viajaste el año pasado? | El año pasado fui a Pekín, es muy hermoso.
+¿El avión ya casi llega al aeropuerto? | Ya casi llega, preparémonos para bajar del avión.
+¿Cuál es tu color favorito? | Mi favorito es el rojo, ¿y tú? | Me gusta el negro.
+¿Por qué no estás feliz hoy? | Porque mi reloj se perdió.
+¿De qué te ríes? | Creo que hoy estoy muy feliz.
+¿Qué te pasa? | Puede que esté enfermo, no me siento muy bien.
+¿Vas a ir al hospital? | Sí, quiero comprar un poco de medicina.
+¿Sabes bailar? | Sé un poco, también me gusta cantar.
+¿Cuándo llega el autobús? | Puede que llegue en cinco minutos.
+¿Es él tu esposo? | Sí, ya nos conocemos desde hace diez años.
+¿Es ella tu esposa? | Sí, es una muy buena maestra.
+¿Qué estás buscando? | Estoy buscando mi celular, ¿lo viste? | No lo vi.
+¿Qué estás haciendo? | Estoy lavando la ropa, ¿y tú? | Estoy leyendo el periódico.

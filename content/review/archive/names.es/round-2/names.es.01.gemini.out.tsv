@@ -1,0 +1,40 @@
+# Gemini's reply for names.es, chunk 01 — 30 entries.
+#
+# Paste the whole of names.es.01.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_gloss<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+# and copy it back out — that turns the columns into real tabs.
+id	verdict	fix_gloss	note
+n004	ok		
+n016	ok		
+n017	ok		
+n018	ok		
+n035	ok		
+n039	ok		
+n041	ok		
+n048	ok		
+n050	ok		
+n058	ok		
+n063	ok		
+n065	fix	Perlita	珠 is pearl/bead; Canicita means little marble (toy), drifting from the pearl/bead sense
+n066	ok		
+n067	ok		
+n068	ok		
+n070	ok		
+n071	ok		
+n072	ok		
+n073	fix	Gotita	breaks the -ito/-in tiering used elsewhere: 滴滴 (reduplicated, no 小) should get the -ito tier like 海海->Marcito, 水水->Aguita, not the -in tier
+n081	ok		
+n082	ok		
+n084	ok		
+n085	ok		
+n086	fix	Platín	-in suffixed onto the participle plateado is an unnatural formation in Spanish; Platin (from plata, matching the Honguin/Marin/Hielin pattern) reads more naturally while still avoiding the plata=money association of Platita
+n087	ok		
+n098	ok		
+n099	ok		
+n105	fix	Caracolita	almeja is vulgar slang for female genitalia in parts of the Caribbean (Cuba, Puerto Rico), same problem as concha; caracolita (little conch/snail shell) is safe and still reads as a seashell
+n110	ok		
+n111	ok		

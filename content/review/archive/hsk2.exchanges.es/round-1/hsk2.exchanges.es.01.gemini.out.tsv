@@ -1,0 +1,69 @@
+# Gemini's reply for hsk2.exchanges.es, chunk 01 — 58 entries.
+#
+# Paste the whole of hsk2.exchanges.es.01.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_gloss<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+# and copy it back out — that turns the columns into real tabs.
+
+id	verdict	fix_gloss	note
+h2x001	ok		
+h2x002	ok		
+h2x003	ok		
+h2x004	ok		
+h2x005	ok		
+h2x006	ok		
+h2x008	ok		
+h2x009	ok		
+h2x010	ok		
+h2x011	fix	¿Qué quieres comer? | Quiero comer fideos, ¿y tú? | Quiero comer huevos.	"Comer huevo" (singular) is unnatural; when eating eggs as food Spanish uses the plural "huevos".
+h2x012	ok		
+h2x013	ok		
+h2x014	ok		
+h2x015	fix	Mesero, quiero unos fideos con huevo. | Claro, espera un momento.	"Un fideo" means one single noodle strand, not a dish; should be plural "unos fideos con huevo" (matches h2x018's own "fideos con huevo").
+h2x016	ok		
+h2x017	ok		
+h2x018	ok		
+h2x019	ok		
+h2x020	ok		
+h2x021	ok		
+h2x022	ok		
+h2x024	ok		
+h2x025	ok		
+h2x026	ok		
+h2x027	ok		
+h2x028	ok		
+h2x029	ok		
+h2x030	ok		
+h2x031	ok		
+h2x032	ok		
+h2x033	ok		
+h2x034	ok		
+h2x035	ok		
+h2x036	ok		
+h2x037	ok		
+h2x038	ok		
+h2x039	ok		
+h2x040	ok		
+h2x041	ok		
+h2x042	ok		
+h2x043	ok		
+h2x044	ok		
+h2x045	ok		
+h2x046	ok		
+h2x047	ok		
+h2x048	ok		
+h2x049	ok		
+h2x050	ok		
+h2x051	ok		
+h2x052	ok		
+h2x053	ok		
+h2x054	ok		
+h2x055	ok		
+h2x056	ok		
+h2x057	ok		
+h2x058	ok		
+h2x059	ok		
+h2x060	ok		

@@ -8,8 +8,8 @@
 // desktop. The panels are the real classes on a stub host, so what is judged
 // here is what ships, not a mock of it.
 //
-// Meant for `npm run snap -- chrome out.png 1520 860 theme=<id>`, which renders
-// it offscreen.
+// Meant for `npm run snap -- chrome out.png 1520 860 theme=<id> [gloss=es|both]`,
+// which renders it offscreen.
 // =============================================================================
 
 import type { Painter } from '../engine/painter'
@@ -20,18 +20,19 @@ import type { Panel, PanelHost } from '../ui/panel'
 import { SettingsPanel } from '../ui/menu'
 import { DictionaryPanel } from '../ui/dictionary'
 import { Speech } from '../ui/speech'
-import { setLanguage } from '../pet/lines'
+import { setGloss, setLanguage } from '../pet/lines'
 import { ZH_LEVELS } from '../../shared/lang/levels'
-import type { Utterance } from '../../shared/lang/types'
+import type { GlossMode, Utterance } from '../../shared/lang/types'
 
 export class ChromeSheet {
   private readonly panels: Panel[]
   private readonly lines: Utterance[]
 
-  constructor(private w: number, private h: number, theme: string) {
+  constructor(private w: number, private h: number, theme: string, gloss: GlossMode = 'en') {
     applyTheme(theme)
     setLanguage('zh')
-    const settings: Settings = { ...DEFAULT_SETTINGS, theme, level: 'hsk2' }
+    setGloss(gloss)
+    const settings: Settings = { ...DEFAULT_SETTINGS, theme, level: 'hsk2', gloss }
     // Everything a panel may ask of its host, answered with nothing: an empty
     // colony, an empty ledger. The sheet shows the chrome, not anyone's data.
     const bridge = {
@@ -43,7 +44,7 @@ export class ChromeSheet {
       bridge, settings: () => settings,
     }
     const s = new SettingsPanel()
-    const d = new DictionaryPanel('phrases')
+    const d = new DictionaryPanel(gloss === 'es' ? 'words' : 'phrases')
     s.x = 20; s.y = 20
     d.x = 370; d.y = 20
     for (const p of [s, d]) { p.host = host; void p.mount() }
