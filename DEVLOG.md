@@ -21,14 +21,27 @@ Source: [github.com/gorepaw/deskmudgin](https://github.com/gorepaw/deskmudgin).
 | Language 2 — two-creature conversations (`converse`) | **done, verified live** |
 | Language 3 — Chinese names for every pet | **done, verified live** |
 | Bubble-duration sliders; the dictionary panel | **done, verified live** |
+| Speech bubbles in the theme's chrome (`ui/chrome.ts`) | **done, verified offscreen** |
+| HSK 2, and the level setting (`shared/lang/levels.ts`) | **done, verified offscreen** |
+| Six premium themes as frames (`ui/frames/`) | **done, verified offscreen** |
+| Spanish glosses — meaning in English / Español / Both | **done, verified offscreen** |
 
-Content, all HSK 1 (2.0), all verified by Claude agents and marked `claude-*`
-in `checks` for a later human pass: 152 words, 302 sentences, 60 conversations,
-118 names, 74 pinyin overrides.
+Content, all verified by Claude agents and marked `claude-*` in `checks` for a
+later human pass:
+- HSK 1 (2.0): 152 words, 302 sentences, 60 conversations.
+- HSK 2 (2.0): 150 words, 449 sentences, 58 conversations.
+- 118 names; 92 pinyin overrides.
+- A Spanish gloss for every one of those 1,289 lines, in `content/zh/*.es.tsv`.
 
-Everything typechecks (`npm run typecheck`) and builds. ~13,000 lines across 86
+Everything typechecks (`npm run typecheck`) and builds. ~15,000 lines across 97
 TS/MJS files, excluding generated courses. Checks: `npm run lang:selftest`,
-`tools/wild-cycle.mjs`, `tools/neighbors-check.mjs`.
+`tools/wild-cycle.mjs`, `tools/neighbors-check.mjs`. **Look at renders with
+`npm run snap`** (offscreen, see *Verification tooling*) — never with a visible
+window on the user's desktop.
+
+**Next, at the user's request:** HSK 3, one level at a time, the same way HSK 2
+was done (wordlist first, then sentences and conversations, then Spanish glosses
+for all three through `gloss-sync`).
 
 **Open with the user:** I offered to clear the ledger's `said` entries from
 2026-09-24 — 369 lines were "shown" in an hour only because I woke 13 pets and
