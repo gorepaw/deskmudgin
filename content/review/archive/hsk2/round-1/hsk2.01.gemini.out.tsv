@@ -1,0 +1,70 @@
+# Gemini's reply for hsk2, chunk 01 — 60 entries.
+#
+# Paste the whole of hsk2.01.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_script<tab>fix_reading<tab>fix_english<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+# and copy it back out — that turns the columns into real tabs.
+id	verdict	fix_script	fix_reading	fix_english	note
+h2p001	ok				
+h2p002	ok				
+h2p003	ok				
+h2p004	ok				
+h2p005	ok				
+h2p006	ok				
+h2p007	ok				
+h2p008	ok				
+h2p009	ok				
+h2p010	ok				
+h2p011	ok				
+h2p012	ok				
+h2p013	ok				
+h2p014	ok				
+h2p015	ok				
+h2p016	ok				
+h2p017	ok				
+h2p018	ok				
+h2p019	ok				
+h2p020	ok				
+h2p021	ok				
+h2p022	ok				
+h2p023	ok				
+h2p024	ok				
+h2p025	ok				
+h2p026	ok				
+h2p027	ok				
+h2p028	ok				
+h2p029	ok				
+h2p030	ok				
+h2p031	ok				
+h2p032	ok				
+h2p033	ok				
+h2p034	ok				
+h2p035	ok				
+h2p036	ok				
+h2p037	ok				
+h2p038	ok				
+h2p039	ok				
+h2p040	ok				
+h2p041	ok				
+h2p042	ok				
+h2p043	ok				
+h2p044	ok				
+h2p045	ok				
+h2p046	ok				
+h2p047	ok				
+h2p048	ok				
+h2p049	ok				
+h2p050	ok				
+h2p051	fix		Wǒ jīn tiān xiǎng zǎo diǎnr xiū xi.		erhua: 点儿 must merge to diǎnr, not "diǎn ér"
+h2p052	ok				
+h2p053	ok				
+h2p054	ok				
+h2p055	ok				
+h2p056	ok				
+h2p057	ok				
+h2p058	ok				
+h2p059	ok				
+h2p060	ok				

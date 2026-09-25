@@ -1,0 +1,7 @@
+1	Is this noodle dish tasty? | It's very tasty! You should have some too.
+2	Have you eaten lamb before? | Yes, I have, it's very tasty, but a bit expensive.
+3	It's snowing outside! | Really? Let's go out and play!
+4	The weather is really nice today! | Yes, let's go outside and play together.
+5	What does your older sister do for work? | She works at a company.
+6	Is there an exam tomorrow? | Yes, it's a Chinese exam, I'm a bit busy.
+7	Where is your phone? | It's on the table.

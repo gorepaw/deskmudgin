@@ -1,0 +1,70 @@
+# Google Translate's English for hsk2, chunk 01 — 60 entries.
+#
+# 1. Open hsk2.01.gt.txt and copy all of it.
+# 2. Paste into Google Translate, Chinese → English.
+# 3. Copy the English side and paste it below, replacing nothing above.
+#
+# One line per entry, in the order sent, and nothing else. Lines starting
+# with # are ignored. The join is line position, so a different number of
+# lines is refused rather than guessed at — if that happens, paste again
+# rather than trying to patch it up by hand.
+I want to eat noodles.
+I want to eat eggs.
+I want to drink milk.
+Do you have watermelon?
+I want to eat mutton.
+I want to eat!
+When are we eating? Do we still have to wait?
+Is there anything delicious?
+Give me a little something to eat.
+Is there fish here?
+I haven't eaten anything for a day.
+Quick, give me something to eat!
+Can I eat this?
+Is there any more milk?
+Is the food ready?
+I want to eat apples and watermelon.
+I like eating fish the most.
+I want to drink coffee.
+I've waited a long time.
+Let's eat noodles at noon.
+Hello!
+Welcome!
+Welcome, glad you came!
+Welcome back!
+Good morning!
+Good evening!
+Are you in good health?
+How have you been recently?
+Hello everyone!
+You're here too!
+Are you busy today?
+May I ask your surname?
+Did you sleep well?
+Are you still there?
+I've arrived!
+This is really delicious!
+This isn't as delicious as fish.
+I've finished eating!
+I still want to eat more.
+Really delicious!
+I'm eating something right now.
+Don't look at me, I'm eating.
+This is more delicious than apples.
+I ate two.
+Don't eat that!
+I'm tired.
+I'm too tired.
+I want to rest for a while.
+I'm going to go to sleep.
+I'm already very tired.
+I want to rest a little earlier today.
+Let me rest for a while.
+I'm very tired today.
+I don't want to get up.
+Don't talk, I want to sleep.
+I can't walk anymore.
+Let's rest for a while.
+I'm very happy!
+Today is really great!
+I'm very happy!

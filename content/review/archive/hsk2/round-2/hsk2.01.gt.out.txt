@@ -1,0 +1,13 @@
+1	I want to rest a bit early today.
+2	It's cold outside, put on more clothes.
+3	Let's go quickly!
+4	The cat is outside the door.
+5	Although it's cold outside, I want to go out and play.
+6	Let me introduce myself.
+7	Are you outside?
+8	There is someone outside.
+9	The dog is running outside.
+10	Let me think.
+11	The inside of the watermelon is red.
+12	I feel a bit cold.
+13	Let's go eat outside.

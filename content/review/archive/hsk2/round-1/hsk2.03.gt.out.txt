@@ -1,0 +1,70 @@
+# Google Translate's English for hsk2, chunk 03 — 60 entries.
+#
+# 1. Open hsk2.03.gt.txt and copy all of it.
+# 2. Paste into Google Translate, Chinese → English.
+# 3. Copy the English side and paste it below, replacing nothing above.
+#
+# One line per entry, in the order sent, and nothing else. Lines starting
+# with # are ignored. The join is line position, so a different number of
+# lines is refused rather than guessed at — if that happens, paste again
+# rather than trying to patch it up by hand.
+I like it when it snows.
+It's cold outside, put on more clothes.
+It's too hot today, I want to go swimming.
+Will it be sunny tomorrow?
+It's cloudy, it might rain.
+I have an older brother.
+My older sister is a doctor.
+My younger brother is six years old.
+My younger sister is very pretty.
+He is my husband.
+She is my wife.
+Do you have children?
+My older brother is taller than me.
+How many older sisters do you have?
+My child likes playing soccer.
+What time does our class start?
+There's a test today.
+I don't know how to do this question.
+I don't understand this question.
+Do you understand?
+I understand!
+The teacher is in the classroom.
+I need to prepare for the exam.
+The exam has started!
+How did you do on the test?
+Can I ask you a question?
+Please answer my question.
+I've been studying Chinese for a year now.
+What does this character mean?
+What do you mean by that?
+I don't know.
+Do you know?
+Now I know!
+The pencil is on the table.
+I can't find my pencil.
+This is my first time coming to Beijing.
+My older brother works at a company.
+I'm going to work.
+What time do you go to work every day?
+He's very busy with work.
+I'm not working today.
+I like playing basketball.
+Let's go play soccer together!
+I run every morning.
+Can you swim?
+I swim very fast.
+Exercise is good for the body.
+He runs very fast.
+What sport do you like?
+Let's go sing!
+She dances very well.
+Too expensive!
+This is very cheap.
+Is there a cheaper one?
+I want to buy a piece of clothing.
+What color do you like?
+I like red the most.
+I think white looks nice.
+He's wearing black clothes.
+Does this place sell watermelon?

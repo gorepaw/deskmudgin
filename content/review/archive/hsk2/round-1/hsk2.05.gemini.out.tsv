@@ -1,0 +1,70 @@
+# Gemini's reply for hsk2, chunk 05 — 60 entries.
+#
+# Paste the whole of hsk2.05.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_script<tab>fix_reading<tab>fix_english<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+# and copy it back out — that turns the columns into real tabs.
+id	verdict	fix_script	fix_reading	fix_english	note
+h2p241	ok				
+h2p242	ok				
+h2p243	ok				
+h2p244	ok				
+h2p245	fix			Let me make the introductions.	我来介绍一下 has no object; English "everyone" isn’t supported by the Chinese
+h2p246	ok				
+h2p247	ok				
+h2p248	ok				
+h2p249	ok				
+h2p250	ok				
+h2p251	ok				
+h2p252	ok				
+h2p253	ok				
+h2p254	ok				
+h2p255	ok				
+h2p256	ok				
+h2p257	ok				
+h2p258	ok				
+h2p259	ok				
+h2p260	ok				
+h2p261	ok				
+h2p262	ok				
+h2p263	ok				
+h2p264	ok				
+h2p265	ok				
+h2p266	ok				
+h2p267	fix		Nǐ zài wài mian ma?		外面 neutral-tone fix, same class as 下面/后面/前面 (see overrides o019-o021)
+h2p268	fix		Wài mian yǒu rén.		外面 neutral-tone fix, same as h2p267
+h2p269	ok				
+h2p270	ok				
+h2p271	ok				
+h2p272	ok				
+h2p273	ok				
+h2p274	ok				
+h2p275	ok				
+h2p276	ok				
+h2p277	ok				
+h2p278	ok				
+h2p279	ok				
+h2p280	ok				
+h2p281	ok				
+h2p282	ok				
+h2p283	ok				
+h2p284	ok				
+h2p285	ok				
+h2p286	ok				
+h2p287	ok				
+h2p288	ok				
+h2p289	ok				
+h2p290	ok				
+h2p291	ok				
+h2p292	ok				
+h2p293	ok				
+h2p294	ok				
+h2p295	ok				
+h2p296	ok				
+h2p297	ok				
+h2p298	ok				
+h2p299	ok				
+h2p300	ok				

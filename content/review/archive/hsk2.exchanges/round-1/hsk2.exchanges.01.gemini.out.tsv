@@ -1,0 +1,70 @@
+# Gemini's reply for hsk2.exchanges, chunk 01 — 60 entries.
+#
+# Paste the whole of hsk2.exchanges.01.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_script<tab>fix_reading<tab>fix_english<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+# and copy it back out — that turns the columns into real tabs.
+id	verdict	fix_script	fix_reading	fix_english	note
+h2x001	ok				
+h2x002	ok				
+h2x003	ok				
+h2x004	ok				
+h2x005	ok				
+h2x006	ok				
+h2x007	ok				
+h2x008	ok				
+h2x009	ok				
+h2x010	ok				
+h2x011	ok				
+h2x012	fix			Are these noodles tasty? | Very tasty! Have a little too.	English turn 1 had a grammar slip ("this noodles")
+h2x013	ok				
+h2x014	ok				
+h2x015	ok				鸡蛋面 uses bare 面 (noodles), adjacent to taught 面条 and a real dish name; kept
+h2x016	ok				
+h2x017	ok				
+h2x018	ok				same 鸡蛋面 as h2x015; kept
+h2x019	ok				
+h2x020	ok				
+h2x021	fix		Nǐ chī guo yáng ròu ma? | Chī guo, hěn hǎo chī, dàn shì yǒu diǎnr guì.		erhua: 点儿 must be diǎnr, not "diǎn er"
+h2x022	ok				
+h2x023	ok				
+h2x024	ok				
+h2x025	ok				
+h2x026	fix		Wài mian zài xià xuě! | Zhēn de ma? Wǒ men chū qù wán ba!		外面 suffix 面 should be neutral (wài mian), not toned "miàn"
+h2x027	ok				
+h2x028	ok				
+h2x029	ok				
+h2x030	fix		Jīn tiān tiān qì zhēn hǎo! | Shì de, wǒ men yì qǐ qù wài mian wán ba.		same 外面 neutral-tone fix as h2x026
+h2x031	ok				
+h2x032	ok				
+h2x033	ok				
+h2x034	ok				
+h2x035	ok				
+h2x036	ok				
+h2x037	fix	你姐姐做什么工作？｜她在一家公司上班。	Nǐ jiě jie zuò shén me gōng zuò? | Tā zài yì jiā gōng sī shàng bān.		一个公司 sounds non-native; a native speaker uses the measure word 家 for companies
+h2x038	ok				
+h2x039	ok				
+h2x040	fix		Míng tiān yǒu kǎo shì ma? | Yǒu, shì hàn yǔ kǎo shì, wǒ yǒu diǎnr máng.		erhua: 点儿 must be diǎnr, not "diǎn er"
+h2x041	ok				
+h2x042	ok				
+h2x043	fix		Nǐ de shǒu jī zài nǎr? | Zài zhuō zi shàng bian.		上边: 上 needs its tone (shàng) and suffix 边 is neutral (bian), like 左边/右边 in the word list, not "shang biān"
+h2x044	ok				
+h2x045	ok				
+h2x046	ok				
+h2x047	ok				
+h2x048	ok				
+h2x049	ok				
+h2x050	ok				
+h2x051	ok				不见了 uses bare 见, adjacent to taught 看见 and a very common idiom; kept
+h2x052	ok				
+h2x053	ok				
+h2x054	ok				
+h2x055	ok				
+h2x056	ok				
+h2x057	ok				
+h2x058	ok				
+h2x059	ok				
+h2x060	ok				

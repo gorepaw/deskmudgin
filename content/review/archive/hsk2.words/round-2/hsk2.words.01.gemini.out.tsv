@@ -1,0 +1,29 @@
+# Gemini's reply for hsk2.words, chunk 01 — 11 entries.
+#
+# Paste the whole of hsk2.words.01.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_script<tab>fix_reading<tab>fix_english<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+# and copy it back out — that turns the columns into real tabs.
+id	verdict	fix_script	fix_reading	fix_english	note
+h2w019	ok				
+h2w029	ok				
+h2w035	ok				
+h2w082	ok				
+h2w095	ok				
+h2w108	ok				
+h2w123	ok				
+h2w131	ok				
+h2w135	ok				
+h2w140	ok				
+h2w150	ok				
+
+## Missing
+
+none checked — this chunk covers 11 of the ~150 words new at HSK2; I did not audit the remaining official list for entries missing from the project as a whole, only checked the given ids against it.
+
+None of the 11 given entries belong to a different level: all are absent from the official HSK1 (150-word) list and present in the official cumulative HSK（二级）词汇 (300 words), confirming they are genuinely new at HSK2, not carried over from HSK1.
+
+One reading worth flagging as correct-but-easy-to-doubt: h2w035 过 "guo" (experience-aspect particle). The official Nottongham/Hanban HSK2 PDF prints it with a tone mark ("guò") in its 助词 table, but that's inconsistent with every other particle in the same row (的/了/吗/呢/地/得/着/吧, all shown neutral) and with the Xinhua Pinxie Cidian's explicit rule that 动态助词 (aspectual particles, incl. 了/着/过) are always read qīngshēng. Treating the PDF's tone mark there as a transcription artifact rather than the standard; the neutral "guo" already in the draft is correct.

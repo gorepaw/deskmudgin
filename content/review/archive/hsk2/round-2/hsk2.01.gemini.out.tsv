@@ -1,0 +1,22 @@
+# Gemini's reply for hsk2, chunk 01 — 13 entries.
+#
+# Paste the whole of hsk2.01.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_script<tab>fix_reading<tab>fix_english<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+id	verdict	fix_script	fix_reading	fix_english	note
+h2p051	ok				
+h2p122	ok				
+h2p192	ok				
+h2p217	ok				
+h2p231	ok				
+h2p245	ok				
+h2p267	ok				
+h2p268	ok				
+h2p333	ok				
+h2p339	ok				
+h2p357	ok				
+h2p374	ok				
+h2p406	ok				

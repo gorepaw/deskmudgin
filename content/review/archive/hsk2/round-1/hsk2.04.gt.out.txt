@@ -1,0 +1,70 @@
+# Google Translate's English for hsk2, chunk 04 — 60 entries.
+#
+# 1. Open hsk2.04.gt.txt and copy all of it.
+# 2. Paste into Google Translate, Chinese → English.
+# 3. Copy the English side and paste it below, replacing nothing above.
+#
+# One line per entry, in the order sent, and nothing else. Lines starting
+# with # are ignored. The join is line position, so a different number of
+# lines is refused rather than guessed at — if that happens, paste again
+# rather than trying to patch it up by hand.
+What time does the store open?
+This is more expensive than that.
+I don't have time.
+Do you have time?
+What month and day is your birthday?
+Today is my birthday!
+I went to Beijing last year.
+I've already eaten.
+He's already left.
+I waited for an hour.
+There are ten more minutes.
+Let's hurry up and go!
+Time's up!
+Every day is busy.
+I get up at eight o'clock every day.
+Let's go watch a movie tonight.
+I want to go traveling.
+Is the airport far from here?
+The hospital is very close to here.
+Let's take the bus.
+We're staying at a hotel.
+Where's your room?
+Go left.
+Go right.
+The school is next to the hospital.
+The store is on the right.
+I come from Beijing.
+Where are you from?
+Beijing is very far from here.
+There are a lot of cars on the road.
+Plane tickets are expensive.
+I got the tickets!
+Have you been to China?
+I've been to Beijing.
+Your eyes are very pretty.
+I have one very big eye.
+The cat is outside the door.
+It's my cat.
+What's its name?
+You're right.
+I think you're right.
+Me too!
+I don't know either.
+Really?
+Really!
+Why?
+Why not?
+Because I like you, that's why I came.
+Because it was raining, I didn't go.
+Although I'm tired, I'm very happy.
+Although it's cold outside, I want to go out and play.
+Don't laugh!
+He laughed.
+What are you laughing at?
+I'm reading a book right now.
+He's on the phone right now.
+I'm looking for my phone.
+Have you seen my watch?
+Where's my phone?
+Give me a call.

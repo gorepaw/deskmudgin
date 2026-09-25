@@ -1,0 +1,70 @@
+# Google Translate's English for hsk2, chunk 02 — 60 entries.
+#
+# 1. Open hsk2.02.gt.txt and copy all of it.
+# 2. Paste into Google Translate, Chinese → English.
+# 3. Copy the English side and paste it below, replacing nothing above.
+#
+# One line per entry, in the order sent, and nothing else. Lines starting
+# with # are ignored. The join is line position, so a different number of
+# lines is refused rather than guessed at — if that happens, paste again
+# rather than trying to patch it up by hand.
+I like you the most!
+You're so nice!
+I think it's very good.
+I want to sing!
+Let's dance together!
+Look, I'm smiling!
+I'm happy every day.
+Happy birthday!
+Where did everyone go?
+No one plays with me.
+Who's coming to play with me?
+I've been waiting for you a long time.
+When are you coming back? I'll wait for you.
+I'm alone, it's really boring.
+Are you all busy?
+I want to play with everyone.
+I want to sit next to you.
+Don't do that!
+What are you going to do?
+Where are we going?
+Too high!
+Let me down!
+Let me down quickly!
+I don't want to!
+A little slower!
+Why are you doing this?
+Don't do this again!
+This isn't right!
+You did it wrong.
+Thank you!
+Really delicious, thank you!
+I like eating this the most.
+I still want to eat!
+I ate very well.
+The dish you gave me is very delicious.
+Once more!
+Don't go!
+I like this the most.
+Can you do it again?
+Really great!
+You're really good to me.
+I'm going to go.
+See you tonight!
+I'm leaving first, goodbye!
+Walk slowly!
+Walk slowly.
+See you tomorrow morning.
+I'm up!
+What time is it now? How long did I sleep?
+I still want to sleep.
+I slept very well.
+Is it already evening?
+I slept for ten hours.
+Today is sunny.
+Today is cloudy.
+It's snowing outside!
+It might rain tomorrow.
+Today is colder than yesterday.
+The weather is very good today.
+It's snowing, let's go out and play!

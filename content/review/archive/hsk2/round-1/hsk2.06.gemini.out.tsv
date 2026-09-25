@@ -1,0 +1,70 @@
+# Gemini's reply for hsk2, chunk 06 — 60 entries.
+#
+# Paste the whole of hsk2.06.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_script<tab>fix_reading<tab>fix_english<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+# and copy it back out — that turns the columns into real tabs.
+id	verdict	fix_script	fix_reading	fix_english	note
+h2p301	ok				
+h2p302	ok				
+h2p303	ok				
+h2p304	ok				
+h2p305	ok				
+h2p306	ok				
+h2p307	ok				
+h2p308	ok				
+h2p309	ok				
+h2p310	ok				
+h2p311	ok				
+h2p312	ok				
+h2p313	ok				
+h2p314	ok				
+h2p315	ok				
+h2p316	ok				
+h2p317	ok				
+h2p318	ok				
+h2p319	ok				
+h2p320	ok				
+h2p321	ok				
+h2p322	ok				
+h2p323	ok				
+h2p324	ok				
+h2p325	ok				
+h2p326	ok				
+h2p327	ok				
+h2p328	ok				
+h2p329	ok				
+h2p330	ok				
+h2p331	ok				
+h2p332	ok				
+h2p333	fix		Gǒu zài wài mian pǎo.		外面 neutral-tone fix, same class as 下面/后面/前面 (see overrides o019-o021)
+h2p334	ok				
+h2p335	ok				
+h2p336	ok				
+h2p337	ok				
+h2p338	ok				
+h2p339	fix		Ràng wǒ xiǎng xiang.		verb reduplication takes a neutral second syllable (cf. 看看 kàn kan elsewhere in this course); 想想 should be xiǎng xiang, not xiǎng xiǎng
+h2p340	ok				
+h2p341	ok				
+h2p342	ok				
+h2p343	ok				
+h2p344	ok				
+h2p345	ok				
+h2p346	ok				
+h2p347	ok				
+h2p348	ok				
+h2p349	ok				
+h2p350	ok				
+h2p351	ok				
+h2p352	ok				
+h2p353	ok				
+h2p354	ok				
+h2p355	ok				
+h2p356	ok				
+h2p357	fix		Xī guā lǐ mian shì hóng de.		里面 neutral-tone fix, same class as 下面/后面/前面 (see overrides o019-o021)
+h2p358	ok				
+h2p359	ok				
+h2p360	ok				

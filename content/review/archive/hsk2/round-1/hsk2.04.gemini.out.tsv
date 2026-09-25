@@ -1,0 +1,70 @@
+# Gemini's reply for hsk2, chunk 04 — 60 entries.
+#
+# Paste the whole of hsk2.04.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_script<tab>fix_reading<tab>fix_english<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+# and copy it back out — that turns the columns into real tabs.
+id	verdict	fix_script	fix_reading	fix_english	note
+h2p181	ok				
+h2p182	ok				
+h2p183	ok				
+h2p184	ok				
+h2p185	ok				
+h2p186	ok				
+h2p187	ok				
+h2p188	ok				
+h2p189	ok				
+h2p190	ok				
+h2p191	ok				
+h2p192	fix		Wǒ men kuài diǎnr zǒu ba!		erhua: 点儿 merges to diǎnr, not diǎn ér
+h2p193	ok				
+h2p194	ok				
+h2p195	ok				
+h2p196	ok				
+h2p197	ok				
+h2p198	ok				
+h2p199	ok				
+h2p200	ok				
+h2p201	ok				
+h2p202	ok				
+h2p203	ok				
+h2p204	ok				
+h2p205	ok				
+h2p206	ok				
+h2p207	ok				
+h2p208	ok				
+h2p209	ok				
+h2p210	ok				
+h2p211	ok				
+h2p212	ok				
+h2p213	ok				
+h2p214	ok				
+h2p215	ok				
+h2p216	ok				
+h2p217	fix		Māo zài mén wài mian.		外面 neutralizes 面, same class as 下面/后面/前面 already fixed via override (o019-o021); matches this course’s established convention
+h2p218	ok				
+h2p219	ok				
+h2p220	ok				
+h2p221	ok				
+h2p222	ok				
+h2p223	ok				
+h2p224	ok				
+h2p225	ok				
+h2p226	ok				
+h2p227	ok				
+h2p228	ok				
+h2p229	ok				
+h2p230	ok				
+h2p231	fix		Suī rán wài mian hěn lěng, dàn shì wǒ xiǎng chū qù wán.		外面 neutral-tone fix, same as h2p217
+h2p232	ok				
+h2p233	ok				
+h2p234	ok				
+h2p235	ok				
+h2p236	ok				
+h2p237	ok				
+h2p238	ok				
+h2p239	ok				
+h2p240	ok				

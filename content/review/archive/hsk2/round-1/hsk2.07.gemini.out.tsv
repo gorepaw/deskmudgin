@@ -1,0 +1,70 @@
+# Gemini's reply for hsk2, chunk 07 — 60 entries.
+#
+# Paste the whole of hsk2.07.gemini.md into Gemini, then paste its
+# reply below. Prose around the TSV block is ignored, so pasting the whole
+# answer is fine — but the block must still begin with a line reading
+# exactly:  id<tab>verdict<tab>fix_script<tab>fix_reading<tab>fix_english<tab>note
+#
+# If it came back with spaces instead of tabs, paste it into a spreadsheet
+# and copy it back out — that turns the columns into real tabs.
+id	verdict	fix_script	fix_reading	fix_english	note
+h2p361	ok				
+h2p362	ok				
+h2p363	ok				
+h2p364	ok				
+h2p365	ok				
+h2p366	ok				
+h2p367	ok				
+h2p368	ok				
+h2p369	ok				
+h2p370	ok				
+h2p371	ok				
+h2p372	ok				
+h2p373	ok				
+h2p374	fix		Wǒ jué de yǒu diǎnr lěng.		erhua: 点儿 must be diǎnr, not "diǎn er"
+h2p375	ok				
+h2p376	ok				
+h2p377	ok				
+h2p378	ok				
+h2p379	ok				
+h2p380	ok				
+h2p381	ok				
+h2p382	ok				
+h2p383	ok				
+h2p384	ok				
+h2p385	ok				
+h2p386	ok				bare 电 not itself a listed word, but adjacent to taught 电脑/电视/电影 and idiomatic ("没电了"); kept
+h2p387	ok				
+h2p388	ok				
+h2p389	ok				
+h2p390	ok				
+h2p391	ok				
+h2p392	ok				
+h2p393	ok				
+h2p394	ok				
+h2p395	ok				
+h2p396	ok				
+h2p397	ok				
+h2p398	ok				
+h2p399	ok				
+h2p400	ok				
+h2p401	ok				
+h2p402	ok				bare 唱 not itself listed, but adjacent to taught 唱歌 and natural here; kept
+h2p403	ok				
+h2p404	ok				
+h2p405	ok				
+h2p406	fix		Wǒ men qù wài mian chī fàn ba.		suffix 面 in 外面 takes neutral tone (wài mian), like 前面/后面 in the word list, not toned "miàn"
+h2p407	ok				
+h2p408	ok				
+h2p409	ok				
+h2p410	ok				
+h2p411	ok				
+h2p412	ok				
+h2p413	ok				
+h2p414	ok				
+h2p415	ok				
+h2p416	ok				
+h2p417	ok				
+h2p418	ok				
+h2p419	ok				
+h2p420	ok				

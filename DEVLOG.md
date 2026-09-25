@@ -683,10 +683,53 @@ There was none until 2026-09-24: the whole project was a directory. It is now
 `.gitattributes` forces LF — the content pipeline writes LF TSVs on purpose and
 Windows' CRLF conversion would show every row as changed.
 
+## HSK 2, and bubbles in the theme
+
+**Themed bubbles.** Panels and bubbles now draw through one module,
+`ui/chrome.ts` (body, edge, sheen, band, glass), each call taking a `trace` that
+lays the outline — a rounded rect for a panel, a box with its tail folded in for
+a bubble. The border runs round the tail instead of across its base. A
+one-character grunt is given a minimum width, or its tail had no flat edge to
+hang from between two rounded corners.
+
+**Levels.** `shared/lang/levels.ts` is the one list of levels; lines, the
+dictionary, the ledger's re-reading and the speech sheet all walk it. Settings
+stores `level`; at HSK 2 a creature reaches for HSK 2 seven times in ten and
+HSK 1 otherwise (`FOCUS` in lines.ts), falling back to whichever level has a
+line for the moment. A level appears in Settings once it has verified sentences.
+
+**Tooling** went level-aware without touching HSK 1 (every HSK 1 course rebuilt
+byte-identical apart from the override count in its header): the level comes
+from the file name, vocabulary is cumulative, ids are prefixed per level
+(`h2w`, `h2p`, `h2x` — they are the ledger's keys), and two new refusals — an
+HSK 2 wordlist entry already taught in HSK 1, and an HSK 2 sentence that uses
+no HSK 2 word (`早点儿` uses the character of 早上, not the word).
+
+**Content:** 150 words, 449 of 449 sentences, 58 of 60 conversations, 18 new
+pinyin overrides. What the loop caught:
+- a dozen neutral tones (晚上, 眼睛, 意思, 妻子 *qī zǐ* was the wrong syllable
+  outright), erhua split into two syllables (点儿 *diǎn ér*), and 外面/里面/上边
+  toned where the course already has 下面/后面 neutral;
+- 一个公司 → 一家公司, and a gloss that added a word the Chinese lacked.
+- The reviewers filed their pinyin fixes as whole-sentence overrides — the same
+  mistake HSK 1 made. They were rejected and refiled as words, which then
+  corrected a sentence nobody had flagged. Two needed a longer entry because
+  the deriver segments them first: 有点儿 is one word to it, and the existing
+  桌子上 (neutral locative) was matching inside 桌子上边.
+- The first-round reviewers passed nearly everything. Reading the conversations
+  myself dropped two they passed: 我可以介绍一下吗？｜可以，请介绍！, which no
+  one says, and weather called 漂亮, a calque of "beautiful".
+
+**Looking at renders.** A full-screen `DESKMUDGIN_CONTACT` window was left on
+the user's desktop when a session ended, and they had to reboot to get rid of
+it. `npm run snap` now renders any sheet offscreen and exits by itself; see
+*Verification tooling*. `DESKMUDGIN_CONTACT=themes` is the sheet for bubbles
+across every theme.
+
 ## What is not built
 
-Nothing from either plan. Deferred: breeding, Sephin maturity, Spanish, HSK 2,
-and interactive exercises built on the course.
+Nothing from either plan. Deferred: breeding, Sephin maturity, Spanish, HSK 3
+and above, and interactive exercises built on the course.
 
 From the Collection Update, nothing. Ideas that were explicitly deferred:
 

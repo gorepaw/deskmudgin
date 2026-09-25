@@ -1,0 +1,21 @@
+# Google Translate's English for hsk2.words, chunk 01 — 11 entries.
+#
+# 1. Open hsk2.words.01.gt.txt and copy all of it.
+# 2. Paste into Google Translate, Chinese → English.
+# 3. Copy the English side and paste it below, replacing nothing above.
+#
+# One line per entry, in the order sent, and nothing else. Lines starting
+# with # are ignored. The join is line position, so a different number of
+# lines is refused rather than guessed at — if that happens, paste again
+# rather than trying to patch it up by hand.
+(particle: complement marker)
+to tell
+(particle: past experience marker)
+wife
+matter; affair
+evening; night
+eye
+meaning
+right side
+morning
+left side

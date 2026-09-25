@@ -43,7 +43,7 @@ npm run zh:draft    content/zh/hsk1.words.tsv
 npm run lang:export content/zh/hsk1.words.tsv -- --kind words
         ...you do the checking...
 npm run lang:ingest content/zh/hsk1.words.tsv
-npm run lang:build  content/zh/hsk1.words.tsv -- --course zh-hsk1
+npm run lang:build  content/zh/hsk1.words.tsv -- --course zh-hsk1-words --kind words
 ```
 
 **The checking step** is two pastes per chunk, and nothing to name or create —

@@ -24,7 +24,7 @@ Click her for the menu; pets wander over and lean on her, and she warms up when
 they do.
 
 > **Build state:** the collection update and the language update are both
-> complete — they speak Chinese (HSK 1), hold conversations, carry Chinese
+> complete — they speak Chinese (HSK 1 and 2), hold conversations, carry Chinese
 > names, and the Matron keeps a dictionary. See [DEVLOG.md](DEVLOG.md).
 
 ## Running
@@ -258,15 +258,27 @@ habit); and a row needs two independent sources to agree before it is trusted.
 See [content/README.md](content/README.md) for the loop, and run
 `npm run lang:selftest` to exercise it against deliberately broken replies.
 
-What there is, all HSK 1 (2.0):
+What there is, HSK 1 and HSK 2 (2.0):
+
+| | HSK 1 | HSK 2 |
+| --- | --- | --- |
+| **Words** | 152 | 150 |
+| **Sentences** | 302 | 449 |
+| **Conversations** | 60 | 58 |
+
+Sentences are chosen by moment (hungry, sleepy, picked up) and at random while
+idle; nearby pets start conversations and answer each other. Settings → *They
+speak* → **level** picks HSK 1 or 2. Levels are cumulative: at HSK 2, seven lines
+in ten are HSK 2 and the rest keep HSK 1 in use.
 
 | | |
 | --- | --- |
-| **Sentences** | 302, chosen by moment — hungry, sleepy, picked up — and at random while idle |
-| **Conversations** | 60 two-creature exchanges; nearby pets start them and answer each other |
 | **Names** | 118, per species; every pet has one, with pinyin and meaning on its card |
 | **Ledger** | *what they said to you* — every line you have been shown, pinyin on hover |
-| **Dictionary** | the Matron's menu → *The dictionary*: every word by HSK level, every phrase, every conversation, with a ✓ on what you have been shown |
+| **Dictionary** | the Matron's menu → *The dictionary*: words, phrases and conversations by level, with a ✓ on what you have been shown |
+
+Speech bubbles take the look of the chosen theme — XP's caption band, Aqua's
+stripes, the CRTs' scanlines.
 
 Settings has two sliders, **Bubbles stay** and **Conversations stay** (0.5×–4×,
 1.5× by default), so a sentence you are still reading does not vanish.
