@@ -278,7 +278,9 @@ in ten are HSK 2 and the rest keep HSK 1 in use.
 | **Dictionary** | the Matron's menu → *The dictionary*: words, phrases and conversations by level, with a ✓ on what you have been shown |
 
 Speech bubbles take the look of the chosen theme — XP's caption band, Aqua's
-stripes, the CRTs' scanlines.
+stripes, the CRTs' scanlines. Six premium themes bring their own frames:
+Illuminated, Stained glass, Brass & rivets, Bog shrine, Holographic and Ink
+wash.
 
 Settings has two sliders, **Bubbles stay** and **Conversations stay** (0.5×–4×,
 1.5× by default), so a sentence you are still reading does not vanish.

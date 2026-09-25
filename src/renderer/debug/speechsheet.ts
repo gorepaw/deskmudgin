@@ -88,7 +88,7 @@ export class ThemeSheet {
     g.rect(half, 0, this.w - half, this.h).fill(0xd9dde3)
     const lines = [ENTRIES[0], ENTRIES.find(e => e.script.length > 9) ?? ENTRIES[1]]
     const was = UI.id
-    const rowH = Math.max(64, Math.floor((this.h - 20) / THEMES.length))
+    const rowH = Math.max(56, Math.floor((this.h - 20) / THEMES.length))
     THEMES.forEach((t, i) => {
       applyTheme(t.id)
       const ay = 20 + i * rowH + rowH - 8

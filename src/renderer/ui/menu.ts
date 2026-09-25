@@ -91,7 +91,8 @@ export class SettingsPanel extends Panel {
   private fore = 0
   private back = 0
 
-  constructor() { super(320, 782) }
+  // Tall enough for the swatch grid, which gains a row every six themes.
+  constructor() { super(320, 692 + SettingsPanel.swatchBlock()) }
 
   override async mount(): Promise<void> {
     const colony = await this.host.bridge.invoke('colony:get')

@@ -749,6 +749,33 @@ including a bubble's tail), gilt fleurons with vermilion hearts at the corners,
 a rubricated initial on every title, and a wax-seal close button. Palatino
 Linotype for type. The Painter gained gradient fills and strokes for it.
 
+Five more followed, one file each under `ui/frames/` (`kit.ts` holds the
+interface and helpers, `index.ts` the registry):
+- **Stained glass**: dark glass lit from above, a border of jewel panes cut by
+  lead, amber roundels, a ruby to close.
+- **Brass & rivets**: walnut grain, a banded brass moulding with a raised bead,
+  rivets every ~70px, an engraved nameplate title, a gear to close.
+- **Bog shrine**: mottled stone, moss and drips along the top, an inner glow in
+  `PAL.eye` that breathes, and the eye itself to close (its pupil is the ✕).
+- **Holographic**: a conic foil border turning once per ~30s, red/blue fringes,
+  a drifting sheen, crop-mark corners.
+- **Ink wash**: rice-paper fibres, washed hills at the foot of panels, a brush
+  border built from four offset dashed passes (overlap makes the weight vary;
+  no two gaps coincide so it never breaks), and a red seal cut with 泥 "mud".
+  That seal is the one piece of Chinese in the app that did not go through the
+  verification loop — it is decoration, one character, and flagged here for
+  the human pass.
+
+Irregular detail is seeded from the shape's size (`seeded()` in kit.ts), so it
+holds still frame to frame. Motion reads `clock()`; panels are in the dirty
+list every frame anyway, so animation costs nothing extra. Settings' height
+now follows the swatch rows (17 themes, three rows).
+
+Found on the way: the first stained-glass and brass palettes made an
+unchecked radio's ring invisible (`edge` too close to `fill`); and a shell
+loop that wrote `"$SP\$t.png"` escaped the variable and saved every render
+to one file literally named `proof$t.png`.
+
 `DESKMUDGIN_CONTACT=chrome` with `theme=<id>` draws the real Settings and
 Dictionary panels (on a stub host) and bubbles in one theme — render it with
 `npm run snap -- chrome out.png 1520 860 theme=manuscript`.
