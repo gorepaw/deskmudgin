@@ -19,8 +19,13 @@
 
 const TAU = Math.PI * 2
 
-export type Paint = number | { color: number; alpha?: number }
-export interface StrokeStyle { width: number; color: number; alpha?: number; cap?: CanvasLineCap }
+export type Paint = number | { color: number; alpha?: number; gradient?: CanvasGradient }
+export interface StrokeStyle {
+  width: number; color: number; alpha?: number; cap?: CanvasLineCap
+  /** Paints the stroke instead of `color` — gilding, which is a gradient or it
+   *  is just yellow. */
+  gradient?: CanvasGradient
+}
 
 /**
  * The typeface every `text` and `measure` call uses unless told otherwise.
@@ -126,7 +131,7 @@ export class Painter {
     const color = typeof paint === 'number' ? paint : paint.color
     const alpha = typeof paint === 'number' ? 1 : paint.alpha ?? 1
     this.ctx.globalAlpha = alpha
-    this.ctx.fillStyle = css(color)
+    this.ctx.fillStyle = (typeof paint !== 'number' && paint.gradient) || css(color)
     this.ctx.fill()
     this.ctx.globalAlpha = 1
     this.open = false
@@ -136,7 +141,7 @@ export class Painter {
   stroke(s: StrokeStyle): this {
     if (!this.open) return this
     this.ctx.globalAlpha = s.alpha ?? 1
-    this.ctx.strokeStyle = css(s.color)
+    this.ctx.strokeStyle = s.gradient ?? css(s.color)
     this.ctx.lineWidth = s.width
     this.ctx.lineCap = s.cap ?? 'round'
     this.ctx.lineJoin = 'round'

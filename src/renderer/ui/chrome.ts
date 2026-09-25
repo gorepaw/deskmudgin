@@ -13,6 +13,11 @@
 
 import type { Painter } from '../engine/painter'
 import { UI } from './theme'
+import { frameOf, type Frame } from './frames'
+
+/** The current theme's frame. Read per call, like everything else in UI, so a
+ *  theme change needs nothing invalidated. */
+export const frame = (): Frame => frameOf(UI)
 
 /** Lays an outline onto the painter's open path, and nothing else. */
 export type Trace = (g: Painter) => void
@@ -50,18 +55,18 @@ export function body(g: Painter, trace: Trace, a: Area, alpha = 1): void {
   // Aqua's brushed stripes: a hairline every four pixels, barely there. Any
   // stronger and text sitting on them becomes hard to read.
   if (UI.pinstripe) within(g, trace, () => lines(g, a, 4, 2, 0.045 * alpha))
+  frame().surface?.(g, trace, a, alpha)
 }
 
-/**
- * The border. Two strokes: a dark one to separate the shape from a light
- * wallpaper, and the accent inside it. On a bright desktop a single accent
- * outline reads as a smudge.
- */
-export function edge(g: Painter, trace: Trace, alpha = 1): void {
-  trace(g)
-  g.stroke({ width: 2, color: 0x000000, alpha: 0.5 * alpha })
-  trace(g)
-  g.stroke({ width: UI.border, color: UI.accent, alpha: (UI.titleBar ? 0.9 : 0.55) * alpha })
+/** The border, in whatever form the theme's frame gives it. `a` is the area
+ *  the border surrounds, for frames whose strokes are gradients across it. */
+export function edge(g: Painter, trace: Trace, a: Area, alpha = 1): void {
+  frame().edge(g, trace, a, alpha)
+}
+
+/** Ornaments at the corners of `a`, for frames that have them. */
+export function corners(g: Painter, a: Area, scale = 1, alpha = 1): void {
+  frame().corners?.(g, a, scale, alpha)
 }
 
 /**

@@ -15,7 +15,14 @@ const { app, BrowserWindow, ipcMain } = require('electron')
 const { writeFileSync } = require('node:fs')
 const { join } = require('node:path')
 
-const [sheet, out, w = '1520', h = '900', page = ''] = process.argv.slice(2).filter(a => !a.startsWith('--'))
+const [sheet, out, w = '1520', h = '900', ...extra] = process.argv.slice(2).filter(a => !a.startsWith('--'))
+// Anything after the size is query: `theme=manuscript`, or a bare number for
+// the speech sheet's page.
+const query = { layer: 'overlay' }
+for (const e of extra) {
+  const [k, v] = e.includes('=') ? e.split('=') : ['page', e]
+  query[k] = v
+}
 
 // Whatever else happens, this process is gone in 20 seconds.
 setTimeout(() => { console.error('snap: timed out'); app.exit(2) }, 20000).unref()
@@ -36,7 +43,6 @@ app.whenReady().then(async () => {
       sandbox: false,
     },
   })
-  const query = { layer: 'overlay', ...(page ? { page } : {}) }
   await win.loadFile(join(__dirname, '../out/renderer/index.html'), { query })
   // Fonts load and the paced loop draws a few frames before the capture.
   await new Promise(r => setTimeout(r, 1500))

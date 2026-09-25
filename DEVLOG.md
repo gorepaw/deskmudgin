@@ -726,6 +726,33 @@ it. `npm run snap` now renders any sheet offscreen and exits by itself; see
 *Verification tooling*. `DESKMUDGIN_CONTACT=themes` is the sheet for bubbles
 across every theme.
 
+## Premium themes: frames
+
+A theme used to be a palette plus a few switches. A **frame** (`ui/frames.ts`)
+is the layer for looks that need more than colour: it owns the edge, and
+optionally a surface texture, corner ornaments, the panel title, the close
+control and its mark on the Settings swatch. Panels and bubbles draw through
+`chrome.ts`, which asks the current theme's frame, so a frame dresses both at
+once. Plain themes use the plain frame, which is the old keyline-and-accent
+edge moved as-is.
+
+Two numbers every frame declares: `inset` (how far inside a panel its border is
+traced, so a thick stroke lands on the panel instead of half off it) and `reach`
+(how far a border traced on a bubble's outline extends past it, which the
+bubble's dirty rect must allow). Ornaments stay inside the shape for the same
+reason — a panel repaints only its own rectangle, and the first draft's corner
+fleurons hung 2px past it, which would have smeared on every drag.
+
+**Illuminated** is the first: vellum with foxed edges, a gilded double rule
+(one banded-gradient stroke split by a line of vellum, so it follows any trace
+including a bubble's tail), gilt fleurons with vermilion hearts at the corners,
+a rubricated initial on every title, and a wax-seal close button. Palatino
+Linotype for type. The Painter gained gradient fills and strokes for it.
+
+`DESKMUDGIN_CONTACT=chrome` with `theme=<id>` draws the real Settings and
+Dictionary panels (on a stub host) and bubbles in one theme — render it with
+`npm run snap -- chrome out.png 1520 860 theme=manuscript`.
+
 ## What is not built
 
 Nothing from either plan. Deferred: breeding, Sephin maturity, Spanish, HSK 3

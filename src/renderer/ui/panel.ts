@@ -237,11 +237,18 @@ export abstract class Panel {
     const area = { x: 0, y: 0, w: this.w, h: this.h }
     const outer: Trace = p => p.roundRect(0, 0, this.w, this.h, rad)
     chrome.body(g, outer, area)
-    chrome.edge(g, p => p.roundRect(0.5, 0.5, this.w - 1, this.h - 1, rad))
+    // Traced inside the rectangle by the frame's inset, so a thick border lands
+    // on the panel rather than half of it off the edge.
+    const i = chrome.frame().inset
+    chrome.edge(g, p => p.roundRect(i, i, this.w - i * 2, this.h - i * 2, rad), area)
+    chrome.corners(g, area)
 
     // Header. The whole bar is the drag handle, in every theme.
     this.hits.add('panel:header', 0, 0, this.w - HEADER, HEADER)
-    if (UI.titleBar) {
+    const fr = chrome.frame()
+    if (fr.title) {
+      fr.title(g, this.title, this.w, HEADER)
+    } else if (UI.titleBar) {
       // A filled caption bar. Drawn as a plain rect over the panel's rounded
       // top: at this radius the corner it clips is a pixel or two, and the
       // alternative is a second rounded-only-at-the-top path.
@@ -258,7 +265,9 @@ export abstract class Panel {
       const cx = this.w - HEADER / 2 - 2
       const hot = this.hits.at(this.px, this.py) === 'panel:close'
       this.hits.add('panel:close', this.w - HEADER - 2, 0, HEADER + 2, HEADER)
-      if (UI.titleBar) {
+      if (fr.close) {
+        fr.close(g, cx, HEADER / 2, hot)
+      } else if (UI.titleBar) {
         // The little red box, which is the other half of recognising an XP
         // dialog at a glance.
         g.roundRect(this.w - HEADER + 2, 4, HEADER - 8, HEADER - 9, 2)

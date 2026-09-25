@@ -69,6 +69,13 @@ export interface Theme {
    *  through the text. */
   bodyAlpha: number
   font: string
+  /**
+   * The frame this theme draws its edges with — an id from ui/frames.ts. Absent
+   * for every palette-only theme, which get the plain keyline-and-accent frame.
+   * A premium theme is one whose look needs more than colour: gilding, corner
+   * ornaments, a title treatment.
+   */
+  frame?: string
 }
 
 const MONO = '"IBM Plex Mono", Consolas, monospace'
@@ -233,6 +240,27 @@ export const THEMES: readonly Theme[] = [
     radius: 0, bevel: false, gloss: false, titleBar: false, bodyAlpha: 1,
     pinstripe: false, scanlines: false, border: 2,
     font: '"Segoe UI", Tahoma, sans-serif',
+  },
+  {
+    // The first premium theme. Vellum and iron-gall ink, a gilded double rule
+    // with fleurons at the corners, a rubricated initial on every title, and a
+    // wax seal to close. The palette alone is a pleasant parchment; the frame
+    // is what makes it a manuscript.
+    id: 'manuscript',
+    label: 'Illuminated',
+    note: 'vellum, gilt rules and a wax seal',
+    fill: 0xf3e5c4, fillDeep: 0xfaf1dc, edge: 0xa88a52,
+    text: 0x2a1c0e, dim: 0x6f5b3e,
+    // Deep gold for type, which must read at 12px on vellum; the bright gold is
+    // the frame's, in its gilding.
+    accent: 0x86591a, highlight: 0xa3301c,
+    row: 0xeadbb6, rowHot: 0xe0ca9c, rowSel: 0xd3b47d,
+    danger: 0x9e2a1e, good: 0x4f6b2e,
+    ink: 0xfaf1dc, titleInk: 0x8e2416,
+    radius: 3, bevel: false, gloss: false, titleBar: false, bodyAlpha: 1,
+    pinstripe: false, scanlines: false, border: 1,
+    font: '"Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif',
+    frame: 'manuscript',
   },
 ]
 

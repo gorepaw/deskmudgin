@@ -689,10 +689,14 @@ async function contactSheet(): Promise<void> {
   // DESKMUDGIN_CONTACT=speech draws every verified course line as a bubble.
   // DESKMUDGIN_CONTACT=themes draws the same bubbles in every theme.
   const { SpeechSheet, ThemeSheet } = await import('./debug/speechsheet')
+  // DESKMUDGIN_CONTACT=chrome&theme=<id>: real panels and bubbles in one theme.
+  const chromeSheet = bridge.isContact === 'chrome' ? await import('./debug/chromesheet') : null
   const page = params.get('page')
   const build = () => bridge.isContact === 'speech'
     ? new SpeechSheet(window.innerWidth, window.innerHeight, page === null ? null : Number(page))
     : bridge.isContact === 'themes' ? new ThemeSheet(window.innerWidth, window.innerHeight)
+    : bridge.isContact === 'chrome' && chromeSheet
+      ? new chromeSheet.ChromeSheet(window.innerWidth, window.innerHeight, params.get('theme') ?? 'pewter')
     : new ContactSheet(window.innerWidth, window.innerHeight, seed, growth)
   let sheet = build()
   window.addEventListener('resize', () => { stage.resize(); sheet = build() })

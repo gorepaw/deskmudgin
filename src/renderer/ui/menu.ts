@@ -13,6 +13,7 @@ import { ManagerPanel } from './manager'
 import { LedgerPanel } from './ledger'
 import { DictionaryPanel } from './dictionary'
 import { ZH_LEVELS, isReady, levelById } from '../../shared/lang/levels'
+import { frameOf } from './frames'
 
 const BTN_H = 32
 const GAP = 7
@@ -258,6 +259,8 @@ export class SettingsPanel extends Panel {
             .stroke({ width: 1, color: 0x000000, alpha: 0.3 })
         }
       }
+
+      frameOf(t).swatch?.(g, t, sx, sy, cw, SWATCH_H)
 
       g.roundRect(sx + 0.5, sy + 0.5, cw - 1, SWATCH_H - 1, rad)
         .stroke({ width: on ? 2 : 1, color: on || hot ? UI.highlight : UI.edge, alpha: on ? 1 : 0.7 })

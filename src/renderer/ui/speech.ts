@@ -152,7 +152,8 @@ export class Speech {
   rect(ax: number, ay: number, worldW: number): Box | null {
     if (!this.active) return null
     const l = this.layout(ax, ay, worldW, this.measured || this.estimate)
-    return { x: l.x - 2, y: l.y - 2, width: l.w + 4, height: l.h + 12 }
+    const m = 2 + chrome.frame().reach
+    return { x: l.x - m, y: l.y - m, width: l.w + m * 2, height: l.h + TAIL_H + m * 2 }
   }
 
   /** Anchor is his head. Returns the rect drawn. */
@@ -189,7 +190,8 @@ export class Speech {
     chrome.body(g, trace, area, a)
     chrome.band(g, trace, area, 3, a)
     chrome.sheen(g, trace, { x, y, w, h }, a)
-    chrome.edge(g, trace, a)
+    chrome.edge(g, trace, { x, y, w, h }, a)
+    chrome.corners(g, { x, y, w, h }, 0.5, a)
 
     const cx = x + w / 2
     if (!isEntry(u)) {
@@ -205,6 +207,7 @@ export class Speech {
       g.text(u.english, cx, ly + GLOSS / 2, { size: GLOSS, color: UI.dim, alpha: a })
     }
     chrome.glass(g, trace, area, a)
-    return { x: x - 2, y: y - 2, width: w + 4, height: h + 12 }
+    const m = 2 + chrome.frame().reach
+    return { x: x - m, y: y - m, width: w + m * 2, height: h + TAIL_H + m * 2 }
   }
 }
