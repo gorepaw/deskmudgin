@@ -1,0 +1,299 @@
+id	script	reading	english	gloss	status	checks	note
+h3w001	阿姨	ā yí	aunt	tía (forma cariñosa de llamar a una mujer adulta); señora	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w002	啊	a	(particle of surprise or emphasis)	(partícula de sorpresa o énfasis)	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w003	矮	ǎi	short (of height)	bajo (de estatura)	verified	claude-blind,claude-review	
+h3w004	爱好	ài hào	hobby	pasatiempo	verified	claude-blind,claude-review	
+h3w005	安静	ān jìng	quiet	silencioso; tranquilo	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w006	把	bǎ	(marks the object before the verb)	(marca el objeto antes del verbo)	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w007	班	bān	class	clase	verified	claude-blind,claude-review	
+h3w008	搬	bān	to move (something heavy)	mover (algo pesado)	verified	claude-blind,claude-review	
+h3w009	半	bàn	half	mitad	verified	claude-blind,claude-review	
+h3w010	办法	bàn fǎ	way; method	manera; método	verified	claude-blind,claude-review	
+h3w011	办公室	bàn gōng shì	office	oficina	verified	claude-blind,claude-review	
+h3w012	帮忙	bāng máng	to help	ayudar	verified	claude-blind,claude-review	
+h3w013	包	bāo	bag	bolsa	verified	claude-blind,claude-review	
+h3w014	饱	bǎo	full (after eating)	lleno (después de comer)	verified	claude-blind,claude-review	
+h3w015	北方	běi fāng	the north	norte	verified	claude-blind,claude-review	
+h3w016	被	bèi	(passive marker) by	(marca de pasiva) por	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w017	鼻子	bí zi	nose	nariz	verified	claude-blind,claude-review	
+h3w018	比较	bǐ jiào	rather; relatively	bastante; relativamente	verified	claude-blind,claude-review	
+h3w019	比赛	bǐ sài	match; competition	partido; competencia	verified	claude-blind,claude-review	
+h3w020	笔记本	bǐ jì běn	notebook	cuaderno	verified	claude-blind,claude-review	
+h3w021	必须	bì xū	must	tener que	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w022	变化	biàn huà	change	cambio	verified	claude-blind,claude-review	
+h3w023	别人	bié rén	other people	otras personas	verified	claude-blind,claude-review	
+h3w024	冰箱	bīng xiāng	refrigerator	refrigerador	verified	claude-blind,claude-review	
+h3w025	不但…而且	bú dàn … ér qiě	not only… but also	no solo… sino también	verified	claude-blind,claude-review	
+h3w026	菜单	cài dān	menu	menú	verified	claude-blind,claude-review	
+h3w027	才	cái	only then; not until	solo entonces; recién	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w028	参加	cān jiā	to take part in	participar en	verified	claude-blind,claude-review	
+h3w029	草	cǎo	grass	pasto; hierba	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w030	层	céng	floor; layer	piso; capa	verified	claude-blind,claude-review	
+h3w031	差	chà	to be short of; poor	faltar; malo	verified	claude-blind,claude-review	
+h3w032	超市	chāo shì	supermarket	supermercado	verified	claude-blind,claude-review	
+h3w033	衬衫	chèn shān	shirt	camisa	verified	claude-blind,claude-review	
+h3w034	成绩	chéng jì	result; grade	resultado; calificación	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w035	城市	chéng shì	city	ciudad	verified	claude-blind,claude-review	
+h3w036	迟到	chí dào	to be late	llegar tarde	verified	claude-blind,claude-review	
+h3w037	出现	chū xiàn	to appear	aparecer	verified	claude-blind,claude-review	
+h3w038	除了	chú le	besides; except	además de; excepto	verified	claude-blind,claude-review	
+h3w039	厨房	chú fáng	kitchen	cocina	verified	claude-blind,claude-review	
+h3w041	春	chūn	spring	primavera	verified	claude-blind,claude-review	
+h3w042	词语	cí yǔ	word; phrase	palabra; expresión	verified	claude-blind,claude-review	
+h3w043	聪明	cōng ming	clever	inteligente	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w044	打扫	dǎ sǎo	to clean	limpiar	verified	claude-blind,claude-review	
+h3w045	打算	dǎ suàn	to plan	planear	verified	claude-blind,claude-review	
+h3w046	带	dài	to bring; to take	traer; llevar	verified	claude-blind,claude-review	
+h3w047	担心	dān xīn	to worry	preocuparse	verified	claude-blind,claude-review	
+h3w048	蛋糕	dàn gāo	cake	pastel	verified	claude-blind,claude-review	
+h3w049	当然	dāng rán	of course	por supuesto	verified	claude-blind,claude-review	
+h3w050	地	de	(adverbial particle)	(partícula adverbial)	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w051	灯	dēng	lamp; light	lámpara; luz	verified	claude-blind,claude-review	
+h3w052	地方	dì fang	place	lugar	verified	claude-blind,claude-review	
+h3w053	地铁	dì tiě	subway	metro	verified	claude-blind,claude-review	
+h3w054	地图	dì tú	map	mapa	verified	claude-blind,claude-review	
+h3w055	电梯	diàn tī	elevator	ascensor	verified	claude-blind,claude-review	
+h3w056	电子邮件	diàn zǐ yóu jiàn	email	correo electrónico	verified	claude-blind,claude-review	
+h3w057	东	dōng	east	este	verified	claude-blind,claude-review	
+h3w058	冬	dōng	winter	invierno	verified	claude-blind,claude-review	
+h3w059	动物	dòng wù	animal	animal	verified	claude-blind,claude-review	
+h3w060	短	duǎn	short (of length)	corto (de longitud)	verified	claude-blind,claude-review	
+h3w061	段	duàn	(measure word for sections)	(clasificador para secciones)	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w062	锻炼	duàn liàn	to exercise	hacer ejercicio	verified	claude-blind,claude-review	
+h3w063	多么	duō me	how (in exclamations)	qué (en exclamaciones)	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w064	饿	è	hungry	tener hambre	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w065	而	ér	and yet; but	y sin embargo; pero	verified	claude-blind,claude-review	
+h3w066	耳朵	ěr duo	ear	oreja	verified	claude-blind,claude-review	
+h3w067	发	fā	to send	enviar	verified	claude-blind,claude-review	
+h3w068	发烧	fā shāo	to have a fever	tener fiebre	verified	claude-blind,claude-review	
+h3w069	发现	fā xiàn	to discover	descubrir	verified	claude-blind,claude-review	
+h3w070	方便	fāng biàn	convenient	conveniente	verified	claude-blind,claude-review	
+h3w071	放	fàng	to put	poner	verified	claude-blind,claude-review	
+h3w072	放心	fàng xīn	to rest assured	quedarse tranquilo	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w073	分	fēn	to divide; minute	dividir; minuto	verified	claude-blind,claude-review	
+h3w074	复习	fù xí	to review	repasar	verified	claude-blind,claude-review	
+h3w075	干净	gān jìng	clean	limpio	verified	claude-blind,claude-review	
+h3w076	感冒	gǎn mào	a cold; to catch a cold	resfriado; resfriarse	verified	claude-blind,claude-review	
+h3w077	感兴趣	gǎn xìng qù	to be interested	estar interesado	verified	claude-blind,claude-review	
+h3w078	刚才	gāng cái	just now	hace un momento	verified	claude-blind,claude-review	
+h3w079	根据	gēn jù	according to	según	verified	claude-blind,claude-review	
+h3w080	跟	gēn	with; to follow	con; seguir	verified	claude-blind,claude-review	
+h3w081	更	gèng	even more	aún más	verified	claude-blind,claude-review	
+h3w082	公园	gōng yuán	park	parque	verified	claude-blind,claude-review	
+h3w083	故事	gù shì	story	cuento	verified	claude-blind,claude-review	
+h3w084	刮风	guā fēng	to be windy	hacer viento	verified	claude-blind,claude-review	
+h3w085	关	guān	to close; to turn off	cerrar; apagar	verified	claude-blind,claude-review	
+h3w086	关系	guān xi	relationship	relación	verified	claude-blind,claude-review	
+h3w087	关心	guān xīn	to care about	preocuparse por	verified	claude-blind,claude-review	
+h3w088	关于	guān yú	about	sobre	verified	claude-blind,claude-review	
+h3w089	国家	guó jiā	country	país	verified	claude-blind,claude-review	
+h3w090	过去	guò qù	the past; to go over	el pasado; pasar por	verified	claude-blind,claude-review	
+h3w091	还是	hái shì	or; still	o; todavía	verified	claude-blind,claude-review	
+h3w092	害怕	hài pà	to be afraid	tener miedo	verified	claude-blind,claude-review	
+h3w093	黑板	hēi bǎn	blackboard	pizarra	verified	claude-blind,claude-review	
+h3w094	后来	hòu lái	afterwards	después	verified	claude-blind,claude-review	
+h3w095	护照	hù zhào	passport	pasaporte	verified	claude-blind,claude-review	
+h3w096	花	huā	flower; to spend	flor; gastar	verified	claude-blind,claude-review	
+h3w097	画	huà	to draw; painting	dibujar; dibujo	verified	claude-blind,claude-review	
+h3w098	坏	huài	bad; broken	malo; descompuesto	verified	claude-blind,claude-review	
+h3w099	环境	huán jìng	environment	medio ambiente	verified	claude-blind,claude-review	
+h3w100	换	huàn	to change	cambiar	verified	claude-blind,claude-review	
+h3w101	黄河	huáng hé	the Yellow River	el río Amarillo	verified	claude-blind,claude-review	
+h3w102	会议	huì yì	meeting	reunión	verified	claude-blind,claude-review	
+h3w103	或者	huò zhě	or	o	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w104	几乎	jī hū	almost	casi	verified	claude-blind,claude-review	
+h3w105	机会	jī huì	opportunity	oportunidad	verified	claude-blind,claude-review	
+h3w106	极	jí	extremely	sumamente	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w107	记得	jì de	to remember	recordar	verified	claude-blind,claude-review	
+h3w108	季节	jì jié	season	estación del año	verified	claude-blind,claude-review	
+h3w109	检查	jiǎn chá	to check	revisar	verified	claude-blind,claude-review	
+h3w110	简单	jiǎn dān	simple	sencillo	verified	claude-blind,claude-review	
+h3w111	健康	jiàn kāng	healthy	sano	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w112	见面	jiàn miàn	to meet	encontrarse	verified	claude-blind,claude-review	
+h3w113	讲	jiǎng	to speak; to tell	hablar; contar	verified	claude-blind,claude-review	
+h3w114	教	jiāo	to teach	enseñar	verified	claude-blind,claude-review	
+h3w115	角	jiǎo	corner; (a tenth of a yuan)	esquina; (una décima de yuan)	verified	claude-blind,claude-review	
+h3w116	脚	jiǎo	foot	pie	verified	claude-blind,claude-review	
+h3w117	接	jiē	to receive; to pick up	recibir; recoger	verified	claude-blind,claude-review	
+h3w118	街道	jiē dào	street	calle	verified	claude-blind,claude-review	
+h3w119	节目	jié mù	programme	programa	verified	claude-blind,claude-review	
+h3w120	节日	jié rì	festival	fiesta	verified	claude-blind,claude-review	
+h3w121	结婚	jié hūn	to get married	casarse	verified	claude-blind,claude-review	
+h3w122	结束	jié shù	to end	terminar	verified	claude-blind,claude-review	
+h3w123	解决	jiě jué	to solve	resolver	verified	claude-blind,claude-review	
+h3w124	借	jiè	to borrow; to lend	pedir prestado; prestar	verified	claude-blind,claude-review	
+h3w125	经常	jīng cháng	often	a menudo	verified	claude-blind,claude-review	
+h3w126	经过	jīng guò	to pass through	pasar por	verified	claude-blind,claude-review	
+h3w127	经理	jīng lǐ	manager	gerente	verified	claude-blind,claude-review	
+h3w128	久	jiǔ	for a long time	mucho tiempo	verified	claude-blind,claude-review	
+h3w129	旧	jiù	old (of things)	viejo (de cosas)	verified	claude-blind,claude-review	
+h3w130	句子	jù zi	sentence	oración	verified	claude-blind,claude-review	
+h3w131	决定	jué dìng	to decide	decidir	verified	claude-blind,claude-review	
+h3w132	可爱	kě ài	lovely	adorable	verified	claude-blind,claude-review	
+h3w133	渴	kě	thirsty	tener sed	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w134	刻	kè	quarter of an hour	cuarto de hora	verified	claude-blind,claude-review	
+h3w135	客人	kè rén	guest	invitado	verified	claude-blind,claude-review	
+h3w136	空调	kōng tiáo	air conditioning	aire acondicionado	verified	claude-blind,claude-review	
+h3w137	口	kǒu	mouth; (measure word for family members)	boca; (clasificador para miembros de la familia)	verified	claude-blind,claude-review	
+h3w138	哭	kū	to cry	llorar	verified	claude-blind,claude-review	
+h3w139	裤子	kù zi	trousers	pantalones	verified	claude-blind,claude-review	
+h3w140	筷子	kuài zi	chopsticks	palillos chinos	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w141	蓝	lán	blue	azul	verified	claude-blind,claude-review	
+h3w142	老	lǎo	old	viejo	verified	claude-blind,claude-review	
+h3w143	离开	lí kāi	to leave	irse	verified	claude-blind,claude-review	
+h3w144	力气	lì qi	strength	fuerza	verified	claude-blind,claude-review	
+h3w145	厉害	lì hài	formidable; impressive	formidable; impresionante	verified	claude-blind,claude-review	
+h3w146	例如	lì rú	for example	por ejemplo	verified	claude-blind,claude-review	
+h3w147	脸	liǎn	face	cara	verified	claude-blind,claude-review	
+h3w148	练习	liàn xí	to practise	practicar	verified	claude-blind,claude-review	
+h3w149	辆	liàng	(measure word for vehicles)	(clasificador para vehículos)	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w150	了解	liǎo jiě	to understand	conocer bien; comprender	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w151	邻居	lín jū	neighbour	vecino	verified	claude-blind,claude-review	
+h3w152	另外	lìng wài	in addition	además	verified	claude-blind,claude-review	
+h3w153	留	liú	to stay; to keep	quedarse; guardar	verified	claude-blind,claude-review	
+h3w154	楼	lóu	building; floor	edificio; piso	verified	claude-blind,claude-review	
+h3w155	绿	lǜ	green	verde	verified	claude-blind,claude-review	
+h3w156	马上	mǎ shàng	immediately	enseguida	verified	claude-blind,claude-review	
+h3w157	满意	mǎn yì	satisfied	satisfecho	verified	claude-blind,claude-review	
+h3w158	帽子	mào zi	hat	sombrero	verified	claude-blind,claude-review	
+h3w159	米	mǐ	metre; rice	metro; arroz	verified	claude-blind,claude-review	
+h3w160	面包	miàn bāo	bread	pan	verified	claude-blind,claude-review	
+h3w161	明白	míng bái	to understand	entender	verified	claude-blind,claude-review	
+h3w162	拿	ná	to take; to hold	tomar; sostener	verified	claude-blind,claude-review	
+h3w163	奶奶	nǎi nai	grandmother (father's mother)	abuela (madre del padre)	verified	claude-blind,claude-review	
+h3w164	南	nán	south	sur	verified	claude-blind,claude-review	
+h3w165	难过	nán guò	sad	triste	verified	claude-blind,claude-review	
+h3w166	年级	nián jí	school year; grade	grado escolar; curso	verified	claude-blind,claude-review	
+h3w167	年轻	nián qīng	young	joven	verified	claude-blind,claude-review	
+h3w168	鸟	niǎo	bird	pájaro	verified	claude-blind,claude-review	
+h3w169	努力	nǔ lì	hard-working; to strive	trabajador; esforzarse	verified	claude-blind,claude-review	
+h3w170	爬山	pá shān	to climb a mountain	hacer senderismo; subir montañas	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w171	盘子	pán zi	plate	plato	verified	claude-blind,claude-review	
+h3w172	胖	pàng	fat; plump	gordo; regordete	verified	claude-blind,claude-review	
+h3w173	皮鞋	pí xié	leather shoes	zapatos de cuero	verified	claude-blind,claude-review	
+h3w174	啤酒	pí jiǔ	beer	cerveza	verified	claude-blind,claude-review	
+h3w175	瓶子	píng zi	bottle	botella	verified	claude-blind,claude-review	
+h3w176	其实	qí shí	in fact	en realidad	verified	claude-blind,claude-review	
+h3w177	其他	qí tā	other	otro	verified	claude-blind,claude-review	
+h3w178	起飞	qǐ fēi	to take off	despegar	verified	claude-blind,claude-review	
+h3w179	清楚	qīng chǔ	clear	claro	verified	claude-blind,claude-review	
+h3w180	请假	qǐng jià	to ask for leave	pedir permiso	verified	claude-blind,claude-review	
+h3w181	秋	qiū	autumn	otoño	verified	claude-blind,claude-review	
+h3w182	裙子	qún zi	skirt	falda	verified	claude-blind,claude-review	
+h3w183	然后	rán hòu	then; afterwards	luego; después	verified	claude-blind,claude-review	
+h3w184	热情	rè qíng	warm; enthusiastic	cálido; entusiasta	verified	claude-blind,claude-review	
+h3w185	认为	rèn wéi	to think; to consider	pensar; considerar	verified	claude-blind,claude-review	
+h3w186	认真	rèn zhēn	serious; conscientious	serio; concienzudo	verified	claude-blind,claude-review	
+h3w187	容易	róng yì	easy	fácil	verified	claude-blind,claude-review	
+h3w188	如果	rú guǒ	if	si	verified	claude-blind,claude-review	
+h3w189	伞	sǎn	umbrella	paraguas	verified	claude-blind,claude-review	
+h3w190	上网	shàng wǎng	to go online	conectarse a internet	verified	claude-blind,claude-review	
+h3w191	生气	shēng qì	to be angry	estar enojado	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w192	声音	shēng yīn	sound; voice	sonido; voz	verified	claude-blind,claude-review	
+h3w193	世界	shì jiè	world	mundo	verified	claude-blind,claude-review	
+h3w194	试	shì	to try	probar	verified	claude-blind,claude-review	
+h3w195	瘦	shòu	thin	delgado	verified	claude-blind,claude-review	
+h3w196	叔叔	shū shu	uncle	tío	verified	claude-blind,claude-review	
+h3w197	舒服	shū fu	comfortable	cómodo	verified	claude-blind,claude-review	
+h3w198	树	shù	tree	árbol	verified	claude-blind,claude-review	
+h3w199	数学	shù xué	maths	matemáticas	verified	claude-blind,claude-review	
+h3w200	刷牙	shuā yá	to brush one's teeth	cepillarse los dientes	verified	claude-blind,claude-review	
+h3w201	双	shuāng	pair	par	verified	claude-blind,claude-review	
+h3w202	水平	shuǐ píng	level; standard	nivel	verified	claude-blind,claude-review	
+h3w203	司机	sī jī	driver	conductor	verified	claude-blind,claude-review	
+h3w204	太阳	tài yáng	sun	sol	verified	claude-blind,claude-review	
+h3w205	特别	tè bié	special; especially	especial; especialmente	verified	claude-blind,claude-review	
+h3w206	疼	téng	to hurt; painful	doler; doloroso	verified	claude-blind,claude-review	
+h3w207	提高	tí gāo	to improve	mejorar	verified	claude-blind,claude-review	
+h3w208	体育	tǐ yù	sports; physical education	deportes; educación física	verified	claude-blind,claude-review	
+h3w209	甜	tián	sweet	dulce	verified	claude-blind,claude-review	
+h3w210	条	tiáo	(measure word for long things)	(clasificador para cosas largas)	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w211	同事	tóng shì	colleague	colega	verified	claude-blind,claude-review	
+h3w212	同意	tóng yì	to agree	estar de acuerdo	verified	claude-blind,claude-review	
+h3w213	头发	tóu fa	hair	cabello	verified	claude-blind,claude-review	
+h3w214	突然	tū rán	suddenly	de repente	verified	claude-blind,claude-review	
+h3w215	图书馆	tú shū guǎn	library	biblioteca	verified	claude-blind,claude-review	
+h3w216	腿	tuǐ	leg	pierna	verified	claude-blind,claude-review	
+h3w217	完成	wán chéng	to complete	completar	verified	claude-blind,claude-review	
+h3w218	碗	wǎn	bowl	tazón	verified	claude-blind,claude-review	
+h3w219	万	wàn	ten thousand	diez mil	verified	claude-blind,claude-review	
+h3w220	忘记	wàng jì	to forget	olvidar	verified	claude-blind,claude-review	
+h3w221	为	wèi	for; to	para; por	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w222	为了	wèi le	in order to	para; con el fin de	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w223	位	wèi	(polite measure word for people)	(clasificador cortés para personas)	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w224	文化	wén huà	culture	cultura	verified	claude-blind,claude-review	
+h3w225	西	xī	west	oeste	verified	claude-blind,claude-review	
+h3w226	习惯	xí guàn	habit; to be used to	costumbre; estar acostumbrado	verified	claude-blind,claude-review	
+h3w227	洗手间	xǐ shǒu jiān	restroom	baño	verified	claude-blind,claude-review	
+h3w228	洗澡	xǐ zǎo	to take a bath or shower	bañarse	verified	claude-blind,claude-review	
+h3w229	夏	xià	summer	verano	verified	claude-blind,claude-review	
+h3w230	先	xiān	first	primero	verified	claude-blind,claude-review	
+h3w231	相信	xiāng xìn	to believe	creer	verified	claude-blind,claude-review	
+h3w232	香蕉	xiāng jiāo	banana	plátano	verified	claude-blind,claude-review	
+h3w233	向	xiàng	towards	hacia	verified	claude-blind,claude-review	
+h3w234	像	xiàng	to resemble; like	parecerse; como	verified	claude-blind,claude-review	
+h3w235	小心	xiǎo xīn	careful	cuidadoso	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w236	校长	xiào zhǎng	principal	director (de una escuela)	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w237	新闻	xīn wén	news	noticias	verified	claude-blind,claude-review	
+h3w238	新鲜	xīn xiān	fresh	fresco	verified	claude-blind,claude-review	
+h3w239	信	xìn	letter	carta	verified	claude-blind,claude-review	
+h3w241	行李箱	xíng li xiāng	suitcase	maleta	verified	claude-blind,claude-review	
+h3w242	熊猫	xióng māo	panda	panda	verified	claude-blind,claude-review	
+h3w243	需要	xū yào	to need	necesitar	verified	claude-blind,claude-review	
+h3w244	选择	xuǎn zé	to choose	elegir	verified	claude-blind,claude-review	
+h3w245	要求	yāo qiú	to demand; requirement	exigir; requisito	verified	claude-blind,claude-review	
+h3w246	爷爷	yé ye	grandfather (father's father)	abuelo (padre del padre)	verified	claude-blind,claude-review	
+h3w247	一定	yí dìng	certainly	sin duda	verified	claude-blind,claude-review	
+h3w248	一共	yí gòng	altogether	en total	verified	claude-blind,claude-review	
+h3w249	一会儿	yí huìr	a moment	un momento	verified	claude-blind,claude-review	
+h3w250	一样	yí yàng	the same	igual	verified	claude-blind,claude-review	
+h3w251	一直	yì zhí	always; all along	siempre; todo el tiempo	verified	claude-blind,claude-review	
+h3w252	以前	yǐ qián	before; previously	antes; anteriormente	verified	claude-blind,claude-review	
+h3w253	一般	yì bān	generally	en general	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w254	音乐	yīn yuè	music	música	verified	claude-blind,claude-review	
+h3w255	银行	yín háng	bank	banco	verified	claude-blind,claude-review	
+h3w256	饮料	yǐn liào	drink; beverage	bebida	verified	claude-blind,claude-review	
+h3w257	应该	yīng gāi	should	deber (modal: debería)	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w258	影响	yǐng xiǎng	to influence; influence	influir; influencia	verified	claude-blind,claude-review	
+h3w259	用	yòng	to use	usar	verified	claude-blind,claude-review	
+h3w260	游戏	yóu xì	game	juego	verified	claude-blind,claude-review	
+h3w261	有名	yǒu míng	famous	famoso	verified	claude-blind,claude-review	
+h3w262	又	yòu	again	otra vez	verified	claude-blind,claude-review	
+h3w263	遇到	yù dào	to meet; to run into	encontrar; toparse con	verified	claude-blind,claude-review	
+h3w264	愿意	yuàn yì	to be willing	estar dispuesto	verified	claude-blind,claude-review	
+h3w265	月亮	yuè liang	moon	luna	verified	claude-blind,claude-review	
+h3w266	越	yuè	the more…	cuanto más…	verified	claude-blind,claude-review	
+h3w267	站	zhàn	station; to stand	estación; estar de pie	verified	claude-blind,claude-review	
+h3w268	张	zhāng	(measure word for flat things)	(clasificador para cosas planas)	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w269	着急	zháo jí	anxious	estar preocupado o impaciente	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w270	照顾	zhào gù	to take care of	cuidar	verified	claude-blind,claude-review	
+h3w271	照片	zhào piàn	photo	foto	verified	claude-blind,claude-review	
+h3w272	照相机	zhào xiàng jī	camera	cámara	verified	claude-blind,claude-review	
+h3w273	只	zhī	(measure word for animals)	(clasificador para animales)	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w274	只有	zhǐ yǒu	only; only if	solo; solo si	verified	claude-blind,claude-review	
+h3w275	中间	zhōng jiān	middle	medio	verified	claude-blind,claude-review	
+h3w276	中文	zhōng wén	the Chinese language	idioma chino	verified	claude-blind,claude-review	
+h3w277	终于	zhōng yú	finally	por fin	verified	claude-blind,claude-review	
+h3w278	种	zhǒng	kind; type	tipo; clase	verified	claude-blind,claude-review	
+h3w279	重	zhòng	heavy	pesado	verified	claude-blind,claude-review	
+h3w280	重要	zhòng yào	important	importante	verified	claude-blind,claude-review	
+h3w281	周末	zhōu mò	weekend	fin de semana	verified	claude-blind,claude-review	
+h3w282	主要	zhǔ yào	main	principal	verified	claude-blind,claude-review	
+h3w283	注意	zhù yì	to pay attention to	prestar atención a	verified	claude-blind,claude-review	
+h3w284	自己	zì jǐ	oneself	uno mismo	verified	claude-blind,claude-review	
+h3w285	自行车	zì xíng chē	bicycle	bicicleta	verified	claude-blind,claude-review	
+h3w286	总是	zǒng shì	always	siempre	verified	claude-blind,claude-review	
+h3w287	最后	zuì hòu	finally; last	por último; último	verified	claude-blind,claude-review	
+h3w288	最近	zuì jìn	recently	recientemente	verified	claude-blind,claude-review	
+h3w289	作业	zuò yè	homework	tarea	verified	claude-blind,claude-review	
+h3w290	遍	biàn	(measure word for times)	(clasificador para veces)	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w291	对面	duì miàn	opposite	enfrente	verified	claude-blind,claude-review	
+h3w292	礼物	lǐ wù	gift	regalo	verified	claude-blind,claude-review	
+h3w293	历史	lì shǐ	history	historia	verified	claude-blind,claude-review	
+h3w294	附近	fù jìn	nearby	cerca; alrededores	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w295	骑	qí	to ride (a bike or horse)	montar (una bicicleta o un caballo)	verified	claude-blind,claude-review	
+h3w296	果汁	guǒ zhī	fruit juice	jugo de frutas	verified	claude-blind,claude-review	
+h3w297	一边	yì biān	at the same time; on one side	al mismo tiempo; por un lado	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w298	嘴	zuǐ	mouth	boca	verified	claude-blind,claude-review	
+h3w299	起来	qǐ lái	(direction: up); to begin to	(dirección: hacia arriba); empezar a	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: the blind reading of the Chinese agrees with this Spanish (reviewer's fix, or wording only)
+h3w300	难	nán	difficult	difícil	verified	claude-blind,claude-review	

@@ -1,0 +1,59 @@
+¿Tienes hambre? | Sí, quiero comer pastel. | Hay uno en la cocina.
+¿Ya estás lleno? | Todavía no, todavía quiero comer un plátano.
+Este pan está muy fresco. | ¿De verdad? Yo también quiero comer uno.
+¿Qué bebida quieres tomar? | Quiero tomar algo dulce.
+¿Qué hay en este tazón? | Son fideos, ¿quieres comer? | ¡Sí!
+¿Todavía hay pastel en el refrigerador? | Ya no hay, me lo comí yo.
+¿Sabes usar palillos? | Sí, pero todavía no me acostumbro.
+No entiendo este menú. | No te preocupes, te lo explico.
+¿No vas a comer el pescado del plato? | No, no tengo hambre. Cómelo tú.
+¿Cuántas manzanas compraste en total? | En total cinco, todas son para ti.
+¿Qué hay en esta botella? | Es una bebida, muy dulce.
+¿Quieres comer fideos o pan? | Quiero comer pan y luego tomar leche.
+¡Cuánto tiempo sin vernos! | Sí, ¿cómo has estado últimamente? | Muy bien, gracias.
+¡Buenos días! Hoy llegaste muy temprano. | Siempre me levanto muy temprano.
+Hola, soy tu nuevo vecino. | ¡Bienvenido! Seamos amigos.
+¡Hola! Es la primera vez que nos vemos, ¿verdad? | Sí, mucho gusto en conocerte.
+Hola, ¿eres el director? | No, soy nuevo aquí.
+¿A dónde fuiste? Te esperé un rato. | Lo siento, me encontré con un amigo.
+¡Tu sombrero es muy lindo! | Gracias, me lo dio mi abuela.
+Adiós, me voy a casa. | Bien, ¡ten cuidado en el camino!
+Hoy hizo viento. | Sí, ¡mi sombrero salió volando!
+Hoy el sol está muy fuerte. | Sí, quiero ir a descansar bajo un árbol.
+Afuera está lloviendo, ¿trajiste paraguas? | Sí, mi paraguas es azul.
+¿En qué estación estamos ahora? | Es otoño, el clima es muy agradable.
+Hoy hace mucho calor, quiero encender el aire acondicionado. | Bien, voy enseguida a encenderlo.
+¿Cómo está el clima hoy? | Ni frío ni calor, muy agradable.
+¿Cómo es que te resfriaste? | Ayer hizo mucho frío y se me olvidó abrigarme más.
+¿Mañana nevará? | Puede ser, el invierno ya está por llegar. | ¡Qué bien, quiero jugar con la nieve!
+¿Por qué todavía no te duermes? | No puedo dormir, tengo un poco de miedo. | No temas, aquí estoy.
+¿A qué hora te duermes? | Normalmente me duermo a las diez. | Yo también.
+Te ves muy cansado. | Sí, hoy practiqué mucho tiempo.
+Salió la luna, vamos a dormir. | Bien, buenas noches.
+Quiero dormir. | Juega un rato más, ¿sí? | No, mañana todavía hay que ir a escalar la montaña.
+¿Por qué estás tan cansado? | Ayer hice la tarea hasta muy tarde.
+¿Qué estás mirando? | Estoy mirando fotos, son de cuando era pequeño.
+¿Te gusta la música? | Sí, me gusta mucho cantar.
+¿Te duele el pie? | Me duele un poco, quiero descansar.
+¿Qué quieres hacer el fin de semana? | Quiero ir a jugar al parque. | Bien, ¡yo también voy!
+¿Sabes nadar? | Un poco, estoy esforzándome por aprender.
+¿Por qué lloraste? | Mi pelota se rompió. | No estés triste, compremos otra.
+¡Mira, hay un pájaro en el cielo! | ¡Vuela muy alto!
+¿Puedes ayudar? | Claro que sí, ¿qué quieres que haga?
+¿Hablas chino? | Un poco, lo estoy aprendiendo. | ¡Hablas muy claro!
+¡Este oso panda está muy gordo! | Sí, come muchas cosas todos los días.
+¿Dónde está tu cámara? | Está en mi bolsa. | Préstamela un momento, ¿sí?
+¿Puedo pedirte prestado tu libro? | Sí, pero acuérdate de devolvérmelo. | ¡Seguro!
+¿Por qué estás tan contento hoy? | ¡Porque mis calificaciones son muy buenas!
+¿A qué juego estás jugando? | Un juego nuevo, muy difícil. | ¿Puedo probarlo un momento?
+¿Por qué no hablas? | Estoy pensando cómo subir hasta allá arriba.
+¡Tu bicicleta es muy bonita! | Gracias, la monto todos los días.
+¿De qué trata este libro? | Es un cuento sobre un oso panda.
+¿Qué estás escribiendo? | Le estoy escribiendo una carta a mi abuelo.
+¿Tu falda es nueva? | No, la compré hace tiempo.
+¿Qué te pasa? | Mis piernas ya no pueden caminar.
+¿Oíste un sonido? | Sí, alguien está cantando.
+¿Quieres ir a escalar la montaña? | Quiero, pero estoy un poco preocupado. | No te preocupes, yo te cuidaré.
+De repente recordé algo. | ¿Qué cosa? | ¡Hoy es el cumpleaños de mi hermana menor!
+¿Qué estación te gusta? | Me gusta el verano, se puede nadar.
+¿Ya entendiste esta pregunta? | Todavía no, explícamelo otra vez.

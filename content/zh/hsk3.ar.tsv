@@ -1,0 +1,465 @@
+id	script	reading	english	gloss	gloss_reading	status	checks	note
+h3p001	阿姨，你今天来得真早！	Ā yí, nǐ jīn tiān lái de zhēn zǎo!	Auntie, you're here so early today!	يَا خَالَتِي، جِئْتِ مُبَكِّرَةً الْيَوْمَ حَقًّا!	Yā khālatī, jiʾti mubakkiratan al-yawma ḥaqqan!	draft		
+h3p002	啊，你回来了！	A, nǐ huí lái le!	Ah, you're back!	آهٍ، لَقَدْ عُدْتَ!	Āh, laqad ʿudt!	draft		
+h3p003	我个子太矮，拿不到桌上的包。	Wǒ gè zi tài ǎi, ná bú dào zhuō shàng de bāo.	I'm too short to get the bag on the table.	أَنَا أَقْصَرُ مِنْ أَنْ أَصِلَ إِلَى الْحَقِيبَةِ الَّتِي عَلَى الطَّاوِلَةِ.	Anā aqṣaru min an aṣila ilā al-ḥaqībati allatī ʿalā aṭ-ṭāwila.	draft		
+h3p004	你的爱好是什么？	Nǐ de ài hào shì shén me?	What's your hobby?	مَا هِوَايَتُكَ؟	Mā hiwāyatuk?	draft		
+h3p005	我的爱好是睡觉。	Wǒ de ài hào shì shuì jiào.	My hobby is sleeping.	هِوَايَتِي هِيَ النَّوْمُ.	Hiwāyatī hiya an-nawm.	draft		
+h3p006	这里好安静，我想睡觉了。	Zhè lǐ hǎo ān jìng, wǒ xiǎng shuì jiào le.	It's so quiet here. I feel like sleeping.	الْمَكَانُ هَادِئٌ جِدًّا هُنَا، أُرِيدُ أَنْ أَنَامَ.	Al-makānu hādiʾun jiddan hunā, urīdu an anām.	draft		
+h3p007	请你把我放在灯下面。	Qǐng nǐ bǎ wǒ fàng zài dēng xià mian.	Please put me under the light.	مِنْ فَضْلِكَ، ضَعْنِي تَحْتَ الْمِصْبَاحِ.	Min faḍlik, ḍaʿnī taḥta al-miṣbāḥ.	draft		
+h3p008	你今天几点上班？	Nǐ jīn tiān jǐ diǎn shàng bān?	What time do you start work today?	فِي أَيِّ سَاعَةٍ تَبْدَأُ الْعَمَلَ الْيَوْمَ؟	Fī ayyi sāʿatin tabdaʾu al-ʿamala al-yawm?	draft		
+h3p009	我们班的同学都很好。	Wǒ men bān de tóng xué dōu hěn hǎo.	Everyone in our class is nice.	زُمَلَاؤُنَا فِي الصَّفِّ كُلُّهُمْ لُطَفَاءُ.	Zumalāʾunā fī aṣ-ṣaffi kulluhum luṭafāʾ.	draft		
+h3p010	别搬我，我很重！	Bié bān wǒ, wǒ hěn zhòng!	Don't move me, I'm heavy!	لَا تَنْقُلْنِي، أَنَا ثَقِيلٌ!	Lā tanqulnī, anā thaqīl!	draft		
+h3p011	我只吃了半个蛋糕。	Wǒ zhǐ chī le bàn gè dàn gāo.	I only ate half a cake.	أَكَلْتُ نِصْفَ كَعْكَةٍ فَقَطْ.	Akaltu niṣfa kaʿkatin faqaṭ.	draft		
+h3p012	我没有办法，只好等你。	Wǒ méi yǒu bàn fǎ, zhǐ hǎo děng nǐ.	I have no choice but to wait for you.	لَيْسَ عِنْدِي حِيلَةٌ، لَا أَسْتَطِيعُ إِلَّا أَنْ أَنْتَظِرَكَ.	Laysa ʿindī ḥīla, lā astaṭīʿu illā an antaẓirak.	draft		
+h3p013	你的办公室大不大？	Nǐ de bàn gōng shì dà bu dà?	Is your office big?	هَلْ مَكْتَبُكَ كَبِيرٌ؟	Hal maktabuka kabīr?	draft		
+h3p014	你能帮忙拿一下这个吗？	Nǐ néng bāng máng ná yí xià zhè ge ma?	Can you help me carry this?	هَلْ تَسْتَطِيعُ أَنْ تُسَاعِدَنِي فِي حَمْلِ هٰذَا؟	Hal tastaṭīʿu an tusāʿidanī fī ḥamli hādhā?	draft		
+h3p015	你的包里有好吃的吗？	Nǐ de bāo lǐ yǒu hǎo chī de ma?	Is there anything tasty in your bag?	هَلْ فِي حَقِيبَتِكَ شَيْءٌ لَذِيذٌ؟	Hal fī ḥaqībatika shayʾun ladhīdh?	draft		
+h3p016	我吃饱了，想睡觉。	Wǒ chī bǎo le, xiǎng shuì jiào.	I'm full and I want to sleep.	شَبِعْتُ، وَأُرِيدُ أَنْ أَنَامَ.	Shabiʿt, waʾurīdu an anām.	draft		
+h3p017	我吃得好饱啊！	Wǒ chī de hǎo bǎo a!	I'm so full!	لَقَدْ شَبِعْتُ جِدًّا!	Laqad shabiʿtu jiddan!	draft		
+h3p018	我想去北方看雪。	Wǒ xiǎng qù běi fāng kàn xuě.	I want to go to the north to see snow.	أُرِيدُ أَنْ أَذْهَبَ إِلَى الشَّمَالِ لِأَرَى الثَّلْجَ.	Urīdu an adhhaba ilā ash-shamāli liʾarā ath-thalj.	draft		
+h3p019	你把我拿起来了！	Nǐ bǎ wǒ ná qǐ lái le!	You picked me up!	لَقَدْ رَفَعْتَنِي!	Laqad rafaʿtanī!	draft		
+h3p020	我的鼻子有点儿冷。	Wǒ de bí zi yǒu diǎnr lěng.	My nose is a bit cold.	أَنْفِي بَارِدٌ قَلِيلًا.	Anfī bāridun qalīlan.	draft		
+h3p021	今天比较冷，你多穿点儿。	Jīn tiān bǐ jiào lěng, nǐ duō chuān diǎnr.	It's rather cold today, so wear more.	الْجَوُّ بَارِدٌ نَوْعًا مَا الْيَوْمَ، فَالْبَسْ مَلَابِسَ أَكْثَرَ.	Al-jawwu bāridun nawʿan mā al-yawm, fa-l-bas malābisa akthar.	draft		
+h3p022	你的比赛什么时候开始？	Nǐ de bǐ sài shén me shí hou kāi shǐ?	When does your match start?	مَتَى تَبْدَأُ مُبَارَاتُكَ؟	Matā tabdaʾu mubārātuk?	draft		
+h3p023	你的笔记本可以借我吗？	Nǐ de bǐ jì běn kě yǐ jiè wǒ ma?	Can I borrow your notebook?	هَلْ يُمْكِنُنِي أَنْ أَسْتَعِيرَ دَفْتَرَكَ؟	Hal yumkinunī an astaʿīra daftarak?	draft		
+h3p024	你必须早点儿睡觉。	Nǐ bì xū zǎo diǎnr shuì jiào.	You must go to bed early.	يَجِبُ أَنْ تَنَامَ مُبَكِّرًا.	Yajibu an tanāma mubakkiran.	draft		
+h3p025	天气有变化，要下雨了。	Tiān qì yǒu biàn huà, yào xià yǔ le.	The weather is changing. It's going to rain.	الْجَوُّ يَتَغَيَّرُ، وَسَتُمْطِرُ قَرِيبًا.	Al-jawwu yataghayyar, wasatumṭiru qarīban.	draft		
+h3p026	别人都走了，只有我在这儿。	Bié rén dōu zǒu le, zhǐ yǒu wǒ zài zhèr.	Everyone else has gone. Only I'm here.	ذَهَبَ الْآخَرُونَ كُلُّهُمْ، وَبَقِيتُ أَنَا هُنَا فَقَطْ.	Dhahaba al-ʾākharūna kulluhum, wabaqītu anā hunā faqaṭ.	draft		
+h3p027	冰箱里有蛋糕吗？	Bīng xiāng lǐ yǒu dàn gāo ma?	Is there any cake in the fridge?	هَلْ فِي الثَّلَّاجَةِ كَعْكَةٌ؟	Hal fī ath-thallājati kaʿka?	draft		
+h3p028	我不但饿，而且很累。	Wǒ bú dàn è, ér qiě hěn lèi.	I'm not only hungry, I'm tired too.	أَنَا لَسْتُ جَائِعًا فَقَطْ، بَلْ مُتْعَبٌ أَيْضًا.	Anā lastu jāʾiʿan faqaṭ, bal mutʿabun ayḍan.	draft		
+h3p029	把菜单给我看看吧。	Bǎ cài dān gěi wǒ kàn kan ba.	Let me see the menu.	أَرِنِي قَائِمَةَ الطَّعَامِ، مِنْ فَضْلِكَ.	Arinī qāʾimata aṭ-ṭaʿām, min faḍlik.	draft		
+h3p030	你怎么才回来？	Nǐ zěn me cái huí lái?	Why are you only just back?	لِمَاذَا لَمْ تَعُدْ إِلَّا الْآنَ؟	Limādhā lam taʿud illā al-ʾān?	draft		
+h3p031	我想参加你的比赛。	Wǒ xiǎng cān jiā nǐ de bǐ sài.	I want to take part in your match.	أُرِيدُ أَنْ أُشَارِكَ فِي مُبَارَاتِكَ.	Urīdu an ushārika fī mubārātik.	draft		
+h3p032	外面的草绿了。	Wài mian de cǎo lǜ le.	The grass outside has turned green.	أَصْبَحَ الْعُشْبُ فِي الْخَارِجِ أَخْضَرَ.	Aṣbaḥa al-ʿushbu fī al-khāriji akhḍar.	draft		
+h3p033	你住在几层？	Nǐ zhù zài jǐ céng?	Which floor do you live on?	فِي أَيِّ طَابِقٍ تَسْكُنُ؟	Fī ayyi ṭābiqin taskun?	draft		
+h3p034	我的成绩比上次差。	Wǒ de chéng jì bǐ shàng cì chà.	My grade is worse than last time.	دَرَجَاتِي أَسْوَأُ مِنَ الْمَرَّةِ الْمَاضِيَةِ.	Darajātī aswaʾu mina al-marrati al-māḍiya.	draft		
+h3p035	你带我去超市，好吗？	Nǐ dài wǒ qù chāo shì, hǎo ma?	Will you take me to the supermarket?	هَلْ تَأْخُذُنِي إِلَى الْمَتْجَرِ الْكَبِيرِ؟	Hal taʾkhudhunī ilā al-matjari al-kabīr?	draft		
+h3p036	你的衬衫真好看。	Nǐ de chèn shān zhēn hǎo kàn.	Your shirt looks really nice.	قَمِيصُكَ جَمِيلٌ حَقًّا.	Qamīṣuka jamīlun ḥaqqan.	draft		
+h3p037	我今天的成绩不错！	Wǒ jīn tiān de chéng jì bú cuò!	My grade today is pretty good!	دَرَجَاتِي الْيَوْمَ جَيِّدَةٌ جِدًّا!	Darajātī al-yawma jayyidatun jiddan!	draft		
+h3p038	这个城市很大，也很漂亮。	Zhè ge chéng shì hěn dà, yě hěn piào liang.	This city is big and pretty.	هٰذِهِ الْمَدِينَةُ كَبِيرَةٌ وَجَمِيلَةٌ أَيْضًا.	Hādhihi al-madīnatu kabīratun wajamīlatun ayḍan.	draft		
+h3p039	我快迟到了，你快点儿！	Wǒ kuài chí dào le, nǐ kuài diǎnr!	I'm going to be late, hurry up!	سَأَتَأَخَّرُ، أَسْرِعْ!	Saʾataʾakhkhar, asriʿ!	draft		
+h3p040	你怎么又迟到了？	Nǐ zěn me yòu chí dào le?	Why are you late again?	لِمَاذَا تَأَخَّرْتَ مَرَّةً أُخْرَى؟	Limādhā taʾakhkharta marratan ukhrā?	draft		
+h3p041	你终于出现了！	Nǐ zhōng yú chū xiàn le!	You finally showed up!	ظَهَرْتَ أَخِيرًا!	Ẓaharta akhīran!	draft		
+h3p042	除了你，我谁也不想见。	Chú le nǐ, wǒ shéi yě bù xiǎng jiàn.	I don't want to see anyone but you.	لَا أُرِيدُ أَنْ أَرَى أَحَدًا غَيْرَكَ.	Lā urīdu an arā aḥadan ghayrak.	draft		
+h3p043	厨房里有好吃的东西。	Chú fáng lǐ yǒu hǎo chī de dōng xi.	There's something tasty in the kitchen.	فِي الْمَطْبَخِ شَيْءٌ لَذِيذٌ.	Fī al-maṭbakhi shayʾun ladhīdh.	draft		
+h3p044	春天到了，我好高兴！	Chūn tiān dào le, wǒ hǎo gāo xìng!	Spring is here, I'm so happy!	جَاءَ الرَّبِيعُ، مَا أَسْعَدَنِي!	Jāʾa ar-rabīʿ, mā asʿadanī!	draft		
+h3p045	这个词语是什么意思？	Zhè ge cí yǔ shì shén me yì si?	What does this word mean?	مَا مَعْنَى هٰذِهِ الْكَلِمَةِ؟	Mā maʿnā hādhihi al-kalima?	draft		
+h3p046	你真聪明！	Nǐ zhēn cōng ming!	You're so clever!	مَا أَذْكَاكَ!	Mā adhkāk!	draft		
+h3p047	我打扫得很干净吧？	Wǒ dǎ sǎo de hěn gān jìng ba?	I cleaned it really well, didn't I?	لَقَدْ نَظَّفْتُ الْمَكَانَ جَيِّدًا، أَلَيْسَ كَذٰلِكَ؟	Laqad naẓẓaftu al-makāna jayyidan, alaysa kadhālik?	draft		
+h3p048	你今天打算做什么？	Nǐ jīn tiān dǎ suàn zuò shén me?	What do you plan to do today?	مَاذَا تَنْوِي أَنْ تَفْعَلَ الْيَوْمَ؟	Mādhā tanwī an tafʿala al-yawm?	draft		
+h3p049	我打算去公园玩儿。	Wǒ dǎ suàn qù gōng yuán wánr.	I plan to go and play in the park.	أَنْوِي أَنْ أَذْهَبَ إِلَى الْحَدِيقَةِ لِأَلْعَبَ.	Anwī an adhhaba ilā al-ḥadīqati liʾalʿab.	draft		
+h3p050	你出门要带手机。	Nǐ chū mén yào dài shǒu jī.	Take your phone when you go out.	خُذْ هَاتِفَكَ عِنْدَمَا تَخْرُجُ.	Khudh hātifaka ʿindamā takhruj.	draft		
+h3p051	我很担心你。	Wǒ hěn dān xīn nǐ.	I'm worried about you.	أَنَا قَلِقٌ عَلَيْكَ.	Anā qaliqun ʿalayk.	draft		
+h3p052	我想吃蛋糕，想吃很多。	Wǒ xiǎng chī dàn gāo, xiǎng chī hěn duō.	I want cake, a lot of it.	أُرِيدُ كَعْكَةً، أُرِيدُ الْكَثِيرَ مِنْهَا.	Urīdu kaʿka, urīdu al-kathīra minhā.	draft		
+h3p053	你饿了吗？当然要吃饭！	Nǐ è le ma? Dāng rán yào chī fàn!	Are you hungry? Of course you need to eat!	هَلْ أَنْتَ جَائِعٌ؟ طَبْعًا يَجِبُ أَنْ تَأْكُلَ!	Hal anta jāʾiʿ? Ṭabʿan yajibu an taʾkul!	draft		
+h3p054	我慢慢地走过去。	Wǒ màn màn de zǒu guò qù.	I walk over slowly.	أَمْشِي إِلَى هُنَاكَ بِبُطْءٍ.	Amshī ilā hunāka bibuṭʾ.	draft		
+h3p055	把灯关了吧，我要睡觉了。	Bǎ dēng guān le ba, wǒ yào shuì jiào le.	Turn off the light, I'm going to sleep.	أَطْفِئِ الْمِصْبَاحَ، سَأَنَامُ الْآنَ.	Aṭfiʾi al-miṣbāḥ, saʾanāmu al-ʾān.	draft		
+h3p056	这个地方真漂亮。	Zhè ge dì fang zhēn piào liang.	This place is really pretty.	هٰذَا الْمَكَانُ جَمِيلٌ حَقًّا.	Hādhā al-makānu jamīlun ḥaqqan.	draft		
+h3p057	你坐地铁去上班吗？	Nǐ zuò dì tiě qù shàng bān ma?	Do you take the subway to work?	هَلْ تَذْهَبُ إِلَى الْعَمَلِ بِالْمِتْرُو؟	Hal tadhhabu ilā al-ʿamali bi-l-mitrū?	draft		
+h3p058	你看得懂这张地图吗？	Nǐ kàn de dǒng zhè zhāng dì tú ma?	Can you read this map?	هَلْ تَسْتَطِيعُ أَنْ تَقْرَأَ هٰذِهِ الْخَرِيطَةَ؟	Hal tastaṭīʿu an taqraʾa hādhihi al-kharīṭa?	draft		
+h3p059	电梯坏了，只能走楼梯。	Diàn tī huài le, zhǐ néng zǒu lóu tī.	The elevator is broken, so we have to take the stairs.	الْمِصْعَدُ مُعَطَّلٌ، فَعَلَيْنَا أَنْ نَسْتَخْدِمَ السُّلَّمَ.	Al-miṣʿadu muʿaṭṭal, faʿalaynā an nastakhdima as-sullam.	draft		
+h3p060	你有新的电子邮件！	Nǐ yǒu xīn de diàn zǐ yóu jiàn!	You've got a new email!	لَدَيْكَ بَرِيدٌ إِلِكْتِرُونِيٌّ جَدِيدٌ!	Ladayka barīdun iliktirūniyyun jadīd!	draft		
+h3p061	太阳从东边出来了。	Tài yáng cóng dōng biān chū lái le.	The sun is rising from the east.	تُشْرِقُ الشَّمْسُ مِنَ الشَّرْقِ.	Tushriqu ash-shamsu mina ash-sharq.	draft		
+h3p062	冬天太冷了，我不想出门。	Dōng tiān tài lěng le, wǒ bù xiǎng chū mén.	Winter is too cold, I don't want to go out.	الشِّتَاءُ بَارِدٌ أَكْثَرَ مِنَ اللَّازِمِ، لَا أُرِيدُ أَنْ أَخْرُجَ.	Ash-shitāʾu bāridun akthara mina al-lāzim, lā urīdu an akhruj.	draft		
+h3p063	我最喜欢的动物是猫。	Wǒ zuì xǐ huan de dòng wù shì māo.	My favorite animal is the cat.	حَيَوَانِي الْمُفَضَّلُ هُوَ الْقِطُّ.	Ḥayawānī al-mufaḍḍalu huwa al-qiṭṭ.	draft		
+h3p064	我的腿很短。	Wǒ de tuǐ hěn duǎn.	My legs are short.	رِجْلَايَ قَصِيرَتَانِ.	Rijlāya qaṣīratān.	draft		
+h3p065	这段路不太远。	Zhè duàn lù bú tài yuǎn.	This stretch of road isn't far.	هٰذَا الطَّرِيقُ لَيْسَ بَعِيدًا كَثِيرًا.	Hādhā aṭ-ṭarīqu laysa baʿīdan kathīran.	draft		
+h3p066	你每天锻炼吗？	Nǐ měi tiān duàn liàn ma?	Do you exercise every day?	هَلْ تَتَمَرَّنُ كُلَّ يَوْمٍ؟	Hal tatamarranu kulla yawm?	draft		
+h3p067	今天天气多么好啊！	Jīn tiān tiān qì duō me hǎo a!	What lovely weather today!	مَا أَجْمَلَ الْجَوَّ الْيَوْمَ!	Mā ajmala al-jawwa al-yawm!	draft		
+h3p068	我好饿啊，想吃面包。	Wǒ hǎo è a, xiǎng chī miàn bāo.	I'm so hungry. I want bread.	أَنَا جَائِعٌ جِدًّا، أُرِيدُ خُبْزًا.	Anā jāʾiʿun jiddan, urīdu khubzan.	draft		
+h3p069	我想去，而你不想去。	Wǒ xiǎng qù, ér nǐ bù xiǎng qù.	I want to go, but you don't.	أُرِيدُ أَنْ أَذْهَبَ، أَمَّا أَنْتَ فَلَا تُرِيدُ.	Urīdu an adhhab, ammā anta falā turīd.	draft		
+h3p070	我有两只大耳朵。	Wǒ yǒu liǎng zhī dà ěr duo.	I have two big ears.	لِي أُذُنَانِ كَبِيرَتَانِ.	Lī udhunāni kabīratān.	draft		
+h3p071	你发烧了吗？	Nǐ fā shāo le ma?	Do you have a fever?	هَلْ عِنْدَكَ حُمَّى؟	Hal ʿindaka ḥummā?	draft		
+h3p072	我好像发烧了，头很疼。	Wǒ hǎo xiàng fā shāo le, tóu hěn téng.	I think I have a fever. My head hurts.	أَظُنُّ أَنَّ عِنْدِي حُمَّى، رَأْسِي يُؤْلِمُنِي كَثِيرًا.	Aẓunnu anna ʿindī ḥummā, raʾsī yuʾlimunī kathīran.	draft		
+h3p073	你发现了什么？	Nǐ fā xiàn le shén me?	What did you find?	مَاذَا وَجَدْتَ؟	Mādhā wajadt?	draft		
+h3p074	在家很方便，什么都有。	Zài jiā hěn fāng biàn, shén me dōu yǒu.	It's convenient at home, there's everything.	الْبَيْتُ مُرِيحٌ، فِيهِ كُلُّ شَيْءٍ.	Al-baytu murīḥ, fīhi kullu shayʾ.	draft		
+h3p075	你把杯子放在哪儿了？	Nǐ bǎ bēi zi fàng zài nǎr le?	Where did you put the cup?	أَيْنَ وَضَعْتَ الْكُوبَ؟	Ayna waḍaʿta al-kūb?	draft		
+h3p076	你放心，我会在家等你。	Nǐ fàng xīn, wǒ huì zài jiā děng nǐ.	Rest assured, I'll wait for you at home.	لَا تَقْلَقْ، سَأَنْتَظِرُكَ فِي الْبَيْتِ.	Lā taqlaq, saʾantaẓiruka fī al-bayt.	draft		
+h3p077	现在几点了？还差五分十二点。	Xiàn zài jǐ diǎn le? Hái chà wǔ fēn shí èr diǎn.	What time is it? Five to twelve.	كَمِ السَّاعَةُ الْآنَ؟ الثَّانِيَةَ عَشْرَةَ إِلَّا خَمْسَ دَقَائِقَ.	Kami as-sāʿatu al-ʾān? Ath-thāniyata ʿashrata illā khamsa daqāʾiq.	draft		
+h3p078	你发给我的邮件我看到了。	Nǐ fā gěi wǒ de yóu jiàn wǒ kàn dào le.	I saw the email you sent me.	رَأَيْتُ الرِّسَالَةَ الَّتِي أَرْسَلْتَهَا إِلَيَّ.	Raʾaytu ar-risālata allatī arsaltahā ilayy.	draft		
+h3p079	你在办公室累不累？	Nǐ zài bàn gōng shì lèi bu lèi?	Are you tired at the office?	هَلْ تَتْعَبُ فِي الْمَكْتَبِ؟	Hal tatʿabu fī al-maktab?	draft		
+h3p080	好舒服啊，再来一下！	Hǎo shū fu a, zài lái yí xià!	That feels great, do it again!	هٰذَا مُرِيحٌ جِدًّا، مَرَّةً أُخْرَى!	Hādhā murīḥun jiddan, marratan ukhrā!	draft		
+h3p081	啊，你把我放下来了！	A, nǐ bǎ wǒ fàng xià lái le!	Ah, you put me down!	آهٍ، لَقَدْ أَنْزَلْتَنِي!	Āh, laqad anzaltanī!	draft		
+h3p082	我一个人在家，好安静啊。	Wǒ yí gè rén zài jiā, hǎo ān jìng a.	I'm home alone. It's so quiet.	أَنَا وَحْدِي فِي الْبَيْتِ، مَا أَهْدَأَ الْمَكَانَ!	Anā waḥdī fī al-bayt, mā ahdaʾa al-makān!	draft		
+h3p083	你怎么才来？我等了好久。	Nǐ zěn me cái lái? Wǒ děng le hǎo jiǔ.	Why did you only just come? I've waited so long.	لِمَاذَا لَمْ تَأْتِ إِلَّا الْآنَ؟ انْتَظَرْتُكَ مُنْذُ وَقْتٍ طَوِيلٍ.	Limādhā lam taʾti illā al-ʾān? Intaẓartuka mundhu waqtin ṭawīl.	draft		
+h3p084	我好像迟到了，快跑！	Wǒ hǎo xiàng chí dào le, kuài pǎo!	I think I'm late, run!	أَظُنُّ أَنَّنِي تَأَخَّرْتُ، لِأَرْكُضْ بِسُرْعَةٍ!	Aẓunnu annanī taʾakhkhart, liʾarkuḍ bisurʿa!	draft		
+h3p085	啊，天亮了吗？	A, tiān liàng le ma?	Ah, is it morning already?	آهٍ، هَلْ طَلَعَ النَّهَارُ؟	Āh, hal ṭalaʿa an-nahār?	draft		
+h3p086	别把我放在冰箱里！	Bié bǎ wǒ fàng zài bīng xiāng lǐ!	Don't put me in the fridge!	لَا تَضَعْنِي فِي الثَّلَّاجَةِ!	Lā taḍaʿnī fī ath-thallāja!	draft		
+h3p087	你带我去参加比赛吧！	Nǐ dài wǒ qù cān jiā bǐ sài ba!	Take me to the match!	خُذْنِي إِلَى الْمُبَارَاةِ!	Khudhnī ilā al-mubārāh!	draft		
+h3p088	你的成绩怎么样？	Nǐ de chéng jì zěn me yàng?	How were your grades?	كَيْفَ كَانَتْ دَرَجَاتُكَ؟	Kayfa kānat darajātuk?	draft		
+h3p089	我想搬到北方去住。	Wǒ xiǎng bān dào běi fāng qù zhù.	I want to move to the north.	أُرِيدُ أَنْ أَنْتَقِلَ لِأَسْكُنَ فِي الشَّمَالِ.	Urīdu an antaqila liʾaskuna fī ash-shamāl.	draft		
+h3p090	这个包又大又重。	Zhè ge bāo yòu dà yòu zhòng.	This bag is big and heavy.	هٰذِهِ الْحَقِيبَةُ كَبِيرَةٌ وَثَقِيلَةٌ.	Hādhihi al-ḥaqībatu kabīratun wathaqīla.	draft		
+h3p091	超市里有很多吃的。	Chāo shì lǐ yǒu hěn duō chī de.	There's a lot to eat at the supermarket.	فِي الْمَتْجَرِ الْكَبِيرِ طَعَامٌ كَثِيرٌ.	Fī al-matjari al-kabīri ṭaʿāmun kathīr.	draft		
+h3p092	你的鼻子和耳朵都红了。	Nǐ de bí zi hé ěr duo dōu hóng le.	Your nose and ears are both red.	احْمَرَّ أَنْفُكَ وَأُذُنَاكَ.	Iḥmarra anfuka waʾudhunāk.	draft		
+h3p093	你打算几点睡觉？	Nǐ dǎ suàn jǐ diǎn shuì jiào?	When do you plan to go to bed?	فِي أَيِّ سَاعَةٍ تَنْوِي أَنْ تَنَامَ؟	Fī ayyi sāʿatin tanwī an tanām?	draft		
+h3p094	我的爱好是看地上的草。	Wǒ de ài hào shì kàn dì shang de cǎo.	My hobby is watching the grass on the ground.	هِوَايَتِي هِيَ النَّظَرُ إِلَى الْعُشْبِ عَلَى الْأَرْضِ.	Hiwāyatī hiya an-naẓaru ilā al-ʿushbi ʿalā al-ʾarḍ.	draft		
+h3p095	这里比较安静，我喜欢。	Zhè lǐ bǐ jiào ān jìng, wǒ xǐ huan.	It's fairly quiet here, I like it.	الْمَكَانُ هَادِئٌ نَوْعًا مَا هُنَا، وَهٰذَا يُعْجِبُنِي.	Al-makānu hādiʾun nawʿan mā hunā, wahādhā yuʿjibunī.	draft		
+h3p096	别人都说我很矮。	Bié rén dōu shuō wǒ hěn ǎi.	Everyone says I'm short.	يَقُولُ الْآخَرُونَ كُلُّهُمْ إِنَّنِي قَصِيرٌ.	Yaqūlu al-ʾākharūna kulluhum innanī qaṣīr.	draft		
+h3p097	下班了，你快回家吧。	Xià bān le, nǐ kuài huí jiā ba.	Work's over, come home soon.	انْتَهَى الْعَمَلُ، عُدْ إِلَى الْبَيْتِ بِسُرْعَةٍ.	Intahā al-ʿamal, ʿud ilā al-bayti bisurʿa.	draft		
+h3p098	我在家里等你，你别担心。	Wǒ zài jiā lǐ děng nǐ, nǐ bié dān xīn.	I'll wait at home, don't worry.	سَأَنْتَظِرُكَ فِي الْبَيْتِ، لَا تَقْلَقْ.	Saʾantaẓiruka fī al-bayt, lā taqlaq.	draft		
+h3p099	再见，路上要小心。	Zài jiàn, lù shang yào xiǎo xīn.	Bye, be careful on the way.	مَعَ السَّلَامَةِ، انْتَبِهْ فِي الطَّرِيقِ.	Maʿa as-salāma, intabih fī aṭ-ṭarīq.	draft		
+h3p100	你才走了半个小时，我就想你了。	Nǐ cái zǒu le bàn gè xiǎo shí, wǒ jiù xiǎng nǐ le.	You've only been gone half an hour and I miss you already.	لَمْ يَمْضِ عَلَى ذَهَابِكَ إِلَّا نِصْفُ سَاعَةٍ، وَقَدِ اشْتَقْتُ إِلَيْكَ.	Lam yamḍi ʿalā dhahābika illā niṣfu sāʿa, waqadi ishtaqtu ilayk.	draft		
+h3p101	厨房的灯还亮着。	Chú fáng de dēng hái liàng zhe.	The kitchen light is still on.	ضَوْءُ الْمَطْبَخِ لَا يَزَالُ مُضَاءً.	Ḍawʾu al-maṭbakhi lā yazālu muḍāʾan.	draft		
+h3p102	我想变得更聪明。	Wǒ xiǎng biàn de gèng cōng ming.	I want to become smarter.	أُرِيدُ أَنْ أَصِيرَ أَذْكَى.	Urīdu an aṣīra adhkā.	draft		
+h3p103	今天我必须锻炼一下。	Jīn tiān wǒ bì xū duàn liàn yí xià.	Today I have to exercise.	يَجِبُ أَنْ أَتَمَرَّنَ الْيَوْمَ.	Yajibu an atamarrana al-yawm.	draft		
+h3p104	我们一起打扫房间吧。	Wǒ men yì qǐ dǎ sǎo fáng jiān ba.	Let's clean the room together.	لِنُنَظِّفِ الْغُرْفَةَ مَعًا.	Linunaẓẓifi al-ghurfata maʿan.	draft		
+h3p105	春天到了，外面有很多小动物。	Chūn tiān dào le, wài mian yǒu hěn duō xiǎo dòng wù.	Spring is here, and there are lots of little animals outside.	جَاءَ الرَّبِيعُ، وَفِي الْخَارِجِ حَيَوَانَاتٌ صَغِيرَةٌ كَثِيرَةٌ.	Jāʾa ar-rabīʿ, wafī al-khāriji ḥayawānātun ṣaghīratun kathīra.	draft		
+h3p106	我把蛋糕吃完了，真好吃！	Wǒ bǎ dàn gāo chī wán le, zhēn hǎo chī!	I finished the cake, it was so yummy!	أَكَلْتُ الْكَعْكَةَ كُلَّهَا، مَا أَلَذَّهَا!	Akaltu al-kaʿkata kullahā, mā aladhdhahā!	draft		
+h3p107	这个菜单上的词语我都不懂。	Zhè ge cài dān shàng de cí yǔ wǒ dōu bù dǒng.	I don't understand any of the words on this menu.	لَا أَفْهَمُ أَيَّ كَلِمَةٍ فِي هٰذِهِ الْقَائِمَةِ.	Lā afhamu ayya kalimatin fī hādhihi al-qāʾima.	draft		
+h3p108	你的电子邮件写得太短了。	Nǐ de diàn zǐ yóu jiàn xiě de tài duǎn le.	The email you wrote is too short.	رِسَالَتُكَ الْإِلِكْتِرُونِيَّةُ قَصِيرَةٌ أَكْثَرَ مِنَ اللَّازِمِ.	Risālatuka al-ʾiliktirūniyyatu qaṣīratun akthara mina al-lāzim.	draft		
+h3p109	我的成绩进步了，你看！	Wǒ de chéng jì jìn bù le, nǐ kàn!	My grades have improved, look!	تَحَسَّنَتْ دَرَجَاتِي، انْظُرْ!	Taḥassanat darajātī, inẓur!	draft		
+h3p110	今天的比赛我很开心！	Jīn tiān de bǐ sài wǒ hěn kāi xīn!	I had so much fun at the match today!	اسْتَمْتَعْتُ كَثِيرًا بِالْمُبَارَاةِ الْيَوْمَ!	Istamtaʿtu kathīran bi-l-mubārāti al-yawm!	draft		
+h3p111	你的办法真好！	Nǐ de bàn fǎ zhēn hǎo!	Your idea is really good!	فِكْرَتُكَ جَيِّدَةٌ حَقًّا!	Fikratuka jayyidatun ḥaqqan!	draft		
+h3p112	你要去哪个地方？	Nǐ yào qù nǎ ge dì fang?	Which place are you going to?	إِلَى أَيِّ مَكَانٍ تُرِيدُ أَنْ تَذْهَبَ؟	Ilā ayyi makānin turīdu an tadhhab?	draft		
+h3p113	这个地铁站人真多。	Zhè ge dì tiě zhàn rén zhēn duō.	There are so many people at this subway station.	مَا أَكْثَرَ النَّاسَ فِي مَحَطَّةِ الْمِتْرُو هٰذِهِ!	Mā akthara an-nāsa fī maḥaṭṭati al-mitrū hādhih!	draft		
+h3p114	我在冰箱里发现了蛋糕！	Wǒ zài bīng xiāng lǐ fā xiàn le dàn gāo!	I found cake in the fridge!	وَجَدْتُ كَعْكَةً فِي الثَّلَّاجَةِ!	Wajadtu kaʿkatan fī ath-thallāja!	draft		
+h3p115	我一个人，好想有人帮忙。	Wǒ yí gè rén, hǎo xiǎng yǒu rén bāng máng.	I'm all alone, I wish someone would help.	أَنَا وَحْدِي، لَيْتَ أَحَدًا يُسَاعِدُنِي.	Anā waḥdī, layta aḥadan yusāʿidunī.	draft		
+h3p116	我想复习一下昨天的故事。	Wǒ xiǎng fù xí yí xià zuó tiān de gù shì.	I want to go over yesterday's story again.	أُرِيدُ أَنْ أُرَاجِعَ قِصَّةَ الْأَمْسِ.	Urīdu an urājiʿa qiṣṣata al-ʾams.	draft		
+h3p117	我刚才洗了脚，现在很干净！	Wǒ gāng cái xǐ le jiǎo, xiàn zài hěn gān jìng!	I just washed my feet, and now they're so clean!	غَسَلْتُ قَدَمَيَّ قَبْلَ قَلِيلٍ، وَهُمَا الْآنَ نَظِيفَتَانِ جِدًّا!	Ghasaltu qadamayya qabla qalīl, wahumā al-ʾāna naẓīfatāni jiddan!	draft		
+h3p118	我好像感冒了，头有点儿疼。	Wǒ hǎo xiàng gǎn mào le, tóu yǒu diǎnr téng.	I think I've caught a cold. My head hurts a little.	أَظُنُّ أَنَّنِي أُصِبْتُ بِالزُّكَامِ، رَأْسِي يُؤْلِمُنِي قَلِيلًا.	Aẓunnu annanī uṣibtu bi-z-zukām, raʾsī yuʾlimunī qalīlan.	draft		
+h3p119	我对你的手机很感兴趣。	Wǒ duì nǐ de shǒu jī hěn gǎn xìng qù.	I'm really curious about your phone.	هَاتِفُكَ يُثِيرُ اهْتِمَامِي كَثِيرًا.	Hātifuka yuthīru ihtimāmī kathīran.	draft		
+h3p120	刚才有一只鸟从我头上飞过去。	Gāng cái yǒu yì zhī niǎo cóng wǒ tóu shàng fēi guò qù.	A bird just flew over my head.	طَارَ طَائِرٌ فَوْقَ رَأْسِي قَبْلَ قَلِيلٍ.	Ṭāra ṭāʾirun fawqa raʾsī qabla qalīl.	draft		
+h3p121	天阴了，我担心会下雨。	Tiān yīn le, wǒ dān xīn huì xià yǔ.	The sky has clouded over. I'm worried it will rain.	تَغَيَّمَتِ السَّمَاءُ، أَخَافُ أَنْ تُمْطِرَ.	Taghayyamati as-samāʾ, akhāfu an tumṭir.	draft		
+h3p122	我想跟你一起去公园。	Wǒ xiǎng gēn nǐ yì qǐ qù gōng yuán.	I want to go to the park with you.	أُرِيدُ أَنْ أَذْهَبَ مَعَكَ إِلَى الْحَدِيقَةِ.	Urīdu an adhhaba maʿaka ilā al-ḥadīqa.	draft		
+h3p123	我最喜欢你的手，很舒服。	Wǒ zuì xǐ huan nǐ de shǒu, hěn shū fu.	I like your hands best. They feel nice.	يَدَاكَ أَحَبُّ شَيْءٍ إِلَيَّ، وَهُمَا مُرِيحَتَانِ.	Yadāka aḥabbu shayʾin ilayy, wahumā murīḥatān.	draft		
+h3p124	公园里的花开了，好看极了！	Gōng yuán lǐ de huā kāi le, hǎo kàn jí le!	The flowers in the park are out. They're so pretty!	تَفَتَّحَتِ الْأَزْهَارُ فِي الْحَدِيقَةِ، مَا أَجْمَلَهَا!	Tafattaḥati al-ʾazhāru fī al-ḥadīqa, mā ajmalahā!	draft		
+h3p125	给我讲一个故事吧。	Gěi wǒ jiǎng yí gè gù shì ba.	Tell me a story.	احْكِ لِي قِصَّةً.	Iḥki lī qiṣṣa.	draft		
+h3p126	外面在刮风，我不想出去。	Wài mian zài guā fēng, wǒ bù xiǎng chū qù.	It's windy outside. I don't want to go out.	الرِّيحُ تَهُبُّ فِي الْخَارِجِ، لَا أُرِيدُ أَنْ أَخْرُجَ.	Ar-rīḥu tahubbu fī al-khārij, lā urīdu an akhruj.	draft		
+h3p127	请把灯关了，我想睡觉。	Qǐng bǎ dēng guān le, wǒ xiǎng shuì jiào.	Please turn off the light. I want to sleep.	مِنْ فَضْلِكَ أَطْفِئِ الْمِصْبَاحَ، أُرِيدُ أَنْ أَنَامَ.	Min faḍlika aṭfiʾi al-miṣbāḥ, urīdu an anām.	draft		
+h3p128	你和我的关系最好了！	Nǐ hé wǒ de guān xi zuì hǎo le!	You and I are the best of friends!	أَنْتَ أَفْضَلُ صَدِيقٍ لِي!	Anta afḍalu ṣadīqin lī!	draft		
+h3p129	谢谢你这么关心我。	Xiè xie nǐ zhè me guān xīn wǒ.	Thank you for caring about me so much.	شُكْرًا لَكَ عَلَى اهْتِمَامِكَ الْكَبِيرِ بِي.	Shukran laka ʿalā ihtimāmika al-kabīri bī.	draft		
+h3p130	关于明天，你有什么打算？	Guān yú míng tiān, nǐ yǒu shén me dǎ suàn?	What are your plans for tomorrow?	بِخُصُوصِ الْغَدِ، مَاذَا تَنْوِي أَنْ تَفْعَلَ؟	Bikhuṣūṣi al-ghad, mādhā tanwī an tafʿal?	draft		
+h3p131	你去过几个国家？	Nǐ qù guo jǐ gè guó jiā?	How many countries have you been to?	كَمْ بَلَدًا زُرْتَ؟	Kam baladan zurt?	draft		
+h3p132	过去我住在水里。	Guò qù wǒ zhù zài shuǐ lǐ.	I used to live in the water.	فِي الْمَاضِي كُنْتُ أَسْكُنُ فِي الْمَاءِ.	Fī al-māḍī kuntu askunu fī al-māʾ.	draft		
+h3p133	你想吃蛋糕还是面包？	Nǐ xiǎng chī dàn gāo hái shì miàn bāo?	Would you like cake or bread?	هَلْ تُرِيدُ كَعْكَةً أَمْ خُبْزًا؟	Hal turīdu kaʿkatan am khubzan?	draft		
+h3p134	外面下大雨，我好害怕。	Wài mian xià dà yǔ, wǒ hǎo hài pà.	It is pouring outside. I am so scared.	الْمَطَرُ غَزِيرٌ فِي الْخَارِجِ، أَنَا خَائِفٌ جِدًّا.	Al-maṭaru ghazīrun fī al-khārij, anā khāʾifun jiddan.	draft		
+h3p135	黑板上写的字，我看不懂。	Hēi bǎn shàng xiě de zì, wǒ kàn bù dǒng.	I can't read what's written on the blackboard.	لَا أَفْهَمُ مَا كُتِبَ عَلَى السَّبُّورَةِ.	Lā afhamu mā kutiba ʿalā as-sabbūra.	draft		
+h3p136	后来我又睡着了。	Hòu lái wǒ yòu shuì zháo le.	Afterwards I fell asleep again.	وَبَعْدَ ذٰلِكَ نِمْتُ مَرَّةً أُخْرَى.	Wabaʿda dhālika nimtu marratan ukhrā.	draft		
+h3p137	你的护照在哪儿？	Nǐ de hù zhào zài nǎr?	Where's your passport?	أَيْنَ جَوَازُ سَفَرِكَ؟	Ayna jawāzu safarik?	draft		
+h3p138	我想把钱花在好吃的东西上。	Wǒ xiǎng bǎ qián huā zài hǎo chī de dōng xi shàng.	I want to spend my money on tasty things.	أُرِيدُ أَنْ أُنْفِقَ مَالِي عَلَى أَشْيَاءَ لَذِيذَةٍ.	Urīdu an unfiqa mālī ʿalā ashyāʾa ladhīdha.	draft		
+h3p139	我想画一只大鱼。	Wǒ xiǎng huà yì zhī dà yú.	I want to draw a big fish.	أُرِيدُ أَنْ أَرْسُمَ سَمَكَةً كَبِيرَةً.	Urīdu an arsuma samakatan kabīra.	draft		
+h3p140	我的东西坏了，你能帮我吗？	Wǒ de dōng xi huài le, nǐ néng bāng wǒ ma?	Something of mine is broken. Can you help me?	انْكَسَرَ شَيْءٌ مِنْ أَغْرَاضِي، هَلْ تُسَاعِدُنِي؟	Inkasara shayʾun min aghrāḍī, hal tusāʿidunī?	draft		
+h3p141	这里的环境真好，很安静。	Zhè lǐ de huán jìng zhēn hǎo, hěn ān jìng.	It's lovely here. So quiet.	الْمَكَانُ جَمِيلٌ هُنَا، وَهَادِئٌ جِدًّا.	Al-makānu jamīlun hunā, wahādiʾun jiddan.	draft		
+h3p142	我想换一个新的家。	Wǒ xiǎng huàn yí gè xīn de jiā.	I want to switch to a new home.	أُرِيدُ أَنْ أَنْتَقِلَ إِلَى بَيْتٍ جَدِيدٍ.	Urīdu an antaqila ilā baytin jadīd.	draft		
+h3p143	你去过黄河吗？	Nǐ qù guo huáng hé ma?	Have you ever been to the Yellow River?	هَلْ زُرْتَ النَّهْرَ الْأَصْفَرَ؟	Hal zurta an-nahra al-ʾaṣfar?	draft		
+h3p144	你今天有会议吗？别忘了我！	Nǐ jīn tiān yǒu huì yì ma? Bié wàng le wǒ!	Do you have a meeting today? Don't forget about me!	هَلْ عِنْدَكَ اجْتِمَاعٌ الْيَوْمَ؟ لَا تَنْسَنِي!	Hal ʿindaka ijtimāʿun al-yawm? Lā tansanī!	draft		
+h3p145	茶或者果汁，我都可以喝。	Chá huò zhě guǒ zhī, wǒ dōu kě yǐ hē.	Tea or juice, either is fine with me.	الشَّايُ أَوِ الْعَصِيرُ، لَا فَرْقَ عِنْدِي، أَشْرَبُ أَيَّهُمَا.	Ash-shāyu awi al-ʿaṣīr, lā farqa ʿindī, ashrabu ayyahumā.	draft		
+h3p146	我几乎每天都想你。	Wǒ jī hū měi tiān dōu xiǎng nǐ.	I think of you almost every day.	أَشْتَاقُ إِلَيْكَ كُلَّ يَوْمٍ تَقْرِيبًا.	Ashtāqu ilayka kulla yawmin taqrīban.	draft		
+h3p147	这是个好机会，我们出去玩吧！	Zhè shì gè hǎo jī huì, wǒ men chū qù wán ba!	This is a great chance. Let's go out and play!	هٰذِهِ فُرْصَةٌ جَيِّدَةٌ، لِنَخْرُجْ وَنَلْعَبْ!	Hādhihi furṣatun jayyida, linakhruj wanalʿab!	draft		
+h3p148	今天出太阳了，我高兴极了！	Jīn tiān chū tài yáng le, wǒ gāo xìng jí le!	The sun is out today. I'm so happy!	خَرَجَتِ الشَّمْسُ الْيَوْمَ، أَنَا سَعِيدٌ جِدًّا!	Kharajati ash-shamsu al-yawm, anā saʿīdun jiddan!	draft		
+h3p149	你还记得我的名字吗？	Nǐ hái jì de wǒ de míng zi ma?	Do you still remember my name?	هَلْ مَا زِلْتَ تَذْكُرُ اسْمِي؟	Hal mā zilta tadhkuru ismī?	draft		
+h3p150	我最喜欢的季节是春天。	Wǒ zuì xǐ huan de jì jié shì chūn tiān.	Spring is my favorite season.	فَصْلِي الْمُفَضَّلُ هُوَ الرَّبِيعُ.	Faṣlī al-mufaḍḍalu huwa ar-rabīʿ.	draft		
+h3p151	让我检查一下你的包里有没有吃的。	Ràng wǒ jiǎn chá yí xià nǐ de bāo lǐ yǒu méi yǒu chī de.	Let me check whether there's any food in your bag.	دَعْنِي أَفْحَصْ هَلْ فِي حَقِيبَتِكَ طَعَامٌ.	Daʿnī afḥaṣ hal fī ḥaqībatika ṭaʿām.	draft		
+h3p152	这个很简单，我也会！	Zhè ge hěn jiǎn dān, wǒ yě huì!	This is easy. Even I can do it!	هٰذَا سَهْلٌ جِدًّا، أَنَا أَيْضًا أَسْتَطِيعُ!	Hādhā sahlun jiddan, anā ayḍan astaṭīʿ!	draft		
+h3p153	多吃水果，身体才健康。	Duō chī shuǐ guǒ, shēn tǐ cái jiàn kāng.	Eat more fruit and you'll be healthy.	كُلِ الْفَاكِهَةَ كَثِيرًا لِتَكُونَ بِصِحَّةٍ جَيِّدَةٍ.	Kuli al-fākihata kathīran litakūna biṣiḥḥatin jayyida.	draft		
+h3p154	明天见面时，我有东西要给你看。	Míng tiān jiàn miàn shí, wǒ yǒu dōng xi yào gěi nǐ kàn.	When we meet tomorrow, I have something to show you.	عِنْدَمَا نَلْتَقِي غَدًا، عِنْدِي شَيْءٌ أُرِيدُ أَنْ أُرِيَكَ إِيَّاهُ.	ʿIndamā naltaqī ghadan, ʿindī shayʾun urīdu an uriyaka iyyāh.	draft		
+h3p155	我给你讲讲今天的事情吧。	Wǒ gěi nǐ jiǎng jiǎng jīn tiān de shì qing ba.	Let me tell you what happened today.	دَعْنِي أَحْكِ لَكَ مَا حَدَثَ الْيَوْمَ.	Daʿnī aḥki laka mā ḥadatha al-yawm.	draft		
+h3p156	你教我说话，好不好？	Nǐ jiāo wǒ shuō huà, hǎo bu hǎo?	Will you teach me to talk?	هَلْ تُعَلِّمُنِي الْكَلَامَ؟	Hal tuʿallimunī al-kalām?	draft		
+h3p157	我喜欢坐在桌子的一角。	Wǒ xǐ huan zuò zài zhuō zi de yì jiǎo.	I like sitting on the corner of the table.	أُحِبُّ الْجُلُوسَ عَلَى زَاوِيَةِ الطَّاوِلَةِ.	Uḥibbu al-julūsa ʿalā zāwiyati aṭ-ṭāwila.	draft		
+h3p158	我的脚好冷。	Wǒ de jiǎo hǎo lěng.	My feet are so cold.	قَدَمَايَ بَارِدَتَانِ جِدًّا.	Qadamāya bāridatāni jiddan.	draft		
+h3p159	你能来接我吗？	Nǐ néng lái jiē wǒ ma?	Can you come and pick me up?	هَلْ تَسْتَطِيعُ أَنْ تَأْتِيَ لِتَأْخُذَنِي؟	Hal tastaṭīʿu an taʾtiya litaʾkhudhanī?	draft		
+h3p160	电视里有一个好看的节目。	Diàn shì lǐ yǒu yí gè hǎo kàn de jié mù.	There's a good show on TV.	فِي التِّلْفَازِ بَرْنَامَجٌ جَمِيلٌ.	Fī at-tilfāzi barnāmajun jamīl.	draft		
+h3p161	今天是节日，我们吃好吃的吧！	Jīn tiān shì jié rì, wǒ men chī hǎo chī de ba!	It's a holiday today. Let's eat something yummy!	الْيَوْمَ عِيدٌ، لِنَأْكُلْ شَيْئًا لَذِيذًا!	Al-yawma ʿīd, linaʾkul shayʾan ladhīdhan!	draft		
+h3p162	两只小鱼要结婚了！	Liǎng zhī xiǎo yú yào jié hūn le!	Two little fish are getting married!	سَمَكَتَانِ صَغِيرَتَانِ سَتَتَزَوَّجَانِ!	Samakatāni ṣaghīratāni satatazawwajān!	draft		
+h3p163	会议什么时候结束？	Huì yì shén me shí hou jié shù?	When does the meeting end?	مَتَى يَنْتَهِي الِاجْتِمَاعُ؟	Matā yantahī al-ijtimāʿ?	draft		
+h3p164	我不会做这个，你能帮我解决吗？	Wǒ bú huì zuò zhè ge, nǐ néng bāng wǒ jiě jué ma?	I can't do this. Can you sort it out for me?	لَا أَعْرِفُ كَيْفَ أَفْعَلُ هٰذَا، هَلْ تُسَاعِدُنِي فِي حَلِّهِ؟	Lā aʿrifu kayfa afʿalu hādhā, hal tusāʿidunī fī ḥallih?	draft		
+h3p165	我可以借你的椅子坐一下吗？	Wǒ kě yǐ jiè nǐ de yǐ zi zuò yí xià ma?	Can I borrow your chair for a bit?	هَلْ أَسْتَطِيعُ أَنْ أَسْتَعِيرَ كُرْسِيَّكَ لِلْجُلُوسِ قَلِيلًا؟	Hal astaṭīʿu an astaʿīra kursiyyaka li-l-julūsi qalīlan?	draft		
+h3p166	你为什么经常不理我？	Nǐ wèi shén me jīng cháng bù lǐ wǒ?	Why do you so often ignore me?	لِمَاذَا تَتَجَاهَلُنِي كَثِيرًا؟	Limādhā tatajāhalunī kathīran?	draft		
+h3p167	我看到一只猫经过门口。	Wǒ kàn dào yì zhī māo jīng guò mén kǒu.	I saw a cat pass by the door.	رَأَيْتُ قِطَّةً تَمُرُّ أَمَامَ الْبَابِ.	Raʾaytu qiṭṭatan tamurru amāma al-bāb.	draft		
+h3p168	你的经理今天不高兴吗？	Nǐ de jīng lǐ jīn tiān bù gāo xìng ma?	Is your manager in a bad mood today?	هَلْ مُدِيرُكَ مُنْزَعِجٌ الْيَوْمَ؟	Hal mudīruka munzaʿijun al-yawm?	draft		
+h3p169	你走了好久，我一个人好难过。	Nǐ zǒu le hǎo jiǔ, wǒ yí gè rén hǎo nán guò.	You have been gone so long. I am so sad on my own.	ذَهَبْتَ مُنْذُ وَقْتٍ طَوِيلٍ، وَأَنَا حَزِينٌ جِدًّا وَحْدِي.	Dhahabta mundhu waqtin ṭawīl, waʾanā ḥazīnun jiddan waḥdī.	draft		
+h3p170	这本旧书是我最爱的。	Zhè běn jiù shū shì wǒ zuì ài de.	This old book is my favorite.	هٰذَا الْكِتَابُ الْقَدِيمُ هُوَ أَحَبُّ الْكُتُبِ إِلَيَّ.	Hādhā al-kitābu al-qadīmu huwa aḥabbu al-kutubi ilayy.	draft		
+h3p171	你能教我说这个句子吗？	Nǐ néng jiāo wǒ shuō zhè ge jù zi ma?	Can you teach me to say this sentence?	هَلْ تُعَلِّمُنِي كَيْفَ أَقُولُ هٰذِهِ الْجُمْلَةَ؟	Hal tuʿallimunī kayfa aqūlu hādhihi al-jumla?	draft		
+h3p172	我决定了，今天不睡觉！	Wǒ jué dìng le, jīn tiān bú shuì jiào!	I've decided. I'm not sleeping today!	قَرَّرْتُ، لَنْ أَنَامَ الْيَوْمَ!	Qarrart, lan anāma al-yawm!	draft		
+h3p173	你的脸好可爱！	Nǐ de liǎn hǎo kě ài!	Your face is so cute!	وَجْهُكَ لَطِيفٌ جِدًّا!	Wajhuka laṭīfun jiddan!	draft		
+h3p174	我渴了，想喝水。	Wǒ kě le, xiǎng hē shuǐ.	I'm thirsty. I want some water.	أَنَا عَطْشَانُ، أُرِيدُ أَنْ أَشْرَبَ مَاءً.	Anā ʿaṭshān, urīdu an ashraba māʾan.	draft		
+h3p175	现在是三点一刻。	Xiàn zài shì sān diǎn yí kè.	It's a quarter past three.	السَّاعَةُ الْآنَ الثَّالِثَةُ وَالرُّبْعُ.	As-sāʿatu al-ʾāna ath-thālithatu wa-r-rubʿ.	draft		
+h3p176	有客人来了，快去开门！	Yǒu kè rén lái le, kuài qù kāi mén!	A guest is here. Go and open the door!	جَاءَ ضَيْفٌ، أَسْرِعْ وَافْتَحِ الْبَابَ!	Jāʾa ḍayf, asriʿ waftaḥi al-bāb!	draft		
+h3p177	空调太冷了，我要感冒了。	Kōng tiáo tài lěng le, wǒ yào gǎn mào le.	The air conditioning is too cold. I'm going to catch a cold.	الْمُكَيِّفُ بَارِدٌ أَكْثَرَ مِنَ اللَّازِمِ، سَأُصَابُ بِالزُّكَامِ.	Al-mukayyifu bāridun akthara mina al-lāzim, saʾuṣābu bi-z-zukām.	draft		
+h3p178	我想吃一口你的蛋糕。	Wǒ xiǎng chī yì kǒu nǐ de dàn gāo.	I'd like a bite of your cake.	أُرِيدُ قَضْمَةً مِنْ كَعْكَتِكَ.	Urīdu qaḍmatan min kaʿkatik.	draft		
+h3p179	你走了，我想哭。	Nǐ zǒu le, wǒ xiǎng kū.	You're leaving, and I want to cry.	أَنْتَ تَذْهَبُ، وَأُرِيدُ أَنْ أَبْكِيَ.	Anta tadhhab, waʾurīdu an abkiy.	draft		
+h3p180	你的裤子真好看。	Nǐ de kù zi zhēn hǎo kàn.	Your trousers look really nice.	سِرْوَالُكَ جَمِيلٌ حَقًّا.	Sirwāluka jamīlun ḥaqqan.	draft		
+h3p181	我不会用筷子。	Wǒ bú huì yòng kuài zi.	I can't use chopsticks.	لَا أَعْرِفُ كَيْفَ أَسْتَخْدِمُ عِيدَانَ الطَّعَامِ.	Lā aʿrifu kayfa astakhdimu ʿīdāna aṭ-ṭaʿām.	draft		
+h3p182	天是蓝的，草是绿的。	Tiān shì lán de, cǎo shì lǜ de.	The sky is blue and the grass is green.	السَّمَاءُ زَرْقَاءُ وَالْعُشْبُ أَخْضَرُ.	As-samāʾu zarqāʾu wa-l-ʿushbu akhḍar.	draft		
+h3p183	我们的房子已经很旧了。	Wǒ men de fáng zi yǐ jīng hěn jiù le.	Our house is very old now.	بَيْتُنَا قَدِيمٌ جِدًّا الْآنَ.	Baytunā qadīmun jiddan al-ʾān.	draft		
+h3p184	别离开我，好吗？	Bié lí kāi wǒ, hǎo ma?	Don't leave me, okay?	لَا تَتْرُكْنِي، حَسَنًا؟	Lā tatruknī, ḥasanan?	draft		
+h3p185	我今天没有力气。	Wǒ jīn tiān méi yǒu lì qi.	I have no strength today.	لَيْسَ عِنْدِي قُوَّةٌ الْيَوْمَ.	Laysa ʿindī quwwatun al-yawm.	draft		
+h3p186	你真厉害！	Nǐ zhēn lì hài!	You're amazing!	مَا أَرْوَعَكَ!	Mā arwaʿak!	draft		
+h3p187	我饿得没有力气了。	Wǒ è de méi yǒu lì qi le.	I'm so hungry I have no strength left.	أَنَا جَائِعٌ حَتَّى لَمْ تَعُدْ لِي قُوَّةٌ.	Anā jāʾiʿun ḥattā lam taʿud lī quwwa.	draft		
+h3p188	我渴极了，快给我水！	Wǒ kě jí le, kuài gěi wǒ shuǐ!	I am parched. Quick, get me some water!	أَنَا عَطْشَانُ جِدًّا، أَعْطِنِي مَاءً بِسُرْعَةٍ!	Anā ʿaṭshānu jiddan, aʿṭinī māʾan bisurʿa!	draft		
+h3p189	我好害怕，别放开我！	Wǒ hǎo hài pà, bié fàng kāi wǒ!	I'm so scared. Don't let go!	أَنَا خَائِفٌ جِدًّا، لَا تُفْلِتْنِي!	Anā khāʾifun jiddan, lā tuflitnī!	draft		
+h3p191	我的脚好疼，是不是坏了？	Wǒ de jiǎo hǎo téng, shì bu shì huài le?	My foot really hurts. Is it broken?	قَدَمِي تُؤْلِمُنِي كَثِيرًا، هَلْ هِيَ مَكْسُورَةٌ؟	Qadamī tuʾlimunī kathīran, hal hiya maksūra?	draft		
+h3p192	我刚才睡着了，现在有力气了。	Wǒ gāng cái shuì zháo le, xiàn zài yǒu lì qi le.	I was just asleep, and now I have some energy.	نِمْتُ قَبْلَ قَلِيلٍ، وَالْآنَ عِنْدِي قُوَّةٌ.	Nimtu qabla qalīl, wa-l-ʾāna ʿindī quwwa.	draft		
+h3p193	早上好，今天有什么好节目？	Zǎo shang hǎo, jīn tiān yǒu shén me hǎo jié mù?	Good morning! Any good shows on today?	صَبَاحُ الْخَيْرِ، أَيُّ بَرْنَامَجٍ جَيِّدٍ الْيَوْمَ؟	Ṣabāḥu al-khayr, ayyu barnāmajin jayyidin al-yawm?	draft		
+h3p194	又见面了，我好高兴！	Yòu jiàn miàn le, wǒ hǎo gāo xìng!	We meet again. I'm so happy!	نَلْتَقِي مَرَّةً أُخْرَى، مَا أَسْعَدَنِي!	Naltaqī marratan ukhrā, mā asʿadanī!	draft		
+h3p195	我先走了，明天见！	Wǒ xiān zǒu le, míng tiān jiàn!	I'm heading off first. See you tomorrow!	سَأَذْهَبُ أَنَا أَوَّلًا، إِلَى اللِّقَاءِ غَدًا!	Saʾadhhabu anā awwalan, ilā al-liqāʾi ghadan!	draft		
+h3p196	别关电脑，我还想玩。	Bié guān diàn nǎo, wǒ hái xiǎng wán.	Don't turn off the computer. I still want to play.	لَا تُطْفِئِ الْحَاسُوبَ، مَا زِلْتُ أُرِيدُ أَنْ أَلْعَبَ.	Lā tuṭfiʾi al-ḥāsūb, mā ziltu urīdu an alʿab.	draft		
+h3p197	没有你，我一个人好难过，想哭。	Méi yǒu nǐ, wǒ yí gè rén hǎo nán guò, xiǎng kū.	Without you I'm all alone and so sad I want to cry.	بِدُونِكَ أَنَا وَحْدِي وَحَزِينٌ جِدًّا، أُرِيدُ أَنْ أَبْكِيَ.	Bidūnika anā waḥdī waḥazīnun jiddan, urīdu an abkiy.	draft		
+h3p198	谢谢你的蛋糕，好吃极了！	Xiè xie nǐ de dàn gāo, hǎo chī jí le!	Thanks for the cake. It's delicious!	شُكْرًا عَلَى كَعْكَتِكَ، مَا أَلَذَّهَا!	Shukran ʿalā kaʿkatik, mā aladhdhahā!	draft		
+h3p199	再给我一口，好不好？	Zài gěi wǒ yì kǒu, hǎo bu hǎo?	Give me one more bite, okay?	أَعْطِنِي قَضْمَةً أُخْرَى، هَلْ يُمْكِنُ؟	Aʿṭinī qaḍmatan ukhrā, hal yumkin?	draft		
+h3p201	我更饿了，你有吃的吗？	Wǒ gèng è le, nǐ yǒu chī de ma?	I'm even hungrier now. Have you got anything to eat?	صِرْتُ أَجُوعُ أَكْثَرَ، هَلْ عِنْدَكَ شَيْءٌ لِلْأَكْلِ؟	Ṣirtu ajūʿu akthar, hal ʿindaka shayʾun li-l-ʾakl?	draft		
+h3p202	谢谢你关心我，我好高兴。	Xiè xie nǐ guān xīn wǒ, wǒ hǎo gāo xìng.	Thanks for caring about me. I am so happy.	شُكْرًا لِاهْتِمَامِكَ بِي، أَنَا سَعِيدٌ جِدًّا.	Shukran lihtimāmika bī, anā saʿīdun jiddan.	draft		
+h3p203	我们经常一起玩，我最开心了！	Wǒ men jīng cháng yì qǐ wán, wǒ zuì kāi xīn le!	We often play together, and it makes me so happy!	نَلْعَبُ مَعًا كَثِيرًا، وَهٰذَا يُسْعِدُنِي جِدًّا!	Nalʿabu maʿan kathīran, wahādhā yusʿidunī jiddan!	draft		
+h3p204	你刚才去哪儿了？我想你了。	Nǐ gāng cái qù nǎr le? Wǒ xiǎng nǐ le.	Where did you go just now? I missed you.	أَيْنَ ذَهَبْتَ قَبْلَ قَلِيلٍ؟ اشْتَقْتُ إِلَيْكَ.	Ayna dhahabta qabla qalīl? Ishtaqtu ilayk.	draft		
+h3p205	天气太热，我想开空调。	Tiān qì tài rè, wǒ xiǎng kāi kōng tiáo.	It's too hot. I want to turn on the air conditioning.	الْجَوُّ حَارٌّ جِدًّا، أُرِيدُ أَنْ أُشَغِّلَ الْمُكَيِّفَ.	Al-jawwu ḥārrun jiddan, urīdu an ushaghghila al-mukayyif.	draft		
+h3p206	门没关，风进来了。	Mén méi guān, fēng jìn lái le.	The door is not shut and the wind is coming in.	الْبَابُ مَفْتُوحٌ، وَالرِّيحُ تَدْخُلُ.	Al-bābu maftūḥ, wa-r-rīḥu tadkhul.	draft		
+h3p207	你换了新裤子，真好看！	Nǐ huàn le xīn kù zi, zhēn hǎo kàn!	You changed into new trousers. They look great!	لَبِسْتَ سِرْوَالًا جَدِيدًا، مَا أَجْمَلَهُ!	Labista sirwālan jadīdan, mā ajmalah!	draft		
+h3p208	我画了你，你看像不像？	Wǒ huà le nǐ, nǐ kàn xiàng bu xiàng?	I drew you. Does it look like you?	رَسَمْتُكَ، انْظُرْ، هَلْ يُشْبِهُكَ؟	Rasamtuk, inẓur, hal yushbihuk?	draft		
+h3p209	我对做饭很感兴趣，教教我吧。	Wǒ duì zuò fàn hěn gǎn xìng qù, jiāo jiāo wǒ ba.	I'm interested in cooking. Teach me!	أَنَا مُهْتَمٌّ جِدًّا بِالطَّبْخِ، عَلِّمْنِي!	Anā muhtammun jiddan bi-ṭ-ṭabkh, ʿallimnī!	draft		
+h3p210	你是晚上回来，还是明天早上回来？	Nǐ shì wǎn shang huí lái, hái shì míng tiān zǎo shang huí lái?	Are you coming back tonight or tomorrow morning?	هَلْ سَتَعُودُ فِي الْمَسَاءِ أَمْ صَبَاحَ الْغَدِ؟	Hal sataʿūdu fī al-masāʾi am ṣabāḥa al-ghad?	draft		
+h3p211	你决定去哪个公园了吗？	Nǐ jué dìng qù nǎ ge gōng yuán le ma?	Have you decided which park to go to?	هَلْ قَرَّرْتَ إِلَى أَيِّ حَدِيقَةٍ تَذْهَبُ؟	Hal qarrarta ilā ayyi ḥadīqatin tadhhab?	draft		
+h3p212	这个季节，公园里的花最多。	Zhè ge jì jié, gōng yuán lǐ de huā zuì duō.	In this season the park has the most flowers.	فِي هٰذَا الْفَصْلِ تَكُونُ الْأَزْهَارُ فِي الْحَدِيقَةِ أَكْثَرَ مَا يَكُونُ.	Fī hādhā al-faṣli takūnu al-ʾazhāru fī al-ḥadīqati akthara mā yakūn.	draft		
+h3p213	我不想让今天结束，再玩一会儿吧。	Wǒ bù xiǎng ràng jīn tiān jié shù, zài wán yí huìr ba.	I don't want today to end. Let's play a little longer.	لَا أُرِيدُ أَنْ يَنْتَهِيَ الْيَوْمُ، لِنَلْعَبْ لَحْظَةً أُخْرَى.	Lā urīdu an yantahiya al-yawm, linalʿab laḥẓatan ukhrā.	draft		
+h3p214	快到节日了，我想吃好吃的。	Kuài dào jié rì le, wǒ xiǎng chī hǎo chī de.	The festival is nearly here. I want something yummy.	الْعِيدُ قَرِيبٌ، أُرِيدُ أَنْ آكُلَ شَيْئًا لَذِيذًا.	Al-ʿīdu qarīb, urīdu an ākula shayʾan ladhīdhan.	draft		
+h3p215	你的声音真好听，再讲一个故事吧。	Nǐ de shēng yīn zhēn hǎo tīng, zài jiǎng yí gè gù shì ba.	Your voice is lovely. Tell me another story.	صَوْتُكَ جَمِيلٌ جِدًّا، احْكِ لِي قِصَّةً أُخْرَى.	Ṣawtuka jamīlun jiddan, iḥki lī qiṣṣatan ukhrā.	draft		
+h3p216	我几乎什么都记得，就是忘了你的生日。	Wǒ jī hū shén me dōu jì de, jiù shì wàng le nǐ de shēng rì.	I remember almost everything, except I forgot your birthday.	أَتَذَكَّرُ كُلَّ شَيْءٍ تَقْرِيبًا، لٰكِنِّي نَسِيتُ عِيدَ مِيلَادِكَ.	Atadhakkaru kulla shayʾin taqrīban, lākinnī nasītu ʿīda mīlādik.	draft		
+h3p218	我想借你的书看看。	Wǒ xiǎng jiè nǐ de shū kàn kan.	I'd like to borrow your book.	أُرِيدُ أَنْ أَسْتَعِيرَ كِتَابَكَ لِأَقْرَأَهُ.	Urīdu an astaʿīra kitābaka liʾaqraʾah.	draft		
+h3p219	会议开完了吗？我想找你玩。	Huì yì kāi wán le ma? Wǒ xiǎng zhǎo nǐ wán.	Is the meeting over? I want to play with you.	هَلِ انْتَهَى الِاجْتِمَاعُ؟ أُرِيدُ أَنْ أَلْعَبَ مَعَكَ.	Hali intahā al-ijtimāʿ? Urīdu an alʿaba maʿak.	draft		
+h3p220	我们一起检查一下冰箱吧。	Wǒ men yì qǐ jiǎn chá yí xià bīng xiāng ba.	Let us check the fridge together.	لِنَفْحَصِ الثَّلَّاجَةَ مَعًا.	Linafḥaṣi ath-thallājata maʿan.	draft		
+h3p221	蓝色的东西，我都喜欢。	Lán sè de dōng xi, wǒ dōu xǐ huan.	I like anything blue.	أُحِبُّ كُلَّ شَيْءٍ أَزْرَقَ.	Uḥibbu kulla shayʾin azraq.	draft		
+h3p222	我怕黑，你别关灯。	Wǒ pà hēi, nǐ bié guān dēng.	I'm afraid of the dark. Don't turn off the light.	أَخَافُ مِنَ الظَّلَامِ، لَا تُطْفِئِ الضَّوْءَ.	Akhāfu mina aẓ-ẓalām, lā tuṭfiʾi aḍ-ḍawʾ.	draft		
+h3p223	你为什么哭了？谁让你不高兴？	Nǐ wèi shén me kū le? Shéi ràng nǐ bù gāo xìng?	Why are you crying? Who upset you?	لِمَاذَا بَكَيْتَ؟ مَنْ أَزْعَجَكَ؟	Limādhā bakayt? Man azʿajak?	draft		
+h3p226	后来你去哪儿了？我等了你很久。	Hòu lái nǐ qù nǎr le? Wǒ děng le nǐ hěn jiǔ.	Where did you go afterwards? I waited for you a long time.	وَبَعْدَ ذٰلِكَ أَيْنَ ذَهَبْتَ؟ انْتَظَرْتُكَ طَوِيلًا.	Wabaʿda dhālika ayna dhahabt? Intaẓartuka ṭawīlan.	draft		
+h3p227	你们国家有什么节日？	Nǐ men guó jiā yǒu shén me jié rì?	What festivals does your country have?	مَا الْأَعْيَادُ فِي بَلَدِكُمْ؟	Mā al-ʾaʿyādu fī baladikum?	draft		
+h3p228	我想学怎么解决问题。	Wǒ xiǎng xué zěn me jiě jué wèn tí.	I want to learn how to solve problems.	أُرِيدُ أَنْ أَتَعَلَّمَ كَيْفَ أَحُلُّ الْمَشَاكِلَ.	Urīdu an ataʿallama kayfa aḥullu al-mashākil.	draft		
+h3p229	我不想换衣服，我喜欢这件。	Wǒ bù xiǎng huàn yī fu, wǒ xǐ huan zhè jiàn.	I do not want to change clothes. I like this one.	لَا أُرِيدُ أَنْ أُبَدِّلَ مَلَابِسِي، أُحِبُّ هٰذِهِ.	Lā urīdu an ubaddila malābisī, uḥibbu hādhih.	draft		
+h3p230	你今天检查作业了吗？	Nǐ jīn tiān jiǎn chá zuò yè le ma?	Did you check your homework today?	هَلْ رَاجَعْتَ وَاجِبَكَ الْيَوْمَ؟	Hal rājaʿta wājibaka al-yawm?	draft		
+h3p231	我画的花好看吗？	Wǒ huà de huā hǎo kàn ma?	Does the flower I drew look nice?	هَلِ الزَّهْرَةُ الَّتِي رَسَمْتُهَا جَمِيلَةٌ؟	Hali az-zahratu allatī rasamtuhā jamīla?	draft		
+h3p232	你每天都很忙，我很关心你。	Nǐ měi tiān dōu hěn máng, wǒ hěn guān xīn nǐ.	You are busy every day. I care about you.	أَنْتَ مَشْغُولٌ كُلَّ يَوْمٍ، وَأَنَا أَهْتَمُّ بِكَ كَثِيرًا.	Anta mashghūlun kulla yawm, waʾanā ahtammu bika kathīran.	draft		
+h3p233	今天刮风，我们别去公园了。	Jīn tiān guā fēng, wǒ men bié qù gōng yuán le.	It is windy today. Let us not go to the park.	الرِّيحُ تَهُبُّ الْيَوْمَ، فَلَا نَذْهَبْ إِلَى الْحَدِيقَةِ.	Ar-rīḥu tahubbu al-yawm, falā nadhhab ilā al-ḥadīqa.	draft		
+h3p234	你的老朋友今天会来吗？	Nǐ de lǎo péng you jīn tiān huì lái ma?	Is your old friend coming today?	هَلْ سَيَأْتِي صَدِيقُكَ الْقَدِيمُ الْيَوْمَ؟	Hal sayaʾtī ṣadīquka al-qadīmu al-yawm?	draft		
+h3p235	我喜欢甜的东西，例如蛋糕和苹果。	Wǒ xǐ huan tián de dōng xi, lì rú dàn gāo hé píng guǒ.	I like sweet things, like cake and apples.	أُحِبُّ الْأَشْيَاءَ الْحُلْوَةَ، مِثْلَ الْكَعْكِ وَالتُّفَّاحِ.	Uḥibbu al-ʾashyāʾa al-ḥulwa, mithla al-kaʿki wa-t-tuffāḥ.	draft		
+h3p236	我的脸有点儿绿，你看到了吗？	Wǒ de liǎn yǒu diǎnr lǜ, nǐ kàn dào le ma?	My face is a little green. Did you notice?	وَجْهِي أَخْضَرُ قَلِيلًا، هَلْ رَأَيْتَ ذٰلِكَ؟	Wajhī akhḍaru qalīlan, hal raʾayta dhālik?	draft		
+h3p237	我每天都练习跳舞。	Wǒ měi tiān dōu liàn xí tiào wǔ.	I practise dancing every day.	أَتَمَرَّنُ عَلَى الرَّقْصِ كُلَّ يَوْمٍ.	Atamarranu ʿalā ar-raqṣi kulla yawm.	draft		
+h3p238	一辆红色的车开过去了。	Yí liàng hóng sè de chē kāi guò qù le.	A red car just drove past.	مَرَّتْ سَيَّارَةٌ حَمْرَاءُ.	Marrat sayyāratun ḥamrāʾ.	draft		
+h3p239	我想多了解你一点儿。	Wǒ xiǎng duō liǎo jiě nǐ yì diǎnr.	I want to get to know you a little better.	أُرِيدُ أَنْ أَعْرِفَكَ أَكْثَرَ قَلِيلًا.	Urīdu an aʿrifaka akthara qalīlan.	draft		
+h3p240	邻居家的猫今天又来了。	Lín jū jiā de māo jīn tiān yòu lái le.	The neighbour's cat came over again today.	جَاءَتْ قِطَّةُ الْجِيرَانِ الْيَوْمَ مِنْ جَدِيدٍ.	Jāʾat qiṭṭatu al-jīrāni al-yawma min jadīd.	draft		
+h3p241	另外，我还想吃一片面包。	Lìng wài, wǒ hái xiǎng chī yí piàn miàn bāo.	Also, I would like a slice of bread.	وَأُرِيدُ أَيْضًا قِطْعَةَ خُبْزٍ.	Waʾurīdu ayḍan qiṭʿata khubz.	draft		
+h3p242	你走的时候，能不能给我留着灯？	Nǐ zǒu de shí hou, néng bu néng gěi wǒ liú zhe dēng?	When you go, could you leave the light on for me?	هَلْ تَتْرُكُ لِيَ الضَّوْءَ مُضَاءً عِنْدَمَا تَذْهَبُ؟	Hal tatruku liya aḍ-ḍawʾa muḍāʾan ʿindamā tadhhab?	draft		
+h3p243	你留下来，好不好？	Nǐ liú xià lái, hǎo bu hǎo?	Will you stay, please?	هَلْ تَبْقَى مَعِي، مِنْ فَضْلِكَ؟	Hal tabqā maʿī, min faḍlik?	draft		
+h3p244	这里的楼好高啊！	Zhè lǐ de lóu hǎo gāo a!	The buildings here are so tall!	الْمَبَانِي هُنَا عَالِيَةٌ جِدًّا!	Al-mabānī hunā ʿāliyatun jiddan!	draft		
+h3p245	我是绿色的，你喜欢吗？	Wǒ shì lǜ sè de, nǐ xǐ huan ma?	I'm green. Do you like it?	أَنَا أَخْضَرُ، هَلْ يُعْجِبُكَ لَوْنِي؟	Anā akhḍar, hal yuʿjibuka lawnī?	draft		
+h3p246	我马上就好，等我一下。	Wǒ mǎ shàng jiù hǎo, děng wǒ yí xià.	I'll be ready in a moment, wait for me.	سَأَكُونُ جَاهِزًا بَعْدَ قَلِيلٍ، اِنْتَظِرْنِي لَحْظَةً.	Saʾakūnu jāhizan baʿda qalīl, intaẓirnī laḥẓa.	draft		
+h3p247	我对今天很满意。	Wǒ duì jīn tiān hěn mǎn yì.	I'm very happy with today.	أَنَا رَاضٍ جِدًّا عَنِ الْيَوْمِ.	Anā rāḍin jiddan ʿani al-yawm.	draft		
+h3p248	你的帽子真好看！	Nǐ de mào zi zhēn hǎo kàn!	Your hat looks great!	مَا أَجْمَلَ قُبَّعَتَكَ!	Mā ajmala qubbaʿatak!	draft		
+h3p249	我只有一米高，很小吧？	Wǒ zhǐ yǒu yì mǐ gāo, hěn xiǎo ba?	I'm only one metre tall. Pretty small, right?	طُولِي مِتْرٌ وَاحِدٌ فَقَطْ، أَلَسْتُ صَغِيرًا؟	Ṭūlī mitrun wāḥidun faqaṭ, alastu ṣaghīran?	draft		
+h3p250	我饿了，想吃面包。	Wǒ è le, xiǎng chī miàn bāo.	I'm hungry. I want some bread.	أَنَا جَائِعٌ، أُرِيدُ أَنْ آكُلَ خُبْزًا.	Anā jāʾiʿ, urīdu an ākula khubzan.	draft		
+h3p251	面包真香！	Miàn bāo zhēn xiāng!	The bread smells so good!	مَا أَطْيَبَ رَائِحَةَ الْخُبْزِ!	Mā aṭyaba rāʾiḥata al-khubz!	draft		
+h3p252	我明白了，你是想让我安静一点儿。	Wǒ míng bái le, nǐ shì xiǎng ràng wǒ ān jìng yì diǎnr.	I get it. You want me to be quiet.	فَهِمْتُ، أَنْتَ تُرِيدُ أَنْ أَهْدَأَ قَلِيلًا.	Fahimt, anta turīdu an ahdaʾa qalīlan.	draft		
+h3p253	我想拿那个苹果，可是拿不到。	Wǒ xiǎng ná nà ge píng guǒ, kě shì ná bú dào.	I want to grab that apple, but I can't reach it.	أُرِيدُ أَنْ آخُذَ تِلْكَ التُّفَّاحَةَ، لٰكِنَّنِي لَا أَصِلُ إِلَيْهَا.	Urīdu an ākhudha tilka at-tuffāḥa, lākinnanī lā aṣilu ilayhā.	draft		
+h3p254	别拿走我的东西！	Bié ná zǒu wǒ de dōng xi!	Don't take my things!	لَا تَأْخُذْ أَغْرَاضِي!	Lā taʾkhudh aghrāḍī!	draft		
+h3p255	你奶奶今天会来吗？	Nǐ nǎi nai jīn tiān huì lái ma?	Is your grandmother coming today?	هَلْ سَتَأْتِي جَدَّتُكَ الْيَوْمَ؟	Hal sataʾtī jaddatuka al-yawm?	draft		
+h3p256	小鸟往南飞了。	Xiǎo niǎo wǎng nán fēi le.	The birds flew south.	طَارَتِ الْعَصَافِيرُ نَحْوَ الْجَنُوبِ.	Ṭārati al-ʿaṣāfīru naḥwa al-janūb.	draft		
+h3p257	你要走了，我有点儿难过。	Nǐ yào zǒu le, wǒ yǒu diǎnr nán guò.	You're leaving, and I feel a bit sad.	سَتَذْهَبُ، وَأَنَا حَزِينٌ قَلِيلًا.	Satadhhab, waʾanā ḥazīnun qalīlan.	draft		
+h3p258	我今天很难过，你和我玩吧。	Wǒ jīn tiān hěn nán guò, nǐ hé wǒ wán ba.	I'm sad today. Play with me, please.	أَنَا حَزِينٌ الْيَوْمَ، لَاعِبْنِي.	Anā ḥazīnun al-yawm, lāʿibnī.	draft		
+h3p259	你现在是几年级？	Nǐ xiàn zài shì jǐ nián jí?	What grade are you in now?	فِي أَيِّ صَفٍّ أَنْتَ الْآنَ؟	Fī ayyi ṣaffin anta al-ʾān?	draft		
+h3p260	你看起来很年轻！	Nǐ kàn qǐ lái hěn nián qīng!	You look so young!	تَبْدُو شَابًّا جِدًّا!	Tabdū shābban jiddan!	draft		
+h3p261	有一只鸟在树上唱歌。	Yǒu yì zhī niǎo zài shù shàng chàng gē.	A bird is singing in the tree.	عُصْفُورٌ يُغَنِّي عَلَى الشَّجَرَةِ.	ʿUṣfūrun yughannī ʿalā ash-shajara.	draft		
+h3p262	我会努力的！	Wǒ huì nǔ lì de!	I'll try hard!	سَأَجْتَهِدُ!	Saʾajtahid!	draft		
+h3p263	我每天都很努力地练习。	Wǒ měi tiān dōu hěn nǔ lì de liàn xí.	I work hard at practising every day.	أَتَدَرَّبُ بِجِدٍّ كُلَّ يَوْمٍ.	Atadarrabu bijiddin kulla yawm.	draft		
+h3p264	周末我们去爬山吧。	Zhōu mò wǒ men qù pá shān ba.	Let's go climbing on the weekend.	لِنَتَسَلَّقِ الْجَبَلَ فِي نِهَايَةِ الْأُسْبُوعِ.	Linatasallaqi al-jabala fī nihāyati al-ʾusbūʿ.	draft		
+h3p265	爬山太累了，我想睡觉。	Pá shān tài lèi le, wǒ xiǎng shuì jiào.	Climbing was so tiring. I want to sleep.	تَسَلُّقُ الْجَبَلِ مُتْعِبٌ جِدًّا، أُرِيدُ أَنْ أَنَامَ.	Tasalluqu al-jabali mutʿibun jiddan, urīdu an anām.	draft		
+h3p266	盘子里还有一块蛋糕。	Pán zi lǐ hái yǒu yí kuài dàn gāo.	There's still a piece of cake on the plate.	بَقِيَتْ قِطْعَةُ كَعْكٍ فِي الصَّحْنِ.	Baqiyat qiṭʿatu kaʿkin fī aṣ-ṣaḥn.	draft		
+h3p267	我是不是变胖了？	Wǒ shì bu shì biàn pàng le?	Have I gotten fat?	هَلْ صِرْتُ سَمِينًا؟	Hal ṣirtu samīnan?	draft		
+h3p268	你的皮鞋好亮啊！	Nǐ de pí xié hǎo liàng a!	Your leather shoes are so shiny!	مَا أَلْمَعَ حِذَاءَكَ الْجِلْدِيَّ!	Mā almaʿa ḥidhāʾaka al-jildiyy!	draft		
+h3p269	我不喝啤酒，我喜欢喝水。	Wǒ bù hē pí jiǔ, wǒ xǐ huan hē shuǐ.	I don't drink beer. I like water.	لَا أَشْرَبُ الْبِيرَةَ، أُحِبُّ شُرْبَ الْمَاءِ.	Lā ashrabu al-bīra, uḥibbu shurba al-māʾ.	draft		
+h3p270	瓶子里没有水了。	Píng zi lǐ méi yǒu shuǐ le.	There's no water left in the bottle.	لَمْ يَبْقَ مَاءٌ فِي الزُّجَاجَةِ.	Lam yabqa māʾun fī az-zujāja.	draft		
+h3p271	其实我不太饿。	Qí shí wǒ bú tài è.	Actually, I'm not that hungry.	فِي الْحَقِيقَةِ لَسْتُ جَائِعًا كَثِيرًا.	Fī al-ḥaqīqati lastu jāʾiʿan kathīran.	draft		
+h3p272	其实我很想你。	Qí shí wǒ hěn xiǎng nǐ.	Actually, I really miss you.	فِي الْحَقِيقَةِ أَنَا أَشْتَاقُ إِلَيْكَ كَثِيرًا.	Fī al-ḥaqīqati anā ashtāqu ilayka kathīran.	draft		
+h3p273	其他人都去哪儿了？	Qí tā rén dōu qù nǎr le?	Where did everybody else go?	إِلَى أَيْنَ ذَهَبَ الْبَاقُونَ؟	Ilā ayna dhahaba al-bāqūn?	draft		
+h3p274	飞机马上就要起飞了。	Fēi jī mǎ shàng jiù yào qǐ fēi le.	The plane is about to take off.	الطَّائِرَةُ سَتُقْلِعُ بَعْدَ قَلِيلٍ.	Aṭ-ṭāʾiratu satuqliʿu baʿda qalīl.	draft		
+h3p275	我没听清楚，你再说一遍吧。	Wǒ méi tīng qīng chǔ, nǐ zài shuō yí biàn ba.	I did not catch that. Say it again.	لَمْ أَسْمَعْ جَيِّدًا، قُلْ ذٰلِكَ مَرَّةً أُخْرَى.	Lam asmaʿ jayyidan, qul dhālika marratan ukhrā.	draft		
+h3p276	今天我想请假，不想学习。	Jīn tiān wǒ xiǎng qǐng jià, bù xiǎng xué xí.	I want to take the day off today. I don't feel like studying.	أُرِيدُ إِجَازَةً الْيَوْمَ، لَا أُرِيدُ أَنْ أَدْرُسَ.	Urīdu ijāzatan al-yawm, lā urīdu an adrus.	draft		
+h3p277	秋天到了，天气很好。	Qiū tiān dào le, tiān qì hěn hǎo.	Autumn is here and the weather is lovely.	جَاءَ الْخَرِيفُ، وَالْجَوُّ جَمِيلٌ.	Jāʾa al-kharīf, wa-l-jawwu jamīl.	draft		
+h3p278	我喜欢秋天的太阳。	Wǒ xǐ huan qiū tiān de tài yáng.	I like the autumn sun.	أُحِبُّ شَمْسَ الْخَرِيفِ.	Uḥibbu shamsa al-kharīf.	draft		
+h3p279	你的裙子真漂亮！	Nǐ de qún zi zhēn piào liang!	Your skirt is so pretty!	مَا أَجْمَلَ تَنُّورَتَكَ!	Mā ajmala tannūratak!	draft		
+h3p280	先吃饭，然后再玩。	Xiān chī fàn, rán hòu zài wán.	Eat first, then play.	لِنَأْكُلْ أَوَّلًا، ثُمَّ لِنَلْعَبْ.	Linaʾkul awwalan, thumma linalʿab.	draft		
+h3p281	我先睡一会儿，然后再找你玩。	Wǒ xiān shuì yí huìr, rán hòu zài zhǎo nǐ wán.	I'll take a nap first and then come play with you.	سَأَنَامُ قَلِيلًا أَوَّلًا، ثُمَّ آتِي لِأَلْعَبَ مَعَكَ.	Saʾanāmu qalīlan awwalan, thumma ātī liʾalʿaba maʿak.	draft		
+h3p282	你好热情啊，我喜欢你！	Nǐ hǎo rè qíng a, wǒ xǐ huan nǐ!	You're so warm and friendly. I like you!	أَنْتَ وَدُودٌ جِدًّا، أُحِبُّكَ!	Anta wadūdun jiddan, uḥibbuk!	draft		
+h3p283	我认为今天会下雨。	Wǒ rèn wéi jīn tiān huì xià yǔ.	I think it's going to rain today.	أَظُنُّ أَنَّهَا سَتُمْطِرُ الْيَوْمَ.	Aẓunnu annahā satumṭiru al-yawm.	draft		
+h3p284	你认为我可爱吗？	Nǐ rèn wéi wǒ kě ài ma?	Do you think I'm cute?	هَلْ تَظُنُّ أَنَّنِي لَطِيفٌ؟	Hal taẓunnu annanī laṭīf?	draft		
+h3p286	你认真地看着我，我有点儿不好意思。	Nǐ rèn zhēn de kàn zhe wǒ, wǒ yǒu diǎnr bù hǎo yì si.	You're looking at me so intently, and I'm a little shy.	تَنْظُرُ إِلَيَّ بِجِدٍّ، فَأَشْعُرُ بِالْخَجَلِ قَلِيلًا.	Tanẓuru ilayya bijidd, faʾashʿuru bi-l-khajali qalīlan.	draft		
+h3p287	这个问题很容易。	Zhè ge wèn tí hěn róng yì.	This question is easy.	هٰذَا السُّؤَالُ سَهْلٌ جِدًّا.	Hādhā as-suʾālu sahlun jiddan.	draft		
+h3p288	如果你不在，我会很想你。	Rú guǒ nǐ bú zài, wǒ huì hěn xiǎng nǐ.	If you're not here, I'll miss you a lot.	إِذَا لَمْ تَكُنْ هُنَا، فَسَأَشْتَاقُ إِلَيْكَ كَثِيرًا.	Idhā lam takun hunā, fasaʾashtāqu ilayka kathīran.	draft		
+h3p289	如果明天下雨，我们就在家玩。	Rú guǒ míng tiān xià yǔ, wǒ men jiù zài jiā wán.	If it rains tomorrow, we'll play at home.	إِذَا أَمْطَرَتْ غَدًا، فَسَنَلْعَبُ فِي الْبَيْتِ.	Idhā amṭarat ghadan, fasanalʿabu fī al-bayt.	draft		
+h3p290	外面下雨了，你带伞了吗？	Wài mian xià yǔ le, nǐ dài sǎn le ma?	It's raining out. Did you bring an umbrella?	السَّمَاءُ تُمْطِرُ فِي الْخَارِجِ، هَلْ أَخَذْتَ مِظَلَّةً؟	As-samāʾu tumṭiru fī al-khārij, hal akhadhta miẓalla?	draft		
+h3p291	那把伞是谁的？	Nà bǎ sǎn shì shéi de?	Whose umbrella is that?	لِمَنْ تِلْكَ الْمِظَلَّةُ؟	Liman tilka al-miẓalla?	draft		
+h3p292	你在上网吗？	Nǐ zài shàng wǎng ma?	Are you online?	هَلْ أَنْتَ عَلَى الْإِنْتَرْنِتِ؟	Hal anta ʿalā al-ʾintarnit?	draft		
+h3p293	你又上网了，不和我玩吗？	Nǐ yòu shàng wǎng le, bù hé wǒ wán ma?	You're online again. Aren't you going to play with me?	أَنْتَ عَلَى الْإِنْتَرْنِتِ مِنْ جَدِيدٍ، أَلَنْ تَلْعَبَ مَعِي؟	Anta ʿalā al-ʾintarniti min jadīd, alan talʿaba maʿī?	draft		
+h3p294	你别生气，我不是故意的。	Nǐ bié shēng qì, wǒ bú shì gù yì de.	Don't be angry. I didn't mean to.	لَا تَغْضَبْ، لَمْ أَقْصِدْ ذٰلِكَ.	Lā taghḍab, lam aqṣid dhālik.	draft		
+h3p295	我生气了！你为什么把我放下？	Wǒ shēng qì le! Nǐ wèi shén me bǎ wǒ fàng xià?	I'm angry! Why did you put me down?	أَنَا غَاضِبٌ! لِمَاذَا وَضَعْتَنِي عَلَى الْأَرْضِ؟	Anā ghāḍib! Limādhā waḍaʿtanī ʿalā al-ʾarḍ?	draft		
+h3p296	外面有很大的声音，我有点儿怕。	Wài mian yǒu hěn dà de shēng yīn, wǒ yǒu diǎnr pà.	There's a loud noise outside. I'm a little scared.	هُنَاكَ صَوْتٌ عَالٍ فِي الْخَارِجِ، أَنَا خَائِفٌ قَلِيلًا.	Hunāka ṣawtun ʿālin fī al-khārij, anā khāʾifun qalīlan.	draft		
+h3p297	你的声音真好听。	Nǐ de shēng yīn zhēn hǎo tīng.	Your voice is really nice.	صَوْتُكَ جَمِيلٌ حَقًّا.	Ṣawtuka jamīlun ḥaqqan.	draft		
+h3p298	这个世界真大啊！	Zhè ge shì jiè zhēn dà a!	This world is so big!	مَا أَكْبَرَ هٰذَا الْعَالَمَ!	Mā akbara hādhā al-ʿālam!	draft		
+h3p299	我想看看外面的世界。	Wǒ xiǎng kàn kan wài mian de shì jiè.	I want to see the world outside.	أُرِيدُ أَنْ أَرَى الْعَالَمَ فِي الْخَارِجِ.	Urīdu an arā al-ʿālama fī al-khārij.	draft		
+h3p300	我想试一试，可以吗？	Wǒ xiǎng shì yi shì, kě yǐ ma?	I'd like to give it a try. May I?	أُرِيدُ أَنْ أُجَرِّبَ، هَلْ يُمْكِنُ؟	Urīdu an ujarrib, hal yumkin?	draft		
+h3p301	这个我能试吗？	Zhè ge wǒ néng shì ma?	Can I try this?	هَلْ يُمْكِنُنِي أَنْ أُجَرِّبَ هٰذَا؟	Hal yumkinunī an ujarriba hādhā?	draft		
+h3p302	你最近是不是瘦了？	Nǐ zuì jìn shì bu shì shòu le?	Have you lost weight lately?	هَلْ نَقَصَ وَزْنُكَ مُؤَخَّرًا؟	Hal naqaṣa waznuka muʾakhkharan?	draft		
+h3p303	叔叔今天来看你了吗？	Shū shu jīn tiān lái kàn nǐ le ma?	Did your uncle come to see you today?	هَلْ زَارَكَ عَمُّكَ الْيَوْمَ؟	Hal zāraka ʿammuka al-yawm?	draft		
+h3p305	这里好舒服，我想睡了。	Zhè lǐ hǎo shū fu, wǒ xiǎng shuì le.	It's so comfortable here. I feel sleepy.	الْمَكَانُ هُنَا مُرِيحٌ جِدًّا، أَشْعُرُ بِالنُّعَاسِ.	Al-makānu hunā murīḥun jiddan, ashʿuru bi-n-nuʿās.	draft		
+h3p306	这么高的树，我上不去。	Zhè me gāo de shù, wǒ shàng bú qù.	I can't climb a tree that tall.	لَا أَسْتَطِيعُ تَسَلُّقَ شَجَرَةٍ بِهٰذَا الطُّولِ.	Lā astaṭīʿu tasalluqa shajaratin bihādhā aṭ-ṭūl.	draft		
+h3p307	树下面有很多小鸟。	Shù xià mian yǒu hěn duō xiǎo niǎo.	There are lots of little birds under the tree.	تَحْتَ الشَّجَرَةِ عَصَافِيرُ كَثِيرَةٌ.	Taḥta ash-shajarati ʿaṣāfīru kathīra.	draft		
+h3p308	你喜欢数学吗？我不太喜欢。	Nǐ xǐ huan shù xué ma? Wǒ bú tài xǐ huan.	Do you like maths? I don't really.	هَلْ تُحِبُّ الرِّيَاضِيَّاتِ؟ لَا أُحِبُّهَا كَثِيرًا.	Hal tuḥibbu ar-riyāḍiyyāt? Lā uḥibbuhā kathīran.	draft		
+h3p309	我不会做数学题。	Wǒ bú huì zuò shù xué tí.	I can't do maths problems.	لَا أَعْرِفُ حَلَّ مَسَائِلِ الرِّيَاضِيَّاتِ.	Lā aʿrifu ḥalla masāʾili ar-riyāḍiyyāt.	draft		
+h3p310	你刷牙了吗？	Nǐ shuā yá le ma?	Did you brush your teeth?	هَلْ غَسَلْتَ أَسْنَانَكَ؟	Hal ghasalta asnānak?	draft		
+h3p311	我今天还没刷牙。	Wǒ jīn tiān hái méi shuā yá.	I haven't brushed my teeth yet today.	لَمْ أَغْسِلْ أَسْنَانِي الْيَوْمَ بَعْدُ.	Lam aghsil asnānī al-yawma baʿd.	draft		
+h3p312	你有两双新鞋，真好！	Nǐ yǒu liǎng shuāng xīn xié, zhēn hǎo!	You have two new pairs of shoes. How nice!	عِنْدَكَ زَوْجَانِ مِنَ الْأَحْذِيَةِ الْجَدِيدَةِ، رَائِعٌ!	ʿIndaka zawjāni mina al-ʾaḥdhiyati al-jadīda, rāʾiʿ!	draft		
+h3p313	我的水平还不高，要多练习。	Wǒ de shuǐ píng hái bù gāo, yào duō liàn xí.	My level isn't high yet. I need to practise more.	لَمْ أَصِلْ إِلَى مُسْتَوًى عَالٍ بَعْدُ، عَلَيَّ أَنْ أَتَدَرَّبَ أَكْثَرَ.	Lam aṣil ilā mustawan ʿālin baʿd, ʿalayya an atadarraba akthar.	draft		
+h3p314	那位司机开车很快。	Nà wèi sī jī kāi chē hěn kuài.	That driver drives fast.	ذٰلِكَ السَّائِقُ يَقُودُ بِسُرْعَةٍ.	Dhālika as-sāʾiqu yaqūdu bisurʿa.	draft		
+h3p315	太阳出来了，好热！	Tài yáng chū lái le, hǎo rè!	The sun is out. So hot!	خَرَجَتِ الشَّمْسُ، الْجَوُّ حَارٌّ جِدًّا!	Kharajati ash-shams, al-jawwu ḥārrun jiddan!	draft		
+h3p316	我喜欢在太阳下睡觉。	Wǒ xǐ huan zài tài yáng xià shuì jiào.	I like sleeping in the sun.	أُحِبُّ أَنْ أَنَامَ تَحْتَ الشَّمْسِ.	Uḥibbu an anāma taḥta ash-shams.	draft		
+h3p317	今天特别开心！	Jīn tiān tè bié kāi xīn!	I'm especially happy today!	أَنَا سَعِيدٌ جِدًّا الْيَوْمَ!	Anā saʿīdun jiddan al-yawm!	draft		
+h3p318	我特别想吃面条。	Wǒ tè bié xiǎng chī miàn tiáo.	I really want some noodles.	أُرِيدُ أَنْ آكُلَ نُودِلْزَ كَثِيرًا.	Urīdu an ākula nūdilza kathīran.	draft		
+h3p319	你今天特别好看。	Nǐ jīn tiān tè bié hǎo kàn.	You look extra nice today.	تَبْدُو جَمِيلًا جِدًّا الْيَوْمَ.	Tabdū jamīlan jiddan al-yawm.	draft		
+h3p320	我的头有点儿疼。	Wǒ de tóu yǒu diǎnr téng.	My head hurts a little.	رَأْسِي يُؤْلِمُنِي قَلِيلًا.	Raʾsī yuʾlimunī qalīlan.	draft		
+h3p321	别放手！我会疼的！	Bié fàng shǒu! Wǒ huì téng de!	Don't let go! It'll hurt!	لَا تُفْلِتْنِي! سَأَتَأَلَّمُ!	Lā tuflitnī! Saʾataʾallam!	draft		
+h3p322	你想提高汉语水平吗？	Nǐ xiǎng tí gāo hàn yǔ shuǐ píng ma?	Do you want to improve your Chinese?	هَلْ تُرِيدُ أَنْ تُحَسِّنَ لُغَتَكَ الصِّينِيَّةَ؟	Hal turīdu an tuḥassina lughataka aṣ-ṣīniyya?	draft		
+h3p323	我想提高我的水平。	Wǒ xiǎng tí gāo wǒ de shuǐ píng.	I want to improve my level.	أُرِيدُ أَنْ أَتَحَسَّنَ.	Urīdu an ataḥassan.	draft		
+h3p324	你喜欢上体育课吗？	Nǐ xǐ huan shàng tǐ yù kè ma?	Do you like PE class?	هَلْ تُحِبُّ حِصَّةَ الرِّيَاضَةِ؟	Hal tuḥibbu ḥiṣṣata ar-riyāḍa?	draft		
+h3p325	你喜欢体育吗？我们一起运动吧。	Nǐ xǐ huan tǐ yù ma? Wǒ men yì qǐ yùn dòng ba.	Do you like sports? Let us exercise together.	هَلْ تُحِبُّ الرِّيَاضَةَ؟ لِنَتَمَرَّنْ مَعًا.	Hal tuḥibbu ar-riyāḍa? Linatamarran maʿan.	draft		
+h3p326	这个苹果真甜！	Zhè ge píng guǒ zhēn tián!	This apple is so sweet!	هٰذِهِ التُّفَّاحَةُ حُلْوَةٌ جِدًّا!	Hādhihi at-tuffāḥatu ḥulwatun jiddan!	draft		
+h3p327	好甜啊，我还想吃！	Hǎo tián a, wǒ hái xiǎng chī!	So sweet. I want more!	حُلْوَةٌ جِدًّا، أُرِيدُ الْمَزِيدَ!	Ḥulwatun jiddan, urīdu al-mazīd!	draft		
+h3p328	你有没有一条新裙子？	Nǐ yǒu méi yǒu yì tiáo xīn qún zi?	Do you have a new skirt?	هَلْ عِنْدَكَ تَنُّورَةٌ جَدِيدَةٌ؟	Hal ʿindaka tannūratun jadīda?	draft		
+h3p329	有一条小鱼在水里游。	Yǒu yì tiáo xiǎo yú zài shuǐ lǐ yóu.	There is a little fish swimming in the water.	سَمَكَةٌ صَغِيرَةٌ تَسْبَحُ فِي الْمَاءِ.	Samakatun ṣaghīratun tasbaḥu fī al-māʾ.	draft		
+h3p330	你的同事对你好吗？	Nǐ de tóng shì duì nǐ hǎo ma?	Are your colleagues good to you?	هَلْ زُمَلَاؤُكَ فِي الْعَمَلِ طَيِّبُونَ مَعَكَ؟	Hal zumalāʾuka fī al-ʿamali ṭayyibūna maʿak?	draft		
+h3p331	你同事今天来了吗？	Nǐ tóng shì jīn tiān lái le ma?	Did your colleague come in today?	هَلْ جَاءَ زَمِيلُكَ الْيَوْمَ؟	Hal jāʾa zamīluka al-yawm?	draft		
+h3p332	我同意你说的。	Wǒ tóng yì nǐ shuō de.	I agree with what you said.	أُوَافِقُكَ عَلَى مَا قُلْتَ.	Uwāfiquka ʿalā mā qult.	draft		
+h3p333	你同意我出去玩吗？	Nǐ tóng yì wǒ chū qù wán ma?	Do you agree to let me go out and play?	هَلْ تُوَافِقُ عَلَى أَنْ أَخْرُجَ لِأَلْعَبَ؟	Hal tuwāfiqu ʿalā an akhruja liʾalʿab?	draft		
+h3p334	你的头发好长啊！	Nǐ de tóu fa hǎo cháng a!	Your hair is so long!	مَا أَطْوَلَ شَعْرَكَ!	Mā aṭwala shaʿrak!	draft		
+h3p335	我的头发是绿色的，好看吗？	Wǒ de tóu fa shì lǜ sè de, hǎo kàn ma?	My hair is green. Is it nice?	شَعْرِي أَخْضَرُ، هَلْ هُوَ جَمِيلٌ؟	Shaʿrī akhḍar, hal huwa jamīl?	draft		
+h3p336	外面突然黑了。	Wài mian tū rán hēi le.	It suddenly got dark outside.	أَظْلَمَ الْجَوُّ فِي الْخَارِجِ فَجْأَةً.	Aẓlama al-jawwu fī al-khāriji fajʾa.	draft		
+h3p337	我突然想睡觉了。	Wǒ tū rán xiǎng shuì jiào le.	I suddenly feel like sleeping.	شَعَرْتُ بِالنُّعَاسِ فَجْأَةً.	Shaʿartu bi-n-nuʿāsi fajʾa.	draft		
+h3p338	突然有人拿起了我！	Tū rán yǒu rén ná qǐ le wǒ!	Suddenly somebody picked me up!	فَجْأَةً رَفَعَنِي أَحَدٌ!	Fajʾatan rafaʿanī aḥad!	draft		
+h3p339	你要去图书馆吗？	Nǐ yào qù tú shū guǎn ma?	Are you going to the library?	هَلْ سَتَذْهَبُ إِلَى الْمَكْتَبَةِ؟	Hal satadhhabu ilā al-maktaba?	draft		
+h3p340	图书馆里很安静。	Tú shū guǎn lǐ hěn ān jìng.	It's very quiet in the library.	الْمَكْتَبَةُ هَادِئَةٌ جِدًّا.	Al-maktabatu hādiʾatun jiddan.	draft		
+h3p341	我的腿好累。	Wǒ de tuǐ hǎo lèi.	My legs are so tired.	سَاقَايَ مُتْعَبَتَانِ جِدًّا.	Sāqāya mutʿabatāni jiddan.	draft		
+h3p342	我的腿太短了，跑不快。	Wǒ de tuǐ tài duǎn le, pǎo bú kuài.	My legs are too short. I can't run fast.	سَاقَايَ قَصِيرَتَانِ جِدًّا، لَا أَسْتَطِيعُ أَنْ أَرْكُضَ بِسُرْعَةٍ.	Sāqāya qaṣīratāni jiddan, lā astaṭīʿu an arkuḍa bisurʿa.	draft		
+h3p343	你完成作业了吗？	Nǐ wán chéng zuò yè le ma?	Did you finish your homework?	هَلْ أَنْهَيْتَ وَاجِبَكَ؟	Hal anhayta wājibak?	draft		
+h3p344	我完成了今天的练习！	Wǒ wán chéng le jīn tiān de liàn xí!	I finished today's practice!	أَنْهَيْتُ تَمْرِينَ الْيَوْمِ!	Anhaytu tamrīna al-yawm!	draft		
+h3p345	我要一碗热的面条。	Wǒ yào yì wǎn rè de miàn tiáo.	I'd like a bowl of hot noodles.	أُرِيدُ صَحْنًا سَاخِنًا مِنَ النُّودِلْزِ.	Urīdu ṣaḥnan sākhinan mina an-nūdilz.	draft		
+h3p346	这碗饭真好吃！	Zhè wǎn fàn zhēn hǎo chī!	This bowl of rice is so tasty!	هٰذَا الْأُرْزُ لَذِيذٌ جِدًّا!	Hādhā al-ʾurzu ladhīdhun jiddan!	draft		
+h3p348	我等了你一万年！	Wǒ děng le nǐ yí wàn nián!	I've waited ten thousand years for you!	اِنْتَظَرْتُكَ عَشَرَةَ آلَافِ سَنَةٍ!	Intaẓartuka ʿasharata ālāfi sana!	draft		
+h3p349	我的裙子是绿色的，你喜欢吗？	Wǒ de qún zi shì lǜ sè de, nǐ xǐ huan ma?	My skirt is green. Do you like it?	تَنُّورَتِي خَضْرَاءُ، هَلْ تُعْجِبُكَ؟	Tannūratī khaḍrāʾ, hal tuʿjibuk?	draft		
+h3p350	我又忘记你的名字了，对不起。	Wǒ yòu wàng jì nǐ de míng zi le, duì bu qǐ.	I forgot your name again, sorry.	نَسِيتُ اِسْمَكَ مَرَّةً أُخْرَى، آسِفٌ.	Nasītu ismaka marratan ukhrā, āsif.	draft		
+h3p351	别忘记给我吃的。	Bié wàng jì gěi wǒ chī de.	Don't forget to give me something to eat!	لَا تَنْسَ أَنْ تُعْطِيَنِي شَيْئًا آكُلُهُ!	Lā tansa an tuʿṭiyanī shayʾan ākuluh!	draft		
+h3p352	为了你，我什么都愿意做。	Wèi le nǐ, wǒ shén me dōu yuàn yì zuò.	I'd do anything for you.	مِنْ أَجْلِكَ، أَنَا مُسْتَعِدٌّ لِفِعْلِ أَيِّ شَيْءٍ.	Min ajlik, anā mustaʿiddun lifiʿli ayyi shayʾ.	draft		
+h3p353	今天有三位客人来看我。	Jīn tiān yǒu sān wèi kè rén lái kàn wǒ.	Three guests came to see me today.	جَاءَ ثَلَاثَةُ ضُيُوفٍ لِزِيَارَتِي الْيَوْمَ.	Jāʾa thalāthatu ḍuyūfin liziyāratī al-yawm.	draft		
+h3p354	我喜欢别的地方的文化。	Wǒ xǐ huan bié de dì fang de wén huà.	I like the culture of other places.	أُحِبُّ ثَقَافَةَ الْأَمَاكِنِ الْأُخْرَى.	Uḥibbu thaqāfata al-ʾamākini al-ʾukhrā.	draft		
+h3p355	太阳从东边起来，从西边下去。	Tài yáng cóng dōng biān qǐ lái, cóng xī biān xià qù.	The sun comes up in the east and goes down in the west.	تَطْلُعُ الشَّمْسُ مِنَ الشَّرْقِ وَتَغِيبُ فِي الْغَرْبِ.	Taṭluʿu ash-shamsu mina ash-sharqi wataghību fī al-gharb.	draft		
+h3p356	我已经习惯一个人在这里了。	Wǒ yǐ jīng xí guàn yí gè rén zài zhè lǐ le.	I'm used to being here by myself now.	اِعْتَدْتُ الْآنَ أَنْ أَكُونَ هُنَا وَحْدِي.	Iʿtadtu al-ʾāna an akūna hunā waḥdī.	draft		
+h3p357	早起是个好习惯。	Zǎo qǐ shì gè hǎo xí guàn.	Getting up early is a good habit.	الِاسْتِيقَاظُ مُبَكِّرًا عَادَةٌ جَيِّدَةٌ.	Al-istīqāẓu mubakkiran ʿādatun jayyida.	draft		
+h3p358	洗手间在哪里？我想去。	Xǐ shǒu jiān zài nǎ lǐ? Wǒ xiǎng qù.	Where's the restroom? I want to go.	أَيْنَ دَوْرَةُ الْمِيَاهِ؟ أُرِيدُ أَنْ أَذْهَبَ.	Ayna dawratu al-miyāh? Urīdu an adhhab.	draft		
+h3p359	你什么时候洗澡？我也想洗。	Nǐ shén me shí hou xǐ zǎo? Wǒ yě xiǎng xǐ.	When do you take a bath? I want one too.	مَتَى تَسْتَحِمُّ؟ أُرِيدُ أَنْ أَسْتَحِمَّ أَنَا أَيْضًا.	Matā tastaḥimm? Urīdu an astaḥimma anā ayḍan.	draft		
+h3p360	夏天到了，我想去游泳。	Xià tiān dào le, wǒ xiǎng qù yóu yǒng.	Summer is here, and I want to go swimming.	جَاءَ الصَّيْفُ، أُرِيدُ أَنْ أَذْهَبَ لِلسِّبَاحَةِ.	Jāʾa aṣ-ṣayf, urīdu an adhhaba li-s-sibāḥa.	draft		
+h3p361	你先吃，我等一会儿。	Nǐ xiān chī, wǒ děng yí huìr.	You eat first, and I'll wait a bit.	كُلْ أَنْتَ أَوَّلًا، وَأَنَا سَأَنْتَظِرُ قَلِيلًا.	Kul anta awwalan, waʾanā saʾantaẓiru qalīlan.	draft		
+h3p362	我相信你会回来的。	Wǒ xiāng xìn nǐ huì huí lái de.	I believe you'll come back.	أَنَا أُصَدِّقُ أَنَّكَ سَتَعُودُ.	Anā uṣaddiqu annaka sataʿūd.	draft		
+h3p363	我最爱吃的是香蕉。	Wǒ zuì ài chī de shì xiāng jiāo.	What I love to eat most is bananas.	أَكْثَرُ مَا أُحِبُّ أَكْلَهُ هُوَ الْمَوْزُ.	Aktharu mā uḥibbu aklahu huwa al-mawz.	draft		
+h3p364	你为什么一直向我笑？	Nǐ wèi shén me yì zhí xiàng wǒ xiào?	Why do you keep smiling at me?	لِمَاذَا تَبْتَسِمُ لِي دَائِمًا؟	Limādhā tabtasimu lī dāʾiman?	draft		
+h3p365	我像一条小小的鱼。	Wǒ xiàng yì tiáo xiǎo xiǎo de yú.	I look like a tiny fish.	أَبْدُو كَسَمَكَةٍ صَغِيرَةٍ جِدًّا.	Abdū kasamakatin ṣaghīratin jiddan.	draft		
+h3p366	路上小心，早点回来。	Lù shang xiǎo xīn, zǎo diǎn huí lái.	Be careful on the road, and come back early.	اِنْتَبِهْ فِي الطَّرِيقِ، وَعُدْ مُبَكِّرًا.	Intabih fī aṭ-ṭarīq, waʿud mubakkiran.	draft		
+h3p367	你们的校长今天来了吗？	Nǐ men de xiào zhǎng jīn tiān lái le ma?	Did your principal come today?	هَلْ جَاءَ مُدِيرُ مَدْرَسَتِكُمُ الْيَوْمَ؟	Hal jāʾa mudīru madrasatikumu al-yawm?	draft		
+h3p368	今天的新闻你看了吗？	Jīn tiān de xīn wén nǐ kàn le ma?	Did you see today's news?	هَلْ شَاهَدْتَ أَخْبَارَ الْيَوْمِ؟	Hal shāhadta akhbāra al-yawm?	draft		
+h3p369	这个苹果很新鲜，快来吃。	Zhè ge píng guǒ hěn xīn xiān, kuài lái chī.	This apple is really fresh, come and eat.	هٰذِهِ التُّفَّاحَةُ طَازَجَةٌ جِدًّا، تَعَالَ وَكُلْ.	Hādhihi at-tuffāḥatu ṭāzajatun jiddan, taʿāla wakul.	draft		
+h3p370	你有新的信吗？我在等。	Nǐ yǒu xīn de xìn ma? Wǒ zài děng.	Do you have a new letter? I'm waiting.	هَلْ عِنْدَكَ رِسَالَةٌ جَدِيدَةٌ؟ أَنَا أَنْتَظِرُ.	Hal ʿindaka risālatun jadīda? Anā antaẓir.	draft		
+h3p371	你的行李箱好大啊。	Nǐ de xíng li xiāng hǎo dà a.	Your suitcase is so big.	حَقِيبَةُ سَفَرِكَ كَبِيرَةٌ جِدًّا.	Ḥaqībatu safarika kabīratun jiddan.	draft		
+h3p372	我想变成一只大熊猫。	Wǒ xiǎng biàn chéng yì zhī dà xióng māo.	I want to turn into a giant panda.	أُرِيدُ أَنْ أَصِيرَ دُبَّ بَانْدَا.	Urīdu an aṣīra dubba bandā.	draft		
+h3p373	我需要你在我旁边。	Wǒ xū yào nǐ zài wǒ páng biān.	I need you next to me.	أَحْتَاجُ إِلَى وُجُودِكَ بِجَانِبِي.	Aḥtāju ilā wujūdika bijānibī.	draft		
+h3p374	你想选择哪一个？	Nǐ xiǎng xuǎn zé nǎ yí gè?	Which one do you want to choose?	أَيَّ وَاحِدٍ تُرِيدُ أَنْ تَخْتَارَ؟	Ayya wāḥidin turīdu an takhtār?	draft		
+h3p375	我有一个小小的要求：别走。	Wǒ yǒu yí gè xiǎo xiǎo de yāo qiú: bié zǒu.	I have one small request: don't go.	عِنْدِي طَلَبٌ صَغِيرٌ: لَا تَذْهَبْ.	ʿIndī ṭalabun ṣaghīr: lā tadhhab.	draft		
+h3p376	我爷爷也喜欢听音乐。	Wǒ yé ye yě xǐ huan tīng yīn yuè.	My grandpa likes listening to music too.	جَدِّي يُحِبُّ الِاسْتِمَاعَ إِلَى الْمُوسِيقَى أَيْضًا.	Jaddī yuḥibbu al-istimāʿa ilā al-mūsīqā ayḍan.	draft		
+h3p377	明天一定是个好天气。	Míng tiān yí dìng shì gè hǎo tiān qì.	Tomorrow will surely be nice weather.	سَيَكُونُ الْجَوُّ جَمِيلًا غَدًا بِلَا شَكٍّ.	Sayakūnu al-jawwu jamīlan ghadan bilā shakk.	draft		
+h3p378	今天一共有五个人来看我。	Jīn tiān yí gòng yǒu wǔ gè rén lái kàn wǒ.	Altogether five people came to see me today.	جَاءَ خَمْسَةُ أَشْخَاصٍ لِزِيَارَتِي الْيَوْمَ فِي الْمَجْمُوعِ.	Jāʾa khamsatu ashkhāṣin liziyāratī al-yawma fī al-majmūʿ.	draft		
+h3p379	我睡一会儿，别叫我。	Wǒ shuì yí huìr, bié jiào wǒ.	I'll sleep for a bit, don't wake me.	سَأَنَامُ قَلِيلًا، لَا تُوقِظْنِي.	Saʾanāmu qalīlan, lā tūqiẓnī.	draft		
+h3p380	你和我一样喜欢吃蛋糕。	Nǐ hé wǒ yí yàng xǐ huan chī dàn gāo.	You like cake just like I do.	تُحِبُّ الْكَعْكَ مِثْلِي تَمَامًا.	Tuḥibbu al-kaʿka mithlī tamāman.	draft		
+h3p381	我一直在等你回家。	Wǒ yì zhí zài děng nǐ huí jiā.	I've been waiting for you to come home all along.	مَا زِلْتُ أَنْتَظِرُ عَوْدَتَكَ إِلَى الْبَيْتِ.	Mā ziltu antaẓiru ʿawdataka ilā al-bayt.	draft		
+h3p382	以前我住在水里。	Yǐ qián wǒ zhù zài shuǐ lǐ.	I used to live in the water.	كُنْتُ أَسْكُنُ فِي الْمَاءِ مِنْ قَبْلُ.	Kuntu askunu fī al-māʾi min qabl.	draft		
+h3p383	我一般晚上不睡觉。	Wǒ yì bān wǎn shang bú shuì jiào.	I generally don't sleep at night.	عَادَةً لَا أَنَامُ فِي اللَّيْلِ.	ʿĀdatan lā anāmu fī al-layl.	draft		
+h3p384	这个音乐真好听。	Zhè ge yīn yuè zhēn hǎo tīng.	This music sounds really nice.	هٰذِهِ الْمُوسِيقَى جَمِيلَةٌ جِدًّا.	Hādhihi al-mūsīqā jamīlatun jiddan.	draft		
+h3p385	你去银行做什么？	Nǐ qù yín háng zuò shén me?	What are you going to the bank for?	مَاذَا سَتَفْعَلُ فِي الْمَصْرِفِ؟	Mādhā satafʿalu fī al-maṣrif?	draft		
+h3p386	我想喝一杯冷的饮料。	Wǒ xiǎng hē yì bēi lěng de yǐn liào.	I want a cold drink.	أُرِيدُ أَنْ أَشْرَبَ مَشْرُوبًا بَارِدًا.	Urīdu an ashraba mashrūban bāridan.	draft		
+h3p387	你应该早点睡觉。	Nǐ yīng gāi zǎo diǎn shuì jiào.	You should go to bed earlier.	يَنْبَغِي أَنْ تَنَامَ أَبْكَرَ.	Yanbaghī an tanāma abkar.	draft		
+h3p388	天气会影响我的心情。	Tiān qì huì yǐng xiǎng wǒ de xīn qíng.	The weather affects my mood.	الطَّقْسُ يُؤَثِّرُ فِي مِزَاجِي.	Aṭ-ṭaqsu yuʾaththiru fī mizājī.	draft		
+h3p389	我可以用一下你的笔吗？	Wǒ kě yǐ yòng yí xià nǐ de bǐ ma?	Can I use your pen for a moment?	هَلْ يُمْكِنُنِي أَنْ أَسْتَخْدِمَ قَلَمَكَ لَحْظَةً؟	Hal yumkinunī an astakhdima qalamaka laḥẓa?	draft		
+h3p390	我喜欢这个游戏，再玩一次。	Wǒ xǐ huan zhè ge yóu xì, zài wán yí cì.	I like this game, let's play once more.	تُعْجِبُنِي هٰذِهِ اللُّعْبَةُ، لِنَلْعَبْ مَرَّةً أُخْرَى.	Tuʿjibunī hādhihi al-luʿba, linalʿab marratan ukhrā.	draft		
+h3p391	你的朋友很有名吧？	Nǐ de péng you hěn yǒu míng ba?	Your friend is quite famous, isn't he?	صَدِيقُكَ مَشْهُورٌ جِدًّا، أَلَيْسَ كَذٰلِكَ؟	Ṣadīquka mashhūrun jiddan, alaysa kadhālik?	draft		
+h3p392	你终于来了，太好了！	Nǐ zhōng yú lái le, tài hǎo le!	You're finally here, how wonderful!	وَصَلْتَ أَخِيرًا، هٰذَا رَائِعٌ!	Waṣalta akhīran, hādhā rāʾiʿ!	draft		
+h3p393	我今天在路上遇到一只猫。	Wǒ jīn tiān zài lù shang yù dào yì zhī māo.	I ran into a cat on the road today.	قَابَلْتُ قِطَّةً فِي الطَّرِيقِ الْيَوْمَ.	Qābaltu qiṭṭatan fī aṭ-ṭarīqi al-yawm.	draft		
+h3p394	你愿意和我一起玩吗？	Nǐ yuàn yì hé wǒ yì qǐ wán ma?	Are you willing to play with me?	هَلْ تُرِيدُ أَنْ تَلْعَبَ مَعِي؟	Hal turīdu an talʿaba maʿī?	draft		
+h3p395	今晚的月亮又大又亮。	Jīn wǎn de yuè liang yòu dà yòu liàng.	Tonight's moon is big and bright.	قَمَرُ اللَّيْلَةِ كَبِيرٌ وَمُضِيءٌ.	Qamaru al-laylati kabīrun wamuḍīʾ.	draft		
+h3p396	天越来越冷了。	Tiān yuè lái yuè lěng le.	It's getting colder and colder.	الْجَوُّ يَزْدَادُ بُرُودَةً.	Al-jawwu yazdādu burūda.	draft		
+h3p397	我在车站等你。	Wǒ zài chē zhàn děng nǐ.	I'll wait for you at the station.	سَأَنْتَظِرُكَ فِي الْمَحَطَّةِ.	Saʾantaẓiruka fī al-maḥaṭṭa.	draft		
+h3p398	请给我一张纸。	Qǐng gěi wǒ yì zhāng zhǐ.	Please give me a sheet of paper.	أَعْطِنِي وَرَقَةً مِنْ فَضْلِكَ.	Aʿṭinī waraqatan min faḍlik.	draft		
+h3p399	你怎么还不回来，我好着急。	Nǐ zěn me hái bù huí lái, wǒ hǎo zháo jí.	Why aren't you back yet? I'm so worried.	لِمَاذَا لَمْ تَعُدْ بَعْدُ؟ أَنَا قَلِقٌ جِدًّا.	Limādhā lam taʿud baʿd? Anā qaliqun jiddan.	draft		
+h3p400	请你照顾我，好吗？	Qǐng nǐ zhào gù wǒ, hǎo ma?	Please take care of me, okay?	اِعْتَنِ بِي مِنْ فَضْلِكَ، حَسَنًا؟	Iʿtani bī min faḍlik, ḥasanan?	draft		
+h3p401	这张照片是谁给你的？	Zhè zhāng zhào piàn shì shéi gěi nǐ de?	Who gave you this photo?	مَنْ أَعْطَاكَ هٰذِهِ الصُّورَةَ؟	Man aʿṭāka hādhihi aṣ-ṣūra?	draft		
+h3p402	我想用照相机给你照张相。	Wǒ xiǎng yòng zhào xiàng jī gěi nǐ zhào zhāng xiāng.	I want to take your picture with the camera.	أُرِيدُ أَنْ آخُذَ لَكَ صُورَةً بِالْكَامِيرَا.	Urīdu an ākhudha laka ṣūratan bi-l-kāmīrā.	draft		
+h3p403	桌子上有一只小鸟。	Zhuō zi shang yǒu yì zhī xiǎo niǎo.	There's a little bird on the table.	عَلَى الطَّاوِلَةِ عُصْفُورٌ صَغِيرٌ.	ʿAlā aṭ-ṭāwilati ʿuṣfūrun ṣaghīr.	draft		
+h3p404	我只有你一个朋友。	Wǒ zhǐ yǒu nǐ yí gè péng you.	You're my only friend.	لَيْسَ لِي صَدِيقٌ غَيْرُكَ.	Laysa lī ṣadīqun ghayruk.	draft		
+h3p405	我坐在桌子中间。	Wǒ zuò zài zhuō zi zhōng jiān.	I'm sitting in the middle of the table.	أَجْلِسُ فِي وَسَطِ الطَّاوِلَةِ.	Ajlisu fī wasaṭi aṭ-ṭāwila.	draft		
+h3p406	我在学中文，你教教我吧。	Wǒ zài xué zhōng wén, nǐ jiāo jiāo wǒ ba.	I'm learning Chinese, so teach me.	أَتَعَلَّمُ الصِّينِيَّةَ، عَلِّمْنِي.	Ataʿallamu aṣ-ṣīniyya, ʿallimnī.	draft		
+h3p407	你终于回来了！	Nǐ zhōng yú huí lái le!	You're finally back!	عُدْتَ أَخِيرًا!	ʿUdta akhīran!	draft		
+h3p408	你喜欢哪一种水果？	Nǐ xǐ huan nǎ yì zhǒng shuǐ guǒ?	Which kind of fruit do you like?	أَيَّ نَوْعٍ مِنَ الْفَوَاكِهِ تُحِبُّ؟	Ayya nawʿin mina al-fawākihi tuḥibb?	draft		
+h3p409	今天的书包好重啊。	Jīn tiān de shū bāo hǎo zhòng a.	Today's school bag is so heavy.	حَقِيبَةُ الْمَدْرَسَةِ ثَقِيلَةٌ جِدًّا الْيَوْمَ.	Ḥaqībatu al-madrasati thaqīlatun jiddan al-yawm.	draft		
+h3p410	你最重要，别走。	Nǐ zuì zhòng yào, bié zǒu.	You're the most important, don't go.	أَنْتَ الْأَهَمُّ، لَا تَذْهَبْ.	Anta al-ʾahamm, lā tadhhab.	draft		
+h3p411	这个周末你有空吗？	Zhè ge zhōu mò nǐ yǒu kōng ma?	Are you free this weekend?	هَلْ عِنْدَكَ وَقْتٌ فِي نِهَايَةِ الْأُسْبُوعِ؟	Hal ʿindaka waqtun fī nihāyati al-ʾusbūʿ?	draft		
+h3p412	我主要吃蛋糕和水果。	Wǒ zhǔ yào chī dàn gāo hé shuǐ guǒ.	I mainly eat cake and fruit.	آكُلُ الْكَعْكَ وَالْفَاكِهَةَ فِي الْغَالِبِ.	Ākulu al-kaʿka wa-l-fākihata fī al-ghālib.	draft		
+h3p413	过马路要注意车。	Guò mǎ lù yào zhù yì chē.	Pay attention to cars when crossing the road.	اِنْتَبِهْ لِلسَّيَّارَاتِ عِنْدَ عُبُورِ الشَّارِعِ.	Intabih li-s-sayyārāti ʿinda ʿubūri ash-shāriʿ.	draft		
+h3p414	我想自己试一试。	Wǒ xiǎng zì jǐ shì yi shì.	I want to try it myself.	أُرِيدُ أَنْ أُجَرِّبَ بِنَفْسِي.	Urīdu an ujarriba binafsī.	draft		
+h3p415	我想骑自行车去玩。	Wǒ xiǎng qí zì xíng chē qù wán.	I want to ride a bike and play.	أُرِيدُ أَنْ أَرْكَبَ الدَّرَّاجَةَ وَأَلْعَبَ.	Urīdu an arkaba ad-darrājata waʾalʿab.	draft		
+h3p416	你总是这么早起来。	Nǐ zǒng shì zhè me zǎo qǐ lái.	You always get up this early.	تَسْتَيْقِظُ دَائِمًا مُبَكِّرًا جِدًّا.	Tastayqiẓu dāʾiman mubakkiran jiddan.	draft		
+h3p417	最后一块蛋糕给我吧。	Zuì hòu yí kuài dàn gāo gěi wǒ ba.	Give me the last piece of cake.	أَعْطِنِي آخِرَ قِطْعَةِ كَعْكٍ.	Aʿṭinī ākhira qiṭʿati kaʿk.	draft		
+h3p418	你最近好吗？我想你了。	Nǐ zuì jìn hǎo ma? Wǒ xiǎng nǐ le.	How have you been lately? I missed you.	كَيْفَ حَالُكَ مُؤَخَّرًا؟ اِشْتَقْتُ إِلَيْكَ.	Kayfa ḥāluka muʾakhkharan? Ishtaqtu ilayk.	draft		
+h3p419	你的作业做完了吗？	Nǐ de zuò yè zuò wán le ma?	Have you finished your homework?	هَلْ أَنْهَيْتَ وَاجِبَكَ؟	Hal anhayta wājibak?	draft		
+h3p420	请再说一遍。	Qǐng zài shuō yí biàn.	Please say it once more.	أَعِدْ ذٰلِكَ مَرَّةً أُخْرَى مِنْ فَضْلِكَ.	Aʿid dhālika marratan ukhrā min faḍlik.	draft		
+h3p421	我家对面有一个大商店。	Wǒ jiā duì miàn yǒu yí gè dà shāng diàn.	There's a big shop across from my home.	يُوجَدُ مَتْجَرٌ كَبِيرٌ مُقَابِلَ بَيْتِي.	Yūjadu matjarun kabīrun muqābila baytī.	draft		
+h3p422	别忘了，明天我一定要吃鱼。	Bié wàng le, míng tiān wǒ yí dìng yào chī yú.	Don't forget, tomorrow I absolutely want fish.	لَا تَنْسَ، سَآكُلُ سَمَكًا غَدًا بِالتَّأْكِيدِ.	Lā tans, saʾākulu samakan ghadan bi-t-taʾkīd.	draft		
+h3p423	为了吃蛋糕，我一直在等。	Wèi le chī dàn gāo, wǒ yì zhí zài děng.	I've been waiting just to have cake.	مَا زِلْتُ أَنْتَظِرُ مِنْ أَجْلِ الْكَعْكَةِ.	Mā ziltu antaẓiru min ajli al-kaʿka.	draft		
+h3p424	我们这里有三位小朋友。	Wǒ men zhè lǐ yǒu sān wèi xiǎo péng you.	There are three little kids here.	عِنْدَنَا هُنَا ثَلَاثَةُ أَطْفَالٍ صِغَارٍ.	ʿIndanā hunā thalāthatu aṭfālin ṣighār.	draft		
+h3p425	我想去看看别的文化。	Wǒ xiǎng qù kàn kan bié de wén huà.	I want to go see other cultures.	أُرِيدُ أَنْ أَذْهَبَ لِأَرَى ثَقَافَاتٍ أُخْرَى.	Urīdu an adhhaba liʾarā thaqāfātin ukhrā.	draft		
+h3p426	你往西走，我往东走。	Nǐ wǎng xī zǒu, wǒ wǎng dōng zǒu.	You go west, and I'll go east.	اِذْهَبْ أَنْتَ نَحْوَ الْغَرْبِ، وَأَنَا سَأَذْهَبُ نَحْوَ الشَّرْقِ.	Idhhab anta naḥwa al-gharb, waʾanā saʾadhhabu naḥwa ash-sharq.	draft		
+h3p427	你的新习惯是什么？	Nǐ de xīn xí guàn shì shén me?	What's your new habit?	مَا عَادَتُكَ الْجَدِيدَةُ؟	Mā ʿādatuka al-jadīda?	draft		
+h3p428	我一个人不想去洗手间。	Wǒ yí gè rén bù xiǎng qù xǐ shǒu jiān.	I don't want to go to the restroom alone.	لَا أُرِيدُ أَنْ أَذْهَبَ إِلَى دَوْرَةِ الْمِيَاهِ وَحْدِي.	Lā urīdu an adhhaba ilā dawrati al-miyāhi waḥdī.	draft		
+h3p429	洗完澡，我觉得很舒服。	Xǐ wán zǎo, wǒ jué de hěn shū fu.	After a bath I feel really comfortable.	بَعْدَ الِاسْتِحْمَامِ أَشْعُرُ بِرَاحَةٍ كَبِيرَةٍ.	Baʿda al-istiḥmāmi ashʿuru birāḥatin kabīra.	draft		
+h3p430	夏天的晚上很舒服。	Xià tiān de wǎn shang hěn shū fu.	Summer nights are really pleasant.	لَيَالِي الصَّيْفِ مُرِيحَةٌ جِدًّا.	Layālī aṣ-ṣayfi murīḥatun jiddan.	draft		
+h3p431	我想先睡，你也早点睡。	Wǒ xiǎng xiān shuì, nǐ yě zǎo diǎn shuì.	I want to sleep first, and you sleep early too.	أُرِيدُ أَنْ أَنَامَ أَوَّلًا، وَأَنْتَ نَمْ مُبَكِّرًا أَيْضًا.	Urīdu an anāma awwalan, waʾanta nam mubakkiran ayḍan.	draft		
+h3p432	我喜欢这个小故事。	Wǒ xǐ huan zhè ge xiǎo gù shì.	I like this little story.	تُعْجِبُنِي هٰذِهِ الْقِصَّةُ الصَّغِيرَةُ.	Tuʿjibunī hādhihi al-qiṣṣatu aṣ-ṣaghīra.	draft		
+h3p433	香蕉是我最爱的水果。	Xiāng jiāo shì wǒ zuì ài de shuǐ guǒ.	Bananas are my favorite fruit.	الْمَوْزُ هُوَ فَاكِهَتِي الْمُفَضَّلَةُ.	Al-mawzu huwa fākihatī al-mufaḍḍala.	draft		
+h3p434	我向你跑过去了。	Wǒ xiàng nǐ pǎo guò qù le.	I ran over toward you.	رَكَضْتُ نَحْوَكَ.	Rakaḍtu naḥwak.	draft		
+h3p435	你像我的哥哥一样。	Nǐ xiàng wǒ de gē ge yí yàng.	You're like a big brother to me.	أَنْتَ مِثْلُ أَخِي الْكَبِيرِ.	Anta mithlu akhī al-kabīr.	draft		
+h3p436	小心，别把我放在地上。	Xiǎo xīn, bié bǎ wǒ fàng zài dì shang.	Careful, don't put me on the floor.	اِنْتَبِهْ، لَا تَضَعْنِي عَلَى الْأَرْضِ.	Intabih, lā taḍaʿnī ʿalā al-ʾarḍ.	draft		
+h3p437	校长今天没有来学校。	Xiào zhǎng jīn tiān méi yǒu lái xué xiào.	The principal didn't come to school today.	لَمْ يَأْتِ مُدِيرُ الْمَدْرَسَةِ إِلَى الْمَدْرَسَةِ الْيَوْمَ.	Lam yaʾti mudīru al-madrasati ilā al-madrasati al-yawm.	draft		
+h3p438	我在电视上看新闻。	Wǒ zài diàn shì shàng kàn xīn wén.	I'm watching the news on TV.	أُشَاهِدُ الْأَخْبَارَ عَلَى التِّلْفَازِ.	Ushāhidu al-ʾakhbāra ʿalā at-tilfāz.	draft		
+h3p439	我要新鲜的鱼，不要旧的。	Wǒ yào xīn xiān de yú, bú yào jiù de.	I want fresh fish, not old.	أُرِيدُ سَمَكًا طَازَجًا، لَا قَدِيمًا.	Urīdu samakan ṭāzajan, lā qadīman.	draft		
+h3p440	我给爷爷写了信。	Wǒ gěi yé ye xiě le xìn.	I wrote a letter to my grandpa.	كَتَبْتُ رِسَالَةً إِلَى جَدِّي.	Katabtu risālatan ilā jaddī.	draft		
+h3p441	你的行李箱里有什么？	Nǐ de xíng li xiāng lǐ yǒu shén me?	What is in your suitcase?	مَاذَا فِي حَقِيبَةِ سَفَرِكَ؟	Mādhā fī ḥaqībati safarik?	draft		
+h3p442	熊猫也喜欢吃东西。	Xióng māo yě xǐ huan chī dōng xi.	Pandas like eating too.	الدُّبُّ الْبَانْدَا يُحِبُّ الْأَكْلَ أَيْضًا.	Ad-dubbu al-bāndā yuḥibbu al-ʾakla ayḍan.	draft		
+h3p443	我需要休息一下。	Wǒ xū yào xiū xi yí xià.	I need to rest for a bit.	أَحْتَاجُ إِلَى قَلِيلٍ مِنَ الرَّاحَةِ.	Aḥtāju ilā qalīlin mina ar-rāḥa.	draft		
+h3p444	选择太多了，我不知道吃什么。	Xuǎn zé tài duō le, wǒ bù zhī dào chī shén me.	There are too many choices, and I don't know what to eat.	الْخِيَارَاتُ كَثِيرَةٌ جِدًّا، لَا أَعْرِفُ مَاذَا آكُلُ.	Al-khiyārātu kathīratun jiddan, lā aʿrifu mādhā ākul.	draft		
+h3p445	你的要求我都记住了。	Nǐ de yāo qiú wǒ dōu jì zhù le.	I've remembered all your requests.	حَفِظْتُ كُلَّ طَلَبَاتِكَ.	Ḥafiẓtu kulla ṭalabātik.	draft		
+h3p446	爷爷的家很大。	Yé ye de jiā hěn dà.	Grandpa's home is very big.	بَيْتُ جَدِّي كَبِيرٌ جِدًّا.	Baytu jaddī kabīrun jiddan.	draft		
+h3p447	我一定会好好听话。	Wǒ yí dìng huì hǎo hǎo tīng huà.	I'll definitely be good and listen.	سَأَكُونُ مُطِيعًا بِالتَّأْكِيدِ.	Saʾakūnu muṭīʿan bi-t-taʾkīd.	draft		
+h3p448	我们一共有几个人？	Wǒ men yí gòng yǒu jǐ gè rén?	How many of us are there altogether?	كَمْ عَدَدُنَا فِي الْمَجْمُوعِ؟	Kam ʿadadunā fī al-majmūʿ?	draft		
+h3p449	你等我一会儿，好吗？	Nǐ děng wǒ yí huìr, hǎo ma?	Wait for me a moment, okay?	اِنْتَظِرْنِي قَلِيلًا، حَسَنًا؟	Intaẓirnī qalīlan, ḥasanan?	draft		
+h3p450	你是我的家人，我很放心。	Nǐ shì wǒ de jiā rén, wǒ hěn fàng xīn.	You're my family, so I feel at ease.	أَنْتَ مِنْ عَائِلَتِي، فَأَنَا مُطْمَئِنٌّ.	Anta min ʿāʾilatī, faʾanā muṭmaʾinn.	draft		
+h3p451	我一直想有个朋友。	Wǒ yì zhí xiǎng yǒu gè péng you.	I've always wanted a friend.	كُنْتُ أُرِيدُ دَائِمًا أَنْ يَكُونَ لِي صَدِيقٌ.	Kuntu urīdu dāʾiman an yakūna lī ṣadīq.	draft		
+h3p452	以前的日子也很好。	Yǐ qián de rì zi yě hěn hǎo.	The days before were nice too.	الْأَيَّامُ السَّابِقَةُ كَانَتْ جَمِيلَةً أَيْضًا.	Al-ʾayyāmu as-sābiqatu kānat jamīlatan ayḍan.	draft		
+h3p453	我们一般什么时候吃饭？	Wǒ men yì bān shén me shí hou chī fàn?	When do we usually eat?	مَتَى نَأْكُلُ عَادَةً؟	Matā naʾkulu ʿāda?	draft		
+h3p454	我在听音乐，别说话。	Wǒ zài tīng yīn yuè, bié shuō huà.	I'm listening to music, so don't talk.	أَسْتَمِعُ إِلَى الْمُوسِيقَى، فَلَا تَتَكَلَّمْ.	Astamiʿu ilā al-mūsīqā, falā tatakallam.	draft		
+h3p455	我们去银行旁边玩吧。	Wǒ men qù yín háng páng biān wán ba.	Let's go play next to the bank.	لِنَذْهَبْ وَنَلْعَبْ بِجَانِبِ الْمَصْرِفِ.	Linadhhab wanalʿab bijānibi al-maṣrif.	draft		
+h3p456	这杯饮料是谁的？	Zhè bēi yǐn liào shì shéi de?	Whose drink is this?	لِمَنْ هٰذَا الْمَشْرُوبُ؟	Liman hādhā al-mashrūb?	draft		
+h3p457	我应该去睡觉了。	Wǒ yīng gāi qù shuì jiào le.	I should go to sleep now.	يَنْبَغِي أَنْ أَذْهَبَ لِأَنَامَ الْآنَ.	Yanbaghī an adhhaba liʾanāma al-ʾān.	draft		
+h3p458	天气会影响我睡觉。	Tiān qì huì yǐng xiǎng wǒ shuì jiào.	The weather affects my sleep.	الطَّقْسُ يُؤَثِّرُ فِي نَوْمِي.	Aṭ-ṭaqsu yuʾaththiru fī nawmī.	draft		
+h3p459	你用什么听音乐？	Nǐ yòng shén me tīng yīn yuè?	What do you use to listen to music?	بِمَاذَا تَسْتَمِعُ إِلَى الْمُوسِيقَى؟	Bimādhā tastamiʿu ilā al-mūsīqā?	draft		
+h3p460	我们再玩一个游戏吧。	Wǒ men zài wán yí gè yóu xì ba.	Let's play another game.	لِنَلْعَبْ لُعْبَةً أُخْرَى.	Linalʿab luʿbatan ukhrā.	draft		
+h3p461	这里最有名的是什么？	Zhè lǐ zuì yǒu míng de shì shén me?	What's the most famous thing here?	مَا أَشْهَرُ شَيْءٍ هُنَا؟	Mā ashharu shayʾin hunā?	draft		
+h3p462	你又忘记吃饭了吗？	Nǐ yòu wàng jì chī fàn le ma?	Did you forget to eat again?	هَلْ نَسِيتَ أَنْ تَأْكُلَ مَرَّةً أُخْرَى؟	Hal nasīta an taʾkula marratan ukhrā?	draft		
+h3p463	我今天遇到很多朋友。	Wǒ jīn tiān yù dào hěn duō péng you.	I ran into lots of friends today.	قَابَلْتُ أَصْدِقَاءَ كَثِيرِينَ الْيَوْمَ.	Qābaltu aṣdiqāʾa kathīrīna al-yawm.	draft		
+h3p464	我愿意一直和你在一起。	Wǒ yuàn yì yì zhí hé nǐ zài yì qǐ.	I'm willing to stay with you always.	أَرْغَبُ فِي أَنْ أَبْقَى مَعَكَ دَائِمًا.	Arghabu fī an abqā maʿaka dāʾiman.	draft		
+h3p465	月亮出来了，晚安。	Yuè liang chū lái le, wǎn ān.	The moon is out, good night.	طَلَعَ الْقَمَرُ، تُصْبِحُ عَلَى خَيْرٍ.	Ṭalaʿa al-qamar, tuṣbiḥu ʿalā khayr.	draft		
+h3p466	我越吃越想吃。	Wǒ yuè chī yuè xiǎng chī.	The more I eat, the more I want.	كُلَّمَا أَكَلْتُ أَكْثَرَ، أَرَدْتُ أَكْثَرَ.	Kullamā akaltu akthar, aradtu akthar.	draft		
+h3p467	车站的人很多，我有点怕。	Chē zhàn de rén hěn duō, wǒ yǒu diǎn pà.	There are lots of people at the station, and I'm a bit scared.	النَّاسُ كَثِيرُونَ فِي الْمَحَطَّةِ، أَنَا خَائِفٌ قَلِيلًا.	An-nāsu kathīrūna fī al-maḥaṭṭa, anā khāʾifun qalīlan.	draft		
+h3p468	我想要一个礼物，你能送我吗？	Wǒ xiǎng yào yí gè lǐ wù, nǐ néng sòng wǒ ma?	I want a present. Can you give me one?	أُرِيدُ هَدِيَّةً، هَلْ تُعْطِينِي وَاحِدَةً؟	Urīdu hadiyya, hal tuʿṭīnī wāḥida?	draft		
+h3p469	我喜欢听历史故事。	Wǒ xǐ huan tīng lì shǐ gù shì.	I like listening to history stories.	أُحِبُّ الِاسْتِمَاعَ إِلَى قِصَصٍ تَارِيخِيَّةٍ.	Uḥibbu al-istimāʿa ilā qiṣaṣin tārīkhiyya.	draft		
+h3p470	附近有一个公园，我们去玩吧！	Fù jìn yǒu yí gè gōng yuán, wǒ men qù wán ba!	There is a park nearby. Let's go and play!	تُوجَدُ حَدِيقَةٌ قَرِيبَةٌ، لِنَذْهَبْ وَنَلْعَبْ!	Tūjadu ḥadīqatun qarība, linadhhab wanalʿab!	draft		
+h3p471	我一边吃饭，一边看电视。	Wǒ yì biān chī fàn, yì biān kàn diàn shì.	I am eating and watching TV at the same time.	آكُلُ وَأُشَاهِدُ التِّلْفَازَ فِي الْوَقْتِ نَفْسِهِ.	Ākulu waʾushāhidu at-tilfāza fī al-waqti nafsih.	draft		
+h3p472	我的嘴好干，想喝水。	Wǒ de zuǐ hǎo gān, xiǎng hē shuǐ.	My mouth is so dry. I want some water.	فَمِي جَافٌّ جِدًّا، أُرِيدُ أَنْ أَشْرَبَ مَاءً.	Famī jāffun jiddan, urīdu an ashraba māʾan.	draft		
