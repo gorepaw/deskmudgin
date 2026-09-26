@@ -1,0 +1,59 @@
+id	verdict	fix_gloss	note
+n061	fix	رُغَيْوَةٌ	Zubayd is a real given name; foam-bubble; swapped with n084
+n062	fix	دُوَيِّرَةٌ	دُوَيْرَة means little house; little circle
+n063	fix	دُحَيْرِيجَةٌ	مُدَحْرَجٌ is a participle not a pet form; diminutive of دحروجة (rolling thing)
+n064	ok		pearl
+n065	fix	دُرَيْرَةٌ	diminutive of دُرَّة is دُرَيْرَة
+n066	ok		little shell
+n067	fix	قُوَيْقِعَةٌ	مُحَيْرَة reads as bewildering; little snail-shell
+n068	ok		little wave
+n069	fix	لُجَيْجَةٌ	عُبَيْبٌ obscure; little surge
+n070	ok		little sea
+n071	fix	يُمَيْمٌ	Buḥayra is lake and too close to n070; poetic يَمّ (sea)
+n072	ok		diminutive of ماء
+n073	ok		little drop
+n074	ok		little dew
+n075	ok		little moon
+n076	fix	هُلَيِّلٌ	قَمُّورٌ is not a word; little crescent
+n077	ok		little star
+n078	fix	كُوَيْكِبٌ	Thurayyā is a common girl's name; little star/planet
+n079	ok		little sweet (حلوى)
+n080	ok		little snowball
+n081	fix	جُلَيِّدٌ	diminutive of جليد is جُلَيِّد (جُلَيْد would be skin)
+n082	fix	صُقَيِّعٌ	diminutive of صقيع is صُقَيِّع
+n083	ok		little cloud
+n084	fix	وُبَيْرَةٌ	Fluffy: little fur/down (رغوة moved to n061)
+n085	fix	فُضَيْضَةٌ	diminutive of فضة is فُضَيْضَة
+n086	fix	سُبَيِّكَةٌ	لُجَيْن is a common girl's name; small silver ingot
+n087	fix	مُدَيْدٌ	Tuyayyir is not a word; diminutive of مَدّ (tide)
+n088	fix	نُفَيْخَةٌ	Fuṭayra too near Fuṭayr (n017); little puff
+n089	ok		little cream/custard
+n090	fix	هُلَامَةٌ	Hulaym would be wrong (هلام needs فُعَيِّل) and too near n109; jelly = هُلَامَة
+n091	ok		little sugar; pattern ok
+n092	fix	عُذَيِّبٌ	Ḥulayw too near Ḥulaywa (n079); little sweet one
+n093	fix	كُرَيْمِيلٌ	لُبَيْنَة is labneh cheese; toffee/caramel
+n094	fix	نُدَيْفَةٌ	Quṭayna too near Quṭayra (n073); little cotton tuft
+n095	fix	كُفَيْتَةٌ	بُنَيْدِقَة is a pellet/hazelnut; meatball = كفتة
+n096	fix	طُوَيْبَةٌ	Kubayya too near Kurayya (n015); little ball (طابة)
+n098	fix	لُفَيْفَةٌ	لفيف means crowd; little roll
+n099	fix	شُفَيْهَةٌ	diminutive of شفة (lip) is شُفَيْهَة
+n100	fix	فُرَيِّحٌ	diminutive of فرح is فُرَيِّح
+n101	fix	ضُحَيِّكٌ	diminutive of ضحوك is ضُحَيِّك
+n102	ok		diminutive of ساكت
+n103	fix	وُدَيِّعٌ	Sulaym is a very common given name; gentle
+n104	ok		little treasure
+n105	fix	مَحَارَةٌ	وُدَيْعَة means deposit and is a given name; shell/oyster
+n106	ok		little sea star
+n107	fix	حُلَيْزِينٌ	diminutive of حلزون is حُلَيْزِين; snail for conch is loose drift
+n108	fix	رُذَيِّذٌ	diminutive of رذاذ is رُذَيِّذ
+n109	fix	قُنَيْدِيلٌ	Hulayma too near jelly; jellyfish = قنديل البحر, little lantern
+n110	ok		little whale
+n111	fix	عُنَيْبِرٌ	حَوُّوتٌ not a word; too near Ḥuwayt; ʿanbar is a whale
+n112	ok		little penguin
+n113	fix	جُبَيْنَةٌ	Nuʿayma is a girl's given name; little cheese (tofu = soy cheese)
+n114	fix	رُزَيْزَةٌ	Urayza too near Urayz (n116); little rice thing
+n115	fix	فُوَيْنِيسٌ	Funaynīs not a word; little lantern (فانوس)
+n116	ok		little rice grain
+n117	ok		little full moon; Budayr is also a rare name, acceptable
+n118	ok		little dew/light rain
+n119	ok		little raindrop

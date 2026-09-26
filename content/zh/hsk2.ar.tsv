@@ -1,450 +1,450 @@
 id	script	reading	english	gloss	gloss_reading	status	checks	note
-h2p001	我想吃面条。	Wǒ xiǎng chī miàn tiáo.	I want to eat noodles.	أُرِيدُ أَنْ آكُلَ الْمَعْكَرُونَةَ.	Urīdu an ākula al-maʿkarūna.	draft		
-h2p002	我想吃鸡蛋。	Wǒ xiǎng chī jī dàn.	I want to eat eggs.	أُرِيدُ أَنْ آكُلَ الْبَيْضَ.	Urīdu an ākula al-bayḍ.	draft		
-h2p003	我想喝牛奶。	Wǒ xiǎng hē niú nǎi.	I want to drink milk.	أُرِيدُ أَنْ أَشْرَبَ الْحَلِيبَ.	Urīdu an ashraba al-ḥalīb.	draft		
-h2p004	你有西瓜吗？	Nǐ yǒu xī guā ma?	Do you have any watermelon?	هَلْ عِنْدَكَ بِطِّيخٌ؟	Hal ʿindaka biṭṭīkh?	draft		
-h2p005	我想吃羊肉。	Wǒ xiǎng chī yáng ròu.	I want to eat lamb.	أُرِيدُ أَنْ آكُلَ لَحْمَ الْغَنَمِ.	Urīdu an ākula laḥma al-ghanam.	draft		
-h2p006	我要吃饭！	Wǒ yào chī fàn!	I want to eat!	أُرِيدُ أَنْ آكُلَ!	Urīdu an ākul!	draft		
-h2p007	我们什么时候吃饭？还要等吗？	Wǒ men shén me shí hou chī fàn? Hái yào děng ma?	When do we eat? Do we still have to wait?	مَتَى نَأْكُلُ؟ هَلْ عَلَيْنَا أَنْ نَنْتَظِرَ أَيْضًا؟	Matā naʾkul? Hal ʿalaynā an nantaẓira ayḍan?	draft		
-h2p008	有没有好吃的？	Yǒu méi yǒu hǎo chī de?	Is there anything tasty?	هَلْ يُوجَدُ شَيْءٌ لَذِيذٌ؟	Hal yūjadu shayʾun ladhīdh?	draft		
-h2p009	给我一点儿吃的吧。	Gěi wǒ yì diǎnr chī de ba.	Give me a little something to eat.	أَعْطِنِي قَلِيلًا مِنَ الطَّعَامِ.	Aʿṭinī qalīlan mina aṭ-ṭaʿām.	draft		
-h2p010	这儿有鱼吗？	Zhèr yǒu yú ma?	Is there any fish here?	هَلْ هُنَا سَمَكٌ؟	Hal hunā samak?	draft		
-h2p011	我已经一天没吃东西了。	Wǒ yǐ jīng yì tiān méi chī dōng xi le.	I haven't eaten anything all day.	لَمْ آكُلْ شَيْئًا مُنْذُ يَوْمٍ كَامِلٍ.	Lam ākul shayʾan mundhu yawmin kāmil.	draft		
-h2p012	快给我吃的！	Kuài gěi wǒ chī de!	Quick, give me something to eat!	أَعْطِنِي الطَّعَامَ بِسُرْعَةٍ!	Aʿṭinī aṭ-ṭaʿāma bisurʿa!	draft		
-h2p013	我可以吃这个吗？	Wǒ kě yǐ chī zhè ge ma?	Can I eat this?	هَلْ يُمْكِنُنِي أَنْ آكُلَ هٰذَا؟	Hal yumkinunī an ākula hādhā?	draft		
-h2p014	还有牛奶吗？	Hái yǒu niú nǎi ma?	Is there any milk left?	هَلْ بَقِيَ حَلِيبٌ؟	Hal baqiya ḥalīb?	draft		
-h2p015	饭准备好了吗？	Fàn zhǔn bèi hǎo le ma?	Is the food ready?	هَلِ الطَّعَامُ جَاهِزٌ؟	Hali aṭ-ṭaʿāmu jāhiz?	draft		
-h2p016	我想吃苹果和西瓜。	Wǒ xiǎng chī píng guǒ hé xī guā.	I want to eat apples and watermelon.	أُرِيدُ أَنْ آكُلَ التُّفَّاحَ وَالْبِطِّيخَ.	Urīdu an ākula at-tuffāḥa wa-l-biṭṭīkh.	draft		
-h2p017	我最喜欢吃鱼。	Wǒ zuì xǐ huan chī yú.	I like eating fish the most.	أُحِبُّ أَكْلَ السَّمَكِ أَكْثَرَ مِنْ أَيِّ شَيْءٍ آخَرَ.	Uḥibbu akla as-samaki akthara min ayyi shayʾin ākhar.	draft		
-h2p018	我要喝咖啡。	Wǒ yào hē kā fēi.	I want coffee.	أُرِيدُ أَنْ أَشْرَبَ الْقَهْوَةَ.	Urīdu an ashraba al-qahwa.	draft		
-h2p019	我等了很长时间了。	Wǒ děng le hěn cháng shí jiān le.	I've been waiting a long time.	اِنْتَظَرْتُ وَقْتًا طَوِيلًا.	Intaẓartu waqtan ṭawīlan.	draft		
-h2p020	中午我们吃面条吧。	Zhōng wǔ wǒ men chī miàn tiáo ba.	Let's have noodles for lunch.	لِنَأْكُلِ الْمَعْكَرُونَةَ ظُهْرًا.	Linaʾkuli al-maʿkarūnata ẓuhran.	draft		
-h2p021	您好！	Nín hǎo!	Hello! (polite)	مَرْحَبًا!	Marḥaban!	draft		
-h2p022	欢迎！	Huān yíng!	Welcome!	أَهْلًا وَسَهْلًا!	Ahlan wasahlan!	draft		
-h2p023	欢迎你来！	Huān yíng nǐ lái!	Glad you came!	أَهْلًا بِمَجِيئِكَ!	Ahlan bimajīʾik!	draft		
-h2p024	欢迎回来！	Huān yíng huí lái!	Welcome back!	أَهْلًا بِعَوْدَتِكَ!	Ahlan biʿawdatik!	draft		
-h2p025	早上好！	Zǎo shang hǎo!	Good morning!	صَبَاحَ الْخَيْرِ!	Ṣabāḥa al-khayr!	draft		
-h2p026	晚上好！	Wǎn shang hǎo!	Good evening!	مَسَاءَ الْخَيْرِ!	Masāʾa al-khayr!	draft		
-h2p027	你身体好吗？	Nǐ shēn tǐ hǎo ma?	How is your health?	كَيْفَ صِحَّتُكَ؟	Kayfa ṣiḥḥatuk?	draft		
-h2p028	你最近怎么样？	Nǐ zuì jìn zěn me yàng?	How have you been lately?	كَيْفَ حَالُكَ مُؤَخَّرًا؟	Kayfa ḥāluka muʾakhkharan?	draft		
-h2p029	大家好！	Dà jiā hǎo!	Hello, everyone!	مَرْحَبًا بِالْجَمِيعِ!	Marḥaban bi-l-jamīʿ!	draft		
-h2p030	你也在这儿！	Nǐ yě zài zhèr!	You're here too!	أَنْتَ هُنَا أَيْضًا!	Anta hunā ayḍan!	draft		
-h2p031	你今天忙吗？	Nǐ jīn tiān máng ma?	Are you busy today?	هَلْ أَنْتَ مَشْغُولٌ الْيَوْمَ؟	Hal anta mashghūlun al-yawm?	draft		
-h2p032	您贵姓？	Nín guì xìng?	What is your surname? (polite)	مَا اسْمُ عَائِلَتِكَ الْكَرِيمُ؟	Mā ismu ʿāʾilatika al-karīm?	draft		
-h2p033	你睡得好吗？	Nǐ shuì de hǎo ma?	Did you sleep well?	هَلْ نِمْتَ جَيِّدًا؟	Hal nimta jayyidan?	draft		
-h2p034	你还在吗？	Nǐ hái zài ma?	Are you still there?	هَلْ مَا زِلْتَ هُنَاكَ؟	Hal mā zilta hunāk?	draft		
-h2p035	我到了！	Wǒ dào le!	I've arrived!	لَقَدْ وَصَلْتُ!	Laqad waṣalt!	draft		
-h2p036	这个真好吃！	Zhè ge zhēn hǎo chī!	This is really tasty!	هٰذَا لَذِيذٌ حَقًّا!	Hādhā ladhīdhun ḥaqqan!	draft		
-h2p037	这个没有鱼好吃。	Zhè ge méi yǒu yú hǎo chī.	This isn't as tasty as fish.	هٰذَا لَيْسَ لَذِيذًا كَالسَّمَكِ.	Hādhā laysa ladhīdhan ka-s-samak.	draft		
-h2p038	我吃完了！	Wǒ chī wán le!	I've finished eating!	لَقَدِ انْتَهَيْتُ مِنَ الْأَكْلِ!	Laqadi intahaytu mina al-ʾakl!	draft		
-h2p039	我还要吃。	Wǒ hái yào chī.	I want to eat more.	أُرِيدُ أَنْ آكُلَ أَكْثَرَ.	Urīdu an ākula akthar.	draft		
-h2p040	真好吃！	Zhēn hǎo chī!	So tasty!	لَذِيذٌ جِدًّا!	Ladhīdhun jiddan!	draft		
-h2p041	我正在吃东西呢。	Wǒ zhèng zài chī dōng xi ne.	I'm eating right now.	أَنَا آكُلُ الْآنَ.	Anā ākulu al-ʾān.	draft		
-h2p042	别看我，我在吃。	Bié kàn wǒ, wǒ zài chī.	Don't look at me, I'm eating.	لَا تَنْظُرْ إِلَيَّ، أَنَا آكُلُ.	Lā tanẓur ilayy, anā ākul.	draft		
-h2p043	这个比苹果好吃。	Zhè ge bǐ píng guǒ hǎo chī.	This is tastier than apples.	هٰذَا أَلَذُّ مِنَ التُّفَّاحِ.	Hādhā aladhdhu mina at-tuffāḥ.	draft		
-h2p044	我吃了两个。	Wǒ chī le liǎng gè.	I ate two.	أَكَلْتُ اثْنَيْنِ.	Akaltu ithnayn.	draft		
-h2p045	别吃那个！	Bié chī nà ge!	Don't eat that!	لَا تَأْكُلْ ذٰلِكَ!	Lā taʾkul dhālik!	draft		
-h2p046	我累了。	Wǒ lèi le.	I'm tired.	أَنَا تَعِبٌ.	Anā taʿib.	draft		
-h2p047	我太累了。	Wǒ tài lèi le.	I'm too tired.	أَنَا تَعِبٌ جِدًّا.	Anā taʿibun jiddan.	draft		
-h2p048	我想休息一下。	Wǒ xiǎng xiū xi yí xià.	I want to rest for a bit.	أُرِيدُ أَنْ أَسْتَرِيحَ قَلِيلًا.	Urīdu an astarīḥa qalīlan.	draft		
-h2p049	我要去睡觉了。	Wǒ yào qù shuì jiào le.	I'm going to bed.	سَأَذْهَبُ لِلنَّوْمِ.	Saʾadhhabu li-n-nawm.	draft		
-h2p050	我已经很累了。	Wǒ yǐ jīng hěn lèi le.	I'm already very tired.	أَنَا تَعِبٌ جِدًّا بِالْفِعْلِ.	Anā taʿibun jiddan bi-l-fiʿl.	draft		
-h2p051	我今天想早点儿休息。	Wǒ jīn tiān xiǎng zǎo diǎnr xiū xi.	I want to rest early today.	أُرِيدُ أَنْ أَسْتَرِيحَ مُبَكِّرًا الْيَوْمَ.	Urīdu an astarīḥa mubakkiran al-yawm.	draft		
-h2p052	让我休息一下吧。	Ràng wǒ xiū xi yí xià ba.	Let me rest for a bit.	دَعْنِي أَسْتَرِحْ قَلِيلًا.	Daʿnī astariḥ qalīlan.	draft		
-h2p053	我今天非常累。	Wǒ jīn tiān fēi cháng lèi.	I'm extremely tired today.	أَنَا تَعِبٌ جِدًّا الْيَوْمَ.	Anā taʿibun jiddan al-yawm.	draft		
-h2p054	我不想起床。	Wǒ bù xiǎng qǐ chuáng.	I don't want to get up.	لَا أُرِيدُ أَنْ أَقُومَ.	Lā urīdu an aqūm.	draft		
-h2p055	别说话，我想睡觉。	Bié shuō huà, wǒ xiǎng shuì jiào.	Don't talk, I want to sleep.	لَا تَتَكَلَّمْ، أُرِيدُ أَنْ أَنَامَ.	Lā tatakallam, urīdu an anām.	draft		
-h2p056	我走不动了。	Wǒ zǒu bú dòng le.	I can't walk any further.	لَا أَسْتَطِيعُ الْمَشْيَ أَكْثَرَ.	Lā astaṭīʿu al-mashya akthar.	draft		
-h2p057	我们休息一下吧。	Wǒ men xiū xi yí xià ba.	Let's take a break.	لِنَسْتَرِحْ قَلِيلًا.	Linastariḥ qalīlan.	draft		
-h2p058	我很快乐！	Wǒ hěn kuài lè!	I'm very happy!	أَنَا سَعِيدٌ جِدًّا!	Anā saʿīdun jiddan!	draft		
-h2p059	今天真好！	Jīn tiān zhēn hǎo!	Today is really great!	الْيَوْمُ رَائِعٌ حَقًّا!	Al-yawmu rāʾiʿun ḥaqqan!	draft		
-h2p060	我非常高兴！	Wǒ fēi cháng gāo xìng!	I'm extremely happy!	أَنَا مَسْرُورٌ جِدًّا!	Anā masrūrun jiddan!	draft		
-h2p061	我最喜欢你了！	Wǒ zuì xǐ huan nǐ le!	I like you the most!	أُحِبُّكَ أَكْثَرَ مِنْ أَيِّ أَحَدٍ آخَرَ!	Uḥibbuka akthara min ayyi aḥadin ākhar!	draft		
-h2p062	你真好！	Nǐ zhēn hǎo!	You're really nice!	أَنْتَ لَطِيفٌ حَقًّا!	Anta laṭīfun ḥaqqan!	draft		
-h2p063	我觉得很好。	Wǒ jué de hěn hǎo.	I feel great.	أَشْعُرُ بِخَيْرٍ.	Ashʿuru bikhayr.	draft		
-h2p064	我想唱歌！	Wǒ xiǎng chàng gē!	I want to sing!	أُرِيدُ أَنْ أُغَنِّيَ!	Urīdu an ughanniy!	draft		
-h2p065	我们一起跳舞吧！	Wǒ men yì qǐ tiào wǔ ba!	Let's dance together!	لِنَرْقُصْ مَعًا!	Linarquṣ maʿan!	draft		
-h2p066	你看，我在笑！	Nǐ kàn, wǒ zài xiào!	Look, I'm smiling!	اُنْظُرْ، أَنَا أَضْحَكُ!	Unẓur, anā aḍḥak!	draft		
-h2p067	我每天都很快乐。	Wǒ měi tiān dōu hěn kuài lè.	I'm happy every day.	أَنَا سَعِيدٌ كُلَّ يَوْمٍ.	Anā saʿīdun kulla yawm.	draft		
-h2p068	生日快乐！	Shēng rì kuài lè!	Happy birthday!	عِيدَ مِيلَادٍ سَعِيدًا!	ʿĪda mīlādin saʿīdan!	draft		
-h2p069	大家都去哪儿了？	Dà jiā dōu qù nǎr le?	Where did everyone go?	أَيْنَ ذَهَبَ الْجَمِيعُ؟	Ayna dhahaba al-jamīʿ?	draft		
-h2p070	没有人和我玩。	Méi yǒu rén hé wǒ wán.	Nobody plays with me.	لَا أَحَدَ يَلْعَبُ مَعِي.	Lā aḥada yalʿabu maʿī.	draft		
-h2p071	谁来和我玩？	Shéi lái hé wǒ wán?	Who will come and play with me?	مَنْ سَيَأْتِي لِيَلْعَبَ مَعِي؟	Man sayaʾtī liyalʿaba maʿī?	draft		
-h2p072	我等你很长时间了。	Wǒ děng nǐ hěn cháng shí jiān le.	I've been waiting for you for a long time.	اِنْتَظَرْتُكَ وَقْتًا طَوِيلًا.	Intaẓartuka waqtan ṭawīlan.	draft		
-h2p073	你什么时候回来？我等你。	Nǐ shén me shí hou huí lái? Wǒ děng nǐ.	When are you coming back? I'll wait for you.	مَتَى سَتَعُودُ؟ سَأَنْتَظِرُكَ.	Matā sataʿūd? Saʾantaẓiruk.	draft		
-h2p074	我一个人，真没意思。	Wǒ yí gè rén, zhēn méi yì si.	On my own, it's really boring.	أَنَا وَحْدِي، وَهٰذَا مُمِلٌّ حَقًّا.	Anā waḥdī, wahādhā mumillun ḥaqqan.	draft		
-h2p075	你们都很忙吗？	Nǐ men dōu hěn máng ma?	Are you all busy?	هَلْ أَنْتُمْ مَشْغُولُونَ جَمِيعًا؟	Hal antum mashghūlūna jamīʿan?	draft		
-h2p076	我想和大家一起玩。	Wǒ xiǎng hé dà jiā yì qǐ wán.	I want to play with everyone.	أُرِيدُ أَنْ أَلْعَبَ مَعَ الْجَمِيعِ.	Urīdu an alʿaba maʿa al-jamīʿ.	draft		
-h2p077	我想坐你旁边。	Wǒ xiǎng zuò nǐ páng biān.	I want to sit next to you.	أُرِيدُ أَنْ أَجْلِسَ بِجَانِبِكَ.	Urīdu an ajlisa bijānibik.	draft		
-h2p078	别这样！	Bié zhè yàng!	Don't do that!	لَا تَفْعَلْ هَكَذَا!	Lā tafʿal hakadhā!	draft		
-h2p079	你要做什么？	Nǐ yào zuò shén me?	What are you going to do?	مَاذَا سَتَفْعَلُ؟	Mādhā satafʿal?	draft		
-h2p080	我们要去哪儿？	Wǒ men yào qù nǎr?	Where are we going?	إِلَى أَيْنَ سَنَذْهَبُ؟	Ilā ayna sanadhhab?	draft		
-h2p081	太高了！	Tài gāo le!	Too high!	مُرْتَفِعٌ جِدًّا!	Murtafiʿun jiddan!	draft		
-h2p082	让我下去！	Ràng wǒ xià qù!	Let me down!	أَنْزِلْنِي!	Anzilnī!	draft		
-h2p083	快让我下来！	Kuài ràng wǒ xià lái!	Quick, let me down!	أَنْزِلْنِي بِسُرْعَةٍ!	Anzilnī bisurʿa!	draft		
-h2p084	我不要！	Wǒ bú yào!	I don't want to!	لَا أُرِيدُ!	Lā urīd!	draft		
-h2p085	慢一点儿！	Màn yì diǎnr!	Slow down!	أَبْطِئْ قَلِيلًا!	Abṭiʾ qalīlan!	draft		
-h2p086	你为什么这样做？	Nǐ wèi shén me zhè yàng zuò?	Why did you do that?	لِمَاذَا فَعَلْتَ هَكَذَا؟	Limādhā faʿalta hakadhā?	draft		
-h2p087	别再这样了！	Bié zài zhè yàng le!	Don't do that again!	لَا تَفْعَلْ هَكَذَا مَرَّةً أُخْرَى!	Lā tafʿal hakadhā marratan ukhrā!	draft		
-h2p088	这不对！	Zhè bú duì!	That's not right!	هٰذَا غَيْرُ صَحِيحٍ!	Hādhā ghayru ṣaḥīḥ!	draft		
-h2p089	你做错了。	Nǐ zuò cuò le.	You did it wrong.	أَخْطَأْتَ.	Akhṭaʾt.	draft		
-h2p090	谢谢您！	Xiè xie nín!	Thank you! (polite)	شُكْرًا جَزِيلًا!	Shukran jazīlan!	draft		
-h2p091	真好吃，谢谢！	Zhēn hǎo chī, xiè xie!	Really tasty, thanks!	لَذِيذٌ حَقًّا، شُكْرًا!	Ladhīdhun ḥaqqan, shukran!	draft		
-h2p092	我最喜欢吃这个。	Wǒ zuì xǐ huan chī zhè ge.	This is my favourite thing to eat.	هٰذَا هُوَ أَكْثَرُ مَا أُحِبُّ أَكْلَهُ.	Hādhā huwa aktharu mā uḥibbu aklah.	draft		
-h2p093	我还想吃！	Wǒ hái xiǎng chī!	I want more!	أُرِيدُ الْمَزِيدَ!	Urīdu al-mazīd!	draft		
-h2p094	我吃得很好。	Wǒ chī de hěn hǎo.	I ate well.	أَكَلْتُ جَيِّدًا.	Akaltu jayyidan.	draft		
-h2p095	你给我的菜很好吃。	Nǐ gěi wǒ de cài hěn hǎo chī.	The food you gave me is very tasty.	الطَّعَامُ اَلَّذِي أَعْطَيْتَنِيهُ لَذِيذٌ جِدًّا.	Aṭ-ṭaʿāmu alladhī aʿṭaytanīhu ladhīdhun jiddan.	draft		
-h2p096	再来一次！	Zài lái yí cì!	Once more!	مَرَّةً أُخْرَى!	Marratan ukhrā!	draft		
-h2p097	别走！	Bié zǒu!	Don't go!	لَا تَذْهَبْ!	Lā tadhhab!	draft		
-h2p098	我最喜欢这样了。	Wǒ zuì xǐ huan zhè yàng le.	I like this the most.	أُحِبُّ هٰذَا أَكْثَرَ مِنْ أَيِّ شَيْءٍ.	Uḥibbu hādhā akthara min ayyi shayʾ.	draft		
-h2p099	你可以再来一次吗？	Nǐ kě yǐ zài lái yí cì ma?	Can you do it once more?	هَلْ يُمْكِنُكَ أَنْ تَفْعَلَهَا مَرَّةً أُخْرَى؟	Hal yumkinuka an tafʿalahā marratan ukhrā?	draft		
-h2p100	真好！	Zhēn hǎo!	That's really nice!	جَمِيلٌ جِدًّا!	Jamīlun jiddan!	draft		
-h2p101	你对我真好。	Nǐ duì wǒ zhēn hǎo.	You're really good to me.	أَنْتَ لَطِيفٌ جِدًّا مَعِي.	Anta laṭīfun jiddan maʿī.	draft		
-h2p102	我要走了。	Wǒ yào zǒu le.	I'm going to go.	سَأَذْهَبُ الْآنَ.	Saʾadhhabu al-ʾān.	draft		
-h2p103	晚上见！	Wǎn shang jiàn!	See you tonight!	أَرَاكَ مَسَاءً!	Arāka masāʾ!	draft		
-h2p104	我先走了，再见！	Wǒ xiān zǒu le, zài jiàn!	I'll go first, bye!	سَأَذْهَبُ أَوَّلًا، إِلَى اللِّقَاءِ!	Saʾadhhabu awwalan, ilā al-liqāʾ!	draft		
-h2p105	慢走！	Màn zǒu!	Take care! (to someone leaving)	مَعَ السَّلَامَةِ!	Maʿa as-salāma!	draft		
-h2p106	您慢走。	Nín màn zǒu.	Take care. (polite, to someone leaving)	مَعَ السَّلَامَةِ، اِعْتَنِ بِنَفْسِكَ.	Maʿa as-salāma, iʿtani binafsik.	draft		
-h2p107	明天早上见。	Míng tiān zǎo shang jiàn.	See you tomorrow morning.	أَرَاكَ صَبَاحَ غَدٍ.	Arāka ṣabāḥa ghad.	draft		
-h2p108	我起床了！	Wǒ qǐ chuáng le!	I'm up!	لَقَدِ اسْتَيْقَظْتُ!	Laqadi istayqaẓt!	draft		
-h2p109	现在几点了？我睡了多长时间？	Xiàn zài jǐ diǎn le? Wǒ shuì le duō cháng shí jiān?	What time is it? How long did I sleep?	كَمِ السَّاعَةُ الْآنَ؟ كَمْ نِمْتُ مِنَ الْوَقْتِ؟	Kami as-sāʿatu al-ʾān? Kam nimtu mina al-waqt?	draft		
-h2p110	我还想睡。	Wǒ hái xiǎng shuì.	I still want to sleep.	مَا زِلْتُ أُرِيدُ أَنْ أَنَامَ.	Mā ziltu urīdu an anām.	draft		
-h2p111	我睡得很好。	Wǒ shuì de hěn hǎo.	I slept well.	نِمْتُ جَيِّدًا.	Nimtu jayyidan.	draft		
-h2p112	已经晚上了吗？	Yǐ jīng wǎn shang le ma?	Is it already evening?	هَلْ حَلَّ الْمَسَاءُ بِالْفِعْلِ؟	Hal ḥalla al-masāʾu bi-l-fiʿl?	draft		
-h2p113	我睡了十个小时。	Wǒ shuì le shí gè xiǎo shí.	I slept for ten hours.	نِمْتُ عَشْرَ سَاعَاتٍ.	Nimtu ʿashra sāʿāt.	draft		
-h2p114	今天是晴天。	Jīn tiān shì qíng tiān.	It's sunny today.	الْجَوُّ الْيَوْمَ مُشْمِسٌ.	Al-jawwu al-yawma mushmis.	draft		
-h2p115	今天是阴天。	Jīn tiān shì yīn tiān.	It's overcast today.	الْجَوُّ الْيَوْمَ غَائِمٌ.	Al-jawwu al-yawma ghāʾim.	draft		
-h2p116	外面下雪了！	Wài mian xià xuě le!	It's snowing outside!	الثَّلْجُ يَتَسَاقَطُ فِي الْخَارِجِ!	Ath-thalju yatasāqaṭu fī al-khārij!	draft		
-h2p117	明天可能下雨。	Míng tiān kě néng xià yǔ.	It might rain tomorrow.	رُبَّمَا تُمْطِرُ غَدًا.	Rubbamā tumṭiru ghadan.	draft		
-h2p118	今天比昨天冷。	Jīn tiān bǐ zuó tiān lěng.	Today is colder than yesterday.	الْيَوْمُ أَبْرَدُ مِنَ الْأَمْسِ.	Al-yawmu abradu mina al-ʾams.	draft		
-h2p119	今天天气非常好。	Jīn tiān tiān qì fēi cháng hǎo.	The weather is extremely good today.	الطَّقْسُ الْيَوْمَ جَمِيلٌ جِدًّا.	Aṭ-ṭaqsu al-yawma jamīlun jiddan.	draft		
-h2p120	下雪了，我们出去玩吧！	Xià xuě le, wǒ men chū qù wán ba!	It's snowing, let's go out and play!	الثَّلْجُ يَتَسَاقَطُ، لِنَخْرُجْ لِلَّعِبِ!	Ath-thalju yatasāqaṭ, linakhruj lillaʿib!	draft		
-h2p121	我喜欢下雪。	Wǒ xǐ huan xià xuě.	I like it when it snows.	أُحِبُّ نُزُولَ الثَّلْجِ.	Uḥibbu nuzūla ath-thalj.	draft		
-h2p122	外面很冷，多穿点儿衣服。	Wài mian hěn lěng, duō chuān diǎnr yī fu.	It's cold outside, put on more clothes.	الْجَوُّ بَارِدٌ فِي الْخَارِجِ، اِلْبَسْ مَلَابِسَ أَكْثَرَ.	Al-jawwu bāridun fī al-khārij, ilbas malābisa akthar.	draft		
-h2p123	今天太热了，我想去游泳。	Jīn tiān tài rè le, wǒ xiǎng qù yóu yǒng.	It's too hot today, I want to go swimming.	الْجَوُّ حَارٌّ جِدًّا الْيَوْمَ، أُرِيدُ أَنْ أَذْهَبَ لِلسِّبَاحَةِ.	Al-jawwu ḥārrun jiddan al-yawm, urīdu an adhhaba li-s-sibāḥa.	draft		
-h2p124	明天是晴天吗？	Míng tiān shì qíng tiān ma?	Will it be sunny tomorrow?	هَلْ سَيَكُونُ الْجَوُّ مُشْمِسًا غَدًا؟	Hal sayakūnu al-jawwu mushmisan ghadan?	draft		
-h2p125	天阴了，可能要下雨。	Tiān yīn le, kě néng yào xià yǔ.	The sky has clouded over; it might rain.	أَصْبَحَتِ السَّمَاءُ غَائِمَةً، رُبَّمَا تُمْطِرُ.	Aṣbaḥati as-samāʾu ghāʾima, rubbamā tumṭir.	draft		
-h2p126	我有一个哥哥。	Wǒ yǒu yí gè gē ge.	I have an older brother.	عِنْدِي أَخٌ كَبِيرٌ.	ʿIndī akhun kabīr.	draft		
-h2p127	我姐姐是医生。	Wǒ jiě jie shì yī shēng.	My older sister is a doctor.	أُخْتِي الْكَبِيرَةُ طَبِيبَةٌ.	Ukhtī al-kabīratu ṭabība.	draft		
-h2p128	我弟弟六岁。	Wǒ dì di liù suì.	My younger brother is six.	أَخِي الصَّغِيرُ عُمْرُهُ سِتُّ سَنَوَاتٍ.	Akhī aṣ-ṣaghīru ʿumruhu sittu sanawāt.	draft		
-h2p129	我妹妹很漂亮。	Wǒ mèi mei hěn piào liang.	My younger sister is very pretty.	أُخْتِي الصَّغِيرَةُ جَمِيلَةٌ جِدًّا.	Ukhtī aṣ-ṣaghīratu jamīlatun jiddan.	draft		
-h2p130	他是我丈夫。	Tā shì wǒ zhàng fu.	He is my husband.	هُوَ زَوْجِي.	Huwa zawjī.	draft		
-h2p131	她是我妻子。	Tā shì wǒ qī zi.	She is my wife.	هِيَ زَوْجَتِي.	Hiya zawjatī.	draft		
-h2p132	你有孩子吗？	Nǐ yǒu hái zi ma?	Do you have children?	هَلْ عِنْدَكَ أَوْلَادٌ؟	Hal ʿindaka awlād?	draft		
-h2p133	我哥哥比我高。	Wǒ gē ge bǐ wǒ gāo.	My older brother is taller than me.	أَخِي الْكَبِيرُ أَطْوَلُ مِنِّي.	Akhī al-kabīru aṭwalu minnī.	draft		
-h2p134	你有几个姐姐？	Nǐ yǒu jǐ gè jiě jie?	How many older sisters do you have?	كَمْ أُخْتًا كَبِيرَةً عِنْدَكَ؟	Kam ukhtan kabīratan ʿindak?	draft		
-h2p135	我的孩子喜欢踢足球。	Wǒ de hái zi xǐ huan tī zú qiú.	My child likes playing football.	وَلَدِي يُحِبُّ لَعِبَ كُرَةِ الْقَدَمِ.	Waladī yuḥibbu laʿiba kurati al-qadam.	draft		
-h2p136	我们几点上课？	Wǒ men jǐ diǎn shàng kè?	What time is our class?	مَتَى يَبْدَأُ دَرْسُنَا؟	Matā yabdaʾu darsunā?	draft		
-h2p137	今天有考试。	Jīn tiān yǒu kǎo shì.	There's an exam today.	الْيَوْمَ هُنَاكَ اِمْتِحَانٌ.	Al-yawma hunāka imtiḥān.	draft		
-h2p138	这个题我不会。	Zhè ge tí wǒ bú huì.	I can't do this question.	لَا أَعْرِفُ حَلَّ هٰذَا السُّؤَالِ.	Lā aʿrifu ḥalla hādhā as-suʾāl.	draft		
-h2p139	我不懂这个问题。	Wǒ bù dǒng zhè ge wèn tí.	I don't understand this question.	لَا أَفْهَمُ هٰذَا السُّؤَالَ.	Lā afhamu hādhā as-suʾāl.	draft		
-h2p140	你懂了吗？	Nǐ dǒng le ma?	Do you understand?	هَلْ فَهِمْتَ؟	Hal fahimt?	draft		
-h2p141	我懂了！	Wǒ dǒng le!	I get it!	فَهِمْتُ!	Fahimt!	draft		
-h2p142	老师在教室里。	Lǎo shī zài jiào shì lǐ.	The teacher is in the classroom.	الْمُعَلِّمُ فِي الْفَصْلِ.	Al-muʿallimu fī al-faṣl.	draft		
-h2p143	我要准备考试。	Wǒ yào zhǔn bèi kǎo shì.	I need to prepare for the exam.	عِنْدِي اِمْتِحَانٌ، يَجِبُ أَنْ أَسْتَعِدَّ لَهُ.	ʿIndī imtiḥān, yajibu an astaʿidda lah.	draft		
-h2p144	考试开始了！	Kǎo shì kāi shǐ le!	The exam has started!	لَقَدْ بَدَأَ اِمْتِحَانُنَا!	Laqad badaʾa imtiḥānunā!	draft		
-h2p145	你考得怎么样？	Nǐ kǎo de zěn me yàng?	How did your exam go?	كَيْفَ كَانَ اِمْتِحَانُكَ؟	Kayfa kāna imtiḥānuk?	draft		
-h2p146	我可以问你一个问题吗？	Wǒ kě yǐ wèn nǐ yí gè wèn tí ma?	Can I ask you a question?	هَلْ يُمْكِنُنِي أَنْ أَسْأَلَكَ سُؤَالًا؟	Hal yumkinunī an asʾalaka suʾālan?	draft		
-h2p147	请回答我的问题。	Qǐng huí dá wǒ de wèn tí.	Please answer my question.	مِنْ فَضْلِكَ أَجِبْ عَنْ سُؤَالِي.	Min faḍlika ajib ʿan suʾālī.	draft		
-h2p148	我学习汉语已经一年了。	Wǒ xué xí hàn yǔ yǐ jīng yì nián le.	I've been studying Chinese for a year now.	أَدْرُسُ اللُّغَةَ الصِّينِيَّةَ مُنْذُ سَنَةٍ.	Adrusu al-lughata aṣ-ṣīniyyata mundhu sana.	draft		
-h2p149	这个字是什么意思？	Zhè ge zì shì shén me yì si?	What does this character mean?	مَا مَعْنَى هٰذِهِ الْكَلِمَةِ؟	Mā maʿnā hādhihi al-kalima?	draft		
-h2p150	你说的是什么意思？	Nǐ shuō de shì shén me yì si?	What do you mean?	مَاذَا تَقْصِدُ؟	Mādhā taqṣid?	draft		
-h2p151	我不知道。	Wǒ bù zhī dào.	I don't know.	لَا أَعْرِفُ.	Lā aʿrif.	draft		
-h2p152	你知道吗？	Nǐ zhī dào ma?	Do you know?	هَلْ تَعْرِفُ؟	Hal taʿrif?	draft		
-h2p153	我知道了！	Wǒ zhī dào le!	Got it!	عَرَفْتُ!	ʿAraft!	draft		
-h2p154	铅笔在桌子上。	Qiān bǐ zài zhuō zi shang.	The pencil is on the table.	قَلَمُ الرَّصَاصِ عَلَى الطَّاوِلَةِ.	Qalamu ar-raṣāṣi ʿalā aṭ-ṭāwila.	draft		
-h2p155	我找不到我的铅笔了。	Wǒ zhǎo bú dào wǒ de qiān bǐ le.	I can't find my pencil.	لَا أَجِدُ قَلَمَ رَصَاصِي.	Lā ajidu qalama raṣāṣī.	draft		
-h2p156	这是我第一次来北京。	Zhè shì wǒ dì yī cì lái běi jīng.	This is my first time in Beijing.	هٰذِهِ أَوَّلُ مَرَّةٍ أَزُورُ فِيهَا بِكِينَ.	Hādhihi awwalu marratin azūru fīhā bikīn.	draft		
-h2p157	我哥哥在公司工作。	Wǒ gē ge zài gōng sī gōng zuò.	My older brother works at a company.	أَخِي الْكَبِيرُ يَعْمَلُ فِي شَرِكَةٍ.	Akhī al-kabīru yaʿmalu fī sharika.	draft		
-h2p158	我要去上班了。	Wǒ yào qù shàng bān le.	I'm off to work.	سَأَذْهَبُ إِلَى الْعَمَلِ.	Saʾadhhabu ilā al-ʿamal.	draft		
-h2p159	你每天几点上班？	Nǐ měi tiān jǐ diǎn shàng bān?	What time do you start work every day?	فِي أَيِّ سَاعَةٍ تَذْهَبُ إِلَى الْعَمَلِ كُلَّ يَوْمٍ؟	Fī ayyi sāʿatin tadhhabu ilā al-ʿamali kulla yawm?	draft		
-h2p160	他工作很忙。	Tā gōng zuò hěn máng.	He's very busy with work.	هُوَ مَشْغُولٌ جِدًّا بِعَمَلِهِ.	Huwa mashghūlun jiddan biʿamalih.	draft		
-h2p161	我今天不上班。	Wǒ jīn tiān bú shàng bān.	I'm not working today.	لَا أَعْمَلُ الْيَوْمَ.	Lā aʿmalu al-yawm.	draft		
-h2p162	我喜欢打篮球。	Wǒ xǐ huan dǎ lán qiú.	I like playing basketball.	أُحِبُّ لَعِبَ كُرَةِ السَّلَّةِ.	Uḥibbu laʿiba kurati as-salla.	draft		
-h2p163	我们一起去踢足球吧！	Wǒ men yì qǐ qù tī zú qiú ba!	Let's go play football together!	لِنَذْهَبْ لِنَلْعَبَ كُرَةَ الْقَدَمِ مَعًا!	Linadhhab linalʿaba kurata al-qadami maʿan!	draft		
-h2p164	我每天早上跑步。	Wǒ měi tiān zǎo shang pǎo bù.	I run every morning.	أَرْكُضُ كُلَّ صَبَاحٍ.	Arkuḍu kulla ṣabāḥ.	draft		
-h2p165	你会游泳吗？	Nǐ huì yóu yǒng ma?	Can you swim?	هَلْ تَعْرِفُ السِّبَاحَةَ؟	Hal taʿrifu as-sibāḥa?	draft		
-h2p166	我游得很快。	Wǒ yóu de hěn kuài.	I swim fast.	أَسْبَحُ بِسُرْعَةٍ.	Asbaḥu bisurʿa.	draft		
-h2p167	运动对身体好。	Yùn dòng duì shēn tǐ hǎo.	Exercise is good for your health.	الرِّيَاضَةُ مُفِيدَةٌ لِلصِّحَّةِ.	Ar-riyāḍatu mufīdatun li-ṣ-ṣiḥḥa.	draft		
-h2p168	他跑得非常快。	Tā pǎo de fēi cháng kuài.	He runs extremely fast.	هُوَ يَرْكُضُ بِسُرْعَةٍ كَبِيرَةٍ.	Huwa yarkuḍu bisurʿatin kabīra.	draft		
-h2p169	你喜欢什么运动？	Nǐ xǐ huan shén me yùn dòng?	What sport do you like?	أَيَّ رِيَاضَةٍ تُحِبُّ؟	Ayya riyāḍatin tuḥibb?	draft		
-h2p170	我们去唱歌吧！	Wǒ men qù chàng gē ba!	Let's go singing!	لِنَذْهَبْ لِلْغِنَاءِ!	Linadhhab li-l-ghināʾ!	draft		
-h2p171	她跳舞跳得很好。	Tā tiào wǔ tiào de hěn hǎo.	She dances very well.	هِيَ تَرْقُصُ جَيِّدًا جِدًّا.	Hiya tarquṣu jayyidan jiddan.	draft		
-h2p172	太贵了！	Tài guì le!	Too expensive!	غَالٍ جِدًّا!	Ghālin jiddan!	draft		
-h2p173	这个很便宜。	Zhè ge hěn pián yi.	This is very cheap.	هٰذَا رَخِيصٌ جِدًّا.	Hādhā rakhīṣun jiddan.	draft		
-h2p174	有没有便宜一点儿的？	Yǒu méi yǒu pián yi yì diǎnr de?	Is there a cheaper one?	هَلْ يُوجَدُ شَيْءٌ أَرْخَصُ؟	Hal yūjadu shayʾun arkhaṣ?	draft		
-h2p175	我想买一件衣服。	Wǒ xiǎng mǎi yí jiàn yī fu.	I want to buy a piece of clothing.	أُرِيدُ أَنْ أَشْتَرِيَ قِطْعَةَ مَلَابِسَ.	Urīdu an ashtariya qiṭʿata malābis.	draft		
-h2p176	你喜欢什么颜色？	Nǐ xǐ huan shén me yán sè?	What colour do you like?	أَيَّ لَوْنٍ تُحِبُّ؟	Ayya lawnin tuḥibb?	draft		
-h2p177	我最喜欢红色。	Wǒ zuì xǐ huan hóng sè.	My favourite colour is red.	أَكْثَرُ لَوْنٍ أُحِبُّهُ هُوَ الْأَحْمَرُ.	Aktharu lawnin uḥibbuhu huwa al-ʾaḥmar.	draft		
-h2p178	我觉得白的好看。	Wǒ jué de bái de hǎo kàn.	I think the white one looks nicer.	أَعْتَقِدُ أَنَّ الْأَبْيَضَ أَجْمَلُ.	Aʿtaqidu anna al-ʾabyaḍa ajmal.	draft		
-h2p179	他穿着一件黑衣服。	Tā chuān zhe yí jiàn hēi yī fu.	He's wearing black clothes.	هُوَ يَرْتَدِي مَلَابِسَ سَوْدَاءَ.	Huwa yartadī malābisa sawdāʾ.	draft		
-h2p180	这儿卖西瓜吗？	Zhèr mài xī guā ma?	Do they sell watermelon here?	هَلْ يُبَاعُ الْبِطِّيخُ هُنَا؟	Hal yubāʿu al-biṭṭīkhu hunā?	draft		
-h2p181	商店几点开门？	Shāng diàn jǐ diǎn kāi mén?	What time does the shop open?	فِي أَيِّ سَاعَةٍ يَفْتَحُ الْمَحَلُّ؟	Fī ayyi sāʿatin yaftaḥu al-maḥall?	draft		
-h2p182	这个比那个贵。	Zhè ge bǐ nà ge guì.	This one is more expensive than that one.	هٰذَا أَغْلَى مِنْ ذٰلِكَ.	Hādhā aghlā min dhālik.	draft		
-h2p183	我没有时间。	Wǒ méi yǒu shí jiān.	I don't have time.	لَيْسَ عِنْدِي وَقْتٌ.	Laysa ʿindī waqt.	draft		
-h2p184	你有时间吗？	Nǐ yǒu shí jiān ma?	Do you have time?	هَلْ عِنْدَكَ وَقْتٌ؟	Hal ʿindaka waqt?	draft		
-h2p185	你的生日是几月几号？	Nǐ de shēng rì shì jǐ yuè jǐ hào?	When is your birthday?	مَتَى عِيدُ مِيلَادِكَ؟	Matā ʿīdu mīlādik?	draft		
-h2p186	今天是我的生日！	Jīn tiān shì wǒ de shēng rì!	Today is my birthday!	الْيَوْمَ عِيدُ مِيلَادِي!	Al-yawma ʿīdu mīlādī!	draft		
-h2p187	我去年去了北京。	Wǒ qù nián qù le běi jīng.	I went to Beijing last year.	ذَهَبْتُ إِلَى بِكِينَ الْعَامَ الْمَاضِيَ.	Dhahabtu ilā bikīna al-ʿāma al-māḍiy.	draft		
-h2p188	我已经吃饭了。	Wǒ yǐ jīng chī fàn le.	I've already eaten.	لَقَدْ أَكَلْتُ بِالْفِعْلِ.	Laqad akaltu bi-l-fiʿl.	draft		
-h2p189	他已经走了。	Tā yǐ jīng zǒu le.	He's already gone.	لَقَدْ ذَهَبَ بِالْفِعْلِ.	Laqad dhahaba bi-l-fiʿl.	draft		
-h2p190	我等了一个小时。	Wǒ děng le yí gè xiǎo shí.	I waited for an hour.	اِنْتَظَرْتُ سَاعَةً.	Intaẓartu sāʿa.	draft		
-h2p191	还有十分钟。	Hái yǒu shí fēn zhōng.	There are still ten minutes.	مَا زَالَتْ هُنَاكَ عَشْرُ دَقَائِقَ.	Mā zālat hunāka ʿashru daqāʾiq.	draft		
-h2p192	我们快点儿走吧！	Wǒ men kuài diǎnr zǒu ba!	Let's hurry up and go!	لِنُسْرِعْ وَنَذْهَبْ!	Linusriʿ wanadhhab!	draft		
-h2p193	时间到了！	Shí jiān dào le!	Time's up!	اِنْتَهَى الْوَقْتُ!	Intahā al-waqt!	draft		
-h2p194	每天都很忙。	Měi tiān dōu hěn máng.	Every day is busy.	أَنَا مَشْغُولٌ كُلَّ يَوْمٍ.	Anā mashghūlun kulla yawm.	draft		
-h2p195	我每天八点起床。	Wǒ měi tiān bā diǎn qǐ chuáng.	I get up at eight every day.	أَسْتَيْقِظُ فِي السَّاعَةِ الثَّامِنَةِ كُلَّ يَوْمٍ.	Astayqiẓu fī as-sāʿati ath-thāminati kulla yawm.	draft		
-h2p196	晚上我们去看电影吧。	Wǎn shang wǒ men qù kàn diàn yǐng ba.	Let's go see a movie tonight.	لِنَذْهَبْ لِمُشَاهَدَةِ فِيلْمٍ اللَّيْلَةَ.	Linadhhab limushāhadati fīlmin al-layla.	draft		
-h2p197	我想去旅游。	Wǒ xiǎng qù lǚ yóu.	I want to go travelling.	أُرِيدُ أَنْ أُسَافِرَ.	Urīdu an usāfir.	draft		
-h2p198	机场离这儿远吗？	Jī chǎng lí zhèr yuǎn ma?	Is the airport far from here?	هَلِ الْمَطَارُ بَعِيدٌ مِنْ هُنَا؟	Hali al-maṭāru baʿīdun min hunā?	draft		
-h2p199	医院离这儿很近。	Yī yuàn lí zhèr hěn jìn.	The hospital is very close to here.	الْمُسْتَشْفَى قَرِيبٌ جِدًّا مِنْ هُنَا.	Al-mustashfā qarībun jiddan min hunā.	draft		
-h2p200	我们坐公共汽车去吧。	Wǒ men zuò gōng gòng qì chē qù ba.	Let's take the bus.	لِنَذْهَبْ بِالْحَافِلَةِ.	Linadhhab bi-l-ḥāfila.	draft		
-h2p201	我们住在宾馆。	Wǒ men zhù zài bīn guǎn.	We're staying at a hotel.	نَحْنُ نُقِيمُ فِي فُنْدُقٍ.	Naḥnu nuqīmu fī funduq.	draft		
-h2p202	你的房间在哪儿？	Nǐ de fáng jiān zài nǎr?	Where is your room?	أَيْنَ غُرْفَتُكَ؟	Ayna ghurfatuk?	draft		
-h2p203	往左边走。	Wǎng zuǒ bian zǒu.	Go to the left.	اِذْهَبْ إِلَى الْيَسَارِ.	Idhhab ilā al-yasār.	draft		
-h2p204	往右边走。	Wǎng yòu bian zǒu.	Go to the right.	اِذْهَبْ إِلَى الْيَمِينِ.	Idhhab ilā al-yamīn.	draft		
-h2p205	学校在医院旁边。	Xué xiào zài yī yuàn páng biān.	The school is next to the hospital.	الْمَدْرَسَةُ بِجَانِبِ الْمُسْتَشْفَى.	Al-madrasatu bijānibi al-mustashfā.	draft		
-h2p206	商店在右边。	Shāng diàn zài yòu bian.	The shop is on the right.	الْمَحَلُّ عَلَى الْيَمِينِ.	Al-maḥallu ʿalā al-yamīn.	draft		
-h2p207	我从北京来。	Wǒ cóng běi jīng lái.	I come from Beijing.	أَنَا قَادِمٌ مِنْ بِكِينَ.	Anā qādimun min bikīn.	draft		
-h2p208	你从哪儿来？	Nǐ cóng nǎr lái?	Where do you come from?	مِنْ أَيْنَ أَنْتَ؟	Min ayna anta?	draft		
-h2p209	北京离这儿很远。	Běi jīng lí zhèr hěn yuǎn.	Beijing is far from here.	بِكِينُ بَعِيدَةٌ عَنْ هُنَا.	Bikīnu baʿīdatun ʿan hunā.	draft		
-h2p210	路上车很多。	Lù shang chē hěn duō.	There are lots of cars on the road.	هُنَاكَ سَيَّارَاتٌ كَثِيرَةٌ عَلَى الطَّرِيقِ.	Hunāka sayyārātun kathīratun ʿalā aṭ-ṭarīq.	draft		
-h2p211	飞机票很贵。	Fēi jī piào hěn guì.	Plane tickets are expensive.	تَذْكِرَةُ الطَّائِرَةِ غَالِيَةٌ.	Tadhkiratu aṭ-ṭāʾirati ghāliya.	draft		
-h2p212	我买到票了！	Wǒ mǎi dào piào le!	I got the tickets!	حَصَلْتُ عَلَى التَّذْكِرَةِ!	Ḥaṣaltu ʿalā at-tadhkira!	draft		
-h2p213	你去过中国吗？	Nǐ qù guo zhōng guó ma?	Have you been to China?	هَلْ ذَهَبْتَ إِلَى الصِّينِ مِنْ قَبْلُ؟	Hal dhahabta ilā aṣ-ṣīni min qabl?	draft		
-h2p214	我去过北京。	Wǒ qù guo běi jīng.	I've been to Beijing.	ذَهَبْتُ إِلَى بِكِينَ مِنْ قَبْلُ.	Dhahabtu ilā bikīna min qabl.	draft		
-h2p215	你的眼睛很漂亮。	Nǐ de yǎn jing hěn piào liang.	Your eyes are very pretty.	عَيْنَاكَ جَمِيلَتَانِ جِدًّا.	ʿAynāka jamīlatāni jiddan.	draft		
-h2p216	我有一个很大的眼睛。	Wǒ yǒu yí gè hěn dà de yǎn jing.	I have one very big eye.	عِنْدِي عَيْنٌ كَبِيرَةٌ جِدًّا.	ʿIndī ʿaynun kabīratun jiddan.	draft		
-h2p217	猫在门外面。	Māo zài mén wài mian.	The cat is outside the door.	الْقِطَّةُ خَارِجَ الْبَابِ.	Al-qiṭṭatu khārija al-bāb.	draft		
-h2p218	它是我的猫。	Tā shì wǒ de māo.	It's my cat.	هِيَ قِطَّتِي.	Hiya qiṭṭatī.	draft		
-h2p219	它叫什么名字？	Tā jiào shén me míng zi?	What's its name?	مَا اسْمُهَا؟	Mā ismuhā?	draft		
-h2p220	你说得对。	Nǐ shuō de duì.	You're right.	أَنْتَ عَلَى حَقٍّ.	Anta ʿalā ḥaqq.	draft		
-h2p221	我觉得你说得对。	Wǒ jué de nǐ shuō de duì.	I think you're right.	أَعْتَقِدُ أَنَّكَ عَلَى حَقٍّ.	Aʿtaqidu annaka ʿalā ḥaqq.	draft		
-h2p222	我也是！	Wǒ yě shì!	Me too!	أَنَا أَيْضًا!	Anā ayḍan!	draft		
-h2p223	我也不知道。	Wǒ yě bù zhī dào.	I don't know either.	أَنَا أَيْضًا لَا أَعْرِفُ.	Anā ayḍan lā aʿrif.	draft		
-h2p224	真的吗？	Zhēn de ma?	Really?	حَقًّا؟	Ḥaqqan?	draft		
-h2p225	真的！	Zhēn de!	Really!	حَقًّا!	Ḥaqqan!	draft		
-h2p226	为什么？	Wèi shén me?	Why?	لِمَاذَا؟	Limādhā?	draft		
-h2p227	为什么不呢？	Wèi shén me bù ne?	Why not?	لِمَاذَا لَا؟	Limādhā lā?	draft		
-h2p228	因为我喜欢你，所以我来了。	Yīn wèi wǒ xǐ huan nǐ, suǒ yǐ wǒ lái le.	Because I like you, I came.	لِأَنِّي أُحِبُّكَ، أَتَيْتُ.	Liʾannī uḥibbuk, atayt.	draft		
-h2p229	因为下雨，所以我没去。	Yīn wèi xià yǔ, suǒ yǐ wǒ méi qù.	Because it rained, I didn't go.	لِأَنَّهَا أَمْطَرَتْ، لَمْ أَذْهَبْ.	Liʾannahā amṭarat, lam adhhab.	draft		
-h2p230	虽然很累，但是我很高兴。	Suī rán hěn lèi, dàn shì wǒ hěn gāo xìng.	Although I'm tired, I'm happy.	مَعَ أَنِّي مُتْعَبٌ، لٰكِنِّي سَعِيدٌ.	Maʿa annī mutʿab, lākinnī saʿīd.	draft		
-h2p231	虽然外面很冷，但是我想出去玩。	Suī rán wài mian hěn lěng, dàn shì wǒ xiǎng chū qù wán.	Although it's cold outside, I want to go out and play.	مَعَ أَنَّ الْجَوَّ بَارِدٌ فِي الْخَارِجِ، لٰكِنِّي أُرِيدُ أَنْ أَخْرُجَ لِلَّعِبِ.	Maʿa anna al-jawwa bāridun fī al-khārij, lākinnī urīdu an akhruja lillaʿib.	draft		
-h2p232	你别笑！	Nǐ bié xiào!	Don't laugh!	لَا تَضْحَكْ!	Lā taḍḥak!	draft		
-h2p233	他笑了。	Tā xiào le.	He laughed.	ضَحِكَ.	Ḍaḥik.	draft		
-h2p234	你在笑什么？	Nǐ zài xiào shén me?	What are you laughing at?	عَلَى مَاذَا تَضْحَكُ؟	ʿAlā mādhā taḍḥak?	draft		
-h2p235	我正在看书。	Wǒ zhèng zài kàn shū.	I'm reading right now.	أَقْرَأُ كِتَابًا الْآنَ.	Aqraʾu kitāban al-ʾān.	draft		
-h2p236	他正在打电话。	Tā zhèng zài dǎ diàn huà.	He's on the phone right now.	هُوَ عَلَى الْهَاتِفِ الْآنَ.	Huwa ʿalā al-hātifi al-ʾān.	draft		
-h2p237	我在找我的手机。	Wǒ zài zhǎo wǒ de shǒu jī.	I'm looking for my phone.	أَبْحَثُ عَنْ هَاتِفِي.	Abḥathu ʿan hātifī.	draft		
-h2p238	你看见我的手表了吗？	Nǐ kàn jiàn wǒ de shǒu biǎo le ma?	Have you seen my watch?	هَلْ رَأَيْتَ سَاعَتِي؟	Hal raʾayta sāʿatī?	draft		
-h2p239	我的手机在哪儿？	Wǒ de shǒu jī zài nǎr?	Where's my phone?	أَيْنَ هَاتِفِي؟	Ayna hātifī?	draft		
-h2p240	给我打电话吧。	Gěi wǒ dǎ diàn huà ba.	Give me a call.	اِتَّصِلْ بِي.	Ittaṣil bī.	draft		
-h2p241	我告诉你一件事情。	Wǒ gào su nǐ yí jiàn shì qing.	Let me tell you something.	سَأُخْبِرُكَ بِشَيْءٍ.	Saʾukhbiruka bishayʾ.	draft		
-h2p242	别告诉他！	Bié gào su tā!	Don't tell him!	لَا تُخْبِرْهُ!	Lā tukhbirh!	draft		
-h2p243	你能帮助我吗？	Nǐ néng bāng zhù wǒ ma?	Can you help me?	هَلْ تَسْتَطِيعُ مُسَاعَدَتِي؟	Hal tastaṭīʿu musāʿadatī?	draft		
-h2p244	谢谢你的帮助。	Xiè xie nǐ de bāng zhù.	Thank you for your help.	شُكْرًا عَلَى مُسَاعَدَتِكَ.	Shukran ʿalā musāʿadatik.	draft		
-h2p245	我来介绍一下。	Wǒ lái jiè shào yí xià.	Let me make the introductions.	دَعْنِي أُعَرِّفُكَ بِنَفْسِي.	Daʿnī uʿarrifuka binafsī.	draft		
-h2p246	请进！	Qǐng jìn!	Please come in!	تَفَضَّلْ بِالدُّخُولِ!	Tafaḍḍal bi-d-dukhūl!	draft		
-h2p247	请等一下。	Qǐng děng yí xià.	Please wait a moment.	اِنْتَظِرْ لَحْظَةً مِنْ فَضْلِكَ.	Intaẓir laḥẓatan min faḍlik.	draft		
-h2p248	等等我！	Děng děng wǒ!	Wait for me!	اِنْتَظِرْنِي!	Intaẓirnī!	draft		
-h2p249	我们一起走吧。	Wǒ men yì qǐ zǒu ba.	Let's go together.	لِنَذْهَبْ مَعًا.	Linadhhab maʿan.	draft		
-h2p250	你走得太快了！	Nǐ zǒu de tài kuài le!	You're walking too fast!	تَمْشِي بِسُرْعَةٍ كَبِيرَةٍ!	Tamshī bisurʿatin kabīra!	draft		
-h2p251	我不想洗衣服。	Wǒ bù xiǎng xǐ yī fu.	I don't want to do the laundry.	لَا أُرِيدُ أَنْ أَغْسِلَ الْمَلَابِسَ.	Lā urīdu an aghsila al-malābis.	draft		
-h2p252	我去洗手。	Wǒ qù xǐ shǒu.	I'm going to wash my hands.	سَأَذْهَبُ لِأَغْسِلَ يَدَيَّ.	Saʾadhhabu liʾaghsila yadayy.	draft		
-h2p253	他在看报纸。	Tā zài kàn bào zhǐ.	He's reading the newspaper.	هُوَ يَقْرَأُ الْجَرِيدَةَ.	Huwa yaqraʾu al-jarīda.	draft		
-h2p254	我喜欢喝咖啡。	Wǒ xǐ huan hē kā fēi.	I like drinking coffee.	أُحِبُّ شُرْبَ الْقَهْوَةِ.	Uḥibbu shurba al-qahwa.	draft		
-h2p255	咖啡太热了。	Kā fēi tài rè le.	The coffee is too hot.	الْقَهْوَةُ سَاخِنَةٌ جِدًّا.	Al-qahwatu sākhinatun jiddan.	draft		
-h2p256	我每天早上喝牛奶。	Wǒ měi tiān zǎo shang hē niú nǎi.	I drink milk every morning.	أَشْرَبُ الْحَلِيبَ كُلَّ صَبَاحٍ.	Ashrabu al-ḥalība kulla ṣabāḥ.	draft		
-h2p257	我不吃羊肉。	Wǒ bù chī yáng ròu.	I don't eat lamb.	لَا آكُلُ لَحْمَ الْغَنَمِ.	Lā ākulu laḥma al-ghanam.	draft		
-h2p258	这家饭店的菜很好吃。	Zhè jiā fàn diàn de cài hěn hǎo chī.	The food at this restaurant is very tasty.	طَعَامُ هٰذَا الْمَطْعَمِ لَذِيذٌ جِدًّا.	Ṭaʿāmu hādhā al-maṭʿami ladhīdhun jiddan.	draft		
-h2p259	服务员，我们要两杯茶。	Fú wù yuán, wǒ men yào liǎng bēi chá.	Waiter, we'd like two cups of tea.	يَا نَادِلُ، نُرِيدُ كُوبَيْنِ مِنَ الشَّايِ.	Yā nādil, nurīdu kūbayni mina ash-shāy.	draft		
-h2p260	我生病了。	Wǒ shēng bìng le.	I'm sick.	أَنَا مَرِيضٌ.	Anā marīḍ.	draft		
-h2p261	你要吃药。	Nǐ yào chī yào.	You need to take medicine.	يَجِبُ أَنْ تَتَنَاوَلَ الدَّوَاءَ.	Yajibu an tatanāwala ad-dawāʾ.	draft		
-h2p262	你身体怎么样？	Nǐ shēn tǐ zěn me yàng?	How are you feeling?	كَيْفَ صِحَّتُكَ؟	Kayfa ṣiḥḥatuk?	draft		
-h2p263	我明天要去医院。	Wǒ míng tiān yào qù yī yuàn.	I have to go to the hospital tomorrow.	يَجِبُ أَنْ أَذْهَبَ إِلَى الْمُسْتَشْفَى غَدًا.	Yajibu an adhhaba ilā al-mustashfā ghadan.	draft		
-h2p264	多喝水，多休息。	Duō hē shuǐ, duō xiū xi.	Drink lots of water and get lots of rest.	اِشْرَبْ مَاءً كَثِيرًا وَخُذْ قِسْطًا مِنَ الرَّاحَةِ.	Ishrab māʾan kathīran wakhudh qisṭan mina ar-rāḥa.	draft		
-h2p265	门开着。	Mén kāi zhe.	The door is open.	الْبَابُ مَفْتُوحٌ.	Al-bābu maftūḥ.	draft		
-h2p266	请开门！	Qǐng kāi mén!	Please open the door!	اِفْتَحِ الْبَابَ مِنْ فَضْلِكَ!	Iftaḥi al-bāba min faḍlik!	draft		
-h2p267	你在外面吗？	Nǐ zài wài mian ma?	Are you outside?	هَلْ أَنْتَ فِي الْخَارِجِ؟	Hal anta fī al-khārij?	draft		
-h2p268	外面有人。	Wài mian yǒu rén.	There's someone outside.	هُنَاكَ أَحَدٌ فِي الْخَارِجِ.	Hunāka aḥadun fī al-khārij.	draft		
-h2p269	我们进去吧。	Wǒ men jìn qù ba.	Let's go in.	لِنَدْخُلْ.	Linadkhul.	draft		
-h2p270	你出来！	Nǐ chū lái!	Come out!	اُخْرُجْ!	Ukhruj!	draft		
-h2p271	我不想出去。	Wǒ bù xiǎng chū qù.	I don't want to go out.	لَا أُرِيدُ أَنْ أَخْرُجَ.	Lā urīdu an akhruj.	draft		
-h2p272	我可以进来吗？	Wǒ kě yǐ jìn lái ma?	May I come in?	هَلْ يُمْكِنُنِي الدُّخُولُ؟	Hal yumkinunī ad-dukhūl?	draft		
-h2p273	他出去了。	Tā chū qù le.	He's gone out.	خَرَجَ.	Kharaj.	draft		
-h2p274	那个人是男的还是女的？	Nà ge rén shì nán de hái shì nǚ de?	Is that person a man or a woman?	هَلْ ذٰلِكَ الشَّخْصُ رَجُلٌ أَمِ اِمْرَأَةٌ؟	Hal dhālika ash-shakhṣu rajulun ami imraʾa?	draft		
-h2p275	你姓什么？	Nǐ xìng shén me?	What's your surname?	مَا اسْمُ عَائِلَتِكَ؟	Mā ismu ʿāʾilatik?	draft		
-h2p276	我有两百块钱。	Wǒ yǒu liǎng bǎi kuài qián.	I have two hundred yuan.	عِنْدِي مِئَتَا يُوَانٍ.	ʿIndī miʾatā yuwān.	draft		
-h2p277	一千块太贵了！	Yì qiān kuài tài guì le!	A thousand yuan is too expensive!	أَلْفُ يُوَانٍ غَالٍ جِدًّا!	Alfu yuwānin ghālin jiddan!	draft		
-h2p278	我是第一！	Wǒ shì dì yī!	I'm number one!	أَنَا الْأَوَّلُ!	Anā al-ʾawwal!	draft		
-h2p279	我最高！	Wǒ zuì gāo!	I'm the tallest!	أَنَا الْأَطْوَلُ!	Anā al-ʾaṭwal!	draft		
-h2p280	你比我快。	Nǐ bǐ wǒ kuài.	You're faster than me.	أَنْتَ أَسْرَعُ مِنِّي.	Anta asraʿu minnī.	draft		
-h2p281	他比我大两岁。	Tā bǐ wǒ dà liǎng suì.	He's two years older than me.	هُوَ أَكْبَرُ مِنِّي بِسَنَتَيْنِ.	Huwa akbaru minnī bisanatayn.	draft		
-h2p282	这个比那个好。	Zhè ge bǐ nà ge hǎo.	This one is better than that one.	هٰذَا أَفْضَلُ مِنْ ذٰلِكَ.	Hādhā afḍalu min dhālik.	draft		
-h2p283	我没有你高。	Wǒ méi yǒu nǐ gāo.	I'm not as tall as you.	لَسْتُ طَوِيلًا مِثْلَكَ.	Lastu ṭawīlan mithlak.	draft		
-h2p284	这是新的吗？	Zhè shì xīn de ma?	Is this new?	هَلْ هٰذَا جَدِيدٌ؟	Hal hādhā jadīd?	draft		
-h2p285	我有一个新手机。	Wǒ yǒu yí gè xīn shǒu jī.	I have a new phone.	عِنْدِي هَاتِفٌ جَدِيدٌ.	ʿIndī hātifun jadīd.	draft		
-h2p286	我喜欢你的新衣服。	Wǒ xǐ huan nǐ de xīn yī fu.	I like your new clothes.	أُحِبُّ مَلَابِسَكَ الْجَدِيدَةَ.	Uḥibbu malābisaka al-jadīda.	draft		
-h2p287	这本书我看完了。	Zhè běn shū wǒ kàn wán le.	I've finished reading this book.	اِنْتَهَيْتُ مِنْ قِرَاءَةِ هٰذَا الْكِتَابِ.	Intahaytu min qirāʾati hādhā al-kitāb.	draft		
-h2p288	你做完了吗？	Nǐ zuò wán le ma?	Are you done?	هَلِ انْتَهَيْتَ؟	Hali intahayt?	draft		
-h2p289	我还没做完。	Wǒ hái méi zuò wán.	I haven't finished yet.	لَمْ أَنْتَهِ بَعْدُ.	Lam antahi baʿd.	draft		
-h2p290	我们开始吧！	Wǒ men kāi shǐ ba!	Let's begin!	لِنَبْدَأْ!	Linabdaʾ!	draft		
-h2p291	我们什么时候开始？	Wǒ men shén me shí hou kāi shǐ?	When do we start?	مَتَى نَبْدَأُ؟	Matā nabdaʾ?	draft		
-h2p292	你准备好了吗？	Nǐ zhǔn bèi hǎo le ma?	Are you ready?	هَلْ أَنْتَ مُسْتَعِدٌّ؟	Hal anta mustaʿidd?	draft		
-h2p293	我准备好了！	Wǒ zhǔn bèi hǎo le!	I'm ready!	أَنَا مُسْتَعِدٌّ!	Anā mustaʿidd!	draft		
-h2p294	我希望明天是晴天。	Wǒ xī wàng míng tiān shì qíng tiān.	I hope it's sunny tomorrow.	أَتَمَنَّى أَنْ يَكُونَ الْجَوُّ مُشْمِسًا غَدًا.	Atamannā an yakūna al-jawwu mushmisan ghadan.	draft		
-h2p295	我希望你快乐。	Wǒ xī wàng nǐ kuài lè.	I hope you're happy.	أَتَمَنَّى لَكَ السَّعَادَةَ.	Atamannā laka as-saʿāda.	draft		
-h2p296	可能吧。	Kě néng ba.	Maybe.	رُبَّمَا.	Rubbamā.	draft		
-h2p297	这样可以吗？	Zhè yàng kě yǐ ma?	Is this OK?	هَلْ هٰذَا مُنَاسِبٌ؟	Hal hādhā munāsib?	draft		
-h2p298	不可以！	Bù kě yǐ!	No, you can't!	لَا يُمْكِنُ!	Lā yumkin!	draft		
-h2p299	我可以坐这儿吗？	Wǒ kě yǐ zuò zhèr ma?	May I sit here?	هَلْ يُمْكِنُنِي الْجُلُوسُ هُنَا؟	Hal yumkinunī al-julūsu hunā?	draft		
-h2p300	你要去哪儿？	Nǐ yào qù nǎr?	Where are you going?	إِلَى أَيْنَ تَذْهَبُ؟	Ilā ayna tadhhab?	draft		
-h2p301	我要这个。	Wǒ yào zhè ge.	I want this one.	أُرِيدُ هٰذَا.	Urīdu hādhā.	draft		
-h2p302	我什么都不要。	Wǒ shén me dōu bú yào.	I don't want anything.	لَا أُرِيدُ شَيْئًا.	Lā urīdu shayʾan.	draft		
-h2p303	我们一起去吧！	Wǒ men yì qǐ qù ba!	Let's go together!	لِنَذْهَبْ مَعًا!	Linadhhab maʿan!	draft		
-h2p304	我们一起吃饭吧。	Wǒ men yì qǐ chī fàn ba.	Let's eat together.	لِنَأْكُلْ مَعًا.	Linaʾkul maʿan.	draft		
-h2p305	我也想去。	Wǒ yě xiǎng qù.	I want to go too.	أُرِيدُ الذَّهَابَ أَيْضًا.	Urīdu adh-dhahāba ayḍan.	draft		
-h2p306	你也喜欢猫吗？	Nǐ yě xǐ huan māo ma?	Do you like cats too?	هَلْ تُحِبُّ الْقِطَطَ أَيْضًا؟	Hal tuḥibbu al-qiṭaṭa ayḍan?	draft		
-h2p307	他也是学生。	Tā yě shì xué sheng.	He's a student too.	هُوَ طَالِبٌ أَيْضًا.	Huwa ṭālibun ayḍan.	draft		
-h2p308	就是这个！	Jiù shì zhè ge!	This is the one!	هٰذَا هُوَ بِالضَّبْطِ!	Hādhā huwa bi-ḍ-ḍabṭ!	draft		
-h2p309	我就在这儿。	Wǒ jiù zài zhèr.	I'm right here.	أَنَا هُنَا بِالضَّبْطِ.	Anā hunā bi-ḍ-ḍabṭ.	draft		
-h2p310	我就来！	Wǒ jiù lái!	I'm coming right away!	سَآتِي حَالًا!	Saʾātī ḥālan!	draft		
-h2p311	他还没来。	Tā hái méi lái.	He hasn't come yet.	لَمْ يَأْتِ بَعْدُ.	Lam yaʾti baʿd.	draft		
-h2p312	还有问题吗？	Hái yǒu wèn tí ma?	Any more questions?	هَلْ هُنَاكَ أَسْئِلَةٌ أُخْرَى؟	Hal hunāka asʾilatun ukhrā?	draft		
-h2p313	我还是学生。	Wǒ hái shì xué sheng.	I'm still a student.	مَا زِلْتُ طَالِبًا.	Mā ziltu ṭāliban.	draft		
-h2p314	对不起，我错了。	Duì bu qǐ, wǒ cuò le.	Sorry, I was wrong.	آسِفٌ، كُنْتُ مُخْطِئًا.	Āsif, kuntu mukhṭiʾan.	draft		
-h2p315	你错了。	Nǐ cuò le.	You're wrong.	أَنْتَ مُخْطِئٌ.	Anta mukhṭiʾ.	draft		
-h2p316	没错！	Méi cuò!	That's right!	صَحِيحٌ!	Ṣaḥīḥ!	draft		
-h2p317	这个对吗？	Zhè ge duì ma?	Is this right?	هَلْ هٰذَا صَحِيحٌ؟	Hal hādhā ṣaḥīḥ?	draft		
-h2p318	你到哪儿了？	Nǐ dào nǎr le?	Where are you now?	إِلَى أَيْنَ وَصَلْتَ؟	Ilā ayna waṣalt?	draft		
-h2p319	我们到家了。	Wǒ men dào jiā le.	We're home.	وَصَلْنَا إِلَى الْبَيْتِ.	Waṣalnā ilā al-bayt.	draft		
-h2p320	我从学校回来了。	Wǒ cóng xué xiào huí lái le.	I'm back from school.	عُدْتُ مِنَ الْمَدْرَسَةِ.	ʿUdtu mina al-madrasa.	draft		
-h2p321	你往左边看。	Nǐ wǎng zuǒ bian kàn.	Look to the left.	اُنْظُرْ إِلَى الْيَسَارِ.	Unẓur ilā al-yasār.	draft		
-h2p322	左边是我家。	Zuǒ bian shì wǒ jiā.	My home is on the left.	بَيْتِي عَلَى الْيَسَارِ.	Baytī ʿalā al-yasār.	draft		
-h2p323	你说话太快了。	Nǐ shuō huà tài kuài le.	You talk too fast.	تَتَكَلَّمُ بِسُرْعَةٍ كَبِيرَةٍ.	Tatakallamu bisurʿatin kabīra.	draft		
-h2p324	请说慢一点儿。	Qǐng shuō màn yì diǎnr.	Please speak a bit more slowly.	تَكَلَّمْ بِبُطْءٍ أَكْثَرَ مِنْ فَضْلِكَ.	Takallam bibuṭʾin akthara min faḍlik.	draft		
-h2p325	别说话！	Bié shuō huà!	Don't talk!	لَا تَتَكَلَّمْ!	Lā tatakallam!	draft		
-h2p326	他不想说话。	Tā bù xiǎng shuō huà.	He doesn't want to talk.	لَا يُرِيدُ أَنْ يَتَكَلَّمَ.	Lā yurīdu an yatakallam.	draft		
-h2p327	我没听懂。	Wǒ méi tīng dǒng.	I didn't understand what I heard.	لَمْ أَفْهَمْ.	Lam afham.	draft		
-h2p328	你听懂了吗？	Nǐ tīng dǒng le ma?	Did you understand?	هَلْ فَهِمْتَ؟	Hal fahimt?	draft		
-h2p329	我听不懂。	Wǒ tīng bù dǒng.	I can't understand.	لَا أَفْهَمُ.	Lā afham.	draft		
-h2p330	我唱得不好。	Wǒ chàng de bù hǎo.	I don't sing well.	لَا أُغَنِّي جَيِّدًا.	Lā ughannī jayyidan.	draft		
-h2p331	你唱歌唱得真好！	Nǐ chàng gē chàng de zhēn hǎo!	You sing really well!	أَنْتَ تُغَنِّي جَيِّدًا حَقًّا!	Anta tughannī jayyidan ḥaqqan!	draft		
-h2p332	小猫正在睡觉。	Xiǎo māo zhèng zài shuì jiào.	The kitten is sleeping.	الْقِطُّ الصَّغِيرُ نَائِمٌ الْآنَ.	Al-qiṭṭu aṣ-ṣaghīru nāʾimun al-ʾān.	draft		
-h2p333	狗在外面跑。	Gǒu zài wài mian pǎo.	The dog is running around outside.	الْكَلْبُ يَجْرِي فِي الْخَارِجِ.	Al-kalbu yajrī fī al-khārij.	draft		
-h2p334	送你一个苹果。	Sòng nǐ yí gè píng guǒ.	Here, an apple for you.	أُهْدِيكَ تُفَّاحَةً.	Uhdīka tuffāḥa.	draft		
-h2p335	这是我送你的。	Zhè shì wǒ sòng nǐ de.	This is a gift from me to you.	هٰذِهِ هَدِيَّةٌ مِنِّي لَكَ.	Hādhihi hadiyyatun minnī lak.	draft		
-h2p336	谢谢你送我这个。	Xiè xie nǐ sòng wǒ zhè ge.	Thank you for giving me this.	شُكْرًا عَلَى إِهْدَائِكَ هٰذَا لِي.	Shukran ʿalā ihdāʾika hādhā lī.	draft		
-h2p337	妈妈不让我出去玩。	Mā ma bú ràng wǒ chū qù wán.	Mum won't let me go out to play.	أُمِّي لَا تَسْمَحُ لِي بِالْخُرُوجِ لِلَّعِبِ.	Ummī lā tasmaḥu lī bi-l-khurūji lillaʿib.	draft		
-h2p338	让我看看！	Ràng wǒ kàn kan!	Let me see!	دَعْنِي أَرَى!	Daʿnī arā!	draft		
-h2p339	让我想想。	Ràng wǒ xiǎng xiang.	Let me think.	دَعْنِي أُفَكِّرُ.	Daʿnī ufakkir.	draft		
-h2p340	我们玩得很高兴。	Wǒ men wán de hěn gāo xìng.	We had a great time.	اِسْتَمْتَعْنَا كَثِيرًا بِاللَّعِبِ.	Istamtaʿnā kathīran bi-l-laʿib.	draft		
-h2p341	你想玩什么？	Nǐ xiǎng wán shén me?	What do you want to play?	مَاذَا تُرِيدُ أَنْ تَلْعَبَ؟	Mādhā turīdu an talʿab?	draft		
-h2p342	别玩手机了！	Bié wán shǒu jī le!	Stop playing on your phone!	كَفَى لَعِبًا بِالْهَاتِفِ!	Kafā laʿiban bi-l-hātif!	draft		
-h2p343	你每天几点睡觉？	Nǐ měi tiān jǐ diǎn shuì jiào?	What time do you go to bed every day?	فِي أَيِّ سَاعَةٍ تَنَامُ كُلَّ يَوْمٍ؟	Fī ayyi sāʿatin tanāmu kulla yawm?	draft		
-h2p344	我今天起得很早。	Wǒ jīn tiān qǐ de hěn zǎo.	I got up very early today.	اِسْتَيْقَظْتُ مُبَكِّرًا جِدًّا الْيَوْمَ.	Istayqaẓtu mubakkiran jiddan al-yawm.	draft		
-h2p345	你起床了吗？	Nǐ qǐ chuáng le ma?	Are you up?	هَلِ اسْتَيْقَظْتَ؟	Hali istayqaẓt?	draft		
-h2p346	快起床！	Kuài qǐ chuáng!	Get up!	اِسْتَيْقِظْ بِسُرْعَةٍ!	Istayqiẓ bisurʿa!	draft		
-h2p347	他还在睡觉。	Tā hái zài shuì jiào.	He's still sleeping.	مَا زَالَ نَائِمًا.	Mā zāla nāʾiman.	draft		
-h2p348	今天晚上你做什么？	Jīn tiān wǎn shang nǐ zuò shén me?	What are you doing tonight?	مَاذَا تَفْعَلُ هٰذَا الْمَسَاءَ؟	Mādhā tafʿalu hādhā al-masāʾ?	draft		
-h2p349	我晚上要学习。	Wǒ wǎn shang yào xué xí.	I have to study tonight.	يَجِبُ أَنْ أَدْرُسَ هٰذَا الْمَسَاءَ.	Yajibu an adrusa hādhā al-masāʾ.	draft		
-h2p350	下午我们去跑步吧。	Xià wǔ wǒ men qù pǎo bù ba.	Let's go running this afternoon.	لِنَذْهَبْ لِلْجَرْيِ بَعْدَ الظُّهْرِ.	Linadhhab li-l-jaryi baʿda aẓ-ẓuhr.	draft		
-h2p351	每个星期我都去游泳。	Měi gè xīng qī wǒ dōu qù yóu yǒng.	I go swimming every week.	أَذْهَبُ لِلسِّبَاحَةِ كُلَّ أُسْبُوعٍ.	Adhhabu li-s-sibāḥati kulla usbūʿ.	draft		
-h2p352	我们学校有很多教室。	Wǒ men xué xiào yǒu hěn duō jiào shì.	Our school has a lot of classrooms.	فِي مَدْرَسَتِنَا فُصُولٌ كَثِيرَةٌ.	Fī madrasatinā fuṣūlun kathīra.	draft		
-h2p353	我的房间很小。	Wǒ de fáng jiān hěn xiǎo.	My room is very small.	غُرْفَتِي صَغِيرَةٌ جِدًّا.	Ghurfatī ṣaghīratun jiddan.	draft		
-h2p354	你的房间真大！	Nǐ de fáng jiān zhēn dà!	Your room is really big!	غُرْفَتُكَ كَبِيرَةٌ حَقًّا!	Ghurfatuka kabīratun ḥaqqan!	draft		
-h2p355	我没见过雪。	Wǒ méi jiàn guo xuě.	I've never seen snow.	لَمْ أَرَ الثَّلْجَ أَبَدًا.	Lam ara ath-thalja abadan.	draft		
-h2p356	雪是白的。	Xuě shì bái de.	Snow is white.	الثَّلْجُ أَبْيَضُ.	Ath-thalju abyaḍ.	draft		
-h2p357	西瓜里面是红的。	Xī guā lǐ mian shì hóng de.	Watermelon is red inside.	دَاخِلُ الْبَطِّيخَةِ أَحْمَرُ.	Dākhilu al-baṭṭīkhati aḥmar.	draft		
-h2p358	你的眼睛是什么颜色？	Nǐ de yǎn jing shì shén me yán sè?	What colour are your eyes?	مَا لَوْنُ عَيْنَيْكَ؟	Mā lawnu ʿaynayk?	draft		
-h2p359	他穿着红衣服。	Tā chuān zhe hóng yī fu.	He's wearing red clothes.	هُوَ يَلْبَسُ مَلَابِسَ حَمْرَاءَ.	Huwa yalbasu malābisa ḥamrāʾ.	draft		
-h2p360	我今天穿什么？	Wǒ jīn tiān chuān shén me?	What shall I wear today?	مَاذَا أَلْبَسُ الْيَوْمَ؟	Mādhā albasu al-yawm?	draft		
-h2p361	这件衣服太长了。	Zhè jiàn yī fu tài cháng le.	This piece of clothing is too long.	هٰذَا الثَّوْبُ طَوِيلٌ جِدًّا.	Hādhā ath-thawbu ṭawīlun jiddan.	draft		
-h2p362	他很高。	Tā hěn gāo.	He is tall.	هُوَ طَوِيلٌ.	Huwa ṭawīl.	draft		
-h2p363	我不高，但是我很快。	Wǒ bù gāo, dàn shì wǒ hěn kuài.	I'm not tall, but I'm fast.	لَسْتُ طَوِيلًا، لٰكِنِّي سَرِيعٌ.	Lastu ṭawīlan, lākinnī sarīʿ.	draft		
-h2p364	虽然我很小，但是我吃得很多。	Suī rán wǒ hěn xiǎo, dàn shì wǒ chī de hěn duō.	Although I'm small, I eat a lot.	مَعَ أَنِّي صَغِيرٌ، لٰكِنِّي آكُلُ كَثِيرًا.	Maʿa annī ṣaghīr, lākinnī ākulu kathīran.	draft		
-h2p365	因为今天下雪，所以我们不去学校。	Yīn wèi jīn tiān xià xuě, suǒ yǐ wǒ men bú qù xué xiào.	Because it's snowing today, we're not going to school.	لِأَنَّ الثَّلْجَ يَنْزِلُ الْيَوْمَ، لَنْ نَذْهَبَ إِلَى الْمَدْرَسَةِ.	Liʾanna ath-thalja yanzilu al-yawm, lan nadhhaba ilā al-madrasa.	draft		
-h2p366	你为什么不高兴？	Nǐ wèi shén me bù gāo xìng?	Why aren't you happy?	لِمَاذَا أَنْتَ غَيْرُ سَعِيدٍ؟	Limādhā anta ghayru saʿīd?	draft		
-h2p367	你为什么在这儿？	Nǐ wèi shén me zài zhèr?	Why are you here?	لِمَاذَا أَنْتَ هُنَا؟	Limādhā anta hunā?	draft		
-h2p368	他为什么还没来？	Tā wèi shén me hái méi lái?	Why hasn't he come yet?	لِمَاذَا لَمْ يَأْتِ بَعْدُ؟	Limādhā lam yaʾti baʿd?	draft		
-h2p369	你怎么知道？	Nǐ zěn me zhī dào?	How do you know?	كَيْفَ عَرَفْتَ؟	Kayfa ʿaraft?	draft		
-h2p370	我知道你是谁。	Wǒ zhī dào nǐ shì shéi.	I know who you are.	أَعْرِفُ مَنْ أَنْتَ.	Aʿrifu man anta.	draft		
-h2p371	你知道他在哪儿吗？	Nǐ zhī dào tā zài nǎr ma?	Do you know where he is?	هَلْ تَعْرِفُ أَيْنَ هُوَ؟	Hal taʿrifu ayna huwa?	draft		
-h2p372	我不知道怎么说。	Wǒ bù zhī dào zěn me shuō.	I don't know how to say it.	لَا أَعْرِفُ كَيْفَ أَقُولُ ذٰلِكَ.	Lā aʿrifu kayfa aqūlu dhālik.	draft		
-h2p373	你觉得怎么样？	Nǐ jué de zěn me yàng?	What do you think?	مَا رَأْيُكَ؟	Mā raʾyuk?	draft		
-h2p374	我觉得有点儿冷。	Wǒ jué de yǒu diǎnr lěng.	I feel a little cold.	أَشْعُرُ بِبَرْدٍ قَلِيلٍ.	Ashʿuru bibardin qalīl.	draft		
-h2p375	这个问题很好。	Zhè ge wèn tí hěn hǎo.	That's a good question.	هٰذَا سُؤَالٌ جَيِّدٌ.	Hādhā suʾālun jayyid.	draft		
-h2p376	没问题！	Méi wèn tí!	No problem!	لَا مُشْكِلَةَ!	Lā mushkila!	draft		
-h2p377	我有一个问题。	Wǒ yǒu yí gè wèn tí.	I have a question.	عِنْدِي سُؤَالٌ.	ʿIndī suʾāl.	draft		
-h2p378	这是什么意思？	Zhè shì shén me yì si?	What does this mean?	مَاذَا يَعْنِي هٰذَا؟	Mādhā yaʿnī hādhā?	draft		
-h2p379	有意思！	Yǒu yì si!	Interesting!	مُمْتِعٌ!	Mumtiʿ!	draft		
-h2p380	这本书很有意思。	Zhè běn shū hěn yǒu yì si.	This book is very interesting.	هٰذَا الْكِتَابُ مُمْتِعٌ جِدًّا.	Hādhā al-kitābu mumtiʿun jiddan.	draft		
-h2p381	那个电影有意思吗？	Nà ge diàn yǐng yǒu yì si ma?	Is that movie interesting?	هَلْ ذٰلِكَ الْفِيلْمُ مُمْتِعٌ؟	Hal dhālika al-fīlmu mumtiʿ?	draft		
-h2p382	你来一下。	Nǐ lái yí xià.	Come here a moment.	تَعَالَ لَحْظَةً.	Taʿāla laḥẓa.	draft		
-h2p383	我看一下。	Wǒ kàn yí xià.	Let me take a look.	دَعْنِي أَنْظُرْ.	Daʿnī anẓur.	draft		
-h2p384	我想一下。	Wǒ xiǎng yí xià.	Let me think for a moment.	دَعْنِي أُفَكِّرُ لَحْظَةً.	Daʿnī ufakkiru laḥẓa.	draft		
-h2p385	我的手表很贵。	Wǒ de shǒu biǎo hěn guì.	My watch is expensive.	سَاعَتِي غَالِيَةٌ.	Sāʿatī ghāliya.	draft		
-h2p386	我的手机没电了。	Wǒ de shǒu jī méi diàn le.	My phone is out of battery.	نَفِدَتْ بَطَّارِيَّةُ هَاتِفِي.	Nafidat baṭṭāriyyatu hātifī.	draft		
-h2p387	这是今天的报纸。	Zhè shì jīn tiān de bào zhǐ.	This is today's newspaper.	هٰذِهِ جَرِيدَةُ الْيَوْمِ.	Hādhihi jarīdatu al-yawm.	draft		
-h2p388	我在机场等你。	Wǒ zài jī chǎng děng nǐ.	I'll wait for you at the airport.	سَأَنْتَظِرُكَ فِي الْمَطَارِ.	Saʾantaẓiruka fī al-maṭār.	draft		
-h2p389	飞机几点到？	Fēi jī jǐ diǎn dào?	What time does the plane arrive?	فِي أَيِّ سَاعَةٍ تَصِلُ الطَّائِرَةُ؟	Fī ayyi sāʿatin taṣilu aṭ-ṭāʾira?	draft		
-h2p390	我坐飞机去旅游。	Wǒ zuò fēi jī qù lǚ yóu.	I'm flying off on a trip.	سَأُسَافِرُ بِالطَّائِرَةِ لِلسِّيَاحَةِ.	Saʾusāfiru bi-ṭ-ṭāʾirati li-s-siyāḥa.	draft		
-h2p391	你住在几号房间？	Nǐ zhù zài jǐ hào fáng jiān?	Which room are you staying in?	فِي أَيِّ غُرْفَةٍ تُقِيمُ؟	Fī ayyi ghurfatin tuqīm?	draft		
-h2p392	他坐公共汽车上班。	Tā zuò gōng gòng qì chē shàng bān.	He takes the bus to work.	يَذْهَبُ إِلَى الْعَمَلِ بِالْحَافِلَةِ.	Yadhhabu ilā al-ʿamali bi-l-ḥāfila.	draft		
-h2p393	公共汽车来了！	Gōng gòng qì chē lái le!	The bus is here!	الْحَافِلَةُ وَصَلَتْ!	Al-ḥāfilatu waṣalat!	draft		
-h2p394	公司离我家很远。	Gōng sī lí wǒ jiā hěn yuǎn.	The company is far from my home.	الشَّرِكَةُ بَعِيدَةٌ عَنْ بَيْتِي.	Ash-sharikatu baʿīdatun ʿan baytī.	draft		
-h2p395	走路去要多长时间？	Zǒu lù qù yào duō cháng shí jiān?	How long does it take to walk there?	كَمْ مِنَ الْوَقْتِ يَسْتَغْرِقُ الْمَشْيُ إِلَى هُنَاكَ؟	Kam mina al-waqti yastaghriqu al-mashyu ilā hunāk?	draft		
-h2p396	学校离我家不远。	Xué xiào lí wǒ jiā bù yuǎn.	The school isn't far from my home.	الْمَدْرَسَةُ لَيْسَتْ بَعِيدَةً عَنْ بَيْتِي.	Al-madrasatu laysat baʿīdatan ʿan baytī.	draft		
-h2p397	我们走路去吧。	Wǒ men zǒu lù qù ba.	Let's walk there.	لِنَذْهَبْ مَشْيًا.	Linadhhab mashyan.	draft		
-h2p398	我家旁边有个商店。	Wǒ jiā páng biān yǒu gè shāng diàn.	There's a shop next to my home.	بِجَانِبِ بَيْتِي مَتْجَرٌ.	Bijānibi baytī matjar.	draft		
-h2p399	你坐我旁边吧。	Nǐ zuò wǒ páng biān ba.	Sit next to me.	اِجْلِسْ بِجَانِبِي.	Ijlis bijānibī.	draft		
-h2p400	她是我们的新同学。	Tā shì wǒ men de xīn tóng xué.	She's our new classmate.	هِيَ زَمِيلَتُنَا الْجَدِيدَةُ.	Hiya zamīlatunā al-jadīda.	draft		
-h2p401	大家都来了吗？	Dà jiā dōu lái le ma?	Is everyone here?	هَلْ حَضَرَ الْجَمِيعُ؟	Hal ḥaḍara al-jamīʿ?	draft		
-h2p402	大家一起唱吧！	Dà jiā yì qǐ chàng ba!	Everyone, sing together!	لِيُغَنِّ الْجَمِيعُ مَعًا!	Liyughanni al-jamīʿu maʿan!	draft		
-h2p403	我给你打电话。	Wǒ gěi nǐ dǎ diàn huà.	I'll call you.	سَأَتَّصِلُ بِكَ.	Saʾattaṣilu bik.	draft		
-h2p404	我给你买了一个西瓜。	Wǒ gěi nǐ mǎi le yí gè xī guā.	I bought you a watermelon.	اِشْتَرَيْتُ لَكَ بَطِّيخَةً.	Ishtaraytu laka baṭṭīkha.	draft		
-h2p405	这是给你的。	Zhè shì gěi nǐ de.	This is for you.	هٰذَا لَكَ.	Hādhā lak.	draft		
-h2p406	我们去外面吃饭吧。	Wǒ men qù wài mian chī fàn ba.	Let's eat out.	لِنَذْهَبْ لِلْأَكْلِ خَارِجًا.	Linadhhab li-l-ʾakli khārijan.	draft		
-h2p407	你想吃米饭还是面条？	Nǐ xiǎng chī mǐ fàn hái shì miàn tiáo?	Do you want rice or noodles?	هَلْ تُرِيدُ أَرُزًّا أَمْ مَعْكَرُونَةً؟	Hal turīdu aruzzan am maʿkarūna?	draft		
-h2p408	鸡蛋很便宜。	Jī dàn hěn pián yi.	Eggs are cheap.	الْبَيْضُ رَخِيصٌ.	Al-bayḍu rakhīṣ.	draft		
-h2p409	茶比咖啡好喝。	Chá bǐ kā fēi hǎo hē.	Tea tastes better than coffee.	الشَّايُ أَلَذُّ مِنَ الْقَهْوَةِ.	Ash-shāyu aladhdhu mina al-qahwa.	draft		
-h2p410	西瓜是我最喜欢的水果。	Xī guā shì wǒ zuì xǐ huan de shuǐ guǒ.	Watermelon is my favourite fruit.	الْبَطِّيخُ فَاكِهَتِي الْمُفَضَّلَةُ.	Al-baṭṭīkhu fākihatī al-mufaḍḍala.	draft		
-h2p411	你吃过羊肉吗？	Nǐ chī guo yáng ròu ma?	Have you ever eaten lamb?	هَلْ أَكَلْتَ لَحْمَ الْغَنَمِ مِنْ قَبْلُ؟	Hal akalta laḥma al-ghanami min qabl?	draft		
-h2p412	我没去过北京。	Wǒ méi qù guo běi jīng.	I've never been to Beijing.	لَمْ أَذْهَبْ إِلَى بِكِينَ أَبَدًا.	Lam adhhab ilā bikīna abadan.	draft		
-h2p413	今天是几月几日？	Jīn tiān shì jǐ yuè jǐ rì?	What's the date today?	مَا هُوَ تَارِيخُ الْيَوْمِ؟	Mā huwa tārīkhu al-yawm?	draft		
-h2p414	一年有三百六十五天。	Yì nián yǒu sān bǎi liù shí wǔ tiān.	A year has three hundred and sixty-five days.	فِي السَّنَةِ ثَلَاثُمِئَةٍ وَخَمْسَةٌ وَسِتُّونَ يَوْمًا.	Fī as-sanati thalāthumiʾatin wakhamsatun wasittūna yawman.	draft		
-h2p415	我有一千个问题！	Wǒ yǒu yì qiān gè wèn tí!	I have a thousand questions!	عِنْدِي أَلْفُ سُؤَالٍ!	ʿIndī alfu suʾāl!	draft		
-h2p416	我们两个人一起去。	Wǒ men liǎng gè rén yì qǐ qù.	The two of us will go together.	سَنَذْهَبُ كِلَانَا مَعًا.	Sanadhhabu kilānā maʿan.	draft		
-h2p417	那个男人是谁？	Nà ge nán rén shì shéi?	Who is that man?	مَنْ ذٰلِكَ الرَّجُلُ؟	Man dhālika ar-rajul?	draft		
-h2p418	您请坐。	Nín qǐng zuò.	Please have a seat.	تَفَضَّلْ بِالْجُلُوسِ.	Tafaḍḍal bi-l-julūs.	draft		
-h2p419	您想喝什么？	Nín xiǎng hē shén me?	What would you like to drink?	مَاذَا تُرِيدُ أَنْ تَشْرَبَ؟	Mādhā turīdu an tashrab?	draft		
-h2p420	它在哪儿？	Tā zài nǎr?	Where is it?	أَيْنَ هُوَ؟	Ayna huwa?	draft		
-h2p421	我喜欢它。	Wǒ xǐ huan tā.	I like it.	أُحِبُّهُ.	Uḥibbuh.	draft		
-h2p422	别看！	Bié kàn!	Don't look!	لَا تَنْظُرْ!	Lā tanẓur!	draft		
-h2p423	你真的要走吗？	Nǐ zhēn de yào zǒu ma?	Are you really leaving?	هَلْ سَتَذْهَبُ حَقًّا؟	Hal satadhhabu ḥaqqan?	draft		
-h2p424	我真的不知道。	Wǒ zhēn de bù zhī dào.	I really don't know.	لَا أَعْرِفُ حَقًّا.	Lā aʿrifu ḥaqqan.	draft		
-h2p425	这个真大！	Zhè ge zhēn dà!	This is really big!	هٰذَا كَبِيرٌ حَقًّا!	Hādhā kabīrun ḥaqqan!	draft		
-h2p426	你真高！	Nǐ zhēn gāo!	You're really tall!	أَنْتَ طَوِيلٌ حَقًّا!	Anta ṭawīlun ḥaqqan!	draft		
-h2p427	今天真冷！	Jīn tiān zhēn lěng!	It's really cold today!	الْجَوُّ بَارِدٌ جِدًّا الْيَوْمَ!	Al-jawwu bāridun jiddan al-yawm!	draft		
-h2p428	你是我最好的朋友。	Nǐ shì wǒ zuì hǎo de péng you.	You're my best friend.	أَنْتَ أَفْضَلُ صَدِيقٍ لِي.	Anta afḍalu ṣadīqin lī.	draft		
-h2p429	我最不喜欢考试。	Wǒ zuì bù xǐ huan kǎo shì.	I like exams least of all.	أَكْرَهُ اِمْتِحَانَاتٍ أَكْثَرَ مِنْ كُلِّ شَيْءٍ.	Akrahu imtiḥānātin akthara min kulli shayʾ.	draft		
-h2p430	我准备了很多吃的。	Wǒ zhǔn bèi le hěn duō chī de.	I've prepared lots of food.	حَضَّرْتُ كَثِيرًا مِنَ الطَّعَامِ.	Ḥaḍḍartu kathīran mina aṭ-ṭaʿām.	draft		
-h2p431	我希望能去中国。	Wǒ xī wàng néng qù zhōng guó.	I hope I can go to China.	أَتَمَنَّى أَنْ أَسْتَطِيعَ الذَّهَابَ إِلَى الصِّينِ.	Atamannā an astaṭīʿa adh-dhahāba ilā aṣ-ṣīn.	draft		
-h2p432	他可能不来了。	Tā kě néng bù lái le.	He might not come.	رُبَّمَا لَا يَأْتِي.	Rubbamā lā yaʾtī.	draft		
-h2p433	我可能错了。	Wǒ kě néng cuò le.	I might be wrong.	رُبَّمَا أَكُونُ مُخْطِئًا.	Rubbamā akūnu mukhṭiʾan.	draft		
-h2p434	我已经知道了。	Wǒ yǐ jīng zhī dào le.	I already know.	أَعْرِفُ ذٰلِكَ بِالْفِعْلِ.	Aʿrifu dhālika bi-l-fiʿl.	draft		
-h2p435	已经十点了！	Yǐ jīng shí diǎn le!	It's already ten o'clock!	السَّاعَةُ الْعَاشِرَةُ بِالْفِعْلِ!	As-sāʿatu al-ʿāshiratu bi-l-fiʿl!	draft		
-h2p436	你在等谁？	Nǐ zài děng shéi?	Who are you waiting for?	مَنْ تَنْتَظِرُ؟	Man tantaẓir?	draft		
-h2p437	你等我一下。	Nǐ děng wǒ yí xià.	Wait for me a moment.	اِنْتَظِرْنِي لَحْظَةً.	Intaẓirnī laḥẓa.	draft		
-h2p438	他在找你。	Tā zài zhǎo nǐ.	He's looking for you.	هُوَ يَبْحَثُ عَنْكَ.	Huwa yabḥathu ʿank.	draft		
-h2p439	我找到了！	Wǒ zhǎo dào le!	I found it!	وَجَدْتُهُ!	Wajadtuh!	draft		
-h2p440	你找什么？	Nǐ zhǎo shén me?	What are you looking for?	مَاذَا تَبْحَثُ عَنْهُ؟	Mādhā tabḥathu ʿanh?	draft		
-h2p441	这儿的东西都很便宜。	Zhèr de dōng xi dōu hěn pián yi.	Everything here is cheap.	كُلُّ الْأَشْيَاءِ هُنَا رَخِيصَةٌ.	Kullu al-ʾashyāʾi hunā rakhīṣa.	draft		
-h2p442	西瓜怎么卖？	Xī guā zěn me mài?	How much is the watermelon?	بِكَمِ الْبَطِّيخُ؟	Bikami al-baṭṭīkh?	draft		
-h2p443	这个卖完了。	Zhè ge mài wán le.	This is sold out.	بِيعَ هٰذَا كُلُّهُ.	Bīʿa hādhā kulluh.	draft		
-h2p444	你会打篮球吗？	Nǐ huì dǎ lán qiú ma?	Can you play basketball?	هَلْ تُجِيدُ لَعِبَ كُرَةِ السَّلَّةِ؟	Hal tujīdu laʿiba kurati as-salla?	draft		
-h2p445	我不会跳舞。	Wǒ bú huì tiào wǔ.	I can't dance.	لَا أُجِيدُ الرَّقْصَ.	Lā ujīdu ar-raqṣ.	draft		
-h2p446	我身体很好。	Wǒ shēn tǐ hěn hǎo.	I'm in good health.	صِحَّتِي جَيِّدَةٌ.	Ṣiḥḥatī jayyida.	draft		
-h2p447	你要多运动。	Nǐ yào duō yùn dòng.	You should exercise more.	يَجِبُ أَنْ تُمَارِسَ الرِّيَاضَةَ أَكْثَرَ.	Yajibu an tumārisa ar-riyāḍata akthar.	draft		
-h2p448	跑步很累。	Pǎo bù hěn lèi.	Running is tiring.	الْجَرْيُ مُتْعِبٌ.	Al-jaryu mutʿib.	draft		
-h2p449	游泳很有意思。	Yóu yǒng hěn yǒu yì si.	Swimming is fun.	السِّبَاحَةُ مُمْتِعَةٌ.	As-sibāḥatu mumtiʿa.	draft		
+h2p001	我想吃面条。	Wǒ xiǎng chī miàn tiáo.	I want to eat noodles.	أُرِيدُ أَنْ آكُلَ الْمَعْكَرُونَةَ.	Urīdu an ākula al-maʿkarūna.	verified	claude-blind,claude-review	
+h2p002	我想吃鸡蛋。	Wǒ xiǎng chī jī dàn.	I want to eat eggs.	أُرِيدُ أَنْ آكُلَ الْبَيْضَ.	Urīdu an ākula al-bayḍ.	verified	claude-blind,claude-review	
+h2p003	我想喝牛奶。	Wǒ xiǎng hē niú nǎi.	I want to drink milk.	أُرِيدُ أَنْ أَشْرَبَ الْحَلِيبَ.	Urīdu an ashraba al-ḥalīb.	verified	claude-blind,claude-review	
+h2p004	你有西瓜吗？	Nǐ yǒu xī guā ma?	Do you have any watermelon?	هَلْ عِنْدَكَ بِطِّيخٌ؟	Hal ʿindaka biṭṭīkh?	verified	claude-blind,claude-review	
+h2p005	我想吃羊肉。	Wǒ xiǎng chī yáng ròu.	I want to eat lamb.	أُرِيدُ أَنْ آكُلَ لَحْمَ الْغَنَمِ.	Urīdu an ākula laḥma al-ghanam.	verified	claude-blind,claude-review	
+h2p006	我要吃饭！	Wǒ yào chī fàn!	I want to eat!	أُرِيدُ أَنْ آكُلَ!	Urīdu an ākul!	verified	claude-blind,claude-review	
+h2p007	我们什么时候吃饭？还要等吗？	Wǒ men shén me shí hou chī fàn? Hái yào děng ma?	When do we eat? Do we still have to wait?	مَتَى نَأْكُلُ؟ هَلْ مَا زَالَ عَلَيْنَا أَنْ نَنْتَظِرَ؟	Matā naʾkul? Hal mā zāla ʿalaynā an nantaẓir?	verified	claude-blind,claude-review	
+h2p008	有没有好吃的？	Yǒu méi yǒu hǎo chī de?	Is there anything tasty?	هَلْ يُوجَدُ شَيْءٌ لَذِيذٌ؟	Hal yūjadu shayʾun ladhīdh?	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English (wording only)
+h2p009	给我一点儿吃的吧。	Gěi wǒ yì diǎnr chī de ba.	Give me a little something to eat.	أَعْطِنِي قَلِيلًا مِنَ الطَّعَامِ.	Aʿṭinī qalīlan mina aṭ-ṭaʿām.	verified	claude-blind,claude-review	
+h2p010	这儿有鱼吗？	Zhèr yǒu yú ma?	Is there any fish here?	هَلْ هُنَا سَمَكٌ؟	Hal hunā samak?	verified	claude-blind,claude-review	
+h2p011	我已经一天没吃东西了。	Wǒ yǐ jīng yì tiān méi chī dōng xi le.	I haven't eaten anything all day.	لَمْ آكُلْ شَيْئًا مُنْذُ يَوْمٍ كَامِلٍ.	Lam ākul shayʾan mundhu yawmin kāmil.	verified	claude-blind,claude-review	
+h2p012	快给我吃的！	Kuài gěi wǒ chī de!	Quick, give me something to eat!	أَعْطِنِي الطَّعَامَ بِسُرْعَةٍ!	Aʿṭinī aṭ-ṭaʿāma bisurʿa!	verified	claude-blind,claude-review	
+h2p013	我可以吃这个吗？	Wǒ kě yǐ chī zhè ge ma?	Can I eat this?	هَلْ يُمْكِنُنِي أَنْ آكُلَ هٰذَا؟	Hal yumkinunī an ākula hādhā?	verified	claude-blind,claude-review	
+h2p014	还有牛奶吗？	Hái yǒu niú nǎi ma?	Is there any milk left?	هَلْ بَقِيَ حَلِيبٌ؟	Hal baqiya ḥalīb?	verified	claude-blind,claude-review	
+h2p015	饭准备好了吗？	Fàn zhǔn bèi hǎo le ma?	Is the food ready?	هَلِ الطَّعَامُ جَاهِزٌ؟	Hali aṭ-ṭaʿāmu jāhiz?	verified	claude-blind,claude-review	
+h2p016	我想吃苹果和西瓜。	Wǒ xiǎng chī píng guǒ hé xī guā.	I want to eat apples and watermelon.	أُرِيدُ أَنْ آكُلَ التُّفَّاحَ وَالْبِطِّيخَ.	Urīdu an ākula at-tuffāḥa wa-l-biṭṭīkh.	verified	claude-blind,claude-review	
+h2p017	我最喜欢吃鱼。	Wǒ zuì xǐ huan chī yú.	I like eating fish the most.	أُحِبُّ أَكْلَ السَّمَكِ أَكْثَرَ مِنْ أَيِّ شَيْءٍ آخَرَ.	Uḥibbu akla as-samaki akthara min ayyi shayʾin ākhar.	verified	claude-blind,claude-review	
+h2p018	我要喝咖啡。	Wǒ yào hē kā fēi.	I want coffee.	أُرِيدُ أَنْ أَشْرَبَ الْقَهْوَةَ.	Urīdu an ashraba al-qahwa.	verified	claude-blind,claude-review	
+h2p019	我等了很长时间了。	Wǒ děng le hěn cháng shí jiān le.	I've been waiting a long time.	اِنْتَظَرْتُ وَقْتًا طَوِيلًا.	Intaẓartu waqtan ṭawīlan.	verified	claude-blind,claude-review	
+h2p020	中午我们吃面条吧。	Zhōng wǔ wǒ men chī miàn tiáo ba.	Let's have noodles for lunch.	لِنَأْكُلِ الْمَعْكَرُونَةَ ظُهْرًا.	Linaʾkuli al-maʿkarūnata ẓuhran.	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English (wording only)
+h2p021	您好！	Nín hǎo!	Hello! (polite)	مَرْحَبًا!	Marḥaban!	verified	claude-blind,claude-review	
+h2p022	欢迎！	Huān yíng!	Welcome!	أَهْلًا وَسَهْلًا!	Ahlan wasahlan!	verified	claude-blind,claude-review	
+h2p023	欢迎你来！	Huān yíng nǐ lái!	Glad you came!	أَهْلًا بِمَجِيئِكَ!	Ahlan bimajīʾik!	verified	claude-blind,claude-review	
+h2p024	欢迎回来！	Huān yíng huí lái!	Welcome back!	أَهْلًا بِعَوْدَتِكَ!	Ahlan biʿawdatik!	verified	claude-blind,claude-review	
+h2p025	早上好！	Zǎo shang hǎo!	Good morning!	صَبَاحَ الْخَيْرِ!	Ṣabāḥa al-khayr!	verified	claude-blind,claude-review	
+h2p026	晚上好！	Wǎn shang hǎo!	Good evening!	مَسَاءَ الْخَيْرِ!	Masāʾa al-khayr!	verified	claude-blind,claude-review	
+h2p027	你身体好吗？	Nǐ shēn tǐ hǎo ma?	How is your health?	كَيْفَ صِحَّتُكَ؟	Kayfa ṣiḥḥatuk?	verified	claude-blind,claude-review	
+h2p028	你最近怎么样？	Nǐ zuì jìn zěn me yàng?	How have you been lately?	كَيْفَ حَالُكَ مُؤَخَّرًا؟	Kayfa ḥāluka muʾakhkharan?	verified	claude-blind,claude-review	
+h2p029	大家好！	Dà jiā hǎo!	Hello, everyone!	مَرْحَبًا بِالْجَمِيعِ!	Marḥaban bi-l-jamīʿ!	verified	claude-blind,claude-review	
+h2p030	你也在这儿！	Nǐ yě zài zhèr!	You're here too!	أَنْتَ هُنَا أَيْضًا!	Anta hunā ayḍan!	verified	claude-blind,claude-review	
+h2p031	你今天忙吗？	Nǐ jīn tiān máng ma?	Are you busy today?	هَلْ أَنْتَ مَشْغُولٌ الْيَوْمَ؟	Hal anta mashghūlun al-yawm?	verified	claude-blind,claude-review	
+h2p032	您贵姓？	Nín guì xìng?	What is your surname? (polite)	مَا اسْمُ عَائِلَتِكَ الْكَرِيمُ؟	Mā ismu ʿāʾilatika al-karīm?	verified	claude-blind,claude-review	
+h2p033	你睡得好吗？	Nǐ shuì de hǎo ma?	Did you sleep well?	هَلْ نِمْتَ جَيِّدًا؟	Hal nimta jayyidan?	verified	claude-blind,claude-review	
+h2p034	你还在吗？	Nǐ hái zài ma?	Are you still there?	هَلْ مَا زِلْتَ هُنَاكَ؟	Hal mā zilta hunāk?	verified	claude-blind,claude-review	
+h2p035	我到了！	Wǒ dào le!	I've arrived!	لَقَدْ وَصَلْتُ!	Laqad waṣalt!	verified	claude-blind,claude-review	
+h2p036	这个真好吃！	Zhè ge zhēn hǎo chī!	This is really tasty!	هٰذَا لَذِيذٌ حَقًّا!	Hādhā ladhīdhun ḥaqqan!	verified	claude-blind,claude-review	
+h2p037	这个没有鱼好吃。	Zhè ge méi yǒu yú hǎo chī.	This isn't as tasty as fish.	هٰذَا لَيْسَ لَذِيذًا كَالسَّمَكِ.	Hādhā laysa ladhīdhan ka-s-samak.	verified	claude-blind,claude-review	
+h2p038	我吃完了！	Wǒ chī wán le!	I've finished eating!	لَقَدِ انْتَهَيْتُ مِنَ الْأَكْلِ!	Laqadi intahaytu mina al-ʾakl!	verified	claude-blind,claude-review	
+h2p039	我还要吃。	Wǒ hái yào chī.	I want to eat more.	أُرِيدُ أَنْ آكُلَ أَكْثَرَ.	Urīdu an ākula akthar.	verified	claude-blind,claude-review	
+h2p040	真好吃！	Zhēn hǎo chī!	So tasty!	لَذِيذٌ جِدًّا!	Ladhīdhun jiddan!	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English (wording only)
+h2p041	我正在吃东西呢。	Wǒ zhèng zài chī dōng xi ne.	I'm eating right now.	أَنَا آكُلُ الْآنَ.	Anā ākulu al-ʾān.	verified	claude-blind,claude-review	
+h2p042	别看我，我在吃。	Bié kàn wǒ, wǒ zài chī.	Don't look at me, I'm eating.	لَا تَنْظُرْ إِلَيَّ، أَنَا آكُلُ.	Lā tanẓur ilayy, anā ākul.	verified	claude-blind,claude-review	
+h2p043	这个比苹果好吃。	Zhè ge bǐ píng guǒ hǎo chī.	This is tastier than apples.	هٰذَا أَلَذُّ مِنَ التُّفَّاحِ.	Hādhā aladhdhu mina at-tuffāḥ.	verified	claude-blind,claude-review	
+h2p044	我吃了两个。	Wǒ chī le liǎng gè.	I ate two.	أَكَلْتُ اثْنَيْنِ.	Akaltu ithnayn.	verified	claude-blind,claude-review	
+h2p045	别吃那个！	Bié chī nà ge!	Don't eat that!	لَا تَأْكُلْ ذٰلِكَ!	Lā taʾkul dhālik!	verified	claude-blind,claude-review	
+h2p046	我累了。	Wǒ lèi le.	I'm tired.	أَنَا تَعِبٌ.	Anā taʿib.	verified	claude-blind,claude-review	
+h2p047	我太累了。	Wǒ tài lèi le.	I'm too tired.	أَنَا تَعِبٌ جِدًّا.	Anā taʿibun jiddan.	verified	claude-blind,claude-review	
+h2p048	我想休息一下。	Wǒ xiǎng xiū xi yí xià.	I want to rest for a bit.	أُرِيدُ أَنْ أَسْتَرِيحَ قَلِيلًا.	Urīdu an astarīḥa qalīlan.	verified	claude-blind,claude-review	
+h2p049	我要去睡觉了。	Wǒ yào qù shuì jiào le.	I'm going to bed.	سَأَذْهَبُ لِلنَّوْمِ.	Saʾadhhabu li-n-nawm.	verified	claude-blind,claude-review	
+h2p050	我已经很累了。	Wǒ yǐ jīng hěn lèi le.	I'm already very tired.	أَنَا تَعِبٌ جِدًّا بِالْفِعْلِ.	Anā taʿibun jiddan bi-l-fiʿl.	verified	claude-blind,claude-review	
+h2p051	我今天想早点儿休息。	Wǒ jīn tiān xiǎng zǎo diǎnr xiū xi.	I want to rest early today.	أُرِيدُ أَنْ أَسْتَرِيحَ مُبَكِّرًا الْيَوْمَ.	Urīdu an astarīḥa mubakkiran al-yawm.	verified	claude-blind,claude-review	
+h2p052	让我休息一下吧。	Ràng wǒ xiū xi yí xià ba.	Let me rest for a bit.	دَعْنِي أَسْتَرِحْ قَلِيلًا.	Daʿnī astariḥ qalīlan.	verified	claude-blind,claude-review	
+h2p053	我今天非常累。	Wǒ jīn tiān fēi cháng lèi.	I'm extremely tired today.	أَنَا تَعِبٌ جِدًّا الْيَوْمَ.	Anā taʿibun jiddan al-yawm.	verified	claude-blind,claude-review	
+h2p054	我不想起床。	Wǒ bù xiǎng qǐ chuáng.	I don't want to get up.	لَا أُرِيدُ أَنْ أَقُومَ.	Lā urīdu an aqūm.	verified	claude-blind,claude-review	
+h2p055	别说话，我想睡觉。	Bié shuō huà, wǒ xiǎng shuì jiào.	Don't talk, I want to sleep.	لَا تَتَكَلَّمْ، أُرِيدُ أَنْ أَنَامَ.	Lā tatakallam, urīdu an anām.	verified	claude-blind,claude-review	
+h2p056	我走不动了。	Wǒ zǒu bú dòng le.	I can't walk any further.	لَا أَسْتَطِيعُ الْمَشْيَ أَكْثَرَ.	Lā astaṭīʿu al-mashya akthar.	verified	claude-blind,claude-review	
+h2p057	我们休息一下吧。	Wǒ men xiū xi yí xià ba.	Let's take a break.	لِنَسْتَرِحْ قَلِيلًا.	Linastariḥ qalīlan.	verified	claude-blind,claude-review	
+h2p058	我很快乐！	Wǒ hěn kuài lè!	I'm very happy!	أَنَا سَعِيدٌ جِدًّا!	Anā saʿīdun jiddan!	verified	claude-blind,claude-review	
+h2p059	今天真好！	Jīn tiān zhēn hǎo!	Today is really great!	الْيَوْمُ رَائِعٌ حَقًّا!	Al-yawmu rāʾiʿun ḥaqqan!	verified	claude-blind,claude-review	
+h2p060	我非常高兴！	Wǒ fēi cháng gāo xìng!	I'm extremely happy!	أَنَا مَسْرُورٌ جِدًّا!	Anā masrūrun jiddan!	verified	claude-blind,claude-review	
+h2p061	我最喜欢你了！	Wǒ zuì xǐ huan nǐ le!	I like you the most!	أُحِبُّكَ أَكْثَرَ مِنْ أَيِّ أَحَدٍ آخَرَ!	Uḥibbuka akthara min ayyi aḥadin ākhar!	verified	claude-blind,claude-review	
+h2p062	你真好！	Nǐ zhēn hǎo!	You're really nice!	أَنْتَ لَطِيفٌ حَقًّا!	Anta laṭīfun ḥaqqan!	verified	claude-blind,claude-review	
+h2p063	我觉得很好。	Wǒ jué de hěn hǎo.	I feel great.	أَشْعُرُ بِخَيْرٍ.	Ashʿuru bikhayr.	verified	claude-blind,claude-review	
+h2p064	我想唱歌！	Wǒ xiǎng chàng gē!	I want to sing!	أُرِيدُ أَنْ أُغَنِّيَ!	Urīdu an ughanniy!	verified	claude-blind,claude-review	
+h2p065	我们一起跳舞吧！	Wǒ men yì qǐ tiào wǔ ba!	Let's dance together!	لِنَرْقُصْ مَعًا!	Linarquṣ maʿan!	verified	claude-blind,claude-review	
+h2p066	你看，我在笑！	Nǐ kàn, wǒ zài xiào!	Look, I'm smiling!	اُنْظُرْ، أَنَا أَضْحَكُ!	Unẓur, anā aḍḥak!	verified	claude-blind,claude-review	
+h2p067	我每天都很快乐。	Wǒ měi tiān dōu hěn kuài lè.	I'm happy every day.	أَنَا سَعِيدٌ كُلَّ يَوْمٍ.	Anā saʿīdun kulla yawm.	verified	claude-blind,claude-review	
+h2p068	生日快乐！	Shēng rì kuài lè!	Happy birthday!	عِيدَ مِيلَادٍ سَعِيدًا!	ʿĪda mīlādin saʿīdan!	verified	claude-blind,claude-review	
+h2p069	大家都去哪儿了？	Dà jiā dōu qù nǎr le?	Where did everyone go?	أَيْنَ ذَهَبَ الْجَمِيعُ؟	Ayna dhahaba al-jamīʿ?	verified	claude-blind,claude-review	
+h2p070	没有人和我玩。	Méi yǒu rén hé wǒ wán.	Nobody plays with me.	لَا أَحَدَ يَلْعَبُ مَعِي.	Lā aḥada yalʿabu maʿī.	verified	claude-blind,claude-review	
+h2p071	谁来和我玩？	Shéi lái hé wǒ wán?	Who will come and play with me?	مَنْ سَيَأْتِي لِيَلْعَبَ مَعِي؟	Man sayaʾtī liyalʿaba maʿī?	verified	claude-blind,claude-review	
+h2p072	我等你很长时间了。	Wǒ děng nǐ hěn cháng shí jiān le.	I've been waiting for you for a long time.	اِنْتَظَرْتُكَ وَقْتًا طَوِيلًا.	Intaẓartuka waqtan ṭawīlan.	verified	claude-blind,claude-review	
+h2p073	你什么时候回来？我等你。	Nǐ shén me shí hou huí lái? Wǒ děng nǐ.	When are you coming back? I'll wait for you.	مَتَى سَتَعُودُ؟ سَأَنْتَظِرُكَ.	Matā sataʿūd? Saʾantaẓiruk.	verified	claude-blind,claude-review	
+h2p074	我一个人，真没意思。	Wǒ yí gè rén, zhēn méi yì si.	On my own, it's really boring.	أَنَا وَحْدِي، وَهٰذَا مُمِلٌّ حَقًّا.	Anā waḥdī, wahādhā mumillun ḥaqqan.	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English (wording only)
+h2p075	你们都很忙吗？	Nǐ men dōu hěn máng ma?	Are you all busy?	هَلْ أَنْتُمْ مَشْغُولُونَ جَمِيعًا؟	Hal antum mashghūlūna jamīʿan?	verified	claude-blind,claude-review	
+h2p076	我想和大家一起玩。	Wǒ xiǎng hé dà jiā yì qǐ wán.	I want to play with everyone.	أُرِيدُ أَنْ أَلْعَبَ مَعَ الْجَمِيعِ.	Urīdu an alʿaba maʿa al-jamīʿ.	verified	claude-blind,claude-review	
+h2p077	我想坐你旁边。	Wǒ xiǎng zuò nǐ páng biān.	I want to sit next to you.	أُرِيدُ أَنْ أَجْلِسَ بِجَانِبِكَ.	Urīdu an ajlisa bijānibik.	verified	claude-blind,claude-review	
+h2p078	别这样！	Bié zhè yàng!	Don't do that!	لَا تَفْعَلْ هَكَذَا!	Lā tafʿal hakadhā!	verified	claude-blind,claude-review	
+h2p079	你要做什么？	Nǐ yào zuò shén me?	What are you going to do?	مَاذَا سَتَفْعَلُ؟	Mādhā satafʿal?	verified	claude-blind,claude-review	
+h2p080	我们要去哪儿？	Wǒ men yào qù nǎr?	Where are we going?	إِلَى أَيْنَ سَنَذْهَبُ؟	Ilā ayna sanadhhab?	verified	claude-blind,claude-review	
+h2p081	太高了！	Tài gāo le!	Too high!	مُرْتَفِعٌ جِدًّا!	Murtafiʿun jiddan!	verified	claude-blind,claude-review	
+h2p082	让我下去！	Ràng wǒ xià qù!	Let me down!	أَنْزِلْنِي!	Anzilnī!	verified	claude-blind,claude-review	
+h2p083	快让我下来！	Kuài ràng wǒ xià lái!	Quick, let me down!	أَنْزِلْنِي بِسُرْعَةٍ!	Anzilnī bisurʿa!	verified	claude-blind,claude-review	
+h2p084	我不要！	Wǒ bú yào!	I don't want to!	لَا أُرِيدُ!	Lā urīd!	verified	claude-blind,claude-review	
+h2p085	慢一点儿！	Màn yì diǎnr!	Slow down!	أَبْطِئْ قَلِيلًا!	Abṭiʾ qalīlan!	verified	claude-blind,claude-review	
+h2p086	你为什么这样做？	Nǐ wèi shén me zhè yàng zuò?	Why did you do that?	لِمَاذَا فَعَلْتَ هَكَذَا؟	Limādhā faʿalta hakadhā?	verified	claude-blind,claude-review	
+h2p087	别再这样了！	Bié zài zhè yàng le!	Don't do that again!	لَا تَفْعَلْ هَكَذَا مَرَّةً أُخْرَى!	Lā tafʿal hakadhā marratan ukhrā!	verified	claude-blind,claude-review	
+h2p088	这不对！	Zhè bú duì!	That's not right!	هٰذَا غَيْرُ صَحِيحٍ!	Hādhā ghayru ṣaḥīḥ!	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English (wording only)
+h2p089	你做错了。	Nǐ zuò cuò le.	You did it wrong.	أَخْطَأْتَ.	Akhṭaʾt.	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English (wording only)
+h2p090	谢谢您！	Xiè xie nín!	Thank you! (polite)	شُكْرًا جَزِيلًا!	Shukran jazīlan!	verified	claude-blind,claude-review	
+h2p091	真好吃，谢谢！	Zhēn hǎo chī, xiè xie!	Really tasty, thanks!	لَذِيذٌ حَقًّا، شُكْرًا!	Ladhīdhun ḥaqqan, shukran!	verified	claude-blind,claude-review	
+h2p092	我最喜欢吃这个。	Wǒ zuì xǐ huan chī zhè ge.	This is my favourite thing to eat.	هٰذَا هُوَ أَكْثَرُ مَا أُحِبُّ أَكْلَهُ.	Hādhā huwa aktharu mā uḥibbu aklah.	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English (wording only)
+h2p093	我还想吃！	Wǒ hái xiǎng chī!	I want more!	أُرِيدُ الْمَزِيدَ!	Urīdu al-mazīd!	verified	claude-blind,claude-review	
+h2p094	我吃得很好。	Wǒ chī de hěn hǎo.	I ate well.	أَكَلْتُ جَيِّدًا.	Akaltu jayyidan.	verified	claude-blind,claude-review	
+h2p095	你给我的菜很好吃。	Nǐ gěi wǒ de cài hěn hǎo chī.	The food you gave me is very tasty.	الطَّعَامُ الَّذِي أَعْطَيْتَنِيهِ لَذِيذٌ جِدًّا.	Aṭ-ṭaʿāmu alladhī aʿṭaytanīhi ladhīdhun jiddan.	verified	claude-blind,claude-review	
+h2p096	再来一次！	Zài lái yí cì!	Once more!	مَرَّةً أُخْرَى!	Marratan ukhrā!	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English (wording only)
+h2p097	别走！	Bié zǒu!	Don't go!	لَا تَذْهَبْ!	Lā tadhhab!	verified	claude-blind,claude-review	
+h2p098	我最喜欢这样了。	Wǒ zuì xǐ huan zhè yàng le.	I like this the most.	أُحِبُّ هٰذَا أَكْثَرَ مِنْ أَيِّ شَيْءٍ.	Uḥibbu hādhā akthara min ayyi shayʾ.	verified	claude-blind,claude-review	
+h2p099	你可以再来一次吗？	Nǐ kě yǐ zài lái yí cì ma?	Can you do it once more?	هَلْ يُمْكِنُكَ أَنْ تَفْعَلَهَا مَرَّةً أُخْرَى؟	Hal yumkinuka an tafʿalahā marratan ukhrā?	verified	claude-blind,claude-review	
+h2p100	真好！	Zhēn hǎo!	That's really nice!	جَمِيلٌ جِدًّا!	Jamīlun jiddan!	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English (wording only)
+h2p101	你对我真好。	Nǐ duì wǒ zhēn hǎo.	You're really good to me.	أَنْتَ لَطِيفٌ جِدًّا مَعِي.	Anta laṭīfun jiddan maʿī.	verified	claude-blind,claude-review	
+h2p102	我要走了。	Wǒ yào zǒu le.	I'm going to go.	سَأَذْهَبُ الْآنَ.	Saʾadhhabu al-ʾān.	verified	claude-blind,claude-review	
+h2p103	晚上见！	Wǎn shang jiàn!	See you tonight!	أَرَاكَ مَسَاءً!	Arāka masāʾan!	verified	claude-blind,claude-review	
+h2p104	我先走了，再见！	Wǒ xiān zǒu le, zài jiàn!	I'll go first, bye!	سَأَذْهَبُ أَوَّلًا، إِلَى اللِّقَاءِ!	Saʾadhhabu awwalan, ilā al-liqāʾ!	verified	claude-blind,claude-review	
+h2p105	慢走！	Màn zǒu!	Take care! (to someone leaving)	مَعَ السَّلَامَةِ!	Maʿa as-salāma!	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English (wording only)
+h2p106	您慢走。	Nín màn zǒu.	Take care. (polite, to someone leaving)	مَعَ السَّلَامَةِ، اِعْتَنِ بِنَفْسِكَ.	Maʿa as-salāma, iʿtani binafsik.	verified	claude-blind,claude-review	
+h2p107	明天早上见。	Míng tiān zǎo shang jiàn.	See you tomorrow morning.	أَرَاكَ غَدًا صَبَاحًا.	Arāka ghadan ṣabāḥan.	verified	claude-blind,claude-review	
+h2p108	我起床了！	Wǒ qǐ chuáng le!	I'm up!	لَقَدِ اسْتَيْقَظْتُ!	Laqadi istayqaẓt!	verified	claude-blind,claude-review	
+h2p109	现在几点了？我睡了多长时间？	Xiàn zài jǐ diǎn le? Wǒ shuì le duō cháng shí jiān?	What time is it? How long did I sleep?	كَمِ السَّاعَةُ الْآنَ؟ كَمْ نِمْتُ مِنَ الْوَقْتِ؟	Kami as-sāʿatu al-ʾān? Kam nimtu mina al-waqt?	verified	claude-blind,claude-review	
+h2p110	我还想睡。	Wǒ hái xiǎng shuì.	I still want to sleep.	مَا زِلْتُ أُرِيدُ أَنْ أَنَامَ.	Mā ziltu urīdu an anām.	verified	claude-blind,claude-review	
+h2p111	我睡得很好。	Wǒ shuì de hěn hǎo.	I slept well.	نِمْتُ جَيِّدًا.	Nimtu jayyidan.	verified	claude-blind,claude-review	
+h2p112	已经晚上了吗？	Yǐ jīng wǎn shang le ma?	Is it already evening?	هَلْ حَلَّ الْمَسَاءُ بِالْفِعْلِ؟	Hal ḥalla al-masāʾu bi-l-fiʿl?	verified	claude-blind,claude-review	
+h2p113	我睡了十个小时。	Wǒ shuì le shí gè xiǎo shí.	I slept for ten hours.	نِمْتُ عَشْرَ سَاعَاتٍ.	Nimtu ʿashra sāʿāt.	verified	claude-blind,claude-review	
+h2p114	今天是晴天。	Jīn tiān shì qíng tiān.	It's sunny today.	الْجَوُّ الْيَوْمَ مُشْمِسٌ.	Al-jawwu al-yawma mushmis.	verified	claude-blind,claude-review	
+h2p115	今天是阴天。	Jīn tiān shì yīn tiān.	It's overcast today.	الْجَوُّ الْيَوْمَ غَائِمٌ.	Al-jawwu al-yawma ghāʾim.	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English (wording only)
+h2p116	外面下雪了！	Wài mian xià xuě le!	It's snowing outside!	الثَّلْجُ يَتَسَاقَطُ فِي الْخَارِجِ!	Ath-thalju yatasāqaṭu fī al-khārij!	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English (wording only)
+h2p117	明天可能下雨。	Míng tiān kě néng xià yǔ.	It might rain tomorrow.	رُبَّمَا تُمْطِرُ غَدًا.	Rubbamā tumṭiru ghadan.	verified	claude-blind,claude-review	
+h2p118	今天比昨天冷。	Jīn tiān bǐ zuó tiān lěng.	Today is colder than yesterday.	الْيَوْمُ أَبْرَدُ مِنَ الْأَمْسِ.	Al-yawmu abradu mina al-ʾams.	verified	claude-blind,claude-review	
+h2p119	今天天气非常好。	Jīn tiān tiān qì fēi cháng hǎo.	The weather is extremely good today.	الطَّقْسُ الْيَوْمَ جَمِيلٌ جِدًّا.	Aṭ-ṭaqsu al-yawma jamīlun jiddan.	verified	claude-blind,claude-review	
+h2p120	下雪了，我们出去玩吧！	Xià xuě le, wǒ men chū qù wán ba!	It's snowing, let's go out and play!	الثَّلْجُ يَتَسَاقَطُ، لِنَخْرُجْ لِلَّعِبِ!	Ath-thalju yatasāqaṭ, linakhruj lillaʿib!	verified	claude-blind,claude-review	
+h2p121	我喜欢下雪。	Wǒ xǐ huan xià xuě.	I like it when it snows.	أُحِبُّ نُزُولَ الثَّلْجِ.	Uḥibbu nuzūla ath-thalj.	verified	claude-blind,claude-review	
+h2p122	外面很冷，多穿点儿衣服。	Wài mian hěn lěng, duō chuān diǎnr yī fu.	It's cold outside, put on more clothes.	الْجَوُّ بَارِدٌ فِي الْخَارِجِ، اِلْبَسْ مَلَابِسَ أَكْثَرَ.	Al-jawwu bāridun fī al-khārij, ilbas malābisa akthar.	verified	claude-blind,claude-review	
+h2p123	今天太热了，我想去游泳。	Jīn tiān tài rè le, wǒ xiǎng qù yóu yǒng.	It's too hot today, I want to go swimming.	الْجَوُّ حَارٌّ جِدًّا الْيَوْمَ، أُرِيدُ أَنْ أَذْهَبَ لِلسِّبَاحَةِ.	Al-jawwu ḥārrun jiddan al-yawm, urīdu an adhhaba li-s-sibāḥa.	verified	claude-blind,claude-review	
+h2p124	明天是晴天吗？	Míng tiān shì qíng tiān ma?	Will it be sunny tomorrow?	هَلْ سَيَكُونُ الْجَوُّ مُشْمِسًا غَدًا؟	Hal sayakūnu al-jawwu mushmisan ghadan?	verified	claude-blind,claude-review	
+h2p125	天阴了，可能要下雨。	Tiān yīn le, kě néng yào xià yǔ.	The sky has clouded over; it might rain.	أَصْبَحَتِ السَّمَاءُ غَائِمَةً، رُبَّمَا تُمْطِرُ.	Aṣbaḥati as-samāʾu ghāʾima, rubbamā tumṭir.	verified	claude-blind,claude-review	
+h2p126	我有一个哥哥。	Wǒ yǒu yí gè gē ge.	I have an older brother.	عِنْدِي أَخٌ كَبِيرٌ.	ʿIndī akhun kabīr.	verified	claude-blind,claude-review	
+h2p127	我姐姐是医生。	Wǒ jiě jie shì yī shēng.	My older sister is a doctor.	أُخْتِي الْكَبِيرَةُ طَبِيبَةٌ.	Ukhtī al-kabīratu ṭabība.	verified	claude-blind,claude-review	
+h2p128	我弟弟六岁。	Wǒ dì di liù suì.	My younger brother is six.	أَخِي الصَّغِيرُ عُمْرُهُ سِتُّ سَنَوَاتٍ.	Akhī aṣ-ṣaghīru ʿumruhu sittu sanawāt.	verified	claude-blind,claude-review	
+h2p129	我妹妹很漂亮。	Wǒ mèi mei hěn piào liang.	My younger sister is very pretty.	أُخْتِي الصَّغِيرَةُ جَمِيلَةٌ جِدًّا.	Ukhtī aṣ-ṣaghīratu jamīlatun jiddan.	verified	claude-blind,claude-review	
+h2p130	他是我丈夫。	Tā shì wǒ zhàng fu.	He is my husband.	هُوَ زَوْجِي.	Huwa zawjī.	verified	claude-blind,claude-review	
+h2p131	她是我妻子。	Tā shì wǒ qī zi.	She is my wife.	هِيَ زَوْجَتِي.	Hiya zawjatī.	verified	claude-blind,claude-review	
+h2p132	你有孩子吗？	Nǐ yǒu hái zi ma?	Do you have children?	هَلْ عِنْدَكَ أَوْلَادٌ؟	Hal ʿindaka awlād?	verified	claude-blind,claude-review	
+h2p133	我哥哥比我高。	Wǒ gē ge bǐ wǒ gāo.	My older brother is taller than me.	أَخِي الْكَبِيرُ أَطْوَلُ مِنِّي.	Akhī al-kabīru aṭwalu minnī.	verified	claude-blind,claude-review	
+h2p134	你有几个姐姐？	Nǐ yǒu jǐ gè jiě jie?	How many older sisters do you have?	كَمْ أُخْتًا كَبِيرَةً عِنْدَكَ؟	Kam ukhtan kabīratan ʿindak?	verified	claude-blind,claude-review	
+h2p135	我的孩子喜欢踢足球。	Wǒ de hái zi xǐ huan tī zú qiú.	My child likes playing football.	طِفْلِي يُحِبُّ لَعِبَ كُرَةِ الْقَدَمِ.	Ṭiflī yuḥibbu laʿiba kurati al-qadam.	verified	claude-blind,claude-review	
+h2p136	我们几点上课？	Wǒ men jǐ diǎn shàng kè?	What time is our class?	مَتَى يَبْدَأُ دَرْسُنَا؟	Matā yabdaʾu darsunā?	verified	claude-blind,claude-review	
+h2p137	今天有考试。	Jīn tiān yǒu kǎo shì.	There's an exam today.	الْيَوْمَ هُنَاكَ اِمْتِحَانٌ.	Al-yawma hunāka imtiḥān.	verified	claude-blind,claude-review	
+h2p138	这个题我不会。	Zhè ge tí wǒ bú huì.	I can't do this question.	لَا أَعْرِفُ حَلَّ هٰذَا السُّؤَالِ.	Lā aʿrifu ḥalla hādhā as-suʾāl.	verified	claude-blind,claude-review	
+h2p139	我不懂这个问题。	Wǒ bù dǒng zhè ge wèn tí.	I don't understand this question.	لَا أَفْهَمُ هٰذَا السُّؤَالَ.	Lā afhamu hādhā as-suʾāl.	verified	claude-blind,claude-review	
+h2p140	你懂了吗？	Nǐ dǒng le ma?	Do you understand?	هَلْ فَهِمْتَ؟	Hal fahimt?	verified	claude-blind,claude-review	
+h2p141	我懂了！	Wǒ dǒng le!	I get it!	فَهِمْتُ!	Fahimt!	verified	claude-blind,claude-review	
+h2p142	老师在教室里。	Lǎo shī zài jiào shì lǐ.	The teacher is in the classroom.	الْمُعَلِّمُ فِي الْفَصْلِ.	Al-muʿallimu fī al-faṣl.	verified	claude-blind,claude-review	
+h2p143	我要准备考试。	Wǒ yào zhǔn bèi kǎo shì.	I need to prepare for the exam.	عِنْدِي اِمْتِحَانٌ، يَجِبُ أَنْ أَسْتَعِدَّ لَهُ.	ʿIndī imtiḥān, yajibu an astaʿidda lah.	verified	claude-blind,claude-review	
+h2p144	考试开始了！	Kǎo shì kāi shǐ le!	The exam has started!	لَقَدْ بَدَأَ اِمْتِحَانُنَا!	Laqad badaʾa imtiḥānunā!	verified	claude-blind,claude-review	
+h2p145	你考得怎么样？	Nǐ kǎo de zěn me yàng?	How did your exam go?	كَيْفَ كَانَ اِمْتِحَانُكَ؟	Kayfa kāna imtiḥānuk?	verified	claude-blind,claude-review	
+h2p146	我可以问你一个问题吗？	Wǒ kě yǐ wèn nǐ yí gè wèn tí ma?	Can I ask you a question?	هَلْ يُمْكِنُنِي أَنْ أَسْأَلَكَ سُؤَالًا؟	Hal yumkinunī an asʾalaka suʾālan?	verified	claude-blind,claude-review	
+h2p147	请回答我的问题。	Qǐng huí dá wǒ de wèn tí.	Please answer my question.	مِنْ فَضْلِكَ أَجِبْ عَنْ سُؤَالِي.	Min faḍlika ajib ʿan suʾālī.	verified	claude-blind,claude-review	
+h2p148	我学习汉语已经一年了。	Wǒ xué xí hàn yǔ yǐ jīng yì nián le.	I've been studying Chinese for a year now.	أَدْرُسُ اللُّغَةَ الصِّينِيَّةَ مُنْذُ سَنَةٍ.	Adrusu al-lughata aṣ-ṣīniyyata mundhu sana.	verified	claude-blind,claude-review	
+h2p149	这个字是什么意思？	Zhè ge zì shì shén me yì si?	What does this character mean?	مَا مَعْنَى هٰذِهِ الْكَلِمَةِ؟	Mā maʿnā hādhihi al-kalima?	verified	claude-blind,claude-review	
+h2p150	你说的是什么意思？	Nǐ shuō de shì shén me yì si?	What do you mean?	مَاذَا تَقْصِدُ؟	Mādhā taqṣid?	verified	claude-blind,claude-review	
+h2p151	我不知道。	Wǒ bù zhī dào.	I don't know.	لَا أَعْرِفُ.	Lā aʿrif.	verified	claude-blind,claude-review	
+h2p152	你知道吗？	Nǐ zhī dào ma?	Do you know?	هَلْ تَعْرِفُ؟	Hal taʿrif?	verified	claude-blind,claude-review	
+h2p153	我知道了！	Wǒ zhī dào le!	Got it!	عَرَفْتُ!	ʿAraft!	verified	claude-blind,claude-review	
+h2p154	铅笔在桌子上。	Qiān bǐ zài zhuō zi shang.	The pencil is on the table.	قَلَمُ الرَّصَاصِ عَلَى الطَّاوِلَةِ.	Qalamu ar-raṣāṣi ʿalā aṭ-ṭāwila.	verified	claude-blind,claude-review	
+h2p155	我找不到我的铅笔了。	Wǒ zhǎo bú dào wǒ de qiān bǐ le.	I can't find my pencil.	لَا أَجِدُ قَلَمَ رَصَاصِي.	Lā ajidu qalama raṣāṣī.	verified	claude-blind,claude-review	
+h2p156	这是我第一次来北京。	Zhè shì wǒ dì yī cì lái běi jīng.	This is my first time in Beijing.	هٰذِهِ أَوَّلُ مَرَّةٍ أَزُورُ فِيهَا بِكِينَ.	Hādhihi awwalu marratin azūru fīhā bikīn.	verified	claude-blind,claude-review	
+h2p157	我哥哥在公司工作。	Wǒ gē ge zài gōng sī gōng zuò.	My older brother works at a company.	أَخِي الْكَبِيرُ يَعْمَلُ فِي شَرِكَةٍ.	Akhī al-kabīru yaʿmalu fī sharika.	verified	claude-blind,claude-review	
+h2p158	我要去上班了。	Wǒ yào qù shàng bān le.	I'm off to work.	سَأَذْهَبُ إِلَى الْعَمَلِ.	Saʾadhhabu ilā al-ʿamal.	verified	claude-blind,claude-review	
+h2p159	你每天几点上班？	Nǐ měi tiān jǐ diǎn shàng bān?	What time do you start work every day?	فِي أَيِّ سَاعَةٍ تَذْهَبُ إِلَى الْعَمَلِ كُلَّ يَوْمٍ؟	Fī ayyi sāʿatin tadhhabu ilā al-ʿamali kulla yawm?	verified	claude-blind,claude-review	
+h2p160	他工作很忙。	Tā gōng zuò hěn máng.	He's very busy with work.	هُوَ مَشْغُولٌ جِدًّا بِعَمَلِهِ.	Huwa mashghūlun jiddan biʿamalih.	verified	claude-blind,claude-review	
+h2p161	我今天不上班。	Wǒ jīn tiān bú shàng bān.	I'm not working today.	لَا أَعْمَلُ الْيَوْمَ.	Lā aʿmalu al-yawm.	verified	claude-blind,claude-review	
+h2p162	我喜欢打篮球。	Wǒ xǐ huan dǎ lán qiú.	I like playing basketball.	أُحِبُّ لَعِبَ كُرَةِ السَّلَّةِ.	Uḥibbu laʿiba kurati as-salla.	verified	claude-blind,claude-review	
+h2p163	我们一起去踢足球吧！	Wǒ men yì qǐ qù tī zú qiú ba!	Let's go play football together!	لِنَذْهَبْ لِنَلْعَبَ كُرَةَ الْقَدَمِ مَعًا!	Linadhhab linalʿaba kurata al-qadami maʿan!	verified	claude-blind,claude-review	
+h2p164	我每天早上跑步。	Wǒ měi tiān zǎo shang pǎo bù.	I run every morning.	أَرْكُضُ كُلَّ صَبَاحٍ.	Arkuḍu kulla ṣabāḥ.	verified	claude-blind,claude-review	
+h2p165	你会游泳吗？	Nǐ huì yóu yǒng ma?	Can you swim?	هَلْ تُجِيدُ السِّبَاحَةَ؟	Hal tujīdu as-sibāḥa?	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same
+h2p166	我游得很快。	Wǒ yóu de hěn kuài.	I swim fast.	أَسْبَحُ بِسُرْعَةٍ.	Asbaḥu bisurʿa.	verified	claude-blind,claude-review	
+h2p167	运动对身体好。	Yùn dòng duì shēn tǐ hǎo.	Exercise is good for your health.	الرِّيَاضَةُ مُفِيدَةٌ لِلصِّحَّةِ.	Ar-riyāḍatu mufīdatun li-ṣ-ṣiḥḥa.	verified	claude-blind,claude-review	
+h2p168	他跑得非常快。	Tā pǎo de fēi cháng kuài.	He runs extremely fast.	هُوَ يَرْكُضُ بِسُرْعَةٍ كَبِيرَةٍ.	Huwa yarkuḍu bisurʿatin kabīra.	verified	claude-blind,claude-review	
+h2p169	你喜欢什么运动？	Nǐ xǐ huan shén me yùn dòng?	What sport do you like?	أَيَّ رِيَاضَةٍ تُحِبُّ؟	Ayya riyāḍatin tuḥibb?	verified	claude-blind,claude-review	
+h2p170	我们去唱歌吧！	Wǒ men qù chàng gē ba!	Let's go singing!	لِنَذْهَبْ لِلْغِنَاءِ!	Linadhhab li-l-ghināʾ!	verified	claude-blind,claude-review	
+h2p171	她跳舞跳得很好。	Tā tiào wǔ tiào de hěn hǎo.	She dances very well.	هِيَ تَرْقُصُ جَيِّدًا جِدًّا.	Hiya tarquṣu jayyidan jiddan.	verified	claude-blind,claude-review	
+h2p172	太贵了！	Tài guì le!	Too expensive!	غَالٍ جِدًّا!	Ghālin jiddan!	verified	claude-blind,claude-review	
+h2p173	这个很便宜。	Zhè ge hěn pián yi.	This is very cheap.	هٰذَا رَخِيصٌ جِدًّا.	Hādhā rakhīṣun jiddan.	verified	claude-blind,claude-review	
+h2p174	有没有便宜一点儿的？	Yǒu méi yǒu pián yi yì diǎnr de?	Is there a cheaper one?	هَلْ يُوجَدُ شَيْءٌ أَرْخَصُ؟	Hal yūjadu shayʾun arkhaṣ?	verified	claude-blind,claude-review	
+h2p175	我想买一件衣服。	Wǒ xiǎng mǎi yí jiàn yī fu.	I want to buy a piece of clothing.	أُرِيدُ أَنْ أَشْتَرِيَ قِطْعَةَ مَلَابِسَ.	Urīdu an ashtariya qiṭʿata malābis.	verified	claude-blind,claude-review	
+h2p176	你喜欢什么颜色？	Nǐ xǐ huan shén me yán sè?	What colour do you like?	أَيَّ لَوْنٍ تُحِبُّ؟	Ayya lawnin tuḥibb?	verified	claude-blind,claude-review	
+h2p177	我最喜欢红色。	Wǒ zuì xǐ huan hóng sè.	My favourite colour is red.	أَكْثَرُ لَوْنٍ أُحِبُّهُ هُوَ الْأَحْمَرُ.	Aktharu lawnin uḥibbuhu huwa al-ʾaḥmar.	verified	claude-blind,claude-review	
+h2p178	我觉得白的好看。	Wǒ jué de bái de hǎo kàn.	I think the white one looks nicer.	أَعْتَقِدُ أَنَّ الْأَبْيَضَ أَجْمَلُ.	Aʿtaqidu anna al-ʾabyaḍa ajmal.	verified	claude-blind,claude-review	
+h2p179	他穿着一件黑衣服。	Tā chuān zhe yí jiàn hēi yī fu.	He's wearing black clothes.	هُوَ يَرْتَدِي مَلَابِسَ سَوْدَاءَ.	Huwa yartadī malābisa sawdāʾ.	verified	claude-blind,claude-review	
+h2p180	这儿卖西瓜吗？	Zhèr mài xī guā ma?	Do they sell watermelon here?	هَلْ يُبَاعُ الْبِطِّيخُ هُنَا؟	Hal yubāʿu al-biṭṭīkhu hunā?	verified	claude-blind,claude-review	
+h2p181	商店几点开门？	Shāng diàn jǐ diǎn kāi mén?	What time does the shop open?	فِي أَيِّ سَاعَةٍ يَفْتَحُ الْمَحَلُّ؟	Fī ayyi sāʿatin yaftaḥu al-maḥall?	verified	claude-blind,claude-review	
+h2p182	这个比那个贵。	Zhè ge bǐ nà ge guì.	This one is more expensive than that one.	هٰذَا أَغْلَى مِنْ ذٰلِكَ.	Hādhā aghlā min dhālik.	verified	claude-blind,claude-review	
+h2p183	我没有时间。	Wǒ méi yǒu shí jiān.	I don't have time.	لَيْسَ عِنْدِي وَقْتٌ.	Laysa ʿindī waqt.	verified	claude-blind,claude-review	
+h2p184	你有时间吗？	Nǐ yǒu shí jiān ma?	Do you have time?	هَلْ عِنْدَكَ وَقْتٌ؟	Hal ʿindaka waqt?	verified	claude-blind,claude-review	
+h2p185	你的生日是几月几号？	Nǐ de shēng rì shì jǐ yuè jǐ hào?	When is your birthday?	مَتَى عِيدُ مِيلَادِكَ؟	Matā ʿīdu mīlādik?	verified	claude-blind,claude-review	
+h2p186	今天是我的生日！	Jīn tiān shì wǒ de shēng rì!	Today is my birthday!	الْيَوْمَ عِيدُ مِيلَادِي!	Al-yawma ʿīdu mīlādī!	verified	claude-blind,claude-review	
+h2p187	我去年去了北京。	Wǒ qù nián qù le běi jīng.	I went to Beijing last year.	ذَهَبْتُ إِلَى بِكِينَ الْعَامَ الْمَاضِي.	Dhahabtu ilā bikīna al-ʿāma al-māḍī.	verified	claude-blind,claude-review	
+h2p188	我已经吃饭了。	Wǒ yǐ jīng chī fàn le.	I've already eaten.	لَقَدْ أَكَلْتُ بِالْفِعْلِ.	Laqad akaltu bi-l-fiʿl.	verified	claude-blind,claude-review	
+h2p189	他已经走了。	Tā yǐ jīng zǒu le.	He's already gone.	لَقَدْ ذَهَبَ بِالْفِعْلِ.	Laqad dhahaba bi-l-fiʿl.	verified	claude-blind,claude-review	
+h2p190	我等了一个小时。	Wǒ děng le yí gè xiǎo shí.	I waited for an hour.	اِنْتَظَرْتُ سَاعَةً.	Intaẓartu sāʿa.	verified	claude-blind,claude-review	
+h2p191	还有十分钟。	Hái yǒu shí fēn zhōng.	There are still ten minutes.	بَقِيَتْ عَشْرُ دَقَائِقَ.	Baqiyat ʿashru daqāʾiq.	verified	claude-blind,claude-review	
+h2p192	我们快点儿走吧！	Wǒ men kuài diǎnr zǒu ba!	Let's hurry up and go!	لِنُسْرِعْ وَنَذْهَبْ!	Linusriʿ wanadhhab!	verified	claude-blind,claude-review	
+h2p193	时间到了！	Shí jiān dào le!	Time's up!	اِنْتَهَى الْوَقْتُ!	Intahā al-waqt!	verified	claude-blind,claude-review	
+h2p194	每天都很忙。	Měi tiān dōu hěn máng.	Every day is busy.	أَنَا مَشْغُولٌ كُلَّ يَوْمٍ.	Anā mashghūlun kulla yawm.	verified	claude-blind,claude-review	
+h2p195	我每天八点起床。	Wǒ měi tiān bā diǎn qǐ chuáng.	I get up at eight every day.	أَسْتَيْقِظُ فِي السَّاعَةِ الثَّامِنَةِ كُلَّ يَوْمٍ.	Astayqiẓu fī as-sāʿati ath-thāminati kulla yawm.	verified	claude-blind,claude-review	
+h2p196	晚上我们去看电影吧。	Wǎn shang wǒ men qù kàn diàn yǐng ba.	Let's go see a movie tonight.	لِنَذْهَبْ لِمُشَاهَدَةِ فِيلْمٍ اللَّيْلَةَ.	Linadhhab limushāhadati fīlmin al-layla.	verified	claude-blind,claude-review	
+h2p197	我想去旅游。	Wǒ xiǎng qù lǚ yóu.	I want to go travelling.	أُرِيدُ أَنْ أُسَافِرَ.	Urīdu an usāfir.	verified	claude-blind,claude-review	
+h2p198	机场离这儿远吗？	Jī chǎng lí zhèr yuǎn ma?	Is the airport far from here?	هَلِ الْمَطَارُ بَعِيدٌ مِنْ هُنَا؟	Hali al-maṭāru baʿīdun min hunā?	verified	claude-blind,claude-review	
+h2p199	医院离这儿很近。	Yī yuàn lí zhèr hěn jìn.	The hospital is very close to here.	الْمُسْتَشْفَى قَرِيبٌ جِدًّا مِنْ هُنَا.	Al-mustashfā qarībun jiddan min hunā.	verified	claude-blind,claude-review	
+h2p200	我们坐公共汽车去吧。	Wǒ men zuò gōng gòng qì chē qù ba.	Let's take the bus.	لِنَذْهَبْ بِالْحَافِلَةِ.	Linadhhab bi-l-ḥāfila.	verified	claude-blind,claude-review	
+h2p201	我们住在宾馆。	Wǒ men zhù zài bīn guǎn.	We're staying at a hotel.	نَحْنُ نُقِيمُ فِي فُنْدُقٍ.	Naḥnu nuqīmu fī funduq.	verified	claude-blind,claude-review	
+h2p202	你的房间在哪儿？	Nǐ de fáng jiān zài nǎr?	Where is your room?	أَيْنَ غُرْفَتُكَ؟	Ayna ghurfatuk?	verified	claude-blind,claude-review	
+h2p203	往左边走。	Wǎng zuǒ bian zǒu.	Go to the left.	اِذْهَبْ إِلَى الْيَسَارِ.	Idhhab ilā al-yasār.	verified	claude-blind,claude-review	
+h2p204	往右边走。	Wǎng yòu bian zǒu.	Go to the right.	اِذْهَبْ إِلَى الْيَمِينِ.	Idhhab ilā al-yamīn.	verified	claude-blind,claude-review	
+h2p205	学校在医院旁边。	Xué xiào zài yī yuàn páng biān.	The school is next to the hospital.	الْمَدْرَسَةُ بِجَانِبِ الْمُسْتَشْفَى.	Al-madrasatu bijānibi al-mustashfā.	verified	claude-blind,claude-review	
+h2p206	商店在右边。	Shāng diàn zài yòu bian.	The shop is on the right.	الْمَحَلُّ عَلَى الْيَمِينِ.	Al-maḥallu ʿalā al-yamīn.	verified	claude-blind,claude-review	
+h2p207	我从北京来。	Wǒ cóng běi jīng lái.	I come from Beijing.	أَنَا قَادِمٌ مِنْ بِكِينَ.	Anā qādimun min bikīn.	verified	claude-blind,claude-review	
+h2p208	你从哪儿来？	Nǐ cóng nǎr lái?	Where do you come from?	مِنْ أَيْنَ أَنْتَ؟	Min ayna anta?	verified	claude-blind,claude-review	
+h2p209	北京离这儿很远。	Běi jīng lí zhèr hěn yuǎn.	Beijing is far from here.	بِكِينُ بَعِيدَةٌ عَنْ هُنَا.	Bikīnu baʿīdatun ʿan hunā.	verified	claude-blind,claude-review	
+h2p210	路上车很多。	Lù shang chē hěn duō.	There are lots of cars on the road.	هُنَاكَ سَيَّارَاتٌ كَثِيرَةٌ عَلَى الطَّرِيقِ.	Hunāka sayyārātun kathīratun ʿalā aṭ-ṭarīq.	verified	claude-blind,claude-review	
+h2p211	飞机票很贵。	Fēi jī piào hěn guì.	Plane tickets are expensive.	تَذَاكِرُ الطَّائِرَةِ غَالِيَةٌ.	Tadhākiru aṭ-ṭāʾirati ghāliya.	verified	claude-blind,claude-review	
+h2p212	我买到票了！	Wǒ mǎi dào piào le!	I got the tickets!	حَصَلْتُ عَلَى التَّذْكِرَةِ!	Ḥaṣaltu ʿalā at-tadhkira!	verified	claude-blind,claude-review	
+h2p213	你去过中国吗？	Nǐ qù guo zhōng guó ma?	Have you been to China?	هَلْ ذَهَبْتَ إِلَى الصِّينِ مِنْ قَبْلُ؟	Hal dhahabta ilā aṣ-ṣīni min qabl?	verified	claude-blind,claude-review	
+h2p214	我去过北京。	Wǒ qù guo běi jīng.	I've been to Beijing.	ذَهَبْتُ إِلَى بِكِينَ مِنْ قَبْلُ.	Dhahabtu ilā bikīna min qabl.	verified	claude-blind,claude-review	
+h2p215	你的眼睛很漂亮。	Nǐ de yǎn jing hěn piào liang.	Your eyes are very pretty.	عَيْنَاكَ جَمِيلَتَانِ جِدًّا.	ʿAynāka jamīlatāni jiddan.	verified	claude-blind,claude-review	
+h2p216	我有一个很大的眼睛。	Wǒ yǒu yí gè hěn dà de yǎn jing.	I have one very big eye.	عِنْدِي عَيْنٌ كَبِيرَةٌ جِدًّا.	ʿIndī ʿaynun kabīratun jiddan.	verified	claude-blind,claude-review	
+h2p217	猫在门外面。	Māo zài mén wài mian.	The cat is outside the door.	الْقِطَّةُ خَارِجَ الْبَابِ.	Al-qiṭṭatu khārija al-bāb.	verified	claude-blind,claude-review	
+h2p218	它是我的猫。	Tā shì wǒ de māo.	It's my cat.	هِيَ قِطَّتِي.	Hiya qiṭṭatī.	verified	claude-blind,claude-review	
+h2p219	它叫什么名字？	Tā jiào shén me míng zi?	What's its name?	مَا اسْمُهَا؟	Mā ismuhā?	verified	claude-blind,claude-review	
+h2p220	你说得对。	Nǐ shuō de duì.	You're right.	أَنْتَ عَلَى حَقٍّ.	Anta ʿalā ḥaqq.	verified	claude-blind,claude-review	
+h2p221	我觉得你说得对。	Wǒ jué de nǐ shuō de duì.	I think you're right.	أَعْتَقِدُ أَنَّكَ عَلَى حَقٍّ.	Aʿtaqidu annaka ʿalā ḥaqq.	verified	claude-blind,claude-review	
+h2p222	我也是！	Wǒ yě shì!	Me too!	أَنَا أَيْضًا!	Anā ayḍan!	verified	claude-blind,claude-review	
+h2p223	我也不知道。	Wǒ yě bù zhī dào.	I don't know either.	أَنَا أَيْضًا لَا أَعْرِفُ.	Anā ayḍan lā aʿrif.	verified	claude-blind,claude-review	
+h2p224	真的吗？	Zhēn de ma?	Really?	حَقًّا؟	Ḥaqqan?	verified	claude-blind,claude-review	
+h2p225	真的！	Zhēn de!	Really!	حَقًّا!	Ḥaqqan!	verified	claude-blind,claude-review	
+h2p226	为什么？	Wèi shén me?	Why?	لِمَاذَا؟	Limādhā?	verified	claude-blind,claude-review	
+h2p227	为什么不呢？	Wèi shén me bù ne?	Why not?	لِمَاذَا لَا؟	Limādhā lā?	verified	claude-blind,claude-review	
+h2p228	因为我喜欢你，所以我来了。	Yīn wèi wǒ xǐ huan nǐ, suǒ yǐ wǒ lái le.	Because I like you, I came.	لِأَنِّي أُحِبُّكَ، أَتَيْتُ.	Liʾannī uḥibbuk, atayt.	verified	claude-blind,claude-review	
+h2p229	因为下雨，所以我没去。	Yīn wèi xià yǔ, suǒ yǐ wǒ méi qù.	Because it rained, I didn't go.	لِأَنَّ الْمَطَرَ هَطَلَ، فَلَمْ أَذْهَبْ.	Liʾanna al-maṭara haṭal, falam adhhab.	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same
+h2p230	虽然很累，但是我很高兴。	Suī rán hěn lèi, dàn shì wǒ hěn gāo xìng.	Although I'm tired, I'm happy.	مَعَ أَنِّي مُتْعَبٌ، إِلَّا أَنِّي سَعِيدٌ.	Maʿa annī mutʿab, illā annī saʿīd.	verified	claude-blind,claude-review	
+h2p231	虽然外面很冷，但是我想出去玩。	Suī rán wài mian hěn lěng, dàn shì wǒ xiǎng chū qù wán.	Although it's cold outside, I want to go out and play.	مَعَ أَنَّ الْجَوَّ بَارِدٌ فِي الْخَارِجِ، إِلَّا أَنِّي أُرِيدُ أَنْ أَخْرُجَ لِأَلْعَبَ.	Maʿa anna al-jawwa bāridun fī al-khārij, illā annī urīdu an akhruja liʾalʿab.	verified	claude-blind,claude-review	
+h2p232	你别笑！	Nǐ bié xiào!	Don't laugh!	لَا تَضْحَكْ!	Lā taḍḥak!	verified	claude-blind,claude-review	
+h2p233	他笑了。	Tā xiào le.	He laughed.	ضَحِكَ.	Ḍaḥik.	verified	claude-blind,claude-review	
+h2p234	你在笑什么？	Nǐ zài xiào shén me?	What are you laughing at?	عَلَى مَاذَا تَضْحَكُ؟	ʿAlā mādhā taḍḥak?	verified	claude-blind,claude-review	
+h2p235	我正在看书。	Wǒ zhèng zài kàn shū.	I'm reading right now.	أَقْرَأُ كِتَابًا الْآنَ.	Aqraʾu kitāban al-ʾān.	verified	claude-blind,claude-review	
+h2p236	他正在打电话。	Tā zhèng zài dǎ diàn huà.	He's on the phone right now.	هُوَ يَتَحَدَّثُ عَبْرَ الْهَاتِفِ الْآنَ.	Huwa yataḥaddathu ʿabra al-hātifi al-ʾān.	verified	claude-blind,claude-review	
+h2p237	我在找我的手机。	Wǒ zài zhǎo wǒ de shǒu jī.	I'm looking for my phone.	أَبْحَثُ عَنْ هَاتِفِي.	Abḥathu ʿan hātifī.	verified	claude-blind,claude-review	
+h2p238	你看见我的手表了吗？	Nǐ kàn jiàn wǒ de shǒu biǎo le ma?	Have you seen my watch?	هَلْ رَأَيْتَ سَاعَتِي؟	Hal raʾayta sāʿatī?	verified	claude-blind,claude-review	
+h2p239	我的手机在哪儿？	Wǒ de shǒu jī zài nǎr?	Where's my phone?	أَيْنَ هَاتِفِي؟	Ayna hātifī?	verified	claude-blind,claude-review	
+h2p240	给我打电话吧。	Gěi wǒ dǎ diàn huà ba.	Give me a call.	اِتَّصِلْ بِي.	Ittaṣil bī.	verified	claude-blind,claude-review	
+h2p241	我告诉你一件事情。	Wǒ gào su nǐ yí jiàn shì qing.	Let me tell you something.	سَأُخْبِرُكَ بِشَيْءٍ.	Saʾukhbiruka bishayʾ.	verified	claude-blind,claude-review	
+h2p242	别告诉他！	Bié gào su tā!	Don't tell him!	لَا تُخْبِرْهُ!	Lā tukhbirh!	verified	claude-blind,claude-review	
+h2p243	你能帮助我吗？	Nǐ néng bāng zhù wǒ ma?	Can you help me?	هَلْ تَسْتَطِيعُ مُسَاعَدَتِي؟	Hal tastaṭīʿu musāʿadatī?	verified	claude-blind,claude-review	
+h2p244	谢谢你的帮助。	Xiè xie nǐ de bāng zhù.	Thank you for your help.	شُكْرًا عَلَى مُسَاعَدَتِكَ.	Shukran ʿalā musāʿadatik.	verified	claude-blind,claude-review	
+h2p245	我来介绍一下。	Wǒ lái jiè shào yí xià.	Let me make the introductions.	دَعُونِي أُعَرِّفْ بَعْضَكُمْ بِبَعْضٍ.	Daʿūnī uʿarrif baʿḍakum bibaʿḍ.	verified	claude-blind,claude-review	
+h2p246	请进！	Qǐng jìn!	Please come in!	تَفَضَّلْ بِالدُّخُولِ!	Tafaḍḍal bi-d-dukhūl!	verified	claude-blind,claude-review	
+h2p247	请等一下。	Qǐng děng yí xià.	Please wait a moment.	اِنْتَظِرْ لَحْظَةً مِنْ فَضْلِكَ.	Intaẓir laḥẓatan min faḍlik.	verified	claude-blind,claude-review	
+h2p248	等等我！	Děng děng wǒ!	Wait for me!	اِنْتَظِرْنِي!	Intaẓirnī!	verified	claude-blind,claude-review	
+h2p249	我们一起走吧。	Wǒ men yì qǐ zǒu ba.	Let's go together.	لِنَذْهَبْ مَعًا.	Linadhhab maʿan.	verified	claude-blind,claude-review	
+h2p250	你走得太快了！	Nǐ zǒu de tài kuài le!	You're walking too fast!	تَمْشِي أَسْرَعَ مِمَّا يَنْبَغِي!	Tamshī asraʿa mimmā yanbaghī!	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same
+h2p251	我不想洗衣服。	Wǒ bù xiǎng xǐ yī fu.	I don't want to do the laundry.	لَا أُرِيدُ أَنْ أَغْسِلَ الْمَلَابِسَ.	Lā urīdu an aghsila al-malābis.	verified	claude-blind,claude-review	
+h2p252	我去洗手。	Wǒ qù xǐ shǒu.	I'm going to wash my hands.	سَأَذْهَبُ لِأَغْسِلَ يَدَيَّ.	Saʾadhhabu liʾaghsila yadayy.	verified	claude-blind,claude-review	
+h2p253	他在看报纸。	Tā zài kàn bào zhǐ.	He's reading the newspaper.	هُوَ يَقْرَأُ الْجَرِيدَةَ.	Huwa yaqraʾu al-jarīda.	verified	claude-blind,claude-review	
+h2p254	我喜欢喝咖啡。	Wǒ xǐ huan hē kā fēi.	I like drinking coffee.	أُحِبُّ شُرْبَ الْقَهْوَةِ.	Uḥibbu shurba al-qahwa.	verified	claude-blind,claude-review	
+h2p255	咖啡太热了。	Kā fēi tài rè le.	The coffee is too hot.	الْقَهْوَةُ سَاخِنَةٌ جِدًّا.	Al-qahwatu sākhinatun jiddan.	verified	claude-blind,claude-review	
+h2p256	我每天早上喝牛奶。	Wǒ měi tiān zǎo shang hē niú nǎi.	I drink milk every morning.	أَشْرَبُ الْحَلِيبَ كُلَّ صَبَاحٍ.	Ashrabu al-ḥalība kulla ṣabāḥ.	verified	claude-blind,claude-review	
+h2p257	我不吃羊肉。	Wǒ bù chī yáng ròu.	I don't eat lamb.	لَا آكُلُ لَحْمَ الْغَنَمِ.	Lā ākulu laḥma al-ghanam.	verified	claude-blind,claude-review	
+h2p258	这家饭店的菜很好吃。	Zhè jiā fàn diàn de cài hěn hǎo chī.	The food at this restaurant is very tasty.	طَعَامُ هٰذَا الْمَطْعَمِ لَذِيذٌ جِدًّا.	Ṭaʿāmu hādhā al-maṭʿami ladhīdhun jiddan.	verified	claude-blind,claude-review	
+h2p259	服务员，我们要两杯茶。	Fú wù yuán, wǒ men yào liǎng bēi chá.	Waiter, we'd like two cups of tea.	يَا نَادِلُ، نُرِيدُ كُوبَيْنِ مِنَ الشَّايِ.	Yā nādil, nurīdu kūbayni mina ash-shāy.	verified	claude-blind,claude-review	
+h2p260	我生病了。	Wǒ shēng bìng le.	I'm sick.	أَنَا مَرِيضٌ.	Anā marīḍ.	verified	claude-blind,claude-review	
+h2p261	你要吃药。	Nǐ yào chī yào.	You need to take medicine.	يَجِبُ أَنْ تَتَنَاوَلَ الدَّوَاءَ.	Yajibu an tatanāwala ad-dawāʾ.	verified	claude-blind,claude-review	
+h2p262	你身体怎么样？	Nǐ shēn tǐ zěn me yàng?	How are you feeling?	كَيْفَ صِحَّتُكَ؟	Kayfa ṣiḥḥatuk?	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same
+h2p263	我明天要去医院。	Wǒ míng tiān yào qù yī yuàn.	I have to go to the hospital tomorrow.	يَجِبُ أَنْ أَذْهَبَ إِلَى الْمُسْتَشْفَى غَدًا.	Yajibu an adhhaba ilā al-mustashfā ghadan.	verified	claude-blind,claude-review	
+h2p264	多喝水，多休息。	Duō hē shuǐ, duō xiū xi.	Drink lots of water and get lots of rest.	اِشْرَبْ مَاءً كَثِيرًا وَاسْتَرِحْ كَثِيرًا.	Ishrab māʾan kathīran wastariḥ kathīran.	verified	claude-blind,claude-review	
+h2p265	门开着。	Mén kāi zhe.	The door is open.	الْبَابُ مَفْتُوحٌ.	Al-bābu maftūḥ.	verified	claude-blind,claude-review	
+h2p266	请开门！	Qǐng kāi mén!	Please open the door!	اِفْتَحِ الْبَابَ مِنْ فَضْلِكَ!	Iftaḥi al-bāba min faḍlik!	verified	claude-blind,claude-review	
+h2p267	你在外面吗？	Nǐ zài wài mian ma?	Are you outside?	هَلْ أَنْتَ فِي الْخَارِجِ؟	Hal anta fī al-khārij?	verified	claude-blind,claude-review	
+h2p268	外面有人。	Wài mian yǒu rén.	There's someone outside.	هُنَاكَ أَحَدٌ فِي الْخَارِجِ.	Hunāka aḥadun fī al-khārij.	verified	claude-blind,claude-review	
+h2p269	我们进去吧。	Wǒ men jìn qù ba.	Let's go in.	لِنَدْخُلْ.	Linadkhul.	verified	claude-blind,claude-review	
+h2p270	你出来！	Nǐ chū lái!	Come out!	اُخْرُجْ!	Ukhruj!	verified	claude-blind,claude-review	
+h2p271	我不想出去。	Wǒ bù xiǎng chū qù.	I don't want to go out.	لَا أُرِيدُ أَنْ أَخْرُجَ.	Lā urīdu an akhruj.	verified	claude-blind,claude-review	
+h2p272	我可以进来吗？	Wǒ kě yǐ jìn lái ma?	May I come in?	هَلْ يُمْكِنُنِي الدُّخُولُ؟	Hal yumkinunī ad-dukhūl?	verified	claude-blind,claude-review	
+h2p273	他出去了。	Tā chū qù le.	He's gone out.	خَرَجَ.	Kharaj.	verified	claude-blind,claude-review	
+h2p274	那个人是男的还是女的？	Nà ge rén shì nán de hái shì nǚ de?	Is that person a man or a woman?	هَلْ ذٰلِكَ الشَّخْصُ رَجُلٌ أَمِ اِمْرَأَةٌ؟	Hal dhālika ash-shakhṣu rajulun ami imraʾa?	verified	claude-blind,claude-review	
+h2p275	你姓什么？	Nǐ xìng shén me?	What's your surname?	مَا اسْمُ عَائِلَتِكَ؟	Mā ismu ʿāʾilatik?	verified	claude-blind,claude-review	
+h2p276	我有两百块钱。	Wǒ yǒu liǎng bǎi kuài qián.	I have two hundred yuan.	عِنْدِي مِئَتَا يُوَانٍ.	ʿIndī miʾatā yuwān.	verified	claude-blind,claude-review	
+h2p277	一千块太贵了！	Yì qiān kuài tài guì le!	A thousand yuan is too expensive!	أَلْفُ يُوَانٍ غَالٍ جِدًّا!	Alfu yuwānin ghālin jiddan!	verified	claude-blind,claude-review	
+h2p278	我是第一！	Wǒ shì dì yī!	I'm number one!	أَنَا الْأَوَّلُ!	Anā al-ʾawwal!	verified	claude-blind,claude-review	
+h2p279	我最高！	Wǒ zuì gāo!	I'm the tallest!	أَنَا الْأَطْوَلُ!	Anā al-ʾaṭwal!	verified	claude-blind,claude-review	
+h2p280	你比我快。	Nǐ bǐ wǒ kuài.	You're faster than me.	أَنْتَ أَسْرَعُ مِنِّي.	Anta asraʿu minnī.	verified	claude-blind,claude-review	
+h2p281	他比我大两岁。	Tā bǐ wǒ dà liǎng suì.	He's two years older than me.	هُوَ أَكْبَرُ مِنِّي بِسَنَتَيْنِ.	Huwa akbaru minnī bisanatayn.	verified	claude-blind,claude-review	
+h2p282	这个比那个好。	Zhè ge bǐ nà ge hǎo.	This one is better than that one.	هٰذَا أَفْضَلُ مِنْ ذٰلِكَ.	Hādhā afḍalu min dhālik.	verified	claude-blind,claude-review	
+h2p283	我没有你高。	Wǒ méi yǒu nǐ gāo.	I'm not as tall as you.	لَسْتُ طَوِيلًا مِثْلَكَ.	Lastu ṭawīlan mithlak.	verified	claude-blind,claude-review	
+h2p284	这是新的吗？	Zhè shì xīn de ma?	Is this new?	هَلْ هٰذَا جَدِيدٌ؟	Hal hādhā jadīd?	verified	claude-blind,claude-review	
+h2p285	我有一个新手机。	Wǒ yǒu yí gè xīn shǒu jī.	I have a new phone.	عِنْدِي هَاتِفٌ جَدِيدٌ.	ʿIndī hātifun jadīd.	verified	claude-blind,claude-review	
+h2p286	我喜欢你的新衣服。	Wǒ xǐ huan nǐ de xīn yī fu.	I like your new clothes.	أُحِبُّ مَلَابِسَكَ الْجَدِيدَةَ.	Uḥibbu malābisaka al-jadīda.	verified	claude-blind,claude-review	
+h2p287	这本书我看完了。	Zhè běn shū wǒ kàn wán le.	I've finished reading this book.	اِنْتَهَيْتُ مِنْ قِرَاءَةِ هٰذَا الْكِتَابِ.	Intahaytu min qirāʾati hādhā al-kitāb.	verified	claude-blind,claude-review	
+h2p288	你做完了吗？	Nǐ zuò wán le ma?	Are you done?	هَلِ انْتَهَيْتَ؟	Hali intahayt?	verified	claude-blind,claude-review	
+h2p289	我还没做完。	Wǒ hái méi zuò wán.	I haven't finished yet.	لَمْ أَنْتَهِ بَعْدُ.	Lam antahi baʿd.	verified	claude-blind,claude-review	
+h2p290	我们开始吧！	Wǒ men kāi shǐ ba!	Let's begin!	لِنَبْدَأْ!	Linabdaʾ!	verified	claude-blind,claude-review	
+h2p291	我们什么时候开始？	Wǒ men shén me shí hou kāi shǐ?	When do we start?	مَتَى نَبْدَأُ؟	Matā nabdaʾ?	verified	claude-blind,claude-review	
+h2p292	你准备好了吗？	Nǐ zhǔn bèi hǎo le ma?	Are you ready?	هَلْ أَنْتَ مُسْتَعِدٌّ؟	Hal anta mustaʿidd?	verified	claude-blind,claude-review	
+h2p293	我准备好了！	Wǒ zhǔn bèi hǎo le!	I'm ready!	أَنَا مُسْتَعِدٌّ!	Anā mustaʿidd!	verified	claude-blind,claude-review	
+h2p294	我希望明天是晴天。	Wǒ xī wàng míng tiān shì qíng tiān.	I hope it's sunny tomorrow.	أَتَمَنَّى أَنْ يَكُونَ الْجَوُّ مُشْمِسًا غَدًا.	Atamannā an yakūna al-jawwu mushmisan ghadan.	verified	claude-blind,claude-review	
+h2p295	我希望你快乐。	Wǒ xī wàng nǐ kuài lè.	I hope you're happy.	أَتَمَنَّى لَكَ السَّعَادَةَ.	Atamannā laka as-saʿāda.	verified	claude-blind,claude-review	
+h2p296	可能吧。	Kě néng ba.	Maybe.	رُبَّمَا.	Rubbamā.	verified	claude-blind,claude-review	
+h2p297	这样可以吗？	Zhè yàng kě yǐ ma?	Is this OK?	هَلْ هٰذَا مُنَاسِبٌ؟	Hal hādhā munāsib?	verified	claude-blind,claude-review	
+h2p298	不可以！	Bù kě yǐ!	No, you can't!	لَا، لَا يَجُوزُ ذٰلِكَ!	Lā, lā yajūzu dhālik!	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same
+h2p299	我可以坐这儿吗？	Wǒ kě yǐ zuò zhèr ma?	May I sit here?	هَلْ يُمْكِنُنِي الْجُلُوسُ هُنَا؟	Hal yumkinunī al-julūsu hunā?	verified	claude-blind,claude-review	
+h2p300	你要去哪儿？	Nǐ yào qù nǎr?	Where are you going?	إِلَى أَيْنَ تَذْهَبُ؟	Ilā ayna tadhhab?	verified	claude-blind,claude-review	
+h2p301	我要这个。	Wǒ yào zhè ge.	I want this one.	أُرِيدُ هٰذَا.	Urīdu hādhā.	verified	claude-blind,claude-review	
+h2p302	我什么都不要。	Wǒ shén me dōu bú yào.	I don't want anything.	لَا أُرِيدُ شَيْئًا.	Lā urīdu shayʾan.	verified	claude-blind,claude-review	
+h2p303	我们一起去吧！	Wǒ men yì qǐ qù ba!	Let's go together!	لِنَذْهَبْ مَعًا!	Linadhhab maʿan!	verified	claude-blind,claude-review	
+h2p304	我们一起吃饭吧。	Wǒ men yì qǐ chī fàn ba.	Let's eat together.	لِنَأْكُلْ مَعًا.	Linaʾkul maʿan.	verified	claude-blind,claude-review	
+h2p305	我也想去。	Wǒ yě xiǎng qù.	I want to go too.	أُرِيدُ الذَّهَابَ أَيْضًا.	Urīdu adh-dhahāba ayḍan.	verified	claude-blind,claude-review	
+h2p306	你也喜欢猫吗？	Nǐ yě xǐ huan māo ma?	Do you like cats too?	هَلْ تُحِبُّ الْقِطَطَ أَيْضًا؟	Hal tuḥibbu al-qiṭaṭa ayḍan?	verified	claude-blind,claude-review	
+h2p307	他也是学生。	Tā yě shì xué sheng.	He's a student too.	هُوَ طَالِبٌ أَيْضًا.	Huwa ṭālibun ayḍan.	verified	claude-blind,claude-review	
+h2p308	就是这个！	Jiù shì zhè ge!	This is the one!	هٰذَا هُوَ بِالضَّبْطِ!	Hādhā huwa bi-ḍ-ḍabṭ!	verified	claude-blind,claude-review	
+h2p309	我就在这儿。	Wǒ jiù zài zhèr.	I'm right here.	هَا أَنَا هُنَا.	Hā anā hunā.	conflict		reviewer proposed a fix (تَمَامًا is not idiomatic here; هَا أَنَا هُنَا = here I am); blind reading was "I am right here." · re-check next round
+h2p310	我就来！	Wǒ jiù lái!	I'm coming right away!	سَآتِي حَالًا!	Saʾātī ḥālan!	verified	claude-blind,claude-review	
+h2p311	他还没来。	Tā hái méi lái.	He hasn't come yet.	لَمْ يَأْتِ بَعْدُ.	Lam yaʾti baʿd.	verified	claude-blind,claude-review	
+h2p312	还有问题吗？	Hái yǒu wèn tí ma?	Any more questions?	هَلْ هُنَاكَ أَسْئِلَةٌ أُخْرَى؟	Hal hunāka asʾilatun ukhrā?	verified	claude-blind,claude-review	
+h2p313	我还是学生。	Wǒ hái shì xué sheng.	I'm still a student.	مَا زِلْتُ طَالِبًا.	Mā ziltu ṭāliban.	verified	claude-blind,claude-review	
+h2p314	对不起，我错了。	Duì bu qǐ, wǒ cuò le.	Sorry, I was wrong.	آسِفٌ، كُنْتُ مُخْطِئًا.	Āsif, kuntu mukhṭiʾan.	verified	claude-blind,claude-review	
+h2p315	你错了。	Nǐ cuò le.	You're wrong.	أَنْتَ مُخْطِئٌ.	Anta mukhṭiʾ.	verified	claude-blind,claude-review	
+h2p316	没错！	Méi cuò!	That's right!	صَحِيحٌ!	Ṣaḥīḥ!	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same
+h2p317	这个对吗？	Zhè ge duì ma?	Is this right?	هَلْ هٰذَا صَحِيحٌ؟	Hal hādhā ṣaḥīḥ?	verified	claude-blind,claude-review	
+h2p318	你到哪儿了？	Nǐ dào nǎr le?	Where are you now?	إِلَى أَيْنَ وَصَلْتَ؟	Ilā ayna waṣalt?	verified	claude-blind,claude-review	
+h2p319	我们到家了。	Wǒ men dào jiā le.	We're home.	وَصَلْنَا إِلَى الْبَيْتِ.	Waṣalnā ilā al-bayt.	verified	claude-blind,claude-review	
+h2p320	我从学校回来了。	Wǒ cóng xué xiào huí lái le.	I'm back from school.	عُدْتُ مِنَ الْمَدْرَسَةِ.	ʿUdtu mina al-madrasa.	verified	claude-blind,claude-review	
+h2p321	你往左边看。	Nǐ wǎng zuǒ bian kàn.	Look to the left.	اُنْظُرْ إِلَى الْيَسَارِ.	Unẓur ilā al-yasār.	verified	claude-blind,claude-review	
+h2p322	左边是我家。	Zuǒ bian shì wǒ jiā.	My home is on the left.	بَيْتِي عَلَى الْيَسَارِ.	Baytī ʿalā al-yasār.	verified	claude-blind,claude-review	
+h2p323	你说话太快了。	Nǐ shuō huà tài kuài le.	You talk too fast.	تَتَكَلَّمُ أَسْرَعَ مِمَّا يَنْبَغِي.	Tatakallamu asraʿa mimmā yanbaghī.	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same
+h2p324	请说慢一点儿。	Qǐng shuō màn yì diǎnr.	Please speak a bit more slowly.	تَكَلَّمْ بِبُطْءٍ أَكْثَرَ مِنْ فَضْلِكَ.	Takallam bibuṭʾin akthara min faḍlik.	verified	claude-blind,claude-review	
+h2p325	别说话！	Bié shuō huà!	Don't talk!	لَا تَتَكَلَّمْ!	Lā tatakallam!	verified	claude-blind,claude-review	
+h2p326	他不想说话。	Tā bù xiǎng shuō huà.	He doesn't want to talk.	لَا يُرِيدُ أَنْ يَتَكَلَّمَ.	Lā yurīdu an yatakallam.	verified	claude-blind,claude-review	
+h2p327	我没听懂。	Wǒ méi tīng dǒng.	I didn't understand what I heard.	لَمْ أَفْهَمْ.	Lam afham.	verified	claude-blind,claude-review	
+h2p328	你听懂了吗？	Nǐ tīng dǒng le ma?	Did you understand?	هَلْ فَهِمْتَ؟	Hal fahimt?	verified	claude-blind,claude-review	
+h2p329	我听不懂。	Wǒ tīng bù dǒng.	I can't understand.	لَا أَفْهَمُ.	Lā afham.	verified	claude-blind,claude-review	
+h2p330	我唱得不好。	Wǒ chàng de bù hǎo.	I don't sing well.	لَا أُغَنِّي جَيِّدًا.	Lā ughannī jayyidan.	verified	claude-blind,claude-review	
+h2p331	你唱歌唱得真好！	Nǐ chàng gē chàng de zhēn hǎo!	You sing really well!	أَنْتَ تُغَنِّي جَيِّدًا حَقًّا!	Anta tughannī jayyidan ḥaqqan!	verified	claude-blind,claude-review	
+h2p332	小猫正在睡觉。	Xiǎo māo zhèng zài shuì jiào.	The kitten is sleeping.	الْقِطُّ الصَّغِيرُ نَائِمٌ الْآنَ.	Al-qiṭṭu aṣ-ṣaghīru nāʾimun al-ʾān.	verified	claude-blind,claude-review	
+h2p333	狗在外面跑。	Gǒu zài wài mian pǎo.	The dog is running around outside.	الْكَلْبُ يَجْرِي فِي الْخَارِجِ.	Al-kalbu yajrī fī al-khārij.	verified	claude-blind,claude-review	
+h2p334	送你一个苹果。	Sòng nǐ yí gè píng guǒ.	Here, an apple for you.	أُهْدِيكَ تُفَّاحَةً.	Uhdīka tuffāḥa.	verified	claude-blind,claude-review	
+h2p335	这是我送你的。	Zhè shì wǒ sòng nǐ de.	This is a gift from me to you.	هٰذِهِ هَدِيَّةٌ مِنِّي لَكَ.	Hādhihi hadiyyatun minnī lak.	verified	claude-blind,claude-review	
+h2p336	谢谢你送我这个。	Xiè xie nǐ sòng wǒ zhè ge.	Thank you for giving me this.	شُكْرًا عَلَى إِهْدَائِكَ هٰذَا لِي.	Shukran ʿalā ihdāʾika hādhā lī.	verified	claude-blind,claude-review	
+h2p337	妈妈不让我出去玩。	Mā ma bú ràng wǒ chū qù wán.	Mum won't let me go out to play.	أُمِّي لَا تَسْمَحُ لِي بِالْخُرُوجِ لِلَّعِبِ.	Ummī lā tasmaḥu lī bi-l-khurūji lillaʿib.	verified	claude-blind,claude-review	
+h2p338	让我看看！	Ràng wǒ kàn kan!	Let me see!	دَعْنِي أَرَ!	Daʿnī ar!	verified	claude-blind,claude-review	
+h2p339	让我想想。	Ràng wǒ xiǎng xiang.	Let me think.	دَعْنِي أُفَكِّرُ.	Daʿnī ufakkir.	verified	claude-blind,claude-review	
+h2p340	我们玩得很高兴。	Wǒ men wán de hěn gāo xìng.	We had a great time.	اِسْتَمْتَعْنَا كَثِيرًا بِاللَّعِبِ.	Istamtaʿnā kathīran bi-l-laʿib.	verified	claude-blind,claude-review	
+h2p341	你想玩什么？	Nǐ xiǎng wán shén me?	What do you want to play?	مَاذَا تُرِيدُ أَنْ تَلْعَبَ؟	Mādhā turīdu an talʿab?	verified	claude-blind,claude-review	
+h2p342	别玩手机了！	Bié wán shǒu jī le!	Stop playing on your phone!	كَفَى لَعِبًا بِالْهَاتِفِ!	Kafā laʿiban bi-l-hātif!	verified	claude-blind,claude-review	
+h2p343	你每天几点睡觉？	Nǐ měi tiān jǐ diǎn shuì jiào?	What time do you go to bed every day?	فِي أَيِّ سَاعَةٍ تَنَامُ كُلَّ يَوْمٍ؟	Fī ayyi sāʿatin tanāmu kulla yawm?	verified	claude-blind,claude-review	
+h2p344	我今天起得很早。	Wǒ jīn tiān qǐ de hěn zǎo.	I got up very early today.	اِسْتَيْقَظْتُ مُبَكِّرًا جِدًّا الْيَوْمَ.	Istayqaẓtu mubakkiran jiddan al-yawm.	verified	claude-blind,claude-review	
+h2p345	你起床了吗？	Nǐ qǐ chuáng le ma?	Are you up?	هَلِ اسْتَيْقَظْتَ؟	Hali istayqaẓt?	verified	claude-blind,claude-review	
+h2p346	快起床！	Kuài qǐ chuáng!	Get up!	اِسْتَيْقِظْ بِسُرْعَةٍ!	Istayqiẓ bisurʿa!	verified	claude-blind,claude-review	
+h2p347	他还在睡觉。	Tā hái zài shuì jiào.	He's still sleeping.	مَا زَالَ نَائِمًا.	Mā zāla nāʾiman.	verified	claude-blind,claude-review	
+h2p348	今天晚上你做什么？	Jīn tiān wǎn shang nǐ zuò shén me?	What are you doing tonight?	مَاذَا تَفْعَلُ هٰذَا الْمَسَاءَ؟	Mādhā tafʿalu hādhā al-masāʾ?	verified	claude-blind,claude-review	
+h2p349	我晚上要学习。	Wǒ wǎn shang yào xué xí.	I have to study tonight.	يَجِبُ أَنْ أَدْرُسَ هٰذَا الْمَسَاءَ.	Yajibu an adrusa hādhā al-masāʾ.	verified	claude-blind,claude-review	
+h2p350	下午我们去跑步吧。	Xià wǔ wǒ men qù pǎo bù ba.	Let's go running this afternoon.	لِنَذْهَبْ لِلْجَرْيِ بَعْدَ الظُّهْرِ.	Linadhhab li-l-jaryi baʿda aẓ-ẓuhr.	verified	claude-blind,claude-review	
+h2p351	每个星期我都去游泳。	Měi gè xīng qī wǒ dōu qù yóu yǒng.	I go swimming every week.	أَذْهَبُ لِلسِّبَاحَةِ كُلَّ أُسْبُوعٍ.	Adhhabu li-s-sibāḥati kulla usbūʿ.	verified	claude-blind,claude-review	
+h2p352	我们学校有很多教室。	Wǒ men xué xiào yǒu hěn duō jiào shì.	Our school has a lot of classrooms.	فِي مَدْرَسَتِنَا فُصُولٌ كَثِيرَةٌ.	Fī madrasatinā fuṣūlun kathīra.	verified	claude-blind,claude-review	
+h2p353	我的房间很小。	Wǒ de fáng jiān hěn xiǎo.	My room is very small.	غُرْفَتِي صَغِيرَةٌ جِدًّا.	Ghurfatī ṣaghīratun jiddan.	verified	claude-blind,claude-review	
+h2p354	你的房间真大！	Nǐ de fáng jiān zhēn dà!	Your room is really big!	غُرْفَتُكَ كَبِيرَةٌ حَقًّا!	Ghurfatuka kabīratun ḥaqqan!	verified	claude-blind,claude-review	
+h2p355	我没见过雪。	Wǒ méi jiàn guo xuě.	I've never seen snow.	لَمْ أَرَ الثَّلْجَ أَبَدًا.	Lam ara ath-thalja abadan.	verified	claude-blind,claude-review	
+h2p356	雪是白的。	Xuě shì bái de.	Snow is white.	الثَّلْجُ أَبْيَضُ.	Ath-thalju abyaḍ.	verified	claude-blind,claude-review	
+h2p357	西瓜里面是红的。	Xī guā lǐ mian shì hóng de.	Watermelon is red inside.	دَاخِلُ الْبَطِّيخَةِ أَحْمَرُ.	Dākhilu al-baṭṭīkhati aḥmar.	verified	claude-blind,claude-review	
+h2p358	你的眼睛是什么颜色？	Nǐ de yǎn jing shì shén me yán sè?	What colour are your eyes?	مَا لَوْنُ عَيْنَيْكَ؟	Mā lawnu ʿaynayk?	verified	claude-blind,claude-review	
+h2p359	他穿着红衣服。	Tā chuān zhe hóng yī fu.	He's wearing red clothes.	هُوَ يَلْبَسُ مَلَابِسَ حَمْرَاءَ.	Huwa yalbasu malābisa ḥamrāʾ.	verified	claude-blind,claude-review	
+h2p360	我今天穿什么？	Wǒ jīn tiān chuān shén me?	What shall I wear today?	مَاذَا أَلْبَسُ الْيَوْمَ؟	Mādhā albasu al-yawm?	verified	claude-blind,claude-review	
+h2p361	这件衣服太长了。	Zhè jiàn yī fu tài cháng le.	This piece of clothing is too long.	هٰذَا الثَّوْبُ طَوِيلٌ أَكْثَرَ مِنَ اللَّازِمِ.	Hādhā ath-thawbu ṭawīlun akthara mina al-lāzim.	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same
+h2p362	他很高。	Tā hěn gāo.	He is tall.	هُوَ طَوِيلٌ.	Huwa ṭawīl.	conflict		reviewer proposed a fix (جِدًّا adds very; Chinese/English just say tall); blind reading was "He is very tall." · re-check next round
+h2p363	我不高，但是我很快。	Wǒ bù gāo, dàn shì wǒ hěn kuài.	I'm not tall, but I'm fast.	لَسْتُ طَوِيلًا، لٰكِنِّي سَرِيعٌ.	Lastu ṭawīlan, lākinnī sarīʿ.	verified	claude-blind,claude-review	
+h2p364	虽然我很小，但是我吃得很多。	Suī rán wǒ hěn xiǎo, dàn shì wǒ chī de hěn duō.	Although I'm small, I eat a lot.	مَعَ أَنِّي صَغِيرٌ، لٰكِنِّي آكُلُ كَثِيرًا.	Maʿa annī ṣaghīr, lākinnī ākulu kathīran.	verified	claude-blind,claude-review	
+h2p365	因为今天下雪，所以我们不去学校。	Yīn wèi jīn tiān xià xuě, suǒ yǐ wǒ men bú qù xué xiào.	Because it's snowing today, we're not going to school.	لِأَنَّ الثَّلْجَ يَنْزِلُ الْيَوْمَ، لَنْ نَذْهَبَ إِلَى الْمَدْرَسَةِ.	Liʾanna ath-thalja yanzilu al-yawm, lan nadhhaba ilā al-madrasa.	verified	claude-blind,claude-review	
+h2p366	你为什么不高兴？	Nǐ wèi shén me bù gāo xìng?	Why aren't you happy?	لِمَاذَا أَنْتَ غَيْرُ سَعِيدٍ؟	Limādhā anta ghayru saʿīd?	verified	claude-blind,claude-review	
+h2p367	你为什么在这儿？	Nǐ wèi shén me zài zhèr?	Why are you here?	لِمَاذَا أَنْتَ هُنَا؟	Limādhā anta hunā?	verified	claude-blind,claude-review	
+h2p368	他为什么还没来？	Tā wèi shén me hái méi lái?	Why hasn't he come yet?	لِمَاذَا لَمْ يَأْتِ بَعْدُ؟	Limādhā lam yaʾti baʿd?	verified	claude-blind,claude-review	
+h2p369	你怎么知道？	Nǐ zěn me zhī dào?	How do you know?	كَيْفَ عَرَفْتَ؟	Kayfa ʿaraft?	verified	claude-blind,claude-review	
+h2p370	我知道你是谁。	Wǒ zhī dào nǐ shì shéi.	I know who you are.	أَعْرِفُ مَنْ أَنْتَ.	Aʿrifu man anta.	verified	claude-blind,claude-review	
+h2p371	你知道他在哪儿吗？	Nǐ zhī dào tā zài nǎr ma?	Do you know where he is?	هَلْ تَعْرِفُ أَيْنَ هُوَ؟	Hal taʿrifu ayna huwa?	verified	claude-blind,claude-review	
+h2p372	我不知道怎么说。	Wǒ bù zhī dào zěn me shuō.	I don't know how to say it.	لَا أَعْرِفُ كَيْفَ أَقُولُ ذٰلِكَ.	Lā aʿrifu kayfa aqūlu dhālik.	verified	claude-blind,claude-review	
+h2p373	你觉得怎么样？	Nǐ jué de zěn me yàng?	What do you think?	مَا رَأْيُكَ؟	Mā raʾyuk?	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English (wording only)
+h2p374	我觉得有点儿冷。	Wǒ jué de yǒu diǎnr lěng.	I feel a little cold.	أَشْعُرُ بِالْبَرْدِ قَلِيلًا.	Ashʿuru bi-l-bardi qalīlan.	conflict		reviewer proposed a fix (بِبَعْضِ الْبَرْدِ is unnatural); blind reading was "I feel a bit cold." · re-check next round
+h2p375	这个问题很好。	Zhè ge wèn tí hěn hǎo.	That's a good question.	هٰذَا سُؤَالٌ جَيِّدٌ.	Hādhā suʾālun jayyid.	verified	claude-blind,claude-review	
+h2p376	没问题！	Méi wèn tí!	No problem!	لَا مُشْكِلَةَ!	Lā mushkila!	verified	claude-blind,claude-review	
+h2p377	我有一个问题。	Wǒ yǒu yí gè wèn tí.	I have a question.	عِنْدِي سُؤَالٌ.	ʿIndī suʾāl.	verified	claude-blind,claude-review	
+h2p378	这是什么意思？	Zhè shì shén me yì si?	What does this mean?	مَاذَا يَعْنِي هٰذَا؟	Mādhā yaʿnī hādhā?	verified	claude-blind,claude-review	
+h2p379	有意思！	Yǒu yì si!	Interesting!	مُمْتِعٌ!	Mumtiʿ!	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English (wording only)
+h2p380	这本书很有意思。	Zhè běn shū hěn yǒu yì si.	This book is very interesting.	هٰذَا الْكِتَابُ مُمْتِعٌ جِدًّا.	Hādhā al-kitābu mumtiʿun jiddan.	verified	claude-blind,claude-review	
+h2p381	那个电影有意思吗？	Nà ge diàn yǐng yǒu yì si ma?	Is that movie interesting?	هَلْ ذٰلِكَ الْفِيلْمُ مُمْتِعٌ؟	Hal dhālika al-fīlmu mumtiʿ?	verified	claude-blind,claude-review	
+h2p382	你来一下。	Nǐ lái yí xià.	Come here a moment.	تَعَالَ لَحْظَةً.	Taʿāla laḥẓa.	verified	claude-blind,claude-review	
+h2p383	我看一下。	Wǒ kàn yí xià.	Let me take a look.	دَعْنِي أَنْظُرْ.	Daʿnī anẓur.	verified	claude-blind,claude-review	
+h2p384	我想一下。	Wǒ xiǎng yí xià.	Let me think for a moment.	دَعْنِي أُفَكِّرْ لَحْظَةً.	Daʿnī ufakkir laḥẓa.	verified	claude-blind,claude-review	
+h2p385	我的手表很贵。	Wǒ de shǒu biǎo hěn guì.	My watch is expensive.	سَاعَتِي غَالِيَةٌ.	Sāʿatī ghāliya.	verified	claude-blind,claude-review	
+h2p386	我的手机没电了。	Wǒ de shǒu jī méi diàn le.	My phone is out of battery.	نَفِدَتْ بَطَّارِيَّةُ هَاتِفِي.	Nafidat baṭṭāriyyatu hātifī.	verified	claude-blind,claude-review	
+h2p387	这是今天的报纸。	Zhè shì jīn tiān de bào zhǐ.	This is today's newspaper.	هٰذِهِ جَرِيدَةُ الْيَوْمِ.	Hādhihi jarīdatu al-yawm.	verified	claude-blind,claude-review	
+h2p388	我在机场等你。	Wǒ zài jī chǎng děng nǐ.	I'll wait for you at the airport.	سَأَنْتَظِرُكَ فِي الْمَطَارِ.	Saʾantaẓiruka fī al-maṭār.	verified	claude-blind,claude-review	
+h2p389	飞机几点到？	Fēi jī jǐ diǎn dào?	What time does the plane arrive?	فِي أَيِّ سَاعَةٍ تَصِلُ الطَّائِرَةُ؟	Fī ayyi sāʿatin taṣilu aṭ-ṭāʾira?	verified	claude-blind,claude-review	
+h2p390	我坐飞机去旅游。	Wǒ zuò fēi jī qù lǚ yóu.	I'm flying off on a trip.	سَأُسَافِرُ بِالطَّائِرَةِ لِلسِّيَاحَةِ.	Saʾusāfiru bi-ṭ-ṭāʾirati li-s-siyāḥa.	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English (wording only)
+h2p391	你住在几号房间？	Nǐ zhù zài jǐ hào fáng jiān?	Which room are you staying in?	فِي أَيِّ غُرْفَةٍ تُقِيمُ؟	Fī ayyi ghurfatin tuqīm?	verified	claude-blind,claude-review	
+h2p392	他坐公共汽车上班。	Tā zuò gōng gòng qì chē shàng bān.	He takes the bus to work.	يَذْهَبُ إِلَى الْعَمَلِ بِالْحَافِلَةِ.	Yadhhabu ilā al-ʿamali bi-l-ḥāfila.	verified	claude-blind,claude-review	
+h2p393	公共汽车来了！	Gōng gòng qì chē lái le!	The bus is here!	الْحَافِلَةُ وَصَلَتْ!	Al-ḥāfilatu waṣalat!	verified	claude-blind,claude-review	
+h2p394	公司离我家很远。	Gōng sī lí wǒ jiā hěn yuǎn.	The company is far from my home.	الشَّرِكَةُ بَعِيدَةٌ عَنْ بَيْتِي.	Ash-sharikatu baʿīdatun ʿan baytī.	verified	claude-blind,claude-review	
+h2p395	走路去要多长时间？	Zǒu lù qù yào duō cháng shí jiān?	How long does it take to walk there?	كَمْ مِنَ الْوَقْتِ يَسْتَغْرِقُ الْمَشْيُ إِلَى هُنَاكَ؟	Kam mina al-waqti yastaghriqu al-mashyu ilā hunāk?	verified	claude-blind,claude-review	
+h2p396	学校离我家不远。	Xué xiào lí wǒ jiā bù yuǎn.	The school isn't far from my home.	الْمَدْرَسَةُ لَيْسَتْ بَعِيدَةً عَنْ بَيْتِي.	Al-madrasatu laysat baʿīdatan ʿan baytī.	verified	claude-blind,claude-review	
+h2p397	我们走路去吧。	Wǒ men zǒu lù qù ba.	Let's walk there.	لِنَذْهَبْ مَشْيًا.	Linadhhab mashyan.	verified	claude-blind,claude-review	
+h2p398	我家旁边有个商店。	Wǒ jiā páng biān yǒu gè shāng diàn.	There's a shop next to my home.	بِجَانِبِ بَيْتِي مَتْجَرٌ.	Bijānibi baytī matjar.	verified	claude-blind,claude-review	
+h2p399	你坐我旁边吧。	Nǐ zuò wǒ páng biān ba.	Sit next to me.	اِجْلِسْ بِجَانِبِي.	Ijlis bijānibī.	verified	claude-blind,claude-review	
+h2p400	她是我们的新同学。	Tā shì wǒ men de xīn tóng xué.	She's our new classmate.	هِيَ زَمِيلَتُنَا الْجَدِيدَةُ.	Hiya zamīlatunā al-jadīda.	verified	claude-blind,claude-review	
+h2p401	大家都来了吗？	Dà jiā dōu lái le ma?	Is everyone here?	هَلْ حَضَرَ الْجَمِيعُ؟	Hal ḥaḍara al-jamīʿ?	verified	claude-blind,claude-review	
+h2p402	大家一起唱吧！	Dà jiā yì qǐ chàng ba!	Everyone, sing together!	لِنُغَنِّ جَمِيعًا!	Linughanni jamīʿan!	conflict		reviewer proposed a fix (جَمِيعًا مَعًا redundant; suggestion form for 吧); blind reading was "Sing all together!" · re-check next round
+h2p403	我给你打电话。	Wǒ gěi nǐ dǎ diàn huà.	I'll call you.	سَأَتَّصِلُ بِكَ.	Saʾattaṣilu bik.	verified	claude-blind,claude-review	
+h2p404	我给你买了一个西瓜。	Wǒ gěi nǐ mǎi le yí gè xī guā.	I bought you a watermelon.	اِشْتَرَيْتُ لَكَ بَطِّيخَةً.	Ishtaraytu laka baṭṭīkha.	verified	claude-blind,claude-review	
+h2p405	这是给你的。	Zhè shì gěi nǐ de.	This is for you.	هٰذَا لَكَ.	Hādhā lak.	verified	claude-blind,claude-review	
+h2p406	我们去外面吃饭吧。	Wǒ men qù wài mian chī fàn ba.	Let's eat out.	لِنَأْكُلْ خَارِجَ الْبَيْتِ.	Linaʾkul khārija al-bayt.	verified	claude-blind,claude-review	
+h2p407	你想吃米饭还是面条？	Nǐ xiǎng chī mǐ fàn hái shì miàn tiáo?	Do you want rice or noodles?	أَتُرِيدُ أَرُزًّا أَمْ نُودِلْزَ؟	Aturīdu aruzzan am nūdilz?	conflict		reviewer proposed a fix (مَعْكَرُونَة is macaroni (Egyptian spelling); noodles = نُودِلْز); blind reading was "Do you want rice or pasta?" · re-check next round
+h2p408	鸡蛋很便宜。	Jī dàn hěn pián yi.	Eggs are cheap.	الْبَيْضُ رَخِيصٌ.	Al-bayḍu rakhīṣ.	verified	claude-blind,claude-review	
+h2p409	茶比咖啡好喝。	Chá bǐ kā fēi hǎo hē.	Tea tastes better than coffee.	الشَّايُ أَلَذُّ مِنَ الْقَهْوَةِ.	Ash-shāyu aladhdhu mina al-qahwa.	verified	claude-blind,claude-review	
+h2p410	西瓜是我最喜欢的水果。	Xī guā shì wǒ zuì xǐ huan de shuǐ guǒ.	Watermelon is my favourite fruit.	الْبَطِّيخُ فَاكِهَتِي الْمُفَضَّلَةُ.	Al-baṭṭīkhu fākihatī al-mufaḍḍala.	verified	claude-blind,claude-review	
+h2p411	你吃过羊肉吗？	Nǐ chī guo yáng ròu ma?	Have you ever eaten lamb?	هَلْ أَكَلْتَ لَحْمَ الْغَنَمِ مِنْ قَبْلُ؟	Hal akalta laḥma al-ghanami min qabl?	verified	claude-blind,claude-review	
+h2p412	我没去过北京。	Wǒ méi qù guo běi jīng.	I've never been to Beijing.	لَمْ أَذْهَبْ إِلَى بِكِينَ أَبَدًا.	Lam adhhab ilā bikīna abadan.	verified	claude-blind,claude-review	
+h2p413	今天是几月几日？	Jīn tiān shì jǐ yuè jǐ rì?	What's the date today?	مَا هُوَ تَارِيخُ الْيَوْمِ؟	Mā huwa tārīkhu al-yawm?	verified	claude-blind,claude-review	
+h2p414	一年有三百六十五天。	Yì nián yǒu sān bǎi liù shí wǔ tiān.	A year has three hundred and sixty-five days.	فِي السَّنَةِ ثَلَاثُمِئَةٍ وَخَمْسَةٌ وَسِتُّونَ يَوْمًا.	Fī as-sanati thalāthumiʾatin wakhamsatun wasittūna yawman.	verified	claude-blind,claude-review	
+h2p415	我有一千个问题！	Wǒ yǒu yì qiān gè wèn tí!	I have a thousand questions!	عِنْدِي أَلْفُ سُؤَالٍ!	ʿIndī alfu suʾāl!	verified	claude-blind,claude-review	
+h2p416	我们两个人一起去。	Wǒ men liǎng gè rén yì qǐ qù.	The two of us will go together.	سَنَذْهَبُ كِلَانَا مَعًا.	Sanadhhabu kilānā maʿan.	verified	claude-blind,claude-review	
+h2p417	那个男人是谁？	Nà ge nán rén shì shéi?	Who is that man?	مَنْ ذٰلِكَ الرَّجُلُ؟	Man dhālika ar-rajul?	verified	claude-blind,claude-review	
+h2p418	您请坐。	Nín qǐng zuò.	Please have a seat.	تَفَضَّلْ بِالْجُلُوسِ.	Tafaḍḍal bi-l-julūs.	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English (wording only)
+h2p419	您想喝什么？	Nín xiǎng hē shén me?	What would you like to drink?	مَاذَا تُرِيدُ أَنْ تَشْرَبَ؟	Mādhā turīdu an tashrab?	verified	claude-blind,claude-review	
+h2p420	它在哪儿？	Tā zài nǎr?	Where is it?	أَيْنَ هُوَ؟	Ayna huwa?	verified	claude-blind,claude-review	
+h2p421	我喜欢它。	Wǒ xǐ huan tā.	I like it.	أُحِبُّهُ.	Uḥibbuh.	verified	claude-blind,claude-review	
+h2p422	别看！	Bié kàn!	Don't look!	لَا تَنْظُرْ!	Lā tanẓur!	verified	claude-blind,claude-review	
+h2p423	你真的要走吗？	Nǐ zhēn de yào zǒu ma?	Are you really leaving?	هَلْ سَتَذْهَبُ حَقًّا؟	Hal satadhhabu ḥaqqan?	verified	claude-blind,claude-review	
+h2p424	我真的不知道。	Wǒ zhēn de bù zhī dào.	I really don't know.	لَا أَعْرِفُ حَقًّا.	Lā aʿrifu ḥaqqan.	verified	claude-blind,claude-review	
+h2p425	这个真大！	Zhè ge zhēn dà!	This is really big!	هٰذَا كَبِيرٌ حَقًّا!	Hādhā kabīrun ḥaqqan!	verified	claude-blind,claude-review	
+h2p426	你真高！	Nǐ zhēn gāo!	You're really tall!	أَنْتَ طَوِيلٌ حَقًّا!	Anta ṭawīlun ḥaqqan!	verified	claude-blind,claude-review	
+h2p427	今天真冷！	Jīn tiān zhēn lěng!	It's really cold today!	الْجَوُّ بَارِدٌ جِدًّا الْيَوْمَ!	Al-jawwu bāridun jiddan al-yawm!	verified	claude-blind,claude-review	
+h2p428	你是我最好的朋友。	Nǐ shì wǒ zuì hǎo de péng you.	You're my best friend.	أَنْتَ أَفْضَلُ صَدِيقٍ لِي.	Anta afḍalu ṣadīqin lī.	verified	claude-blind,claude-review	
+h2p429	我最不喜欢考试。	Wǒ zuì bù xǐ huan kǎo shì.	I like exams least of all.	أَقَلُّ مَا أُحِبُّهُ هُوَ الِامْتِحَانَاتُ.	Aqallu mā uḥibbuhu huwa al-imtiḥānāt.	conflict		reviewer proposed a fix (أَكْرَهُ...أَكْثَرَ مِنْ أَيِّ شَيْءٍ says hate most; Chinese is like least); blind reading was "I hate exams more than anything." · re-check next round
+h2p430	我准备了很多吃的。	Wǒ zhǔn bèi le hěn duō chī de.	I've prepared lots of food.	حَضَّرْتُ كَثِيرًا مِنَ الطَّعَامِ.	Ḥaḍḍartu kathīran mina aṭ-ṭaʿām.	verified	claude-blind,claude-review	
+h2p431	我希望能去中国。	Wǒ xī wàng néng qù zhōng guó.	I hope I can go to China.	أَتَمَنَّى أَنْ أَسْتَطِيعَ الذَّهَابَ إِلَى الصِّينِ.	Atamannā an astaṭīʿa adh-dhahāba ilā aṣ-ṣīn.	verified	claude-blind,claude-review	
+h2p432	他可能不来了。	Tā kě néng bù lái le.	He might not come.	رُبَّمَا لَا يَأْتِي.	Rubbamā lā yaʾtī.	verified	claude-blind,claude-review	
+h2p433	我可能错了。	Wǒ kě néng cuò le.	I might be wrong.	رُبَّمَا أَكُونُ مُخْطِئًا.	Rubbamā akūnu mukhṭiʾan.	verified	claude-blind,claude-review	
+h2p434	我已经知道了。	Wǒ yǐ jīng zhī dào le.	I already know.	أَعْرِفُ ذٰلِكَ بِالْفِعْلِ.	Aʿrifu dhālika bi-l-fiʿl.	verified	claude-blind,claude-review	
+h2p435	已经十点了！	Yǐ jīng shí diǎn le!	It's already ten o'clock!	السَّاعَةُ الْعَاشِرَةُ بِالْفِعْلِ!	As-sāʿatu al-ʿāshiratu bi-l-fiʿl!	verified	claude-blind,claude-review	
+h2p436	你在等谁？	Nǐ zài děng shéi?	Who are you waiting for?	مَنْ تَنْتَظِرُ؟	Man tantaẓir?	verified	claude-blind,claude-review	
+h2p437	你等我一下。	Nǐ děng wǒ yí xià.	Wait for me a moment.	اِنْتَظِرْنِي لَحْظَةً.	Intaẓirnī laḥẓa.	verified	claude-blind,claude-review	
+h2p438	他在找你。	Tā zài zhǎo nǐ.	He's looking for you.	هُوَ يَبْحَثُ عَنْكَ.	Huwa yabḥathu ʿank.	verified	claude-blind,claude-review	
+h2p439	我找到了！	Wǒ zhǎo dào le!	I found it!	وَجَدْتُهُ!	Wajadtuh!	verified	claude-blind,claude-review	
+h2p440	你找什么？	Nǐ zhǎo shén me?	What are you looking for?	مَاذَا تَبْحَثُ عَنْهُ؟	Mādhā tabḥathu ʿanh?	verified	claude-blind,claude-review	
+h2p441	这儿的东西都很便宜。	Zhèr de dōng xi dōu hěn pián yi.	Everything here is cheap.	كُلُّ الْأَشْيَاءِ هُنَا رَخِيصَةٌ.	Kullu al-ʾashyāʾi hunā rakhīṣa.	verified	claude-blind,claude-review	
+h2p442	西瓜怎么卖？	Xī guā zěn me mài?	How much is the watermelon?	بِكَمِ الْبَطِّيخُ؟	Bikami al-baṭṭīkh?	verified	claude-blind,claude-review	
+h2p443	这个卖完了。	Zhè ge mài wán le.	This is sold out.	نَفِدَ هٰذَا الصِّنْفُ.	Nafida hādhā aṣ-ṣinf.	conflict		reviewer proposed a fix (نَفِدَ هٰذَا is not natural for sold out; specify item); blind reading was "This ran out." · re-check next round
+h2p444	你会打篮球吗？	Nǐ huì dǎ lán qiú ma?	Can you play basketball?	هَلْ تُجِيدُ لَعِبَ كُرَةِ السَّلَّةِ؟	Hal tujīdu laʿiba kurati as-salla?	verified	claude-blind,claude-review	
+h2p445	我不会跳舞。	Wǒ bú huì tiào wǔ.	I can't dance.	لَا أُجِيدُ الرَّقْصَ.	Lā ujīdu ar-raqṣ.	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English (wording only)
+h2p446	我身体很好。	Wǒ shēn tǐ hěn hǎo.	I'm in good health.	صِحَّتِي جَيِّدَةٌ.	Ṣiḥḥatī jayyida.	verified	claude-blind,claude-review	
+h2p447	你要多运动。	Nǐ yào duō yùn dòng.	You should exercise more.	يَنْبَغِي أَنْ تُمَارِسَ الرِّيَاضَةَ أَكْثَرَ.	Yanbaghī an tumārisa ar-riyāḍata akthar.	verified	claude-blind,claude-review	
+h2p448	跑步很累。	Pǎo bù hěn lèi.	Running is tiring.	الْجَرْيُ مُتْعِبٌ.	Al-jaryu mutʿib.	verified	claude-blind,claude-review	
+h2p449	游泳很有意思。	Yóu yǒng hěn yǒu yì si.	Swimming is fun.	السِّبَاحَةُ مُمْتِعَةٌ.	As-sibāḥatu mumtiʿa.	verified	claude-blind,claude-review	

@@ -190,6 +190,13 @@ for (const tag of chunks) {
   }
 
   const gemini = parseGeminiTsv(gmLines)
+  // A reply with a header and no rows is a reviewer that stopped part-way, not
+  // an empty verdict — reading it as one sent every row of the chunk to
+  // "no verdict" and archived the chunk. Leave it for when the rows arrive.
+  if (gemini && !gemini.length) {
+    report.missing.push(tag)
+    continue
+  }
   if (!gemini) {
     console.error(`chunk ${tag}: no TSV block found in the Gemini reply (expected a line starting "id<tab>verdict")`)
     process.exit(1)

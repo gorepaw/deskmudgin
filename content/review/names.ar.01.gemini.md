@@ -30,64 +30,58 @@ id	verdict	fix_gloss	note
 
 ```
 id	script	english	gloss	gloss_reading
-n001	泥泥	Muddy	طُيَيْنٌ	Ṭuyayn
-n002	小泥	Little Mud	وُحَيْلٌ	Wuḥayl
-n003	泥球	Mudball	كُرَيَّةُ طِينٍ	Kurayyatu ṭīn
-n004	泥巴	Mud	طِينَةٌ	Ṭīna
-n005	土豆	Potato	دُرَيْنَةٌ	Durayna
-n006	豆豆	Beanie	فُوَيْلٌ	Fuwayl
-n007	小豆	Little Bean	حُبَيْبَةٌ	Ḥubayba
-n008	包子	Bun	كُعَيْكَةٌ	Kuʿayka
-n009	馒头	Steamed Bun	قُرَيْصٌ	Qurayṣ
-n010	石头	Rocky	حُجَيْرٌ	Ḥujayr
-n011	小石	Pebble	حُصَيَّةٌ	Ḥuṣayya
-n012	墩墩	Chunky	كُتَيْلَةٌ	Kutayla
-n013	胖胖	Chubby	بُدَيْنٌ	Budayn
-n014	呱呱	Croaky	نُقَيْقٌ	Nuqayq
-n015	团子	Dumpling Ball	كُرَيَّةٌ	Kurayya
-n016	糯米	Sticky Rice	لُزَيْجَةٌ	Luzayja
-n017	蘑菇	Mushroom	فُطَيْرٌ	Fuṭayr
-n018	小菇	Little Mushroom	كُمَيْأَةٌ	Kumayʾa
-n019	木头	Woody	خُشَيْبَةٌ	Khushayba
-n020	小树	Sapling	شُجَيْرَةٌ	Shujayra
-n021	苔苔	Mossy	طُحَيْلِبٌ	Ṭuḥaylib
-n022	青青	Greenie	خُضَيْرٌ	Khuḍayr
-n023	草草	Grassy	عُشَيْبَةٌ	ʿUshayba
-n024	小草	Little Grass	كُلَيْأٌ	Kulayʾ
-n025	叶子	Leafy	وُرَيْقَةٌ	Wurayqa
-n026	芽芽	Sprout	بُرَيْعِمٌ	Burayʿim
-n027	小芽	Little Sprout	نُبَيْتَةٌ	Nubayta
-n028	花生	Peanut	لُوَيْزَةٌ	Luwayza
-n029	核桃	Walnut	جُوَيْزَةٌ	Juwayza
-n030	栗子	Chestnut	فُرَيْوَةٌ	Furaywa
-n031	红薯	Sweet Potato	دُرَيْنَةٌ حُلْوَةٌ	Duraynatun ḥulwa
-n032	山药	Yam	جُبَيْلٌ	Jubayl
-n033	芋头	Taro	قُلَيْقِسٌ	Qulayqis
-n034	芋圆	Taro Ball	كُرَيَّةُ قُلْقَاسٍ	Kurayyatu qulqās
-n035	饺子	Dumpling	كُيَيْسٌ	Kuyays
-n036	窝头	Cornbread	رُغَيْفُ ذُرَةٍ	Rughayfu dhura
-n037	煤球	Coal Ball	فُحَيْمٌ	Fuḥaym
-n038	黑豆	Black Bean	بُقَيْلَةٌ سَوْدَاءُ	Buqaylatun sawdāʾ
-n039	绿豆	Mung Bean	بُقَيْلَةٌ خَضْرَاءُ	Buqaylatun khaḍrāʾ
-n040	红豆	Red Bean	بُقَيْلَةٌ حَمْرَاءُ	Buqaylatun ḥamrāʾ
-n041	毛豆	Edamame	زُغَيْبٌ	Zughayb
-n042	土土	Earthy	تُرَيْبٌ	Turayb
-n043	小土	Little Dirt	رُمَيْلٌ	Rumayl
-n044	坑洼	Pothole	حُفَيْرَةٌ	Ḥufayra
-n045	疙瘩	Lumpy	نُتَيْءٌ	Nutayʾ
-n046	憨憨	Dopey	غُوَيْفِلٌ	Ghuwayfil
-n047	笨笨	Silly	طُرَيْفٌ	Ṭurayf
-n048	呆呆	Dozy	نُعَيْسٌ	Nuʿays
-n049	懒懒	Lazy	كُسَيْلٌ	Kusayl
-n050	咕咕	Gurgle	قُرَيْقِرَةٌ	Qurayqira
-n051	咚咚	Thump	طُبَيْلٌ	Ṭubayl
-n052	牛牛	Bull	عُجَيْلٌ	ʿUjayl
-n053	虎子	Tiger Cub	نُمَيْرٌ	Numayr
-n054	铁蛋	Iron Egg	بُوَيْضَةٌ حَدِيدِيَّةٌ	Buwayḍatun ḥadīdiyya
-n055	石蛋	Stone Egg	بُوَيْضَةٌ حَجَرِيَّةٌ	Buwayḍatun ḥajariyya
-n056	二狗	Doggo	كُلَيْبٌ	Kulayb
-n057	大壮	Sturdy	مُتَيْنٌ	Mutayn
-n058	小黑	Shadow	سُوَيْدَاءُ	Suwaydāʾ
-n059	阿土	Dusty	غُبَيْرٌ	Ghubayr
-n060	泡泡	Bubbles	فُقَيْقِعَةٌ	Fuqayqiʿa
+n005	土豆	Potato	بُطَيْطَةٌ	Buṭayṭa
+n007	小豆	Little Bean	حُمَيْصَةٌ	Ḥumayṣa
+n011	小石	Pebble	صُخَيْرَةٌ	Ṣukhayra
+n013	胖胖	Chubby	سُمَيِّنٌ	Sumayyin
+n016	糯米	Sticky Rice	لُزَيِّجَةٌ	Luzayyija
+n022	青青	Greenie	أُخَيْضِرٌ	Ukhayḍir
+n024	小草	Little Grass	مُرَيْجَةٌ	Murayja
+n028	花生	Peanut	فُسَيْتِقٌ	Fusaytiq
+n030	栗子	Chestnut	كُسَيْتِنَةٌ	Kusaytina
+n031	红薯	Sweet Potato	بُطَيْطَةٌ حُلْوَةٌ	Buṭayṭatun ḥulwa
+n032	山药	Yam	جُذَيْرٌ	Judhayr
+n033	芋头	Taro	قُلَيْقِيسٌ	Qulayqīs
+n047	笨笨	Silly	سُوَيْذِجٌ	Suwaydhij
+n053	虎子	Tiger Cub	شُبَيْلٌ	Shubayl
+n054	铁蛋	Iron Egg	بُيَيْضَةٌ حَدِيدِيَّةٌ	Buyayḍatun ḥadīdiyya
+n055	石蛋	Stone Egg	بُيَيْضَةٌ حَجَرِيَّةٌ	Buyayḍatun ḥajariyya
+n057	大壮	Sturdy	مُتَيِّنٌ	Mutayyin
+n058	小黑	Shadow	أُسَيْوِدٌ	Usaywid
+n060	泡泡	Bubbles	فُقَيْقِيعَةٌ	Fuqayqīʿa
+n061	小泡	Little Bubble	رُغَيْوَةٌ	Rughaywa
+n062	圆圆	Roundy	دُوَيِّرَةٌ	Duwayyira
+n063	团团	Roly	دُحَيْرِيجَةٌ	Duḥayrīja
+n065	珠珠	Beady	دُرَيْرَةٌ	Durayra
+n067	小贝	Little Shell	قُوَيْقِعَةٌ	Quwayqiʿa
+n069	小浪	Little Wave	لُجَيْجَةٌ	Lujayja
+n071	小海	Little Sea	يُمَيْمٌ	Yumaym
+n076	小月	Little Moon	هُلَيِّلٌ	Hulayyil
+n078	小星	Little Star	كُوَيْكِبٌ	Kuwaykib
+n081	冰冰	Icy	جُلَيِّدٌ	Julayyid
+n082	小冰	Little Ice	صُقَيِّعٌ	Ṣuqayyiʿ
+n084	朵朵	Fluffy	وُبَيْرَةٌ	Wubayra
+n085	银银	Silvery	فُضَيْضَةٌ	Fuḍayḍa
+n086	小银	Little Silver	سُبَيِّكَةٌ	Subayyika
+n087	潮潮	Tidey	مُدَيْدٌ	Mudayd
+n088	泡芙	Cream Puff	نُفَيْخَةٌ	Nufaykha
+n090	果冻	Jelly	هُلَامَةٌ	Hulāma
+n092	甜甜	Sweetie	عُذَيِّبٌ	ʿUdhayyib
+n093	奶糖	Toffee	كُرَيْمِيلٌ	Kuraymīl
+n094	棉花	Cotton	نُدَيْفَةٌ	Nudayfa
+n095	丸子	Meatball	كُفَيْتَةٌ	Kufayta
+n096	球球	Ballie	طُوَيْبَةٌ	Ṭuwayba
+n098	滚滚	Rolly	لُفَيْفَةٌ	Lufayfa
+n099	嘟嘟	Pouty	شُفَيْهَةٌ	Shufayha
+n100	乐乐	Cheery	فُرَيِّحٌ	Furayyiḥ
+n101	笑笑	Smiley	ضُحَيِّكٌ	Ḍuḥayyik
+n103	安安	Peaceful	وُدَيِّعٌ	Wudayyiʿ
+n105	贝壳	Seashell	مَحَارَةٌ	Maḥāra
+n107	海螺	Conch	حُلَيْزِينٌ	Ḥulayzīn
+n108	浪花	Sea Spray	رُذَيِّذٌ	Rudhayyidh
+n109	水母	Jellyfish	قُنَيْدِيلٌ	Qunaydīl
+n111	鲸鲸	Whaley	عُنَيْبِرٌ	ʿUnaybir
+n113	豆腐	Tofu	جُبَيْنَةٌ	Jubayna
+n114	年糕	Rice Cake	رُزَيْزَةٌ	Ruzayza
+n115	元宵	Lantern Dumpling	فُوَيْنِيسٌ	Fuwaynīs
 ```

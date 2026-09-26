@@ -1,0 +1,61 @@
+id	verdict	fix_gloss	note
+p001	ok		
+p002	ok		
+p003	fix	أَهْلًا!	Bare يَا is not a sentence; needs a noun
+p004	fix	أَهْلًا، مَرْحَبًا!	Bare يَا not valid
+p005	ok		
+p006	ok		
+p007	ok		
+p008	ok		
+p009	ok		
+p010	ok		
+p011	ok		
+p012	ok		
+p013	ok		
+p014	ok		
+p015	ok		
+p016	ok		
+p017	ok		
+p018	ok		
+p019	ok		
+p020	ok		
+p021	ok		
+p022	ok		
+p023	ok		
+p024	ok		
+p025	ok		
+p026	ok		
+p027	ok		
+p028	ok		
+p029	ok		
+p030	ok		
+p031	ok		
+p032	ok		
+p033	fix	مَاذَا عَلَى الْغَدَاءِ؟	Idiomatic lunch wording; الظهر is noon not lunch
+p034	ok		
+p035	ok		
+p036	ok		
+p037	ok		
+p038	fix	أُرِيدُ أَنْ آكُلَ شَيْئًا بِشِدَّةٍ.	word order unnatural
+p039	ok		
+p040	ok		
+p041	ok		
+p042	ok		
+p043	ok		
+p044	ok		
+p045	fix	أُرِيدُ أَنْ أَنَامَ بِشِدَّةٍ.	word order unnatural; could mean sleep a lot
+p046	ok		
+p047	ok		
+p048	ok		
+p049	ok		
+p050	ok		
+p051	ok		
+p052	ok		
+p053	ok		
+p054	ok		
+p055	ok		
+p056	ok		
+p057	ok		
+p058	ok		
+p059	ok		
+p060	ok		

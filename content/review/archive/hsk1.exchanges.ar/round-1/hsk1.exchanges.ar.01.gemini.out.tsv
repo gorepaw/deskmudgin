@@ -1,0 +1,61 @@
+id	verdict	fix_gloss	note
+x001	ok		
+x002	ok		
+x003	ok		
+x004	ok		
+x005	ok		
+x006	ok		
+x007	fix	إِلَى مَاذَا تَنْظُرُ؟ | أَنَا أَنْظُرُ إِلَيْكَ.	need إِلَى with نَظَرَ
+x008	ok		
+x009	ok		
+x010	ok		
+x011	ok		
+x012	ok		
+x013	ok		
+x014	ok		
+x015	ok		
+x016	ok		
+x017	ok		
+x018	ok		
+x019	ok		
+x020	ok		
+x021	ok		
+x022	ok		
+x023	ok		
+x024	ok		
+x025	ok		
+x026	ok		
+x027	fix	هَلْ تُحِبُّ الطَّعَامَ الصِّينِيَّ؟ | أُحِبُّهُ كَثِيرًا!	Chinese food is الطعام not الأكل
+x028	fix	مَاذَا نَأْكُلُ عَلَى الْغَدَاءِ؟ | أُرُزٌّ.	في الظهر is unnatural; lunch = الغداء
+x029	fix	هَلْ تُرِيدُ أَنْ تَنَامَ؟ | أُرِيدُ أَنْ أَنَامَ بِشِدَّةٍ.	كثيرا means sleep a lot, not really want to
+x030	ok		
+x031	ok		
+x032	ok		
+x033	ok		
+x034	ok		
+x035	ok		
+x036	ok		
+x037	ok		
+x038	ok		
+x039	ok		
+x040	fix	بِكَمْ هٰذَا؟ | بِثَلَاثَةِ يُوَانَاتٍ. | هٰذَا كَثِيرٌ جِدًّا!	yuan takes plural يوانات after 3
+x041	ok		
+x042	ok		
+x043	ok		
+x044	ok		
+x045	fix	هَلْ تَسْتَطِيعُ أَنْ تَكْتُبَ هٰذَا الْحَرْفَ الصِّينِيَّ؟ | لَا أَسْتَطِيعُ.	character = الحرف الصيني
+x046	ok		
+x047	fix	أَيُّ يَوْمٍ هُوَ الْيَوْمُ؟ | الْيَوْمُ السَّبْتُ. | رَائِعٌ!	today is Saturday needs nominative الْيَوْمُ
+x048	ok		
+x049	ok		
+x050	ok		
+x051	fix	هَلْ تُحِبُّ الْقِرَاءَةَ؟ | نَعَمْ، أُحِبُّ الْقِرَاءَةَ كَثِيرًا.	أعشق too romantic/passionate for 爱看书
+x052	ok		
+x053	ok		
+x054	ok		
+x055	ok		
+x056	ok		
+x057	ok		
+x058	ok		
+x059	ok		
+x060	ok		

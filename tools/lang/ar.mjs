@@ -140,7 +140,9 @@ function word(w, last, problems) {
 
     if (ch === ALIF || ch === WASLA) {
       // At the start of a word: a hamzat al-wasl, said with its vowel.
-      if (i === 0) { out += vowelOf(cur) ?? 'i'; continue }
+      // A bare alif before a lam carrying a shadda is the article assimilated
+      // into it — الَّذِي "alladhī", الَّتِي "allatī" — and says "a", not "i".
+      if (i === 0) { out += vowelOf(cur) ?? (next?.ch === LAM && has(next, SHADDA) ? 'a' : 'i'); continue }
       // The same alif after a one-letter prefix is silent: وَاسْمِي wasmī. It is
       // told from a long ā (بَابٌ) by what follows — a consonant with a sukun
       // that is not the word's last letter, a cluster no long ā stands before.

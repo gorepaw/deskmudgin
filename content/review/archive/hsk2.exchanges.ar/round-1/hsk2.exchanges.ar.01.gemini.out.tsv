@@ -1,0 +1,59 @@
+id	verdict	fix_gloss	note
+h2x001	ok		
+h2x002	ok		
+h2x003	ok		
+h2x004	fix	مَرْحَبًا، مَا اسْمُ عَائِلَتِكَ؟ | اسْمُ عَائِلَتِي غَاو، وَأَنْتَ؟ | اسْمُ عَائِلَتِي بَاي.	better transliteration of Gao/Bai
+h2x005	ok		
+h2x006	ok		
+h2x008	ok		
+h2x009	ok		
+h2x010	ok		
+h2x011	ok		
+h2x012	ok		
+h2x013	ok		
+h2x014	ok		
+h2x015	ok		
+h2x016	fix	بِكَمْ هٰذَا؟ | إِنَّهُ رَخِيصٌ، بِثَلَاثَةِ يُوَانَاتٍ. | رَائِعٌ، سَأَشْتَرِي وَاحِدًا.	yuan plural يوانات
+h2x017	ok		
+h2x018	ok		
+h2x019	ok		
+h2x020	ok		
+h2x021	ok		
+h2x022	ok		
+h2x024	ok		
+h2x025	ok		
+h2x026	ok		
+h2x027	ok		
+h2x028	ok		
+h2x029	fix	إِنَّهَا تُمْطِرُ، لِنَعُدْ إِلَى الْبَيْتِ. | حَسَنًا، لِنَنْتَظِرْ قَلِيلًا ثُمَّ نَذْهَبْ.	ثم نذهب must be jussive, coordinated with لننتظر
+h2x030	ok		
+h2x031	ok		
+h2x032	ok		
+h2x033	ok		
+h2x034	ok		
+h2x035	ok		
+h2x036	ok		
+h2x037	ok		
+h2x038	ok		
+h2x039	ok		
+h2x040	ok		
+h2x041	ok		
+h2x042	ok		
+h2x043	ok		
+h2x044	ok		
+h2x045	ok		
+h2x046	fix	بِكَمْ هٰذَا الثَّوْبُ؟ | لَيْسَ غَالِيًا، إِنَّهُ رَخِيصٌ. | رَائِعٌ، سَأَشْتَرِيهِ.	one piece of clothing = ثوب, not plural ملابس
+h2x047	ok		
+h2x048	ok		
+h2x049	ok		
+h2x050	ok		
+h2x051	ok		
+h2x052	ok		
+h2x053	ok		
+h2x054	ok		
+h2x055	ok		
+h2x056	ok		
+h2x057	ok		
+h2x058	ok		
+h2x059	fix	عَنْ مَاذَا تَبْحَثُ؟ | أَبْحَثُ عَنْ هَاتِفِي، هَلْ رَأَيْتَهُ؟ | لَمْ أَرَهُ.	مَاذَا تَبْحَثُ عَنْهُ is ungrammatical
+h2x060	ok		

@@ -14,7 +14,7 @@ w012	出租车	chū zū chē	taxi	سَيَّارَةُ أُجْرَةٍ	Sayyāra
 w013	打电话	dǎ diàn huà	to make a phone call	هَاتَفَ	Hātaf	verified	claude-blind,claude-review	
 w014	大	dà	big	كَبِيرٌ	Kabīr	verified	claude-blind,claude-review	
 w015	的	de	(possessive particle)	(أَدَاةُ الْمِلْكِيَّةِ)	(adātu al-milkiyya)	verified	claude-blind,claude-review	
-w016	点	diǎn	o'clock; a little	(كَلِمَةٌ لِلسَّاعَةِ)؛ قَلِيلٌ	(kalimatun li-s-sāʿa); qalīl	conflict		reviewer proposed a fix (point (o'clock) needs a head noun; bare (li-s-saa'a) is a stray phrase, unlike the other measure-word glosses); blind reading was "(for telling time); a little" · re-check next round
+w016	点	diǎn	o'clock; a little	(كَلِمَةٌ لِلسَّاعَةِ)؛ قَلِيلٌ	(kalimatun li-s-sāʿa); qalīl	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same
 w017	电脑	diàn nǎo	computer	حَاسُوبٌ	Ḥāsūb	verified	claude-blind,claude-review	
 w018	电视	diàn shì	television	تِلْفَازٌ	Tilfāz	verified	claude-blind,claude-review	
 w019	电影	diàn yǐng	film	فِيلْمٌ	Fīlm	verified	claude-blind,claude-review	
@@ -80,7 +80,7 @@ w078	苹果	píng guǒ	apple	تُفَّاحَةٌ	Tuffāḥa	verified	claude-bli
 w079	七	qī	seven	سَبْعَةٌ	Sabʿa	verified	claude-blind,claude-review	
 w080	前面	qián mian	in front	أَمَامَ	Amām	verified	claude-blind,claude-review	
 w081	钱	qián	money	مَالٌ	Māl	verified	claude-blind,claude-review	
-w082	请	qǐng	please	مِنْ فَضْلِكَ	Min faḍlik	conflict		reviewer proposed a fix (رجا is the verb "he requested"; 请 here is the polite marker "please", matching the shukran/afwan interjection pattern); blind reading was "to hope" · re-check next round
+w082	请	qǐng	please	مِنْ فَضْلِكَ	Min faḍlik	verified	claude-blind,claude-review	
 w083	去	qù	to go	ذَهَبَ	Dhahab	verified	claude-blind,claude-review	
 w084	热	rè	hot	حَارٌّ	Ḥārr	verified	claude-blind,claude-review	
 w085	人	rén	person	إِنْسَانٌ	Insān	verified	claude-blind,claude-review	
@@ -104,15 +104,15 @@ w102	四	sì	four	أَرْبَعَةٌ	Arbaʿa	verified	claude-blind,claude-revi
 w103	岁	suì	years of age	(كَلِمَةُ عَدٍّ لِلسِّنِّ)	(kalimatu ʿaddin li-s-sinn)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English
 w104	他	tā	he; him	هُوَ	Huwa	verified	claude-blind,claude-review	
 w105	她	tā	she; her	هِيَ	Hiya	verified	claude-blind,claude-review	
-w106	太	tài	too	أَكْثَرَ مِنَ اللَّازِمِ	Akthara mina al-lāzim	conflict		reviewer proposed a fix (tai "too/excessively" duplicates hen's jiddan ("very"); needs a distinct word for excess); blind reading was "very" · re-check next round
+w106	太	tài	too	أَكْثَرَ مِنَ اللَّازِمِ	Akthara mina al-lāzim	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same
 w107	天气	tiān qì	weather	طَقْسٌ	Ṭaqs	verified	claude-blind,claude-review	
-w108	听	tīng	to listen	اِسْتَمَعَ	Istamaʿ	conflict		reworded by claude-adjudicated: 听 is to listen; سمع is to hear - re-check next round
+w108	听	tīng	to listen	اِسْتَمَعَ	Istamaʿ	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same
 w109	同学	tóng xué	classmate	زَمِيلُ الدِّرَاسَةِ	Zamīlu ad-dirāsa	verified	claude-blind,claude-review	
 w110	喂	wèi	hello (on the phone)	أَلُو	Alū	verified	claude-blind,claude-review	
 w111	我	wǒ	I; me	أَنَا	Anā	verified	claude-blind,claude-review	
 w112	我们	wǒ men	we; us	نَحْنُ	Naḥn	verified	claude-blind,claude-review	
 w113	五	wǔ	five	خَمْسَةٌ	Khamsa	verified	claude-blind,claude-review	
-w114	喜欢	xǐ huan	to like	أُعْجِبَ	Uʿjib	conflict		reviewer proposed a fix (a3jabahu carries a bound object pronoun (breaks the bare-citation style) and needs a stated subject; passive u3jiba ("was pleased/liked") is a clean citation distinct from love's ahabba); blind reading was "to like" · re-check next round
+w114	喜欢	xǐ huan	to like	أَحَبَّ	Aḥabb	conflict		reviewer proposed a fix (أُعْجِبَ is passive (was pleased); citation form is أَحَبَّ); blind reading was "was impressed" · re-check next round
 w115	下	xià	down; under	تَحْتَ	Taḥt	verified	claude-blind,claude-review	
 w116	下午	xià wǔ	afternoon	بَعْدَ الظُّهْرِ	Baʿda aẓ-ẓuhr	verified	claude-blind,claude-review	
 w117	下雨	xià yǔ	to rain	أَمْطَرَ	Amṭar	verified	claude-blind,claude-review	
@@ -134,7 +134,7 @@ w132	衣服	yī fu	clothes	مَلَابِسُ	Malābis	verified	claude-blind,cla
 w133	医生	yī shēng	doctor	طَبِيبٌ	Ṭabīb	verified	claude-blind,claude-review	
 w134	医院	yī yuàn	hospital	مُسْتَشْفَى	Mustashfā	verified	claude-blind,claude-review	
 w135	椅子	yǐ zi	chair	كُرْسِيٌّ	Kursiyy	verified	claude-blind,claude-review	
-w136	有	yǒu	to have	عِنْدَهُ	ʿIndah	conflict		reworded by claude-adjudicated: 有 is to have, as 没有 is ليس عنده; ملك is to own - re-check next round
+w136	有	yǒu	to have	عِنْدَهُ	ʿIndah	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same
 w137	月	yuè	month	شَهْرٌ	Shahr	verified	claude-blind,claude-review	
 w138	在	zài	at; in	فِي	Fī	verified	claude-blind,claude-review	
 w139	再见	zài jiàn	goodbye	إِلَى اللِّقَاءِ	Ilā al-liqāʾ	verified	claude-blind,claude-review	

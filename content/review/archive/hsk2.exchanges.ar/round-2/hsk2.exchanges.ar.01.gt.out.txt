@@ -1,0 +1,5 @@
+Hello, what is your family name? | My family name is Gao, and you? | My family name is Bai.
+How much is this? | It is cheap, for three yuan. | Great, I will buy one.
+It is raining, let us go back home. | Okay, let us wait a little and then go.
+How much is this garment? | It is not expensive, it is cheap. | Great, I will buy it.
+What are you looking for? | I am looking for my phone, have you seen it? | I have not seen it.
