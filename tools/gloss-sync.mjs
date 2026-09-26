@@ -20,7 +20,8 @@
 // =============================================================================
 
 import { existsSync } from 'node:fs'
-import { readTsv, writeTsv, GLOSS_COLUMNS } from './lang/tsv.mjs'
+import { readTsv, writeTsv, GLOSS_COLUMNS, GLOSS_READING_COLUMNS } from './lang/tsv.mjs'
+import { TRANSLATIONS } from './lang/languages.mjs'
 
 const [coursePath, ...flags] = process.argv.slice(2)
 const li = flags.indexOf('--lang')
@@ -29,6 +30,15 @@ if (!coursePath || !lang) {
   console.error('usage: node tools/gloss-sync.mjs <course.tsv> --lang es')
   process.exit(2)
 }
+const spec = TRANSLATIONS[lang]
+if (!spec) {
+  console.error(`no language "${lang}" in tools/lang/languages.mjs — one of ${Object.keys(TRANSLATIONS).join(' ')}`)
+  process.exit(2)
+}
+/** A language with a derived reading carries it in its own column, re-derived
+ *  here every time: it is the tool's to keep in step, never a person's. */
+const columns = spec.reading ? GLOSS_READING_COLUMNS : GLOSS_COLUMNS
+const withReading = r => (spec.reading ? { ...r, gloss_reading: r.gloss ? spec.reading(r.gloss) : '' } : r)
 
 export const glossPath = (course, l) => course.replace(/\.tsv$/, `.${l}.tsv`)
 const path = glossPath(coursePath, lang)
@@ -39,7 +49,7 @@ const before = new Map(readTsv(path).map(r => [r.id, r]))
 
 let added = 0
 let stale = 0
-const rows = course.map(c => {
+const rows = course.map(c => withReading((() => {
   const old = before.get(c.id)
   if (!old) {
     added++
@@ -52,10 +62,10 @@ const rows = course.map(c => {
       note: `the line changed since this was checked (was "${old.script}" / "${old.english}")` }
   }
   return { ...old, script: c.script, reading: c.reading, english: c.english }
-})
+})()))
 const dropped = [...before.keys()].filter(id => !course.some(c => c.id === id)).length
 
-writeTsv(path, rows, GLOSS_COLUMNS)
+writeTsv(path, rows, columns)
 
 const empty = rows.filter(r => !r.gloss).length
 const counts = rows.reduce((a, r) => ({ ...a, [r.status]: (a[r.status] ?? 0) + 1 }), {})

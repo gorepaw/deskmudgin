@@ -91,6 +91,8 @@ export interface ButtonOpts {
   on?: boolean
   align?: CanvasTextAlign
   size?: number
+  /** A face for a label the theme font may not draw well — a language's own name. */
+  font?: string
 }
 
 export abstract class Panel {
@@ -324,7 +326,7 @@ export abstract class Panel {
       g.roundRect(x + 0.5, y + 0.5, w - 1, h - 1, rad)
         .stroke({ width: o.primary ? 1.6 : 1, color: o.primary ? UI.accent : UI.edge, alpha: 0.95 })
       g.text(label, tx, y + h / 2 + 1, {
-        size: o.size ?? 12, align, alpha: o.disabled ? 0.5 : 1,
+        size: o.size ?? 12, font: o.font, align, alpha: o.disabled ? 0.5 : 1,
         color: o.danger ? UI.danger : UI.text,
       })
       return
@@ -353,7 +355,7 @@ export abstract class Panel {
       g.roundRect(x + 0.5, y + 0.5, w - 1, h - 1, pill)
         .stroke({ width: UI.border, color: hot ? UI.highlight : UI.edge, alpha: 0.8 })
       g.text(label, tx, y + h / 2 + 1, {
-        size: o.size ?? 12, align, alpha: o.disabled ? 0.5 : 1,
+        size: o.size ?? 12, font: o.font, align, alpha: o.disabled ? 0.5 : 1,
         color: o.primary || o.danger ? UI.ink : UI.text,
       })
       return
@@ -372,7 +374,7 @@ export abstract class Panel {
 
     const ink = o.primary || o.danger ? UI.ink : o.disabled ? UI.dim : UI.text
     g.text(label, tx, y + h / 2 + 1,
-      { size: o.size ?? 12, color: ink, align, alpha: o.disabled ? 0.6 : 1 })
+      { size: o.size ?? 12, font: o.font, color: ink, align, alpha: o.disabled ? 0.6 : 1 })
   }
 
   /** A full-width option line with a state pip on the left. Radio and checkbox

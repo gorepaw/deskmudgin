@@ -23,6 +23,7 @@ import { writeFileSync, mkdirSync, existsSync } from 'node:fs'
 import { basename } from 'node:path'
 import { readTsv } from './lang/tsv.mjs'
 import { levelOf } from './lang/zh.mjs'
+import { TRANSLATIONS, translationOf } from './lang/languages.mjs'
 
 const [corpusPath, ...flags] = process.argv.slice(2)
 if (!corpusPath) {
@@ -38,10 +39,16 @@ const flag = (name, fallback) => {
  * the Chinese in it is already verified and is only there as the thing the
  * gloss has to mean. Recognised by name so the loop is the same five commands.
  */
-const glossLang = basename(corpusPath).match(/\.([a-z]{2})\.tsv$/)?.[1] ?? null
-const GLOSS_NAMES = { es: 'Spanish' }
-/** The language the blind translator translates into. */
-const target = glossLang ? GLOSS_NAMES[glossLang] ?? glossLang : 'English'
+const glossLang = translationOf(corpusPath)
+const spec = glossLang ? TRANSLATIONS[glossLang] : null
+/** Which way the blind translator works — see tools/lang/languages.mjs. */
+const backwards = spec?.blind === 'to-english'
+/** The language the blind translator translates into, and from. */
+const target = spec && !backwards ? spec.name : 'English'
+const from = backwards ? spec.name : 'Chinese'
+/** What kind of lines a translation file holds, from the course it belongs to. */
+const glossKind = /words/.test(corpusPath) ? 'words' : /names/.test(corpusPath) ? 'names'
+  : /exchanges/.test(corpusPath) ? 'exchanges' : 'phrases'
 const kind = glossLang ? 'gloss' : flag('kind', 'phrases')
 const chunkSize = Number(flag('chunk', 60))
 const all = flags.includes('--all')
@@ -78,6 +85,41 @@ const WORDLIST = rank === 1
   ? `the **HSK 1 (2.0) vocabulary list** — the classic 150-word list`
   : `the **${HSK} (2.0) vocabulary list** — the words ${HSK} adds on top of the levels below it, not the cumulative list`
 
+/**
+ * The review prompt for a translation file. Built from the language's entry in
+ * tools/lang/languages.mjs, so a new language brings its own style rules and
+ * the questions follow from what it has — a vowelling question only for a
+ * language whose reading is derived from its vowel marks.
+ */
+function glossPrompt() {
+  const what = {
+    words: 'This batch is single **words** from the HSK Chinese vocabulary list.',
+    names: 'This batch is **names** for the creatures — small, ugly, endearing frog-like animals and round sea creatures.',
+    exchanges: 'This batch is short **conversations** between two creatures; turns are separated by ｜ in the Chinese and " | " everywhere else.',
+    phrases: 'This batch is **sentences** a creature says on its own.',
+  }[glossKind]
+  const n = spec.name
+  const checks = [
+    `Does the ${n} mean what the **Chinese** says? The English shows the intended sense but can be looser.`,
+    `Is it natural ${n}, the way a native speaker would actually put it?`,
+  ]
+  if (spec.reading) {
+    checks.push(`**Is the vowelling complete and correct** — the right vowel on every letter, every shadda, every case ending? This is the most important question: a learner will pronounce exactly what is written.`)
+    checks.push(`Does \`gloss_reading\` read the way the ${n} is said? It is derived mechanically from the vowel marks, with the pause applied at the end of each sentence, so if it is wrong the vowelling is wrong — fix the ${n}, never the romanization.`)
+  }
+  if (glossKind === 'words') checks.push(`For a word: ${spec.words}.`)
+  if (glossKind === 'names') checks.push(`For a name: it should ${spec.names}. Two creatures must not share a name. Say plainly if it carries any unintended or unfortunate meaning.`)
+  if (glossKind === 'exchanges') checks.push(`Does each reply answer the turn before it? There must be exactly as many " | "-separated parts as the Chinese has ｜-separated turns.`)
+  return `These are **${n} translations** of lines from a beginner language-learning app — small cartoon creatures on a desktop say them. ${what} The Chinese and English have already been verified and are not under review. What is under review is the \`gloss\` column, the ${n}${spec.reading ? ', and its romanization in `gloss_reading`' : ''}. It is shown two ways: to someone learning ${n}, as the line to learn, and to someone who reads ${n}, as the meaning of a line in another language — so it must be both correct and natural.
+
+${spec.style}
+
+For every row, check:
+${checks.map((c, i) => `${i + 1}. ${c}`).join('\n')}
+
+If it needs changing, give the whole corrected ${n} in \`fix_gloss\`${spec.reading ? ', fully vowelled' : ''}.`
+}
+
 const ASK = {
   words: `These are drafted entries for ${WORDLIST}.
 
@@ -106,17 +148,7 @@ For every row, check the exchange **as a whole**:
 
 If you fix a row, give the **whole** corrected exchange in each fix column you use, keeping the ｜ and " | " separators and the same number of turns in every column.`,
 
-  gloss: `These are **${target} translations** of Chinese lines from a beginner Chinese learning app (small cartoon creatures on a desktop say them). The Chinese has already been verified and is not under review. What is under review is the \`gloss\` column: the ${target} meaning shown under the Chinese to a learner who reads ${target}. An English gloss is included only so you can see the intended sense.
-
-The ${target} should be neutral Latin American Spanish: \`tú\` for "you", \`ustedes\` for the plural, no \`vosotros\`, no regionalisms. Lines of a conversation are separated by " | " and must keep the same number of parts as the Chinese (separated by ｜).
-
-For every row, check:
-1. Does the ${target} mean what the **Chinese** says — not a translation of the English, which can be looser?
-2. Is it natural ${target}, the way a native speaker would actually put it, with correct accents and ¿¡ punctuation?
-3. For a single word, is it the dictionary sense a learner needs (verbs as infinitives, "(partícula …)" for particles)?
-4. For a creature's name, does the ${target} say what the name means, the way a nickname is glossed ("Frijolito"), rather than transliterating it?
-
-If it needs changing, give the whole corrected ${target} in \`fix_gloss\`.`,
+  gloss: spec ? glossPrompt() : '',
 
   names: `These are drafted **names for cartoon creatures** in a learning app — small, ugly, endearing frog-like animals and round sea creatures. They are shown to a learner alongside an English gloss.
 
@@ -139,7 +171,11 @@ for (const [n, chunk] of chunks.entries()) {
   // outright if the count came back different, which is the only way this can
   // silently go wrong.
   writeFileSync(`content/review/${batch}.${tag}.gt.txt`,
-    chunk.map(r => r.script).join('\n') + '\n', 'utf8')
+    chunk.map(r => (backwards ? r.gloss : r.script)).join('\n') + '\n', 'utf8')
+  // Which row each of those lines is. Ingest joins by this rather than by
+  // looking the text up again, because two rows can share a text — 你好 and
+  // 您好 are both مَرْحَبًا — and a lookup would hand both answers to the first.
+  writeFileSync(`content/review/${batch}.${tag}.ids.txt`, chunk.map(r => r.id).join('\n') + '\n', 'utf8')
 
   // ── Somewhere to put the answers ──────────────────────────────────
   //
@@ -159,7 +195,7 @@ for (const [n, chunk] of chunks.entries()) {
       `# Google Translate's ${target} for ${batch}, chunk ${tag} — ${chunk.length} entries.`,
       '#',
       `# 1. Open ${batch}.${tag}.gt.txt and copy all of it.`,
-      `# 2. Paste into Google Translate, Chinese → ${target}.`,
+      `# 2. Paste into Google Translate, ${from} → ${target}.`,
       `# 3. Copy the ${target} side and paste it below, replacing nothing above.`,
       '#',
       '# One line per entry, in the order sent, and nothing else. Lines starting',
@@ -186,12 +222,14 @@ for (const [n, chunk] of chunks.entries()) {
 
   // ── For Gemini ────────────────────────────────────────────────────────────
   const table = chunk.map(r => glossLang
-    ? `${r.id}\t${r.script}\t${r.english}\t${r.gloss}`
+    ? `${r.id}\t${r.script}\t${r.english}\t${r.gloss}${spec.reading ? `\t${r.gloss_reading}` : ''}`
     : `${r.id}\t${r.script}\t${r.reading}\t${r.english}`).join('\n')
   const replyHeader = glossLang
     ? 'id\tverdict\tfix_gloss\tnote'
     : 'id\tverdict\tfix_script\tfix_reading\tfix_english\tnote'
-  const entryHeader = glossLang ? 'id\tscript\tenglish\tgloss' : 'id\tscript\treading\tenglish'
+  const entryHeader = glossLang
+    ? `id\tscript\tenglish\tgloss${spec.reading ? '\tgloss_reading' : ''}`
+    : 'id\tscript\treading\tenglish'
   writeFileSync(`content/review/${batch}.${tag}.gemini.md`, `${ASK[kind] ?? ASK.phrases}
 
 ## Reply format — important
@@ -226,7 +264,7 @@ console.log(`${todo.length} rows to check, in ${chunks.length} chunk(s), as ${ki
 console.log(`\nwritten to content/review/:`)
 for (const [n] of chunks.entries()) {
   const tag = String(n + 1).padStart(2, '0')
-  console.log(`  ${batch}.${tag}.gt.txt      → paste into Google Translate (Chinese → ${target})`)
+  console.log(`  ${batch}.${tag}.gt.txt      → paste into Google Translate (${from} → ${target})`)
   console.log(`  ${batch}.${tag}.gemini.md   → paste the whole file into Gemini`)
 }
 console.log(`\nempty answer files are waiting beside them — paste into these:`)

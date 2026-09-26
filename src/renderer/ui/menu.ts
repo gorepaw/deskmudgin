@@ -173,7 +173,7 @@ export class SettingsPanel extends Panel {
     const course = cfg.voice === 'course'
     const level = levelById(cfg.level, cfg.l2)
     this.option(g, 'voice:course', PAD, y, w, 'A language to learn', course,
-      { note: `${LANGUAGES[cfg.l2].label} · ${levelLabel(level, cfg.l2)}` })
+      { note: `${LANGUAGES[cfg.l2].name} · ${levelLabel(level, cfg.l2)}` })
     y += ROW_H
     // Four rows of buttons under the option they belong to. Every language
     // can be learned or be the meaning: pick as the lesson the language you
@@ -189,7 +189,7 @@ export class SettingsPanel extends Panel {
     }
     row('learn', x => LANGUAGE_IDS.forEach((id, i) => {
       this.button(g, `l2:${id}`, x(i), y, bw, 22, LANGUAGES[id].label,
-        { primary: cfg.l2 === id, disabled: !course || !canLearn(id), size: 11 })
+        { primary: cfg.l2 === id, disabled: !course || !canLearn(id), size: 11, font: LANGUAGES[id].font })
     }))
     // A level whose sentences are not verified in this language yet is shown
     // but not offered: choosing it would only fall back to the one below.
@@ -199,12 +199,12 @@ export class SettingsPanel extends Panel {
     }))
     row('meaning', x => LANGUAGE_IDS.forEach((id, i) => {
       this.button(g, `l1:${id}`, x(i), y, bw, 22, LANGUAGES[id].label,
-        { primary: cfg.l1 === id, disabled: !course, size: 11 })
+        { primary: cfg.l1 === id, disabled: !course, size: 11, font: LANGUAGES[id].font })
     }))
     // A second meaning line, in a third language — tap it again to drop it.
     row('also', x => LANGUAGE_IDS.forEach((id, i) => {
       this.button(g, `also:${id}`, x(i), y, bw, 22, LANGUAGES[id].label,
-        { primary: cfg.l1Also === id, disabled: !course || id === cfg.l1 || id === cfg.l2, size: 11 })
+        { primary: cfg.l1Also === id, disabled: !course || id === cfg.l1 || id === cfg.l2, size: 11, font: LANGUAGES[id].font })
     }))
     this.option(g, 'voice:grunts', PAD, y, w, 'Grunts, in English', !course)
     y += ROW_H + 8

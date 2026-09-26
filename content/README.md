@@ -31,7 +31,7 @@ anyone.
 | `zh/hsk1.words.tsv` | the course vocabulary — every phrase is validated against it |
 | `zh/hsk1.tsv` | the phrase corpus |
 | `zh/overrides.tsv` | pinyin corrections, where the deriver is wrong |
-| `zh/*.es.tsv` | Spanish glosses, one file per course (see *Glosses*) |
+| `zh/*.es.tsv`, `zh/*.ar.tsv` | each course in Spanish and in Arabic, one file per course (see *Other languages*) |
 | `review/` | what goes out and what comes back — the audit trail |
 
 Statuses: `draft` → `verified` / `rejected`, or `conflict` when the two sources
@@ -116,34 +116,84 @@ missing verdict, a short Google Translate paste, a desynced reading. All of thos
 failure modes are silent in real use, so they are made loud here. It restores
 anything it touched.
 
-## Glosses in other languages
 
-A learner can read the meaning in Spanish instead of English, or both
-(Settings → *they speak* → **meaning**). A Spanish gloss is a claim of its own
-— the Chinese being verified says nothing about a translation of it — so it
-has its own file beside each course and goes through the same loop:
+It also runs the Arabic deriver against `tools/lang/ar.cases.json` — vowelled
+lines and the romanization a learner should see — and checks that unvowelled
+Arabic, a missing dagger alif and a Persian letter are all refused.
+
+## Other languages
+
+The courses were written in Chinese, against HSK wordlists, with English
+checked alongside. Every other language is a **translation of the course**:
+a file beside each course (`hsk1.es.tsv`, `hsk1.ar.tsv`) holding that
+language's version of every line, verified on its own. A line verified in
+Chinese says nothing about a translation of it.
+
+In the app, any language a line has can be the one being learned (L2, shown
+on top with its reading) or the one it is explained in (L1, the meaning
+underneath). Settings → *they speak*: **learn**, **meaning**, and **also** for
+a second meaning. So the Arabic here is read both ways: by someone learning
+Arabic, as the lesson, and by an Arabic speaker learning Chinese, as the
+meaning.
 
 ```
-node tools/gloss-sync.mjs content/zh/hsk1.tsv --lang es     # lay out hsk1.es.tsv
-node tools/gloss-fill.mjs content/zh/hsk1.es.tsv drafts.tsv  # drafts: id<TAB>spanish
-npm run lang:export content/zh/hsk1.es.tsv                   # Chinese → Spanish blind, plus a review
-npm run lang:ingest content/zh/hsk1.es.tsv
-npm run lang:build  content/zh/hsk1.tsv -- --course zh-hsk1   # joins verified Spanish by id
+node tools/gloss-sync.mjs content/zh/hsk1.tsv --lang ar                 # lay out hsk1.ar.tsv
+node tools/gloss-fill.mjs content/zh/hsk1.ar.tsv drafts.tsv --check     # validate drafts, write nothing
+node tools/gloss-fill.mjs content/zh/hsk1.ar.tsv drafts.tsv             # drafts: id<TAB>text
+npm run lang:export content/zh/hsk1.ar.tsv
+npm run lang:ingest content/zh/hsk1.ar.tsv
+npm run lang:build-all                                                   # every course, translations joined by id
 ```
 
-- The gloss file carries copies of each line's Chinese and English. If the
-  line is corrected later, `gloss-sync` sends its Spanish back to `draft`, and
-  the build will not ship a gloss checked against a different sentence.
-- The blind key translates the **Chinese** into Spanish; the reviewer judges
-  the Spanish against the Chinese, with the English only as a hint of intent.
-- Neutral Latin American Spanish: *tú*, *ustedes*, no *vosotros*.
-- Anything not verified shows as English in the app, so a half-finished
-  language never leaves a blank line.
+- Each translation file carries copies of the line's Chinese and English. If
+  the line is corrected later, `gloss-sync` sends the translation back to
+  `draft`, and the build will not ship one checked against a different
+  sentence.
+- The blind key runs whichever way suits the language
+  (`tools/lang/languages.mjs`): Chinese → Spanish, compared with the Spanish;
+  Arabic → English, compared with the verified English. The reviewer judges
+  the translation against the Chinese either way.
+- Anything not verified falls back to English in the app, line by line, so a
+  half-finished language never leaves a blank. A language cannot be chosen as
+  the one to *learn* until it has a verified level.
+- The HSK wordlists are Chinese vocabulary, so their translations are only
+  ever meanings: the dictionary's Words tab appears only while learning
+  Chinese. Outside Chinese the levels are called "Level 1", "Level 2" — they
+  are HSK's sentences, not that language's syllabus.
+
+### Spanish
+
+Neutral Latin American: *tú*, *ustedes*, no *vosotros*. No reading line.
+
+### Arabic
+
+**Modern Standard Arabic, fully vowelled.** Its reading line is a
+romanization, and the rule that nobody types a tone mark carries over as
+nobody types a romanization: `tools/lang/ar.mjs` reads it off the vowel marks,
+into `gloss_reading`, and the build refuses a row where the two differ. That
+moves what has to be checked from the Latin to the vowelling — which is where
+the mistakes would really be — and it is why the vowelling must be complete:
+`gloss-fill`, `ingest` and the build all refuse a letter left bare.
+
+- Every word carries its case ending, the last word too, as a textbook prints
+  it. The romanization says what is *spoken*, so the deriver applies the pause
+  itself — الْبَيْتِ. reads "al-bayt" — rather than trusting anyone to.
+- الْ before a moon letter; ال plus shadda before a sun letter (الشَّمْس →
+  ash-shams). هٰذَا, ذٰلِكَ, لٰكِنْ with the dagger alif. Arabic punctuation.
+- A creature speaks of itself in the masculine; "you" is أَنْتَ.
+- As a meaning for an Arabic reader, the vowel marks are stripped, the way
+  Arabic is printed for adults.
 
 ## Adding a language
 
-The row model is language-shaped, not Chinese-shaped: `script` / `reading` /
-`english`, where `reading` is simply empty for a language that does not need one.
-Adding Spanish is a `tools/lang/es.mjs` adapter and a corpus under `content/es/`.
-Nothing in the runtime knows which language it is drawing beyond a font and
-whether there is a middle line.
+1. `src/shared/lang/index.ts` — a descriptor: its name, a font stack if the
+   theme fonts cannot draw it, a size scale, its direction, reading pace.
+2. `tools/lang/languages.mjs` — which way its blind check runs, its style
+   rules for the prompts, and a reading deriver and validator if its script
+   needs them (as `ar.mjs` does for Arabic).
+3. `gloss-sync` each course with `--lang <id>`, and put the files through the
+   loop.
+
+Nothing that draws text changes: the bubble, the dictionary, the ledger and
+the pet cards all ask for "the lesson" and "the meaning" and are handed
+whatever languages the learner chose.

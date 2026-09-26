@@ -22,6 +22,7 @@ import { readFileSync, existsSync, readdirSync, mkdirSync, renameSync } from 'no
 import { basename } from 'node:path'
 import { readTsv, writeTsv } from './lang/tsv.mjs'
 import { derive, OVERRIDES_PATH } from './lang/zh.mjs'
+import { TRANSLATIONS, translationOf } from './lang/languages.mjs'
 
 const corpusPath = process.argv[2]
 if (!corpusPath) {
@@ -40,14 +41,20 @@ const by = process.argv.includes('--by') ? process.argv[process.argv.indexOf('--
 const [BLIND, JUDGE] = by === 'claude' ? ['claude-blind', 'claude-review'] : ['gt', 'gemini']
 
 /**
- * A gloss file (`hsk1.es.tsv`) is checked for its gloss: the blind reading is a
- * translation of the Chinese into the gloss's language, compared against the
- * `gloss` column rather than `english`, and a reviewer's fix arrives in
- * `fix_gloss`. The Chinese itself is not under review there, so nothing about
- * scripts or readings is touched.
+ * A translation file (`hsk1.es.tsv`, `hsk1.ar.tsv`) is checked for its
+ * translation, and a reviewer's fix arrives in `fix_gloss`. The Chinese itself
+ * is not under review there, so nothing about scripts or pinyin is touched.
+ *
+ * Which column the blind reading is compared with depends on which way the
+ * blind translator worked (tools/lang/languages.mjs): Chinese into Spanish is
+ * compared with the Spanish, Arabic back into English with the English.
  */
-const glossLang = basename(corpusPath).match(/\.([a-z]{2})\.tsv$/)?.[1] ?? null
-const field = glossLang ? 'gloss' : 'english'
+const glossLang = translationOf(corpusPath)
+const spec = glossLang ? TRANSLATIONS[glossLang] : null
+const backwards = spec?.blind === 'to-english'
+const field = glossLang && !backwards ? 'gloss' : 'english'
+/** The column to show when listing what needs attention. */
+const shown = glossLang ? 'gloss' : 'english'
 
 /** Words too common to count as agreement, per language. */
 const STOP = {
@@ -55,7 +62,7 @@ const STOP = {
   es: ['el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas', 'de', 'del', 'al', 'a', 'que', 'y', 'o',
     'es', 'son', 'lo', 'se', 'me', 'te', 'le', 'les', 'mi', 'tu', 'su', 'por', 'para', 'con', 'en', 'muy', 'ya'],
 }
-const stop = new Set(STOP[glossLang ?? 'en'] ?? [])
+const stop = new Set(STOP[field === 'gloss' ? glossLang : 'en'] ?? [])
 
 /** Accents folded away, so "está" and "esta" — which a hurried back-
  *  translation will confuse — do not score as different words. */
@@ -197,8 +204,18 @@ for (const tag of chunks) {
   // when an earlier round's fix changed its script — so one dropped row shifted
   // every later row against the wrong answer, and 狗 was reported as
   // disagreeing with "dog". Unmatched lines are skipped in place, never removed.
+  //
+  // Where the export recorded which row each line was, that is the join: a
+  // translation file can hold the same text twice. Older exports without the
+  // record fall back to finding the row by its Chinese.
+  const idsFile = `content/review/${batch}.${tag}.ids.txt`
+  const ids = existsSync(idsFile) ? readFileSync(idsFile, 'utf8').split(/\r?\n/).filter(Boolean) : null
+  if (ids && ids.length !== sent.length) {
+    console.error(`chunk ${tag}: ${ids.length} ids recorded for ${sent.length} lines sent — the export is damaged; export again.`)
+    process.exit(1)
+  }
   sent.forEach((script, i) => {
-    const row = rows.find(r => r.script === script)
+    const row = ids ? rows.find(r => r.id === ids[i]) : rows.find(r => r.script === script)
     if (!row) return
     const back = gt[i]
     const g = verdicts.get(row.id)
@@ -238,10 +255,16 @@ for (const tag of chunks) {
         detail.push(['~', row, 'fix refused: wrong number of turns'])
         return
       }
-      if (g.fix_gloss) row.gloss = g.fix_gloss
+      if (g.fix_gloss) {
+        row.gloss = g.fix_gloss
+        // A derived reading follows its text, as pinyin follows its script.
+        if (spec.reading) row.gloss_reading = spec.reading(g.fix_gloss)
+      }
+      const complaints = spec.validate?.(row.gloss) ?? []
       row.status = 'conflict'
       row.checks = ''
       row.note = `reviewer proposed a fix (${g.note || 'no reason given'}); blind reading was "${back}" · re-check next round`
+        + (complaints.length ? ` · the fix does not validate: ${complaints.join('; ')}` : '')
       report.conflict++
       detail.push(['~', row, g.note || 'fixed, needs re-check'])
       return
@@ -277,8 +300,17 @@ for (const tag of chunks) {
       return
     }
 
-    // verdict ok — now the second key has to turn too.
-    if (gtOk) {
+    // verdict ok — now the second key has to turn too. And a translation that
+    // does not pass its language's own checks (unvowelled Arabic) is not ok
+    // whatever anyone said about its meaning.
+    const complaints = spec?.validate?.(row.gloss) ?? []
+    if (complaints.length) {
+      row.status = 'conflict'
+      row.checks = ''
+      row.note = `does not validate: ${complaints.join('; ')}`
+      report.conflict++
+      detail.push(['!', row, row.note])
+    } else if (gtOk) {
       row.status = 'verified'
       row.checks = `${BLIND},${JUDGE}`
       row.note = ''
@@ -307,7 +339,7 @@ if (finished.length) {
   archivedTo = `${base}/round-${round}`
   mkdirSync(archivedTo, { recursive: true })
   for (const tag of finished) {
-    for (const ext of ['gt.txt', 'gt.out.txt', 'gemini.md', 'gemini.out.tsv']) {
+    for (const ext of ['gt.txt', 'ids.txt', 'gt.out.txt', 'gemini.md', 'gemini.out.tsv']) {
       const f = `${batch}.${tag}.${ext}`
       if (existsSync(`content/review/${f}`)) renameSync(`content/review/${f}`, `${archivedTo}/${f}`)
     }
@@ -332,7 +364,7 @@ if (archivedTo) {
 if (detail.length) {
   console.log('\nneeding attention:')
   for (const [mark, row, why] of detail.slice(0, 40)) {
-    console.log(`  ${mark} ${row.id}  ${row.script}  ${row[field]}`)
+    console.log(`  ${mark} ${row.id}  ${row.script}  ${row[shown]}`)
     console.log(`      ${why}`)
   }
   if (detail.length > 40) console.log(`  …and ${detail.length - 40} more, in the corpus`)

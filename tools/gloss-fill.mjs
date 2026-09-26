@@ -15,14 +15,19 @@
 // =============================================================================
 
 import { readFileSync } from 'node:fs'
-import { readTsv, writeTsv, GLOSS_COLUMNS } from './lang/tsv.mjs'
+import { readTsv, writeTsv, GLOSS_COLUMNS, GLOSS_READING_COLUMNS } from './lang/tsv.mjs'
+import { TRANSLATIONS, translationOf } from './lang/languages.mjs'
 
 const [glossPath, draftsPath] = process.argv.slice(2)
+/** `--check`: validate the drafts and print each one's derived reading, but
+ *  write nothing — for a drafter to test their own work against the rules. */
+const checkOnly = process.argv.includes('--check')
 if (!glossPath || !draftsPath) {
-  console.error('usage: node tools/gloss-fill.mjs <course.xx.tsv> <id-tab-gloss.tsv>')
+  console.error('usage: node tools/gloss-fill.mjs <course.xx.tsv> <id-tab-gloss.tsv> [--check]')
   process.exit(2)
 }
 
+const spec = TRANSLATIONS[translationOf(glossPath)] ?? {}
 const rows = readTsv(glossPath)
 const byId = new Map(rows.map(r => [r.id, r]))
 const lines = readFileSync(draftsPath, 'utf8').replace(/^﻿/, '').split(/\r?\n/).filter(l => l.trim())
@@ -40,13 +45,24 @@ for (const [i, line] of lines.entries()) {
   const want = row.script.split('｜').length
   const got = gloss.split(' | ').length
   if (want !== got) problems.push(`line ${i + 1} (${id}): ${want} turn(s) in the Chinese, ${got} in the gloss`)
+  // The language's own checks, before anyone is asked about meaning: a draft
+  // of Arabic missing its vowels is sent back to the drafter, not to review.
+  for (const c of spec.validate?.(gloss) ?? []) problems.push(`line ${i + 1} (${id}): ${c}`)
   fills.push([row, gloss])
 }
 
 if (problems.length) {
   console.error(`${problems.length} problem(s) — nothing written:\n`)
-  for (const p of problems.slice(0, 30)) console.error('  ' + p)
+  for (const p of problems.slice(0, checkOnly ? 500 : 30)) console.error('  ' + p)
   process.exit(1)
+}
+
+if (checkOnly) {
+  for (const [row, gloss] of fills) {
+    console.log(`${row.id}\t${gloss}${spec.reading ? `\t${spec.reading(gloss)}` : ''}`)
+  }
+  console.log(`\n${fills.length} draft(s) pass — nothing written (--check)`)
+  process.exit(0)
 }
 
 let filled = 0
@@ -54,9 +70,10 @@ let kept = 0
 for (const [row, gloss] of fills) {
   if (row.status !== 'draft') { kept++; continue }
   row.gloss = gloss
+  if (spec.reading) row.gloss_reading = spec.reading(gloss)
   filled++
 }
-writeTsv(glossPath, rows, GLOSS_COLUMNS)
+writeTsv(glossPath, rows, spec.reading ? GLOSS_READING_COLUMNS : GLOSS_COLUMNS)
 
 const missing = rows.filter(r => !r.gloss).length
 console.log(`${glossPath}: ${filled} filled${kept ? `, ${kept} left alone (already past draft)` : ''}`)
