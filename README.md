@@ -288,7 +288,8 @@ seven lines in ten come from it and the rest keep the lower levels in use.
 Speech bubbles take the look of the chosen theme — XP's caption band, Aqua's
 stripes, the CRTs' scanlines. Six premium themes bring their own frames:
 Illuminated, Stained glass, Brass & rivets, Bog shrine, Holographic and Ink
-wash.
+wash. The border is a setting of its own (Settings → *border*): keep the one a
+theme comes with, choose **None**, or put any of those frames on any palette.
 
 Settings has two sliders, **Bubbles stay** and **Conversations stay** (0.5×–4×,
 1.5× by default), so a sentence you are still reading does not vanish.

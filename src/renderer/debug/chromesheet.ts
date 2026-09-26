@@ -8,7 +8,7 @@
 // desktop. The panels are the real classes on a stub host, so what is judged
 // here is what ships, not a mock of it.
 //
-// Meant for `npm run snap -- chrome out.png 1520 860 theme=<id> [l2=ar l1=es also=en tab=words]`,
+// Meant for `npm run snap -- chrome out.png 1520 860 theme=<id> [l2=ar l1=es also=en tab=words border=brass|none|theme]`,
 // which renders it offscreen.
 // =============================================================================
 
@@ -16,6 +16,7 @@ import type { Painter } from '../engine/painter'
 import type { MudginBridge } from '../../shared/ipc'
 import { DEFAULT_SETTINGS, type Settings } from '../../shared/types'
 import { applyTheme } from '../ui/theme'
+import { setBorder } from '../ui/frames'
 import type { Panel, PanelHost } from '../ui/panel'
 import { SettingsPanel } from '../ui/menu'
 import { DictionaryPanel } from '../ui/dictionary'
@@ -31,11 +32,12 @@ export class ChromeSheet {
 
   constructor(
     private w: number, private h: number, theme: string,
-    tongue: { l2: LanguageId; l1: LanguageId; l1Also: LanguageId | null; tab?: string },
+    tongue: { l2: LanguageId; l1: LanguageId; l1Also: LanguageId | null; tab?: string; border?: string },
   ) {
     applyTheme(theme)
     const settings: Settings = { ...DEFAULT_SETTINGS, theme, level: 'hsk3', ...tongue }
     setTongue(settings)
+    setBorder(settings.border)
     // Everything a panel may ask of its host, answered with nothing: an empty
     // colony, an empty ledger. The sheet shows the chrome, not anyone's data.
     const bridge = {

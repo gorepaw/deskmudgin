@@ -30,6 +30,7 @@ import type { HeardLine } from '../shared/ledger'
 import { setTimeScale, FAST_SCALE } from '../shared/clock'
 import { Matron } from './ui/matron'
 import { UiLayer, applyTheme } from './ui/panel'
+import { setBorder } from './ui/frames'
 import { MenuPanel, SettingsPanel } from './ui/menu'
 import { ManagerPanel } from './ui/manager'
 import { LedgerPanel } from './ui/ledger'
@@ -68,6 +69,7 @@ async function boot(): Promise<void> {
   // Before the first frame: every panel reads the live theme at draw time, so
   // this only has to happen once here and again on every settings change.
   applyTheme(cfg.theme)
+  setBorder(cfg.border)
   setTongue(cfg)
   setSpeechScale(cfg.speechScale, cfg.talkScale)
   // Before anything constructs a behaviour: the scale is read at the moment a
@@ -430,15 +432,17 @@ async function boot(): Promise<void> {
 
   bridge.on('settings:changed', s => {
     const wasTheme = cfg.theme
+    const wasBorder = cfg.border
     cfg = s
     setVolume(cfg.volume)
     colony.setScale(cfg.scale)
     setTongue(cfg)
     setSpeechScale(cfg.speechScale, cfg.talkScale)
-    if (cfg.theme !== wasTheme) {
-      applyTheme(cfg.theme)
-      // A theme changes every pixel of every open panel, including the parts
-      // outside this frame's dirty rects.
+    if (cfg.theme !== wasTheme || cfg.border !== wasBorder) {
+      if (cfg.theme !== wasTheme) applyTheme(cfg.theme)
+      setBorder(cfg.border)
+      // A theme or a border changes every pixel of every open panel, including
+      // the parts outside this frame's dirty rects.
       ui.invalidate()
     }
     syncMatron()
@@ -708,6 +712,7 @@ async function contactSheet(): Promise<void> {
           l1: (params.get('l1') ?? 'en') as LanguageId,
           l1Also: (params.get('also') as LanguageId | null) ?? null,
           tab: params.get('tab') ?? undefined,
+          border: params.get('border') ?? 'theme',
         })
     : new ContactSheet(window.innerWidth, window.innerHeight, seed, growth)
   let sheet = build()

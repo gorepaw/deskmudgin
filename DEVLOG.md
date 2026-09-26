@@ -28,6 +28,7 @@ Source: [github.com/gorepaw/deskmudgin](https://github.com/gorepaw/deskmudgin).
 | L1/L2 — learn any of English, Español, 中文, العربية from any other | **done, verified offscreen** |
 | Arabic — every line verified, vowelled, romanization derived | **done, verified offscreen** |
 | HSK 3 — 298 words, 464 sentences, 59 conversations, in all four languages | **done, verified offscreen** |
+| Borders chosen independently of the theme (incl. none) | **done, verified offscreen** |
 
 Content, all verified by Claude agents and marked `claude-*` in `checks` for a
 later human pass:
@@ -931,6 +932,25 @@ mañana…". Arabic: 太 "too" as "very" again, 了解 read as "sympathize",
 面条 passes for 条 — so drafters were told the word must genuinely be used.
 An Arabic fix given for a two-turn conversation that covered one turn is
 refused by ingest (as designed) and reworded by hand.
+
+## Borders, chosen on their own
+
+**The bug that became a feature.** `applyTheme` did `Object.assign(UI, theme)`,
+and `frame` is optional on a theme — a theme with no `frame` key copied nothing,
+so the previous premium theme's border stayed on. Switching from Brass to Luna
+left Luna wearing brass rails. It was noticed, liked, and made deliberate.
+
+**Now.** The border is its own setting (`Settings.border`, default `theme`):
+`theme` (the one the theme comes with), `none`, `plain`, or any of the six
+premium frames — any palette can wear any of them. Settings → *border* is a row
+of chips drawn in the colours of the current theme, so they preview the
+combination; "own" marks the theme's default. `Theme.frame` stays as that
+default. `frames/index.ts` owns the choice (`setBorder`, `frameOf(theme)`), so
+panels, bubbles and swatches all follow it; `applyTheme` now clears `frame`
+first, so nothing leaks between themes — the only way to mix is the setting.
+`none` is a zero-inset, zero-reach frame that draws nothing; bubbles' dirty
+rects follow (`reach`). A theme or border change invalidates every open panel.
+`npm run snap -- chrome … theme=<id> border=<id|none|theme>` renders any pair.
 
 ## What is not built
 

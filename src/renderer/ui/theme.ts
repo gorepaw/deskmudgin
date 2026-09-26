@@ -70,8 +70,9 @@ export interface Theme {
   bodyAlpha: number
   font: string
   /**
-   * The frame this theme draws its edges with — an id from ui/frames.ts. Absent
-   * for every palette-only theme, which get the plain keyline-and-accent frame.
+   * The border this theme comes with — an id from ui/frames. Absent for every
+   * palette-only theme, which get the plain keyline-and-accent frame. It is
+   * only the default: the player's `border` setting can replace it.
    * A premium theme is one whose look needs more than colour: gilding, corner
    * ornaments, a title treatment.
    */
@@ -360,7 +361,12 @@ export const themeById = (id: string): Theme =>
   THEMES.find(t => t.id === id) ?? THEMES[0]
 
 export function applyTheme(id: string): void {
-  Object.assign(UI, themeById(id))
+  // `frame` is optional on a theme, and Object.assign copies only the keys a
+  // theme has — so a theme naming no frame left the previous theme's in place,
+  // and a premium border outlived the theme it came with. Clear it first.
+  // (That leak is what made mixing borders and palettes possible by accident;
+  // the `border` setting is the deliberate version.)
+  Object.assign(UI, { frame: undefined }, themeById(id))
   // The font is the one part that cannot be read per-shape: Painter sets it on
   // the context before measuring and again before drawing, and the two have to
   // agree or every `fit()` truncation is computed against the wrong metrics.

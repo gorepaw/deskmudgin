@@ -1,6 +1,11 @@
 // =============================================================================
-// The frames, by id. A theme names one in `frame`; a theme that names none is
-// drawn with the plain frame. See kit.ts for what a frame is.
+// The frames, by id, and which one is drawn.
+//
+// A border is chosen independently of the theme. A theme names the border it
+// comes with in `frame` (none named: the plain one), and the player's `border`
+// setting either follows that (`theme`, the default), switches borders off
+// (`none`), or names any frame — so any palette can wear any border. See kit.ts
+// for what a frame is.
 // =============================================================================
 
 import type { Theme } from '../theme'
@@ -41,5 +46,42 @@ export const FRAMES: Readonly<Record<string, Frame>> = {
   ink: INKWASH,
 }
 
-/** A theme's frame; the plain one for any theme that names none. */
-export const frameOf = (t: Theme): Frame => FRAMES[t.frame ?? 'plain'] ?? PLAIN
+/**
+ * No border at all: the body fill and nothing round it. `inset` and `reach`
+ * are zero — there is no stroke for either to make room for.
+ */
+const NONE: Frame = { inset: 0, reach: 0, edge() {} }
+
+/** What Settings offers, in order. `theme` and `none` are not frames in the
+ *  registry: the first defers to the theme, the second is `NONE` above. */
+export interface Border { readonly id: string; readonly label: string; readonly note: string }
+export const BORDERS: readonly Border[] = [
+  { id: 'theme', label: "Theme's own", note: 'the border that comes with the theme' },
+  { id: 'none', label: 'None', note: 'no border at all' },
+  { id: 'plain', label: 'Plain', note: 'a dark keyline and an accent rule' },
+  { id: 'manuscript', label: 'Illuminated', note: 'gilt rules, corner fleurons, a wax seal' },
+  { id: 'glass', label: 'Stained glass', note: 'leaded panes and jewel light' },
+  { id: 'brass', label: 'Brass & rivets', note: 'riveted brass and an engraved plate' },
+  { id: 'shrine', label: 'Bog shrine', note: 'mossy stone, drips, and the eye' },
+  { id: 'holo', label: 'Holographic', note: 'turning foil and split light' },
+  { id: 'ink', label: 'Ink wash', note: 'brush strokes and a red seal' },
+]
+
+let border = 'theme'
+
+/** Set from settings at boot and on every change. Global, like the theme. An
+ *  id this build does not know follows the theme rather than failing. */
+export function setBorder(id: string): void {
+  border = BORDERS.some(b => b.id === id) ? id : 'theme'
+}
+export const currentBorder = (): string => border
+
+/** The theme's own frame; the plain one for a theme that names none. */
+export const themeFrame = (t: Theme): Frame => FRAMES[t.frame ?? 'plain'] ?? PLAIN
+
+/** The frame to draw with `t`: the chosen border, or the theme's own. */
+export function frameOf(t: Theme): Frame {
+  if (border === 'none') return NONE
+  if (border === 'theme') return themeFrame(t)
+  return FRAMES[border] ?? themeFrame(t)
+}

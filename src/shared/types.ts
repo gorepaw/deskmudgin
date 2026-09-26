@@ -208,6 +208,14 @@ export interface Settings {
   theme: string
 
   /**
+   * Which border they are drawn with, independent of the theme: `theme` for the
+   * one the theme comes with, `none`, or a frame id (`plain`, `manuscript`…).
+   * A string, like `theme`, so a save naming a border this build lacks follows
+   * the theme.
+   */
+  border: string
+
+  /**
    * What they speak: `course` is lines from the verified course, in the
    * language being learned, with its meaning; `grunts` is the original English
    * grunts, and no lesson at all. The course is the default because teaching
@@ -286,6 +294,7 @@ export const DEFAULT_SETTINGS: Settings = {
   matronPos: null,
   newcomerLayer: 'overlay',
   theme: 'pewter',
+  border: 'theme',
   voice: 'course',
   l2: 'zh',
   l1: 'en',

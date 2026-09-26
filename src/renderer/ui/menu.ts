@@ -14,7 +14,7 @@ import { LedgerPanel } from './ledger'
 import { DictionaryPanel } from './dictionary'
 import { LEVELS, canLearn, isReady, levelById, levelLabel } from '../../shared/lang/levels'
 import { LANGUAGES, LANGUAGE_IDS, type LanguageId } from '../../shared/lang'
-import { frameOf } from './frames'
+import { BORDERS, FRAMES, frameOf, themeFrame } from './frames'
 
 const BTN_H = 32
 const GAP = 7
@@ -93,7 +93,7 @@ export class SettingsPanel extends Panel {
   private back = 0
 
   // Tall enough for the swatch grid, which gains a row every six themes.
-  constructor() { super(320, 782 + SettingsPanel.swatchBlock()) }
+  constructor() { super(320, 794 + SettingsPanel.swatchBlock() + SettingsPanel.borderBlock()) }
 
   override async mount(): Promise<void> {
     const colony = await this.host.bridge.invoke('colony:get')
@@ -220,6 +220,12 @@ export class SettingsPanel extends Panel {
     this.swatches(g, PAD, y, w, cfg.theme)
     y += SettingsPanel.swatchBlock()
 
+    // The border, on its own: any theme can wear any of them.
+    this.rule(g, y, this.w, 'border')
+    y += 12
+    this.borders(g, PAD, y, w, cfg.border)
+    y += SettingsPanel.borderBlock()
+
     if (single) {
       // In `single` the per-pet and per-Matron layers are stored but not
       // honoured, so saying so beats leaving three dead controls above.
@@ -295,6 +301,60 @@ export class SettingsPanel extends Panel {
       { size: 9, color: UI.dim })
   }
 
+  /**
+   * The border picker: one swatch per border, each drawn in the colours of the
+   * theme in force, so what you see is the combination you would get.
+   * `Theme's own` shows the theme's default border and is marked so it can be
+   * told from choosing that same border by name.
+   */
+  private borders(g: Painter, x: number, y: number, w: number, current: string): void {
+    // One row: nine narrow chips read fine, and a second row would push the
+    // panel past the height of a small laptop screen.
+    const gap = 4
+    const cw = (w - gap * (BORDERS.length - 1)) / BORDERS.length
+    const on0 = BORDERS.some(b => b.id === current) ? current : 'theme'
+    BORDERS.forEach((b, i) => {
+      const sx = x + i * (cw + gap)
+      const sy = y
+      const id = `border:${b.id}`
+      this.hits.add(id, sx, sy, cw, SWATCH_H)
+      const on = b.id === on0
+      const hot = this.hits.at(this.px, this.py) === id
+      const rad = Math.min(UI.radius, 4)
+
+      g.roundRect(sx, sy, cw, SWATCH_H, rad).fill(UI.fill)
+      g.rect(sx + 6, sy + 12, cw - 12, 2).fill({ color: UI.text, alpha: 0.5 })
+      g.rect(sx + 6, sy + 18, cw - 18, 2).fill({ color: UI.text, alpha: 0.3 })
+
+      const frame = b.id === 'theme' ? themeFrame(UI) : FRAMES[b.id]
+      if (b.id === 'none') {
+        // Nothing to draw, so say so: a faint strike through the empty edge.
+        g.moveTo(sx + 5, sy + SWATCH_H - 5).lineTo(sx + cw - 5, sy + 5)
+          .stroke({ width: 1, color: UI.dim, alpha: 0.7 })
+      } else if (frame?.swatch) {
+        frame.swatch(g, UI, sx, sy, cw, SWATCH_H)
+      } else if (frame) {
+        // The plain frame has no ornament to show, only its keyline and rule.
+        g.roundRect(sx + 1.5, sy + 1.5, cw - 3, SWATCH_H - 3, Math.max(0, rad - 1))
+          .stroke({ width: 2, color: 0x000000, alpha: 0.5 })
+        g.roundRect(sx + 1.5, sy + 1.5, cw - 3, SWATCH_H - 3, Math.max(0, rad - 1))
+          .stroke({ width: 1, color: UI.accent, alpha: 0.9 })
+      }
+      if (b.id === 'theme') g.text('own', sx + cw / 2, sy + SWATCH_H - 6, { size: 7, color: UI.dim })
+
+
+      g.roundRect(sx + 0.5, sy + 0.5, cw - 1, SWATCH_H - 1, rad)
+        .stroke({ width: on ? 2 : 1, color: on || hot ? UI.highlight : UI.edge, alpha: on ? 1 : 0.7 })
+    })
+    const b = BORDERS.find(x => x.id === on0)!
+    g.text(`${b.label} — ${b.note}`, x + w / 2, y + SWATCH_H + 10, { size: 9, color: UI.dim })
+  }
+
+  /** Height of the border picker, its caption included. */
+  static borderBlock(): number {
+    return SWATCH_H + 20
+  }
+
   /** Total height the swatch grid occupies, including its caption. */
   static swatchBlock(): number {
     return Math.ceil(THEMES.length / SWATCH_COLS) * (SWATCH_H + 6) + 14
@@ -351,6 +411,7 @@ export class SettingsPanel extends Panel {
         break
       default:
         if (id?.startsWith('theme:')) void b.invoke('settings:patch', { theme: id.slice(6) })
+        else if (id?.startsWith('border:')) void b.invoke('settings:patch', { border: id.slice(7) })
         else if (id?.startsWith('level:')) void b.invoke('settings:patch', { level: id.slice(6) })
         else if (id?.startsWith('l2:')) void b.invoke('settings:patch', { l2: id.slice(3) as LanguageId })
         else if (id?.startsWith('l1:')) void b.invoke('settings:patch', { l1: id.slice(3) as LanguageId })
