@@ -1,0 +1,303 @@
+id	script	reading	english	gloss	gloss_reading	status	checks	note
+p001	你好！	Nǐ hǎo!	Hello!	مَرْحَبًا!	Marḥaban!	draft		
+p002	你好吗？	Nǐ hǎo ma?	How are you?	كَيْفَ حَالُكَ؟	Kayfa ḥāluk?	draft		
+p003	喂！	Wèi!	Hey! / Hello!	يَا!	Yā!	draft		
+p004	喂，你好！	Wèi, nǐ hǎo!	Hey, hello!	يَا، مَرْحَبًا!	Yā, marḥaban!	draft		
+p005	我在这儿！	Wǒ zài zhèr!	I'm here!	أَنَا هُنَا!	Anā hunā!	draft		
+p006	你在哪儿？	Nǐ zài nǎr?	Where are you?	أَيْنَ أَنْتَ؟	Ayna anta?	draft		
+p007	你去哪儿？	Nǐ qù nǎr?	Where are you going?	إِلَى أَيْنَ تَذْهَبُ؟	Ilā ayna tadhhab?	draft		
+p008	你回来了！	Nǐ huí lái le!	You're back!	لَقَدْ عُدْتَ!	Laqad ʿudt!	draft		
+p009	你来了！	Nǐ lái le!	You came!	لَقَدْ جِئْتَ!	Laqad jiʾt!	draft		
+p010	我很好，谢谢。你呢？	Wǒ hěn hǎo, xiè xie. Nǐ ne?	I'm fine, thanks. And you?	أَنَا بِخَيْرٍ، شُكْرًا. وَأَنْتَ؟	Anā bikhayr, shukran. Waʾant?	draft		
+p011	你叫什么名字？	Nǐ jiào shén me míng zi?	What's your name?	مَا اسْمُكَ؟	Mā ismuk?	draft		
+p012	我认识你！	Wǒ rèn shi nǐ!	I know you!	أَنَا أَعْرِفُكَ!	Anā aʿrifuk!	draft		
+p013	你是谁？	Nǐ shì shéi?	Who are you?	مَنْ أَنْتَ؟	Man anta?	draft		
+p014	下午好！	Xià wǔ hǎo!	Good afternoon!	طَابَ نَهَارُكَ!	Ṭāba nahāruk!	draft		
+p015	你今天怎么样？	Nǐ jīn tiān zěn me yàng?	How are you today?	كَيْفَ حَالُكَ الْيَوْمَ؟	Kayfa ḥāluka al-yawm?	draft		
+p016	你在做什么？	Nǐ zài zuò shén me?	What are you doing?	مَاذَا تَفْعَلُ؟	Mādhā tafʿal?	draft		
+p017	你在看什么？	Nǐ zài kàn shén me?	What are you looking at?	إِلَى مَاذَا تَنْظُرُ؟	Ilā mādhā tanẓur?	draft		
+p018	你是我的朋友。	Nǐ shì wǒ de péng you.	You are my friend.	أَنْتَ صَدِيقِي.	Anta ṣadīqī.	draft		
+p019	我们是朋友。	Wǒ men shì péng you.	We are friends.	نَحْنُ أَصْدِقَاءُ.	Naḥnu aṣdiqāʾ.	draft		
+p020	再见！	Zài jiàn!	Goodbye!	إِلَى اللِّقَاءِ!	Ilā al-liqāʾ!	draft		
+p021	明天见！	Míng tiān jiàn!	See you tomorrow!	إِلَى اللِّقَاءِ غَدًا!	Ilā al-liqāʾi ghadan!	draft		
+p022	下午见！	Xià wǔ jiàn!	See you this afternoon!	إِلَى اللِّقَاءِ بَعْدَ الظُّهْرِ!	Ilā al-liqāʾi baʿda aẓ-ẓuhr!	draft		
+p023	我回家了。	Wǒ huí jiā le.	I'm going home.	أَنَا ذَاهِبٌ إِلَى الْبَيْتِ.	Anā dhāhibun ilā al-bayt.	draft		
+p024	我去睡觉了。	Wǒ qù shuì jiào le.	I'm going to sleep.	سَأَذْهَبُ لِلنَّوْمِ.	Saʾadhhabu li-n-nawm.	draft		
+p025	我想吃东西。	Wǒ xiǎng chī dōng xi.	I want to eat something.	أُرِيدُ أَنْ آكُلَ شَيْئًا.	Urīdu an ākula shayʾan.	draft		
+p026	我想吃饭。	Wǒ xiǎng chī fàn.	I want to eat.	أُرِيدُ أَنْ آكُلَ.	Urīdu an ākul.	draft		
+p027	我想吃米饭。	Wǒ xiǎng chī mǐ fàn.	I want to eat rice.	أُرِيدُ أَنْ آكُلَ أُرْزًا.	Urīdu an ākula urzan.	draft		
+p028	我想吃苹果。	Wǒ xiǎng chī píng guǒ.	I want to eat an apple.	أُرِيدُ أَنْ آكُلَ تُفَّاحَةً.	Urīdu an ākula tuffāḥa.	draft		
+p029	我想吃水果。	Wǒ xiǎng chī shuǐ guǒ.	I want to eat fruit.	أُرِيدُ أَنْ آكُلَ فَاكِهَةً.	Urīdu an ākula fākiha.	draft		
+p030	我没有吃饭。	Wǒ méi yǒu chī fàn.	I haven't eaten.	لَمْ آكُلْ.	Lam ākul.	draft		
+p031	我今天没有吃饭。	Wǒ jīn tiān méi yǒu chī fàn.	I haven't eaten today.	لَمْ آكُلْ الْيَوْمَ.	Lam ākul al-yawm.	draft		
+p032	什么时候吃饭？	Shén me shí hou chī fàn?	When do we eat?	مَتَى نَأْكُلُ؟	Matā naʾkul?	draft		
+p033	中午吃什么？	Zhōng wǔ chī shén me?	What's for lunch?	مَاذَا نَأْكُلُ فِي الظُّهْرِ؟	Mādhā naʾkulu fī aẓ-ẓuhr?	draft		
+p034	你有苹果吗？	Nǐ yǒu píng guǒ ma?	Do you have an apple?	هَلْ عِنْدَكَ تُفَّاحَةٌ؟	Hal ʿindaka tuffāḥa?	draft		
+p035	你有米饭吗？	Nǐ yǒu mǐ fàn ma?	Do you have rice?	هَلْ عِنْدَكَ أُرْزٌ؟	Hal ʿindaka urz?	draft		
+p036	我想喝水。	Wǒ xiǎng hē shuǐ.	I want to drink water.	أُرِيدُ أَنْ أَشْرَبَ مَاءً.	Urīdu an ashraba māʾ.	draft		
+p037	我想喝茶。	Wǒ xiǎng hē chá.	I want to drink tea.	أُرِيدُ أَنْ أَشْرَبَ شَايًا.	Urīdu an ashraba shāyan.	draft		
+p038	我很想吃东西。	Wǒ hěn xiǎng chī dōng xi.	I really want to eat something.	أُرِيدُ كَثِيرًا أَنْ آكُلَ شَيْئًا.	Urīdu kathīran an ākula shayʾan.	draft		
+p039	我想吃很多东西。	Wǒ xiǎng chī hěn duō dōng xi.	I want to eat lots of things.	أُرِيدُ أَنْ آكُلَ أَشْيَاءَ كَثِيرَةً.	Urīdu an ākula ashyāʾa kathīra.	draft		
+p040	这个能吃吗？	Zhè ge néng chī ma?	Can this be eaten?	هَلْ يُؤْكَلُ هَٰذَا؟	Hal yuʾkalu hādhā?	draft		
+p041	我能吃这个吗？	Wǒ néng chī zhè ge ma?	May I eat this?	هَلْ أَسْتَطِيعُ أَنْ آكُلَ هَٰذَا؟	Hal astaṭīʿu an ākula hādhā?	draft		
+p042	你吃饭了吗？	Nǐ chī fàn le ma?	Have you eaten?	هَلْ أَكَلْتَ؟	Hal akalt?	draft		
+p043	我们去饭店吃饭。	Wǒ men qù fàn diàn chī fàn.	We're going to a restaurant to eat.	نَذْهَبُ إِلَى الْمَطْعَمِ لِنَأْكُلَ.	Nadhhabu ilā al-maṭʿami linaʾkul.	draft		
+p044	我想睡觉。	Wǒ xiǎng shuì jiào.	I want to sleep.	أُرِيدُ أَنْ أَنَامَ.	Urīdu an anām.	draft		
+p045	我很想睡觉。	Wǒ hěn xiǎng shuì jiào.	I really want to sleep.	أُرِيدُ كَثِيرًا أَنْ أَنَامَ.	Urīdu kathīran an anām.	draft		
+p046	我不想工作。	Wǒ bù xiǎng gōng zuò.	I don't want to work.	لَا أُرِيدُ أَنْ أَعْمَلَ.	Lā urīdu an aʿmal.	draft		
+p047	现在几点了？	Xiàn zài jǐ diǎn le?	What time is it now?	كَمِ السَّاعَةُ الْآنَ؟	Kami as-sāʿatu al-ʾān?	draft		
+p048	我今天做了很多工作。	Wǒ jīn tiān zuò le hěn duō gōng zuò.	I worked a lot today.	عَمِلْتُ كَثِيرًا الْيَوْمَ.	ʿAmiltu kathīran al-yawm.	draft		
+p049	我想回家睡觉。	Wǒ xiǎng huí jiā shuì jiào.	I want to go home and sleep.	أُرِيدُ أَنْ أَعُودَ إِلَى الْبَيْتِ وَأَنَامَ.	Urīdu an aʿūda ilā al-bayti waʾanām.	draft		
+p050	我不想读书。	Wǒ bù xiǎng dú shū.	I don't want to study.	لَا أُرِيدُ أَنْ أَدْرُسَ.	Lā urīdu an adrus.	draft		
+p051	我想坐一下。	Wǒ xiǎng zuò yí xià.	I want to sit for a bit.	أُرِيدُ أَنْ أَجْلِسَ قَلِيلًا.	Urīdu an ajlisa qalīlan.	draft		
+p052	我睡觉了。	Wǒ shuì jiào le.	I'm going to bed.	سَأَنَامُ الْآنَ.	Saʾanāmu al-ʾān.	draft		
+p053	现在几点？	Xiàn zài jǐ diǎn?	What time is it?	كَمِ السَّاعَةُ الْآنَ؟	Kami as-sāʿatu al-ʾān?	draft		
+p054	今天是星期几？	Jīn tiān shì xīng qī jǐ?	What day is it today?	أَيُّ يَوْمٍ هُوَ الْيَوْمَ؟	Ayyu yawmin huwa al-yawm?	draft		
+p055	你好！我在这儿。	Nǐ hǎo! Wǒ zài zhèr.	Hello! I'm here.	مَرْحَبًا! أَنَا هُنَا.	Marḥaban! Anā hunā.	draft		
+p056	我很高兴！	Wǒ hěn gāo xìng!	I'm very happy!	أَنَا سَعِيدٌ جِدًّا!	Anā saʿīdun jiddan!	draft		
+p057	太好了！	Tài hǎo le!	Great!	رَائِعٌ!	Rāʾiʿ!	draft		
+p058	很好！	Hěn hǎo!	Very good!	جَيِّدٌ جِدًّا!	Jayyidun jiddan!	draft		
+p059	我很好。	Wǒ hěn hǎo.	I'm fine.	أَنَا بِخَيْرٍ.	Anā bikhayr.	draft		
+p060	我喜欢你。	Wǒ xǐ huan nǐ.	I like you.	أُحِبُّكَ.	Uḥibbuk.	draft		
+p061	我爱你。	Wǒ ài nǐ.	I love you.	أُحِبُّكَ جِدًّا.	Uḥibbuka jiddan.	draft		
+p062	我喜欢这儿。	Wǒ xǐ huan zhèr.	I like it here.	أُحِبُّ هَٰذَا الْمَكَانَ.	Uḥibbu hādhā al-makān.	draft		
+p063	今天我很高兴。	Jīn tiān wǒ hěn gāo xìng.	I'm happy today.	أَنَا سَعِيدٌ الْيَوْمَ.	Anā saʿīdun al-yawm.	draft		
+p064	我们都很高兴。	Wǒ men dōu hěn gāo xìng.	We're all happy.	نَحْنُ جَمِيعًا سُعَدَاءُ.	Naḥnu jamīʿan suʿadāʾ.	draft		
+p065	谢谢你！	Xiè xie nǐ!	Thank you!	شُكْرًا لَكَ!	Shukran lak!	draft		
+p066	谢谢！	Xiè xie!	Thanks!	شُكْرًا!	Shukran!	draft		
+p067	我喜欢这个。	Wǒ xǐ huan zhè ge.	I like this.	أُحِبُّ هَٰذَا.	Uḥibbu hādhā.	draft		
+p068	你很好。	Nǐ hěn hǎo.	You're very nice.	أَنْتَ لَطِيفٌ جِدًّا.	Anta laṭīfun jiddan.	draft		
+p069	你是我的朋友！	Nǐ shì wǒ de péng you!	You're my friend!	أَنْتَ صَدِيقِي!	Anta ṣadīqī!	draft		
+p070	我爱你！	Wǒ ài nǐ!	I love you!	أُحِبُّكَ!	Uḥibbuk!	draft		
+p071	好吃！	Hǎo chī!	Tasty!	لَذِيذٌ!	Ladhīdh!	draft		
+p072	很好吃！	Hěn hǎo chī!	Very tasty!	لَذِيذٌ جِدًّا!	Ladhīdhun jiddan!	draft		
+p073	太好吃了！	Tài hǎo chī le!	So tasty!	مَا أَلَذَّهُ!	Mā aladhdhah!	draft		
+p074	谢谢，很好吃！	Xiè xie, hěn hǎo chī!	Thanks, it's very tasty!	شُكْرًا، إِنَّهُ لَذِيذٌ جِدًّا!	Shukran, innahu ladhīdhun jiddan!	draft		
+p075	我喜欢吃这个。	Wǒ xǐ huan chī zhè ge.	I like eating this.	أُحِبُّ أَكْلَ هَٰذَا.	Uḥibbu akla hādhā.	draft		
+p076	我吃了很多。	Wǒ chī le hěn duō.	I ate a lot.	أَكَلْتُ كَثِيرًا.	Akaltu kathīran.	draft		
+p077	这是什么？很好吃！	Zhè shì shén me? Hěn hǎo chī!	What is this? It's very tasty!	مَا هَٰذَا؟ إِنَّهُ لَذِيذٌ جِدًّا!	Mā hādhā? Innahu ladhīdhun jiddan!	draft		
+p079	不！	Bù!	No!	لَا!	Lā!	draft		
+p080	不，不，不！	Bù, bù, bù!	No, no, no!	لَا، لَا، لَا!	Lā, lā, lā!	draft		
+p081	你想做什么？	Nǐ xiǎng zuò shén me?	What do you want to do?	مَاذَا تُرِيدُ أَنْ تَفْعَلَ؟	Mādhā turīdu an tafʿal?	draft		
+p082	我不喜欢这个！	Wǒ bù xǐ huan zhè ge!	I don't like this!	لَا أُحِبُّ هَٰذَا!	Lā uḥibbu hādhā!	draft		
+p083	我在哪儿？	Wǒ zài nǎr?	Where am I?	أَيْنَ أَنَا؟	Ayna anā?	draft		
+p084	我们去哪儿？	Wǒ men qù nǎr?	Where are we going?	إِلَى أَيْنَ نَذْهَبُ؟	Ilā ayna nadhhab?	draft		
+p085	对不起！	Duì bu qǐ!	Sorry!	آسِفٌ!	Āsif!	draft		
+p086	没关系。	Méi guān xi.	It's okay.	لَا بَأْسَ.	Lā baʾs.	draft		
+p087	不好！	Bù hǎo!	Not good!	سَيِّئٌ!	Sayyiʾ!	draft		
+p088	我不喜欢这个。	Wǒ bù xǐ huan zhè ge.	I don't like this.	لَا أُحِبُّ هَٰذَا.	Lā uḥibbu hādhā.	draft		
+p089	这是什么？	Zhè shì shén me?	What is this?	مَا هَٰذَا؟	Mā hādhā?	draft		
+p090	这个是什么东西？	Zhè ge shì shén me dōng xi?	What is this thing?	مَا هَٰذَا الشَّيْءُ؟	Mā hādhā ash-shayʾ?	draft		
+p091	我想吃这个。	Wǒ xiǎng chī zhè ge.	I want to eat this.	أُرِيدُ أَنْ آكُلَ هَٰذَا.	Urīdu an ākula hādhā.	draft		
+p092	这个很好吃。	Zhè ge hěn hǎo chī.	This is very tasty.	هَٰذَا لَذِيذٌ جِدًّا.	Hādhā ladhīdhun jiddan.	draft		
+p093	这个不好吃。	Zhè ge bù hǎo chī.	This isn't tasty.	هَٰذَا لَيْسَ لَذِيذًا.	Hādhā laysa ladhīdhan.	draft		
+p094	这是我的！	Zhè shì wǒ de!	This is mine!	هَٰذَا لِي!	Hādhā lī!	draft		
+p095	那是什么？	Nà shì shén me?	What is that?	مَا ذَٰلِكَ؟	Mā dhālik?	draft		
+p096	这个电脑很好吃。	Zhè ge diàn nǎo hěn hǎo chī.	This computer is very tasty.	هَٰذَا الْحَاسُوبُ لَذِيذٌ جِدًّا.	Hādhā al-ḥāsūbu ladhīdhun jiddan.	draft		
+p097	我在吃东西。	Wǒ zài chī dōng xi.	I'm eating.	أَنَا آكُلُ شَيْئًا.	Anā ākulu shayʾan.	draft		
+p098	这个字怎么读？	Zhè ge zì zěn me dú?	How do you read this character?	كَيْفَ يُقْرَأُ هَٰذَا الْحَرْفُ؟	Kayfa yuqraʾu hādhā al-ḥarf?	draft		
+p099	你好？	Nǐ hǎo?	Hello?	مَرْحَبًا؟	Marḥaban?	draft		
+p100	喂？	Wèi?	Hello?	يَا؟	Yā?	draft		
+p101	谁在那儿？	Shéi zài nàr?	Who's there?	مَنْ هُنَاكَ؟	Man hunāk?	draft		
+p102	我想你。	Wǒ xiǎng nǐ.	I miss you.	أَشْتَاقُ إِلَيْكَ.	Ashtāqu ilayk.	draft		
+p103	你什么时候回来？	Nǐ shén me shí hou huí lái?	When are you coming back?	مَتَى تَعُودُ؟	Matā taʿūd?	draft		
+p104	我没有朋友。	Wǒ méi yǒu péng you.	I have no friends.	لَيْسَ لِي أَصْدِقَاءُ.	Laysa lī aṣdiqāʾ.	draft		
+p105	我想看看你。	Wǒ xiǎng kàn kan nǐ.	I want to see you.	أُرِيدُ أَنْ أَرَاكَ.	Urīdu an arāk.	draft		
+p106	你去哪儿了？	Nǐ qù nǎr le?	Where did you go?	إِلَى أَيْنَ ذَهَبْتَ؟	Ilā ayna dhahabt?	draft		
+p107	今天很热。	Jīn tiān hěn rè.	It's hot today.	الْجَوُّ حَارٌّ الْيَوْمَ.	Al-jawwu ḥārrun al-yawm.	draft		
+p108	今天很冷。	Jīn tiān hěn lěng.	It's cold today.	الْجَوُّ بَارِدٌ الْيَوْمَ.	Al-jawwu bāridun al-yawm.	draft		
+p109	今天天气很好。	Jīn tiān tiān qì hěn hǎo.	The weather is nice today.	الطَّقْسُ جَمِيلٌ الْيَوْمَ.	Aṭ-ṭaqsu jamīlun al-yawm.	draft		
+p110	今天天气怎么样？	Jīn tiān tiān qì zěn me yàng?	How's the weather today?	كَيْفَ الطَّقْسُ الْيَوْمَ؟	Kayfa aṭ-ṭaqsu al-yawm?	draft		
+p111	明天会下雨吗？	Míng tiān huì xià yǔ ma?	Will it rain tomorrow?	هَلْ سَتُمْطِرُ غَدًا؟	Hal satumṭiru ghadan?	draft		
+p112	下雨了。	Xià yǔ le.	It's raining.	إِنَّهَا تُمْطِرُ الْآنَ.	Innahā tumṭiru al-ʾān.	draft		
+p113	我喜欢下雨。	Wǒ xǐ huan xià yǔ.	I like rain.	أُحِبُّ الْمَطَرَ.	Uḥibbu al-maṭar.	draft		
+p114	昨天下雨了。	Zuó tiān xià yǔ le.	It rained yesterday.	أَمْطَرَتْ أَمْسِ.	Amṭarat ams.	draft		
+p115	今天是几号？	Jīn tiān shì jǐ hào?	What's the date today?	مَا التَّارِيخُ الْيَوْمَ؟	Mā at-tārīkhu al-yawm?	draft		
+p116	今天几月几号？	Jīn tiān jǐ yuè jǐ hào?	What's today's date?	مَا تَارِيخُ الْيَوْمِ؟	Mā tārīkhu al-yawm?	draft		
+p117	现在三点。	Xiàn zài sān diǎn.	It's three o'clock.	السَّاعَةُ الْآنَ الثَّالِثَةُ.	As-sāʿatu al-ʾāna ath-thālitha.	draft		
+p118	现在十点了。	Xiàn zài shí diǎn le.	It's ten o'clock already.	السَّاعَةُ الْآنَ الْعَاشِرَةُ.	As-sāʿatu al-ʾāna al-ʿāshira.	draft		
+p119	你几岁？	Nǐ jǐ suì?	How old are you?	كَمْ عُمْرُكَ؟	Kam ʿumruk?	draft		
+p120	你多大？	Nǐ duō dà?	How old are you?	كَمْ سِنُّكَ؟	Kam sinnuk?	draft		
+p121	我八岁。	Wǒ bā suì.	I'm eight years old.	عُمْرِي ثَمَانِي سَنَوَاتٍ.	ʿUmrī thamānī sanawāt.	draft		
+p122	我有很多朋友。	Wǒ yǒu hěn duō péng you.	I have many friends.	عِنْدِي أَصْدِقَاءُ كَثِيرُونَ.	ʿIndī aṣdiqāʾu kathīrūn.	draft		
+p123	我有三个朋友。	Wǒ yǒu sān gè péng you.	I have three friends.	عِنْدِي ثَلَاثَةُ أَصْدِقَاءَ.	ʿIndī thalāthatu aṣdiqāʾ.	draft		
+p124	我家有五个人。	Wǒ jiā yǒu wǔ gè rén.	There are five people in my family.	فِي عَائِلَتِي خَمْسَةُ أَشْخَاصٍ.	Fī ʿāʾilatī khamsatu ashkhāṣ.	draft		
+p125	我爸爸是医生。	Wǒ bà ba shì yī shēng.	My dad is a doctor.	أَبِي طَبِيبٌ.	Abī ṭabīb.	draft		
+p126	我妈妈是老师。	Wǒ mā ma shì lǎo shī.	My mom is a teacher.	أُمِّي مُعَلِّمَةٌ.	Ummī muʿallima.	draft		
+p127	我是学生。	Wǒ shì xué sheng.	I'm a student.	أَنَا طَالِبٌ.	Anā ṭālib.	draft		
+p128	我们是同学。	Wǒ men shì tóng xué.	We are classmates.	نَحْنُ زُمَلَاءُ.	Naḥnu zumalāʾ.	draft		
+p129	他是我的老师。	Tā shì wǒ de lǎo shī.	He is my teacher.	هُوَ مُعَلِّمِي.	Huwa muʿallimī.	draft		
+p130	她是我的同学。	Tā shì wǒ de tóng xué.	She is my classmate.	هِيَ زَمِيلَتِي.	Hiya zamīlatī.	draft		
+p131	他是谁？	Tā shì shéi?	Who is he?	مَنْ هُوَ؟	Man huwa?	draft		
+p132	她是谁？	Tā shì shéi?	Who is she?	مَنْ هِيَ؟	Man hiya?	draft		
+p133	她很漂亮。	Tā hěn piào liang.	She is very pretty.	هِيَ جَمِيلَةٌ جِدًّا.	Hiya jamīlatun jiddan.	draft		
+p134	他是中国人。	Tā shì zhōng guó rén.	He is Chinese.	هُوَ صِينِيٌّ.	Huwa ṣīniyy.	draft		
+p135	你是中国人吗？	Nǐ shì zhōng guó rén ma?	Are you Chinese?	هَلْ أَنْتَ صِينِيٌّ؟	Hal anta ṣīniyy?	draft		
+p136	我会说汉语。	Wǒ huì shuō hàn yǔ.	I can speak Chinese.	أَسْتَطِيعُ أَنْ أَتَكَلَّمَ الصِّينِيَّةَ.	Astaṭīʿu an atakallama aṣ-ṣīniyya.	draft		
+p137	我会说一点儿汉语。	Wǒ huì shuō yì diǎnr hàn yǔ.	I can speak a little Chinese.	أَسْتَطِيعُ أَنْ أَتَكَلَّمَ قَلِيلًا مِنَ الصِّينِيَّةِ.	Astaṭīʿu an atakallama qalīlan mina aṣ-ṣīniyya.	draft		
+p138	你会说汉语吗？	Nǐ huì shuō hàn yǔ ma?	Can you speak Chinese?	هَلْ تَسْتَطِيعُ أَنْ تَتَكَلَّمَ الصِّينِيَّةَ؟	Hal tastaṭīʿu an tatakallama aṣ-ṣīniyya?	draft		
+p139	我在学习汉语。	Wǒ zài xué xí hàn yǔ.	I'm studying Chinese.	أَنَا أَتَعَلَّمُ الصِّينِيَّةَ.	Anā ataʿallamu aṣ-ṣīniyya.	draft		
+p140	这个字怎么写？	Zhè ge zì zěn me xiě?	How do you write this character?	كَيْفَ يُكْتَبُ هَٰذَا الْحَرْفُ؟	Kayfa yuktabu hādhā al-ḥarf?	draft		
+p141	我会写这个字。	Wǒ huì xiě zhè ge zì.	I can write this character.	أَسْتَطِيعُ أَنْ أَكْتُبَ هَٰذَا الْحَرْفَ.	Astaṭīʿu an aktuba hādhā al-ḥarf.	draft		
+p142	我想去北京。	Wǒ xiǎng qù běi jīng.	I want to go to Beijing.	أُرِيدُ أَنْ أَذْهَبَ إِلَى بِكِينَ.	Urīdu an adhhaba ilā bikīn.	draft		
+p143	北京很大。	Běi jīng hěn dà.	Beijing is very big.	بِكِينُ كَبِيرَةٌ جِدًّا.	Bikīnu kabīratun jiddan.	draft		
+p144	我想去中国。	Wǒ xiǎng qù zhōng guó.	I want to go to China.	أُرِيدُ أَنْ أَذْهَبَ إِلَى الصِّينِ.	Urīdu an adhhaba ilā aṣ-ṣīn.	draft		
+p145	中国很大。	Zhōng guó hěn dà.	China is very big.	الصِّينُ كَبِيرَةٌ جِدًّا.	Aṣ-ṣīnu kabīratun jiddan.	draft		
+p146	我住在北京。	Wǒ zhù zài běi jīng.	I live in Beijing.	أَسْكُنُ فِي بِكِينَ.	Askunu fī bikīn.	draft		
+p147	你住在哪儿？	Nǐ zhù zài nǎr?	Where do you live?	أَيْنَ تَسْكُنُ؟	Ayna taskun?	draft		
+p148	我坐飞机去北京。	Wǒ zuò fēi jī qù běi jīng.	I'm flying to Beijing.	أَذْهَبُ إِلَى بِكِينَ بِالطَّائِرَةِ.	Adhhabu ilā bikīna bi-ṭ-ṭāʾira.	draft		
+p149	我坐出租车去。	Wǒ zuò chū zū chē qù.	I'll go by taxi.	سَأَذْهَبُ بِالتَّاكْسِي.	Saʾadhhabu bi-t-tāksī.	draft		
+p150	我们去商店。	Wǒ men qù shāng diàn.	We're going to the shop.	نَذْهَبُ إِلَى الْمَتْجَرِ.	Nadhhabu ilā al-matjar.	draft		
+p151	你想买什么？	Nǐ xiǎng mǎi shén me?	What do you want to buy?	مَاذَا تُرِيدُ أَنْ تَشْتَرِيَ؟	Mādhā turīdu an tashtariy?	draft		
+p152	我想买一本书。	Wǒ xiǎng mǎi yì běn shū.	I want to buy a book.	أُرِيدُ أَنْ أَشْتَرِيَ كِتَابًا.	Urīdu an ashtariya kitāban.	draft		
+p153	我想买衣服。	Wǒ xiǎng mǎi yī fu.	I want to buy clothes.	أَنَا أُرِيدُ أَنْ أَشْتَرِيَ مَلَابِسَ.	Anā urīdu an ashtariya malābis.	draft		
+p154	这个多少钱？	Zhè ge duō shao qián?	How much is this?	بِكَمْ هٰذَا؟	Bikam hādhā?	draft		
+p155	三块钱。	Sān kuài qián.	Three yuan.	ثَلَاثَةُ يُوَانَاتٍ.	Thalāthatu yuwānāt.	draft		
+p156	太多了！	Tài duō le!	That's too much!	كَثِيرٌ جِدًّا!	Kathīrun jiddan!	draft		
+p157	我没有钱。	Wǒ méi yǒu qián.	I don't have money.	لَيْسَ عِنْدِي مَالٌ.	Laysa ʿindī māl.	draft		
+p158	我有一点儿钱。	Wǒ yǒu yì diǎnr qián.	I have a little money.	عِنْدِي قَلِيلٌ مِنَ الْمَالِ.	ʿIndī qalīlun mina al-māl.	draft		
+p159	我喜欢猫。	Wǒ xǐ huan māo.	I like cats.	أُحِبُّ الْقِطَطَ.	Uḥibbu al-qiṭaṭ.	draft		
+p160	我喜欢狗。	Wǒ xǐ huan gǒu.	I like dogs.	أُحِبُّ الْكِلَابَ.	Uḥibbu al-kilāb.	draft		
+p161	猫在桌子下面。	Māo zài zhuō zi xià mian.	The cat is under the table.	الْقِطُّ تَحْتَ الطَّاوِلَةِ.	Al-qiṭṭu taḥta aṭ-ṭāwila.	draft		
+p162	狗在椅子上。	Gǒu zài yǐ zi shang.	The dog is on the chair.	الْكَلْبُ عَلَى الْكُرْسِيِّ.	Al-kalbu ʿalā al-kursiyy.	draft		
+p163	书在桌子上。	Shū zài zhuō zi shang.	The book is on the table.	الْكِتَابُ عَلَى الطَّاوِلَةِ.	Al-kitābu ʿalā aṭ-ṭāwila.	draft		
+p164	你看见我的书了吗？	Nǐ kàn jiàn wǒ de shū le ma?	Have you seen my book?	هَلْ رَأَيْتَ كِتَابِي؟	Hal raʾayta kitābī?	draft		
+p165	我在看书。	Wǒ zài kàn shū.	I'm reading a book.	أَنَا أَقْرَأُ كِتَابًا.	Anā aqraʾu kitāban.	draft		
+p166	我喜欢看书。	Wǒ xǐ huan kàn shū.	I like reading.	أُحِبُّ الْقِرَاءَةَ.	Uḥibbu al-qirāʾa.	draft		
+p167	我喜欢看电影。	Wǒ xǐ huan kàn diàn yǐng.	I like watching films.	أُحِبُّ مُشَاهَدَةَ الْأَفْلَامِ.	Uḥibbu mushāhadata al-ʾaflām.	draft		
+p168	我们去看电影。	Wǒ men qù kàn diàn yǐng.	We're going to see a film.	نَحْنُ نَذْهَبُ لِمُشَاهَدَةِ فِيلْمٍ.	Naḥnu nadhhabu limushāhadati fīlm.	draft		
+p169	你喜欢看电视吗？	Nǐ xǐ huan kàn diàn shì ma?	Do you like watching TV?	هَلْ تُحِبُّ مُشَاهَدَةَ التِّلْفَازِ؟	Hal tuḥibbu mushāhadata at-tilfāz?	draft		
+p170	我在看电视。	Wǒ zài kàn diàn shì.	I'm watching TV.	أَنَا أُشَاهِدُ التِّلْفَازَ.	Anā ushāhidu at-tilfāz.	draft		
+p171	电脑在哪儿？	Diàn nǎo zài nǎr?	Where is the computer?	أَيْنَ الْحَاسُوبُ؟	Ayna al-ḥāsūb?	draft		
+p172	我想打电话。	Wǒ xiǎng dǎ diàn huà.	I want to make a phone call.	أُرِيدُ أَنْ أَتَّصِلَ بِالْهَاتِفِ.	Urīdu an attaṣila bi-l-hātif.	draft		
+p173	请坐。	Qǐng zuò.	Please sit.	اِجْلِسْ مِنْ فَضْلِكَ.	Ijlis min faḍlik.	draft		
+p174	请喝茶。	Qǐng hē chá.	Please have some tea.	اِشْرَبْ شَايًا مِنْ فَضْلِكَ.	Ishrab shāyan min faḍlik.	draft		
+p175	你喝什么？	Nǐ hē shén me?	What would you like to drink?	مَاذَا تَشْرَبُ؟	Mādhā tashrab?	draft		
+p176	我喝水。	Wǒ hē shuǐ.	I'll drink water.	سَأَشْرَبُ مَاءً.	Saʾashrabu māʾ.	draft		
+p177	我喜欢喝茶。	Wǒ xǐ huan hē chá.	I like drinking tea.	أُحِبُّ شُرْبَ الشَّايِ.	Uḥibbu shurba ash-shāy.	draft		
+p178	我想回家。	Wǒ xiǎng huí jiā.	I want to go home.	أُرِيدُ أَنْ أَعُودَ إِلَى الْبَيْتِ.	Urīdu an aʿūda ilā al-bayt.	draft		
+p179	他去医院了。	Tā qù yī yuàn le.	He went to the hospital.	ذَهَبَ إِلَى الْمُسْتَشْفَى.	Dhahaba ilā al-mustashfā.	draft		
+p180	她是医生。	Tā shì yī shēng.	She is a doctor.	هِيَ طَبِيبَةٌ.	Hiya ṭabība.	draft		
+p181	我不认识他。	Wǒ bú rèn shi tā.	I don't know him.	لَا أَعْرِفُهُ.	Lā aʿrifuh.	draft		
+p182	你认识她吗？	Nǐ rèn shi tā ma?	Do you know her?	هَلْ تَعْرِفُهَا؟	Hal taʿrifuhā?	draft		
+p183	明天我去学校。	Míng tiān wǒ qù xué xiào.	Tomorrow I'm going to school.	غَدًا أَذْهَبُ إِلَى الْمَدْرَسَةِ.	Ghadan adhhabu ilā al-madrasa.	draft		
+p184	我们都是朋友。	Wǒ men dōu shì péng you.	We are all friends.	نَحْنُ جَمِيعًا أَصْدِقَاءُ.	Naḥnu jamīʿan aṣdiqāʾ.	draft		
+p185	我们都很好。	Wǒ men dōu hěn hǎo.	We are all fine.	نَحْنُ جَمِيعًا بِخَيْرٍ.	Naḥnu jamīʿan bikhayr.	draft		
+p186	昨天我很高兴。	Zuó tiān wǒ hěn gāo xìng.	I was very happy yesterday.	كُنْتُ سَعِيدًا جِدًّا أَمْسِ.	Kuntu saʿīdan jiddan ams.	draft		
+p187	我在家。	Wǒ zài jiā.	I'm at home.	أَنَا فِي الْبَيْتِ.	Anā fī al-bayt.	draft		
+p188	我在学校。	Wǒ zài xué xiào.	I'm at school.	أَنَا فِي الْمَدْرَسَةِ.	Anā fī al-madrasa.	draft		
+p189	一，二，三！	Yī, èr, sān!	One, two, three!	وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ!	Wāḥid, ithnān, thalātha!	draft		
+p190	四，五，六！	Sì, wǔ, liù!	Four, five, six!	أَرْبَعَةٌ، خَمْسَةٌ، سِتَّةٌ!	Arbaʿa, khamsa, sitta!	draft		
+p191	七，八，九，十！	Qī, bā, jiǔ, shí!	Seven, eight, nine, ten!	سَبْعَةٌ، ثَمَانِيَةٌ، تِسْعَةٌ، عَشَرَةٌ!	Sabʿa, thamāniya, tisʿa, ʿashara!	draft		
+p192	我有十个苹果。	Wǒ yǒu shí gè píng guǒ.	I have ten apples.	عِنْدِي عَشْرُ تُفَّاحَاتٍ.	ʿIndī ʿashru tuffāḥāt.	draft		
+p193	我想吃八个苹果。	Wǒ xiǎng chī bā gè píng guǒ.	I want to eat eight apples.	أُرِيدُ أَنْ آكُلَ ثَمَانِيَ تُفَّاحَاتٍ.	Urīdu an ākula thamāniya tuffāḥāt.	draft		
+p194	你有几个苹果？	Nǐ yǒu jǐ gè píng guǒ?	How many apples do you have?	كَمْ تُفَّاحَةً عِنْدَكَ؟	Kam tuffāḥatan ʿindak?	draft		
+p195	这是我的桌子。	Zhè shì wǒ de zhuō zi.	This is my table.	هٰذِهِ طَاوِلَتِي.	Hādhihi ṭāwilatī.	draft		
+p196	那是你的椅子。	Nà shì nǐ de yǐ zi.	That is your chair.	ذٰلِكَ كُرْسِيُّكَ.	Dhālika kursiyyuk.	draft		
+p197	这些是什么？	Zhè xiē shì shén me?	What are these?	مَا هٰذِهِ؟	Mā hādhih?	draft		
+p198	那些是我的书。	Nà xiē shì wǒ de shū.	Those are my books.	تِلْكَ كُتُبِي.	Tilka kutubī.	draft		
+p199	你喜欢什么？	Nǐ xǐ huan shén me?	What do you like?	مَاذَا تُحِبُّ؟	Mādhā tuḥibb?	draft		
+p200	我喜欢水果。	Wǒ xǐ huan shuǐ guǒ.	I like fruit.	أُحِبُّ الْفَوَاكِهَ.	Uḥibbu al-fawākih.	draft		
+p201	这个很大。	Zhè ge hěn dà.	This is very big.	هٰذَا كَبِيرٌ جِدًّا.	Hādhā kabīrun jiddan.	draft		
+p202	那个很小。	Nà ge hěn xiǎo.	That one is very small.	ذٰلِكَ صَغِيرٌ جِدًّا.	Dhālika ṣaghīrun jiddan.	draft		
+p203	我很小。	Wǒ hěn xiǎo.	I'm very small.	أَنَا صَغِيرٌ جِدًّا.	Anā ṣaghīrun jiddan.	draft		
+p204	你很大。	Nǐ hěn dà.	You're very big.	أَنْتَ كَبِيرٌ جِدًّا.	Anta kabīrun jiddan.	draft		
+p205	这是一个杯子。	Zhè shì yí gè bēi zi.	This is a cup.	هٰذَا كُوبٌ.	Hādhā kūb.	draft		
+p206	请喝一杯茶。	Qǐng hē yì bēi chá.	Please have a cup of tea.	اِشْرَبْ كُوبًا مِنَ الشَّايِ مِنْ فَضْلِكَ.	Ishrab kūban mina ash-shāyi min faḍlik.	draft		
+p207	我想喝一杯水。	Wǒ xiǎng hē yì bēi shuǐ.	I want a glass of water.	أُرِيدُ أَنْ أَشْرَبَ كُوبًا مِنَ الْمَاءِ.	Urīdu an ashraba kūban mina al-māʾ.	draft		
+p208	他在工作。	Tā zài gōng zuò.	He is working.	هُوَ يَعْمَلُ.	Huwa yaʿmal.	draft		
+p209	她在学习。	Tā zài xué xí.	She is studying.	هِيَ تَدْرُسُ.	Hiya tadrus.	draft		
+p210	我妈妈在做饭。	Wǒ mā ma zài zuò fàn.	My mom is cooking.	أُمِّي تَطْبُخُ.	Ummī taṭbukh.	draft		
+p211	我下午工作。	Wǒ xià wǔ gōng zuò.	I work in the afternoon.	أَعْمَلُ بَعْدَ الظُّهْرِ.	Aʿmalu baʿda aẓ-ẓuhr.	draft		
+p212	中午我在家吃饭。	Zhōng wǔ wǒ zài jiā chī fàn.	I eat at home at noon.	فِي الظُّهْرِ آكُلُ فِي الْبَيْتِ.	Fī aẓ-ẓuhri ākulu fī al-bayt.	draft		
+p213	他们是谁？	Tā men shì shéi?	Who are they?	مَنْ هُمْ؟	Man hum?	draft		
+p214	他们是我的朋友。	Tā men shì wǒ de péng you.	They are my friends.	هُمْ أَصْدِقَائِي.	Hum aṣdiqāʾī.	draft		
+p215	我有一个女儿。	Wǒ yǒu yí gè nǚ ér.	I have a daughter.	عِنْدِي بِنْتٌ.	ʿIndī bint.	draft		
+p216	他有一个儿子。	Tā yǒu yí gè ér zi.	He has a son.	عِنْدَهُ اِبْنٌ.	ʿIndahu ibn.	draft		
+p217	先生，你好！	Xiān sheng, nǐ hǎo!	Hello, sir!	يَا سَيِّدِي، مَرْحَبًا!	Yā sayyidī, marḥaban!	draft		
+p218	小姐，你好！	Xiǎo jiě, nǐ hǎo!	Hello, miss!	يَا آنِسَةُ، مَرْحَبًا!	Yā ānisa, marḥaban!	draft		
+p219	你们好！	Nǐ men hǎo!	Hello, everyone!	مَرْحَبًا بِكُمْ جَمِيعًا!	Marḥaban bikum jamīʿan!	draft		
+p220	我喜欢你的衣服。	Wǒ xǐ huan nǐ de yī fu.	I like your clothes.	أُحِبُّ مَلَابِسَكَ.	Uḥibbu malābisak.	draft		
+p221	你的衣服很漂亮。	Nǐ de yī fu hěn piào liang.	Your clothes are very pretty.	مَلَابِسُكَ جَمِيلَةٌ جِدًّا.	Malābisuka jamīlatun jiddan.	draft		
+p222	这个星期我很高兴。	Zhè ge xīng qī wǒ hěn gāo xìng.	I'm very happy this week.	أَنَا سَعِيدٌ جِدًّا هٰذَا الْأُسْبُوعَ.	Anā saʿīdun jiddan hādhā al-ʾusbūʿ.	draft		
+p223	我明天不工作。	Wǒ míng tiān bù gōng zuò.	I'm not working tomorrow.	لَا أَعْمَلُ غَدًا.	Lā aʿmalu ghadan.	draft		
+p224	我能看电视吗？	Wǒ néng kàn diàn shì ma?	Can I watch TV?	هَلْ أَسْتَطِيعُ مُشَاهَدَةَ التِّلْفَازِ؟	Hal astaṭīʿu mushāhadata at-tilfāz?	draft		
+p225	你能看见我吗？	Nǐ néng kàn jiàn wǒ ma?	Can you see me?	هَلْ تَسْتَطِيعُ أَنْ تَرَانِي؟	Hal tastaṭīʿu an tarānī?	draft		
+p226	我看见你了！	Wǒ kàn jiàn nǐ le!	I see you!	رَأَيْتُكَ!	Raʾaytuk!	draft		
+p227	我想看看。	Wǒ xiǎng kàn kan.	I want to have a look.	أُرِيدُ أَنْ أُلْقِيَ نَظْرَةً.	Urīdu an ulqiya naẓra.	draft		
+p228	我不会写这个字。	Wǒ bú huì xiě zhè ge zì.	I can't write this character.	لَا أَسْتَطِيعُ كِتَابَةَ هٰذَا الْحَرْفِ.	Lā astaṭīʿu kitābata hādhā al-ḥarf.	draft		
+p229	你会做饭吗？	Nǐ huì zuò fàn ma?	Can you cook?	هَلْ تَسْتَطِيعُ الطَّبْخَ؟	Hal tastaṭīʿu aṭ-ṭabkh?	draft		
+p231	他什么时候回来？	Tā shén me shí hou huí lái?	When is he coming back?	مَتَى يَعُودُ؟	Matā yaʿūd?	draft		
+p232	我想和你说汉语。	Wǒ xiǎng hé nǐ shuō hàn yǔ.	I want to speak Chinese with you.	أُرِيدُ أَنْ أَتَحَدَّثَ مَعَكَ بِاللُّغَةِ الصِّينِيَّةِ.	Urīdu an ataḥaddatha maʿaka bi-l-lughati aṣ-ṣīniyya.	draft		
+p233	我和我的朋友去商店。	Wǒ hé wǒ de péng you qù shāng diàn.	My friend and I are going to the shop.	أَذْهَبُ أَنَا وَصَدِيقِي إِلَى الْمَتْجَرِ.	Adhhabu anā waṣadīqī ilā al-matjar.	draft		
+p234	猫和狗都很好。	Māo hé gǒu dōu hěn hǎo.	Cats and dogs are both nice.	الْقِطَطُ وَالْكِلَابُ لَطِيفَةٌ جِدًّا.	Al-qiṭaṭu wa-l-kilābu laṭīfatun jiddan.	draft		
+p235	我不太喜欢这个。	Wǒ bú tài xǐ huan zhè ge.	I don't really like this.	لَا أُحِبُّ هٰذَا كَثِيرًا.	Lā uḥibbu hādhā kathīran.	draft		
+p236	太热了！	Tài rè le!	It's too hot!	حَارٌّ جِدًّا!	Ḥārrun jiddan!	draft		
+p237	太冷了！	Tài lěng le!	It's too cold!	بَارِدٌ جِدًّا!	Bāridun jiddan!	draft		
+p238	太大了！	Tài dà le!	It's too big!	كَبِيرٌ جِدًّا!	Kabīrun jiddan!	draft		
+p239	太小了！	Tài xiǎo le!	It's too small!	صَغِيرٌ جِدًّا!	Ṣaghīrun jiddan!	draft		
+p240	太少了！	Tài shǎo le!	That's too little!	قَلِيلٌ جِدًّا!	Qalīlun jiddan!	draft		
+p241	我很爱我的家。	Wǒ hěn ài wǒ de jiā.	I love my family very much.	أُحِبُّ عَائِلَتِي كَثِيرًا.	Uḥibbu ʿāʾilatī kathīran.	draft		
+p242	你喜欢北京吗？	Nǐ xǐ huan běi jīng ma?	Do you like Beijing?	هَلْ تُحِبُّ بِكِينَ؟	Hal tuḥibbu bikīn?	draft		
+p243	那个商店很大。	Nà ge shāng diàn hěn dà.	That shop is very big.	ذٰلِكَ الْمَتْجَرُ كَبِيرٌ جِدًّا.	Dhālika al-matjaru kabīrun jiddan.	draft		
+p244	医院在学校后面。	Yī yuàn zài xué xiào hòu mian.	The hospital is behind the school.	الْمُسْتَشْفَى خَلْفَ الْمَدْرَسَةِ.	Al-mustashfā khalfa al-madrasa.	draft		
+p245	商店在前面。	Shāng diàn zài qián mian.	The shop is up ahead.	الْمَتْجَرُ فِي الْأَمَامِ.	Al-matjaru fī al-ʾamām.	draft		
+p246	你家在哪儿？	Nǐ jiā zài nǎr?	Where is your home?	أَيْنَ بَيْتُكَ؟	Ayna baytuk?	draft		
+p247	我的家很小。	Wǒ de jiā hěn xiǎo.	My home is very small.	بَيْتِي صَغِيرٌ جِدًّا.	Baytī ṣaghīrun jiddan.	draft		
+p248	我想认识你。	Wǒ xiǎng rèn shi nǐ.	I'd like to get to know you.	أُرِيدُ أَنْ أَتَعَرَّفَ عَلَيْكَ.	Urīdu an ataʿarrafa ʿalayk.	draft		
+p249	你说什么？	Nǐ shuō shén me?	What did you say?	مَاذَا قُلْتَ؟	Mādhā qult?	draft		
+p250	你听！	Nǐ tīng!	Listen!	اِسْمَعْ!	Ismaʿ!	draft		
+p251	我在听。	Wǒ zài tīng.	I'm listening.	أَنَا أَسْتَمِعُ.	Anā astamiʿ.	draft		
+p252	你想去哪儿？	Nǐ xiǎng qù nǎr?	Where do you want to go?	إِلَى أَيْنَ تُرِيدُ أَنْ تَذْهَبَ؟	Ilā ayna turīdu an tadhhab?	draft		
+p253	我们去哪儿吃饭？	Wǒ men qù nǎr chī fàn?	Where shall we eat?	إِلَى أَيْنَ نَذْهَبُ لِنَأْكُلَ؟	Ilā ayna nadhhabu linaʾkul?	draft		
+p254	这个饭店很好。	Zhè ge fàn diàn hěn hǎo.	This restaurant is very good.	هٰذَا الْمَطْعَمُ جَيِّدٌ جِدًّا.	Hādhā al-maṭʿamu jayyidun jiddan.	draft		
+p255	我们去那个饭店。	Wǒ men qù nà ge fàn diàn.	We're going to that restaurant.	نَذْهَبُ إِلَى ذٰلِكَ الْمَطْعَمِ.	Nadhhabu ilā dhālika al-maṭʿam.	draft		
+p256	我想吃中国菜。	Wǒ xiǎng chī zhōng guó cài.	I want to eat Chinese food.	أُرِيدُ أَنْ آكُلَ طَعَامًا صِينِيًّا.	Urīdu an ākula ṭaʿāman ṣīniyyan.	draft		
+p257	中国菜很好吃。	Zhōng guó cài hěn hǎo chī.	Chinese food is very tasty.	الطَّعَامُ الصِّينِيُّ لَذِيذٌ جِدًّا.	Aṭ-ṭaʿāmu aṣ-ṣīniyyu ladhīdhun jiddan.	draft		
+p258	你喜欢吃什么菜？	Nǐ xǐ huan chī shén me cài?	What dishes do you like?	أَيَّ طَعَامٍ تُحِبُّ؟	Ayya ṭaʿāmin tuḥibb?	draft		
+p259	我不喜欢吃苹果。	Wǒ bù xǐ huan chī píng guǒ.	I don't like eating apples.	لَا أُحِبُّ أَكْلَ التُّفَّاحِ.	Lā uḥibbu akla at-tuffāḥ.	draft		
+p260	这是谁的书？	Zhè shì shéi de shū?	Whose book is this?	كِتَابُ مَنْ هٰذَا؟	Kitābu man hādhā?	draft		
+p261	这是我的书。	Zhè shì wǒ de shū.	This is my book.	هٰذَا كِتَابِي.	Hādhā kitābī.	draft		
+p262	那不是我的。	Nà bú shì wǒ de.	That's not mine.	ذٰلِكَ لَيْسَ لِي.	Dhālika laysa lī.	draft		
+p263	这是你的吗？	Zhè shì nǐ de ma?	Is this yours?	هَلْ هٰذَا لَكَ؟	Hal hādhā lak?	draft		
+p264	我是你的朋友吗？	Wǒ shì nǐ de péng you ma?	Am I your friend?	هَلْ أَنَا صَدِيقُكَ؟	Hal anā ṣadīquk?	draft		
+p265	你是老师吗？	Nǐ shì lǎo shī ma?	Are you a teacher?	هَلْ أَنْتَ مُعَلِّمٌ؟	Hal anta muʿallim?	draft		
+p266	我不是老师。	Wǒ bú shì lǎo shī.	I'm not a teacher.	لَسْتُ مُعَلِّمًا.	Lastu muʿalliman.	draft		
+p267	今天星期一。	Jīn tiān xīng qī yī.	Today is Monday.	الْيَوْمُ يَوْمُ الِاثْنَيْنِ.	Al-yawmu yawmu al-ithnayn.	draft		
+p268	明天星期六。	Míng tiān xīng qī liù.	Tomorrow is Saturday.	غَدًا يَوْمُ السَّبْتِ.	Ghadan yawmu as-sabt.	draft		
+p269	九月很热。	Jiǔ yuè hěn rè.	September is very hot.	الشَّهْرُ التَّاسِعُ حَارٌّ جِدًّا.	Ash-shahru at-tāsiʿu ḥārrun jiddan.	draft		
+p270	十二月很冷。	Shí èr yuè hěn lěng.	December is very cold.	الشَّهْرُ الثَّانِي عَشَرَ بَارِدٌ جِدًّا.	Ash-shahru ath-thānī ʿashara bāridun jiddan.	draft		
+p271	我明年去中国。	Wǒ míng nián qù zhōng guó.	I'm going to China next year.	أَذْهَبُ إِلَى الصِّينِ الْعَامَ الْقَادِمَ.	Adhhabu ilā aṣ-ṣīni al-ʿāma al-qādim.	draft		
+p272	我去年在北京。	Wǒ qù nián zài běi jīng.	I was in Beijing last year.	كُنْتُ فِي بِكِينَ الْعَامَ الْمَاضِيَ.	Kuntu fī bikīna al-ʿāma al-māḍiy.	draft		
+p273	我很喜欢我的老师。	Wǒ hěn xǐ huan wǒ de lǎo shī.	I really like my teacher.	أُحِبُّ مُعَلِّمِي كَثِيرًا.	Uḥibbu muʿallimī kathīran.	draft		
+p274	我们的老师很好。	Wǒ men de lǎo shī hěn hǎo.	Our teacher is very good.	مُعَلِّمُنَا جَيِّدٌ جِدًّا.	Muʿallimunā jayyidun jiddan.	draft		
+p275	我在写字。	Wǒ zài xiě zì.	I'm writing characters.	أَنَا أَكْتُبُ حُرُوفًا.	Anā aktubu ḥurūfan.	draft		
+p276	多少个？	Duō shao gè?	How many?	كَمْ؟	Kam?	draft		
+p277	多少人？	Duō shao rén?	How many people?	كَمْ شَخْصًا؟	Kam shakhṣan?	draft		
+p278	有很多人。	Yǒu hěn duō rén.	There are lots of people.	هُنَاكَ كَثِيرٌ مِنَ النَّاسِ.	Hunāka kathīrun mina an-nās.	draft		
+p279	没有人。	Méi yǒu rén.	There's nobody.	لَا أَحَدَ هُنَاكَ.	Lā aḥada hunāk.	draft		
+p280	我什么都没有。	Wǒ shén me dōu méi yǒu.	I don't have anything.	لَا أَمْلِكُ شَيْئًا.	Lā amliku shayʾan.	draft		
+p281	你什么时候来？	Nǐ shén me shí hou lái?	When are you coming?	مَتَى تَأْتِي؟	Matā taʾtī?	draft		
+p282	我现在来。	Wǒ xiàn zài lái.	I'm coming now.	أَنَا آتٍ الْآنَ.	Anā ātin al-ʾān.	draft		
+p283	我明天来。	Wǒ míng tiān lái.	I'll come tomorrow.	سَآتِي غَدًا.	Saʾātī ghadan.	draft		
+p284	他没有来。	Tā méi yǒu lái.	He didn't come.	لَمْ يَأْتِ.	Lam yaʾt.	draft		
+p285	请来我家。	Qǐng lái wǒ jiā.	Please come to my home.	تَعَالَ إِلَى بَيْتِي مِنْ فَضْلِكَ.	Taʿāla ilā baytī min faḍlik.	draft		
+p286	我能坐这儿吗？	Wǒ néng zuò zhèr ma?	Can I sit here?	هَلْ أَسْتَطِيعُ الْجُلُوسَ هُنَا؟	Hal astaṭīʿu al-julūsa hunā?	draft		
+p287	请坐这儿。	Qǐng zuò zhèr.	Please sit here.	اِجْلِسْ هُنَا مِنْ فَضْلِكَ.	Ijlis hunā min faḍlik.	draft		
+p288	我坐在椅子上。	Wǒ zuò zài yǐ zi shang.	I'm sitting on the chair.	أَجْلِسُ عَلَى الْكُرْسِيِّ.	Ajlisu ʿalā al-kursiyy.	draft		
+p289	他坐在我后面。	Tā zuò zài wǒ hòu mian.	He's sitting behind me.	يَجْلِسُ خَلْفِي.	Yajlisu khalfī.	draft		
+p290	这个苹果很大。	Zhè ge píng guǒ hěn dà.	This apple is very big.	هٰذِهِ التُّفَّاحَةُ كَبِيرَةٌ جِدًّا.	Hādhihi at-tuffāḥatu kabīratun jiddan.	draft		
+p291	那个苹果很小。	Nà ge píng guǒ hěn xiǎo.	That apple is very small.	تِلْكَ التُّفَّاحَةُ صَغِيرَةٌ جِدًّا.	Tilka at-tuffāḥatu ṣaghīratun jiddan.	draft		
+p292	我不想说。	Wǒ bù xiǎng shuō.	I'd rather not say.	لَا أُرِيدُ أَنْ أَقُولَ.	Lā urīdu an aqūl.	draft		
+p293	你能来吗？	Nǐ néng lái ma?	Can you come?	هَلْ تَسْتَطِيعُ أَنْ تَأْتِيَ؟	Hal tastaṭīʿu an taʾtiy?	draft		
+p294	我不能来。	Wǒ bù néng lái.	I can't come.	لَا أَسْتَطِيعُ أَنْ آتِيَ.	Lā astaṭīʿu an ātiy.	draft		
+p295	没有了。	Méi yǒu le.	There's none left.	لَمْ يَبْقَ شَيْءٌ.	Lam yabqa shayʾ.	draft		
+p296	好的。	Hǎo de.	Okay.	حَسَنًا.	Ḥasanan.	draft		
+p297	是的。	Shì de.	Yes.	نَعَمْ.	Naʿam.	draft		
+p298	不是。	Bú shì.	No, it isn't.	لَا.	Lā.	draft		
+p299	对不起，我不认识你。	Duì bu qǐ, wǒ bú rèn shi nǐ.	Sorry, I don't know you.	آسِفٌ، لَا أَعْرِفُكَ.	Āsif, lā aʿrifuk.	draft		
+p300	我爱中国菜。	Wǒ ài zhōng guó cài.	I love Chinese food.	أُحِبُّ الطَّعَامَ الصِّينِيَّ.	Uḥibbu aṭ-ṭaʿāma aṣ-ṣīniyy.	draft		
+p301	我爱喝茶。	Wǒ ài hē chá.	I love drinking tea.	أُحِبُّ شُرْبَ الشَّايِ.	Uḥibbu shurba ash-shāy.	draft		
+p302	我爱看书。	Wǒ ài kàn shū.	I love reading.	أُحِبُّ الْقِرَاءَةَ.	Uḥibbu al-qirāʾa.	draft		
+p303	我爱睡觉。	Wǒ ài shuì jiào.	I love sleeping.	أُحِبُّ النَّوْمَ.	Uḥibbu an-nawm.	draft		
+p304	我爱吃东西。	Wǒ ài chī dōng xi.	I love eating.	أُحِبُّ الْأَكْلَ.	Uḥibbu al-ʾakl.	draft		

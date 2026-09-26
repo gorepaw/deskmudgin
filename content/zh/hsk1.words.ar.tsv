@@ -1,0 +1,153 @@
+id	script	reading	english	gloss	gloss_reading	status	checks	note
+w001	爱	ài	love	أَحَبَّ	Aḥabb	verified	claude-blind,claude-review	
+w002	八	bā	eight	ثَمَانِيَةٌ	Thamāniya	verified	claude-blind,claude-review	
+w003	爸爸	bà ba	dad	أَبٌ	Ab	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English
+w004	杯子	bēi zi	cup	كُوبٌ	Kūb	verified	claude-blind,claude-review	
+w005	北京	běi jīng	Beijing	بِكِينُ	Bikīn	verified	claude-blind,claude-review	
+w006	本	běn	(measure word for books)	(كَلِمَةُ عَدٍّ لِلْكُتُبِ)	(kalimatu ʿaddin li-l-kutub)	verified	claude-blind,claude-review	
+w007	不客气	bú kè qi	you're welcome	عَفْوًا	ʿAfwan	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English
+w008	不	bù	not; no	(أَدَاةُ نَفْيٍ)؛ لَا	(adātu nafy); lā	verified	claude-blind,claude-review	
+w009	菜	cài	dish; vegetable	طَبَقٌ؛ خُضَارٌ	Ṭabaq; khuḍār	verified	claude-blind,claude-review	
+w010	茶	chá	tea	شَايٌ	Shāy	verified	claude-blind,claude-review	
+w011	吃	chī	to eat	أَكَلَ	Akal	verified	claude-blind,claude-review	
+w012	出租车	chū zū chē	taxi	سَيَّارَةُ أُجْرَةٍ	Sayyāratu ujra	verified	claude-blind,claude-review	
+w013	打电话	dǎ diàn huà	to make a phone call	هَاتَفَ	Hātaf	verified	claude-blind,claude-review	
+w014	大	dà	big	كَبِيرٌ	Kabīr	verified	claude-blind,claude-review	
+w015	的	de	(possessive particle)	(أَدَاةُ الْمِلْكِيَّةِ)	(adātu al-milkiyya)	verified	claude-blind,claude-review	
+w016	点	diǎn	o'clock; a little	(كَلِمَةٌ لِلسَّاعَةِ)؛ قَلِيلٌ	(kalimatun li-s-sāʿa); qalīl	conflict		reviewer proposed a fix (point (o'clock) needs a head noun; bare (li-s-saa'a) is a stray phrase, unlike the other measure-word glosses); blind reading was "(for telling time); a little" · re-check next round
+w017	电脑	diàn nǎo	computer	حَاسُوبٌ	Ḥāsūb	verified	claude-blind,claude-review	
+w018	电视	diàn shì	television	تِلْفَازٌ	Tilfāz	verified	claude-blind,claude-review	
+w019	电影	diàn yǐng	film	فِيلْمٌ	Fīlm	verified	claude-blind,claude-review	
+w020	东西	dōng xi	thing	شَيْءٌ	Shayʾ	verified	claude-blind,claude-review	
+w021	都	dōu	all; both	كُلٌّ؛ كِلَا	Kull; kilā	verified	claude-blind,claude-review	
+w022	读	dú	to read	قَرَأَ	Qaraʾ	verified	claude-blind,claude-review	
+w023	对不起	duì bu qǐ	sorry	آسِفٌ	Āsif	verified	claude-blind,claude-review	
+w024	多	duō	many; much	كَثِيرٌ	Kathīr	verified	claude-blind,claude-review	
+w025	多少	duō shao	how many; how much	كَمْ	Kam	verified	claude-blind,claude-review	
+w026	儿子	ér zi	son	اِبْنٌ	Ibn	verified	claude-blind,claude-review	
+w027	二	èr	two	اِثْنَانِ	Ithnān	verified	claude-blind,claude-review	
+w028	饭店	fàn diàn	restaurant; hotel	مَطْعَمٌ؛ فُنْدُقٌ	Maṭʿam; funduq	verified	claude-blind,claude-review	
+w029	飞机	fēi jī	aeroplane	طَائِرَةٌ	Ṭāʾira	verified	claude-blind,claude-review	
+w030	分钟	fēn zhōng	minute	دَقِيقَةٌ	Daqīqa	verified	claude-blind,claude-review	
+w031	高兴	gāo xìng	happy	سَعِيدٌ	Saʿīd	verified	claude-blind,claude-review	
+w032	个	gè	(general measure word)	(كَلِمَةُ عَدٍّ عَامَّةٌ)	(kalimatu ʿaddin ʿāmma)	verified	claude-blind,claude-review	
+w033	工作	gōng zuò	work; to work	عَمَلٌ؛ عَمِلَ	ʿAmal; ʿamil	verified	claude-blind,claude-review	
+w034	狗	gǒu	dog	كَلْبٌ	Kalb	verified	claude-blind,claude-review	
+w035	汉语	hàn yǔ	Chinese language	اللُّغَةُ الصِّينِيَّةُ	Al-lughatu aṣ-ṣīniyya	verified	claude-blind,claude-review	
+w036	好	hǎo	good	جَيِّدٌ	Jayyid	verified	claude-blind,claude-review	
+w037	号	hào	number; day of the month	رَقْمٌ؛ يَوْمٌ	Raqm; yawm	verified	claude-blind,claude-review	
+w038	喝	hē	to drink	شَرِبَ	Sharib	verified	claude-blind,claude-review	
+w039	和	hé	and	(حَرْفُ عَطْفٍ)	(ḥarfu ʿaṭf)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English
+w040	很	hěn	very	جِدًّا	Jiddan	verified	claude-blind,claude-review	
+w041	后面	hòu mian	behind	خَلْفَ	Khalf	verified	claude-blind,claude-review	
+w042	回	huí	to return	رَجَعَ	Rajaʿ	verified	claude-blind,claude-review	
+w043	会	huì	can; to know how to	أَجَادَ	Ajād	verified	claude-blind,claude-review	
+w044	几	jǐ	how many; several	كَمْ؛ عِدَّةٌ	Kam; ʿidda	verified	claude-blind,claude-review	
+w045	家	jiā	home; family	بَيْتٌ؛ أُسْرَةٌ	Bayt; usra	verified	claude-blind,claude-review	
+w046	叫	jiào	to be called	سُمِّيَ	Summiy	verified	claude-blind,claude-review	
+w047	今天	jīn tiān	today	الْيَوْمَ	Al-yawm	verified	claude-blind,claude-review	
+w048	九	jiǔ	nine	تِسْعَةٌ	Tisʿa	verified	claude-blind,claude-review	
+w049	开	kāi	to open; to drive	فَتَحَ؛ قَادَ	Fataḥ; qād	verified	claude-blind,claude-review	
+w050	看	kàn	to look; to watch	نَظَرَ؛ شَاهَدَ	Naẓar; shāhad	verified	claude-blind,claude-review	
+w051	看见	kàn jiàn	to see	رَأَى	Raʾā	verified	claude-blind,claude-review	
+w052	块	kuài	(measure word for money)	(كَلِمَةُ عَدٍّ لِلنُّقُودِ)	(kalimatu ʿaddin li-n-nuqūd)	verified	claude-blind,claude-review	
+w053	来	lái	to come	جَاءَ	Jāʾ	verified	claude-blind,claude-review	
+w054	老师	lǎo shī	teacher	مُعَلِّمٌ	Muʿallim	verified	claude-blind,claude-review	
+w055	了	le	(aspect particle)	(أَدَاةُ إِتْمَامِ الْفِعْلِ)	(adātu itmāmi al-fiʿl)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English
+w056	冷	lěng	cold	بَارِدٌ	Bārid	verified	claude-blind,claude-review	
+w057	里	lǐ	inside	دَاخِلَ	Dākhil	verified	claude-blind,claude-review	
+w058	六	liù	six	سِتَّةٌ	Sitta	verified	claude-blind,claude-review	
+w059	妈妈	mā ma	mum	أُمٌّ	Umm	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English
+w060	吗	ma	(question particle)	(أَدَاةُ اسْتِفْهَامٍ)	(adātu istifhām)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English
+w061	买	mǎi	to buy	اِشْتَرَى	Ishtarā	verified	claude-blind,claude-review	
+w062	猫	māo	cat	قِطَّةٌ	Qiṭṭa	verified	claude-blind,claude-review	
+w063	没关系	méi guān xi	it doesn't matter	لَا بَأْسَ	Lā baʾs	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English
+w064	没有	méi yǒu	to not have	لَيْسَ عِنْدَهُ	Laysa ʿindah	verified	claude-blind,claude-review	
+w065	米饭	mǐ fàn	cooked rice	أَرُزٌّ	Aruzz	verified	claude-blind,claude-review	
+w066	名字	míng zi	name	اِسْمٌ	Ism	verified	claude-blind,claude-review	
+w067	明天	míng tiān	tomorrow	غَدًا	Ghadan	verified	claude-blind,claude-review	
+w068	哪	nǎ	which	أَيٌّ	Ayy	verified	claude-blind,claude-review	
+w069	哪儿	nǎr	where	أَيْنَ	Ayn	verified	claude-blind,claude-review	
+w070	那	nà	that	ذٰلِكَ	Dhālik	verified	claude-blind,claude-review	
+w071	呢	ne	(question particle)	(أَدَاةُ اسْتِفْهَامٍ)	(adātu istifhām)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English
+w072	能	néng	to be able to	اِسْتَطَاعَ	Istaṭāʿ	verified	claude-blind,claude-review	
+w073	你	nǐ	you	أَنْتَ	Anta	verified	claude-blind,claude-review	
+w074	年	nián	year	سَنَةٌ	Sana	verified	claude-blind,claude-review	
+w075	女儿	nǚ ér	daughter	اِبْنَةٌ	Ibna	verified	claude-blind,claude-review	
+w076	朋友	péng you	friend	صَدِيقٌ	Ṣadīq	verified	claude-blind,claude-review	
+w077	漂亮	piào liang	pretty	جَمِيلٌ	Jamīl	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English
+w078	苹果	píng guǒ	apple	تُفَّاحَةٌ	Tuffāḥa	verified	claude-blind,claude-review	
+w079	七	qī	seven	سَبْعَةٌ	Sabʿa	verified	claude-blind,claude-review	
+w080	前面	qián mian	in front	أَمَامَ	Amām	verified	claude-blind,claude-review	
+w081	钱	qián	money	مَالٌ	Māl	verified	claude-blind,claude-review	
+w082	请	qǐng	please	مِنْ فَضْلِكَ	Min faḍlik	conflict		reviewer proposed a fix (رجا is the verb "he requested"; 请 here is the polite marker "please", matching the shukran/afwan interjection pattern); blind reading was "to hope" · re-check next round
+w083	去	qù	to go	ذَهَبَ	Dhahab	verified	claude-blind,claude-review	
+w084	热	rè	hot	حَارٌّ	Ḥārr	verified	claude-blind,claude-review	
+w085	人	rén	person	إِنْسَانٌ	Insān	verified	claude-blind,claude-review	
+w086	认识	rèn shi	to know (someone)	عَرَفَ	ʿAraf	verified	claude-blind,claude-review	
+w087	三	sān	three	ثَلَاثَةٌ	Thalātha	verified	claude-blind,claude-review	
+w088	商店	shāng diàn	shop	مَتْجَرٌ	Matjar	verified	claude-blind,claude-review	
+w089	上	shàng	up; on	فَوْقَ؛ عَلَى	Fawq; ʿalā	verified	claude-blind,claude-review	
+w090	上午	shàng wǔ	morning	صَبَاحٌ	Ṣabāḥ	verified	claude-blind,claude-review	
+w091	少	shǎo	few; little	قَلِيلٌ	Qalīl	verified	claude-blind,claude-review	
+w092	谁	shéi	who	مَنْ	Man	verified	claude-blind,claude-review	
+w093	什么	shén me	what	مَا	Mā	verified	claude-blind,claude-review	
+w094	十	shí	ten	عَشَرَةٌ	ʿAshara	verified	claude-blind,claude-review	
+w095	时候	shí hou	time; moment	وَقْتٌ؛ لَحْظَةٌ	Waqt; laḥẓa	verified	claude-blind,claude-review	
+w096	是	shì	to be	كَانَ	Kān	verified	claude-blind,claude-review	
+w097	书	shū	book	كِتَابٌ	Kitāb	verified	claude-blind,claude-review	
+w098	水	shuǐ	water	مَاءٌ	Māʾ	verified	claude-blind,claude-review	
+w099	水果	shuǐ guǒ	fruit	فَاكِهَةٌ	Fākiha	verified	claude-blind,claude-review	
+w100	睡觉	shuì jiào	to sleep	نَامَ	Nām	verified	claude-blind,claude-review	
+w101	说	shuō	to speak	قَالَ	Qāl	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English
+w102	四	sì	four	أَرْبَعَةٌ	Arbaʿa	verified	claude-blind,claude-review	
+w103	岁	suì	years of age	(كَلِمَةُ عَدٍّ لِلسِّنِّ)	(kalimatu ʿaddin li-s-sinn)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English
+w104	他	tā	he; him	هُوَ	Huwa	verified	claude-blind,claude-review	
+w105	她	tā	she; her	هِيَ	Hiya	verified	claude-blind,claude-review	
+w106	太	tài	too	أَكْثَرَ مِنَ اللَّازِمِ	Akthara mina al-lāzim	conflict		reviewer proposed a fix (tai "too/excessively" duplicates hen's jiddan ("very"); needs a distinct word for excess); blind reading was "very" · re-check next round
+w107	天气	tiān qì	weather	طَقْسٌ	Ṭaqs	verified	claude-blind,claude-review	
+w108	听	tīng	to listen	اِسْتَمَعَ	Istamaʿ	conflict		reworded by claude-adjudicated: 听 is to listen; سمع is to hear - re-check next round
+w109	同学	tóng xué	classmate	زَمِيلُ الدِّرَاسَةِ	Zamīlu ad-dirāsa	verified	claude-blind,claude-review	
+w110	喂	wèi	hello (on the phone)	أَلُو	Alū	verified	claude-blind,claude-review	
+w111	我	wǒ	I; me	أَنَا	Anā	verified	claude-blind,claude-review	
+w112	我们	wǒ men	we; us	نَحْنُ	Naḥn	verified	claude-blind,claude-review	
+w113	五	wǔ	five	خَمْسَةٌ	Khamsa	verified	claude-blind,claude-review	
+w114	喜欢	xǐ huan	to like	أُعْجِبَ	Uʿjib	conflict		reviewer proposed a fix (a3jabahu carries a bound object pronoun (breaks the bare-citation style) and needs a stated subject; passive u3jiba ("was pleased/liked") is a clean citation distinct from love's ahabba); blind reading was "to like" · re-check next round
+w115	下	xià	down; under	تَحْتَ	Taḥt	verified	claude-blind,claude-review	
+w116	下午	xià wǔ	afternoon	بَعْدَ الظُّهْرِ	Baʿda aẓ-ẓuhr	verified	claude-blind,claude-review	
+w117	下雨	xià yǔ	to rain	أَمْطَرَ	Amṭar	verified	claude-blind,claude-review	
+w118	先生	xiān sheng	mister	سَيِّدٌ	Sayyid	verified	claude-blind,claude-review	
+w119	现在	xiàn zài	now	الْآنَ	Al-ʾān	verified	claude-blind,claude-review	
+w120	想	xiǎng	to want; to think	أَرَادَ؛ فَكَّرَ	Arād; fakkar	verified	claude-blind,claude-review	
+w121	小	xiǎo	small	صَغِيرٌ	Ṣaghīr	verified	claude-blind,claude-review	
+w122	小姐	xiǎo jiě	miss	آنِسَةٌ	Ānisa	verified	claude-blind,claude-review	
+w123	些	xiē	some	بَعْضٌ	Baʿḍ	verified	claude-blind,claude-review	
+w124	写	xiě	to write	كَتَبَ	Katab	verified	claude-blind,claude-review	
+w125	谢谢	xiè xie	thanks	شُكْرًا	Shukran	verified	claude-blind,claude-review	
+w126	星期	xīng qī	week	أُسْبُوعٌ	Usbūʿ	verified	claude-blind,claude-review	
+w127	学生	xué sheng	student	طَالِبٌ	Ṭālib	verified	claude-blind,claude-review	
+w128	学习	xué xí	to study	دَرَسَ	Daras	verified	claude-blind,claude-review	
+w129	学校	xué xiào	school	مَدْرَسَةٌ	Madrasa	verified	claude-blind,claude-review	
+w130	一	yī	one	وَاحِدٌ	Wāḥid	verified	claude-blind,claude-review	
+w131	一点儿	yì diǎnr	a little	قَلِيلًا	Qalīlan	verified	claude-blind,claude-review	
+w132	衣服	yī fu	clothes	مَلَابِسُ	Malābis	verified	claude-blind,claude-review	
+w133	医生	yī shēng	doctor	طَبِيبٌ	Ṭabīb	verified	claude-blind,claude-review	
+w134	医院	yī yuàn	hospital	مُسْتَشْفَى	Mustashfā	verified	claude-blind,claude-review	
+w135	椅子	yǐ zi	chair	كُرْسِيٌّ	Kursiyy	verified	claude-blind,claude-review	
+w136	有	yǒu	to have	عِنْدَهُ	ʿIndah	conflict		reworded by claude-adjudicated: 有 is to have, as 没有 is ليس عنده; ملك is to own - re-check next round
+w137	月	yuè	month	شَهْرٌ	Shahr	verified	claude-blind,claude-review	
+w138	在	zài	at; in	فِي	Fī	verified	claude-blind,claude-review	
+w139	再见	zài jiàn	goodbye	إِلَى اللِّقَاءِ	Ilā al-liqāʾ	verified	claude-blind,claude-review	
+w140	怎么	zěn me	how	كَيْفَ	Kayf	verified	claude-blind,claude-review	
+w141	怎么样	zěn me yàng	how about	كَيْفَ ذٰلِكَ	Kayfa dhālik	verified	claude-blind,claude-review	
+w142	这	zhè	this	هٰذَا	Hādhā	verified	claude-blind,claude-review	
+w143	中国	zhōng guó	China	الصِّينُ	Aṣ-ṣīn	verified	claude-blind,claude-review	
+w144	中午	zhōng wǔ	noon	ظُهْرٌ	Ẓuhr	verified	claude-blind,claude-review	
+w145	住	zhù	to live; to stay	سَكَنَ	Sakan	verified	claude-blind,claude-review	
+w146	桌子	zhuō zi	table	طَاوِلَةٌ	Ṭāwila	verified	claude-blind,claude-review	
+w147	字	zì	character; word	حَرْفٌ؛ كَلِمَةٌ	Ḥarf; kalima	verified	claude-blind,claude-review	
+w148	昨天	zuó tiān	yesterday	أَمْسِ	Ams	verified	claude-blind,claude-review	
+w149	坐	zuò	to sit	جَلَسَ	Jalas	verified	claude-blind,claude-review	
+w150	做	zuò	to do; to make	فَعَلَ؛ صَنَعَ	Faʿal; ṣanaʿ	verified	claude-blind,claude-review	
+w151	这儿	zhèr	here	هُنَا	Hunā	verified	claude-blind,claude-review	
+w152	那儿	nàr	there	هُنَاكَ	Hunāk	verified	claude-blind,claude-review	

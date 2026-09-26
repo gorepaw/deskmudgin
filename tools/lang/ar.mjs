@@ -61,7 +61,10 @@ const NOT_ARABIC = /[کگپچژیەۀہ]/
 /** Words whose long ā is written with a dagger alif and nothing else. */
 const DAGGER_WORDS = new Set(['هذا', 'هذه', 'هذان', 'هذين', 'ذلك', 'لكن', 'هؤلاء', 'أولئك'])
 
-const HARAKAT = /[\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06ED]/g
+/** Words whose last vowel survives a pause. */
+const KEEP_IN_PAUSE = new Set(['هو', 'هي', 'أنت'])
+
+const HARAKAT =/[\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06ED]/g
 export const bare = s => s.replace(HARAKAT, '')
 
 /** A word as letters, each with the marks written on it. */
@@ -99,6 +102,9 @@ function word(w, last, problems) {
   const articleAt = j => (u[j]?.ch === ALIF || u[j]?.ch === WASLA)
     && (unvowelled(u[j]) || (j === 0 && vowelOf(u[j]) === 'a'))
     && u[j + 1]?.ch === LAM && unvowelled(u[j + 1]) && u[j + 2]
+  /** A silent hamzat al-wasl at `j`, straight after a one-letter prefix. */
+  const waslaAt = j => j === 1 && (u[1]?.ch === ALIF || u[1]?.ch === WASLA) && unvowelled(u[1])
+    && 'وفبكل'.includes(u[0].ch) && !!vowelOf(u[0]) && has(u[2], SUKUN) && 2 < u.length - 1
   let article = -1
   let prefix = ''
   if (articleAt(0)) article = 1
@@ -108,6 +114,13 @@ function word(w, last, problems) {
   } else if (u[0]?.ch === LAM && vowelOf(u[0]) === 'i' && u[1]?.ch === LAM && unvowelled(u[1]) && u[2]) {
     prefix = 'li'
     article = 1
+  }
+  // The article on a word that begins with a hamzat al-wasl — الِامْتِحَانُ —
+  // takes a kasra on its lam, and the word's own alif goes silent: al-imtiḥān.
+  if (article < 0 && (u[0]?.ch === ALIF || u[0]?.ch === WASLA) && unvowelled(u[0])
+    && u[1]?.ch === LAM && vowelOf(u[1]) === 'i' && (u[2]?.ch === ALIF || u[2]?.ch === WASLA) && unvowelled(u[2])) {
+    out = 'al-i'
+    i = 3
   }
   let skipDouble = -1
   if (article >= 0) {
@@ -128,6 +141,10 @@ function word(w, last, problems) {
     if (ch === ALIF || ch === WASLA) {
       // At the start of a word: a hamzat al-wasl, said with its vowel.
       if (i === 0) { out += vowelOf(cur) ?? 'i'; continue }
+      // The same alif after a one-letter prefix is silent: وَاسْمِي wasmī. It is
+      // told from a long ā (بَابٌ) by what follows — a consonant with a sukun
+      // that is not the word's last letter, a cluster no long ā stands before.
+      if (waslaAt(i)) continue
       // After tanwin fath (شُكْرًا), or at the end after a long ū (ذَهَبُوا): silent.
       if (tanwinOf(cur)) { out += tanwinOf(cur); continue }
       out += 'ā'
@@ -135,8 +152,10 @@ function word(w, last, problems) {
     }
     if (ch === MADDA) { out += i === 0 ? 'ā' : 'ʾā'; continue }
     if (ch === MAQSURA) { out += 'ā'; continue }
-    // In pause, a word's last short vowel and any tanwin are not said.
-    const pause = final && last
+    // In pause, a word's last short vowel and any tanwin are not said — except
+    // on هُوَ and هِيَ, which nobody says as "huw" and "hiy", and on أَنْتَ /
+    // أَنْتِ, where the vowel is the only thing telling a learner which it is.
+    const pause = final && last && !KEEP_IN_PAUSE.has(bare(w))
     if (ch === TA_MARBUTA) {
       const v = pause ? null : tanwinOf(cur) ?? vowelOf(cur)
       if (v) out += 't' + v
@@ -152,18 +171,28 @@ function word(w, last, problems) {
     out += has(cur, SHADDA) && i !== skipDouble ? c + c : c
 
     if (has(cur, DAGGER)) { out += 'ā'; continue }
+    // Tanwin fath keeps its -an in pause wherever it is written — on an alif
+    // (شُكْرًا, handled below) or straight on a final hamza, which takes no
+    // alif after a long ā: رَجَاءً "rajāʾan".
+    if (pause && tanwinOf(cur) === 'an') { out += 'an'; continue }
     if (pause) continue
     const v = vowelOf(cur)
     const tw = tanwinOf(cur)
     if (tw) {
       out += tw
-      // The alif that carries tanwin fath is silent.
+      // The alif that carries tanwin fath is silent. So is an alif maqsura
+      // carrying it (مُسْتَشْفًى "mustashfan"), except that in pause it is
+      // what is left: "mustashfā".
       if (next?.ch === ALIF && unvowelled(next)) i++
+      if (next?.ch === MAQSURA && unvowelled(next)) {
+        i++
+        if (i === u.length - 1 && last && tw === 'an') out = out.slice(0, -2) + 'ā'
+      }
       continue
     }
     if (v) {
       // Long vowels: a short vowel followed by its own letter, bare.
-      if (v === 'a' && (next?.ch === ALIF || next?.ch === MAQSURA) && unvowelled(next) && !tanwinOf(next)) {
+      if (v === 'a' && !waslaAt(i + 1) && (next?.ch === ALIF || next?.ch === MAQSURA) && unvowelled(next) && !tanwinOf(next)) {
         out += 'ā'; i++; continue
       }
       if (v === 'u' && next?.ch === 'و' && unvowelled(next)) {

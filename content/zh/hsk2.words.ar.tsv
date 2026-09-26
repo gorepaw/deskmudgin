@@ -1,0 +1,151 @@
+id	script	reading	english	gloss	gloss_reading	status	checks	note
+h2w001	吧	ba	(suggestion particle) let's…; …right?	(أَدَاةُ اقْتِرَاحٍ)؛ (أَدَاةُ تَأْكِيدٍ)	(adātu iqtirāḥ); (adātu taʾkīd)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w002	白	bái	white	أَبْيَضُ	Abyaḍ	verified	claude-blind,claude-review	
+h2w003	百	bǎi	hundred	مِئَةٌ	Miʾa	conflict		reviewer proposed a fix (alif in مائة is silent (real pronunciation mi'a); the classical spelling reads mechanically as the wrong "Miaa'a" (long a), the alif-less spelling gives the correct Mi'a); blind reading was "hundred" · re-check next round
+h2w004	帮助	bāng zhù	to help	سَاعَدَ	Sāʿad	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w005	报纸	bào zhǐ	newspaper	جَرِيدَةٌ	Jarīda	verified	claude-blind,claude-review	
+h2w006	比	bǐ	than; compared with	(حَرْفُ مُقَارَنَةٍ بِمَعْنَى مِنْ)	(ḥarfu muqāranatin bimaʿnā min)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w007	别	bié	don't	(أَدَاةُ نَهْيٍ)	(adātu nahy)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w008	宾馆	bīn guǎn	hotel	فُنْدُقٌ	Funduq	verified	claude-blind,claude-review	
+h2w009	长	cháng	long	طَوِيلٌ	Ṭawīl	verified	claude-blind,claude-review	
+h2w010	唱歌	chàng gē	to sing	غَنَّى	Ghannā	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w011	出	chū	to go out; to come out	خَرَجَ	Kharaj	verified	claude-blind,claude-review	
+h2w012	穿	chuān	to wear; to put on	لَبِسَ	Labis	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w013	次	cì	(measure word for times)	(كَلِمَةُ عَدٍّ لِلْمَرَّاتِ)	(kalimatu ʿaddin li-l-marrāt)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w014	从	cóng	from	(حَرْفُ جَرٍّ بِمَعْنَى مِنْ)	(ḥarfu jarrin bimaʿnā min)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w015	错	cuò	wrong	خَاطِئٌ	Khāṭiʾ	verified	claude-blind,claude-review	
+h2w016	打篮球	dǎ lán qiú	to play basketball	لَعِبَ كُرَةَ السَّلَّةِ	Laʿiba kurata as-salla	verified	claude-blind,claude-review	
+h2w017	大家	dà jiā	everyone	الْجَمِيعُ	Al-jamīʿ	verified	claude-blind,claude-review	
+h2w018	到	dào	to arrive; to	وَصَلَ؛ (حَرْفُ جَرٍّ بِمَعْنَى إِلَى)	Waṣal; (ḥarfu jarrin bimaʿnā ilā)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w019	得	de	(structural particle after a verb)	(أَدَاةٌ نَحْوِيَّةٌ بَعْدَ الْفِعْلِ)	(adātun naḥwiyyatun baʿda al-fiʿl)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w020	等	děng	to wait	اِنْتَظَرَ	Intaẓar	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w021	弟弟	dì di	younger brother	أَخٌ أَصْغَرُ	Akhun aṣghar	verified	claude-blind,claude-review	
+h2w022	第一	dì yī	first	أَوَّلُ	Awwal	verified	claude-blind,claude-review	
+h2w023	懂	dǒng	to understand	فَهِمَ	Fahim	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w024	对	duì	correct; towards	صَحِيحٌ؛ (حَرْفُ جَرٍّ بِمَعْنَى نَحْوَ)	Ṣaḥīḥ; (ḥarfu jarrin bimaʿnā naḥw)	verified	claude-blind,claude-review	
+h2w025	房间	fáng jiān	room	غُرْفَةٌ	Ghurfa	verified	claude-blind,claude-review	
+h2w026	非常	fēi cháng	very; extremely	جِدًّا	Jiddan	verified	claude-blind,claude-review	
+h2w027	服务员	fú wù yuán	waiter; attendant	نَادِلٌ؛ عَامِلٌ	Nādil; ʿāmil	verified	claude-blind,claude-review	
+h2w028	高	gāo	tall; high	طَوِيلٌ؛ عَالٍ	Ṭawīl; ʿāl	verified	claude-blind,claude-review	
+h2w029	告诉	gào su	to tell	أَخْبَرَ	Akhbar	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w030	哥哥	gē ge	older brother	أَخٌ أَكْبَرُ	Akhun akbar	verified	claude-blind,claude-review	
+h2w031	给	gěi	to give; for	أَعْطَى؛ (حَرْفُ جَرٍّ بِمَعْنَى اللَّامِ)	Aʿṭā; (ḥarfu jarrin bimaʿnā al-lām)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w032	公共汽车	gōng gòng qì chē	bus	حَافِلَةٌ	Ḥāfila	verified	claude-blind,claude-review	
+h2w033	公司	gōng sī	company	شَرِكَةٌ	Sharika	verified	claude-blind,claude-review	
+h2w034	贵	guì	expensive	غَالٍ	Ghāl	verified	claude-blind,claude-review	
+h2w035	过	guo	(particle for past experience)	(أَدَاةٌ لِلْخِبْرَةِ الْمَاضِيَةِ)	(adātun li-l-khibrati al-māḍiya)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w036	还	hái	still; also	(ظَرْفٌ بِمَعْنَى لَا يَزَالُ)؛ أَيْضًا	(ẓarfun bimaʿnā lā yazāl); ayḍan	verified	claude-blind,claude-review	
+h2w037	孩子	hái zi	child	طِفْلٌ	Ṭifl	verified	claude-blind,claude-review	
+h2w038	好吃	hǎo chī	tasty	لَذِيذٌ	Ladhīdh	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w039	黑	hēi	black	أَسْوَدُ	Aswad	verified	claude-blind,claude-review	
+h2w040	红	hóng	red	أَحْمَرُ	Aḥmar	verified	claude-blind,claude-review	
+h2w041	欢迎	huān yíng	welcome	رَحَّبَ	Raḥḥab	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w042	回答	huí dá	to answer	أَجَابَ	Ajāb	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w043	机场	jī chǎng	airport	مَطَارٌ	Maṭār	verified	claude-blind,claude-review	
+h2w044	鸡蛋	jī dàn	egg	بَيْضَةٌ	Bayḍa	verified	claude-blind,claude-review	
+h2w045	件	jiàn	(measure word for clothes and matters)	(كَلِمَةُ عَدٍّ لِلثِّيَابِ وَالْأُمُورِ)	(kalimatu ʿaddin li-th-thiyābi wa-l-ʾumūr)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w046	教室	jiào shì	classroom	غُرْفَةُ الصَّفِّ	Ghurfatu aṣ-ṣaff	conflict		reworded by claude-adjudicated: 教室 is a classroom; فصل also reads as semester - re-check next round
+h2w047	姐姐	jiě jie	older sister	أُخْتٌ كُبْرَى	Ukhtun kubrā	verified	claude-blind,claude-review	
+h2w048	介绍	jiè shào	to introduce	عَرَّفَ	ʿArraf	conflict		reworded by claude-adjudicated: 介绍 is to introduce (a person); قدّم reads as to offer - re-check next round
+h2w049	进	jìn	to enter	دَخَلَ	Dakhal	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w050	近	jìn	near	قَرِيبٌ	Qarīb	verified	claude-blind,claude-review	
+h2w051	就	jiù	just; right away	(ظَرْفٌ بِمَعْنَى فَوْرًا)	(ẓarfun bimaʿnā fawran)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w052	觉得	jué de	to feel; to think	شَعَرَ؛ ظَنَّ	Shaʿar; ẓann	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w053	咖啡	kā fēi	coffee	قَهْوَةٌ	Qahwa	verified	claude-blind,claude-review	
+h2w054	开始	kāi shǐ	to begin	بَدَأَ	Badaʾ	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w055	考试	kǎo shì	exam	اِمْتِحَانٌ	Imtiḥān	verified	claude-blind,claude-review	
+h2w056	可能	kě néng	maybe; possible	رُبَّمَا؛ مُمْكِنٌ	Rubbamā; mumkin	verified	claude-blind,claude-review	
+h2w057	可以	kě yǐ	can; may	قَدَرَ؛ سُمِحَ لَهُ	Qadar; sumiḥa lah	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w058	课	kè	class; lesson	دَرْسٌ	Dars	verified	claude-blind,claude-review	
+h2w059	快	kuài	fast	سَرِيعٌ	Sarīʿ	verified	claude-blind,claude-review	
+h2w060	快乐	kuài lè	happy	سَعِيدٌ	Saʿīd	verified	claude-blind,claude-review	
+h2w061	累	lèi	tired	تَعْبَانُ	Taʿbān	verified	claude-blind,claude-review	
+h2w062	离	lí	away from	(حَرْفٌ يُفِيدُ الْمَسَافَةَ مِنْ)	(ḥarfun yufīdu al-masāfata min)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w063	两	liǎng	two (of something)	اِثْنَانِ	Ithnān	verified	claude-blind,claude-review	
+h2w064	零	líng	zero	صِفْرٌ	Ṣifr	verified	claude-blind,claude-review	
+h2w065	路	lù	road	طَرِيقٌ	Ṭarīq	verified	claude-blind,claude-review	
+h2w066	旅游	lǚ yóu	to travel	سَافَرَ	Sāfar	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w067	卖	mài	to sell	بَاعَ	Bāʿ	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w068	慢	màn	slow	بَطِيءٌ	Baṭīʾ	verified	claude-blind,claude-review	
+h2w069	忙	máng	busy	مَشْغُولٌ	Mashghūl	verified	claude-blind,claude-review	
+h2w070	每	měi	every	(أَدَاةٌ بِمَعْنَى كُلِّ)	(adātun bimaʿnā kull)	conflict		reviewer proposed a fix (كُلّ after بِمَعْنَى must be genitive (mudaf ilayh), as elsewhere in this set (بِمَعْنَى اللَّامِ); كُلُّ (nominative) is a case-ending error); blind reading was "(particle meaning "every")" · re-check next round
+h2w071	妹妹	mèi mei	younger sister	أُخْتٌ صُغْرَى	Ukhtun ṣughrā	verified	claude-blind,claude-review	
+h2w072	门	mén	door	بَابٌ	Bāb	verified	claude-blind,claude-review	
+h2w073	面条	miàn tiáo	noodles	مَعْكَرُونَةٌ	Maʿkarūna	verified	claude-blind,claude-review	
+h2w074	男	nán	male	ذَكَرٌ	Dhakar	verified	claude-blind,claude-review	
+h2w075	您	nín	you (polite)	حَضْرَتُكَ	Ḥaḍratuk	verified	claude-blind,claude-review	
+h2w076	牛奶	niú nǎi	milk	حَلِيبٌ	Ḥalīb	verified	claude-blind,claude-review	
+h2w077	女	nǚ	female	أُنْثَى	Unthā	verified	claude-blind,claude-review	
+h2w078	旁边	páng biān	beside	(ظَرْفُ مَكَانٍ بِمَعْنَى بِجَانِبِ)	(ẓarfu makānin bimaʿnā bijānib)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w079	跑步	pǎo bù	to run; to jog	جَرَى	Jarā	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w080	便宜	pián yi	cheap	رَخِيصٌ	Rakhīṣ	verified	claude-blind,claude-review	
+h2w081	票	piào	ticket	تَذْكِرَةٌ	Tadhkira	verified	claude-blind,claude-review	
+h2w082	妻子	qī zi	wife	زَوْجَةٌ	Zawja	verified	claude-blind,claude-review	
+h2w083	起床	qǐ chuáng	to get up	قَامَ	Qām	conflict		reviewer proposed a fix (استيقظ means "woke up" (became conscious), not 起床 "got out of bed"; قام is the natural verb for getting up/out of bed); blind reading was "woke up" · re-check next round
+h2w084	千	qiān	thousand	أَلْفٌ	Alf	verified	claude-blind,claude-review	
+h2w085	铅笔	qiān bǐ	pencil	قَلَمُ رَصَاصٍ	Qalamu raṣāṣ	verified	claude-blind,claude-review	
+h2w086	晴	qíng	sunny	مُشْمِسٌ	Mushmis	verified	claude-blind,claude-review	
+h2w087	去年	qù nián	last year	الْعَامُ الْمَاضِي	Al-ʿāmu al-māḍī	verified	claude-blind,claude-review	
+h2w088	让	ràng	to let; to make (someone do)	سَمَحَ؛ جَعَلَ	Samaḥ; jaʿal	verified	claude-blind,claude-review	
+h2w089	日	rì	day; date	يَوْمٌ؛ تَارِيخٌ	Yawm; tārīkh	verified	claude-blind,claude-review	
+h2w090	上班	shàng bān	to go to work	ذَهَبَ إِلَى الْعَمَلِ	Dhahaba ilā al-ʿamal	verified	claude-blind,claude-review	
+h2w091	身体	shēn tǐ	body; health	جِسْمٌ؛ صِحَّةٌ	Jism; ṣiḥḥa	verified	claude-blind,claude-review	
+h2w092	生病	shēng bìng	to get sick	مَرِضَ	Mariḍ	verified	claude-blind,claude-review	
+h2w093	生日	shēng rì	birthday	عِيدُ مِيلَادٍ	ʿĪdu mīlād	verified	claude-blind,claude-review	
+h2w094	时间	shí jiān	time	وَقْتٌ	Waqt	verified	claude-blind,claude-review	
+h2w095	事情	shì qing	matter; thing	أَمْرٌ؛ شَيْءٌ	Amr; shayʾ	verified	claude-blind,claude-review	
+h2w096	手表	shǒu biǎo	wristwatch	سَاعَةُ يَدٍ	Sāʿatu yad	verified	claude-blind,claude-review	
+h2w097	手机	shǒu jī	mobile phone	هَاتِفٌ مَحْمُولٌ	Hātifun maḥmūl	verified	claude-blind,claude-review	
+h2w098	说话	shuō huà	to speak; to talk	تَكَلَّمَ	Takallam	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w099	送	sòng	to give (as a gift); to see off	أَهْدَى؛ وَدَّعَ	Ahdā; waddaʿ	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w100	虽然…但是	suī rán … dàn shì	although… (but)	مَعَ أَنَّ … فَإِنَّ	Maʿa ann … faʾinn	verified	claude-blind,claude-review	
+h2w101	它	tā	it	(ضَمِيرٌ لِغَيْرِ الْعَاقِلِ: هُوَ أَوْ هِيَ)	(ḍamīrun lighayri al-ʿāqil: huwa aw hiya)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w102	踢足球	tī zú qiú	to play football	لَعِبَ كُرَةَ الْقَدَمِ	Laʿiba kurata al-qadam	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w103	题	tí	question (on a test)	سُؤَالٌ	Suʾāl	verified	claude-blind,claude-review	
+h2w104	跳舞	tiào wǔ	to dance	رَقَصَ	Raqaṣ	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w105	外	wài	outside	خَارِجٌ	Khārij	verified	claude-blind,claude-review	
+h2w106	完	wán	to finish	اِنْتَهَى	Intahā	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w107	玩	wán	to play	لَعِبَ	Laʿib	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w108	晚上	wǎn shang	evening	مَسَاءٌ	Masāʾ	verified	claude-blind,claude-review	
+h2w109	往	wǎng	towards	(حَرْفُ جَرٍّ بِمَعْنَى نَحْوَ)	(ḥarfu jarrin bimaʿnā naḥw)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w110	为什么	wèi shén me	why	لِمَاذَا	Limādhā	verified	claude-blind,claude-review	
+h2w111	问	wèn	to ask	سَأَلَ	Saʾal	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w112	问题	wèn tí	question; problem	سُؤَالٌ؛ مُشْكِلَةٌ	Suʾāl; mushkila	verified	claude-blind,claude-review	
+h2w113	西瓜	xī guā	watermelon	بَطِّيخٌ	Baṭṭīkh	verified	claude-blind,claude-review	
+h2w114	希望	xī wàng	to hope	رَجَا	Rajā	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w115	洗	xǐ	to wash	غَسَلَ	Ghasal	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w116	小时	xiǎo shí	hour	سَاعَةٌ	Sāʿa	verified	claude-blind,claude-review	
+h2w117	笑	xiào	to laugh; to smile	ضَحِكَ؛ اِبْتَسَمَ	Ḍaḥik; ibtasam	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w118	新	xīn	new	جَدِيدٌ	Jadīd	verified	claude-blind,claude-review	
+h2w119	姓	xìng	surname; to be surnamed	اِسْمُ الْعَائِلَةِ؛ سُمِّيَ	Ismu al-ʿāʾila; summiy	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w120	休息	xiū xi	to rest	اِسْتَرَاحَ	Istarāḥ	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w121	雪	xuě	snow	ثَلْجٌ	Thalj	verified	claude-blind,claude-review	
+h2w122	颜色	yán sè	colour	لَوْنٌ	Lawn	verified	claude-blind,claude-review	
+h2w123	眼睛	yǎn jing	eye	عَيْنٌ	ʿAyn	verified	claude-blind,claude-review	
+h2w124	羊肉	yáng ròu	mutton; lamb	لَحْمُ غَنَمٍ	Laḥmu ghanam	verified	claude-blind,claude-review	
+h2w125	药	yào	medicine	دَوَاءٌ	Dawāʾ	verified	claude-blind,claude-review	
+h2w126	要	yào	to want; will	أَرَادَ؛ (أَدَاةُ الْمُسْتَقْبَلِ: سَوْفَ)	Arād; (adātu al-mustaqbal: sawf)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w127	也	yě	also; too	أَيْضًا	Ayḍan	verified	claude-blind,claude-review	
+h2w128	一起	yì qǐ	together	مَعًا	Maʿan	verified	claude-blind,claude-review	
+h2w129	一下	yí xià	(a quick) once; a bit	(كَلِمَةٌ بِمَعْنَى قَلِيلًا أَوْ فِعْلًا سَرِيعًا)	(kalimatun bimaʿnā qalīlan aw fiʿlan sarīʿan)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w130	已经	yǐ jīng	already	بِالْفِعْلِ	Bi-l-fiʿl	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w131	意思	yì si	meaning	مَعْنًى	Maʿnā	verified	claude-blind,claude-review	
+h2w132	因为…所以	yīn wèi … suǒ yǐ	because… (so)	لِأَنَّ … لِذَٰلِكَ	Liʾann … lidhālik	verified	claude-blind,claude-review	
+h2w133	阴	yīn	cloudy; overcast	غَائِمٌ	Ghāʾim	verified	claude-blind,claude-review	
+h2w134	游泳	yóu yǒng	to swim	سَبَحَ	Sabaḥ	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w135	右边	yòu bian	right side	الْيَمِينُ	Al-yamīn	verified	claude-blind,claude-review	
+h2w136	鱼	yú	fish	سَمَكَةٌ	Samaka	verified	claude-blind,claude-review	
+h2w137	远	yuǎn	far	بَعِيدٌ	Baʿīd	verified	claude-blind,claude-review	
+h2w138	运动	yùn dòng	sport; to exercise	رِيَاضَةٌ؛ مَارَسَ الرِّيَاضَةَ	Riyāḍa; mārasa ar-riyāḍa	verified	claude-blind,claude-review	
+h2w139	再	zài	again	مُجَدَّدًا	Mujaddadan	verified	claude-blind,claude-review	
+h2w140	早上	zǎo shang	morning	صَبَاحٌ	Ṣabāḥ	verified	claude-blind,claude-review	
+h2w141	丈夫	zhàng fu	husband	زَوْجٌ	Zawj	verified	claude-blind,claude-review	
+h2w142	找	zhǎo	to look for	بَحَثَ	Baḥath	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w143	着	zhe	(particle for a continuing state)	(أَدَاةٌ تُفِيدُ اسْتِمْرَارَ الْحَالَةِ)	(adātun tufīdu istimrāra al-ḥāla)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w144	真	zhēn	really; truly	حَقًّا	Ḥaqqan	verified	claude-blind,claude-review	
+h2w145	正在	zhèng zài	in the middle of (doing)	(أَدَاةُ الْحَاضِرِ الْمُسْتَمِرِّ)	(adātu al-ḥāḍiri al-mustamirr)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w146	知道	zhī dào	to know	عَرَفَ	ʿAraf	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w147	准备	zhǔn bèi	to prepare	أَعَدَّ	Aʿadd	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w148	走	zǒu	to walk; to leave	مَشَى؛ غَادَرَ	Mashā; ghādar	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w149	最	zuì	most	(أَدَاةُ التَّفْضِيلِ)	(adātu at-tafḍīl)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (verbs are cited in the past tense; grammar words described)
+h2w150	左边	zuǒ bian	left side	الْيَسَارُ	Al-yasār	verified	claude-blind,claude-review	

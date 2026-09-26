@@ -1,0 +1,91 @@
+These are **Arabic translations** of lines from a beginner language-learning app — small cartoon creatures on a desktop say them. This batch is short **conversations** between two creatures; turns are separated by ｜ in the Chinese and " | " everywhere else. The Chinese and English have already been verified and are not under review. What is under review is the `gloss` column, the Arabic, and its romanization in `gloss_reading`. It is shown two ways: to someone learning Arabic, as the line to learn, and to someone who reads Arabic, as the meaning of a line in another language — so it must be both correct and natural.
+
+The Arabic must be **Modern Standard Arabic**, plain and neutral — no dialect — and **fully vowelled**: every letter carries its fatha, damma, kasra, sukun, shadda or tanwin, case endings included, the way a careful speaker reads aloud. The last word before . ! ؟ is in pause (sukun, no case ending), except that tanwin on alif keeps its -an (شُكْرًا). The article is الْ before a moon letter and ال + shadda before a sun letter (الشَّمْس). هٰذَا هٰذِهِ ذٰلِكَ لٰكِنْ take the dagger alif. Arabic punctuation: ، ؟ ؛. The Latin `reading` beside it is derived mechanically from the vowel marks — if it is wrong, the vowelling is wrong.
+
+For every row, check:
+1. Does the Arabic mean what the **Chinese** says? The English shows the intended sense but can be looser.
+2. Is it natural Arabic, the way a native speaker would actually put it?
+3. **Is the vowelling complete and correct** — the right vowel on every letter, every shadda, every case ending? This is the most important question: a learner will pronounce exactly what is written.
+4. Does `gloss_reading` read the way the Arabic is said? It is derived mechanically from the vowel marks, with the pause applied at the end of each sentence, so if it is wrong the vowelling is wrong — fix the Arabic, never the romanization.
+5. Does each reply answer the turn before it? There must be exactly as many " | "-separated parts as the Chinese has ｜-separated turns.
+
+If it needs changing, give the whole corrected Arabic in `fix_gloss`, fully vowelled.
+
+## Reply format — important
+
+Reply with **nothing but a TSV block**, one row per entry, with this exact header:
+
+```
+id	verdict	fix_gloss	note
+```
+
+- `verdict` is exactly one of `ok`, `fix`, or `drop`.
+- For `ok`, leave the `fix_` column(s) empty.
+- For `fix`, fill in **only** the columns that need to change; leave the rest empty.
+- For `drop`, explain why in `note` — use this when the entry is not salvageable.
+- `note` is free text but must contain no tab characters.
+- Return a row for **every** id given, in the same order.
+
+## Entries
+
+```
+id	script	english	gloss	gloss_reading
+h2x001	你好！｜你好！你今天忙吗？｜不忙，我很高兴。	Hello! | Hello! Are you busy today? | Not busy, I'm very happy.	مَرْحَبًا! | مَرْحَبًا! هَلْ أَنْتَ مَشْغُولٌ الْيَوْمَ؟ | لَسْتُ مَشْغُولًا، أَنَا سَعِيدٌ جِدًّا.	Marḥaban! | Marḥaban! Hal anta mashghūlun al-yawm? | Lastu mashghūlan, anā saʿīdun jiddan.
+h2x002	你好吗？｜我很好，你呢？｜我也很好。	How are you? | I'm well, and you? | I'm well too.	كَيْفَ حَالُكَ؟ | أَنَا بِخَيْرٍ، وَأَنْتَ؟ | أَنَا بِخَيْرٍ أَيْضًا.	Kayfa ḥāluk? | Anā bikhayr, waʾant? | Anā bikhayrin ayḍan.
+h2x003	你是新同学吗？欢迎你！｜谢谢！我们做朋友吧！	Are you the new student? Welcome! | Thanks! Let's be friends!	هَلْ أَنْتَ الطَّالِبُ الْجَدِيدُ؟ أَهْلًا وَسَهْلًا بِكَ! | شُكْرًا! لِنَكُنْ أَصْدِقَاءَ!	Hal anta aṭ-ṭālibu al-jadīd? Ahlan wasahlan bik! | Shukran! Linakun aṣdiqāʾ!
+h2x004	你好，你姓什么？｜我姓高，你呢？｜我姓白。	Hello, what's your surname? | My surname is Gao, and yours? | My surname is Bai.	مَرْحَبًا، مَا اسْمُ عَائِلَتِكَ؟ | اسْمُ عَائِلَتِي غَوْ، وَأَنْتَ؟ | اسْمُ عَائِلَتِي بَيْ.	Marḥaban, mā ismu ʿāʾilatik? | Ismu ʿāʾilatī ghaw, waʾant? | Ismu ʿāʾilatī bay.
+h2x005	你今天很高兴，为什么？｜因为今天是我的生日！	You're very happy today, why? | Because today is my birthday!	أَنْتَ سَعِيدٌ جِدًّا الْيَوْمَ، لِمَاذَا؟ | لِأَنَّ الْيَوْمَ عِيدُ مِيلَادِي!	Anta saʿīdun jiddan al-yawm, limādhā? | Liʾanna al-yawma ʿīdu mīlādī!
+h2x006	我们明天一起玩，好吗？｜好，太好了！	Let's play together tomorrow, okay? | Great, sounds good!	هَلْ نَلْعَبُ مَعًا غَدًا؟ | حَسَنًا، رَائِعٌ جِدًّا!	Hal nalʿabu maʿan ghadan? | Ḥasanan, rāʾiʿun jiddan!
+h2x008	早上好！｜早上好！你几点起床的？｜我七点起床。	Good morning! | Good morning! What time did you get up? | I got up at seven.	صَبَاحَ الْخَيْرِ! | صَبَاحَ الْخَيْرِ! فِي أَيِّ سَاعَةٍ اسْتَيْقَظْتَ؟ | اسْتَيْقَظْتُ فِي السَّاعَةِ السَّابِعَةِ.	Ṣabāḥa al-khayr! | Ṣabāḥa al-khayr! Fī ayyi sāʿatin istayqaẓt? | Istayqaẓtu fī as-sāʿati as-sābiʿa.
+h2x009	你好，你今天要去哪儿？｜我要去学校，你呢？｜我要去商店。	Hello, where are you going today? | I'm going to school, and you? | I'm going to the store.	مَرْحَبًا، إِلَى أَيْنَ تَذْهَبُ الْيَوْمَ؟ | سَأَذْهَبُ إِلَى الْمَدْرَسَةِ، وَأَنْتَ؟ | سَأَذْهَبُ إِلَى الْمَتْجَرِ.	Marḥaban, ilā ayna tadhhabu al-yawm? | Saʾadhhabu ilā al-madrasa, waʾant? | Saʾadhhabu ilā al-matjar.
+h2x010	你好！你今天想做什么？｜我想去游泳，你呢？｜我想休息。	Hello! What do you want to do today? | I want to go swimming, and you? | I want to rest.	مَرْحَبًا! مَاذَا تُرِيدُ أَنْ تَفْعَلَ الْيَوْمَ؟ | أُرِيدُ أَنْ أَسْبَحَ، وَأَنْتَ؟ | أُرِيدُ أَنْ أَسْتَرِيحَ.	Marḥaban! Mādhā turīdu an tafʿala al-yawm? | Urīdu an asbaḥ, waʾant? | Urīdu an astarīḥ.
+h2x011	你想吃什么？｜我想吃面条，你呢？｜我想吃鸡蛋。	What do you want to eat? | I want to eat noodles, and you? | I want to eat eggs.	مَاذَا تُرِيدُ أَنْ تَأْكُلَ؟ | أُرِيدُ أَنْ آكُلَ مَعْكَرُونَةً، وَأَنْتَ؟ | أُرِيدُ أَنْ آكُلَ بَيْضًا.	Mādhā turīdu an taʾkul? | Urīdu an ākula maʿkarūna, waʾant? | Urīdu an ākula bayḍan.
+h2x012	这个面条好吃吗？｜非常好吃！你也吃一点儿吧。	Are these noodles tasty? | Very tasty! You have some too.	هَلْ هٰذِهِ الْمَعْكَرُونَةُ لَذِيذَةٌ؟ | لَذِيذَةٌ جِدًّا! كُلْ أَنْتَ أَيْضًا قَلِيلًا مِنْهَا.	Hal hādhihi al-maʿkarūnatu ladhīdha? | Ladhīdhatun jiddan! Kul anta ayḍan qalīlan minhā.
+h2x013	你想喝咖啡还是牛奶？｜我想喝咖啡，谢谢。	Do you want coffee or milk? | I'd like coffee, thanks.	هَلْ تُرِيدُ قَهْوَةً أَمْ حَلِيبًا؟ | أُرِيدُ قَهْوَةً، شُكْرًا.	Hal turīdu qahwatan am ḥalīban? | Urīdu qahwa, shukran.
+h2x014	你觉得这个西瓜怎么样？｜很好吃，我很喜欢。	What do you think of this watermelon? | It's tasty, I like it a lot.	مَا رَأْيُكَ فِي هٰذِهِ الْبَطِّيخَةِ؟ | إِنَّهَا لَذِيذَةٌ، أُحِبُّهَا كَثِيرًا.	Mā raʾyuka fī hādhihi al-baṭṭīkha? | Innahā ladhīdha, uḥibbuhā kathīran.
+h2x015	服务员，我要一个鸡蛋面。｜好的，请等一下。	Waiter, I'd like an egg noodle dish. | Sure, please wait a moment.	يَا نَادِلُ، أُرِيدُ طَبَقَ مَعْكَرُونَةٍ بِالْبَيْضِ. | حَسَنًا، مِنْ فَضْلِكَ انْتَظِرْ قَلِيلًا.	Yā nādil, urīdu ṭabaqa maʿkarūnatin bi-l-bayḍ. | Ḥasanan, min faḍlika intaẓir qalīlan.
+h2x016	这个多少钱？｜很便宜，三块钱。｜太好了，我买一个。	How much is this? | It's cheap, three yuan. | Great, I'll buy one.	بِكَمْ هٰذَا؟ | إِنَّهُ رَخِيصٌ، بِثَلَاثَةِ يُوَانٍ. | رَائِعٌ، سَأَشْتَرِي وَاحِدًا.	Bikam hādhā? | Innahu rakhīṣ, bithalāthati yuwān. | Rāʾiʿ, saʾashtarī wāḥidan.
+h2x017	这个苹果很贵。｜是的，但是很好吃。	This apple is quite expensive. | Yeah, but it's very tasty.	هٰذِهِ التُّفَّاحَةُ غَالِيَةٌ جِدًّا. | نَعَمْ، لٰكِنَّهَا لَذِيذَةٌ جِدًّا.	Hādhihi at-tuffāḥatu ghāliyatun jiddan. | Naʿam, lākinnahā ladhīdhatun jiddan.
+h2x018	你在准备晚饭吗？｜是，我在做鸡蛋面。	Are you preparing dinner? | Yes, I'm making egg noodles.	هَلْ تُحَضِّرُ الْعَشَاءَ؟ | نَعَمْ، أَصْنَعُ مَعْكَرُونَةً بِالْبَيْضِ.	Hal tuḥaḍḍiru al-ʿashāʾ? | Naʿam, aṣnaʿu maʿkarūnatan bi-l-bayḍ.
+h2x019	你已经吃饭了吗？｜还没有，我想现在吃。	Have you already eaten? | Not yet, I want to eat now.	هَلْ أَكَلْتَ بِالْفِعْلِ؟ | لَيْسَ بَعْدُ، أُرِيدُ أَنْ آكُلَ الْآنَ.	Hal akalta bi-l-fiʿl? | Laysa baʿd, urīdu an ākula al-ʾān.
+h2x020	我们一起去饭店吃饭吧！｜好，我也想吃鱼。	Let's go eat at a restaurant together! | Sure, I want to eat fish too.	لِنَذْهَبْ مَعًا إِلَى الْمَطْعَمِ لِنَأْكُلَ! | حَسَنًا، أُرِيدُ أَنْ آكُلَ سَمَكًا أَيْضًا.	Linadhhab maʿan ilā al-maṭʿami linaʾkul! | Ḥasanan, urīdu an ākula samakan ayḍan.
+h2x021	你吃过羊肉吗？｜吃过，很好吃，但是有点儿贵。	Have you had mutton before? | Yes, it's tasty, but a bit expensive.	هَلْ أَكَلْتَ لَحْمَ الْغَنَمِ مِنْ قَبْلُ؟ | نَعَمْ، إِنَّهُ لَذِيذٌ، لٰكِنَّهُ غَالٍ قَلِيلًا.	Hal akalta laḥma al-ghanami min qabl? | Naʿam, innahu ladhīdh, lākinnahu ghālin qalīlan.
+h2x022	你觉得咖啡好喝吗？｜好喝，我很喜欢咖啡。	Do you think coffee tastes good? | It does, I really like coffee.	هَلْ تَرَى أَنَّ الْقَهْوَةَ لَذِيذَةٌ؟ | إِنَّهَا لَذِيذَةٌ، أُحِبُّ الْقَهْوَةَ كَثِيرًا.	Hal tarā anna al-qahwata ladhīdha? | Innahā ladhīdha, uḥibbu al-qahwata kathīran.
+h2x024	明天会下雪吗？｜可能会，天气很冷。	Will it snow tomorrow? | Maybe, it's very cold.	هَلْ سَتُثْلِجُ غَدًا؟ | رُبَّمَا، الطَّقْسُ بَارِدٌ جِدًّا.	Hal satuthliju ghadan? | Rubbamā, aṭ-ṭaqsu bāridun jiddan.
+h2x025	今天是晴天还是阴天？｜是阴天，可能要下雨。	Is it sunny or cloudy today? | It's cloudy, it might rain.	هَلِ الْيَوْمُ مُشْمِسٌ أَمْ غَائِمٌ؟ | إِنَّهُ غَائِمٌ، رُبَّمَا تُمْطِرُ.	Hali al-yawmu mushmisun am ghāʾim? | Innahu ghāʾim, rubbamā tumṭir.
+h2x026	外面在下雪！｜真的吗？我们出去玩吧！	It's snowing outside! | Really? Let's go out and play!	إِنَّهَا تُثْلِجُ فِي الْخَارِجِ! | حَقًّا؟ لِنَخْرُجْ لِنَلْعَبَ!	Innahā tuthliju fī al-khārij! | Ḥaqqan? Linakhruj linalʿab!
+h2x027	今天非常热，你热吗？｜我也很热，想去游泳。	It's extremely hot today, are you hot? | I'm hot too, I want to go swimming.	الطَّقْسُ حَارٌّ جِدًّا الْيَوْمَ، هَلْ تَشْعُرُ بِالْحَرِّ؟ | أَشْعُرُ بِالْحَرِّ أَيْضًا، أُرِيدُ أَنْ أَسْبَحَ.	Aṭ-ṭaqsu ḥārrun jiddan al-yawm, hal tashʿuru bi-l-ḥarr? | Ashʿuru bi-l-ḥarri ayḍan, urīdu an asbaḥ.
+h2x028	现在天气怎么样？｜现在很冷，但是明天会晴。	What's the weather like now? | It's cold now, but tomorrow will be sunny.	كَيْفَ الطَّقْسُ الْآنَ؟ | الطَّقْسُ بَارِدٌ الْآنَ، لٰكِنَّ الْغَدَ سَيَكُونُ مُشْمِسًا.	Kayfa aṭ-ṭaqsu al-ʾān? | Aṭ-ṭaqsu bāridun al-ʾān, lākinna al-ghada sayakūnu mushmisan.
+h2x029	下雨了，我们回家吧。｜好，我们等一下再走。	It's raining, let's go home. | Okay, let's wait a bit and then go.	إِنَّهَا تُمْطِرُ، لِنَعُدْ إِلَى الْبَيْتِ. | حَسَنًا، لِنَنْتَظِرْ قَلِيلًا ثُمَّ نَذْهَبَ.	Innahā tumṭir, linaʿud ilā al-bayt. | Ḥasanan, linantaẓir qalīlan thumma nadhhab.
+h2x030	今天天气真好！｜是的，我们一起去外面玩吧。	The weather's really nice today! | Yeah, let's go outside and play together.	الطَّقْسُ جَمِيلٌ جِدًّا الْيَوْمَ! | نَعَمْ، لِنَذْهَبْ مَعًا لِنَلْعَبَ فِي الْخَارِجِ.	Aṭ-ṭaqsu jamīlun jiddan al-yawm! | Naʿam, linadhhab maʿan linalʿaba fī al-khārij.
+h2x031	你几点睡觉？｜我晚上十点睡觉，你呢？｜我十一点睡觉。	What time do you go to sleep? | I go to sleep at ten in the evening, and you? | I go to sleep at eleven.	فِي أَيِّ سَاعَةٍ تَنَامُ؟ | أَنَامُ فِي السَّاعَةِ الْعَاشِرَةِ مَسَاءً، وَأَنْتَ؟ | أَنَامُ فِي السَّاعَةِ الْحَادِيَةَ عَشْرَةَ.	Fī ayyi sāʿatin tanām? | Anāmu fī as-sāʿati al-ʿāshirati masāʾ, waʾant? | Anāmu fī as-sāʿati al-ḥādiyata ʿashra.
+h2x032	你今天很累吗？｜非常累，我想早点休息。	Are you very tired today? | Extremely tired, I want to rest a bit early.	هَلْ أَنْتَ مُتْعَبٌ جِدًّا الْيَوْمَ؟ | مُتْعَبٌ جِدًّا، أُرِيدُ أَنْ أَسْتَرِيحَ مُبَكِّرًا قَلِيلًا.	Hal anta mutʿabun jiddan al-yawm? | Mutʿabun jiddan, urīdu an astarīḥa mubakkiran qalīlan.
+h2x033	你几点起床？｜我早上七点起床。	What time do you get up? | I get up at seven in the morning.	فِي أَيِّ سَاعَةٍ تَسْتَيْقِظُ؟ | أَسْتَيْقِظُ فِي السَّاعَةِ السَّابِعَةِ صَبَاحًا.	Fī ayyi sāʿatin tastayqiẓ? | Astayqiẓu fī as-sāʿati as-sābiʿati ṣabāḥan.
+h2x034	你昨天晚上睡得好吗？｜睡得很好，我现在不累。	Did you sleep well last night? | I slept really well, I'm not tired now.	هَلْ نِمْتَ جَيِّدًا لَيْلَةَ أَمْسِ؟ | نِمْتُ جَيِّدًا جِدًّا، لَسْتُ مُتْعَبًا الْآنَ.	Hal nimta jayyidan laylata ams? | Nimtu jayyidan jiddan, lastu mutʿaban al-ʾān.
+h2x035	你昨天睡了几个小时？｜我睡了八个小时。	How many hours did you sleep yesterday? | I slept for eight hours.	كَمْ سَاعَةً نِمْتَ أَمْسِ؟ | نِمْتُ ثَمَانِيَ سَاعَاتٍ.	Kam sāʿatan nimta ams? | Nimtu thamāniya sāʿāt.
+h2x036	你有哥哥吗？｜没有，但是我有一个弟弟和一个妹妹。	Do you have an older brother? | No, but I have a younger brother and a younger sister.	هَلْ لَدَيْكَ أَخٌ أَكْبَرُ؟ | لَا، لٰكِنْ لَدَيَّ أَخٌ أَصْغَرُ وَأُخْتٌ صَغِيرَةٌ.	Hal ladayka akhun akbar? | Lā, lākin ladayya akhun aṣgharu waʾukhtun ṣaghīra.
+h2x037	你姐姐做什么工作？｜她在一家公司上班。	What does your older sister do for work? | She works at a company.	مَاذَا تَعْمَلُ أُخْتُكَ الْكَبِيرَةُ؟ | إِنَّهَا تَعْمَلُ فِي شَرِكَةٍ.	Mādhā taʿmalu ukhtuka al-kabīra? | Innahā taʿmalu fī sharika.
+h2x038	你喜欢什么运动？｜我喜欢踢足球，你呢？｜我喜欢打篮球。	What sport do you like? | I like playing football, and you? | I like playing basketball.	أَيَّ رِيَاضَةٍ تُحِبُّ؟ | أُحِبُّ لَعِبَ كُرَةِ الْقَدَمِ، وَأَنْتَ؟ | أُحِبُّ لَعِبَ كُرَةِ السَّلَّةِ.	Ayya riyāḍatin tuḥibb? | Uḥibbu laʿiba kurati al-qadam, waʾant? | Uḥibbu laʿiba kurati as-salla.
+h2x039	你每天跑步吗？｜是，我每天跑步，身体很好。	Do you jog every day? | Yes, I jog every day, I'm very healthy.	هَلْ تَجْرِي كُلَّ يَوْمٍ؟ | نَعَمْ، أَجْرِي كُلَّ يَوْمٍ، وَصِحَّتِي جَيِّدَةٌ جِدًّا.	Hal tajrī kulla yawm? | Naʿam, ajrī kulla yawm, waṣiḥḥatī jayyidatun jiddan.
+h2x040	明天有考试吗？｜有，是汉语考试，我有点儿忙。	Is there an exam tomorrow? | Yes, a Chinese exam, I'm a bit busy.	هَلْ هُنَاكَ امْتِحَانٌ غَدًا؟ | نَعَمْ، امْتِحَانُ اللُّغَةِ الصِّينِيَّةِ، أَنَا مَشْغُولٌ قَلِيلًا.	Hal hunāka imtiḥānun ghadan? | Naʿam, imtiḥānu al-lughati aṣ-ṣīniyya, anā mashghūlun qalīlan.
+h2x041	这个问题你懂吗？｜不懂，你可以告诉我吗？｜可以，我来帮助你。	Do you understand this problem? | I don't, can you tell me? | Sure, I'll help you.	هَلْ تَفْهَمُ هٰذِهِ الْمَسْأَلَةَ؟ | لَا أَفْهَمُ، هَلْ يُمْكِنُكَ أَنْ تُخْبِرَنِي؟ | يُمْكِنُنِي، سَأُسَاعِدُكَ.	Hal tafhamu hādhihi al-masʾala? | Lā afham, hal yumkinuka an tukhbiranī? | Yumkinunī, saʾusāʿiduk.
+h2x042	老师问了一个问题，你回答了吗？｜回答了，但是我觉得我错了。	The teacher asked a question, did you answer it? | I did, but I think I got it wrong.	سَأَلَ الْمُعَلِّمُ سُؤَالًا، هَلْ أَجَبْتَ عَنْهُ؟ | أَجَبْتُ، لٰكِنِّي أَظُنُّ أَنِّي أَخْطَأْتُ.	Saʾala al-muʿallimu suʾālan, hal ajabta ʿanh? | Ajabt, lākinnī aẓunnu annī akhṭaʾt.
+h2x043	你的手机在哪儿？｜在桌子上边。	Where's your phone? | It's on the table.	أَيْنَ هَاتِفُكَ؟ | إِنَّهُ فَوْقَ الطَّاوِلَةِ.	Ayna hātifuk? | Innahu fawqa aṭ-ṭāwila.
+h2x044	宾馆在哪儿？离这儿远吗？｜不远，很近，在你的右边。	Where's the hotel? Is it far from here? | Not far, it's close, on your right.	أَيْنَ الْفُنْدُقُ؟ هَلْ هُوَ بَعِيدٌ مِنْ هُنَا؟ | لَيْسَ بَعِيدًا، إِنَّهُ قَرِيبٌ، عَلَى يَمِينِكَ.	Ayna al-funduq? Hal huwa baʿīdun min hunā? | Laysa baʿīdan, innahu qarīb, ʿalā yamīnik.
+h2x045	机场怎么走？｜往前走，机场就在左边。	How do I get to the airport? | Go straight ahead, the airport is right on the left.	كَيْفَ أَذْهَبُ إِلَى الْمَطَارِ؟ | اذْهَبْ إِلَى الْأَمَامِ، الْمَطَارُ عَلَى الْيَسَارِ مُبَاشَرَةً.	Kayfa adhhabu ilā al-maṭār? | Idhhab ilā al-ʾamām, al-maṭāru ʿalā al-yasāri mubāshara.
+h2x046	这件衣服多少钱？｜不贵，很便宜。｜太好了，我买了。	How much is this piece of clothing? | Not expensive, it's cheap. | Great, I'll buy it.	بِكَمْ هٰذِهِ الْمَلَابِسُ؟ | لَيْسَتْ غَالِيَةً، إِنَّهَا رَخِيصَةٌ. | رَائِعٌ، سَأَشْتَرِيهَا.	Bikam hādhihi al-malābis? | Laysat ghāliya, innahā rakhīṣa. | Rāʾiʿ, saʾashtarīhā.
+h2x047	你想买铅笔吗？｜想，我也要买报纸。	Do you want to buy a pencil? | Yes, I also want to buy a newspaper.	هَلْ تُرِيدُ أَنْ تَشْتَرِيَ قَلَمًا؟ | نَعَمْ، أُرِيدُ أَيْضًا أَنْ أَشْتَرِيَ جَرِيدَةً.	Hal turīdu an tashtariya qalaman? | Naʿam, urīdu ayḍan an ashtariya jarīda.
+h2x048	你去年去哪儿旅游了？｜我去年去了北京，非常漂亮。	Where did you travel last year? | I went to Beijing last year, it's very beautiful.	إِلَى أَيْنَ سَافَرْتَ السَّنَةَ الْمَاضِيَةَ؟ | ذَهَبْتُ إِلَى بِكِينَ السَّنَةَ الْمَاضِيَةَ، إِنَّهَا جَمِيلَةٌ جِدًّا.	Ilā ayna sāfarta as-sanata al-māḍiya? | Dhahabtu ilā bikīna as-sanata al-māḍiya, innahā jamīlatun jiddan.
+h2x049	飞机快到机场了吗？｜快到了，我们准备下飞机吧。	Is the plane about to reach the airport? | Almost there, let's get ready to get off.	هَلِ الطَّائِرَةُ عَلَى وَشْكِ الْوُصُولِ إِلَى الْمَطَارِ؟ | سَنَصِلُ قَرِيبًا، لِنَسْتَعِدَّ لِلنُّزُولِ.	Hali aṭ-ṭāʾiratu ʿalā washki al-wuṣūli ilā al-maṭār? | Sanaṣilu qarīban, linastaʿidda li-n-nuzūl.
+h2x050	你最喜欢什么颜色？｜我最喜欢红色，你呢？｜我喜欢黑色。	What's your favorite color? | I like red the most, and you? | I like black.	مَا هُوَ لَوْنُكَ الْمُفَضَّلُ؟ | أُفَضِّلُ اللَّوْنَ الْأَحْمَرَ، وَأَنْتَ؟ | أُحِبُّ اللَّوْنَ الْأَسْوَدَ.	Mā huwa lawnuka al-mufaḍḍal? | Ufaḍḍilu al-lawna al-ʾaḥmar, waʾant? | Uḥibbu al-lawna al-ʾaswad.
+h2x051	你今天为什么不快乐？｜因为我的手表不见了。	Why aren't you happy today? | Because my watch is missing.	لِمَاذَا أَنْتَ غَيْرُ سَعِيدٍ الْيَوْمَ؟ | لِأَنَّ سَاعَتِي ضَاعَتْ.	Limādhā anta ghayru saʿīdin al-yawm? | Liʾanna sāʿatī ḍāʿat.
+h2x052	你笑什么？｜我觉得今天很快乐。	What are you smiling about? | I just feel happy today.	عَلَامَ تَبْتَسِمُ؟ | أَشْعُرُ بِالسَّعَادَةِ الْيَوْمَ.	ʿAlāma tabtasim? | Ashʿuru bi-s-saʿādati al-yawm.
+h2x053	你怎么了？｜我可能生病了，身体不太好。	What's wrong? | I might be sick, I'm not feeling well.	مَا بِكَ؟ | رُبَّمَا أَنَا مَرِيضٌ، لَسْتُ بِخَيْرٍ.	Mā bik? | Rubbamā anā marīḍ, lastu bikhayr.
+h2x054	你要去医院吗？｜要，我想买一点儿药。	Are you going to the hospital? | Yes, I want to buy some medicine.	هَلْ سَتَذْهَبُ إِلَى الْمُسْتَشْفَى؟ | نَعَمْ، أُرِيدُ أَنْ أَشْتَرِيَ قَلِيلًا مِنَ الدَّوَاءِ.	Hal satadhhabu ilā al-mustashfā? | Naʿam, urīdu an ashtariya qalīlan mina ad-dawāʾ.
+h2x055	你会跳舞吗？｜会一点儿，我也喜欢唱歌。	Can you dance? | A little, I also like singing.	هَلْ تَسْتَطِيعُ أَنْ تَرْقُصَ؟ | أَسْتَطِيعُ قَلِيلًا، وَأُحِبُّ الْغِنَاءَ أَيْضًا.	Hal tastaṭīʿu an tarquṣ? | Astaṭīʿu qalīlan, waʾuḥibbu al-ghināʾa ayḍan.
+h2x056	公共汽车什么时候到？｜可能五分钟就到。	When will the bus arrive? | It'll probably arrive in five minutes.	مَتَى تَصِلُ الْحَافِلَةُ؟ | رُبَّمَا تَصِلُ خِلَالَ خَمْسِ دَقَائِقَ.	Matā taṣilu al-ḥāfila? | Rubbamā taṣilu khilāla khamsi daqāʾiq.
+h2x057	他是你的丈夫吗？｜是，我们已经认识十年了。	Is he your husband? | Yes, we've known each other for ten years already.	هَلْ هُوَ زَوْجُكَ؟ | نَعَمْ، نَحْنُ نَعْرِفُ بَعْضَنَا مُنْذُ عَشْرِ سَنَوَاتٍ.	Hal huwa zawjuk? | Naʿam, naḥnu naʿrifu baʿḍanā mundhu ʿashri sanawāt.
+h2x058	她是你的妻子吗？｜是，她是一个很好的老师。	Is she your wife? | Yes, she's a very good teacher.	هَلْ هِيَ زَوْجَتُكَ؟ | نَعَمْ، هِيَ مُعَلِّمَةٌ جَيِّدَةٌ جِدًّا.	Hal hiya zawjatuk? | Naʿam, hiya muʿallimatun jayyidatun jiddan.
+h2x059	你在找什么？｜我在找我的手机，你看见了吗？｜没看见。	What are you looking for? | I'm looking for my phone, have you seen it? | No, I haven't.	مَاذَا تَبْحَثُ عَنْهُ؟ | أَبْحَثُ عَنْ هَاتِفِي، هَلْ رَأَيْتَهُ؟ | لَمْ أَرَهُ.	Mādhā tabḥathu ʿanh? | Abḥathu ʿan hātifī, hal raʾaytah? | Lam arah.
+h2x060	你正在做什么？｜我正在洗衣服，你呢？｜我在看报纸。	What are you doing right now? | I'm washing clothes, and you? | I'm reading the newspaper.	مَاذَا تَفْعَلُ الْآنَ؟ | أَغْسِلُ الْمَلَابِسَ الْآنَ، وَأَنْتَ؟ | أَقْرَأُ الْجَرِيدَةَ.	Mādhā tafʿalu al-ʾān? | Aghsilu al-malābisa al-ʾān, waʾant? | Aqraʾu al-jarīda.
+```

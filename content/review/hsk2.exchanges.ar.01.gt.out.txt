@@ -1,0 +1,58 @@
+Hello! | Hello! Are you busy today? | I'm not busy, I'm very happy.
+How are you? | I'm fine, and you? | I'm fine too.
+Are you the new student? Welcome! | Thank you! Let's be friends!
+Hello, what is your family name? | My family name is Guo, and you? | My family name is Bei.
+You're very happy today, why? | Because today is my birthday!
+Shall we play together tomorrow? | Okay, that's great!
+Good morning! | Good morning! What time did you wake up? | I woke up at seven o'clock.
+Hello, where are you going today? | I'm going to school, and you? | I'm going to the store.
+Hello! What do you want to do today? | I want to swim, and you? | I want to rest.
+What do you want to eat? | I want to eat noodles, and you? | I want to eat eggs.
+Is this noodle dish delicious? | Very delicious! You eat some of it too.
+Do you want coffee or milk? | I want coffee, thanks.
+What do you think of this watermelon? | It's delicious, I like it a lot.
+Waiter, I want a plate of noodles with egg. | Okay, please wait a little.
+How much is this? | It's cheap, three yuan. | Great, I'll buy one.
+This apple is very expensive. | Yes, but it's very delicious.
+Are you preparing dinner? | Yes, I'm making noodles with egg.
+Have you already eaten? | Not yet, I want to eat now.
+Let's go together to the restaurant to eat! | Okay, I want to eat fish too.
+Have you eaten mutton before? | Yes, it's delicious, but it's a bit expensive.
+Do you think coffee is delicious? | It's delicious, I like coffee a lot.
+Will it snow tomorrow? | Maybe, the weather is very cold.
+Is it sunny or cloudy today? | It's cloudy, it might rain.
+It's snowing outside! | Really? Let's go out and play!
+The weather is very hot today, do you feel hot? | I feel hot too, I want to swim.
+How's the weather now? | The weather is cold now, but tomorrow will be sunny.
+It's raining, let's go back home. | Okay, let's wait a bit and then go.
+The weather is very lovely today! | Yes, let's go play outside together.
+What time do you go to sleep? | I sleep at ten in the evening, and you? | I sleep at eleven.
+Are you very tired today? | Very tired, I want to rest a bit early.
+What time do you wake up? | I wake up at seven in the morning.
+Did you sleep well last night? | I slept very well, I'm not tired now.
+How many hours did you sleep yesterday? | I slept eight hours.
+Do you have an older brother? | No, but I have a younger brother and a little sister.
+What does your older sister do? | She works at a company.
+Which sport do you like? | I like playing soccer, and you? | I like playing basketball.
+Do you run every day? | Yes, I run every day, and my health is very good.
+Is there an exam tomorrow? | Yes, a Chinese language exam, I'm a bit busy.
+Do you understand this problem? | I don't understand, can you tell me? | I can, I'll help you.
+The teacher asked a question, did you answer it? | I answered, but I think I got it wrong.
+Where is your phone? | It's on top of the table.
+Where is the hotel? Is it far from here? | It's not far, it's close, on your right.
+How do I get to the airport? | Go straight ahead, the airport is directly on the left.
+How much are these clothes? | They're not expensive, they're cheap. | Great, I'll buy them.
+Do you want to buy a pen? | Yes, I also want to buy a newspaper.
+Where did you travel last year? | I went to Beijing last year, it's very beautiful.
+Is the plane about to arrive at the airport? | We'll arrive soon, let's get ready to land.
+What is your favorite color? | I prefer the color red, and you? | I like the color black.
+Why are you unhappy today? | Because I lost my watch.
+What are you smiling about? | I feel happy today.
+What's wrong with you? | Maybe I'm sick, I'm not well.
+Are you going to go to the hospital? | Yes, I want to buy some medicine.
+Can you dance? | I can a little, and I like singing too.
+When does the bus arrive? | It'll probably arrive within five minutes.
+Is he your husband? | Yes, we've known each other for ten years.
+Is she your wife? | Yes, she's a very good teacher.
+What are you looking for? | I'm looking for my phone, have you seen it? | I haven't seen it.
+What are you doing now? | I'm washing clothes now, and you? | I'm reading the newspaper.
