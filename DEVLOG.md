@@ -27,14 +27,16 @@ Source: [github.com/gorepaw/deskmudgin](https://github.com/gorepaw/deskmudgin).
 | Spanish glosses — meaning in English / Español / Both | **done, verified offscreen** |
 | L1/L2 — learn any of English, Español, 中文, العربية from any other | **done, verified offscreen** |
 | Arabic — every line verified, vowelled, romanization derived | **done, verified offscreen** |
+| HSK 3 — 298 words, 464 sentences, 59 conversations, in all four languages | **done, verified offscreen** |
 
 Content, all verified by Claude agents and marked `claude-*` in `checks` for a
 later human pass:
 - HSK 1 (2.0): 152 words, 302 sentences, 60 conversations.
 - HSK 2 (2.0): 150 words, 449 sentences, 58 conversations.
+- HSK 3 (2.0): 298 words, 464 sentences, 59 conversations.
 - 118 names; 92 pinyin overrides.
 - A Spanish gloss for every one of those 1,289 lines, in `content/zh/*.es.tsv`.
-- An Arabic version of every one of those lines except 18 names, in `content/zh/*.ar.tsv` (1,271 of 1,289).
+- An Arabic version of every one of those lines except 18 names, in `content/zh/*.ar.tsv`; the same for HSK 3 in Spanish and Arabic (821 lines each).
 
 Everything typechecks (`npm run typecheck`) and builds. ~15,000 lines across 97
 TS/MJS files, excluding generated courses. Checks: `npm run lang:selftest`,
@@ -42,10 +44,7 @@ TS/MJS files, excluding generated courses. Checks: `npm run lang:selftest`,
 `npm run snap`** (offscreen, see *Verification tooling*) — never with a visible
 window on the user's desktop.
 
-**Next, at the user's request:** HSK 3, one level at a time, the same way HSK 2
-was done (wordlist first, then sentences and conversations, then the Spanish
-and Arabic versions of all three through `gloss-sync --lang es|ar`). A native
-Arabic speaker's pass over names and the fine word choices would help first.
+**Next, at the user's request:** HSK 4, one level at a time, the same way HSK 3 was done (see *HSK 3*); the tooling is level-agnostic up to `hsk6`, and a level needs one row in `shared/lang/levels.ts` and three lines in `lang-build-all.mjs`. A native Arabic speaker's pass over names and the fine word choices would help first.
 
 **Open with the user:** I offered to clear the ledger's `said` entries from
 2026-09-24 — 369 lines were "shown" in an hour only because I woke 13 pets and
@@ -897,6 +896,41 @@ first;** they are `claude-*` throughout.
 
 **Decided by adjudication, and recorded as such:** wherever two agents
 differed only in wording ("delicious"/"tasty"), and the last-round calls above.
+
+## HSK 3
+
+**Content:** 298 words, 464 sentences, 59 conversations — in Chinese, English,
+Spanish and Arabic, every line through the same two keys (`claude-*`).
+Levels are cumulative, so an HSK 3 creature still says HSK 1 and 2 lines; a
+level is offered per language once that language has a verified sentence.
+
+**How it went.** Wordlist first: written from memory as the 2.0 standard's 300
+words, and the tool refused two at once (过 is HSK 2, 里 is HSK 1). The
+reviewer dropped 传真, 信用卡 and 奇怪 as higher levels and listed sixteen
+"missing" words — eight of them HSK 1–2 words, which belong nowhere near this
+list; the other eight were real and were added. Then sentences were drafted in
+four slices, each against a share of the words, and conversations by a fifth
+agent; every word but the five late additions appeared without asking. Two
+rounds of blind reading and review, then Spanish and Arabic through
+`gloss-sync`: drafted, blind-read (Chinese → Spanish; Arabic → English),
+reviewed, settled.
+
+**What the checks caught.** Chinese: measure words (棵, 首, 杯) and calques;
+"I forgot to wear clothes" (忘记穿衣服) for forgetting a coat; reviewer fixes
+that used characters outside HSK 1–3 (the draft tool refused them, so five
+lines were reworded by hand); a "hair feels heavy" conversation the reviewers
+passed and I dropped; and again pinyin filed per sentence. Word-level pinyin
+overrides on a single character broke compounds — an override for 地 (particle
+*de*) turned 地方 into *de fāng*, and one for 教 (verb *jiāo*) turned 教室 into
+*jiāo shì* — so those compounds are overrides of their own (o122–o125, 土地).
+Spanish: 爬山 is hiking, not climbing; coche/auto, pluma/bolígrafo; "Sobre
+mañana…". Arabic: 太 "too" as "very" again, 了解 read as "sympathize",
+根据 as a verb, 一样 "the same" as "similar", a tatweel that romanised as "l".
+
+**Tooling.** The draft tool's "has an HSK 3 word" check is a substring test —
+面条 passes for 条 — so drafters were told the word must genuinely be used.
+An Arabic fix given for a two-turn conversation that covered one turn is
+refused by ingest (as designed) and reworded by hand.
 
 ## What is not built
 

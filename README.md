@@ -260,11 +260,11 @@ See [content/README.md](content/README.md) for the loop, and run
 
 What there is, HSK 1 and HSK 2 (2.0):
 
-| | HSK 1 | HSK 2 |
-| --- | --- | --- |
-| **Words** | 152 | 150 |
-| **Sentences** | 302 | 449 |
-| **Conversations** | 60 | 58 |
+| | HSK 1 | HSK 2 | HSK 3 |
+| --- | --- | --- | --- |
+| **Words** | 152 | 150 | 298 |
+| **Sentences** | 302 | 449 | 464 |
+| **Conversations** | 60 | 58 | 59 |
 
 Any of English, Spanish, Chinese and Arabic can be the language you **learn**
 or the one its meaning is shown in (Settings → *They speak* → **learn**,
@@ -276,8 +276,8 @@ falls back to English.
 
 Sentences are chosen by moment (hungry, sleepy, picked up) and at random while
 idle; nearby pets start conversations and answer each other. Settings → *They
-speak* → **level** picks HSK 1 or 2. Levels are cumulative: at HSK 2, seven lines
-in ten are HSK 2 and the rest keep HSK 1 in use.
+speak* → **level** picks HSK 1, 2 or 3. Levels are cumulative: at the level you pick,
+seven lines in ten come from it and the rest keep the lower levels in use.
 
 | | |
 | --- | --- |

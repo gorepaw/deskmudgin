@@ -25,7 +25,7 @@ h3w023	别人	bié rén	other people	الْآخَرُونَ	Al-ʾākharūn	verif
 h3w024	冰箱	bīng xiāng	refrigerator	ثَلَّاجَةٌ	Thallāja	verified	claude-blind,claude-review	
 h3w025	不但…而且	bú dàn … ér qiě	not only… but also	لَيْسَ فَقَطْ، بَلْ أَيْضًا	Laysa faqaṭ, bal ayḍan	verified	claude-blind,claude-review	
 h3w026	菜单	cài dān	menu	قَائِمَةُ الطَّعَامِ	Qāʾimatu aṭ-ṭaʿām	verified	claude-blind,claude-review	
-h3w027	才	cái	only then; not until	حِينَئِذٍ فَقَطْ؛ لَيْسَ قَبْلَ ذٰلِكَ	Ḥīnaʾidhin faqaṭ; laysa qabla dhālik	conflict		reviewer proposed a fix (second part was an incomplete phrase); blind reading was "only then; not before" · re-check next round
+h3w027	才	cái	only then; not until	حِينَئِذٍ فَقَطْ؛ لَيْسَ قَبْلَ ذٰلِكَ	Ḥīnaʾidhin faqaṭ; laysa qabla dhālik	verified	claude-blind,claude-review	
 h3w028	参加	cān jiā	to take part in	شَارَكَ	Shārak	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (past-tense citation form, or wording only)
 h3w029	草	cǎo	grass	عُشْبٌ	ʿUshb	verified	claude-blind,claude-review	
 h3w030	层	céng	floor; layer	طَابِقٌ؛ طَبَقَةٌ	Ṭābiq; ṭabaqa	verified	claude-blind,claude-review	
@@ -76,7 +76,7 @@ h3w075	干净	gān jìng	clean	نَظِيفٌ	Naẓīf	verified	claude-blind,cla
 h3w076	感冒	gǎn mào	a cold; to catch a cold	زُكَامٌ؛ أُصِيبَ بِالزُّكَامِ	Zukām; uṣība bi-z-zukām	verified	claude-blind,claude-review	
 h3w077	感兴趣	gǎn xìng qù	to be interested	مُهْتَمٌّ	Muhtamm	verified	claude-blind,claude-review	
 h3w078	刚才	gāng cái	just now	قَبْلَ قَلِيلٍ	Qabla qalīl	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (past-tense citation form, or wording only)
-h3w079	根据	gēn jù	according to	وِفْقًا لِـ	Wifqan l	conflict		reworded by claude-adjudicated: 根据 is according to; حسب read as calculated - re-check next round
+h3w079	根据	gēn jù	according to	بِنَاءً عَلَى	Bināʾan ʿalā	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same
 h3w080	跟	gēn	with; to follow	مَعَ؛ تَبِعَ	Maʿ; tabiʿ	verified	claude-blind,claude-review	
 h3w081	更	gèng	even more	أَكْثَرُ؛ أَشَدُّ	Akthar; ashadd	verified	claude-blind,claude-review	
 h3w082	公园	gōng yuán	park	حَدِيقَةٌ	Ḥadīqa	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (past-tense citation form, or wording only)
@@ -125,7 +125,7 @@ h3w124	借	jiè	to borrow; to lend	اسْتَعَارَ؛ أَعَارَ	Istaʿ�
 h3w125	经常	jīng cháng	often	غَالِبًا	Ghāliban	verified	claude-blind,claude-review	
 h3w126	经过	jīng guò	to pass through	مَرَّ	Marr	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (past-tense citation form, or wording only)
 h3w127	经理	jīng lǐ	manager	مُدِيرٌ	Mudīr	verified	claude-blind,claude-review	
-h3w128	久	jiǔ	for a long time	لِوَقْتٍ طَوِيلٍ	Liwaqtin ṭawīl	conflict		reviewer proposed a fix (久 = for a long time, not "since a long time" (مُنْذُ)); blind reading was "for a long time" · re-check next round
+h3w128	久	jiǔ	for a long time	لِوَقْتٍ طَوِيلٍ	Liwaqtin ṭawīl	verified	claude-blind,claude-review	
 h3w129	旧	jiù	old (of things)	قَدِيمٌ	Qadīm	verified	claude-blind,claude-review	
 h3w130	句子	jù zi	sentence	جُمْلَةٌ	Jumla	verified	claude-blind,claude-review	
 h3w131	决定	jué dìng	to decide	قَرَّرَ	Qarrar	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (past-tense citation form, or wording only)
@@ -147,7 +147,7 @@ h3w146	例如	lì rú	for example	مَثَلًا	Mathalan	verified	claude-blind,
 h3w147	脸	liǎn	face	وَجْهٌ	Wajh	verified	claude-blind,claude-review	
 h3w148	练习	liàn xí	to practise	تَدَرَّبَ	Tadarrab	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (past-tense citation form, or wording only)
 h3w149	辆	liàng	(measure word for vehicles)	(كَلِمَةُ عَدٍّ لِلسَّيَّارَاتِ)	(kalimatu ʿaddin li-s-sayyārāt)	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (past-tense citation form, or wording only)
-h3w150	了解	liǎo jiě	to understand	عَلِمَ؛ فَهِمَ	ʿAlim; fahim	conflict		reworded by claude-adjudicated: 了解 is to know about/understand; تفهّم reads as sympathize - re-check next round
+h3w150	了解	liǎo jiě	to understand	فَهِمَ؛ عَلِمَ	Fahim; ʿalim	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same
 h3w151	邻居	lín jū	neighbour	جَارٌ	Jār	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (past-tense citation form, or wording only)
 h3w152	另外	lìng wài	in addition	عِلَاوَةً عَلَى ذٰلِكَ	ʿIlāwatan ʿalā dhālik	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (past-tense citation form, or wording only)
 h3w153	留	liú	to stay; to keep	بَقِيَ؛ احْتَفَظَ	Baqiy; iḥtafaẓ	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (past-tense citation form, or wording only)
@@ -213,9 +213,9 @@ h3w212	同意	tóng yì	to agree	وَافَقَ	Wāfaq	verified	claude-review,cl
 h3w213	头发	tóu fa	hair	شَعْرٌ	Shaʿr	verified	claude-blind,claude-review	
 h3w214	突然	tū rán	suddenly	فَجْأَةً	Fajʾa	verified	claude-blind,claude-review	
 h3w215	图书馆	tú shū guǎn	library	مَكْتَبَةٌ	Maktaba	verified	claude-blind,claude-review	
-h3w216	腿	tuǐ	leg	رِجْلٌ	Rijl	conflict		reviewer proposed a fix (腿 = leg; سَاقٌ is only the shank); blind reading was "leg" · re-check next round
+h3w216	腿	tuǐ	leg	رِجْلٌ	Rijl	verified	claude-blind,claude-review	
 h3w217	完成	wán chéng	to complete	أَكْمَلَ	Akmal	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (past-tense citation form, or wording only)
-h3w218	碗	wǎn	bowl	سُلْطَانِيَّةٌ	Sulṭāniyya	conflict		reviewer proposed a fix (وِعَاءٌ is generic vessel; bowl = سُلْطَانِيَّة); blind reading was "bowl" · re-check next round
+h3w218	碗	wǎn	bowl	صَحْنٌ عَمِيقٌ	Ṣaḥnun ʿamīq	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same
 h3w219	万	wàn	ten thousand	عَشَرَةُ آلَافٍ	ʿAsharatu ālāf	verified	claude-blind,claude-review	
 h3w220	忘记	wàng jì	to forget	نَسِيَ	Nasiy	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (past-tense citation form, or wording only)
 h3w221	为	wèi	for; to	مِنْ أَجْلِ؛ لِأَجْلِ	Min ajl; liʾajl	verified	claude-blind,claude-review	
@@ -246,9 +246,9 @@ h3w246	爷爷	yé ye	grandfather (father's father)	جَدٌّ	Jadd	verified	clau
 h3w247	一定	yí dìng	certainly	بِالتَّأْكِيدِ	Bi-t-taʾkīd	verified	claude-blind,claude-review	
 h3w248	一共	yí gòng	altogether	فِي الْمَجْمُوعِ	Fī al-majmūʿ	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (past-tense citation form, or wording only)
 h3w249	一会儿	yí huìr	a moment	لَحْظَةٌ	Laḥẓa	verified	claude-blind,claude-review	
-h3w250	一样	yí yàng	the same	مُتَطَابِقٌ	Mutaṭābiq	conflict		reworded by claude-adjudicated: 一样 is the same; متشابه reads as similar - re-check next round
+h3w250	一样	yí yàng	the same	مُتَطَابِقٌ	Mutaṭābiq	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (identical)
 h3w251	一直	yì zhí	always; all along	طَوَالَ الْوَقْتِ؛ دَائِمًا	Ṭawāla al-waqt; dāʾiman	verified	claude-blind,claude-review	
-h3w252	以前	yǐ qián	before; previously	سَابِقًا	Sābiqan	conflict		reviewer proposed a fix (قَبْلَ is a preposition needing a genitive; adverb previously = سَابِقًا); blind reading was "before" · re-check next round
+h3w252	以前	yǐ qián	before; previously	سَابِقًا	Sābiqan	verified	claude-blind,claude-review	
 h3w253	一般	yì bān	generally	عَادَةً	ʿĀda	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (past-tense citation form, or wording only)
 h3w254	音乐	yīn yuè	music	مُوسِيقَى	Mūsīqā	verified	claude-blind,claude-review	
 h3w255	银行	yín háng	bank	بَنْكٌ	Bank	verified	claude-blind,claude-review	
@@ -270,7 +270,7 @@ h3w270	照顾	zhào gù	to take care of	اعْتَنَى	Iʿtanā	verified	claud
 h3w271	照片	zhào piàn	photo	صُورَةٌ	Ṣūra	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (past-tense citation form, or wording only)
 h3w272	照相机	zhào xiàng jī	camera	كَامِيرَا	Kāmīrā	verified	claude-blind,claude-review	
 h3w273	只	zhī	(measure word for animals)	(كَلِمَةُ عَدٍّ لِلْحَيَوَانَاتِ)	(kalimatu ʿaddin li-l-ḥayawānāt)	verified	claude-blind,claude-review	
-h3w274	只有	zhǐ yǒu	only; only if	فَقَطْ؛ فَقَطْ إِذَا	Faqaṭ; faqaṭ idhā	conflict		reviewer proposed a fix (إِلَّا إِذَا means unless, not only if); blind reading was "only; unless" · re-check next round
+h3w274	只有	zhǐ yǒu	only; only if	فَقَطْ؛ فَقَطْ إِذَا	Faqaṭ; faqaṭ idhā	verified	claude-blind,claude-review	
 h3w275	中间	zhōng jiān	middle	وَسَطٌ	Wasaṭ	verified	claude-blind,claude-review	
 h3w276	中文	zhōng wén	the Chinese language	اللُّغَةُ الصِّينِيَّةُ	Al-lughatu aṣ-ṣīniyya	verified	claude-blind,claude-review	
 h3w277	终于	zhōng yú	finally	أَخِيرًا	Akhīran	verified	claude-blind,claude-review	
