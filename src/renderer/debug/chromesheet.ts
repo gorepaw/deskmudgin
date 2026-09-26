@@ -34,7 +34,7 @@ export class ChromeSheet {
     tongue: { l2: LanguageId; l1: LanguageId; l1Also: LanguageId | null; tab?: string },
   ) {
     applyTheme(theme)
-    const settings: Settings = { ...DEFAULT_SETTINGS, theme, level: 'hsk2', ...tongue }
+    const settings: Settings = { ...DEFAULT_SETTINGS, theme, level: 'hsk3', ...tongue }
     setTongue(settings)
     // Everything a panel may ask of its host, answered with nothing: an empty
     // colony, an empty ledger. The sheet shows the chrome, not anyone's data.
@@ -54,7 +54,7 @@ export class ChromeSheet {
     this.panels = [s, d]
     const l2 = lessonLang()
     const h1 = LEVELS[0].phrases.entries.filter(e => e.in[l2])
-    const h2 = LEVELS[1].phrases.entries.filter(e => e.in[l2])
+    const h2 = LEVELS[LEVELS.length - 1].phrases.entries.filter(e => e.in[l2])
     const pool = h2.length ? h2 : h1
     this.lines = ['hrrr!', h1[0], pool[27] ?? pool[0], pool.find(e => (e.in[l2]?.text.length ?? 0) > 13) ?? pool[1]]
       .filter(Boolean)

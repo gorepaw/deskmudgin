@@ -1,0 +1,302 @@
+id	script	reading	english	tags	status	checks	note
+h3w001	阿姨	ā yí	aunt	hsk3	verified	claude-blind,claude-review	
+h3w002	啊	a	(particle of surprise or emphasis)	hsk3	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w003	矮	ǎi	short (of height)	hsk3	verified	claude-blind,claude-review	
+h3w004	爱好	ài hào	hobby	hsk3	verified	claude-blind,claude-review	
+h3w005	安静	ān jìng	quiet	hsk3	verified	claude-blind,claude-review	
+h3w006	把	bǎ	(marks the object before the verb)	hsk3	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w007	班	bān	class	hsk3	verified	claude-blind,claude-review	
+h3w008	搬	bān	to move (something heavy)	hsk3	verified	claude-blind,claude-review	
+h3w009	半	bàn	half	hsk3	verified	claude-blind,claude-review	
+h3w010	办法	bàn fǎ	way; method	hsk3	verified	claude-blind,claude-review	
+h3w011	办公室	bàn gōng shì	office	hsk3	verified	claude-blind,claude-review	
+h3w012	帮忙	bāng máng	to help	hsk3	verified	claude-blind,claude-review	
+h3w013	包	bāo	bag	hsk3	verified	claude-blind,claude-review	
+h3w014	饱	bǎo	full (after eating)	hsk3	verified	claude-blind,claude-review	
+h3w015	北方	běi fāng	the north	hsk3	verified	claude-blind,claude-review	
+h3w016	被	bèi	(passive marker) by	hsk3	verified	claude-blind,claude-review	
+h3w017	鼻子	bí zi	nose	hsk3	verified	claude-blind,claude-review	
+h3w018	比较	bǐ jiào	rather; relatively	hsk3	verified	claude-blind,claude-review	
+h3w019	比赛	bǐ sài	match; competition	hsk3	verified	claude-blind,claude-review	
+h3w020	笔记本	bǐ jì běn	notebook	hsk3	verified	claude-blind,claude-review	
+h3w021	必须	bì xū	must	hsk3	verified	claude-blind,claude-review	
+h3w022	变化	biàn huà	change	hsk3	verified	claude-blind,claude-review	
+h3w023	别人	bié rén	other people	hsk3	verified	claude-blind,claude-review	
+h3w024	冰箱	bīng xiāng	refrigerator	hsk3	verified	claude-blind,claude-review	
+h3w025	不但…而且	bú dàn … ér qiě	not only… but also	hsk3	verified	claude-blind,claude-review	
+h3w026	菜单	cài dān	menu	hsk3	verified	claude-blind,claude-review	
+h3w027	才	cái	only then; not until	hsk3	verified	claude-blind,claude-review	
+h3w028	参加	cān jiā	to take part in	hsk3	verified	claude-blind,claude-review	
+h3w029	草	cǎo	grass	hsk3	verified	claude-blind,claude-review	
+h3w030	层	céng	floor; layer	hsk3	verified	claude-blind,claude-review	
+h3w031	差	chà	to be short of; poor	hsk3	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w032	超市	chāo shì	supermarket	hsk3	verified	claude-blind,claude-review	
+h3w033	衬衫	chèn shān	shirt	hsk3	verified	claude-blind,claude-review	
+h3w034	成绩	chéng jì	result; grade	hsk3	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w035	城市	chéng shì	city	hsk3	verified	claude-blind,claude-review	
+h3w036	迟到	chí dào	to be late	hsk3	verified	claude-blind,claude-review	
+h3w037	出现	chū xiàn	to appear	hsk3	verified	claude-blind,claude-review	
+h3w038	除了	chú le	besides; except	hsk3	verified	claude-blind,claude-review	
+h3w039	厨房	chú fáng	kitchen	hsk3	verified	claude-blind,claude-review	
+h3w040	传真	chuán zhēn	fax	hsk3	rejected	claude-review	Not on HSK 3 (2.0) list (higher level)
+h3w041	春	chūn	spring	hsk3	verified	claude-blind,claude-review	
+h3w042	词语	cí yǔ	word; phrase	hsk3	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w043	聪明	cōng ming	clever	hsk3	verified	claude-blind,claude-review	
+h3w044	打扫	dǎ sǎo	to clean	hsk3	verified	claude-blind,claude-review	
+h3w045	打算	dǎ suàn	to plan	hsk3	verified	claude-blind,claude-review	
+h3w046	带	dài	to bring; to take	hsk3	verified	claude-blind,claude-review	
+h3w047	担心	dān xīn	to worry	hsk3	verified	claude-blind,claude-review	
+h3w048	蛋糕	dàn gāo	cake	hsk3	verified	claude-blind,claude-review	
+h3w049	当然	dāng rán	of course	hsk3	verified	claude-blind,claude-review	
+h3w050	地	de	(adverbial particle)	hsk3	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w051	灯	dēng	lamp; light	hsk3	verified	claude-blind,claude-review	
+h3w052	地方	dì fang	place	hsk3	verified	claude-blind,claude-review	
+h3w053	地铁	dì tiě	subway	hsk3	verified	claude-blind,claude-review	
+h3w054	地图	dì tú	map	hsk3	verified	claude-blind,claude-review	
+h3w055	电梯	diàn tī	elevator	hsk3	verified	claude-blind,claude-review	
+h3w056	电子邮件	diàn zǐ yóu jiàn	email	hsk3	verified	claude-blind,claude-review	
+h3w057	东	dōng	east	hsk3	verified	claude-blind,claude-review	
+h3w058	冬	dōng	winter	hsk3	verified	claude-blind,claude-review	
+h3w059	动物	dòng wù	animal	hsk3	verified	claude-blind,claude-review	
+h3w060	短	duǎn	short (of length)	hsk3	verified	claude-blind,claude-review	
+h3w061	段	duàn	(measure word for sections)	hsk3	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w062	锻炼	duàn liàn	to exercise	hsk3	verified	claude-blind,claude-review	
+h3w063	多么	duō me	how (in exclamations)	hsk3	verified	claude-blind,claude-review	
+h3w064	饿	è	hungry	hsk3	verified	claude-blind,claude-review	
+h3w065	而	ér	and yet; but	hsk3	verified	claude-blind,claude-review	
+h3w066	耳朵	ěr duo	ear	hsk3	verified	claude-blind,claude-review	
+h3w067	发	fā	to send	hsk3	verified	claude-blind,claude-review	
+h3w068	发烧	fā shāo	to have a fever	hsk3	verified	claude-blind,claude-review	
+h3w069	发现	fā xiàn	to discover	hsk3	verified	claude-blind,claude-review	
+h3w070	方便	fāng biàn	convenient	hsk3	verified	claude-blind,claude-review	
+h3w071	放	fàng	to put	hsk3	verified	claude-blind,claude-review	
+h3w072	放心	fàng xīn	to rest assured	hsk3	verified	claude-blind,claude-review	
+h3w073	分	fēn	to divide; minute	hsk3	verified	claude-blind,claude-review	
+h3w074	复习	fù xí	to review	hsk3	verified	claude-blind,claude-review	
+h3w075	干净	gān jìng	clean	hsk3	verified	claude-blind,claude-review	
+h3w076	感冒	gǎn mào	a cold; to catch a cold	hsk3	verified	claude-blind,claude-review	
+h3w077	感兴趣	gǎn xìng qù	to be interested	hsk3	verified	claude-blind,claude-review	
+h3w078	刚才	gāng cái	just now	hsk3	verified	claude-blind,claude-review	
+h3w079	根据	gēn jù	according to	hsk3	verified	claude-blind,claude-review	
+h3w080	跟	gēn	with; to follow	hsk3	verified	claude-blind,claude-review	
+h3w081	更	gèng	even more	hsk3	verified	claude-blind,claude-review	
+h3w082	公园	gōng yuán	park	hsk3	verified	claude-blind,claude-review	
+h3w083	故事	gù shì	story	hsk3	verified	claude-blind,claude-review	
+h3w084	刮风	guā fēng	to be windy	hsk3	verified	claude-blind,claude-review	
+h3w085	关	guān	to close; to turn off	hsk3	verified	claude-blind,claude-review	
+h3w086	关系	guān xi	relationship	hsk3	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w087	关心	guān xīn	to care about	hsk3	verified	claude-blind,claude-review	
+h3w088	关于	guān yú	about	hsk3	verified	claude-blind,claude-review	
+h3w089	国家	guó jiā	country	hsk3	verified	claude-blind,claude-review	
+h3w090	过去	guò qù	the past; to go over	hsk3	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w091	还是	hái shì	or; still	hsk3	verified	claude-blind,claude-review	
+h3w092	害怕	hài pà	to be afraid	hsk3	verified	claude-blind,claude-review	
+h3w093	黑板	hēi bǎn	blackboard	hsk3	verified	claude-blind,claude-review	
+h3w094	后来	hòu lái	afterwards	hsk3	verified	claude-blind,claude-review	
+h3w095	护照	hù zhào	passport	hsk3	verified	claude-blind,claude-review	
+h3w096	花	huā	flower; to spend	hsk3	verified	claude-blind,claude-review	
+h3w097	画	huà	to draw; painting	hsk3	verified	claude-blind,claude-review	
+h3w098	坏	huài	bad; broken	hsk3	verified	claude-blind,claude-review	
+h3w099	环境	huán jìng	environment	hsk3	verified	claude-blind,claude-review	
+h3w100	换	huàn	to change	hsk3	verified	claude-blind,claude-review	
+h3w101	黄河	huáng hé	the Yellow River	hsk3	verified	claude-blind,claude-review	
+h3w102	会议	huì yì	meeting	hsk3	verified	claude-blind,claude-review	
+h3w103	或者	huò zhě	or	hsk3	verified	claude-blind,claude-review	
+h3w104	几乎	jī hū	almost	hsk3	verified	claude-blind,claude-review	
+h3w105	机会	jī huì	opportunity	hsk3	verified	claude-blind,claude-review	
+h3w106	极	jí	extremely	hsk3	verified	claude-blind,claude-review	
+h3w107	记得	jì de	to remember	hsk3	verified	claude-blind,claude-review	
+h3w108	季节	jì jié	season	hsk3	verified	claude-blind,claude-review	
+h3w109	检查	jiǎn chá	to check	hsk3	verified	claude-blind,claude-review	
+h3w110	简单	jiǎn dān	simple	hsk3	verified	claude-blind,claude-review	
+h3w111	健康	jiàn kāng	healthy	hsk3	verified	claude-blind,claude-review	
+h3w112	见面	jiàn miàn	to meet	hsk3	verified	claude-blind,claude-review	
+h3w113	讲	jiǎng	to speak; to tell	hsk3	verified	claude-blind,claude-review	
+h3w114	教	jiāo	to teach	hsk3	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w115	角	jiǎo	corner; (a tenth of a yuan)	hsk3	verified	claude-blind,claude-review	
+h3w116	脚	jiǎo	foot	hsk3	verified	claude-blind,claude-review	
+h3w117	接	jiē	to receive; to pick up	hsk3	verified	claude-blind,claude-review	
+h3w118	街道	jiē dào	street	hsk3	verified	claude-blind,claude-review	
+h3w119	节目	jié mù	programme	hsk3	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w120	节日	jié rì	festival	hsk3	verified	claude-blind,claude-review	
+h3w121	结婚	jié hūn	to get married	hsk3	verified	claude-blind,claude-review	
+h3w122	结束	jié shù	to end	hsk3	verified	claude-blind,claude-review	
+h3w123	解决	jiě jué	to solve	hsk3	verified	claude-blind,claude-review	
+h3w124	借	jiè	to borrow; to lend	hsk3	verified	claude-blind,claude-review	
+h3w125	经常	jīng cháng	often	hsk3	verified	claude-blind,claude-review	
+h3w126	经过	jīng guò	to pass through	hsk3	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w127	经理	jīng lǐ	manager	hsk3	verified	claude-blind,claude-review	
+h3w128	久	jiǔ	for a long time	hsk3	verified	claude-blind,claude-review	
+h3w129	旧	jiù	old (of things)	hsk3	verified	claude-blind,claude-review	
+h3w130	句子	jù zi	sentence	hsk3	verified	claude-blind,claude-review	
+h3w131	决定	jué dìng	to decide	hsk3	verified	claude-blind,claude-review	
+h3w132	可爱	kě ài	lovely	hsk3	verified	claude-blind,claude-review	
+h3w133	渴	kě	thirsty	hsk3	verified	claude-blind,claude-review	
+h3w134	刻	kè	quarter of an hour	hsk3	verified	claude-blind,claude-review	
+h3w135	客人	kè rén	guest	hsk3	verified	claude-blind,claude-review	
+h3w136	空调	kōng tiáo	air conditioning	hsk3	verified	claude-blind,claude-review	
+h3w137	口	kǒu	mouth; (measure word for family members)	hsk3	verified	claude-blind,claude-review	
+h3w138	哭	kū	to cry	hsk3	verified	claude-blind,claude-review	
+h3w139	裤子	kù zi	trousers	hsk3	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w140	筷子	kuài zi	chopsticks	hsk3	verified	claude-blind,claude-review	
+h3w141	蓝	lán	blue	hsk3	verified	claude-blind,claude-review	
+h3w142	老	lǎo	old	hsk3	verified	claude-blind,claude-review	
+h3w143	离开	lí kāi	to leave	hsk3	verified	claude-blind,claude-review	
+h3w144	力气	lì qi	strength	hsk3	verified	claude-blind,claude-review	
+h3w145	厉害	lì hài	formidable; impressive	hsk3	verified	claude-blind,claude-review	
+h3w146	例如	lì rú	for example	hsk3	verified	claude-blind,claude-review	
+h3w147	脸	liǎn	face	hsk3	verified	claude-blind,claude-review	
+h3w148	练习	liàn xí	to practise	hsk3	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w149	辆	liàng	(measure word for vehicles)	hsk3	verified	claude-blind,claude-review	
+h3w150	了解	liǎo jiě	to understand	hsk3	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w151	邻居	lín jū	neighbour	hsk3	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w152	另外	lìng wài	in addition	hsk3	verified	claude-blind,claude-review	
+h3w153	留	liú	to stay; to keep	hsk3	verified	claude-blind,claude-review	
+h3w154	楼	lóu	building; floor	hsk3	verified	claude-blind,claude-review	
+h3w155	绿	lǜ	green	hsk3	verified	claude-blind,claude-review	
+h3w156	马上	mǎ shàng	immediately	hsk3	verified	claude-blind,claude-review	
+h3w157	满意	mǎn yì	satisfied	hsk3	verified	claude-blind,claude-review	
+h3w158	帽子	mào zi	hat	hsk3	verified	claude-blind,claude-review	
+h3w159	米	mǐ	metre; rice	hsk3	verified	claude-blind,claude-review	
+h3w160	面包	miàn bāo	bread	hsk3	verified	claude-blind,claude-review	
+h3w161	明白	míng bái	to understand	hsk3	verified	claude-blind,claude-review	
+h3w162	拿	ná	to take; to hold	hsk3	verified	claude-blind,claude-review	
+h3w163	奶奶	nǎi nai	grandmother (father's mother)	hsk3	verified	claude-blind,claude-review	
+h3w164	南	nán	south	hsk3	verified	claude-blind,claude-review	
+h3w165	难过	nán guò	sad	hsk3	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w166	年级	nián jí	school year; grade	hsk3	verified	claude-blind,claude-review	
+h3w167	年轻	nián qīng	young	hsk3	verified	claude-blind,claude-review	
+h3w168	鸟	niǎo	bird	hsk3	verified	claude-blind,claude-review	
+h3w169	努力	nǔ lì	hard-working; to strive	hsk3	verified	claude-blind,claude-review	
+h3w170	爬山	pá shān	to climb a mountain	hsk3	verified	claude-blind,claude-review	
+h3w171	盘子	pán zi	plate	hsk3	verified	claude-blind,claude-review	
+h3w172	胖	pàng	fat; plump	hsk3	verified	claude-blind,claude-review	
+h3w173	皮鞋	pí xié	leather shoes	hsk3	verified	claude-blind,claude-review	
+h3w174	啤酒	pí jiǔ	beer	hsk3	verified	claude-blind,claude-review	
+h3w175	瓶子	píng zi	bottle	hsk3	verified	claude-blind,claude-review	
+h3w176	其实	qí shí	in fact	hsk3	verified	claude-blind,claude-review	
+h3w177	其他	qí tā	other	hsk3	verified	claude-blind,claude-review	
+h3w178	起飞	qǐ fēi	to take off	hsk3	verified	claude-blind,claude-review	
+h3w179	清楚	qīng chǔ	clear	hsk3	verified	claude-blind,claude-review	
+h3w180	请假	qǐng jià	to ask for leave	hsk3	verified	claude-blind,claude-review	
+h3w181	秋	qiū	autumn	hsk3	verified	claude-blind,claude-review	
+h3w182	裙子	qún zi	skirt	hsk3	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w183	然后	rán hòu	then; afterwards	hsk3	verified	claude-blind,claude-review	
+h3w184	热情	rè qíng	warm; enthusiastic	hsk3	verified	claude-blind,claude-review	
+h3w185	认为	rèn wéi	to think; to consider	hsk3	verified	claude-blind,claude-review	
+h3w186	认真	rèn zhēn	serious; conscientious	hsk3	verified	claude-blind,claude-review	
+h3w187	容易	róng yì	easy	hsk3	verified	claude-blind,claude-review	
+h3w188	如果	rú guǒ	if	hsk3	verified	claude-blind,claude-review	
+h3w189	伞	sǎn	umbrella	hsk3	verified	claude-blind,claude-review	
+h3w190	上网	shàng wǎng	to go online	hsk3	verified	claude-blind,claude-review	
+h3w191	生气	shēng qì	to be angry	hsk3	verified	claude-blind,claude-review	
+h3w192	声音	shēng yīn	sound; voice	hsk3	verified	claude-blind,claude-review	
+h3w193	世界	shì jiè	world	hsk3	verified	claude-blind,claude-review	
+h3w194	试	shì	to try	hsk3	verified	claude-blind,claude-review	
+h3w195	瘦	shòu	thin	hsk3	verified	claude-blind,claude-review	
+h3w196	叔叔	shū shu	uncle	hsk3	verified	claude-blind,claude-review	
+h3w197	舒服	shū fu	comfortable	hsk3	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w198	树	shù	tree	hsk3	verified	claude-blind,claude-review	
+h3w199	数学	shù xué	maths	hsk3	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w200	刷牙	shuā yá	to brush one's teeth	hsk3	verified	claude-blind,claude-review	
+h3w201	双	shuāng	pair	hsk3	verified	claude-blind,claude-review	
+h3w202	水平	shuǐ píng	level; standard	hsk3	verified	claude-blind,claude-review	
+h3w203	司机	sī jī	driver	hsk3	verified	claude-blind,claude-review	
+h3w204	太阳	tài yáng	sun	hsk3	verified	claude-blind,claude-review	
+h3w205	特别	tè bié	special; especially	hsk3	verified	claude-blind,claude-review	
+h3w206	疼	téng	to hurt; painful	hsk3	verified	claude-blind,claude-review	
+h3w207	提高	tí gāo	to improve	hsk3	verified	claude-blind,claude-review	
+h3w208	体育	tǐ yù	sports; physical education	hsk3	verified	claude-blind,claude-review	
+h3w209	甜	tián	sweet	hsk3	verified	claude-blind,claude-review	
+h3w210	条	tiáo	(measure word for long things)	hsk3	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w211	同事	tóng shì	colleague	hsk3	verified	claude-blind,claude-review	
+h3w212	同意	tóng yì	to agree	hsk3	verified	claude-blind,claude-review	
+h3w213	头发	tóu fa	hair	hsk3	verified	claude-blind,claude-review	
+h3w214	突然	tū rán	suddenly	hsk3	verified	claude-blind,claude-review	
+h3w215	图书馆	tú shū guǎn	library	hsk3	verified	claude-blind,claude-review	
+h3w216	腿	tuǐ	leg	hsk3	verified	claude-blind,claude-review	
+h3w217	完成	wán chéng	to complete	hsk3	verified	claude-blind,claude-review	
+h3w218	碗	wǎn	bowl	hsk3	verified	claude-blind,claude-review	
+h3w219	万	wàn	ten thousand	hsk3	verified	claude-blind,claude-review	
+h3w220	忘记	wàng jì	to forget	hsk3	verified	claude-blind,claude-review	
+h3w221	为	wèi	for; to	hsk3	verified	claude-blind,claude-review	
+h3w222	为了	wèi le	in order to	hsk3	verified	claude-blind,claude-review	
+h3w223	位	wèi	(polite measure word for people)	hsk3	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w224	文化	wén huà	culture	hsk3	verified	claude-blind,claude-review	
+h3w225	西	xī	west	hsk3	verified	claude-blind,claude-review	
+h3w226	习惯	xí guàn	habit; to be used to	hsk3	verified	claude-blind,claude-review	
+h3w227	洗手间	xǐ shǒu jiān	restroom	hsk3	verified	claude-blind,claude-review	
+h3w228	洗澡	xǐ zǎo	to take a bath or shower	hsk3	verified	claude-blind,claude-review	
+h3w229	夏	xià	summer	hsk3	verified	claude-blind,claude-review	
+h3w230	先	xiān	first	hsk3	verified	claude-blind,claude-review	
+h3w231	相信	xiāng xìn	to believe	hsk3	verified	claude-blind,claude-review	
+h3w232	香蕉	xiāng jiāo	banana	hsk3	verified	claude-blind,claude-review	
+h3w233	向	xiàng	towards	hsk3	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w234	像	xiàng	to resemble; like	hsk3	verified	claude-blind,claude-review	
+h3w235	小心	xiǎo xīn	careful	hsk3	verified	claude-blind,claude-review	
+h3w236	校长	xiào zhǎng	principal	hsk3	verified	claude-blind,claude-review	
+h3w237	新闻	xīn wén	news	hsk3	verified	claude-blind,claude-review	
+h3w238	新鲜	xīn xiān	fresh	hsk3	verified	claude-blind,claude-review	
+h3w239	信	xìn	letter	hsk3	verified	claude-blind,claude-review	
+h3w240	信用卡	xìn yòng kǎ	credit card	hsk3	rejected	claude-review	信用卡 is HSK 4, not HSK 3
+h3w241	行李箱	xíng li xiāng	suitcase	hsk3	verified	claude-blind,claude-review	
+h3w242	熊猫	xióng māo	panda	hsk3	verified	claude-blind,claude-review	
+h3w243	需要	xū yào	to need	hsk3	verified	claude-blind,claude-review	
+h3w244	选择	xuǎn zé	to choose	hsk3	verified	claude-blind,claude-review	
+h3w245	要求	yāo qiú	to demand; requirement	hsk3	verified	claude-blind,claude-review	
+h3w246	爷爷	yé ye	grandfather (father's father)	hsk3	verified	claude-blind,claude-review	
+h3w247	一定	yí dìng	certainly	hsk3	verified	claude-blind,claude-review	
+h3w248	一共	yí gòng	altogether	hsk3	verified	claude-blind,claude-review	
+h3w249	一会儿	yí huìr	a moment	hsk3	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w250	一样	yí yàng	the same	hsk3	verified	claude-blind,claude-review	
+h3w251	一直	yì zhí	always; all along	hsk3	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w252	以前	yǐ qián	before; previously	hsk3	verified	claude-blind,claude-review	
+h3w253	一般	yì bān	generally	hsk3	verified	claude-blind,claude-review	
+h3w254	音乐	yīn yuè	music	hsk3	verified	claude-blind,claude-review	
+h3w255	银行	yín háng	bank	hsk3	verified	claude-blind,claude-review	
+h3w256	饮料	yǐn liào	drink; beverage	hsk3	verified	claude-blind,claude-review	
+h3w257	应该	yīng gāi	should	hsk3	verified	claude-blind,claude-review	
+h3w258	影响	yǐng xiǎng	to influence; influence	hsk3	verified	claude-blind,claude-review	
+h3w259	用	yòng	to use	hsk3	verified	claude-blind,claude-review	
+h3w260	游戏	yóu xì	game	hsk3	verified	claude-blind,claude-review	
+h3w261	有名	yǒu míng	famous	hsk3	verified	claude-blind,claude-review	
+h3w262	又	yòu	again	hsk3	verified	claude-blind,claude-review	
+h3w263	遇到	yù dào	to meet; to run into	hsk3	verified	claude-blind,claude-review	
+h3w264	愿意	yuàn yì	to be willing	hsk3	verified	claude-blind,claude-review	
+h3w265	月亮	yuè liang	moon	hsk3	verified	claude-blind,claude-review,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w266	越	yuè	the more…	hsk3	verified	claude-blind,claude-review	
+h3w267	站	zhàn	station; to stand	hsk3	verified	claude-blind,claude-review	
+h3w268	张	zhāng	(measure word for flat things)	hsk3	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w269	着急	zháo jí	anxious	hsk3	verified	claude-blind,claude-review	
+h3w270	照顾	zhào gù	to take care of	hsk3	verified	claude-blind,claude-review	
+h3w271	照片	zhào piàn	photo	hsk3	verified	claude-blind,claude-review	
+h3w272	照相机	zhào xiàng jī	camera	hsk3	verified	claude-blind,claude-review	
+h3w273	只	zhī	(measure word for animals)	hsk3	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w274	只有	zhǐ yǒu	only; only if	hsk3	verified	claude-blind,claude-review	
+h3w275	中间	zhōng jiān	middle	hsk3	verified	claude-blind,claude-review	
+h3w276	中文	zhōng wén	the Chinese language	hsk3	verified	claude-blind,claude-review	
+h3w277	终于	zhōng yú	finally	hsk3	verified	claude-blind,claude-review	
+h3w278	种	zhǒng	kind; type	hsk3	verified	claude-blind,claude-review	
+h3w279	重	zhòng	heavy	hsk3	verified	claude-blind,claude-review	
+h3w280	重要	zhòng yào	important	hsk3	verified	claude-blind,claude-review	
+h3w281	周末	zhōu mò	weekend	hsk3	verified	claude-blind,claude-review	
+h3w282	主要	zhǔ yào	main	hsk3	verified	claude-blind,claude-review	
+h3w283	注意	zhù yì	to pay attention to	hsk3	verified	claude-blind,claude-review	
+h3w284	自己	zì jǐ	oneself	hsk3	verified	claude-blind,claude-review	
+h3w285	自行车	zì xíng chē	bicycle	hsk3	verified	claude-blind,claude-review	
+h3w286	总是	zǒng shì	always	hsk3	verified	claude-blind,claude-review	
+h3w287	最后	zuì hòu	finally; last	hsk3	verified	claude-blind,claude-review	
+h3w288	最近	zuì jìn	recently	hsk3	verified	claude-blind,claude-review	
+h3w289	作业	zuò yè	homework	hsk3	verified	claude-blind,claude-review	
+h3w290	遍	biàn	(measure word for times)	hsk3	verified	claude-review,claude-blind,claude-adjudicated	settled by claude-blind,claude-review,claude-adjudicated: blind reading means the same; where the reviewer fixed the reading, it is now a verified word-level override
+h3w291	对面	duì miàn	opposite	hsk3	verified	claude-blind,claude-review	
+h3w292	礼物	lǐ wù	gift	hsk3	verified	claude-blind,claude-review	
+h3w293	历史	lì shǐ	history	hsk3	verified	claude-blind,claude-review	
+h3w294	附近	fù jìn	nearby	hsk3	verified	claude-blind,claude-review	
+h3w295	骑	qí	to ride (a bike or horse)	hsk3	verified	claude-blind,claude-review	
+h3w296	果汁	guǒ zhī	fruit juice	hsk3	verified	claude-blind,claude-review	
+h3w297	一边	yì biān	at the same time; on one side	hsk3	verified	claude-blind,claude-review	
+h3w298	嘴	zuǐ	mouth	hsk3	verified	claude-blind,claude-review	
+h3w299	起来	qǐ lái	(direction: up); to begin to	hsk3	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same (to get up / direction complement)
+h3w300	难	nán	difficult	hsk3	verified	claude-blind,claude-review	
+h3w301	奇怪	qí guài	strange	hsk3	rejected	claude-review	HSK 4 word not HSK 3

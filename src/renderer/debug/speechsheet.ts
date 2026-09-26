@@ -39,7 +39,7 @@ export function sheetTongue(params: URLSearchParams): void {
     l2: (params.get('l2') ?? 'zh') as LanguageId,
     l1: (params.get('l1') ?? 'en') as LanguageId,
     l1Also: (params.get('also') as LanguageId | null) ?? null,
-    level: 'hsk2',
+    level: 'hsk3',
   })
   ENTRIES = LEVELS.flatMap(l => l.phrases.entries).filter(e => e.in[lessonLang()])
 }

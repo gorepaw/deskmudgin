@@ -1,0 +1,61 @@
+id	verdict	fix_script	fix_reading	fix_english	note
+h3p181	ok				
+h3p182	ok				
+h3p183	fix	我们的房子已经很旧了。			老 for houses is unnatural; use 旧
+h3p184	ok				
+h3p185	ok				
+h3p186	ok				
+h3p187	ok				
+h3p188	ok				
+h3p189	ok				
+h3p190	drop				Odd scenario; liking clean hands is not natural
+h3p191	ok				
+h3p192	ok				
+h3p193	fix			Good morning! Any good shows on today?	节目 means TV show, not fun
+h3p194	ok				
+h3p195	fix	我要走了，明天见！			明天再见面 stiff
+h3p196	ok				
+h3p197	ok				
+h3p198	ok				
+h3p199	ok				
+h3p200	drop				Awkward: eating something because it is old
+h3p201	ok				
+h3p202	fix	谢谢你关心我，我好高兴。		Thanks for caring about me. I am so happy.	很关心我 sounds translated
+h3p203	ok				
+h3p204	ok				
+h3p205	ok				
+h3p206	ok				
+h3p207	ok				
+h3p208	fix	我画了你，你看像不像？		I drew you. Does it look like you?	一个你 unnatural
+h3p209	ok				
+h3p210	fix	你是晚上回来，还是明天早上回来？		Are you coming back tonight or tomorrow morning?	word order awkward
+h3p211	fix		nǎ ge		哪个 is nǎ ge (neutral)
+h3p212	ok				
+h3p213	fix	我不想让今天结束，再玩一会儿吧。			结束今天 is a calque
+h3p214	ok				
+h3p215	fix	你的声音真好听，再讲一个故事吧。		Your voice is lovely. Tell me another story.	讲一个 needs 故事
+h3p216	fix	我几乎什么都记得，就是忘了你的生日。		I remember almost everything, except I forgot your birthday.	几乎 with 除了 redundant
+h3p217	drop				Unnatural question
+h3p218	ok				
+h3p219	ok				
+h3p220	fix	我们一起检查一下冰箱吧。		Let us check the fridge together.	检查 does not take a what-clause naturally
+h3p221	ok				
+h3p222	ok				
+h3p223	ok				
+h3p224	drop				Unnatural question
+h3p225	drop				Awkward: user has a blackboard
+h3p226	ok				
+h3p227	fix	你们国家有什么节日？			你的国家 is a calque
+h3p228	ok				
+h3p229	ok				
+h3p230	ok				
+h3p231	ok				
+h3p232	fix			You are busy every day. I care about you.	关心 is care, not worry
+h3p233	ok				
+h3p234	ok				
+h3p235	ok				
+h3p236	ok				
+h3p237	ok				
+h3p238	ok				
+h3p239	ok				
+h3p240	ok				

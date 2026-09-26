@@ -1,0 +1,61 @@
+id	verdict	fix_script	fix_reading	fix_english	note
+h3p241	fix	另外，我还想吃一片面包。		Also, I would like a slice of bread.	面包 measure word 片 more natural than 个
+h3p242	ok				
+h3p243	ok				
+h3p244	ok				
+h3p245	ok				
+h3p246	ok				
+h3p247	ok				
+h3p248	ok				
+h3p249	ok				
+h3p250	ok				
+h3p251	ok				
+h3p252	ok				
+h3p253	ok				
+h3p254	ok				
+h3p255	ok				
+h3p256	ok				
+h3p257	fix	你要走了，我有点儿难过。			你走了 means already left
+h3p258	ok				
+h3p259	ok				
+h3p260	ok				
+h3p261	ok				
+h3p262	ok				
+h3p263	ok				
+h3p264	ok				
+h3p265	ok				
+h3p266	ok				
+h3p267	ok				
+h3p268	ok				
+h3p269	ok				
+h3p270	ok				
+h3p271	ok				
+h3p272	fix			Actually, I really miss you.	很想你 is present tense
+h3p273	ok				
+h3p274	ok				
+h3p275	fix	我没听清楚，你再说一遍吧。		I did not catch that. Say it again.	English did not match; 你说得不清楚 blames the user
+h3p276	ok				
+h3p277	ok				
+h3p278	ok				
+h3p279	ok				
+h3p280	ok				
+h3p281	ok				
+h3p282	ok				
+h3p283	ok				
+h3p284	ok				
+h3p285	drop				Pet speaking about he with no context
+h3p286	ok				
+h3p287	ok				
+h3p288	ok				
+h3p289	ok				
+h3p290	ok				
+h3p291	ok				
+h3p292	ok				
+h3p293	ok				
+h3p294	ok				
+h3p295	ok				
+h3p296	ok				
+h3p297	ok				
+h3p298	ok				
+h3p299	ok				
+h3p300	ok				

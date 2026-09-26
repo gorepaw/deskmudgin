@@ -15,10 +15,13 @@ import { execFileSync } from 'node:child_process'
 const COURSES = [
   ['content/zh/hsk1.words.tsv', 'zh-hsk1-words', 'words'],
   ['content/zh/hsk2.words.tsv', 'zh-hsk2-words', 'words'],
+  ['content/zh/hsk3.words.tsv', 'zh-hsk3-words', 'words'],
   ['content/zh/hsk1.tsv', 'zh-hsk1', 'phrases'],
   ['content/zh/hsk2.tsv', 'zh-hsk2', 'phrases'],
+  ['content/zh/hsk3.tsv', 'zh-hsk3', 'phrases'],
   ['content/zh/hsk1.exchanges.tsv', 'zh-hsk1-exchanges', 'exchanges'],
   ['content/zh/hsk2.exchanges.tsv', 'zh-hsk2-exchanges', 'exchanges'],
+  ['content/zh/hsk3.exchanges.tsv', 'zh-hsk3-exchanges', 'exchanges'],
   ['content/zh/names.tsv', 'zh-names', 'names'],
 ]
 

@@ -25,6 +25,9 @@ import { COURSE as HSK1_TALK } from './generated/zh-hsk1-exchanges'
 import { COURSE as HSK2_WORDS } from './generated/zh-hsk2-words'
 import { COURSE as HSK2 } from './generated/zh-hsk2'
 import { COURSE as HSK2_TALK } from './generated/zh-hsk2-exchanges'
+import { COURSE as HSK3_WORDS } from './generated/zh-hsk3-words'
+import { COURSE as HSK3 } from './generated/zh-hsk3'
+import { COURSE as HSK3_TALK } from './generated/zh-hsk3-exchanges'
 
 export interface Level {
   /** `hsk1` — what the setting stores and the course files are named by. */
@@ -39,6 +42,7 @@ export interface Level {
 export const LEVELS: readonly Level[] = [
   { id: 'hsk1', label: 'HSK 1', words: HSK1_WORDS, phrases: HSK1, exchanges: HSK1_TALK },
   { id: 'hsk2', label: 'HSK 2', words: HSK2_WORDS, phrases: HSK2, exchanges: HSK2_TALK },
+  { id: 'hsk3', label: 'HSK 3', words: HSK3_WORDS, phrases: HSK3, exchanges: HSK3_TALK },
 ]
 
 export const DEFAULT_LEVEL = 'hsk1'

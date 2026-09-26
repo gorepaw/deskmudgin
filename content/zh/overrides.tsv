@@ -108,3 +108,34 @@ o106	想想	xiǎng xiang		from-gemini	verified	claude-review,claude-adjudicated	
 o107	上边	shàng bian		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: HSK 2 reviewers proposed this per sentence; filed once as a word so every sentence using it is corrected (erhua merges; 面/边 locative suffix and verb reduplication neutral, as with 下面/后面/看看)
 o108	有点儿	yǒu diǎnr		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: erhua merges; the deriver treats 有点儿 as one word, so the 点儿 override (o103) never reaches it
 o109	桌子上边	zhuō zi shàng bian		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: 上边 is shàng bian (o107), but the 桌子上 override (o023, locative shang) matches first; this longer entry wins
+o110	地	de		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: trial
+o111	关系	guān xi		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard Putonghua reading (neutral tone / tone of the word); reviewer proposed, Claude confirmed
+o112	过去	guò qù		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: one reading for both senses; the neutral qu is left to speech
+o113	教	jiāo		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: trial
+o114	经过	jīng guò		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard Putonghua reading (neutral tone / tone of the word); reviewer proposed, Claude confirmed
+o115	裤子	kù zi		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard Putonghua reading (neutral tone / tone of the word); reviewer proposed, Claude confirmed
+o116	了解	liǎo jiě		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard Putonghua reading (neutral tone / tone of the word); reviewer proposed, Claude confirmed
+o117	难过	nán guò		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard Putonghua reading (neutral tone / tone of the word); reviewer proposed, Claude confirmed
+o118	裙子	qún zi		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard Putonghua reading (neutral tone / tone of the word); reviewer proposed, Claude confirmed
+o119	舒服	shū fu		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard Putonghua reading (neutral tone / tone of the word); reviewer proposed, Claude confirmed
+o120	一会儿	yí huìr		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard Putonghua reading (neutral tone / tone of the word); reviewer proposed, Claude confirmed
+o121	月亮	yuè liang		from-gemini	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: standard Putonghua reading (neutral tone / tone of the word); reviewer proposed, Claude confirmed
+o122	教室	jiào shì		from-claude	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: classroom: the character keeps its noun reading now that 教 alone is the verb jiāo
+o123	地方	dì fang		from-claude	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: place: 地 alone is now the particle de
+o124	地铁	dì tiě		from-claude	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: subway: 地 alone is now the particle de
+o125	地图	dì tú		from-claude	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: map: 地 alone is now the particle de
+o126	土地	tǔ dì		from-claude	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: land: 地 alone is now the particle de
+o127	我只吃了半个蛋糕。	zhǐ		from-gemini	rejected		rejected by claude-adjudicated: filed as a whole sentence; refiled as a word
+o128	我打算去公园玩儿。	wánr		from-gemini	rejected		rejected by claude-adjudicated: filed as a whole sentence; refiled as a word
+o129	我的爱好是看地上的草。	dì shang		from-gemini	rejected		rejected by claude-adjudicated: filed as a whole sentence; refiled as a word
+o130	过去我住在水里。	guò qù		from-gemini	rejected		rejected by claude-adjudicated: filed as a whole sentence; refiled as a word
+o131	你决定去哪个公园了吗？	nǎ ge		from-gemini	rejected		rejected by claude-adjudicated: filed as a whole sentence; refiled as a word
+o132	过马路要注意车。	guò		from-gemini	rejected		rejected by claude-adjudicated: filed as a whole sentence; refiled as a word
+o133	小心，别把我放在地上。	dì shang		from-gemini	rejected		rejected by claude-adjudicated: filed as a whole sentence; refiled as a word
+o134	只吃	zhǐ chī		from-claude	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: only eating (reviewers proposed it per sentence; filed once as a word)
+o135	只想	zhǐ xiǎng		from-claude	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: only want (reviewers proposed it per sentence; filed once as a word)
+o136	玩儿	wánr		from-claude	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: erhua: wánr (reviewers proposed it per sentence; filed once as a word)
+o137	地上	dì shang		from-claude	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: on the ground (reviewers proposed it per sentence; filed once as a word)
+o138	地下	dì xia		from-claude	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: underground/below (reviewers proposed it per sentence; filed once as a word)
+o139	哪个	nǎ ge		from-claude	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: which: neutral second syllable (reviewers proposed it per sentence; filed once as a word)
+o140	过马路	guò mǎ lù		from-claude	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: to cross the road (reviewers proposed it per sentence; filed once as a word)

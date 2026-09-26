@@ -1,0 +1,61 @@
+id	verdict	fix_script	fix_reading	fix_english	note
+h3p361	ok				
+h3p362	ok				
+h3p363	ok				
+h3p364	ok				
+h3p365	fix	我像一条小小的鱼。			measure word for fish is 条
+h3p366	ok				
+h3p367	ok				
+h3p368	ok				
+h3p369	ok				
+h3p370	ok				
+h3p371	ok				
+h3p372	ok				
+h3p373	ok				
+h3p374	ok				
+h3p375	ok				
+h3p376	fix	我爷爷也喜欢这首歌。			song measure word is 首
+h3p377	ok				
+h3p378	ok				
+h3p379	ok				
+h3p380	ok				
+h3p381	ok				
+h3p382	ok				
+h3p383	ok				
+h3p384	ok				
+h3p385	ok				
+h3p386	fix	我想喝一杯冷的饮料。			冷饮料 is unnatural
+h3p387	ok				
+h3p388	ok				
+h3p389	ok				
+h3p390	ok				
+h3p391	ok				
+h3p392	fix	你来了，太好了！		You're here, great!	又来了 sounds annoyed
+h3p393	ok				
+h3p394	ok				
+h3p395	ok				
+h3p396	ok				
+h3p397	ok				
+h3p398	ok				
+h3p399	ok				
+h3p400	ok				
+h3p401	ok				
+h3p402	fix	我想用照相机给你照张相。		I want to take your picture with the camera.	original unnatural and meaning off
+h3p403	ok				
+h3p404	ok				
+h3p405	ok				
+h3p406	ok				
+h3p407	ok				
+h3p408	ok				
+h3p409	ok				
+h3p410	ok				
+h3p411	ok				
+h3p412	ok				
+h3p413	fix		guò		reading: 过 is guò not neutral
+h3p414	ok				
+h3p415	ok				
+h3p416	ok				
+h3p417	ok				
+h3p418	ok				
+h3p419	ok				
+h3p420	ok				

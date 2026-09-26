@@ -5,7 +5,7 @@
 // send it back through the loop — editing this file skips the verification
 // that is the entire point of it existing.
 //
-// 118 of 119 rows verified (118 by Claude alone, awaiting a human pass), with 92 pinyin override(s) applied.
+// 118 of 119 rows verified (118 by Claude alone, awaiting a human pass), with 116 pinyin override(s) applied.
 
 import type { Course } from '../types'
 
