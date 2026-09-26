@@ -14,9 +14,7 @@ import type { Painter } from '../engine/painter'
 import { speciesOf } from '../species'
 import { defaultPose } from '../art/pose'
 import { Panel, PAD, UI } from './panel'
-import { nameGloss, shownName } from '../../shared/names'
-import { LANGUAGES } from '../../shared/lang'
-import { currentGloss, currentLanguage } from '../pet/lines'
+import { inLang, petName, petNameMeaning } from './tongue'
 
 /** How long the release button stays armed before it disarms itself. */
 const CONFIRM_T = 4
@@ -53,17 +51,18 @@ export class PetCardPanel extends Panel {
     // A stranger has a name — it has had one since it was rolled — but you do
     // not get to know it until you take it in. That is most of the reason
     // adoption feels like anything.
-    const zh = !p.wild && currentLanguage() === 'zh' ? p.zh : undefined
-    const title = p.wild ? 'a stranger' : shownName(p, currentLanguage())
-    const font = zh ? LANGUAGES.zh.font : undefined
-    g.text(this.fit(g, title, 15, this.w - 90), PAD, 14,
-      { size: 15, color: p.wild ? UI.highlight : UI.accent, align: 'left', font })
-    // A Chinese name is a small lesson of its own: how to say it, and what it
+    const name = p.wild ? { text: 'a stranger', lang: 'en' as const } : petName(p)
+    const t = inLang(name.lang, 15)
+    const title = this.fit(g, name.text, t.size, this.w - 90, t.font)
+    g.text(title, PAD, 14, { ...t, color: p.wild ? UI.highlight : UI.accent, align: 'left' })
+    // A course name is a small lesson of its own: how to say it, and what it
     // means, beside it in the header.
-    if (zh) {
-      const after = PAD + g.measure(title, 15, font) + 10
-      g.text(this.fit(g, `${zh.reading} · ${nameGloss(zh, currentGloss())}`, 10, this.w - after - 40), after, 15,
-        { size: 10, color: UI.dim, align: 'left', font: '"Segoe UI", sans-serif' })
+    const meaning = p.wild ? '' : petNameMeaning(p)
+    if (meaning) {
+      const after = PAD + g.measure(title, t.size, t.font) + 10
+      const said = [('reading' in name ? name.reading : ''), meaning].filter(Boolean).join(' · ')
+      g.text(this.fit(g, said, 10, this.w - after - 40, '"Segoe UI", sans-serif'), after, 15,
+        { size: 10, color: UI.dim, align: 'left', font: '"Segoe UI", "Microsoft YaHei", sans-serif' })
     }
 
     let y = top

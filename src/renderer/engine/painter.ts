@@ -165,10 +165,15 @@ export class Painter {
   // ── Text ───────────────────────────────────────────────────────────────────
   text(
     str: string, x: number, y: number,
-    o: { size?: number; color?: number; alpha?: number; align?: CanvasTextAlign; font?: string } = {},
+    o: { size?: number; color?: number; alpha?: number; align?: CanvasTextAlign; font?: string; dir?: CanvasDirection } = {},
   ): this {
     const { ctx } = this
     ctx.font = `${o.size ?? 12}px ${o.font ?? defaultFont}`
+    // Arabic is laid out right to left. Its letters would be ordered correctly
+    // either way — the bidi algorithm does that — but the punctuation at either
+    // end would land on the wrong side: مرحبا! drawn left to right puts the
+    // exclamation mark before the word.
+    ctx.direction = o.dir ?? 'ltr'
     ctx.textAlign = o.align ?? 'center'
     ctx.textBaseline = 'middle'
     ctx.globalAlpha = o.alpha ?? 1

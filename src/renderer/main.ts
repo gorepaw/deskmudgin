@@ -22,8 +22,8 @@ import { Colony } from './pet/colony'
 import type { Creature } from './pet/creature'
 import { Fx } from './art/fx'
 import { sfx, setVolume } from './audio/sfx'
-import { say, setGloss, setLanguage, setLevel } from './pet/lines'
-import type { GlossMode } from '../shared/lang/types'
+import { lessonLang, say, setTongue } from './pet/lines'
+import { lessonOf, type LanguageId } from '../shared/lang'
 import { DictionaryPanel, type Tab } from './ui/dictionary'
 import { setOnShown, setSpeechScale } from './ui/speech'
 import type { HeardLine } from '../shared/ledger'
@@ -68,9 +68,7 @@ async function boot(): Promise<void> {
   // Before the first frame: every panel reads the live theme at draw time, so
   // this only has to happen once here and again on every settings change.
   applyTheme(cfg.theme)
-  setLanguage(cfg.language)
-  setLevel(cfg.level)
-  setGloss(cfg.gloss)
+  setTongue(cfg)
   setSpeechScale(cfg.speechScale, cfg.talkScale)
   // Before anything constructs a behaviour: the scale is read at the moment a
   // wait is rolled, and the first rolls happen on the first tick.
@@ -435,9 +433,7 @@ async function boot(): Promise<void> {
     cfg = s
     setVolume(cfg.volume)
     colony.setScale(cfg.scale)
-    setLanguage(cfg.language)
-    setLevel(cfg.level)
-    setGloss(cfg.gloss)
+    setTongue(cfg)
     setSpeechScale(cfg.speechScale, cfg.talkScale)
     if (cfg.theme !== wasTheme) {
       applyTheme(cfg.theme)
@@ -562,11 +558,17 @@ async function boot(): Promise<void> {
   // than one per bubble.
   const filed = new Set((await bridge.invoke('ledger:get'))
     .filter(e => e.category === 'said').map(e => e.key.slice('said:'.length)))
+  // Filed as `<lang>:<id>`, the tail of the ledger key: hearing a line in one
+  // language does not file it in another.
   let heard: HeardLine[] = []
   setOnShown(e => {
-    if (filed.has(e.id)) return
-    filed.add(e.id)
-    heard.push({ id: e.id, script: e.script, reading: e.reading, english: e.english })
+    const lang = lessonLang()
+    const lesson = lessonOf(e, lang)
+    // A line shown in English because it has no translation in the language
+    // being learned was not a lesson, and is not filed as one.
+    if (!lesson || filed.has(`${lang}:${e.id}`)) return
+    filed.add(`${lang}:${e.id}`)
+    heard.push({ id: e.id, lang, text: lesson.text, reading: lesson.reading, english: e.in.en?.text ?? '' })
   })
   setInterval(() => {
     if (!heard.length) return
@@ -597,7 +599,7 @@ async function boot(): Promise<void> {
           + `/${s.kind}${s.icon ? `(${s.icon.name})` : ''}`
           // What they are saying, so the Chinese can be read from the log
           // rather than chased around the desktop.
-          + (said ? ` "${typeof said === 'string' ? said : said.script}"` : '')
+          + (said ? ` "${typeof said === 'string' ? said : lessonOf(said, lessonLang())?.text ?? said.id}"` : '')
       }).join('  ')
       const more = colony.size > shown.length ? ` …and ${colony.size - shown.length} more` : ''
       console.log(`[brain] n=${colony.size} fx=${fx.count} matron=${showMatron ? 'here' : 'no'}`
@@ -691,7 +693,8 @@ async function contactSheet(): Promise<void> {
   const growth = bridge.isContact === 'growth'
   // DESKMUDGIN_CONTACT=speech draws every verified course line as a bubble.
   // DESKMUDGIN_CONTACT=themes draws the same bubbles in every theme.
-  const { SpeechSheet, ThemeSheet } = await import('./debug/speechsheet')
+  const { SpeechSheet, ThemeSheet, sheetTongue } = await import('./debug/speechsheet')
+  sheetTongue(params)
   // DESKMUDGIN_CONTACT=chrome&theme=<id>: real panels and bubbles in one theme.
   const chromeSheet = bridge.isContact === 'chrome' ? await import('./debug/chromesheet') : null
   const page = params.get('page')
@@ -700,7 +703,12 @@ async function contactSheet(): Promise<void> {
     : bridge.isContact === 'themes' ? new ThemeSheet(window.innerWidth, window.innerHeight)
     : bridge.isContact === 'chrome' && chromeSheet
       ? new chromeSheet.ChromeSheet(window.innerWidth, window.innerHeight, params.get('theme') ?? 'pewter',
-        (params.get('gloss') ?? 'en') as GlossMode)
+        {
+          l2: (params.get('l2') ?? 'zh') as LanguageId,
+          l1: (params.get('l1') ?? 'en') as LanguageId,
+          l1Also: (params.get('also') as LanguageId | null) ?? null,
+          tab: params.get('tab') ?? undefined,
+        })
     : new ContactSheet(window.innerWidth, window.innerHeight, seed, growth)
   let sheet = build()
   window.addEventListener('resize', () => { stage.resize(); sheet = build() })

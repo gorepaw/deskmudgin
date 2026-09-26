@@ -21,9 +21,7 @@ import { describe } from '../../shared/describe'
 import type { Painter } from '../engine/painter'
 import { speciesOf } from '../species'
 import { defaultPose } from '../art/pose'
-import { shownName } from '../../shared/names'
-import { LANGUAGES } from '../../shared/lang'
-import { currentLanguage } from '../pet/lines'
+import { inLang, petName } from './tongue'
 import { Panel, PAD, UI } from './panel'
 
 const CARD_W = 168
@@ -85,8 +83,8 @@ export class StarterPanel extends Panel {
     g.restore()
 
     let ty = y + 124
-    g.text(shownName(p, currentLanguage()), x + CARD_W / 2, ty,
-      { size: 13, color: UI.accent, font: currentLanguage() === 'zh' && p.zh ? LANGUAGES.zh.font : undefined })
+    const name = petName(p)
+    g.text(name.text, x + CARD_W / 2, ty, { ...inLang(name.lang, 13), color: UI.accent })
     ty += 15
     g.text(species.label, x + CARD_W / 2, ty, { size: 10, color: UI.highlight })
     ty += 15

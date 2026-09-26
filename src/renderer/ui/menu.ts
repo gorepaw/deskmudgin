@@ -12,12 +12,9 @@ import { Panel, PAD, ROW_H, UI, THEMES, themeById } from './panel'
 import { ManagerPanel } from './manager'
 import { LedgerPanel } from './ledger'
 import { DictionaryPanel } from './dictionary'
-import { ZH_LEVELS, isReady, levelById } from '../../shared/lang/levels'
+import { LEVELS, canLearn, isReady, levelById, levelLabel } from '../../shared/lang/levels'
+import { LANGUAGES, LANGUAGE_IDS, type LanguageId } from '../../shared/lang'
 import { frameOf } from './frames'
-import type { GlossMode } from '../../shared/lang/types'
-
-/** The meaning shown under the Chinese, as Settings offers it. */
-const GLOSSES: readonly [GlossMode, string][] = [['en', 'English'], ['es', 'Español'], ['both', 'Both']]
 
 const BTN_H = 32
 const GAP = 7
@@ -96,7 +93,7 @@ export class SettingsPanel extends Panel {
   private back = 0
 
   // Tall enough for the swatch grid, which gains a row every six themes.
-  constructor() { super(320, 722 + SettingsPanel.swatchBlock()) }
+  constructor() { super(320, 782 + SettingsPanel.swatchBlock()) }
 
   override async mount(): Promise<void> {
     const colony = await this.host.bridge.invoke('colony:get')
@@ -173,30 +170,43 @@ export class SettingsPanel extends Panel {
 
     this.rule(g, y, this.w, 'they speak')
     y += 12
-    const level = levelById(cfg.level)
-    this.option(g, 'lang:zh', PAD, y, w, '中文 — Chinese, with pinyin', cfg.language === 'zh',
-      { note: level.label })
+    const course = cfg.voice === 'course'
+    const level = levelById(cfg.level, cfg.l2)
+    this.option(g, 'voice:course', PAD, y, w, 'A language to learn', course,
+      { note: `${LANGUAGES[cfg.l2].label} · ${levelLabel(level, cfg.l2)}` })
     y += ROW_H
-    // The level, as a row of buttons under the Chinese option it belongs to.
-    // A level whose sentences are not verified yet is shown but not offered:
-    // choosing it would only fall back to the one below.
-    g.text('level', PAD + 26, y + 11, { size: 10, color: UI.dim, align: 'left' })
-    const bw = 58
-    ZH_LEVELS.forEach((l, i) => {
-      const ready = isReady(l)
-      this.button(g, `level:${l.id}`, PAD + 70 + i * (bw + 6), y, bw, 22, l.label,
-        { primary: l === level, disabled: !ready || cfg.language !== 'zh', size: 11 })
-    })
-    y += 30
-    // What the Chinese is glossed in. Spanish not verified yet shows as
-    // English, so every choice here is safe whatever state the content is in.
-    g.text('meaning', PAD + 26, y + 11, { size: 10, color: UI.dim, align: 'left' })
-    GLOSSES.forEach(([id, label], i) => {
-      this.button(g, `gloss:${id}`, PAD + 70 + i * (64 + 6), y, 64, 22, label,
-        { primary: cfg.gloss === id, disabled: cfg.language !== 'zh', size: 11 })
-    })
-    y += 30
-    this.option(g, 'lang:en', PAD, y, w, 'Grunts, in English', cfg.language === 'en')
+    // Four rows of buttons under the option they belong to. Every language
+    // can be learned or be the meaning: pick as the lesson the language you
+    // read the meaning in and the two swap, which is what that almost always
+    // means. A language with nothing verified in it yet is shown but cannot
+    // be learned; as a meaning it falls back to English line by line, so it
+    // is always safe to choose.
+    const bw = (w - 70 - 6 * (LANGUAGE_IDS.length - 1)) / LANGUAGE_IDS.length
+    const row = (label: string, draw: (x: (i: number) => number) => void): void => {
+      g.text(label, PAD + 26, y + 11, { size: 10, color: UI.dim, align: 'left' })
+      draw(i => PAD + 70 + i * (bw + 6))
+      y += 30
+    }
+    row('learn', x => LANGUAGE_IDS.forEach((id, i) => {
+      this.button(g, `l2:${id}`, x(i), y, bw, 22, LANGUAGES[id].label,
+        { primary: cfg.l2 === id, disabled: !course || !canLearn(id), size: 11 })
+    }))
+    // A level whose sentences are not verified in this language yet is shown
+    // but not offered: choosing it would only fall back to the one below.
+    row('level', x => LEVELS.forEach((l, i) => {
+      this.button(g, `level:${l.id}`, x(i), y, bw, 22, levelLabel(l, cfg.l2),
+        { primary: l === level, disabled: !course || !isReady(l, cfg.l2), size: 11 })
+    }))
+    row('meaning', x => LANGUAGE_IDS.forEach((id, i) => {
+      this.button(g, `l1:${id}`, x(i), y, bw, 22, LANGUAGES[id].label,
+        { primary: cfg.l1 === id, disabled: !course, size: 11 })
+    }))
+    // A second meaning line, in a third language — tap it again to drop it.
+    row('also', x => LANGUAGE_IDS.forEach((id, i) => {
+      this.button(g, `also:${id}`, x(i), y, bw, 22, LANGUAGES[id].label,
+        { primary: cfg.l1Also === id, disabled: !course || id === cfg.l1 || id === cfg.l2, size: 11 })
+    }))
+    this.option(g, 'voice:grunts', PAD, y, w, 'Grunts, in English', !course)
     y += ROW_H + 8
     const speech = this.drafts.get('speech') ?? cfg.speechScale
     const talk = this.drafts.get('talk') ?? cfg.talkScale
@@ -325,8 +335,8 @@ export class SettingsPanel extends Panel {
         void b.invoke('settings:patch', { matronPos: null })
         this.flash('back to her corner')
         break
-      case 'lang:zh': void b.invoke('settings:patch', { language: 'zh' }); break
-      case 'lang:en': void b.invoke('settings:patch', { language: 'en' }); break
+      case 'voice:course': void b.invoke('settings:patch', { voice: 'course' }); break
+      case 'voice:grunts': void b.invoke('settings:patch', { voice: 'grunts' }); break
       case 'mode:single':
         void b.invoke('settings:patch', {
           stageMode: this.host.settings().stageMode === 'single' ? 'dual' : 'single',
@@ -342,9 +352,17 @@ export class SettingsPanel extends Panel {
       default:
         if (id?.startsWith('theme:')) void b.invoke('settings:patch', { theme: id.slice(6) })
         else if (id?.startsWith('level:')) void b.invoke('settings:patch', { level: id.slice(6) })
-        else if (id?.startsWith('gloss:')) void b.invoke('settings:patch', { gloss: id.slice(6) as GlossMode })
-        else if (id?.startsWith('disabled:level:') || id?.startsWith('disabled:gloss:')) {
-          this.flash(this.host.settings().language === 'zh' ? 'not verified yet' : 'for the Chinese setting')
+        else if (id?.startsWith('l2:')) void b.invoke('settings:patch', { l2: id.slice(3) as LanguageId })
+        else if (id?.startsWith('l1:')) void b.invoke('settings:patch', { l1: id.slice(3) as LanguageId })
+        else if (id?.startsWith('also:')) {
+          const lang = id.slice(5) as LanguageId
+          void b.invoke('settings:patch', { l1Also: this.host.settings().l1Also === lang ? null : lang })
+        } else if (id?.startsWith('disabled:')) {
+          const s = this.host.settings()
+          const what = id.slice('disabled:'.length)
+          if (s.voice !== 'course') this.flash('for when they speak a language')
+          else if (what.startsWith('also:')) this.flash('already shown')
+          else if (what.startsWith('l2:') || what.startsWith('level:')) this.flash('not verified yet')
         }
     }
   }

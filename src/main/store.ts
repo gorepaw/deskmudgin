@@ -10,7 +10,7 @@ import { app } from 'electron'
 import { readFileSync, writeFileSync, renameSync, mkdirSync } from 'node:fs'
 import { join } from 'node:path'
 import {
-  DEFAULT_SAVE, DEFAULT_SETTINGS, legacyGenes,
+  DEFAULT_SAVE, DEFAULT_SETTINGS, legacyGenes, tongues,
   type ColonySave, type PetSave, type Settings,
 } from '../shared/types'
 import { EMPTY_LEDGER, type LedgerEntry, type LedgerSave } from '../shared/ledger'
@@ -51,7 +51,8 @@ function writeJson(file: string, value: unknown): void {
   }
 }
 
-export const loadSettings = (): Settings => readJson('settings.json', DEFAULT_SETTINGS)
+/** Through `tongues`, so a save from before L1 and L2 comes back in terms of them. */
+export const loadSettings = (): Settings => tongues(readJson('settings.json', DEFAULT_SETTINGS))
 export const saveSettings = (s: Settings): void => writeJson('settings.json', s)
 
 /** Fill in anything a hand-edited or older save is missing. */

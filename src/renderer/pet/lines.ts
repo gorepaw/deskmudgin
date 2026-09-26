@@ -1,18 +1,20 @@
 // =============================================================================
 // What he says.
 //
-// Two voices. In English he is what he always was: "few thoughts" is canon
+// Two voices. Grunting, he is what he always was: "few thoughts" is canon
 // (Data/races.json), so the grunts are a creature with two ideas rather than a
-// mascot with a joke book. In Chinese he says real sentences from the verified
-// course at the level you chose — simple, a little childlike, and the same few
-// ideas: hungry, sleepy, pleased to see you. Nothing in this file writes Chinese. It only
+// mascot with a joke book. Speaking a course language, he says real sentences
+// from the verified course at the level you chose — simple, a little childlike,
+// and the same few ideas: hungry, sleepy, pleased to see you — in whichever
+// language you are learning. Nothing in this file writes a sentence. It only
 // chooses from what the course already contains, and the course only contains
 // what passed verification (tools/lang-build.mjs).
 // =============================================================================
 
 import type { Rng } from '../engine/math'
-import type { Entry, GlossMode, LanguageId, Utterance } from '../../shared/lang/types'
-import { DEFAULT_LEVEL, ZH_LEVELS, upTo } from '../../shared/lang/levels'
+import type { Entry, LanguageId, Utterance } from '../../shared/lang/types'
+import { DEFAULT_LEVEL, LEVELS, canLearn, upTo } from '../../shared/lang/levels'
+import type { Settings } from '../../shared/types'
 
 export const LINES = {
   idle: ['...', 'hrm.', 'mrp', '*blink*', 'hup', 'is fine'],
@@ -36,7 +38,7 @@ export type LineKind = keyof typeof LINES
  *
  * Idle reaches for `random` — the "they don't always have to act like pets"
  * half of the brief — so most of what you hear while nothing is happening is
- * the whole breadth of HSK 1 rather than the same five complaints. The rest are
+ * the whole breadth of the course rather than the same five complaints. The rest are
  * the moment itself first, with a neighbouring mood where it fits.
  */
 const TAGS: Record<LineKind, readonly string[]> = {
@@ -54,18 +56,29 @@ const TAGS: Record<LineKind, readonly string[]> = {
   summon: ['greet'],
 }
 
-let language: LanguageId = 'zh'
+let grunting = false
+let l2: LanguageId = 'zh'
+let l1: LanguageId[] = ['en']
+let level = DEFAULT_LEVEL
 
-/** Set from settings at boot and on every change. Global, like the theme and
- *  the default font: every creature speaks the same language. */
-export const setLanguage = (id: LanguageId): void => { language = id }
-export const currentLanguage = (): LanguageId => language
+/**
+ * Set from settings at boot and on every change. Global, like the theme and
+ * the default font: every creature speaks the same language, and everything
+ * that shows a line reads these at draw time.
+ */
+export function setTongue(s: Pick<Settings, 'voice' | 'l2' | 'l1' | 'l1Also' | 'level'>): void {
+  grunting = s.voice === 'grunts'
+  l1 = s.l1Also ? [s.l1, s.l1Also] : [s.l1]
+  if (s.l2 !== l2 || s.level !== level) { l2 = s.l2; level = s.level; rebuild() }
+}
 
-let gloss: GlossMode = 'en'
-/** Which meaning shows under the Chinese. Global like the language, and read
- *  at draw time by everything that shows a line. */
-export const setGloss = (m: GlossMode): void => { gloss = m }
-export const currentGloss = (): GlossMode => gloss
+/** The language being learned. */
+export const lessonLang = (): LanguageId => l2
+/** The languages its meaning is shown in, first first. */
+export const meaningLangs = (): readonly LanguageId[] => l1
+/** Whether they are speaking the course at all: not grunting, and something
+ *  in the language being learned has been verified. */
+export const speaking = (): boolean => !grunting && canLearn(l2)
 
 /**
  * How often a creature reaches for the chosen level rather than one below it.
@@ -94,17 +107,20 @@ function byTag(entries: readonly Entry[]): Map<string, Entry[]> {
   return m
 }
 
-/** Set from settings at boot and on every change. Global, like the language. */
-export function setLevel(id: string): void {
-  const levels = upTo(id)
+/** Only what can be said in the language being learned: a line whose Arabic
+ *  is not verified yet is not in an Arabic learner's pool at all. */
+const inLesson = (entries: readonly Entry[]): Entry[] => entries.filter(e => e.in[l2])
+
+function rebuild(): void {
+  const levels = upTo(level, l2)
   const top = levels[levels.length - 1]
   const below = levels.slice(0, -1)
-  focus = byTag(top.phrases.entries)
-  review = byTag(below.flatMap(l => l.phrases.entries))
-  talkFocus = top.exchanges.entries
-  talkReview = below.flatMap(l => l.exchanges.entries)
+  focus = byTag(inLesson(top.phrases.entries))
+  review = byTag(inLesson(below.flatMap(l => l.phrases.entries)))
+  talkFocus = inLesson(top.exchanges.entries)
+  talkReview = inLesson(below.flatMap(l => l.exchanges.entries))
 }
-setLevel(DEFAULT_LEVEL)
+rebuild()
 
 /** From the chosen level most of the time, from below it otherwise, and from
  *  whichever has anything when only one does. Null when neither has. */
@@ -116,7 +132,7 @@ function choose<T>(rng: Rng, top: readonly T[] | undefined, low: readonly T[] | 
 }
 
 export function say(rng: Rng, kind: LineKind): Utterance {
-  if (language === 'zh') {
+  if (speaking()) {
     const tag = rng.pick(TAGS[kind])
     // A tag the course has nothing for (none verified yet) falls back to
     // English for that moment rather than to silence.
@@ -126,24 +142,28 @@ export function say(rng: Rng, kind: LineKind): Utterance {
   return rng.pick(LINES[kind])
 }
 
-/** A specific course line by its Chinese, from any level, or null if it is not
- *  (yet) verified. For callers with a fixed repertoire, like the Matron. */
-export function line(script: string): Entry | null {
-  for (const l of ZH_LEVELS) {
-    const e = l.phrases.entries.find(x => x.script === script)
-    if (e) return e
+/**
+ * A specific course line by its Chinese, from any level, or null if it is not
+ * verified in the language being learned. For callers with a fixed
+ * repertoire, like the Matron, whose lines are named by their Chinese because
+ * that is the language they were written and verified in.
+ */
+export function line(zh: string): Entry | null {
+  for (const l of LEVELS) {
+    const e = l.phrases.entries.find(x => x.in.zh?.text === zh)
+    if (e) return speaking() && e.in[l2] ? e : null
   }
   return null
 }
 
-/** Whether there is anything to talk about: Chinese on, and at least one
- *  exchange verified at or below the chosen level. */
+/** Whether there is anything to talk about: the course on, and at least one
+ *  exchange verified at or below the chosen level in the language learned. */
 export const canConverse = (): boolean =>
-  language === 'zh' && (talkFocus.length > 0 || talkReview.length > 0)
+  speaking() && (talkFocus.length > 0 || talkReview.length > 0)
 
 /**
  * A verified conversation to start, or null when there is none to have — the
- * English setting, or a course with no exchanges verified yet.
+ * grunts, or a course with no exchanges verified yet.
  *
  * `mood` prefers exchanges tagged for it (a hungry creature opens with food)
  * without insisting: most of the time the talk is about anything at all.
@@ -164,11 +184,12 @@ export function pickExchange(rng: Rng, mood?: string): Entry | null {
  * folder named after a whole sentence should not produce a speech bubble wider
  * than the monitor.
  *
- * In Chinese he does not name the icon: there is no verified way to put an
- * arbitrary file name into a sentence, so he says something about eating it.
+ * In a course language he does not name the icon: there is no verified way to
+ * put an arbitrary file name into a sentence, so he says something about
+ * eating it.
  */
 export function aboutIcon(rng: Rng, name: string): Utterance {
-  if (language === 'zh') return say(rng, 'chew')
+  if (speaking()) return say(rng, 'chew')
   const short = name.length > 14 ? `${name.slice(0, 13)}…` : name
   if (!short) return say(rng, 'chew')
   return rng.pick([

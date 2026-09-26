@@ -17,6 +17,7 @@
 // =============================================================================
 
 import type { Trait } from './describe'
+import type { LanguageId } from './lang/types'
 
 export interface LedgerEntry {
   /** From describe.ts — `eye:burning-gold`. Stable forever. */
@@ -28,7 +29,8 @@ export interface LedgerEntry {
   category: LedgerCategory
   /** Epoch ms of the first sighting. */
   first: number
-  /** For a line they said: its pinyin, shown on hover. Absent for traits. */
+  /** For a line they said: its reading (pinyin, a romanization), shown on
+   *  hover. Absent for traits and for languages without one. */
   reading?: string
   /** For a line they said: its English, shown on hover. Absent for traits. */
   gloss?: string
@@ -48,13 +50,38 @@ export type LedgerCategory = Trait['category'] | 'said'
 export interface HeardLine {
   /** The course entry id — `p052`. Stable across builds, so it is the key. */
   id: string
-  script: string
-  reading: string
+  /** Which language it was said in. Hearing a line in Chinese is not hearing
+   *  it in Arabic, so the two are filed apart. */
+  lang: LanguageId
+  text: string
+  reading?: string
   english: string
 }
 
-/** Ledger key for a spoken line. Namespaced so no trait key can collide. */
-export const heardKey = (id: string): string => `said:${id}`
+/** Ledger key for a spoken line: `said:ar:p052`. Namespaced so no trait key
+ *  can collide, and by language so each language keeps its own record. */
+export const heardKey = (lang: LanguageId, id: string): string => `said:${lang}:${id}`
+
+/** The language and line id a `said:` key files, or null for any other key. */
+export function parseHeard(key: string): { lang: LanguageId; id: string } | null {
+  const m = key.match(/^said:([a-z]{2}):(.+)$/)
+  return m ? { lang: m[1] as LanguageId, id: m[2] } : null
+}
+
+/**
+ * Keys from before lines were filed by language — `said:p052` — were all
+ * Chinese, because Chinese was all there was. They become `said:zh:p052`,
+ * first-heard dates intact. Null when there is nothing to move.
+ */
+export function migrateHeard(seen: readonly LedgerEntry[]): LedgerEntry[] | null {
+  let moved = false
+  const out = seen.map(e => {
+    if (e.category !== 'said' || parseHeard(e.key)) return e
+    moved = true
+    return { ...e, key: heardKey('zh', e.key.slice('said:'.length)) }
+  })
+  return moved ? out : null
+}
 
 export interface LedgerSave {
   version: 1
@@ -115,13 +142,14 @@ export function recordHeard(
   const known = new Map(seen.map(e => [e.key, e]))
   let changed = false
   for (const l of lines) {
-    const key = heardKey(l.id)
+    const key = heardKey(l.lang, l.id)
     const e = known.get(key)
     // A line re-verified with new wording keeps its first-heard date and takes
     // the new text — the id is the identity, as with traits.
-    if (e && e.label === l.script && e.reading === l.reading && e.gloss === l.english) continue
+    if (e && e.label === l.text && e.reading === l.reading && e.gloss === l.english) continue
     known.set(key, {
-      key, category: 'said', label: l.script, reading: l.reading, gloss: l.english,
+      key, category: 'said', label: l.text, gloss: l.english,
+      ...(l.reading ? { reading: l.reading } : {}),
       first: e?.first ?? at,
     })
     changed = true

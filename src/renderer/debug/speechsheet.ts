@@ -14,18 +14,38 @@
 
 import type { Painter } from '../engine/painter'
 import { Speech } from '../ui/speech'
-import { ZH_LEVELS } from '../../shared/lang/levels'
-import { setLanguage } from '../pet/lines'
+import { LEVELS } from '../../shared/lang/levels'
+import { lessonLang, setTongue } from '../pet/lines'
 import { UI, THEMES, applyTheme } from '../ui/theme'
-import type { Utterance } from '../../shared/lang/types'
+import type { LanguageId, Utterance } from '../../shared/lang/types'
+import { DEFAULT_SETTINGS } from '../../shared/types'
 
 const CELL_W = 360
 const CELL_H = 96
 const PAGE_SECONDS = 6
 
-/** Every level's sentences, lowest first, so a new level is on the sheet the
- *  moment it has anything verified. */
-const ENTRIES = ZH_LEVELS.flatMap(l => l.phrases.entries)
+/** Every level's sentences in the language being learned, lowest first, so a
+ *  new level or language is on the sheet the moment it has anything verified. */
+let ENTRIES = LEVELS.flatMap(l => l.phrases.entries)
+
+/**
+ * The languages every sheet draws in, from the page's query: `l2=ar&l1=es`,
+ * and `also=zh` for a second meaning. Chinese from English by default, as the
+ * app starts.
+ */
+export function sheetTongue(params: URLSearchParams): void {
+  setTongue({
+    ...DEFAULT_SETTINGS,
+    l2: (params.get('l2') ?? 'zh') as LanguageId,
+    l1: (params.get('l1') ?? 'en') as LanguageId,
+    l1Also: (params.get('also') as LanguageId | null) ?? null,
+    level: 'hsk2',
+  })
+  ENTRIES = LEVELS.flatMap(l => l.phrases.entries).filter(e => e.in[lessonLang()])
+}
+
+/** A long line, to test how wide a bubble gets. */
+const long = (): Utterance => ENTRIES.find(e => (e.in[lessonLang()]?.text.length ?? 0) > 9) ?? ENTRIES[1]
 
 export class SpeechSheet {
   private readonly cols: number
@@ -34,7 +54,6 @@ export class SpeechSheet {
   private readonly pages: number
 
   constructor(private w: number, private h: number, private pinned: number | null) {
-    setLanguage('zh')
     this.cols = Math.max(1, Math.floor((w - 20) / CELL_W))
     this.rows = Math.max(1, Math.floor((h - 60) / CELL_H))
     this.perPage = this.cols * this.rows
@@ -78,7 +97,7 @@ export class SpeechSheet {
  * nothing to add.
  */
 export class ThemeSheet {
-  constructor(private w: number, private h: number) { setLanguage('zh') }
+  constructor(private w: number, private h: number) {}
 
   draw(g: Painter, now: number): void {
     // Fixed, not half the window: the overlay spans the whole virtual desktop,
@@ -86,7 +105,7 @@ export class ThemeSheet {
     const half = Math.min(this.w / 2, 760)
     g.rect(0, 0, half, this.h).fill(0x1d2430)
     g.rect(half, 0, this.w - half, this.h).fill(0xd9dde3)
-    const lines = [ENTRIES[0], ENTRIES.find(e => e.script.length > 9) ?? ENTRIES[1]]
+    const lines = [ENTRIES[0], long()]
     const was = UI.id
     const rowH = Math.max(56, Math.floor((this.h - 20) / THEMES.length))
     THEMES.forEach((t, i) => {

@@ -28,6 +28,8 @@ import { box, union, type Box } from '../engine/stage'
 export { UI, THEMES, applyTheme, DEFAULT_THEME, themeById } from './theme'
 import { UI } from './theme'
 import * as chrome from './chrome'
+import { inLang } from './tongue'
+import type { LanguageId } from '../../shared/lang/types'
 import type { Trace } from './chrome'
 
 export const PAD = 12
@@ -427,6 +429,23 @@ export abstract class Panel {
 
   /** Trim a string to fit, with an ellipsis. Panels are narrow and pet names
    *  are user-supplied; anything that can overflow is run through this. */
+  /**
+   * Text in a language, fitted into `maxW` and drawn in a face that can draw
+   * it. Right-to-left text hangs from the right end of its span, the way it is
+   * read, so a column of Arabic lines up on the side each line starts from.
+   * Returns the width drawn.
+   */
+  protected langText(
+    g: Painter, s: string, lang: LanguageId, size: number, x: number, y: number, maxW: number,
+    o: { color: number; alpha?: number; floor?: number },
+  ): number {
+    const t = inLang(lang, size, o.floor)
+    const text = this.fit(g, s, t.size, maxW, t.font)
+    const rtl = t.dir === 'rtl'
+    g.text(text, rtl ? x + maxW : x, y, { ...t, color: o.color, alpha: o.alpha, align: rtl ? 'right' : 'left' })
+    return g.measure(text, t.size, t.font)
+  }
+
   protected fit(g: Painter, s: string, size: number, maxW: number, font?: string): string {
     if (g.measure(s, size, font) <= maxW) return s
     let lo = 0

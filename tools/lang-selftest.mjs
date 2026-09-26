@@ -161,6 +161,20 @@ let refusedCount = false
 try { node(['tools/lang-ingest.mjs', CORPUS]) } catch { refusedCount = true }
 check('a short paste cannot be matched off by one', refusedCount)
 
+// ── The Arabic deriver ────────────────────────────────────────────────────
+// Arabic readings are derived from the vowel marks, the way pinyin is derived
+// from characters, so the deriver is the thing to test: each case is a vowelled
+// line and the romanization a learner should be shown.
+console.log('\n6. Arabic readings derive from the vowel marks')
+const { analyse, validate: arValidate } = await import('./lang/ar.mjs')
+for (const [arabic, want] of JSON.parse(readFileSync('tools/lang/ar.cases.json', 'utf8'))) {
+  const { reading, problems } = analyse(arabic)
+  check(`${arabic} → ${want}`, reading === want && !problems.length, `got "${reading}" ${problems.join('; ')}`)
+}
+check('unvowelled Arabic is refused', arValidate('مرحبا').length > 0)
+check('هذا without its dagger alif is refused', arValidate('هَذَا كِتَابٌ.').some(c => c.includes('dagger')))
+check('a Persian letter is refused', arValidate('کِتَابٌ').some(c => c.includes('Persian')))
+
 clean()
 console.log(`\n${failures ? `${failures} FAILED` : 'all good — the loop holds'}`)
 process.exit(failures ? 1 : 0)

@@ -5,7 +5,7 @@
 // =============================================================================
 
 import { rollMudgin, sampler, hashSeed, type Genes, type SpeciesId } from './genome'
-import type { GlossMode, LanguageId } from './lang/types'
+import type { LanguageId } from './lang/types'
 
 /**
  * Which plane the Mudgin lives on. This is the axis the whole app is built
@@ -84,14 +84,18 @@ export interface WorldSnapshot {
   layer: LayerMode
 }
 
-/** The persisted creature. Times are epoch ms so decay survives a reboot. */
-/** A Chinese name: the characters, their pinyin, and what it means. */
-export interface ZhName {
-  script: string
-  reading: string
-  gloss: string
+/**
+ * A name from the names course: which one, and which of its bearers this is —
+ * 1 for the first 豆豆, 2 for 豆豆二号. Stored as a reference rather than as
+ * text so a creature is called by the same name in every language: learning
+ * Arabic, it is the Arabic of the name it already had.
+ */
+export interface Called {
+  id: string
+  n: number
 }
 
+/** The persisted creature. Times are epoch ms so decay survives a reboot. */
 export interface PetSave {
   /** Stable across sessions. Identity, not position in the array. */
   id: string
@@ -105,10 +109,16 @@ export interface PetSave {
    */
   name: string
   /**
-   * The Chinese name, shown in its place whenever they are speaking Chinese.
-   * Optional only for saves from before names existed; main fills it in on load.
+   * The name shown in its place whenever they are speaking a course language,
+   * in that language. Optional only for saves from before names existed; main
+   * fills it in on load.
    */
-  zh?: ZhName
+  called?: Called
+  /**
+   * How a name was stored before names were per-language: the Chinese text of
+   * it. Read once on load, turned into `called`, and dropped.
+   */
+  zh?: { script: string; reading: string; gloss: string }
   /**
    * Which plane he lives on. Persisted in both stage modes — `single` ignores
    * it for placement but keeps it, so switching modes is lossless both ways.
@@ -198,12 +208,23 @@ export interface Settings {
   theme: string
 
   /**
-   * What they speak. `zh` is Chinese from the verified course, as 汉字 with
-   * pinyin and an English gloss; `en` is the original grunts. The default is
-   * Chinese because teaching it is the point — a save from before this setting
-   * existed picks it up on load.
+   * What they speak: `course` is lines from the verified course, in the
+   * language being learned, with its meaning; `grunts` is the original English
+   * grunts, and no lesson at all. The course is the default because teaching
+   * is the point.
    */
-  language: LanguageId
+  voice: Voice
+  /**
+   * The language being learned — L2. It is what they say, on top, with its
+   * reading (pinyin, a romanization) where it has one. Any language can be
+   * either this or `l1`, never both; see `tongues`.
+   */
+  l2: LanguageId
+  /** The language the learner already reads — L1. The meaning line under the
+   *  lesson is in this; a line not translated into it yet shows English. */
+  l1: LanguageId
+  /** A second meaning line, in a third language, or null for one line only. */
+  l1Also: LanguageId | null
   /**
    * How long speech bubbles stay up, as a multiple of the natural time — long
    * enough to read three lines. More than 1 by default: a sentence you are
@@ -218,11 +239,38 @@ export interface Settings {
    * `theme`, so a save naming a level this build lacks falls back to HSK 1.
    */
   level: string
-  /**
-   * The meaning shown under the Chinese: English, Spanish, or both. Spanish
-   * that is not verified yet shows as English, so any setting is always safe.
-   */
-  gloss: GlossMode
+}
+
+export type Voice = 'course' | 'grunts'
+
+/**
+ * Settings with the languages made consistent: L1 is never L2, and the second
+ * meaning is neither. Whatever collides gives way to the choice just made —
+ * pick your L1 as the language to learn and the two swap, which is what
+ * someone doing that almost always means.
+ *
+ * Also carries a save from before L1 and L2 existed, when the settings were
+ * `language` (`zh` or `en`, the grunts) and `gloss` (`en`, `es` or `both`).
+ */
+export function tongues(s: Settings & { language?: string; gloss?: string }, prev?: Settings): Settings {
+  const out: Settings & { language?: string; gloss?: string } = { ...s }
+  if (out.language !== undefined) {
+    if (out.language === 'en') out.voice = 'grunts'
+    if (out.gloss === 'es') out.l1 = 'es'
+    if (out.gloss === 'both') { out.l1 = 'en'; out.l1Also = 'es' }
+    delete out.language
+    delete out.gloss
+  }
+  if (out.l1 === out.l2) {
+    // One of the two just moved onto the other: swap them. With nothing to
+    // swap from — a hand-edited save — keep L2 and explain it in English, or
+    // in Spanish when English is what is being learned.
+    if (prev && prev.l2 !== out.l2) out.l1 = prev.l2
+    else if (prev && prev.l1 !== out.l1) out.l2 = prev.l1
+    else out.l1 = out.l2 === 'en' ? 'es' : 'en'
+  }
+  if (out.l1Also === out.l1 || out.l1Also === out.l2) out.l1Also = null
+  return out
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -238,11 +286,13 @@ export const DEFAULT_SETTINGS: Settings = {
   matronPos: null,
   newcomerLayer: 'overlay',
   theme: 'pewter',
-  language: 'zh',
+  voice: 'course',
+  l2: 'zh',
+  l1: 'en',
+  l1Also: null,
   speechScale: 1.5,
   talkScale: 1.5,
   level: 'hsk1',
-  gloss: 'en',
 }
 
 /**

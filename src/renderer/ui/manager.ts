@@ -18,9 +18,7 @@ import { hslHex } from '../../shared/genome'
 import type { Painter } from '../engine/painter'
 import { Panel, PAD, HEADER, UI } from './panel'
 import { PetCardPanel } from './petcard'
-import { shownName } from '../../shared/names'
-import { LANGUAGES } from '../../shared/lang'
-import { currentLanguage } from '../pet/lines'
+import { inLang, petName } from './tongue'
 
 const COL_GAP = 8
 const COL_HEAD = 26
@@ -184,14 +182,13 @@ export class ManagerPanel extends Panel {
     const a = being ? 0.3 : 1
     // In Chinese: the name in characters, its pinyin after it in the space
     // left over — a roster of a hundred is a hundred small reading drills.
-    const zh = currentLanguage() === 'zh' ? p.zh : undefined
-    const nameFont = zh ? LANGUAGES.zh.font : undefined
-    const shown = shownName(p, currentLanguage())
-    g.text(this.fit(g, shown, 12, tw), tx, y + 10,
-      { size: 12, color: UI.text, align: 'left', alpha: a, font: nameFont })
-    if (zh) {
-      const nx = tx + g.measure(shown, 12, nameFont) + 6
-      g.text(this.fit(g, zh.reading, 9, tx + tw - nx), nx, y + 10,
+    const name = petName(p)
+    const t = inLang(name.lang, 12)
+    const shown = this.fit(g, name.text, t.size, tw, t.font)
+    g.text(shown, tx, y + 10, { ...t, color: UI.text, align: 'left', alpha: a })
+    if (name.reading) {
+      const nx = tx + g.measure(shown, t.size, t.font) + 6
+      g.text(this.fit(g, name.reading, 9, tx + tw - nx), nx, y + 10,
         { size: 9, color: UI.dim, align: 'left', alpha: a, font: '"Segoe UI", sans-serif' })
     }
     g.text(this.fit(g, summarise(describe(p.genes)), 9, tw), tx, y + 22,
@@ -208,8 +205,10 @@ export class ManagerPanel extends Panel {
     g.roundRect(this.dragX - w / 2, this.dragY - ROW / 2, w, ROW - 2, 4)
       .stroke({ width: 1, color: UI.highlight, alpha: 0.9 })
     g.circle(this.dragX - w / 2 + 12, this.dragY - 1, 6.5).fill({ color: hslHex(p.genes.body) })
-    g.text(this.fit(g, shownName(p, currentLanguage()), 11, w - 28), this.dragX - w / 2 + 24, this.dragY - 4,
-      { size: 11, color: UI.text, align: 'left' })
+    const name = petName(p)
+    const t = inLang(name.lang, 11)
+    g.text(this.fit(g, name.text, t.size, w - 28, t.font), this.dragX - w / 2 + 24, this.dragY - 4,
+      { ...t, color: UI.text, align: 'left' })
     g.restore()
   }
 

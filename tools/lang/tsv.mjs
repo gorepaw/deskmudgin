@@ -31,6 +31,12 @@ export const GLOSS_COLUMNS = [
   'id', 'script', 'reading', 'english', 'gloss', 'status', 'checks', 'note',
 ]
 
+/** The same, for a language with a reading of its own (Arabic's romanization).
+ *  `gloss_reading` is derived from `gloss`, never typed — as `reading` is. */
+export const GLOSS_READING_COLUMNS = [
+  'id', 'script', 'reading', 'english', 'gloss', 'gloss_reading', 'status', 'checks', 'note',
+]
+
 export function readTsv(path) {
   if (!existsSync(path)) return []
   const text = readFileSync(path, 'utf8').replace(/^﻿/, '')

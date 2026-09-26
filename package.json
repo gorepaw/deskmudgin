@@ -18,6 +18,7 @@
     "lang:export": "node tools/lang-export.mjs",
     "lang:ingest": "node tools/lang-ingest.mjs",
     "lang:build": "node tools/lang-build.mjs",
+    "lang:build-all": "node tools/lang-build-all.mjs",
     "lang:selftest": "node tools/lang-selftest.mjs",
     "snap": "node tools/snap.mjs"
   },

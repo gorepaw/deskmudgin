@@ -8,7 +8,7 @@
 // desktop. The panels are the real classes on a stub host, so what is judged
 // here is what ships, not a mock of it.
 //
-// Meant for `npm run snap -- chrome out.png 1520 860 theme=<id> [gloss=es|both]`,
+// Meant for `npm run snap -- chrome out.png 1520 860 theme=<id> [l2=ar l1=es also=en tab=words]`,
 // which renders it offscreen.
 // =============================================================================
 
@@ -20,19 +20,22 @@ import type { Panel, PanelHost } from '../ui/panel'
 import { SettingsPanel } from '../ui/menu'
 import { DictionaryPanel } from '../ui/dictionary'
 import { Speech } from '../ui/speech'
-import { setGloss, setLanguage } from '../pet/lines'
-import { ZH_LEVELS } from '../../shared/lang/levels'
-import type { GlossMode, Utterance } from '../../shared/lang/types'
+import { lessonLang, setTongue } from '../pet/lines'
+import { LEVELS } from '../../shared/lang/levels'
+import type { LanguageId, Utterance } from '../../shared/lang/types'
+import type { Tab } from '../ui/dictionary'
 
 export class ChromeSheet {
   private readonly panels: Panel[]
   private readonly lines: Utterance[]
 
-  constructor(private w: number, private h: number, theme: string, gloss: GlossMode = 'en') {
+  constructor(
+    private w: number, private h: number, theme: string,
+    tongue: { l2: LanguageId; l1: LanguageId; l1Also: LanguageId | null; tab?: string },
+  ) {
     applyTheme(theme)
-    setLanguage('zh')
-    setGloss(gloss)
-    const settings: Settings = { ...DEFAULT_SETTINGS, theme, level: 'hsk2', gloss }
+    const settings: Settings = { ...DEFAULT_SETTINGS, theme, level: 'hsk2', ...tongue }
+    setTongue(settings)
     // Everything a panel may ask of its host, answered with nothing: an empty
     // colony, an empty ledger. The sheet shows the chrome, not anyone's data.
     const bridge = {
@@ -44,13 +47,17 @@ export class ChromeSheet {
       bridge, settings: () => settings,
     }
     const s = new SettingsPanel()
-    const d = new DictionaryPanel(gloss === 'es' ? 'words' : 'phrases')
+    const d = new DictionaryPanel((tongue.tab ?? 'phrases') as Tab)
     s.x = 20; s.y = 20
     d.x = 370; d.y = 20
     for (const p of [s, d]) { p.host = host; void p.mount() }
     this.panels = [s, d]
-    const h2 = ZH_LEVELS[1].phrases.entries
-    this.lines = ['hrrr!', ZH_LEVELS[0].phrases.entries[0], h2[27], h2.find(e => e.script.length > 13) ?? h2[1]]
+    const l2 = lessonLang()
+    const h1 = LEVELS[0].phrases.entries.filter(e => e.in[l2])
+    const h2 = LEVELS[1].phrases.entries.filter(e => e.in[l2])
+    const pool = h2.length ? h2 : h1
+    this.lines = ['hrrr!', h1[0], pool[27] ?? pool[0], pool.find(e => (e.in[l2]?.text.length ?? 0) > 13) ?? pool[1]]
+      .filter(Boolean)
   }
 
   draw(g: Painter, now: number): void {

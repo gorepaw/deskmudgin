@@ -18,7 +18,7 @@ import { approach, clamp, type Rng } from '../engine/math'
 import { union, type Box } from '../engine/stage'
 import type { World } from '../world/world'
 import { Speech } from './speech'
-import { currentLanguage, line } from '../pet/lines'
+import { line } from '../pet/lines'
 import {
   drawMatron, matronBounds, defaultMatronPose, MATRON_SCALE, REACT_T, VB_H, VB_W,
   type MatronPose,
@@ -187,7 +187,7 @@ export class Matron implements MatronRef {
     if (cuddled && p.t - this.lastSpoke > 14 && this.rng.chance(dt * 0.5)) {
       this.lastSpoke = p.t
       const [en, zh] = this.rng.pick(LINES)
-      this.speech.say(currentLanguage() === 'zh' ? line(zh) ?? en : en, 2.6)
+      this.speech.say(line(zh) ?? en, 2.6)
     }
 
     // She watches the pointer when it is nearby and she is not otherwise

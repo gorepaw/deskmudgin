@@ -2,7 +2,11 @@
 // The dictionary: everything they can say, and what they have said to you.
 //
 // Three tabs — words, by HSK level; the sentences they say on their own; the
-// conversations they have with each other. Every entry is readable whether or
+// conversations they have with each other — all in the language being learned,
+// with its meaning in the learner's own. The words tab exists only while that
+// language is Chinese: the wordlists are HSK's, and a list of HSK words shown
+// in Arabic would be Chinese vocabulary in translation, not Arabic vocabulary.
+// Every entry is readable whether or
 // not you have met it, because this is a reference and hiding the course would
 // make it useless as one. What it adds is a mark for what you have actually
 // been shown, taken from the ledger, so it is a record of real exposure rather
@@ -14,14 +18,12 @@
 // not in a list.
 // =============================================================================
 
-import type { LedgerEntry } from '../../shared/ledger'
-import type { Entry } from '../../shared/lang/types'
-import { glossesOf, turnsOf } from '../../shared/lang/types'
-import { LANGUAGES } from '../../shared/lang'
-import { ZH_LEVELS, type Level } from '../../shared/lang/levels'
+import { parseHeard, type LedgerEntry } from '../../shared/ledger'
+import { lessonOf, meaningsOf, turnsOf, type Entry } from '../../shared/lang'
+import { LEVELS, levelLabel, type Level } from '../../shared/lang/levels'
 import type { Painter } from '../engine/painter'
 import { Panel, PAD, HEADER, UI } from './panel'
-import { currentGloss } from '../pet/lines'
+import { lessonLang, meaningLangs } from '../pet/lines'
 
 export type Tab = 'words' | 'phrases' | 'talk'
 type Filter = 'all' | 'seen' | 'unseen'
@@ -30,13 +32,20 @@ const TABS: readonly [Tab, string][] = [['words', 'Words'], ['phrases', 'Phrases
 const FILTERS: readonly Filter[] = ['all', 'seen', 'unseen']
 const FILTER_LABEL: Record<Filter, string> = { all: 'showing all', seen: 'seen only', unseen: 'not yet seen' }
 
-const ZH = LANGUAGES.zh.font
 const PY = '"Segoe UI", sans-serif'
+
+/** What can be listed while learning the current language: lines that have
+ *  been verified in it. */
+const inLesson = (entries: readonly Entry[]): Entry[] => entries.filter(e => e.in[lessonLang()])
 
 /** The levels with anything in them, lowest first — a level whose content is
  *  not verified yet has nothing to list and no heading either. */
 const levels = (pick: (l: Level) => readonly Entry[]): Level[] =>
-  ZH_LEVELS.filter(l => pick(l).length > 0)
+  LEVELS.filter(l => inLesson(pick(l)).length > 0)
+
+/** Whether there is a words tab: only in the language the wordlists are in. */
+const hasWords = (): boolean =>
+  LEVELS.some(l => l.words.source === lessonLang() && l.words.entries.length > 0)
 
 /** Pinyin with the tone marks taken off, for alphabetical order. */
 const plain = (s: string): string => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
@@ -66,11 +75,17 @@ export class DictionaryPanel extends Panel {
 
   override async mount(): Promise<void> {
     const ledger: LedgerEntry[] = await this.host.bridge.invoke('ledger:get')
-    const said = ledger.filter(e => e.category === 'said')
-    this.heard = new Set(said.map(e => e.key.slice('said:'.length)))
+    // Only what was heard in the language being learned: a line heard in
+    // Chinese has not been shown to you in Arabic.
+    const said = ledger.filter(e => parseHeard(e.key)?.lang === lessonLang())
+    this.heard = new Set(said.map(e => parseHeard(e.key)!.id))
     this.heardLines = said.map(e => e.label)
     this.heardText = this.heardLines.join('｜')
+    this.heardIn = lessonLang()
   }
+
+  /** Which language `heard` was read for, so a change of language re-reads it. */
+  private heardIn = lessonLang()
 
   override refresh(): void { void this.mount() }
 
@@ -107,7 +122,8 @@ export class DictionaryPanel extends Panel {
   }
 
   /** A level's heading: its name and how many entries follow. */
-  private heading(label: string, n: number, what: string): Row {
+  private heading(level: Level, n: number, what: string): Row {
+    const label = levelLabel(level, lessonLang())
     return {
       h: 26,
       heading: true,
@@ -118,21 +134,33 @@ export class DictionaryPanel extends Panel {
 
   private wordRows(w: number): Row[] {
     const rows: Row[] = []
+    const l2 = lessonLang()
     for (const level of levels(l => l.words.entries)) {
-      const words = [...level.words.entries]
-        .sort((a, b) => plain(a.reading).localeCompare(plain(b.reading)) || a.script.localeCompare(b.script))
-        .filter(e => this.keep(this.met(e.script)))
-      rows.push(this.heading(level.label, words.length, 'words'))
-      for (const e of words) {
-        const seen = this.met(e.script)
+      const words = inLesson(level.words.entries)
+        .map(e => ({ e, r: e.in[l2]! }))
+        .sort((a, b) => plain(a.r.reading ?? '').localeCompare(plain(b.r.reading ?? ''))
+          || a.r.text.localeCompare(b.r.text))
+        .filter(({ r }) => this.keep(this.met(r.text)))
+      rows.push(this.heading(level, words.length, 'words'))
+      for (const { e, r } of words) {
+        const seen = this.met(r.text)
         rows.push({
           h: 24,
           draw: (g, y) => {
             this.mark(g, PAD + 5, y + 12, seen)
-            g.text(e.script, PAD + 18, y + 12, { size: 15, color: UI.text, align: 'left', font: ZH })
-            g.text(e.reading, PAD + 96, y + 12, { size: 12, color: UI.highlight, align: 'left', font: PY })
-            g.text(this.fit(g, glossesOf(e, currentGloss()).join(' · '), 11, w - 190), PAD + 186, y + 12,
-              { size: 11, color: UI.dim, align: 'left' })
+            this.langText(g, r.text, l2, 15, PAD + 18, y + 12, 76, { color: UI.text })
+            if (r.reading) {
+              g.text(this.fit(g, r.reading, 12, 86, PY), PAD + 96, y + 12,
+                { size: 12, color: UI.highlight, align: 'left', font: PY })
+            }
+            // One meaning per language asked for, side by side: a word's
+            // meaning is short, and a word row is one line tall.
+            let mx = PAD + 186
+            for (const m of meaningsOf(e, meaningLangs(), l2)) {
+              const left = PAD + w - mx
+              if (left < 30) break
+              mx += this.langText(g, m.text, m.lang, 11, mx, y + 12, left, { color: UI.dim }) + 12
+            }
           },
         })
       }
@@ -141,29 +169,36 @@ export class DictionaryPanel extends Panel {
   }
 
   private lineRow(e: Entry, seen: boolean, x: number, w: number, lead = ''): Row {
-    const glosses = glossesOf(e, currentGloss())
+    const l2 = lessonLang()
+    const lesson = lessonOf(e, l2)!
+    const meanings = meaningsOf(e, meaningLangs(), l2)
+    // Vowel-marked Arabic stands taller than 汉字 at the same size.
+    const tall = l2 === 'ar' ? 4 : 0
     return {
-      h: 36 + 14 * glosses.length,
+      h: 22 + tall + (lesson.reading ? 17 : 3) + 14 * meanings.length,
       draw: (g, y) => {
         this.mark(g, x + 5, y + 12, seen)
         const sx = x + 18
         if (lead) g.text(lead, sx, y + 12, { size: 10, color: UI.dim, align: 'left' })
         const lx = lead ? sx + 16 : sx
-        g.text(this.fit(g, e.script, 15, w - (lx - PAD), ZH), lx, y + 12,
-          { size: 15, color: UI.text, align: 'left', font: ZH })
-        g.text(this.fit(g, e.reading, 12, w - (lx - PAD), PY), lx, y + 29,
-          { size: 12, color: UI.highlight, align: 'left', font: PY })
-        glosses.forEach((t, i) => g.text(this.fit(g, t, 11, w - (lx - PAD)), lx, y + 43 + i * 14,
-          { size: 11, color: UI.dim, align: 'left' }))
+        const span = w - (lx - PAD)
+        this.langText(g, lesson.text, l2, 15, lx, y + 12, span, { color: UI.text })
+        let ly = y + 29 + tall
+        if (lesson.reading) {
+          g.text(this.fit(g, lesson.reading, 12, span, PY), lx, ly,
+            { size: 12, color: UI.highlight, align: 'left', font: PY })
+          ly += 14
+        } else ly -= 3
+        meanings.forEach((m, i) => this.langText(g, m.text, m.lang, 11, lx, ly + i * 14, span, { color: UI.dim }))
       },
     }
   }
 
   private phraseRows(w: number): Row[] {
     return levels(l => l.phrases.entries).flatMap(level => {
-      const shown = level.phrases.entries.filter(e => this.keep(this.heard.has(e.id)))
+      const shown = inLesson(level.phrases.entries).filter(e => this.keep(this.heard.has(e.id)))
       return [
-        this.heading(level.label, shown.length, 'sentences'),
+        this.heading(level, shown.length, 'sentences'),
         ...shown.map(e => this.lineRow(e, this.heard.has(e.id), PAD, w)),
       ]
     })
@@ -174,7 +209,7 @@ export class DictionaryPanel extends Panel {
     for (const level of levels(l => l.exchanges.entries)) {
       const start = rows.length
       let n = 0
-      for (const x of level.exchanges.entries) {
+      for (const x of inLesson(level.exchanges.entries)) {
         const turns = turnsOf(x)
         // Seen as a whole once every turn has been on your screen; each turn is
         // marked on its own, since a conversation cut short shows you half of it.
@@ -191,7 +226,7 @@ export class DictionaryPanel extends Panel {
             .stroke({ width: 1, color: UI.edge, alpha: 0.35 }),
         })
       }
-      rows.splice(start, 0, this.heading(level.label, n, 'conversations'))
+      rows.splice(start, 0, this.heading(level, n, 'conversations'))
     }
     return rows
   }
@@ -200,9 +235,12 @@ export class DictionaryPanel extends Panel {
 
   protected override body(g: Painter, _now: number, top: number): void {
     const w = this.w - PAD * 2
+    if (this.heardIn !== lessonLang()) { this.heardIn = lessonLang(); void this.mount() }
     // Tabs, then the filter.
-    const tw = (w - 12) / 3
-    TABS.forEach(([id, label], i) => {
+    const tabs = hasWords() ? TABS : TABS.filter(([id]) => id !== 'words')
+    if (!tabs.some(([id]) => id === this.tab)) this.tab = 'phrases'
+    const tw = (w - 6 * (tabs.length - 1)) / tabs.length
+    tabs.forEach(([id, label], i) => {
       this.button(g, `tab:${id}`, PAD + i * (tw + 6), top, tw, 26, label,
         { primary: this.tab === id, size: 12 })
     })

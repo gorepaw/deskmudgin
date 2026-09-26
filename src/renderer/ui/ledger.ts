@@ -17,10 +17,11 @@ import type { LedgerEntry } from '../../shared/ledger'
 import { CATEGORY_LABEL, CATEGORY_ORDER } from '../../shared/ledger'
 import type { Painter } from '../engine/painter'
 import { Panel, PAD, HEADER, UI } from './panel'
-import { LANGUAGES } from '../../shared/lang'
+import { LANGUAGES, LANGUAGE_IDS, meaningsOf, type Entry, type LanguageId } from '../../shared/lang'
 import { everyLine } from '../../shared/lang/levels'
-import { glossesOf, type Entry } from '../../shared/lang/types'
-import { currentGloss } from '../pet/lines'
+import { parseHeard } from '../../shared/ledger'
+import { meaningLangs } from '../pet/lines'
+import { inLang } from './tongue'
 
 /** Every line a bubble can show, by id — built on first use, not at import. */
 let byId: Map<string, Entry> | null = null
@@ -71,21 +72,28 @@ export class LedgerPanel extends Panel {
     let y = top - this.scroll
     let hovered: LedgerEntry | null = null
 
-    for (const category of CATEGORY_ORDER) {
-      const rows = this.seen
-        .filter(e => e.category === category)
-        .sort((a, b) => a.label.localeCompare(b.label))
+    // What they said is filed by the language it was said in, one group each:
+    // hearing a line in Chinese is not hearing it in Arabic.
+    type Group = [label: string, lang: LanguageId | null, entries: LedgerEntry[]]
+    const groups = CATEGORY_ORDER.flatMap((category): Group[] =>
+      category !== 'said'
+        ? [[CATEGORY_LABEL[category], null, this.seen.filter(e => e.category === category)]]
+        : LANGUAGE_IDS.map((lang): Group => [`${CATEGORY_LABEL.said} · ${LANGUAGES[lang].label}`, lang,
+          this.seen.filter(e => parseHeard(e.key)?.lang === lang)]))
+
+    for (const [label, lang, all] of groups) {
+      const rows = [...all].sort((a, b) => a.label.localeCompare(b.label))
       if (!rows.length) continue
 
-      g.text(CATEGORY_LABEL[category], PAD, y + 6, { size: 10, color: UI.accent, align: 'left' })
+      g.text(label, PAD, y + 6, { size: 10, color: UI.accent, align: 'left' })
       y += 18
 
       let x = PAD
       for (const e of rows) {
         // A spoken line is drawn in the face that can draw it, and a size up:
-        // the characters are the thing to recognise.
-        const font = e.category === 'said' ? LANGUAGES.zh.font : undefined
-        const size = e.category === 'said' ? 13 : 11
+        // the words are the thing to recognise.
+        const t = lang ? inLang(lang, 13) : { size: 11, font: undefined, dir: 'ltr' as const }
+        const { size, font } = t
         const cw = g.measure(e.label, size, font) + CHIP_PAD * 2
         if (x + cw > PAD + w) { x = PAD; y += CHIP_H + CHIP_GAP }
 
@@ -100,8 +108,8 @@ export class LedgerPanel extends Panel {
         g.roundRect(x, y, cw, CHIP_H, 4).fill({ color: hot ? UI.rowHot : UI.row, alpha: 0.95 })
         g.roundRect(x + 0.5, y + 0.5, cw - 1, CHIP_H - 1, 4)
           .stroke({ width: 1, color: hot ? UI.highlight : UI.edge, alpha: 0.8 })
-        g.text(e.label, x + CHIP_PAD, y + CHIP_H / 2 + 1,
-          { size, color: UI.text, align: 'left', font })
+        g.text(e.label, x + (t.dir === 'rtl' ? cw - CHIP_PAD : CHIP_PAD), y + CHIP_H / 2 + 1,
+          { ...t, color: UI.text, align: t.dir === 'rtl' ? 'right' : 'left' })
         x += cw + CHIP_GAP
       }
       y += CHIP_H + 14
@@ -127,10 +135,12 @@ export class LedgerPanel extends Panel {
         // the chips themselves can be read as a test of what you remember.
         // The ledger filed the English when the line was heard; the Spanish is
         // found by the line's id, so a gloss verified later still shows.
-        const line = lineById().get(hovered.key.slice('said:'.length))
-        const meaning = glossesOf(line ?? { english: hovered.gloss ?? '' }, currentGloss()).join(' · ')
-        g.text(`${hovered.reading ?? ''} — ${meaning}`, this.w / 2, this.h - 24,
-          { size: 11, color: UI.text, font: '"Segoe UI", sans-serif' })
+        const k = parseHeard(hovered.key)
+        const line = k && lineById().get(k.id)
+        const meanings = line && k ? meaningsOf(line, meaningLangs(), k.lang) : []
+        const meaning = meanings.length ? meanings.map(m => m.text).join(' · ') : hovered.gloss ?? ''
+        g.text([hovered.reading, meaning].filter(Boolean).join(' — '), this.w / 2, this.h - 24,
+          { size: 11, color: UI.text, font: '"Segoe UI", "Microsoft YaHei", sans-serif' })
         g.text(`first heard ${d.toLocaleDateString()}`, this.w / 2, this.h - 10,
           { size: 9, color: UI.dim })
       } else {

@@ -15,14 +15,15 @@
 import { app, globalShortcut, ipcMain, Menu, Tray, screen, type WebContents } from 'electron'
 import { randomUUID } from 'node:crypto'
 import type { LayerMode, PetSave, Settings } from '../shared/types'
-import { newPetSave } from '../shared/types'
+import { newPetSave, tongues } from '../shared/types'
 import { SPECIES, hashSeed, roll, sampler, type SpeciesId } from '../shared/genome'
-import { pickName, pickZhName } from '../shared/names'
+import { calledFromChinese, calledKey, pickCalled, pickName } from '../shared/names'
 import type { Invoke, InvokeChannel, Push, PushChannel, UiRequest } from '../shared/ipc'
 import { describe, describeFlower } from '../shared/describe'
 import { ageOf } from '../shared/maturity'
-import { record, recordHeard, type LedgerEntry } from '../shared/ledger'
+import { migrateHeard, parseHeard, record, recordHeard, type HeardLine, type LedgerEntry } from '../shared/ledger'
 import { everyLine } from '../shared/lang/levels'
+import { lessonOf } from '../shared/lang'
 import { setTimeScale, FAST_SCALE } from '../shared/clock'
 import { StageHost, type StageWindow } from './stage/host'
 import { WildWatch } from './wild'
@@ -77,12 +78,24 @@ let ledger: LedgerEntry[] = loadLedger()
 // the renderer never re-reports a line it has filed, so without this the
 // ledger would teach the old gloss forever. `recordHeard` keeps first-heard
 // dates, and nothing is ever removed.
+//
+// Lines filed before they were filed by language were all Chinese, and are
+// moved under Chinese first.
 {
-  const heardIds = new Set(ledger.filter(e => e.category === 'said').map(e => e.key.slice(5)))
-  const fresh = everyLine().filter(e => heardIds.has(e.id))
-    .map(e => ({ id: e.id, script: e.script, reading: e.reading, english: e.english }))
+  const moved = migrateHeard(ledger)
+  if (moved) ledger = moved
+  const lines = new Map(everyLine().map(e => [e.id, e]))
+  const fresh: HeardLine[] = []
+  for (const entry of ledger) {
+    const k = parseHeard(entry.key)
+    const line = k && lines.get(k.id)
+    const r = line && lessonOf(line, k.lang)
+    if (!k || !r) continue
+    fresh.push({ id: k.id, lang: k.lang, text: r.text, reading: r.reading, english: line.in.en?.text ?? '' })
+  }
   const next = recordHeard(ledger, fresh, Date.now())
-  if (next) { ledger = next; saveLedger(ledger) }
+  if (next) ledger = next
+  if (moved || next) saveLedger(ledger)
 }
 /** Whoever is visiting. Never saved: a stranger is not part of the collection,
  *  and one wandering about at shutdown has simply wandered off. */
@@ -315,26 +328,38 @@ function rollPet(
     pickName(kind, colony.map(p => p.name), n => r.int(0, n - 1)),
     kind, roll(kind, r), x, y, layer,
   )
-  const zh = pickZhName(kind, takenZh(), n => r.int(0, n - 1))
-  return zh ? { ...save, zh } : save
+  const called = pickCalled(kind, takenNames(), n => r.int(0, n - 1))
+  return called ? { ...save, called } : save
 }
 
-/** Chinese names already in use, so a newcomer is not a second 豆豆 while any
+/** Course names already in use, so a newcomer is not a second 豆豆 while any
  *  name is still free. */
-const takenZh = (): string[] => colony.flatMap(p => (p.zh ? [p.zh.script] : []))
+const takenNames = (): string[] => colony.flatMap(p => (p.called ? [calledKey(p.called)] : []))
 
 /**
- * Give every pet without one a Chinese name.
+ * Give every pet without one a course name.
  *
- * Runs on load, which is how a collection from before Chinese names existed
+ * Runs on load, which is how a collection from before course names existed
  * gets them all at once — and again after a names course update, for anyone
  * still waiting. Seeded by the pet's own id, so which name each creature gets
  * does not depend on the order of the file or the time of day.
  *
- * Never renames anyone who already has a name: a pet you know as 泥泥 stays 泥泥.
+ * Never renames anyone who already has a name: a pet you know as 泥泥 stays 泥泥,
+ * and is ṭīnū when you learn Arabic, because it is the same name.
  */
 function nameEveryone(): void {
   let changed = false
+  // Names stored as Chinese text, from before names were per-language, become
+  // references to the same names. Anyone whose name has left the course keeps
+  // the old text until they are given a new one below.
+  for (const p of colony) {
+    if (!p.zh) continue
+    const called = p.called ?? calledFromChinese(p.zh)
+    if (!called) continue
+    p.called = called
+    delete p.zh
+    changed = true
+  }
   // Who gets named first decides who gets the plain names and who gets 二号.
   // File order handed the resting pets the plain ones and every pet actually
   // on the desktop a number — 红豆四号 for the one you look at every day. So:
@@ -342,11 +367,12 @@ function nameEveryone(): void {
   const order = [...colony].sort((a, b) =>
     Number(b.out) - Number(a.out) || a.adoptedAt - b.adoptedAt)
   for (const p of order) {
-    if (p.zh) continue
+    if (p.called) continue
     const r = sampler(hashSeed(p.id) || 1)
-    const zh = pickZhName(p.species, takenZh(), n => r.int(0, n - 1))
-    if (!zh) return // no names verified yet; try again next launch
-    p.zh = zh
+    const called = pickCalled(p.species, takenNames(), n => r.int(0, n - 1))
+    if (!called) break // no names verified yet; try again next launch
+    p.called = called
+    delete p.zh
     changed = true
   }
   if (changed) saveColony(colony)
@@ -486,7 +512,7 @@ function registerIpc(): void {
     const wasMode = settings.stageMode
     const wasLayer = settings.layer
     const wasStartup = settings.launchOnStartup
-    settings = { ...settings, ...patch }
+    settings = tongues({ ...settings, ...patch }, settings)
     saveSettings(settings)
     // Either of these changes which windows should exist and who belongs in
     // them, so the host has to be re-synced before anyone is re-rostered.

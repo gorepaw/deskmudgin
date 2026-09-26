@@ -2,10 +2,11 @@
 // edges of the screen more often than not, and a bubble that runs off the side
 // of the monitor is worse than no bubble.
 //
-// Two shapes. A grunt is one line. A lesson is three — 汉字, then pinyin, then
-// the English — and the characters are the largest thing in it, because they
-// are the thing being learned; the gloss is there to be glanced at, not read
-// first.
+// Two shapes. A grunt is one line. A lesson is three or more — the line in the
+// language being learned, its reading (pinyin, a romanization) where it has
+// one, then its meaning in the learner's own language — and the lesson is the
+// largest thing in it, because it is the thing being learned; the meaning is
+// there to be glanced at, not read first.
 
 import type { Painter } from '../engine/painter'
 import type { Box } from '../engine/stage'
@@ -13,9 +14,12 @@ import { UI } from './theme'
 import * as chrome from './chrome'
 import type { Trace } from './chrome'
 import { clamp } from '../engine/math'
-import { dwellSeconds, glossesOf, isEntry, type Entry, type Utterance } from '../../shared/lang/types'
-import { LANGUAGES } from '../../shared/lang'
-import { currentGloss, currentLanguage } from '../pet/lines'
+import {
+  dwellSeconds, isEntry, lessonOf, meaningsOf, type Entry, type LanguageId, type Meaning,
+  type Rendition, type Utterance,
+} from '../../shared/lang'
+import { lessonLang, meaningLangs } from '../pet/lines'
+import { inLang } from './tongue'
 
 const PAD = 7
 const GRUNT = 12
@@ -41,6 +45,20 @@ const MIN_W = 2 * (10 + TAIL + 2) + 4
 const MAX_W = 340
 
 /**
+ * What a bubble shows for a course line, worked out once per frame: the lesson
+ * and the language it is in, and the meanings under it. A line with nothing
+ * verified in the language being learned — the setting changed while it was up
+ * — shows its English alone rather than nothing.
+ */
+interface Shown { lang: LanguageId; lesson: Rendition; meanings: Meaning[] }
+function shown(u: Entry): Shown {
+  const l2 = lessonLang()
+  const lesson = lessonOf(u, l2)
+  if (lesson) return { lang: l2, lesson, meanings: meaningsOf(u, meaningLangs(), l2) }
+  return { lang: 'en', lesson: { text: u.in.en?.text ?? '' }, meanings: [] }
+}
+
+/**
  * Told whenever a bubble starts showing a course line, so the ledger can file
  * what you have been shown. Module-level and unset by default: the speech
  * sheet draws hundreds of bubbles and must not fill anyone's ledger with them,
@@ -59,7 +77,7 @@ export const setSpeechScale = (s: number, talk: number): void => { scale = s; ta
 
 /** How long one turn of a conversation stays up. The conversation paces
  *  itself by this, and hands it to the bubble as an exact duration. */
-export const talkSeconds = (e: Entry): number => dwellSeconds(e) * talkScale
+export const talkSeconds = (e: Entry): number => dwellSeconds(e, lessonLang()) * talkScale
 
 /**
  * How long a bubble saying `u` stays up, in seconds.
@@ -70,7 +88,7 @@ export const talkSeconds = (e: Entry): number => dwellSeconds(e) * talkScale
  * to read its three lines; then the player's setting stretches everything.
  */
 export function speechSeconds(u: Utterance, requested = 2): number {
-  return Math.max(requested, isEntry(u) ? dwellSeconds(u) : 0) * scale
+  return Math.max(requested, isEntry(u) ? dwellSeconds(u, lessonLang()) : 0) * scale
 }
 
 /**
@@ -117,14 +135,12 @@ export class Speech {
 
   update(dt: number): void { if (this.life > 0) this.life -= dt }
 
-  /** The meaning lines under the Chinese — one, or English and Spanish. */
-  private glosses(u: Entry): string[] { return glossesOf(u, currentGloss()) }
-
   private get height(): number {
     if (!this.said || !isEntry(this.said)) return GRUNT + PAD * 2
-    const n = this.glosses(this.said).length
-    return PAD * 2 + SCRIPT + GAP + READING + GAP + GLOSS * n + GAP * (n - 1)
-      + (this.said.reading ? 0 : -READING - GAP)
+    const s = shown(this.said)
+    return PAD * 2 + inLang(s.lang, SCRIPT).size
+      + (s.lesson.reading ? GAP + READING : 0)
+      + s.meanings.reduce((h, m) => h + GAP + inLang(m.lang, GLOSS).size, 0)
   }
 
   /**
@@ -139,8 +155,10 @@ export class Speech {
     const u = this.said
     if (!u) return 0
     if (!isEntry(u)) return Math.min(220, u.length * 7.5 + PAD * 2)
-    return Math.min(MAX_W, Math.max(u.script.length * SCRIPT, u.reading.length * 6.5,
-      ...this.glosses(u).map(t => t.length * 6.5)) + PAD * 2 + 4)
+    const s = shown(u)
+    return Math.min(MAX_W, Math.max(s.lesson.text.length * inLang(s.lang, SCRIPT).size,
+      (s.lesson.reading?.length ?? 0) * 6.5,
+      ...s.meanings.map(m => m.text.length * inLang(m.lang, GLOSS).size * 0.65)) + PAD * 2 + 4)
   }
 
   private layout(ax: number, ay: number, worldW: number, measured: number): Layout {
@@ -166,14 +184,18 @@ export class Speech {
     const u = this.said
     if (this.life <= 0 || !u) return null
 
-    const script = isEntry(u) ? LANGUAGES[currentLanguage()].font : undefined
+    const s = isEntry(u) ? shown(u) : null
     if (!this.measured) {
-      this.measured = isEntry(u)
+      const top = s && inLang(s.lang, SCRIPT)
+      this.measured = s && top
         ? Math.min(MAX_W, Math.max(
-            g.measure(u.script, SCRIPT, script),
-            u.reading ? g.measure(u.reading, READING, READING_FONT) : 0,
-            ...this.glosses(u).map(t => g.measure(t, GLOSS))) + PAD * 2 + 4)
-        : Math.min(220, g.measure(u, GRUNT) + PAD * 2)
+            g.measure(s.lesson.text, top.size, top.font),
+            s.lesson.reading ? g.measure(s.lesson.reading, READING, READING_FONT) : 0,
+            ...s.meanings.map(m => {
+              const t = inLang(m.lang, GLOSS)
+              return g.measure(m.text, t.size, t.font)
+            })) + PAD * 2 + 4)
+        : Math.min(220, g.measure(u as string, GRUNT) + PAD * 2)
     }
     const { w, h, x, y } = this.layout(ax, ay, worldW, this.measured)
 
@@ -199,19 +221,21 @@ export class Speech {
     chrome.corners(g, { x, y, w, h }, 0.5, a)
 
     const cx = x + w / 2
-    if (!isEntry(u)) {
-      g.text(u, cx, y + h / 2, { size: GRUNT, color: UI.text, alpha: a })
+    if (!s) {
+      g.text(u as string, cx, y + h / 2, { size: GRUNT, color: UI.text, alpha: a })
     } else {
-      let ly = y + PAD + SCRIPT / 2 + 1
-      g.text(u.script, cx, ly, { size: SCRIPT, color: UI.text, alpha: a, font: script })
-      ly += SCRIPT / 2 + GAP
-      if (u.reading) {
-        g.text(u.reading, cx, ly + READING / 2, { size: READING, color: UI.accent, alpha: a, font: READING_FONT })
-        ly += READING + GAP
+      const top = inLang(s.lang, SCRIPT)
+      let ly = y + PAD + top.size / 2 + 1
+      g.text(s.lesson.text, cx, ly, { ...top, color: UI.text, alpha: a })
+      ly += top.size / 2
+      if (s.lesson.reading) {
+        g.text(s.lesson.reading, cx, ly + GAP + READING / 2, { size: READING, color: UI.accent, alpha: a, font: READING_FONT })
+        ly += GAP + READING
       }
-      for (const t of this.glosses(u)) {
-        g.text(t, cx, ly + GLOSS / 2, { size: GLOSS, color: UI.dim, alpha: a })
-        ly += GLOSS + GAP
+      for (const m of s.meanings) {
+        const t = inLang(m.lang, GLOSS)
+        g.text(m.text, cx, ly + GAP + t.size / 2, { ...t, color: UI.dim, alpha: a })
+        ly += GAP + t.size
       }
     }
     chrome.glass(g, trace, area, a)

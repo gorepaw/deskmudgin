@@ -18,6 +18,7 @@
 import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'node:fs'
 import { readTsv } from './lang/tsv.mjs'
 import { derive, allowedChars, loadOverrides, validate, wordsPath, LEVELS } from './lang/zh.mjs'
+import { TRANSLATIONS, translationPath } from './lang/languages.mjs'
 
 const [corpusPath, ...flags] = process.argv.slice(2)
 if (!corpusPath) {
@@ -88,17 +89,17 @@ for (const row of verified) {
   }
 }
 
-// ── Glosses ────────────────────────────────────────────────────────────────
-// A course's glosses in other languages live beside it (`hsk1.es.tsv`) and are
-// joined here by id. A gloss ships only if it is verified by two keys itself
-// AND was checked against the line as it stands now — a gloss of a sentence
-// that has since been corrected is a gloss of a different sentence. Anything
-// else simply is not there, and the app shows English in its place.
-const GLOSSES = { es: 'spanish' }
+// ── Translations ───────────────────────────────────────────────────────────
+// A course's lines in other languages live beside it (`hsk1.es.tsv`,
+// `hsk1.ar.tsv`) and are joined here by id. A translation ships only if it is
+// verified by two keys itself AND was checked against the line as it stands
+// now — a translation of a sentence since corrected is a translation of a
+// different sentence. Anything else simply is not there, and the app falls
+// back to English for that line in that language.
 const glossed = new Map()
 const glossCounts = []
-for (const [lang, key] of Object.entries(GLOSSES)) {
-  const path = corpusPath.replace(/\.tsv$/, `.${lang}.tsv`)
+for (const [lang, spec] of Object.entries(TRANSLATIONS)) {
+  const path = translationPath(corpusPath, lang)
   const glossRows = readTsv(path)
   if (!glossRows.length) continue
   let used = 0
@@ -121,14 +122,26 @@ for (const [lang, key] of Object.entries(GLOSSES)) {
     // two "Perlita"s is a bug the learner sees. Names only — two sentences
     // may well mean the same thing.
     if (kind === 'names') {
-      const twin = [...glossed.entries()].find(([, g]) => g[key] === gRow.gloss)
+      const twin = [...glossed.entries()].find(([, g]) => g[lang]?.text === gRow.gloss)
       if (twin) {
         fatal.push(`${path} line ${gRow._line} (${gRow.id}): "${gRow.gloss}" is already ${twin[0]}'s name`)
         continue
       }
     }
+    // The same rules as the Chinese: the text is re-validated here rather than
+    // trusted, and its reading must be exactly what the deriver makes of it —
+    // a hand-edited romanization is caught the way a hand-edited pinyin is.
+    const complaints = spec.validate?.(gRow.gloss) ?? []
+    if (complaints.length) {
+      fatal.push(`${path} line ${gRow._line} (${gRow.id}): ${complaints.join('; ')}`)
+      continue
+    }
+    if (spec.reading && gRow.gloss_reading !== spec.reading(gRow.gloss)) {
+      fatal.push(`${path} line ${gRow._line} (${gRow.id}): gloss_reading "${gRow.gloss_reading}" is not what the text derives to ("${spec.reading(gRow.gloss)}") — never edit it by hand; run gloss-sync`)
+      continue
+    }
     if (!glossed.has(gRow.id)) glossed.set(gRow.id, {})
-    glossed.get(gRow.id)[key] = gRow.gloss
+    glossed.get(gRow.id)[lang] = spec.reading ? { text: gRow.gloss, reading: gRow.gloss_reading } : { text: gRow.gloss }
     used++
   }
   glossCounts.push(`${used} ${lang}`)
@@ -142,12 +155,15 @@ if (fatal.length) {
   process.exit(1)
 }
 
+// One line per entry, every language on it, the course's own first:
+//   { id: "p001", tags: ["greet"], in: { zh: {…}, en: {…}, es: {…}, ar: {…} } },
+const cell = s => JSON.stringify(s)
+const rendition = r => `{ text: ${cell(r.text)}${r.reading ? `, reading: ${cell(r.reading)}` : ''} }`
 const body = verified.map(r => {
   const tags = r.tags.split(',').map(t => t.trim()).filter(Boolean)
-  const cell = s => JSON.stringify(s)
-  const extra = Object.entries(glossed.get(r.id) ?? {}).map(([k, v]) => ` ${k}: ${cell(v)},`).join('')
-  return `  { id: ${cell(r.id)}, script: ${cell(r.script)}, reading: ${cell(r.reading)},`
-    + ` english: ${cell(r.english)},${extra} tags: [${tags.map(cell).join(', ')}] },`
+  const langs = { [language]: { text: r.script, reading: r.reading }, en: { text: r.english }, ...glossed.get(r.id) }
+  const inner = Object.entries(langs).map(([k, v]) => `${k}: ${rendition(v)}`).join(', ')
+  return `  { id: ${cell(r.id)}, tags: [${tags.map(cell).join(', ')}], in: { ${inner} } },`
 }).join('\n')
 
 const claudeOnly = verified.filter(r => r.checks.includes('claude') && !r.checks.includes('human')).length
@@ -167,7 +183,7 @@ import type { Course } from '../types'
 
 export const COURSE: Course = {
   id: '${course}',
-  language: '${language}',
+  source: '${language}',
   level: '${level}',
   entries: [
 ${body}

@@ -9,9 +9,9 @@
 // =============================================================================
 
 import type { SpeciesId } from './genome'
-import { COURSE as ZH_NAMES } from './lang/generated/zh-names'
-import type { ZhName } from './types'
-import { glossesOf, type GlossMode } from './lang/types'
+import { COURSE as NAMES } from './lang/generated/zh-names'
+import type { Called } from './types'
+import { meaningsOf, type Entry, type LanguageId, type Rendition } from './lang'
 
 const MUDGIN_NAMES: readonly string[] = [
   'Mudgin', 'Grub', 'Nub', 'Blort', 'Sog', 'Pib', 'Hodge', 'Munt',
@@ -65,7 +65,7 @@ function roman(n: number): string {
   return out
 }
 
-// ── Chinese names ────────────────────────────────────────────────────────────
+// ── Course names ─────────────────────────────────────────────────────────────
 
 
 /**
@@ -86,52 +86,90 @@ function numeral(n: number): [string, string] {
 }
 
 /**
- * A Chinese name not already in use, or a numbered one once the list runs dry.
+ * How each language tells the second of a name from the first. Chinese says
+ * 二号 with its numeral; Spanish and English write the number as a nickname
+ * would be numbered; Arabic writes the digit in its own numerals and says it in
+ * the romanization. A language with no rule here numbers the English way.
+ */
+const NUMBERED: Partial<Record<LanguageId, (r: Rendition, n: number) => Rendition>> = {
+  zh: (r, n) => {
+    const [s, py] = numeral(n)
+    return { text: `${r.text}${s}号`, reading: `${r.reading} ${py} hào` }
+  },
+  en: (r, n) => ({ text: `${r.text} No. ${n}` }),
+  es: (r, n) => ({ text: `${r.text} n.º ${n}` }),
+  ar: (r, n) => ({
+    text: `${r.text} ${String(n).replace(/\d/g, d => String.fromCharCode(0x660 + Number(d)))}`,
+    reading: `${r.reading} ${n}`,
+  }),
+}
+
+/** How many of one name there can be before a newcomer shares a number. */
+const MAX_NUMBERED = 19
+
+export const calledKey = (c: Called): string => `${c.id}#${c.n}`
+const nameEntry = (id: string): Entry | undefined => NAMES.entries.find(e => e.id === id)
+
+/**
+ * A course name not already in use, or a numbered one once the list runs dry.
  *
  * Draws only from verified names for the creature's own species, so a Mudgin
  * is never called 珍珠. Returns null when no names are verified yet — the
  * caller keeps showing the English name rather than inventing one.
  */
-export function pickZhName(
+export function pickCalled(
   species: SpeciesId, taken: Iterable<string>, pick: (n: number) => number,
-): ZhName | null {
-  const pool = ZH_NAMES.entries.filter(e => e.tags.includes(species))
+): Called | null {
+  const pool = NAMES.entries.filter(e => e.tags.includes(species))
   if (!pool.length) return null
   const used = new Set(taken)
-  const free = pool.filter(e => !used.has(e.script))
+  const free = pool.filter(e => !used.has(calledKey({ id: e.id, n: 1 })))
   const base = free.length ? free[pick(free.length)] : pool[pick(pool.length)]
-  const name = (s: string, r: string, g: string): ZhName => ({ script: s, reading: r, gloss: g })
-  if (!used.has(base.script)) return name(base.script, base.reading, base.english)
-  for (let i = 2; i < 20; i++) {
-    const [s, r] = numeral(i)
-    const script = `${base.script}${s}号`
-    if (!used.has(script)) return name(script, `${base.reading} ${r} hào`, `${base.english} No. ${i}`)
+  for (let n = 1; n <= MAX_NUMBERED; n++) {
+    if (!used.has(calledKey({ id: base.id, n }))) return { id: base.id, n }
   }
-  return name(base.script, base.reading, base.english)
+  return { id: base.id, n: 1 }
 }
 
 /**
- * What a Chinese name means, in the learner's gloss language.
- *
- * The name stored on a pet carries only its English meaning, so the Spanish is
- * found again in the verified names course: by the base name (豆豆 of 豆豆二号)
- * and its English. A numbered name is composed the same way the English one
- * was — "Frijolito n.º 2" — from verified parts and a numeral. A name whose
- * Spanish is not verified shows its English, like every other gloss.
+ * Which name a pet stored before names were per-language — its Chinese text,
+ * 豆豆二号 — so a collection named then keeps every name it had. Null when the
+ * name is no longer in the course.
  */
-export function nameGloss(zh: ZhName, mode: GlossMode): string {
+export function calledFromChinese(zh: { script: string; gloss: string }): Called | null {
   const numbered = zh.gloss.match(/^(.*) No\. (\d+)$/)
   const english = numbered ? numbered[1] : zh.gloss
-  const base = ZH_NAMES.entries.find(e => e.english === english && zh.script.startsWith(e.script))
-  const spanish = base?.spanish ? (numbered ? `${base.spanish} n.º ${numbered[2]}` : base.spanish) : undefined
-  return glossesOf({ english: zh.gloss, spanish }, mode).join(' · ')
+  const base = NAMES.entries.find(e => e.in.en?.text === english && !!e.in.zh && zh.script.startsWith(e.in.zh.text))
+  return base ? { id: base.id, n: numbered ? Number(numbered[2]) : 1 } : null
+}
+
+/** The name in one language, numbered if it needs to be, or null when the
+ *  name has no verified translation in that language yet. */
+export function nameIn(c: Called, lang: LanguageId): Rendition | null {
+  const r = nameEntry(c.id)?.in[lang]
+  if (!r) return null
+  return c.n > 1 ? (NUMBERED[lang] ?? NUMBERED.en!)(r, c.n) : r
 }
 
 /**
- * The name to put in front of the player: the Chinese one while they speak
- * Chinese and have one, the English one otherwise. The English name remains
- * the identity underneath either way.
+ * What a name means, in the learner's own language(s): "Frijolito n.º 2".
+ * Falls back as every meaning does — see `meaningsOf` — and is numbered the
+ * way that language numbers.
  */
-export function shownName(p: { name: string; zh?: ZhName }, language: string): string {
-  return language === 'zh' && p.zh ? p.zh.script : p.name
+export function nameMeaning(c: Called, l1: readonly LanguageId[], l2: LanguageId): string {
+  const e = nameEntry(c.id)
+  if (!e) return ''
+  return meaningsOf(e, l1, l2)
+    .map(m => (c.n > 1 ? (NUMBERED[m.lang] ?? NUMBERED.en!)({ text: m.text, reading: '' }, c.n).text : m.text))
+    .join(' · ')
+}
+
+/**
+ * The name to put in front of the player: the course name in the language
+ * being learned, while they speak one and it has one, and the English name
+ * otherwise. The English name remains the identity underneath either way.
+ */
+export function shownName(p: { name: string; called?: Called }, voice: string, l2: LanguageId): string {
+  if (voice !== 'course' || !p.called) return p.name
+  return nameIn(p.called, l2)?.text ?? p.name
 }
