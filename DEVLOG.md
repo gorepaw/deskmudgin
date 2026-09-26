@@ -39,11 +39,13 @@ later human pass:
 - A Spanish gloss for every one of those 1,289 lines, in `content/zh/*.es.tsv`.
 - An Arabic version of every one of those lines except 18 names, in `content/zh/*.ar.tsv`; the same for HSK 3 in Spanish and Arabic (821 lines each).
 
-Everything typechecks (`npm run typecheck`) and builds. ~15,000 lines across 97
+Everything typechecks (`npm run typecheck`) and builds. ~16,000 lines across 101
 TS/MJS files, excluding generated courses. Checks: `npm run lang:selftest`,
 `tools/wild-cycle.mjs`, `tools/neighbors-check.mjs`. **Look at renders with
 `npm run snap`** (offscreen, see *Verification tooling*) — never with a visible
 window on the user's desktop.
+
+**Known:** Settings is ~940px tall now (border row added) and does not fit a 768px screen; it did not before either (~870). Moving the theme and border pickers into their own panel would fix it. The user said they are low on usage, so HSK 4 was deferred.
 
 **Next, at the user's request:** HSK 4, one level at a time, the same way HSK 3 was done (see *HSK 3*); the tooling is level-agnostic up to `hsk6`, and a level needs one row in `shared/lang/levels.ts` and three lines in `lang-build-all.mjs`. A native Arabic speaker's pass over names and the fine word choices would help first.
 
