@@ -112,7 +112,7 @@ w110	喂	wèi	hello (on the phone)	أَلُو	Alū	verified	claude-blind,claude-
 w111	我	wǒ	I; me	أَنَا	Anā	verified	claude-blind,claude-review	
 w112	我们	wǒ men	we; us	نَحْنُ	Naḥn	verified	claude-blind,claude-review	
 w113	五	wǔ	five	خَمْسَةٌ	Khamsa	verified	claude-blind,claude-review	
-w114	喜欢	xǐ huan	to like	أَحَبَّ	Aḥabb	conflict		reviewer proposed a fix (أُعْجِبَ is passive (was pleased); citation form is أَحَبَّ); blind reading was "was impressed" · re-check next round
+w114	喜欢	xǐ huan	to like	أَحَبَّ	Aḥabb	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: to like/to love: أحب covers both
 w115	下	xià	down; under	تَحْتَ	Taḥt	verified	claude-blind,claude-review	
 w116	下午	xià wǔ	afternoon	بَعْدَ الظُّهْرِ	Baʿda aẓ-ẓuhr	verified	claude-blind,claude-review	
 w117	下雨	xià yǔ	to rain	أَمْطَرَ	Amṭar	verified	claude-blind,claude-review	

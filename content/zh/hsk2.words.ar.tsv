@@ -81,7 +81,7 @@ h2w079	跑步	pǎo bù	to run; to jog	جَرَى	Jarā	verified	claude-review,cl
 h2w080	便宜	pián yi	cheap	رَخِيصٌ	Rakhīṣ	verified	claude-blind,claude-review	
 h2w081	票	piào	ticket	تَذْكِرَةٌ	Tadhkira	verified	claude-blind,claude-review	
 h2w082	妻子	qī zi	wife	زَوْجَةٌ	Zawja	verified	claude-blind,claude-review	
-h2w083	起床	qǐ chuáng	to get up	نَهَضَ مِنَ السَّرِيرِ	Nahaḍa mina as-sarīr	conflict		reviewer proposed a fix (قَامَ means stand up; get out of bed is نَهَضَ مِنَ السَّرِيرِ); blind reading was "stood up" · re-check next round
+h2w083	起床	qǐ chuáng	to get up	نَهَضَ مِنَ السَّرِيرِ	Nahaḍa mina as-sarīr	verified	claude-blind,claude-review	
 h2w084	千	qiān	thousand	أَلْفٌ	Alf	verified	claude-blind,claude-review	
 h2w085	铅笔	qiān bǐ	pencil	قَلَمُ رَصَاصٍ	Qalamu raṣāṣ	verified	claude-blind,claude-review	
 h2w086	晴	qíng	sunny	مُشْمِسٌ	Mushmis	verified	claude-blind,claude-review	

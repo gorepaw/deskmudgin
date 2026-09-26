@@ -25,6 +25,8 @@ Source: [github.com/gorepaw/deskmudgin](https://github.com/gorepaw/deskmudgin).
 | HSK 2, and the level setting (`shared/lang/levels.ts`) | **done, verified offscreen** |
 | Six premium themes as frames (`ui/frames/`) | **done, verified offscreen** |
 | Spanish glosses — meaning in English / Español / Both | **done, verified offscreen** |
+| L1/L2 — learn any of English, Español, 中文, العربية from any other | **done, verified offscreen** |
+| Arabic — every line verified, vowelled, romanization derived | **done, verified offscreen** |
 
 Content, all verified by Claude agents and marked `claude-*` in `checks` for a
 later human pass:
@@ -32,6 +34,7 @@ later human pass:
 - HSK 2 (2.0): 150 words, 449 sentences, 58 conversations.
 - 118 names; 92 pinyin overrides.
 - A Spanish gloss for every one of those 1,289 lines, in `content/zh/*.es.tsv`.
+- An Arabic version of every one of those lines except 18 names, in `content/zh/*.ar.tsv` (1,271 of 1,289).
 
 Everything typechecks (`npm run typecheck`) and builds. ~15,000 lines across 97
 TS/MJS files, excluding generated courses. Checks: `npm run lang:selftest`,
@@ -40,8 +43,9 @@ TS/MJS files, excluding generated courses. Checks: `npm run lang:selftest`,
 window on the user's desktop.
 
 **Next, at the user's request:** HSK 3, one level at a time, the same way HSK 2
-was done (wordlist first, then sentences and conversations, then Spanish glosses
-for all three through `gloss-sync`).
+was done (wordlist first, then sentences and conversations, then the Spanish
+and Arabic versions of all three through `gloss-sync --lang es|ar`). A native
+Arabic speaker's pass over names and the fine word choices would help first.
 
 **Open with the user:** I offered to clear the ledger's `said` entries from
 2026-09-24 — 369 lines were "shown" in an hour only because I woke 13 pets and
@@ -833,6 +837,66 @@ by adjudication, on the course rule that reviewers are not asked forever.
   message about a field; ingest now names the chunk and line instead.
 - Nothing stopped two creatures sharing a Spanish name. The build now refuses
   a duplicate name gloss.
+
+## Any language from any other, and Arabic
+
+**The model.** A course line is one entry carrying every language it has been
+verified in: `in: { zh, en, es, ar }`, each `{ text, reading? }`. The learner
+picks the **lesson** (L2, on top, with its reading) and the **meaning** (L1,
+plus an optional second) in Settings → *they speak*: *learn*, *level*,
+*meaning*, *also*. Chinese from English, Spanish from Chinese, English from
+Spanish, Arabic from anything — all read the same entries. Picking your L1 as
+the language to learn swaps the two. Old `language`/`gloss` settings migrate
+on load (`tongues()` in `shared/types.ts`).
+
+**What changed shape.** `Entry` lost `script`/`reading`/`english`/`spanish` for
+`in`; `LanguageId` is `en|es|zh|ar`; every reader (bubble, dictionary, ledger,
+pet card, manager, starter) asks `lessonOf()`/`meaningsOf()` and draws through
+`ui/tongue.ts` and `Panel.langText`, so a new language touches none of them.
+Levels are HSK's; outside Chinese they read "Level N". The dictionary's Words
+tab exists only while learning Chinese (the wordlists are Chinese vocabulary).
+Names are stored as a reference into the names course (`called: {id, n}`) so a
+creature keeps its name in every language; old Chinese-text names migrate. The
+ledger files heard lines per language (`said:ar:p052`); old keys move to `zh`.
+Meaning lines strip Arabic's vowel marks, the way it is printed for adults.
+A language with nothing verified cannot be chosen to learn; as a meaning it
+falls back to English line by line.
+
+**Arabic.** MSA, fully vowelled. The rule that nobody types a reading carried
+over: `tools/lang/ar.mjs` derives the romanization from the vowel marks
+(`gloss_reading`), applying pause at sentence ends, and refuses unvowelled
+text, a missing dagger alif and Persian letters — in `gloss-fill`, `ingest`
+and the build. That moves what a reviewer checks from the Latin to the
+vowelling. Its cases live in `tools/lang/ar.cases.json` and run in
+`lang:selftest`. `tools/lang/languages.mjs` is the one registry the tools read
+(blind direction, style rules, deriver); `lang:build-all` rebuilds every course.
+
+**Tooling found wanting, and fixed:**
+- The deriver was wrong in ways only real content shows: tanwin on alif
+  maqsura and on a final hamza in pause, the article and prefixes on words
+  beginning with a hamzat al-wasl (الِاثْنَيْنِ, وَاسْمِي), الَّذِي read
+  "illadhī", هُوَ read "huw". Drafters had been rewording sentences to dodge
+  them; each is a case now.
+- Export now records which row each line is (`.ids.txt`); two rows can share
+  an Arabic text (你好/您好), and ingest joined by looking the text up.
+- A reviewer that stopped part-way left a header-only reply, which ingest read
+  as "no verdict" for the whole chunk — and archived it. It is now "not filled
+  in yet".
+
+**What the checks caught.** Word meanings: 太 "too" glossed as 很's "very";
+喜欢 as a passive; 请 as a verb; 起床 as "woke up". Sentences: 爱 rendered
+أَعْشَقُ (romantic) — twice; "noon" as فِي الظُّهْرِ; مَعْكَرُونَة (macaroni) for
+noodles; a bare يَا for 喂. Names were the weak part: the first draft was full
+of invented diminutives, real given names and wrong meanings, and 54 of 118
+were rewritten by the reviewer, then most of those again. The final round
+dropped what it could not stand behind (real names, a word that also means
+crucifixion, duplicates, two that read as "fat" and "naive"). 18 names show
+their English name in Arabic mode. **Names and the fine choices (noodles,
+the "please" and "to like" glosses) are what a native speaker should look at
+first;** they are `claude-*` throughout.
+
+**Decided by adjudication, and recorded as such:** wherever two agents
+differed only in wording ("delicious"/"tasty"), and the last-round calls above.
 
 ## What is not built
 

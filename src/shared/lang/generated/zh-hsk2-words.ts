@@ -96,7 +96,7 @@ export const COURSE: Course = {
   { id: "h2w080", tags: ["hsk2"], in: { zh: { text: "便宜", reading: "pián yi" }, en: { text: "cheap" }, es: { text: "barato" }, ar: { text: "رَخِيصٌ", reading: "Rakhīṣ" } } },
   { id: "h2w081", tags: ["hsk2"], in: { zh: { text: "票", reading: "piào" }, en: { text: "ticket" }, es: { text: "boleto" }, ar: { text: "تَذْكِرَةٌ", reading: "Tadhkira" } } },
   { id: "h2w082", tags: ["hsk2"], in: { zh: { text: "妻子", reading: "qī zi" }, en: { text: "wife" }, es: { text: "esposa" }, ar: { text: "زَوْجَةٌ", reading: "Zawja" } } },
-  { id: "h2w083", tags: ["hsk2"], in: { zh: { text: "起床", reading: "qǐ chuáng" }, en: { text: "to get up" }, es: { text: "levantarse" } } },
+  { id: "h2w083", tags: ["hsk2"], in: { zh: { text: "起床", reading: "qǐ chuáng" }, en: { text: "to get up" }, es: { text: "levantarse" }, ar: { text: "نَهَضَ مِنَ السَّرِيرِ", reading: "Nahaḍa mina as-sarīr" } } },
   { id: "h2w084", tags: ["hsk2"], in: { zh: { text: "千", reading: "qiān" }, en: { text: "thousand" }, es: { text: "mil" }, ar: { text: "أَلْفٌ", reading: "Alf" } } },
   { id: "h2w085", tags: ["hsk2"], in: { zh: { text: "铅笔", reading: "qiān bǐ" }, en: { text: "pencil" }, es: { text: "lápiz" }, ar: { text: "قَلَمُ رَصَاصٍ", reading: "Qalamu raṣāṣ" } } },
   { id: "h2w086", tags: ["hsk2"], in: { zh: { text: "晴", reading: "qíng" }, en: { text: "sunny" }, es: { text: "soleado" }, ar: { text: "مُشْمِسٌ", reading: "Mushmis" } } },

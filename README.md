@@ -266,9 +266,13 @@ What there is, HSK 1 and HSK 2 (2.0):
 | **Sentences** | 302 | 449 |
 | **Conversations** | 60 | 58 |
 
-The meaning under the Chinese can be **English, Spanish, or both** (Settings →
-*They speak* → **meaning**) — every line, word and name has a verified Spanish
-gloss in neutral Latin American Spanish.
+Any of English, Spanish, Chinese and Arabic can be the language you **learn**
+or the one its meaning is shown in (Settings → *They speak* → **learn**,
+**meaning**, and **also** for a second meaning line). Every line, word and name
+has a verified Spanish version (neutral Latin American), and every line and
+word a verified, fully vowelled Arabic one — with a romanization derived from
+its vowel marks, never typed — and 100 of 118 names. Anything not yet verified
+falls back to English.
 
 Sentences are chosen by moment (hungry, sleepy, picked up) and at random while
 idle; nearby pets start conversations and answer each other. Settings → *They

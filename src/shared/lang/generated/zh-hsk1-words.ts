@@ -127,7 +127,7 @@ export const COURSE: Course = {
   { id: "w111", tags: ["hsk1"], in: { zh: { text: "我", reading: "wǒ" }, en: { text: "I; me" }, es: { text: "yo" }, ar: { text: "أَنَا", reading: "Anā" } } },
   { id: "w112", tags: ["hsk1"], in: { zh: { text: "我们", reading: "wǒ men" }, en: { text: "we; us" }, es: { text: "nosotros" }, ar: { text: "نَحْنُ", reading: "Naḥn" } } },
   { id: "w113", tags: ["hsk1"], in: { zh: { text: "五", reading: "wǔ" }, en: { text: "five" }, es: { text: "cinco" }, ar: { text: "خَمْسَةٌ", reading: "Khamsa" } } },
-  { id: "w114", tags: ["hsk1"], in: { zh: { text: "喜欢", reading: "xǐ huan" }, en: { text: "to like" }, es: { text: "gustar" } } },
+  { id: "w114", tags: ["hsk1"], in: { zh: { text: "喜欢", reading: "xǐ huan" }, en: { text: "to like" }, es: { text: "gustar" }, ar: { text: "أَحَبَّ", reading: "Aḥabb" } } },
   { id: "w115", tags: ["hsk1"], in: { zh: { text: "下", reading: "xià" }, en: { text: "down; under" }, es: { text: "abajo; debajo" }, ar: { text: "تَحْتَ", reading: "Taḥt" } } },
   { id: "w116", tags: ["hsk1"], in: { zh: { text: "下午", reading: "xià wǔ" }, en: { text: "afternoon" }, es: { text: "tarde" }, ar: { text: "بَعْدَ الظُّهْرِ", reading: "Baʿda aẓ-ẓuhr" } } },
   { id: "w117", tags: ["hsk1"], in: { zh: { text: "下雨", reading: "xià yǔ" }, en: { text: "to rain" }, es: { text: "llover" }, ar: { text: "أَمْطَرَ", reading: "Amṭar" } } },

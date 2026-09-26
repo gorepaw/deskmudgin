@@ -31,7 +31,7 @@ p029	我想吃水果。	Wǒ xiǎng chī shuǐ guǒ.	I want to eat fruit.	أُر�
 p030	我没有吃饭。	Wǒ méi yǒu chī fàn.	I haven't eaten.	لَمْ آكُلْ.	Lam ākul.	verified	claude-blind,claude-review	
 p031	我今天没有吃饭。	Wǒ jīn tiān méi yǒu chī fàn.	I haven't eaten today.	لَمْ آكُلْ الْيَوْمَ.	Lam ākul al-yawm.	verified	claude-blind,claude-review	
 p032	什么时候吃饭？	Shén me shí hou chī fàn?	When do we eat?	مَتَى نَأْكُلُ؟	Matā naʾkul?	verified	claude-blind,claude-review	
-p033	中午吃什么？	Zhōng wǔ chī shén me?	What's for lunch?	مَاذَا سَنَأْكُلُ لِلْغَدَاءِ؟	Mādhā sanaʾkulu li-l-ghadāʾ?	conflict		reviewer proposed a fix (مَاذَا عَلَى الْغَدَاءِ is colloquial; use a full verb); blind reading was "What is for lunch?" · re-check next round
+p033	中午吃什么？	Zhōng wǔ chī shén me?	What's for lunch?	مَاذَا سَنَأْكُلُ لِلْغَدَاءِ؟	Mādhā sanaʾkulu li-l-ghadāʾ?	verified	claude-blind,claude-review	
 p034	你有苹果吗？	Nǐ yǒu píng guǒ ma?	Do you have an apple?	هَلْ عِنْدَكَ تُفَّاحَةٌ؟	Hal ʿindaka tuffāḥa?	verified	claude-blind,claude-review	
 p035	你有米饭吗？	Nǐ yǒu mǐ fàn ma?	Do you have rice?	هَلْ عِنْدَكَ أُرْزٌ؟	Hal ʿindaka urz?	verified	claude-blind,claude-review	
 p036	我想喝水。	Wǒ xiǎng hē shuǐ.	I want to drink water.	أُرِيدُ أَنْ أَشْرَبَ مَاءً.	Urīdu an ashraba māʾan.	verified	claude-blind,claude-review	
@@ -151,9 +151,9 @@ p150	我们去商店。	Wǒ men qù shāng diàn.	We're going to the shop.	نَ�
 p151	你想买什么？	Nǐ xiǎng mǎi shén me?	What do you want to buy?	مَاذَا تُرِيدُ أَنْ تَشْتَرِي؟	Mādhā turīdu an tashtarī?	verified	claude-blind,claude-review	
 p152	我想买一本书。	Wǒ xiǎng mǎi yì běn shū.	I want to buy a book.	أُرِيدُ أَنْ أَشْتَرِيَ كِتَابًا.	Urīdu an ashtariya kitāban.	verified	claude-blind,claude-review	
 p153	我想买衣服。	Wǒ xiǎng mǎi yī fu.	I want to buy clothes.	أَنَا أُرِيدُ أَنْ أَشْتَرِيَ مَلَابِسَ.	Anā urīdu an ashtariya malābis.	verified	claude-blind,claude-review	
-p154	这个多少钱？	Zhè ge duō shao qián?	How much is this?	بِكَمْ هٰذَا؟	Bikam hādhā?	conflict		reviewer proposed a fix (nonstandard fatha on ha before dagger alif; use هٰذَا); blind reading was "How much is this?" · re-check next round
+p154	这个多少钱？	Zhè ge duō shao qián?	How much is this?	بِكَمْ هٰذَا؟	Bikam hādhā?	verified	claude-blind,claude-review	
 p155	三块钱。	Sān kuài qián.	Three yuan.	ثَلَاثَةُ يُوَانَاتٍ.	Thalāthatu yuwānāt.	verified	claude-blind,claude-review	
-p156	太多了！	Tài duō le!	That's too much!	هٰذَا كَثِيرٌ جِدًّا!	Hādhā kathīrun jiddan!	conflict		reviewer proposed a fix (nonstandard fatha on ha before dagger alif; use هٰذَا); blind reading was "This is very much!" · re-check next round
+p156	太多了！	Tài duō le!	That's too much!	هٰذَا كَثِيرٌ جِدًّا!	Hādhā kathīrun jiddan!	verified	claude-blind,claude-review	
 p157	我没有钱。	Wǒ méi yǒu qián.	I don't have money.	لَيْسَ عِنْدِي مَالٌ.	Laysa ʿindī māl.	verified	claude-blind,claude-review	
 p158	我有一点儿钱。	Wǒ yǒu yì diǎnr qián.	I have a little money.	عِنْدِي قَلِيلٌ مِنَ الْمَالِ.	ʿIndī qalīlun mina al-māl.	verified	claude-blind,claude-review	
 p159	我喜欢猫。	Wǒ xǐ huan māo.	I like cats.	أُحِبُّ الْقِطَطَ.	Uḥibbu al-qiṭaṭ.	verified	claude-blind,claude-review	

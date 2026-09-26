@@ -307,7 +307,7 @@ h2p305	我也想去。	Wǒ yě xiǎng qù.	I want to go too.	أُرِيدُ ال
 h2p306	你也喜欢猫吗？	Nǐ yě xǐ huan māo ma?	Do you like cats too?	هَلْ تُحِبُّ الْقِطَطَ أَيْضًا؟	Hal tuḥibbu al-qiṭaṭa ayḍan?	verified	claude-blind,claude-review	
 h2p307	他也是学生。	Tā yě shì xué sheng.	He's a student too.	هُوَ طَالِبٌ أَيْضًا.	Huwa ṭālibun ayḍan.	verified	claude-blind,claude-review	
 h2p308	就是这个！	Jiù shì zhè ge!	This is the one!	هٰذَا هُوَ بِالضَّبْطِ!	Hādhā huwa bi-ḍ-ḍabṭ!	verified	claude-blind,claude-review	
-h2p309	我就在这儿。	Wǒ jiù zài zhèr.	I'm right here.	هَا أَنَا هُنَا.	Hā anā hunā.	conflict		reviewer proposed a fix (تَمَامًا is not idiomatic here; هَا أَنَا هُنَا = here I am); blind reading was "I am right here." · re-check next round
+h2p309	我就在这儿。	Wǒ jiù zài zhèr.	I'm right here.	هَا أَنَا هُنَا.	Hā anā hunā.	verified	claude-blind,claude-review	
 h2p310	我就来！	Wǒ jiù lái!	I'm coming right away!	سَآتِي حَالًا!	Saʾātī ḥālan!	verified	claude-blind,claude-review	
 h2p311	他还没来。	Tā hái méi lái.	He hasn't come yet.	لَمْ يَأْتِ بَعْدُ.	Lam yaʾti baʿd.	verified	claude-blind,claude-review	
 h2p312	还有问题吗？	Hái yǒu wèn tí ma?	Any more questions?	هَلْ هُنَاكَ أَسْئِلَةٌ أُخْرَى؟	Hal hunāka asʾilatun ukhrā?	verified	claude-blind,claude-review	
@@ -360,7 +360,7 @@ h2p358	你的眼睛是什么颜色？	Nǐ de yǎn jing shì shén me yán sè?	W
 h2p359	他穿着红衣服。	Tā chuān zhe hóng yī fu.	He's wearing red clothes.	هُوَ يَلْبَسُ مَلَابِسَ حَمْرَاءَ.	Huwa yalbasu malābisa ḥamrāʾ.	verified	claude-blind,claude-review	
 h2p360	我今天穿什么？	Wǒ jīn tiān chuān shén me?	What shall I wear today?	مَاذَا أَلْبَسُ الْيَوْمَ؟	Mādhā albasu al-yawm?	verified	claude-blind,claude-review	
 h2p361	这件衣服太长了。	Zhè jiàn yī fu tài cháng le.	This piece of clothing is too long.	هٰذَا الثَّوْبُ طَوِيلٌ أَكْثَرَ مِنَ اللَّازِمِ.	Hādhā ath-thawbu ṭawīlun akthara mina al-lāzim.	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same
-h2p362	他很高。	Tā hěn gāo.	He is tall.	هُوَ طَوِيلٌ.	Huwa ṭawīl.	conflict		reviewer proposed a fix (جِدًّا adds very; Chinese/English just say tall); blind reading was "He is very tall." · re-check next round
+h2p362	他很高。	Tā hěn gāo.	He is tall.	هُوَ طَوِيلٌ.	Huwa ṭawīl.	verified	claude-blind,claude-review	
 h2p363	我不高，但是我很快。	Wǒ bù gāo, dàn shì wǒ hěn kuài.	I'm not tall, but I'm fast.	لَسْتُ طَوِيلًا، لٰكِنِّي سَرِيعٌ.	Lastu ṭawīlan, lākinnī sarīʿ.	verified	claude-blind,claude-review	
 h2p364	虽然我很小，但是我吃得很多。	Suī rán wǒ hěn xiǎo, dàn shì wǒ chī de hěn duō.	Although I'm small, I eat a lot.	مَعَ أَنِّي صَغِيرٌ، لٰكِنِّي آكُلُ كَثِيرًا.	Maʿa annī ṣaghīr, lākinnī ākulu kathīran.	verified	claude-blind,claude-review	
 h2p365	因为今天下雪，所以我们不去学校。	Yīn wèi jīn tiān xià xuě, suǒ yǐ wǒ men bú qù xué xiào.	Because it's snowing today, we're not going to school.	لِأَنَّ الثَّلْجَ يَنْزِلُ الْيَوْمَ، لَنْ نَذْهَبَ إِلَى الْمَدْرَسَةِ.	Liʾanna ath-thalja yanzilu al-yawm, lan nadhhaba ilā al-madrasa.	verified	claude-blind,claude-review	
@@ -372,7 +372,7 @@ h2p370	我知道你是谁。	Wǒ zhī dào nǐ shì shéi.	I know who you are.	�
 h2p371	你知道他在哪儿吗？	Nǐ zhī dào tā zài nǎr ma?	Do you know where he is?	هَلْ تَعْرِفُ أَيْنَ هُوَ؟	Hal taʿrifu ayna huwa?	verified	claude-blind,claude-review	
 h2p372	我不知道怎么说。	Wǒ bù zhī dào zěn me shuō.	I don't know how to say it.	لَا أَعْرِفُ كَيْفَ أَقُولُ ذٰلِكَ.	Lā aʿrifu kayfa aqūlu dhālik.	verified	claude-blind,claude-review	
 h2p373	你觉得怎么样？	Nǐ jué de zěn me yàng?	What do you think?	مَا رَأْيُكَ؟	Mā raʾyuk?	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English (wording only)
-h2p374	我觉得有点儿冷。	Wǒ jué de yǒu diǎnr lěng.	I feel a little cold.	أَشْعُرُ بِالْبَرْدِ قَلِيلًا.	Ashʿuru bi-l-bardi qalīlan.	conflict		reviewer proposed a fix (بِبَعْضِ الْبَرْدِ is unnatural); blind reading was "I feel a bit cold." · re-check next round
+h2p374	我觉得有点儿冷。	Wǒ jué de yǒu diǎnr lěng.	I feel a little cold.	أَشْعُرُ بِالْبَرْدِ قَلِيلًا.	Ashʿuru bi-l-bardi qalīlan.	verified	claude-blind,claude-review	
 h2p375	这个问题很好。	Zhè ge wèn tí hěn hǎo.	That's a good question.	هٰذَا سُؤَالٌ جَيِّدٌ.	Hādhā suʾālun jayyid.	verified	claude-blind,claude-review	
 h2p376	没问题！	Méi wèn tí!	No problem!	لَا مُشْكِلَةَ!	Lā mushkila!	verified	claude-blind,claude-review	
 h2p377	我有一个问题。	Wǒ yǒu yí gè wèn tí.	I have a question.	عِنْدِي سُؤَالٌ.	ʿIndī suʾāl.	verified	claude-blind,claude-review	
@@ -400,12 +400,12 @@ h2p398	我家旁边有个商店。	Wǒ jiā páng biān yǒu gè shāng diàn.	T
 h2p399	你坐我旁边吧。	Nǐ zuò wǒ páng biān ba.	Sit next to me.	اِجْلِسْ بِجَانِبِي.	Ijlis bijānibī.	verified	claude-blind,claude-review	
 h2p400	她是我们的新同学。	Tā shì wǒ men de xīn tóng xué.	She's our new classmate.	هِيَ زَمِيلَتُنَا الْجَدِيدَةُ.	Hiya zamīlatunā al-jadīda.	verified	claude-blind,claude-review	
 h2p401	大家都来了吗？	Dà jiā dōu lái le ma?	Is everyone here?	هَلْ حَضَرَ الْجَمِيعُ؟	Hal ḥaḍara al-jamīʿ?	verified	claude-blind,claude-review	
-h2p402	大家一起唱吧！	Dà jiā yì qǐ chàng ba!	Everyone, sing together!	لِنُغَنِّ جَمِيعًا!	Linughanni jamīʿan!	conflict		reviewer proposed a fix (جَمِيعًا مَعًا redundant; suggestion form for 吧); blind reading was "Sing all together!" · re-check next round
+h2p402	大家一起唱吧！	Dà jiā yì qǐ chàng ba!	Everyone, sing together!	لِنُغَنِّ جَمِيعًا!	Linughanni jamīʿan!	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same
 h2p403	我给你打电话。	Wǒ gěi nǐ dǎ diàn huà.	I'll call you.	سَأَتَّصِلُ بِكَ.	Saʾattaṣilu bik.	verified	claude-blind,claude-review	
 h2p404	我给你买了一个西瓜。	Wǒ gěi nǐ mǎi le yí gè xī guā.	I bought you a watermelon.	اِشْتَرَيْتُ لَكَ بَطِّيخَةً.	Ishtaraytu laka baṭṭīkha.	verified	claude-blind,claude-review	
 h2p405	这是给你的。	Zhè shì gěi nǐ de.	This is for you.	هٰذَا لَكَ.	Hādhā lak.	verified	claude-blind,claude-review	
 h2p406	我们去外面吃饭吧。	Wǒ men qù wài mian chī fàn ba.	Let's eat out.	لِنَأْكُلْ خَارِجَ الْبَيْتِ.	Linaʾkul khārija al-bayt.	verified	claude-blind,claude-review	
-h2p407	你想吃米饭还是面条？	Nǐ xiǎng chī mǐ fàn hái shì miàn tiáo?	Do you want rice or noodles?	أَتُرِيدُ أَرُزًّا أَمْ نُودِلْزَ؟	Aturīdu aruzzan am nūdilz?	conflict		reviewer proposed a fix (مَعْكَرُونَة is macaroni (Egyptian spelling); noodles = نُودِلْز); blind reading was "Do you want rice or pasta?" · re-check next round
+h2p407	你想吃米饭还是面条？	Nǐ xiǎng chī mǐ fàn hái shì miàn tiáo?	Do you want rice or noodles?	أَتُرِيدُ أَرُزًّا أَمْ نُودِلْزْ؟	Aturīdu aruzzan am nūdilz?	verified	claude-review,claude-adjudicated	settled by claude-review,claude-adjudicated: only change from the blind-read version is the pausal sukun the reviewer required
 h2p408	鸡蛋很便宜。	Jī dàn hěn pián yi.	Eggs are cheap.	الْبَيْضُ رَخِيصٌ.	Al-bayḍu rakhīṣ.	verified	claude-blind,claude-review	
 h2p409	茶比咖啡好喝。	Chá bǐ kā fēi hǎo hē.	Tea tastes better than coffee.	الشَّايُ أَلَذُّ مِنَ الْقَهْوَةِ.	Ash-shāyu aladhdhu mina al-qahwa.	verified	claude-blind,claude-review	
 h2p410	西瓜是我最喜欢的水果。	Xī guā shì wǒ zuì xǐ huan de shuǐ guǒ.	Watermelon is my favourite fruit.	الْبَطِّيخُ فَاكِهَتِي الْمُفَضَّلَةُ.	Al-baṭṭīkhu fākihatī al-mufaḍḍala.	verified	claude-blind,claude-review	
@@ -427,7 +427,7 @@ h2p425	这个真大！	Zhè ge zhēn dà!	This is really big!	هٰذَا كَب�
 h2p426	你真高！	Nǐ zhēn gāo!	You're really tall!	أَنْتَ طَوِيلٌ حَقًّا!	Anta ṭawīlun ḥaqqan!	verified	claude-blind,claude-review	
 h2p427	今天真冷！	Jīn tiān zhēn lěng!	It's really cold today!	الْجَوُّ بَارِدٌ جِدًّا الْيَوْمَ!	Al-jawwu bāridun jiddan al-yawm!	verified	claude-blind,claude-review	
 h2p428	你是我最好的朋友。	Nǐ shì wǒ zuì hǎo de péng you.	You're my best friend.	أَنْتَ أَفْضَلُ صَدِيقٍ لِي.	Anta afḍalu ṣadīqin lī.	verified	claude-blind,claude-review	
-h2p429	我最不喜欢考试。	Wǒ zuì bù xǐ huan kǎo shì.	I like exams least of all.	أَقَلُّ مَا أُحِبُّهُ هُوَ الِامْتِحَانَاتُ.	Aqallu mā uḥibbuhu huwa al-imtiḥānāt.	conflict		reviewer proposed a fix (أَكْرَهُ...أَكْثَرَ مِنْ أَيِّ شَيْءٍ says hate most; Chinese is like least); blind reading was "I hate exams more than anything." · re-check next round
+h2p429	我最不喜欢考试。	Wǒ zuì bù xǐ huan kǎo shì.	I like exams least of all.	أَقَلُّ مَا أُحِبُّهُ هُوَ الِامْتِحَانَاتُ.	Aqallu mā uḥibbuhu huwa al-imtiḥānāt.	verified	claude-blind,claude-review	
 h2p430	我准备了很多吃的。	Wǒ zhǔn bèi le hěn duō chī de.	I've prepared lots of food.	حَضَّرْتُ كَثِيرًا مِنَ الطَّعَامِ.	Ḥaḍḍartu kathīran mina aṭ-ṭaʿām.	verified	claude-blind,claude-review	
 h2p431	我希望能去中国。	Wǒ xī wàng néng qù zhōng guó.	I hope I can go to China.	أَتَمَنَّى أَنْ أَسْتَطِيعَ الذَّهَابَ إِلَى الصِّينِ.	Atamannā an astaṭīʿa adh-dhahāba ilā aṣ-ṣīn.	verified	claude-blind,claude-review	
 h2p432	他可能不来了。	Tā kě néng bù lái le.	He might not come.	رُبَّمَا لَا يَأْتِي.	Rubbamā lā yaʾtī.	verified	claude-blind,claude-review	
@@ -441,7 +441,7 @@ h2p439	我找到了！	Wǒ zhǎo dào le!	I found it!	وَجَدْتُهُ!	Waja
 h2p440	你找什么？	Nǐ zhǎo shén me?	What are you looking for?	مَاذَا تَبْحَثُ عَنْهُ؟	Mādhā tabḥathu ʿanh?	verified	claude-blind,claude-review	
 h2p441	这儿的东西都很便宜。	Zhèr de dōng xi dōu hěn pián yi.	Everything here is cheap.	كُلُّ الْأَشْيَاءِ هُنَا رَخِيصَةٌ.	Kullu al-ʾashyāʾi hunā rakhīṣa.	verified	claude-blind,claude-review	
 h2p442	西瓜怎么卖？	Xī guā zěn me mài?	How much is the watermelon?	بِكَمِ الْبَطِّيخُ؟	Bikami al-baṭṭīkh?	verified	claude-blind,claude-review	
-h2p443	这个卖完了。	Zhè ge mài wán le.	This is sold out.	نَفِدَ هٰذَا الصِّنْفُ.	Nafida hādhā aṣ-ṣinf.	conflict		reviewer proposed a fix (نَفِدَ هٰذَا is not natural for sold out; specify item); blind reading was "This ran out." · re-check next round
+h2p443	这个卖完了。	Zhè ge mài wán le.	This is sold out.	نَفِدَ هٰذَا الصِّنْفُ.	Nafida hādhā aṣ-ṣinf.	verified	claude-blind,claude-review	
 h2p444	你会打篮球吗？	Nǐ huì dǎ lán qiú ma?	Can you play basketball?	هَلْ تُجِيدُ لَعِبَ كُرَةِ السَّلَّةِ؟	Hal tujīdu laʿiba kurati as-salla?	verified	claude-blind,claude-review	
 h2p445	我不会跳舞。	Wǒ bú huì tiào wǔ.	I can't dance.	لَا أُجِيدُ الرَّقْصَ.	Lā ujīdu ar-raqṣ.	verified	claude-review,claude-adjudicated	settled by claude-adjudicated: blind reading means the same as the English (wording only)
 h2p446	我身体很好。	Wǒ shēn tǐ hěn hǎo.	I'm in good health.	صِحَّتِي جَيِّدَةٌ.	Ṣiḥḥatī jayyida.	verified	claude-blind,claude-review	
