@@ -14,6 +14,7 @@
 
 import type { MudginBridge, UiRequest } from '../shared/ipc'
 import type { LayerMode, Settings } from '../shared/types'
+import { matronPlane } from '../shared/types'
 import { Painter } from './engine/painter'
 import { Stage, pacedLoop } from './engine/stage'
 import { rng } from './engine/math'
@@ -111,7 +112,7 @@ async function boot(): Promise<void> {
     // She may only be drawn by a window that is simulating something: in single
     // mode there is exactly one, and in dual it is the one matching her layer.
     // A ui-only overlay never shows her, or she would appear twice.
-    showMatron = !UI_ONLY && (cfg.stageMode === 'single' || cfg.matronLayer === MY_LAYER)
+    showMatron = !UI_ONLY && (cfg.stageMode === 'single' || matronPlane(cfg) === MY_LAYER)
     matron.configure(cfg, world)
     // Only reachable where she is drawn. A pet on the desktop layer cannot
     // cuddle a Matron standing in front of your icons.
@@ -266,6 +267,12 @@ async function boot(): Promise<void> {
       return
     }
     if (matronGrab) {
+      // Only a draggable Matron follows the hand, and only once it has really
+      // moved. She used to follow any press, draggable or not — sliding about
+      // under the pointer and then snapping back when the menu opened.
+      if (!cfg.matronDraggable) return
+      if (!matron.dragging
+        && Math.hypot(e.clientX - matronGrab.x, e.clientY - matronGrab.y) < CLICK_SLOP) return
       matron.dragging = true
       matron.dragTo(e.clientX + matronGrab.dx, e.clientY + matronGrab.dy, world)
       stage.invalidate()

@@ -182,8 +182,15 @@ export class SettingsPanel extends Panel {
     this.option(g, 'matron:back', PAD, y, w, 'She stands on the desktop',
       cfg.matronLayer === 'underlay', { disabled: single })
     y += ROW_H
+    // Moving her brings her forward (see matronPlane), so say so when she
+    // would otherwise be on the desktop — or she seems to ignore the radio.
     this.option(g, 'matron:drag', PAD, y, w, 'Let me move her',
-      cfg.matronDraggable, { note: cfg.matronDraggable ? 'drag her about' : '' })
+      cfg.matronDraggable, {
+        note: !cfg.matronDraggable ? ''
+          // One window on the desktop has no front for her to step into.
+          : single && cfg.layer === 'underlay' ? 'not from the desktop'
+          : cfg.matronLayer === 'underlay' && !single ? "in front till you're done" : 'drag her about',
+      })
     y += ROW_H + 4
 
     this.button(g, 'matron:reset', PAD + 26, y, 130, 24, 'Send her home',

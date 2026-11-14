@@ -13,6 +13,7 @@
 // =============================================================================
 
 import type { LayerMode, Settings } from '../../shared/types'
+import { matronPlane } from '../../shared/types'
 import type { Painter } from '../engine/painter'
 import { approach, clamp, type Rng } from '../engine/math'
 import { union, type Box } from '../engine/stage'
@@ -88,7 +89,7 @@ export class Matron implements MatronRef {
   /** Pull position and permissions out of the settings. Called on boot and on
    *  every settings change, so all three stay in step with one code path. */
   configure(cfg: Settings, world: World): void {
-    this.layer = cfg.matronLayer
+    this.layer = matronPlane(cfg)
     this.draggable = cfg.matronDraggable
     this.pinned = cfg.matronPos ? { ...cfg.matronPos } : null
     this.relocate(world)

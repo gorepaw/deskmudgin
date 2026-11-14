@@ -281,6 +281,16 @@ export function tongues(s: Settings & { language?: string; gloss?: string }, pre
   return out
 }
 
+/**
+ * The plane the Matron actually stands in. While she can be moved she steps
+ * forward: the desktop layer receives no mouse input at all (explorer takes the
+ * button, and a drag there is its selection rectangle), so a draggable Matron
+ * behind the icons could only ever be clicked. Turning moving off sends her
+ * back to the plane she was given, at her new spot.
+ */
+export const matronPlane = (s: Settings): LayerMode =>
+  s.matronDraggable ? 'overlay' : s.matronLayer
+
 export const DEFAULT_SETTINGS: Settings = {
   stageMode: 'dual',
   layer: 'overlay',

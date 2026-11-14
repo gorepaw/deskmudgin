@@ -1017,6 +1017,17 @@ through it.
   drain 0.75–1.3×, dozes below 22–40% energy, wakes around 82–97%, each nap
   jittered. On the user's 168 pets: drowsy 4.3–9.1h after full, naps 42–97 min.
 
+**Moving the Matron from the desktop.** *Let me move her* did nothing when she
+stood on the desktop layer — that plane gets no mouse input (explorer takes the
+button; a drag there is its selection rectangle), so a press only ever reached
+her as the polled click that opens her menu. Now `matronPlane(settings)`: while
+moving is on she stands in front, wherever she was put; turning it off sends her
+back at her new spot. Settings says so ("in front till you're done"), and says
+it cannot work when single-window mode has everyone on the desktop. Also fixed:
+with moving *off*, a press-and-drag on her in front slid her around under the
+pointer until the menu opened; now she only follows a draggable press that has
+travelled past the click slop.
+
 **Menu names.** The Matron's menu lost its subtitle; *Your Herd*, *Encyclopedia*,
 *Dictionary* (and the panels they open carry the same titles).
 
