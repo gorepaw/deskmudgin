@@ -33,6 +33,7 @@ import {
 } from './store'
 import { trayImage } from './trayIcon'
 import { floorArea } from './floor'
+import { Updater } from './updater'
 import { GetAsyncKeyState, VK_LBUTTON, VK_RBUTTON } from './win32/api'
 
 const isDev = process.argv.includes('--dev')
@@ -69,6 +70,7 @@ app.commandLine.appendSwitch('enable-transparent-visuals')
 let stage: StageHost | null = null
 let watcher: IconWatcher | null = null
 let tray: Tray | null = null
+let updater: Updater | null = null
 let settings: Settings = { ...loadSettings() }
 /** The whole roster: out and resting, both layers. Main is its only writer. */
 let colony: PetSave[] = loadColony()
@@ -608,6 +610,12 @@ function registerIpc(): void {
     w.win.setIgnoreMouseEvents(!over, { forward: true })
   })
 
+  handle('update:get', () => updater?.state ?? { status: 'disabled', current: app.getVersion() })
+  handle('update:check', async () =>
+    updater ? updater.check(true) : { status: 'disabled', current: app.getVersion() })
+  handle('update:download', () => updater?.download())
+  handle('update:install', () => updater?.install())
+
   handle('app:quit', () => app.quit())
   handle('app:openDevTools', s => senderOf(s)?.win.webContents.openDevTools({ mode: 'detach' }))
 }
@@ -620,6 +628,7 @@ function contextMenu(): Menu {
     ? `${colony[0]?.name ?? 'Mudgin'}`
     : `${colony.length} collected — ${out.length} out`
   return Menu.buildFromTemplate([
+    ...updateItems(),
     { label: roll, enabled: false },
     ...(settings.stageMode === 'dual' && out.length
       ? [{ label: `   ${fore} in front, ${back} on the desktop`, enabled: false }] as const
@@ -711,6 +720,18 @@ function contextMenu(): Menu {
   ])
 }
 
+/** The tray's update entry: the same three steps as the Matron's menu. */
+function updateItems(): Electron.MenuItemConstructorOptions[] {
+  const u = updater?.state
+  if (!u) return []
+  const item: Electron.MenuItemConstructorOptions | null =
+    u.status === 'available' ? { label: `Update to ${u.version}`, click: () => updater?.download() }
+    : u.status === 'downloading' ? { label: `Downloading ${u.version}… ${u.percent ?? 0}%`, enabled: false }
+    : u.status === 'ready' ? { label: `Restart to update to ${u.version}`, click: () => updater?.install() }
+    : null
+  return item ? [item, { type: 'separator' }] : []
+}
+
 function buildTray(): void {
   if (!tray) {
     tray = new Tray(trayImage())
@@ -737,7 +758,16 @@ function forwardConsole(w: StageWindow): void {
 }
 
 app.whenReady().then(() => {
-  app.setAppUserModelId('com.galanova.deskmudgin')
+  app.setAppUserModelId('com.enriacindustries.deskmudgin')
+
+  // Before the IPC handlers, which answer from it. The tray is rebuilt on a
+  // change of state only, not on every percent of a download: a menu rebuilt
+  // under an open tray menu closes it.
+  let trayStatus = ''
+  updater = new Updater(u => {
+    push('update:changed', u)
+    if (u.status !== trayStatus) { trayStatus = u.status; if (tray) buildTray() }
+  }, log)
 
   stage = new StageHost(settings, devServer, log, {
     onOpen: forwardConsole,
@@ -810,6 +840,7 @@ app.whenReady().then(() => {
   // over a short array and no write.
   setInterval(() => remember(colony), 60_000)
   buildTray()
+  updater.start()
 
   // Displays change: a laptop docks, a monitor sleeps, someone changes scaling.
   // Every window is sized to the union of all of them, so all three matter.
@@ -835,6 +866,7 @@ app.on('before-quit', () => {
   saveSettings(settings)
   wild?.stop()
   watcher?.stop()
+  updater?.stop()
   stage?.dispose()
   globalShortcut.unregisterAll()
 })

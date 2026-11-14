@@ -15,6 +15,7 @@ import { DictionaryPanel } from './dictionary'
 import { LEVELS, canLearn, isReady, levelById, levelLabel } from '../../shared/lang/levels'
 import { LANGUAGES, LANGUAGE_IDS, type LanguageId } from '../../shared/lang'
 import { BORDERS, FRAMES, frameOf, themeFrame } from './frames'
+import { updateState } from './update'
 
 const BTN_H = 32
 const GAP = 7
@@ -41,10 +42,9 @@ export class MenuPanel extends Panel {
   readonly id = 'menu'
   readonly title = 'The Matron'
 
-  // Tall enough for five buttons and the rule between them. It was 250, which
-  // clipped "Close DeskMudgin" off the bottom edge — the content runs to 256
-  // and nothing here is scrollable.
-  constructor() { super(238, 292) }
+  // Six buttons, two rules and the update slot. Nothing here scrolls, so the
+  // height is the content's: it was once 250, which clipped the last button.
+  constructor() { super(238, 340) }
 
   protected override body(g: Painter, _now: number, top: number): void {
     const w = this.w - PAD * 2
@@ -66,11 +66,59 @@ export class MenuPanel extends Panel {
 
     item('cmd:summon', 'Call them over')
     item('app:quit', 'Close DeskMudgin')
+
+    y += 4 - GAP
+    this.rule(g, y, this.w)
+    y += 10
+    this.updateSlot(g, y, w)
+  }
+
+  /**
+   * The version, and the self-update when there is one. Always the same slot,
+   * so the menu does not change height under the pointer: a button while there
+   * is something to do (update, then restart), a line of text while there is
+   * not — and that line is the "check now".
+   */
+  private updateSlot(g: Painter, y: number, w: number): void {
+    const u = updateState()
+    const name = u.current ? `DeskMudgin ${u.current}` : 'DeskMudgin'
+    switch (u.status) {
+      case 'available':
+        this.button(g, 'update:download', PAD, y, w, BTN_H, `Update to ${u.version}`, { align: 'left', primary: true })
+        return
+      case 'downloading':
+        this.button(g, 'update:busy', PAD, y, w, BTN_H, `Downloading ${u.version}… ${u.percent ?? 0}%`,
+          { align: 'left', disabled: true })
+        return
+      case 'ready':
+        this.button(g, 'update:install', PAD, y, w, BTN_H, 'Restart to update', { align: 'left', primary: true })
+        return
+      case 'error':
+        this.button(g, 'update:retry', PAD, y, w, BTN_H,
+          u.version ? 'Update failed — try again' : 'Could not check — try again', { align: 'left' })
+        return
+    }
+    const note = u.status === 'checking' ? 'checking…'
+      : u.status === 'none' ? 'up to date'
+      : u.status === 'idle' ? 'check for updates'
+      : ''
+    // Only `idle` and `none` can be asked again; a dev run has no feed at all.
+    const live = u.status === 'idle' || u.status === 'none'
+    if (live) this.hits.add('update:check', PAD, y, w, BTN_H)
+    const hot = live && this.hits.at(this.px, this.py) === 'update:check'
+    g.text(note ? `${name} · ${note}` : name, this.w / 2, y + BTN_H / 2,
+      { size: 10, color: hot ? UI.text : UI.dim })
   }
 
   protected override onDown(_x: number, _y: number, id: string | null): void {
     const b = this.host.bridge
     switch (id) {
+      case 'update:download': void b.invoke('update:download'); break
+      case 'update:install': void b.invoke('update:install'); break
+      case 'update:check': void b.invoke('update:check'); break
+      case 'update:retry':
+        void b.invoke(updateState().version ? 'update:download' : 'update:check')
+        break
       case 'open:manager': this.host.open(new ManagerPanel()); break
       case 'open:ledger': this.host.open(new LedgerPanel()); break
       case 'open:dictionary': this.host.open(new DictionaryPanel()); break

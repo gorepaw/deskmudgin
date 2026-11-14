@@ -32,6 +32,30 @@ export interface UiRequest {
   id?: string
 }
 
+/**
+ * Where the self-update stands. Main owns it (main/updater.ts); every window
+ * and the tray show the same copy.
+ *
+ * Nothing downloads until someone asks: `available` waits for a click on the
+ * Matron's menu, and only then does it become `downloading` and `ready`.
+ */
+export interface UpdateState {
+  status:
+    /** Cannot self-update: a dev run, or a build with no feed baked in. */
+    | 'disabled'
+    | 'idle' | 'checking'
+    /** Checked, and this is the newest. */
+    | 'none'
+    | 'available' | 'downloading' | 'ready'
+    | 'error'
+  /** The build that is running. */
+  current: string
+  /** The build on offer, once there is one. */
+  version?: string
+  /** Download progress, 0–100. */
+  percent?: number
+}
+
 export interface Invoke {
   /** Full world model. Called on boot and after any display/layer change. */
   'world:get': () => WorldSnapshot
@@ -132,6 +156,13 @@ export interface Invoke {
    */
   'input:setHitRegion': (over: boolean) => void
 
+  /** Self-update. See UpdateState: check, then download on request, then
+   *  restart into it. `update:check` answers once the check has finished. */
+  'update:get': () => UpdateState
+  'update:check': () => Promise<UpdateState>
+  'update:download': () => void
+  'update:install': () => void
+
   'app:quit': () => void
   'app:openDevTools': () => void
 }
@@ -189,6 +220,8 @@ export interface Push {
    * a pet or on the Matron opens a panel, in the overlay, where panels can live.
    */
   'click': { x: number; y: number; button: 'left' | 'right' }
+  /** The self-update moved on: found one, progress, ready, failed. */
+  'update:changed': UpdateState
 }
 
 export type InvokeChannel = keyof Invoke

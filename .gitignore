@@ -5,3 +5,8 @@ release/
 *.log
 # Local Claude Code permissions for this machine — not project settings.
 .claude/settings.local.json
+
+# R2 keys for npm run publish:update. Never commit.
+.env
+# Points a dev run at a local feed (DESKMUDGIN_DEV_UPDATE=1).
+dev-app-update.yml

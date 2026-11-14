@@ -46,6 +46,72 @@ Mudgin art by `npm run make-icon`; regenerate it only if the art changes.
 Windows x64 only, by construction — the desktop layer is Win32 shell
 integration and there is no cross-platform equivalent of it.
 
+### Updates
+
+Installed copies update themselves; nobody reinstalls. They read a feed at
+`https://updates.enriacindustries.com/deskmudgin/win/`, a public Cloudflare R2
+bucket. The address lives in one place, `build.publish.url` in package.json,
+and electron-builder bakes it into every installer.
+
+Updates are offered, never forced:
+
+- An installed copy checks 20 seconds after launch and every 6 hours.
+- When it finds a new build, the Matron says so once. Her menu and the tray
+  then show **Update to x.y.z**, and nothing downloads until someone clicks it.
+- After the download, the button becomes **Restart to update**. A download
+  that was never restarted into installs the next time the app closes.
+- The bottom line of her menu shows the version. Click it to check now.
+- A background check that fails (offline, say) shows nothing. A check someone
+  asked for, or a download they started, says so when it fails.
+
+To ship a new version:
+
+```
+# 1. bump "version" in package.json (installs only take a higher version)
+npm run dist                          # 2. build release/
+npm run publish:update -- --dry-run   # 3. see what would go up
+npm run publish:update                # 4. upload it
+```
+
+`publish:update` uploads the installer, its `.blockmap` (so an update downloads
+only the blocks that changed) and `latest.yml`. `latest.yml` goes last and
+uncached, so no install ever sees a pointer to a file that is not there yet.
+The script refuses to run when:
+
+- `latest.yml`, the installer and package.json disagree,
+- the installer fails its sha512,
+- or the version is not newer than the one already live.
+
+Afterwards it fetches the feed back to confirm the new version is being
+served. Put the same installer on the website for new users.
+
+`npm run update:selftest` runs the real updater inside a hidden Electron
+against a local feed, with no network or install. It checks the offer, that
+nothing downloads unasked, the download and its sha512, a corrupt installer,
+"up to date", and an unreachable feed. It also checks the R2 request signer
+against AWS's published examples.
+
+**One-time Cloudflare setup** (already done if `publish:update` works):
+
+1. R2 → **Create bucket**, e.g. `enriac-updates`.
+2. The bucket → Settings → **Custom Domains** → connect
+   `updates.enriacindustries.com`. enriacindustries.com has to be a zone on
+   the same Cloudflare account.
+3. R2 → **Manage API tokens** → create one with **Object Read & Write** on
+   that bucket only.
+4. Put the keys in `.env` at the repo root. It is gitignored.
+
+   ```
+   R2_ACCOUNT_ID=…
+   R2_ACCESS_KEY_ID=…
+   R2_SECRET_ACCESS_KEY=…
+   R2_UPDATES_BUCKET=enriac-updates
+   ```
+
+Builds that cannot update never touch the network: dev runs, and any build
+whose feed host ends in `.invalid`. Pointing `build.publish.url` at such a host
+is the kill switch if the feed ever moves.
+
 > If Electron exits immediately with `Cannot read properties of undefined
 > (reading 'app')`, something exported `ELECTRON_RUN_AS_NODE=1` into your
 > shell — VS Code does this to every child process. `scripts/electron.mjs`

@@ -29,6 +29,8 @@ import { lessonLang, setTongue } from '../pet/lines'
 import { LEVELS } from '../../shared/lang/levels'
 import type { LanguageId, Utterance } from '../../shared/lang/types'
 import type { Tab } from '../ui/dictionary'
+import { setUpdateState } from '../ui/update'
+import type { UpdateState } from '../../shared/ipc'
 
 export class ChromeSheet {
   private readonly panels: Panel[]
@@ -62,6 +64,12 @@ export class ChromeSheet {
     d.x = 20 + tabs.length * 340; d.y = 20
     // Below them: the Matron's menu and the first-run starter, the two panels
     // every new player meets first.
+    // `update=available|downloading|ready|error|none|idle` draws the menu's
+    // update slot in that state; without it, the slot is a dev run's.
+    const up = new URLSearchParams(location.search).get('update')
+    setUpdateState(up
+      ? { status: up as UpdateState['status'], current: '0.1.0', version: '0.2.0', percent: 42 }
+      : { status: 'disabled', current: '0.1.0' })
     const m = new MenuPanel()
     m.x = 20; m.y = 520
     const st = new StarterPanel()

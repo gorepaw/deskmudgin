@@ -30,6 +30,7 @@ Source: [github.com/gorepaw/deskmudgin](https://github.com/gorepaw/deskmudgin).
 | HSK 3 — 298 words, 464 sentences, 59 conversations, in all four languages | **done, verified offscreen** |
 | Borders chosen independently of the theme (incl. none) | **done, verified offscreen** |
 | Release: Settings in tabs, first-run hint, verification documented, icon, installer | **done; installer built, not yet run by the user** |
+| Self-update from updates.enriacindustries.com (ask first) | **done, selftest passes; bucket not yet created** |
 
 Content, all verified by Claude agents and marked `claude-*` in `checks` for a
 later human pass:
@@ -1055,6 +1056,45 @@ columns.
 **Gotcha.** Vite fails with "No matching HTML proxy module" when the shell's
 cwd has a lowercase drive (`c:\…`, which is what VS Code's bash gives). Build
 from a `C:\` cwd.
+
+## Self-update
+
+Users should not reinstall to update. Modelled on Galanova's updater (read,
+not touched): electron-updater against a generic HTTPS feed on R2, with a
+publish script that puts `latest.yml` up last.
+
+- **Where.** The user chose a new bucket under Enriac Industries, which
+  distributes DeskMudgin. gorepaw is the old name. The feed is
+  `https://updates.enriacindustries.com/deskmudgin/win/`; the `deskmudgin/`
+  prefix leaves room for other Enriac software in the same bucket.
+- **Enriac identity.** Changed at the same time, because nothing has shipped
+  yet and appId cannot change after it does. appId and AppUserModelId went
+  from `com.galanova.deskmudgin` to `com.enriacindustries.deskmudgin`; author
+  and copyright are now Enriac Industries.
+- **Behaviour.** The user chose ask-first.
+  - `main/updater.ts` checks 20s after launch and every 6h, and only offers.
+  - When an update is found, the Matron says so once. Her menu's bottom slot
+    and the tray show *Update to x*, then the download percentage, then
+    *Restart to update* (a silent install, then relaunch).
+  - A download that is never restarted into installs on quit.
+  - Background failures stay quiet; manual ones report.
+  - The menu slot is always present (the version line, which is also "check
+    now"), so the menu never changes height. Menu is 340px.
+- **Publishing.** `tools/publish-update.mjs` uses its own SigV4 signer
+  (`tools/sigv4.mjs`, checked against AWS's published examples) rather than
+  Galanova's server code or the AWS SDK. It takes the bucket prefix from
+  `build.publish.url`. It refuses mismatched builds and versions that are not
+  newer, verifies each upload's ETag, then fetches the feed back to confirm.
+- **Test.** `npm run update:selftest` runs the built updater in a windowless
+  Electron against a 127.0.0.1 feed offering release/'s installer as 9.9.9.
+  It checks: offer without download, download with progress and sha512, a
+  corrupt sha512 is an error, the same version is "up to date", and an
+  unreachable feed fails loudly when asked and silently in the background.
+  All pass. A gotcha: VS Code's terminals set `ELECTRON_RUN_AS_NODE`, which
+  the selftest strips.
+- **Not done.** The bucket, its custom domain and the API token do not exist
+  yet; the README lists the four steps. Until then, background checks fail
+  silently, which is harmless.
 
 ## What is not built
 

@@ -33,6 +33,7 @@ import { Matron } from './ui/matron'
 import { UiLayer, applyTheme } from './ui/panel'
 import { setBorder } from './ui/frames'
 import { MenuPanel, SettingsPanel } from './ui/menu'
+import { setUpdateState } from './ui/update'
 import { ManagerPanel } from './ui/manager'
 import { LedgerPanel } from './ui/ledger'
 import { PetCardPanel } from './ui/petcard'
@@ -428,6 +429,18 @@ async function boot(): Promise<void> {
   bridge.on('colony:changed', () => ui.refreshAll())
   bridge.on('ledger:changed', () => ui.refreshAll())
   bridge.on('ui:open', req => openPanel(req))
+
+  // Self-update. The menu reads the state as it draws; the Matron mentions a
+  // new build once, when it is first found — she is where anyone would look,
+  // and her menu is where the button is. Ask-first: nothing downloads here.
+  void bridge.invoke('update:get').then(s => { setUpdateState(s); ui.invalidate() })
+  bridge.on('update:changed', s => {
+    const was = setUpdateState(s)
+    ui.invalidate()
+    if (s.status === 'available' && was.status !== 'available' && showMatron) {
+      matron.speech.say(`DeskMudgin ${s.version} is out — it's in my menu`, 6)
+    }
+  })
 
   bridge.on('world:changed', s => {
     world.apply(s)
