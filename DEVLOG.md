@@ -1028,6 +1028,15 @@ with moving *off*, a press-and-drag on her in front slid her around under the
 pointer until the menu opened; now she only follows a draggable press that has
 travelled past the click slop.
 
+**Settings, renamed.** At the user's request: tabs *Interface* / *Language* /
+*Themes*. Interface: *Location Override* (Front / Desktop actions), *New
+Herdmates* and *Matron Location* as Front/Desktop switches (`Panel.switch2`, a
+track with the theme's primary button as the lit side), *Draggable*, *Reset
+Location*, and *Operation*: a Single Window / Multi-Window switch plus *Start on
+Boot* (launch at login — not the opposite of single window, which the user had
+guessed). The "all N, in front" summary and the "harder to spot" line are gone.
+Panel 440px.
+
 **Menu names.** The Matron's menu lost its subtitle; *Your Herd*, *Encyclopedia*,
 *Dictionary* (and the panels they open carry the same titles).
 

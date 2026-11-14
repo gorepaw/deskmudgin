@@ -377,6 +377,37 @@ export abstract class Panel {
       { size: o.size ?? 12, font: o.font, color: ink, align, alpha: o.disabled ? 0.6 : 1 })
   }
 
+  /**
+   * A two-way switch: a track with the chosen side lit. For a setting that is
+   * one of exactly two things, where a pair of radios spends two rows saying it.
+   * The lit side is the theme's own primary button, so it is bevelled, glossy or
+   * flat along with everything else. Each side is its own hit id.
+   */
+  protected switch2(
+    g: Painter, x: number, y: number, w: number, h: number,
+    sides: readonly [readonly [string, string], readonly [string, string]], on: 0 | 1,
+    o: { disabled?: boolean; size?: number } = {},
+  ): void {
+    const rad = Math.min(UI.radius, 5)
+    g.roundRect(x, y, w, h, rad).fill({ color: UI.row, alpha: o.disabled ? 0.35 : 1 })
+    g.roundRect(x + 0.5, y + 0.5, w - 1, h - 1, rad)
+      .stroke({ width: 1, color: UI.edge, alpha: o.disabled ? 0.3 : 0.9 })
+    const half = w / 2
+    sides.forEach(([id, label], i) => {
+      const sx = x + i * half
+      if (i === on) {
+        this.button(g, id, sx + 2, y + 2, half - 4, h - 4, label,
+          { primary: true, disabled: o.disabled, size: o.size ?? 11 })
+        return
+      }
+      this.hits.add(o.disabled ? `disabled:${id}` : id, sx, y, half, h)
+      const hot = !o.disabled && this.hits.at(this.px, this.py) === id
+      if (hot) g.roundRect(sx + 2, y + 2, half - 4, h - 4, rad).fill({ color: UI.rowHot })
+      g.text(label, sx + half / 2, y + h / 2 + 1,
+        { size: o.size ?? 11, color: UI.dim, alpha: o.disabled ? 0.6 : 1 })
+    })
+  }
+
   /** A full-width option line with a state pip on the left. Radio and checkbox
    *  are the same widget — what differs is who turns the others off. */
   protected option(

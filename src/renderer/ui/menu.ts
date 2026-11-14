@@ -34,8 +34,8 @@ const fromT = (t: number): number =>
   Math.round((SCALE_MIN + t * (SCALE_MAX - SCALE_MIN)) * 10) / 10
 const times = (v: number): string => `${v.toFixed(1)}×`
 
-/** Settings' height: the "Where" tab, its tallest, with room for the note. */
-const SETTINGS_H = 480
+/** Settings' height: the Interface tab in single-window mode, its tallest, with room for the note. */
+const SETTINGS_H = 440
 
 export class MenuPanel extends Panel {
   readonly id = 'menu'
@@ -88,7 +88,7 @@ export class MenuPanel extends Panel {
  *  768px laptop screen; tabs keep it about half that. */
 export type SettingsTab = 'where' | 'speech' | 'look'
 const SETTINGS_TABS: ReadonlyArray<readonly [SettingsTab, string]> = [
-  ['where', 'Where'], ['speech', 'Speech'], ['look', 'Look'],
+  ['where', 'Interface'], ['speech', 'Language'], ['look', 'Themes'],
 ]
 
 export class SettingsPanel extends Panel {
@@ -99,27 +99,12 @@ export class SettingsPanel extends Panel {
   private static last: SettingsTab = 'where'
   private tab: SettingsTab
 
-  /** Only ever read for the one-line summary below. Who is where per pet is the
-   *  manager's job, and duplicating it here would be a second thing to keep
-   *  right. */
-  private fore = 0
-  private back = 0
-
-  // Tall enough for the tallest tab, "Where". The look tab gains a row of
-  // swatches every six themes; at four rows it would be the tallest.
+  // Tall enough for the tallest tab. The themes tab gains a row of swatches
+  // every six themes.
   constructor(tab?: SettingsTab) {
     super(320, SETTINGS_H)
     this.tab = tab ?? SettingsPanel.last
   }
-
-  override async mount(): Promise<void> {
-    const colony = await this.host.bridge.invoke('colony:get')
-    const out = colony.filter(p => p.out)
-    this.fore = out.filter(p => p.layer === 'overlay').length
-    this.back = out.length - this.fore
-  }
-
-  override refresh(): void { void this.mount() }
 
   protected override body(g: Painter, _now: number, top: number): void {
     const w = this.w - PAD * 2
@@ -135,56 +120,43 @@ export class SettingsPanel extends Panel {
     this.drawNote(g, this.h - 12)
   }
 
-  /** Where they are, where strangers and the Matron go, and this machine. */
+  /** Where they are, where newcomers and the Matron go, and how it runs. */
   private where(g: Painter, y: number): void {
     const cfg = this.host.settings()
     const w = this.w - PAD * 2
-
-    this.rule(g, y + 4, this.w, 'send everyone')
-    y += 14
-
     const single = cfg.stageMode === 'single'
-    // Buttons, not radios.
+    const SW_H = 26
+
+    this.rule(g, y + 4, this.w, 'Location Override')
+    y += 14
+    // Buttons, not a switch.
     //
     // These are actions — "move all of them there" — and there is no single
-    // setting they reflect: pets carry their own layer, so any pair of radios
-    // here would sit checked while the colony was in fact split, which is the
-    // normal state and exactly what the manager exists to arrange.
+    // setting they reflect: pets carry their own layer, so a switch here would
+    // sit on one side while the herd was in fact split, which is the normal
+    // state and exactly what Your Herd exists to arrange.
     const half = (w - 6) / 2
-    this.button(g, 'set:front', PAD, y, half, 26, 'In front', { size: 11 })
-    this.button(g, 'set:back', PAD + half + 6, y, half, 26, 'To the desktop', { size: 11 })
+    this.button(g, 'set:front', PAD, y, half, 26, 'Front', { size: 11 })
+    this.button(g, 'set:back', PAD + half + 6, y, half, 26, 'Desktop', { size: 11 })
     y += 32
-    g.text(this.summary(), this.w / 2, y + 2, { size: 9, color: UI.dim })
-    y += 12
     g.text('on the desktop they chew icons and cannot be dragged',
       this.w / 2, y + 4, { size: 9, color: UI.dim })
     y += 18
 
-    this.rule(g, y + 6, this.w, 'strangers')
-    y += 16
+    this.rule(g, y + 6, this.w, 'New Herdmates')
+    y += 18
+    this.switch2(g, PAD, y, w, SW_H, [['new:front', 'Front'], ['new:back', 'Desktop']],
+      cfg.newcomerLayer === 'overlay' ? 0 : 1)
+    y += SW_H + 10
 
-    this.option(g, 'new:front', PAD, y, w, 'They wander on in front',
-      cfg.newcomerLayer === 'overlay')
-    y += ROW_H
-    this.option(g, 'new:back', PAD, y, w, 'They wander on behind the icons',
-      cfg.newcomerLayer === 'underlay')
-    y += ROW_H + 2
-    g.text('harder to spot back there, which is rather the point',
-      this.w / 2, y + 2, { size: 9, color: UI.dim })
-    y += 16
-
-    this.rule(g, y + 6, this.w, 'the Matron')
-    y += 16
-
-    this.option(g, 'matron:front', PAD, y, w, 'She stands in front',
-      cfg.matronLayer === 'overlay', { disabled: single })
-    y += ROW_H
-    this.option(g, 'matron:back', PAD, y, w, 'She stands on the desktop',
-      cfg.matronLayer === 'underlay', { disabled: single })
-    y += ROW_H
+    this.rule(g, y + 6, this.w, 'Matron Location')
+    y += 18
+    this.switch2(g, PAD, y, w, SW_H, [['matron:front', 'Front'], ['matron:back', 'Desktop']],
+      cfg.matronLayer === 'overlay' ? 0 : 1, { disabled: single })
+    y += SW_H + 4
     // Moving her brings her forward (see matronPlane), so say so when she
-    // would otherwise be on the desktop — or she seems to ignore the radio.
-    this.option(g, 'matron:drag', PAD, y, w, 'Let me move her',
+    // would otherwise be on the desktop — or she seems to ignore the switch.
+    this.option(g, 'matron:drag', PAD, y, w, 'Draggable',
       cfg.matronDraggable, {
         note: !cfg.matronDraggable ? ''
           // One window on the desktop has no front for her to step into.
@@ -192,23 +164,26 @@ export class SettingsPanel extends Panel {
           : cfg.matronLayer === 'underlay' && !single ? "in front till you're done" : 'drag her about',
       })
     y += ROW_H + 4
-
-    this.button(g, 'matron:reset', PAD + 26, y, 130, 24, 'Send her home',
+    this.button(g, 'matron:reset', PAD + 26, y, 130, 24, 'Reset Location',
       { disabled: !cfg.matronPos, size: 11 })
     y += 24 + 10
 
-    this.rule(g, y + 4, this.w, 'this machine')
-    y += 14
-
-    this.option(g, 'mode:single', PAD, y, w, 'One window only', single,
-      { note: 'lower memory' })
-    y += ROW_H
-    this.option(g, 'app:startup', PAD, y, w, 'Start with Windows', cfg.launchOnStartup)
+    this.rule(g, y + 4, this.w, 'Operation')
+    y += 16
+    this.switch2(g, PAD, y, w, SW_H, [['mode:single', 'Single Window'], ['mode:dual', 'Multi-Window']],
+      single ? 0 : 1)
+    y += SW_H + 2
+    g.text(single ? 'lower memory — one window holds every pet'
+      : 'one window in front, one on the desktop',
+      this.w / 2, y + 6, { size: 9, color: UI.dim })
+    y += 16
+    // Not the opposite of the switch above: this launches the app at login.
+    this.option(g, 'app:startup', PAD, y, w, 'Start on Boot', cfg.launchOnStartup)
     y += ROW_H + 6
 
     if (single) {
       // In `single` the per-pet and per-Matron layers are stored but not
-      // honoured, so saying so beats leaving three dead controls above.
+      // honoured, so saying so beats leaving dead controls above.
       g.text('one window cannot hold two planes — she goes where they go',
         this.w / 2, y + 2, { size: 9, color: UI.dim })
     }
@@ -428,14 +403,6 @@ export class SettingsPanel extends Panel {
     void this.host.bridge.invoke('settings:patch', { [key]: v })
   }
 
-  /** Where they are right now, in words rather than a pair of lying radios. */
-  private summary(): string {
-    if (!this.fore && !this.back) return 'nobody is out'
-    if (!this.back) return this.fore === 1 ? 'one of them, in front' : `all ${this.fore}, in front`
-    if (!this.fore) return this.back === 1 ? 'one of them, on the desktop' : `all ${this.back}, on the desktop`
-    return `${this.fore} in front, ${this.back} on the desktop`
-  }
-
   protected override onDown(_x: number, _y: number, id: string | null): void {
     const b = this.host.bridge
     switch (id) {
@@ -457,11 +424,8 @@ export class SettingsPanel extends Panel {
         break
       case 'voice:course': void b.invoke('settings:patch', { voice: 'course' }); break
       case 'voice:grunts': void b.invoke('settings:patch', { voice: 'grunts' }); break
-      case 'mode:single':
-        void b.invoke('settings:patch', {
-          stageMode: this.host.settings().stageMode === 'single' ? 'dual' : 'single',
-        })
-        break
+      case 'mode:single': void b.invoke('settings:patch', { stageMode: 'single' }); break
+      case 'mode:dual': void b.invoke('settings:patch', { stageMode: 'dual' }); break
       case 'app:startup':
         void b.invoke('settings:patch', { launchOnStartup: !this.host.settings().launchOnStartup })
         break

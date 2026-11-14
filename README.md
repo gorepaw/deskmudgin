@@ -157,7 +157,7 @@ because they breathe and blink every frame.
 
 ## Themes
 
-Eleven, chosen from the Matron's **Settings → Look**:
+Eleven, chosen from the Matron's **Settings → Themes**:
 
 | | |
 | --- | --- |
@@ -240,9 +240,10 @@ Click her for the menu:
   complete: the genome is continuous, so "orchid hide" is a reading of a region
   of a colour wheel rather than a card in a set. Hover a name for the day it
   first turned up.
-- **Settings** — three tabs: *Where* (where everyone lives, where she stands,
-  one-window mode), *Speech* (languages, level, how long bubbles stay) and
-  *Look* (theme and border).
+- **Settings** — three tabs: *Interface* (move everyone Front or to the
+  Desktop, where new herdmates and the Matron go, whether she is draggable,
+  single- or multi-window, start on boot), *Language* (languages, level, how
+  long bubbles stay) and *Themes* (theme and border).
 
 Every so often a pet in her layer walks over and leans on her; she warms, her
 ears lift and her eye-glow steadies. She can be dragged, if you turn that on.
@@ -276,7 +277,7 @@ What there is, HSK 1 and HSK 2 (2.0):
 | **Conversations** | 60 | 58 | 59 |
 
 Any of English, Spanish, Chinese and Arabic can be the language you **learn**
-or the one its meaning is shown in (Settings → *Speech* → **learn**,
+or the one its meaning is shown in (Settings → *Language* → **learn**,
 **meaning**, and **also** for a second meaning line). Every line, word and name
 has a verified Spanish version (neutral Latin American), and every line and
 word a verified, fully vowelled Arabic one — with a romanization derived from
@@ -286,7 +287,7 @@ speaker has read it yet, and its names and a few word choices are where to look
 first.
 
 Sentences are chosen by moment (hungry, sleepy, picked up) and at random while
-idle; nearby pets start conversations and answer each other. Settings → *Speech* →
+idle; nearby pets start conversations and answer each other. Settings → *Language* →
 **level** picks HSK 1, 2 or 3. Levels are cumulative: at the level you pick,
 seven lines in ten come from it and the rest keep the lower levels in use.
 
@@ -299,13 +300,13 @@ seven lines in ten come from it and the rest keep the lower levels in use.
 Speech bubbles take the look of the chosen theme — XP's caption band, Aqua's
 stripes, the CRTs' scanlines. Six premium themes bring their own frames:
 Illuminated, Stained glass, Brass & rivets, Bog shrine, Holographic and Ink
-wash. The border is a setting of its own (Settings → *Look* → *border*): keep the one a
+wash. The border is a setting of its own (Settings → *Themes* → *border*): keep the one a
 theme comes with, choose **None**, or put any of those frames on any palette.
 
 Settings has two sliders, **Bubbles stay** and **Conversations stay** (0.5×–4×,
 1.5× by default), so a sentence you are still reading does not vanish.
 
-Settings → *Speech* switches back to the English grunts. The current content
+Settings → *Language* switches back to the English grunts. The current content
 was verified by Claude; see *Who verified what* in content/README.md for how to
 find and re-check it.
 
