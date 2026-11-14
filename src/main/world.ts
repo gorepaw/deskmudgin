@@ -13,7 +13,7 @@ import { screen } from 'electron'
 import type { DesktopIcon, DisplayInfo, LayerMode, Rect, WorldSnapshot } from '../shared/types'
 import { readDesktopIcons, type RawIcon } from './win32/desktopIcons'
 import { virtualBounds } from './layers/manager'
-import { floorAreas } from './win32/taskbar'
+import { floorArea } from './floor'
 
 const toDipRect = (r: RawIcon['icon']): Rect => {
   const tl = screen.screenToDipPoint({ x: r.left, y: r.top })
@@ -23,12 +23,11 @@ const toDipRect = (r: RawIcon['icon']): Rect => {
 
 const displays = (): DisplayInfo[] => {
   const all = screen.getAllDisplays()
-  // The floor stays on top of an auto-hidden taskbar; see win32/taskbar.ts.
-  const floors = floorAreas(all)
   return all.map(d => ({
     id: d.id,
     bounds: d.bounds,
-    workArea: floors.get(d.id) ?? d.workArea,
+    // Lifted off the screen edge when nothing is below it; see floor.ts.
+    workArea: floorArea(d),
     scaleFactor: d.scaleFactor,
     primary: d.id === screen.getPrimaryDisplay().id,
   }))

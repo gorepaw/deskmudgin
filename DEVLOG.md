@@ -995,16 +995,27 @@ the run-as-node fuse off, so that check runs the same koffi files under
 `node_modules/electron`. Not checked: a real launch of the installed app, which
 would put pets on the user's desktop — that is theirs to do.
 
-**Floor above a hidden taskbar.** The user's taskbar auto-hides, and then
-Windows gives its strip back to the work area, so the floor — the work area's
-bottom — fell to the screen's edge. They want them standing where the top of
-the taskbar is, shown or not. `main/win32/taskbar.ts` measures the taskbar
-windows (`Shell_TrayWnd`, `Shell_SecondaryTrayWnd`), which keep their size
-while hidden (moved off the bottom, two pixels showing), and raises each
-display's floor to `bounds bottom − bar height` for a bottom-docked bar.
-`world.ts` and every `getPrimaryDisplay().workArea` in main go through it; a
-visible taskbar gives the same answer as before. Measured here: 48px on both
-monitors.
+**Feet off the screen edge.** A Mudgin's foot and toes hang about half a
+body-radius below his ground line (up to ~20px on the biggest), which over a
+taskbar reads as sitting on it — but with the taskbar auto-hidden the work area
+runs to the screen edge and the bottom of their feet were cut off. Raising the
+floor to where the hidden taskbar would be was tried and rejected by the user
+(floating a taskbar's height up looks wrong). Now `main/floor.ts`: a floor that
+*is* the screen edge is raised 24px, enough to clear the biggest foot; a floor
+on a visible taskbar is untouched. `world.ts` and main's primary-floor spots go
+through it.
+
+**Sleep.** Two bugs and one lack, all fixed:
+- A nap's `maxHold` was 240s, but a nap from empty takes over an hour, so every
+  four minutes the brain "re-entered" sleep: a wake line and a tired line from a
+  pet that never woke. `maxHold` is now a 3h backstop; naps end when rested.
+- Time with the app closed drained energy as if awake (up to 24h), so opening it
+  in the morning had every pet collapse into a simultaneous nap. Closed time now
+  counts as rest (`advance(away, true)`); hunger and loneliness still accrue.
+- Everyone tired at one rate and dozed at one threshold. Each pet now has a
+  chronotype (`needs.ts`, seeded from its id, so it is stable and unsaved):
+  drain 0.75–1.3×, dozes below 22–40% energy, wakes around 82–97%, each nap
+  jittered. On the user's 168 pets: drowsy 4.3–9.1h after full, naps 42–97 min.
 
 **Menu names.** The Matron's menu lost its subtitle; *Your Herd*, *Encyclopedia*,
 *Dictionary* (and the panels they open carry the same titles).

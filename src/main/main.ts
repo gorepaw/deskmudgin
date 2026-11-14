@@ -32,7 +32,7 @@ import {
   loadColony, loadLedger, loadSettings, saveColony, saveLedger, saveSettings,
 } from './store'
 import { trayImage } from './trayIcon'
-import { floorArea } from './win32/taskbar'
+import { floorArea } from './floor'
 import { GetAsyncKeyState, VK_LBUTTON, VK_RBUTTON } from './win32/api'
 
 const isDev = process.argv.includes('--dev')

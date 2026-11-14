@@ -18,7 +18,7 @@ import { approach, clamp, lerp, type Rng } from '../engine/math'
 import type { Surface, World } from '../world/world'
 import type { Entry } from '../../shared/lang/types'
 import type { Species } from '../species'
-import { NeedsModel } from './needs'
+import { NeedsModel, chronotypeOf } from './needs'
 import type { Genes } from '../../shared/genome'
 import { ageOf } from '../../shared/maturity'
 import type { PetSave } from '../../shared/types'
@@ -145,7 +145,7 @@ export class Pet {
     this.bornAt = save.bornAt
     this.adoptedAt = save.adoptedAt
     this.lastSeenAt = save.lastSeenAt
-    this.needs = new NeedsModel({ ...save.needs }, save.mood)
+    this.needs = new NeedsModel({ ...save.needs }, save.mood, chronotypeOf(save.id))
     this.wild = !!save.wild
     this.leaving = !!save.leaving
 
