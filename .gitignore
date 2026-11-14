@@ -10,3 +10,5 @@ release/
 .env
 # Points a dev run at a local feed (DESKMUDGIN_DEV_UPDATE=1).
 dev-app-update.yml
+# Editor settings, per machine.
+.vscode/
