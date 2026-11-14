@@ -30,7 +30,7 @@ Source: [github.com/gorepaw/deskmudgin](https://github.com/gorepaw/deskmudgin).
 | HSK 3 — 298 words, 464 sentences, 59 conversations, in all four languages | **done, verified offscreen** |
 | Borders chosen independently of the theme (incl. none) | **done, verified offscreen** |
 | Release: Settings in tabs, first-run hint, verification documented, icon, installer | **done; installer built, not yet run by the user** |
-| Self-update from updates.enriacindustries.com (ask first) | **done, selftest passes; bucket not yet created** |
+| Self-update from updates.enriacindustries.com (ask first) | **done; bucket live, 0.1.0 published** |
 
 Content, all verified by Claude agents and marked `claude-*` in `checks` for a
 later human pass:
@@ -1092,9 +1092,9 @@ publish script that puts `latest.yml` up last.
   unreachable feed fails loudly when asked and silently in the background.
   All pass. A gotcha: VS Code's terminals set `ELECTRON_RUN_AS_NODE`, which
   the selftest strips.
-- **Not done.** The bucket, its custom domain and the API token do not exist
-  yet; the README lists the four steps. Until then, background checks fail
-  silently, which is harmless.
+- **Bucket.** `enriac-updates` with `updates.enriacindustries.com` connected,
+  created with wrangler. `publish:update` falls back to wrangler's login when
+  `.env` has no R2 keys. 0.1.0 is published, so 0.1.0 installs see "up to date".
 
 ## What is not built
 

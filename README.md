@@ -1,4 +1,4 @@
-﻿# DeskMudgin
+# DeskMudgin
 
 A Mudgin lives on your desktop.
 
@@ -91,22 +91,17 @@ nothing downloads unasked, the download and its sha512, a corrupt installer,
 "up to date", and an unreachable feed. It also checks the R2 request signer
 against AWS's published examples.
 
-**One-time Cloudflare setup** (already done if `publish:update` works):
+**Cloudflare.** The bucket is `enriac-updates`, with the custom domain
+`updates.enriacindustries.com` connected (set up 2026-11-14 with wrangler).
+`publish:update` uploads one of two ways:
 
-1. R2 → **Create bucket**, e.g. `enriac-updates`.
-2. The bucket → Settings → **Custom Domains** → connect
-   `updates.enriacindustries.com`. enriacindustries.com has to be a zone on
-   the same Cloudflare account.
-3. R2 → **Manage API tokens** → create one with **Object Read & Write** on
-   that bucket only.
-4. Put the keys in `.env` at the repo root. It is gitignored.
-
-   ```
-   R2_ACCOUNT_ID=…
-   R2_ACCESS_KEY_ID=…
-   R2_SECRET_ACCESS_KEY=…
-   R2_UPDATES_BUCKET=enriac-updates
-   ```
+- **No keys in `.env`:** it uses wrangler, as whoever last ran
+  `npx wrangler login`. That login expires; when it does, the script says so.
+  Log in again.
+- **An R2 API token:** create one at R2 → **Manage API tokens** with **Object
+  Read & Write** on `enriac-updates` only. Put its two keys in `.env`, which
+  is gitignored and already holds the account ID and bucket. Uploads are then
+  signed S3 PUTs, each checked by its ETag, and nothing expires.
 
 Builds that cannot update never touch the network: dev runs, and any build
 whose feed host ends in `.invalid`. Pointing `build.publish.url` at such a host

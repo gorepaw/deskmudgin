@@ -22,16 +22,24 @@
 // a version that is not newer than the one already live (installs would
 // ignore it, or worse, it is the wrong build). --force overrides that last one.
 //
-// CREDENTIALS — an R2 API token with Object Read & Write on the updates
-// bucket, in .env (gitignored) or the environment:
-//   R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY, R2_UPDATES_BUCKET
+// CREDENTIALS — either of:
+//   - an R2 API token with Object Read & Write on the bucket, in .env
+//     (gitignored) or the environment: R2_ACCOUNT_ID, R2_ACCESS_KEY_ID,
+//     R2_SECRET_ACCESS_KEY. Signed S3 PUTs, each checked by its ETag.
+//   - nothing: then it uploads through wrangler, as whoever `npx wrangler
+//     login` last logged in. Simpler, but that login expires.
+// The bucket is R2_UPDATES_BUCKET, or enriac-updates.
 // =============================================================================
 
 import fs from 'node:fs'
 import path from 'node:path'
 import { createHash } from 'node:crypto'
 import { fileURLToPath } from 'node:url'
+import { spawnSync } from 'node:child_process'
 import { sign, sha256hex } from './sigv4.mjs'
+
+/** The bucket behind updates.enriacindustries.com. */
+const DEFAULT_BUCKET = 'enriac-updates'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const pkg = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8'))
@@ -108,11 +116,23 @@ if (live && !newer(version, live)) {
   console.log(`--force: publishing ${version} over ${live}`)
 }
 
+// [key, body, local file, content type, cache-control]
 const uploads = [
-  [`${prefix}${file}`, exe, 'application/octet-stream', null],
-  [`${prefix}${file}.blockmap`, fs.readFileSync(mapPath), 'application/octet-stream', null],
-  [`${prefix}latest.yml`, Buffer.from(yml), 'text/yaml', 'no-cache'],
+  [`${prefix}${file}`, exe, exePath, 'application/octet-stream', null],
+  [`${prefix}${file}.blockmap`, fs.readFileSync(mapPath), mapPath, 'application/octet-stream', null],
+  [`${prefix}latest.yml`, Buffer.from(yml), ymlPath, 'text/yaml', 'no-cache'],
 ]
+
+const env = (k) => (process.env[k] ?? '').trim()
+const r2 = {
+  accountId: env('R2_ACCOUNT_ID'), accessKeyId: env('R2_ACCESS_KEY_ID'),
+  secretAccessKey: env('R2_SECRET_ACCESS_KEY'), bucket: env('R2_UPDATES_BUCKET') || DEFAULT_BUCKET,
+}
+const viaToken = !!(r2.accountId && r2.accessKeyId && r2.secretAccessKey)
+if (!viaToken && (r2.accessKeyId || r2.secretAccessKey)) {
+  die('R2 keys are half set — give R2_ACCOUNT_ID, R2_ACCESS_KEY_ID and R2_SECRET_ACCESS_KEY, or none of them to use wrangler')
+}
+console.log(`bucket    ${r2.bucket}, via ${viaToken ? 'R2 API token' : 'wrangler login'}`)
 
 if (dryRun) {
   for (const [key, body] of uploads) console.log(`would put ${key}  (${human(body.length)})`)
@@ -121,13 +141,19 @@ if (dryRun) {
 
 // ── upload ───────────────────────────────────────────────────────────────────
 
-const env = (k) => (process.env[k] ?? '').trim()
-const r2 = {
-  accountId: env('R2_ACCOUNT_ID'), accessKeyId: env('R2_ACCESS_KEY_ID'),
-  secretAccessKey: env('R2_SECRET_ACCESS_KEY'), bucket: env('R2_UPDATES_BUCKET'),
-}
-if (Object.values(r2).some(v => !v)) {
-  die('set R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY and R2_UPDATES_BUCKET (in .env, which is gitignored)')
+/** Through wrangler's own login. No ETag to check; the read-back below is the check. */
+function putViaWrangler(key, filePath, contentType, cacheControl) {
+  const args = ['--yes', 'wrangler@4', 'r2', 'object', 'put', `${r2.bucket}/${key}`,
+    '--file', filePath, '--remote', '--content-type', contentType,
+    ...(cacheControl ? ['--cache-control', cacheControl] : [])]
+  const env = { ...process.env }
+  delete env.ELECTRON_RUN_AS_NODE
+  // npx is a .cmd on Windows, which needs a shell; every argument is quoted.
+  const r = spawnSync(`npx ${args.map(a => `"${a}"`).join(' ')}`, { shell: true, encoding: 'utf8', env })
+  if (r.status !== 0) {
+    const why = `${r.stdout ?? ''}${r.stderr ?? ''}`.trim().split('\n').slice(-4).join(' ')
+    throw new Error(`wrangler put ${key}: ${why}${/log(ged)? ?in|auth/i.test(why) ? ' — run npx wrangler login' : ''}`)
+  }
 }
 
 async function put(key, body, contentType, cacheControl) {
@@ -145,9 +171,10 @@ async function put(key, body, contentType, cacheControl) {
 }
 
 try {
-  for (const [key, body, type, cache] of uploads) {
+  for (const [key, body, filePath, type, cache] of uploads) {
     process.stdout.write(`putting   ${key}  (${human(body.length)}) … `)
-    await put(key, body, type, cache)
+    if (viaToken) await put(key, body, type, cache)
+    else putViaWrangler(key, filePath, type, cache)
     console.log('ok')
   }
 } catch (err) {
