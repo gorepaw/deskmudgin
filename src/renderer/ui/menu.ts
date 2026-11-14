@@ -246,13 +246,13 @@ export class SettingsPanel extends Panel {
     const cfg = this.host.settings()
     const w = this.w - PAD * 2
 
-    this.rule(g, y + 4, this.w, 'theme')
+    this.rule(g, y + 4, this.w, 'Theme')
     y += 14
     this.swatches(g, PAD, y, w, cfg.theme)
     y += SettingsPanel.swatchBlock()
 
     // The border, on its own: any theme can wear any of them.
-    this.rule(g, y, this.w, 'border')
+    this.rule(g, y, this.w, 'Border')
     y += 12
     this.borders(g, PAD, y, w, cfg.border)
   }

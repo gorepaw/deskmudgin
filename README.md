@@ -1,4 +1,4 @@
-# DeskMudgin
+﻿# DeskMudgin
 
 A Mudgin lives on your desktop.
 
@@ -394,7 +394,7 @@ alongside the agents that checked the row first. See *Who verified what* in
 Speech bubbles take the look of the chosen theme — XP's caption band, Aqua's
 stripes, the CRTs' scanlines. Six premium themes bring their own frames:
 Illuminated, Stained glass, Brass & rivets, Bog shrine, Holographic and Ink
-wash. The border is a setting of its own (Settings → *Themes* → *border*): keep the one a
+wash. The border is a setting of its own (Settings → *Themes* → *Border*): keep the one a
 theme comes with, choose **None**, or put any of those frames on any palette.
 
 ## Debugging
