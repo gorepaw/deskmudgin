@@ -189,67 +189,56 @@ export class SettingsPanel extends Panel {
     }
   }
 
-  /** What they speak, in which language, and how long it stays up. */
+  /** Which languages they speak, and how long it stays up. */
   private speech(g: Painter, y: number): void {
     const cfg = this.host.settings()
     const w = this.w - PAD * 2
 
-    this.rule(g, y + 4, this.w, 'they speak')
-    y += 14
+    y += 8
     const course = cfg.voice === 'course'
     const level = levelById(cfg.level, cfg.l2)
-    this.option(g, 'voice:course', PAD, y, w, 'A language to learn', course,
-      { note: `${LANGUAGES[cfg.l2].name} · ${levelLabel(level, cfg.l2)}` })
-    y += ROW_H
-    // Four rows of buttons under the option they belong to. Every language
-    // can be learned or be the meaning: pick as the lesson the language you
-    // read the meaning in and the two swap, which is what that almost always
+    // Four rows of buttons, a label to the left of each. Every language can
+    // be learned or be the meaning: pick as the lesson the language you read
+    // the meaning in and the two swap, which is what that almost always
     // means. A language with nothing verified in it yet is shown but cannot
     // be learned; as a meaning it falls back to English line by line, so it
-    // is always safe to choose.
-    const bw = (w - 70 - 6 * (LANGUAGE_IDS.length - 1)) / LANGUAGE_IDS.length
+    // is always safe to choose. While they grunt, all four rows sit idle.
+    const LABEL_W = 90
+    const bw = (w - LABEL_W - 6 * (LANGUAGE_IDS.length - 1)) / LANGUAGE_IDS.length
     const row = (label: string, draw: (x: (i: number) => number) => void): void => {
-      g.text(label, PAD + 26, y + 11, { size: 10, color: UI.dim, align: 'left' })
-      draw(i => PAD + 70 + i * (bw + 6))
+      g.text(label, PAD, y + 11, { size: 10, color: UI.dim, align: 'left' })
+      draw(i => PAD + LABEL_W + i * (bw + 6))
       y += 30
     }
-    row('learn', x => LANGUAGE_IDS.forEach((id, i) => {
+    row('Your Language', x => LANGUAGE_IDS.forEach((id, i) => {
+      this.button(g, `l1:${id}`, x(i), y, bw, 22, LANGUAGES[id].label,
+        { primary: cfg.l1 === id, disabled: !course, size: 11, font: LANGUAGES[id].font })
+    }))
+    row('Target Language', x => LANGUAGE_IDS.forEach((id, i) => {
       this.button(g, `l2:${id}`, x(i), y, bw, 22, LANGUAGES[id].label,
         { primary: cfg.l2 === id, disabled: !course || !canLearn(id), size: 11, font: LANGUAGES[id].font })
     }))
     // A level whose sentences are not verified in this language yet is shown
     // but not offered: choosing it would only fall back to the one below.
-    row('level', x => LEVELS.forEach((l, i) => {
+    row('Level', x => LEVELS.forEach((l, i) => {
       this.button(g, `level:${l.id}`, x(i), y, bw, 22, levelLabel(l, cfg.l2),
         { primary: l === level, disabled: !course || !isReady(l, cfg.l2), size: 11 })
     }))
-    row('meaning', x => LANGUAGE_IDS.forEach((id, i) => {
-      this.button(g, `l1:${id}`, x(i), y, bw, 22, LANGUAGES[id].label,
-        { primary: cfg.l1 === id, disabled: !course, size: 11, font: LANGUAGES[id].font })
-    }))
     // A second meaning line, in a third language — tap it again to drop it.
-    row('also', x => LANGUAGE_IDS.forEach((id, i) => {
+    row('Third Language', x => LANGUAGE_IDS.forEach((id, i) => {
       this.button(g, `also:${id}`, x(i), y, bw, 22, LANGUAGES[id].label,
         { primary: cfg.l1Also === id, disabled: !course || id === cfg.l1 || id === cfg.l2, size: 11, font: LANGUAGES[id].font })
     }))
-    // Said plainly rather than hidden: a language whose lines no native
-    // speaker has read yet is offered, but not passed off as finished.
-    const beta = LANGUAGE_IDS.filter(id => LANGUAGES[id].beta).map(id => LANGUAGES[id].name)
-    if (beta.length) {
-      g.text(`${beta.join(', ')} is in beta — not yet checked by a native speaker`,
-        this.w / 2, y + 2, { size: 9, color: UI.dim })
-      y += 14
-    }
-    this.option(g, 'voice:grunts', PAD, y, w, 'Grunts, in English', !course)
+    this.option(g, 'voice:grunts', PAD, y, w, 'Grunts (English)', !course)
     y += ROW_H + 8
 
-    this.rule(g, y, this.w, 'how long they stay up')
+    this.rule(g, y, this.w)
     y += 14
     const speech = this.drafts.get('speech') ?? cfg.speechScale
     const talk = this.drafts.get('talk') ?? cfg.talkScale
-    this.slider(g, 'speech', PAD, y, w, toT(speech), 'Bubbles stay', times(speech))
+    this.slider(g, 'speech', PAD, y, w, toT(speech), 'Bubbles Duration', times(speech))
     y += 38
-    this.slider(g, 'talk', PAD, y, w, toT(talk), 'Conversations stay', times(talk))
+    this.slider(g, 'talk', PAD, y, w, toT(talk), 'Conversations Duration', times(talk))
   }
 
   /** The theme, and the border it wears. */
@@ -422,8 +411,9 @@ export class SettingsPanel extends Panel {
         void b.invoke('settings:patch', { matronPos: null })
         this.flash('back to her corner')
         break
-      case 'voice:course': void b.invoke('settings:patch', { voice: 'course' }); break
-      case 'voice:grunts': void b.invoke('settings:patch', { voice: 'grunts' }); break
+      case 'voice:grunts':
+        void b.invoke('settings:patch', { voice: this.host.settings().voice === 'course' ? 'grunts' : 'course' })
+        break
       case 'mode:single': void b.invoke('settings:patch', { stageMode: 'single' }); break
       case 'mode:dual': void b.invoke('settings:patch', { stageMode: 'dual' }); break
       case 'app:startup':
@@ -445,7 +435,7 @@ export class SettingsPanel extends Panel {
         } else if (id?.startsWith('disabled:')) {
           const s = this.host.settings()
           const what = id.slice('disabled:'.length)
-          if (s.voice !== 'course') this.flash('for when they speak a language')
+          if (s.voice !== 'course') this.flash('untick Grunts first')
           else if (what.startsWith('also:')) this.flash('already shown')
           else if (what.startsWith('l2:') || what.startsWith('level:')) this.flash('not verified yet')
         }

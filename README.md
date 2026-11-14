@@ -24,7 +24,7 @@ Click her for the menu; pets wander over and lean on her, and she warms up when
 they do.
 
 > **Build state:** released as a Windows installer (0.1.0). They speak Chinese
-> (HSK 1–3), English, Spanish or Arabic (beta), hold conversations, carry names,
+> (HSK 1–3), English, Spanish or Arabic, hold conversations, carry names,
 > and the Matron keeps a dictionary. See [DEVLOG.md](DEVLOG.md).
 
 ## Running
@@ -252,23 +252,22 @@ A pet's card names its traits and stops. Nothing in the app rates a creature.
 Sending one away is the only destructive action, takes two clicks, and never
 costs you a name — the ledger keeps what it learned.
 
-## Teaching Chinese
+## Teaching a language
 
-The creatures are learning to speak Chinese at you — 汉字, tone-marked pinyin and
-an English gloss. None of that content is written by the app's author on their
-own authority: every line is drafted, sent out to be checked by **Google
-Translate and Gemini independently**, and only ships when both agree. The app
-imports only generated, verified content, so unchecked Chinese cannot reach a
-speech bubble by anyone forgetting a step.
+The creatures speak a course: HSK 1–3 (2.0), written in Chinese with English
+alongside, and translated line by line into Spanish and Arabic. None of it
+reaches a speech bubble on anyone's say-so. Every line is drafted, checked
+by two independent keys, and only ships once both agree. The app imports
+only generated, verified content, so unchecked text cannot reach a speech
+bubble because someone forgot a step.
 
-Three rules hold it up: nobody types a tone mark (pinyin is derived from the
-hanzi mechanically); unverified rows cannot ship (it is a build boundary, not a
-habit); and a row needs two independent sources to agree before it is trusted.
+Three rules hold it up. Nobody types a tone mark or a romanization: both are
+derived from the script mechanically. Unverified rows cannot ship; that is a
+build boundary, not a habit. And a row needs two independent checks to agree
+before it is trusted.
 
 See [content/README.md](content/README.md) for the loop, and run
 `npm run lang:selftest` to exercise it against deliberately broken replies.
-
-What there is, HSK 1 and HSK 2 (2.0):
 
 | | HSK 1 | HSK 2 | HSK 3 |
 | --- | --- | --- | --- |
@@ -276,39 +275,127 @@ What there is, HSK 1 and HSK 2 (2.0):
 | **Sentences** | 302 | 449 | 464 |
 | **Conversations** | 60 | 58 | 59 |
 
-Any of English, Spanish, Chinese and Arabic can be the language you **learn**
-or the one its meaning is shown in (Settings → *Language* → **learn**,
-**meaning**, and **also** for a second meaning line). Every line, word and name
-has a verified Spanish version (neutral Latin American), and every line and
-word a verified, fully vowelled Arabic one — with a romanization derived from
-its vowel marks, never typed — and 100 of 118 names. Anything not yet verified
-falls back to English. Arabic is marked **beta** in Settings: no native
-speaker has read it yet, and its names and a few word choices are where to look
-first.
+Settings → *Language* has four rows of buttons:
 
-Sentences are chosen by moment (hungry, sleepy, picked up) and at random while
-idle; nearby pets start conversations and answer each other. Settings → *Language* →
-**level** picks HSK 1, 2 or 3. Levels are cumulative: at the level you pick,
-seven lines in ten come from it and the rest keep the lower levels in use.
+| | |
+| --- | --- |
+| **Your Language** | the one meanings are shown in, under each line |
+| **Target Language** | the one they speak at you, with its reading on top |
+| **Level** | HSK 1, 2 or 3 (called Level 1–3 outside Chinese) |
+| **Third Language** | an optional second meaning line; tap it again to drop it |
+
+Any of English, Spanish, Chinese and Arabic can be either your language or
+the target. Pick as the target the language you already read meanings in,
+and the two swap. **Grunts (English)** turns the course off; untick it to
+turn the course back on. Levels are cumulative: at the level you pick, seven
+lines in ten come from it and the rest keep the lower levels in use.
+Sentences are chosen by moment (hungry, sleepy, picked up) and at random
+while idle; nearby pets start conversations and answer each other.
 
 | | |
 | --- | --- |
 | **Names** | 118, per species; every pet has one, with pinyin and meaning on its card |
-| **Ledger** | *what they said to you* — every line you have been shown, pinyin on hover |
+| **Ledger** | *what they said to you*: every line you have been shown, pinyin on hover |
 | **Dictionary** | the Matron's menu → *Dictionary*: words, phrases and conversations by level, with a ✓ on what you have been shown |
+
+Two sliders, **Bubbles Duration** and **Conversations Duration** (0.5×–4×,
+1.5× by default), keep a sentence you are still reading from vanishing.
+
+## How each language was verified
+
+**No line in any language has been checked by a person, native speaker or
+otherwise.** All of it was verified by Claude (an AI). The pipeline was built
+for two outside keys: Google Translate's blind back-translation and Gemini's
+review. For the shipped content, separate Claude agents took both roles:
+
+- **The blind key** saw only the text under test and translated it, without
+  being told what it was meant to say. Its translation was then compared with
+  the intended meaning.
+- **The review key** saw the original and the translation side by side, with
+  the language's style rules. It judged meaning, naturalness and (for Arabic)
+  the vowelling, and replied `ok`, `fix` or `drop`.
+- A row both keys passed is verified. Where they disagreed, or the reviewer
+  proposed a fix, the row went back for a fresh pair of checks. What still
+  could not be settled was **adjudicated**: a third, recorded ruling with its
+  reason in the row's `note`.
+
+Every row records this in its `checks` column (`claude-blind`, `claude-review`,
+`claude-adjudicated`), so a person can later find and re-check exactly these
+rows. Each round's prompts and replies are archived under
+[content/review/archive/](content/review/archive/). Anything not verified
+falls back to English in the app, line by line.
+
+The counts below cover the words, sentences, conversation lines and names of
+HSK 1–3.
+
+| | Shipped | Both keys agreed | Adjudicated | Rejected (not shipped) |
+| --- | --- | --- | --- | --- |
+| **Chinese** | 2,110 | 1,930 | 180 | 17 |
+| **Spanish** | 2,110 | 1,910 | 200 | 0 |
+| **Arabic** | 2,092 | 1,804 | 288 | 18 names |
+
+### Chinese
+
+- **Source:** written against the HSK 2.0 wordlists. Every sentence is checked
+  against its level's vocabulary.
+- **Blind key:** Chinese → English, compared with the English.
+- **Review key:** checks that the Chinese means the English, is natural, and
+  fits the level.
+- **Pinyin:** derived from the hanzi by `pinyin-pro`, never typed. Where the
+  deriver is wrong (mostly neutral tones, erhua and 一/不 tone changes), a correction goes
+  in `content/zh/overrides.tsv` and is verified like any other row. 116
+  corrections are verified and 24 were rejected. The build refuses pinyin
+  that does not derive from its hanzi.
+- **Rejected:** 17 rows: unnatural, a calque of English, or above the level. Names were the
+  hardest: 68 of 118 needed adjudication.
+
+### English
+
+English is the course's own language, not a translation of it, so it has no
+file and no checks of its own. It is checked as a side effect: every Chinese
+row's blind key is compared with its English, and the reviewer is asked
+whether the Chinese means the English. So the English is checked for meaning,
+but no one has reviewed it for style. It was written by Claude, in plain
+English.
+
+### Spanish
+
+- **Variety:** neutral Latin American (*tú*, *ustedes*, no *vosotros*). No
+  reading line.
+- **Blind key:** Chinese → Spanish, compared with the Spanish.
+- **Review key:** checks the Spanish against the Chinese.
+- **Results:** every line, word and name ships. Names needed the most
+  rulings: 58 of 118 were adjudicated.
+
+### Arabic
+
+- **Variety:** Modern Standard Arabic, fully vowelled, with case endings, the
+  way a textbook prints it. As a meaning for an Arabic reader the vowel marks
+  are stripped, the way Arabic is printed for adults.
+- **Romanization:** derived from the vowel marks by `tools/lang/ar.mjs`, never
+  typed, with the pause applied at the end of each sentence. The build refuses
+  a letter left bare or a romanization that does not match. So the thing to
+  check is the vowelling, where the mistakes would really be.
+- **Blind key:** Arabic → English, compared with the verified English.
+- **Review key:** judges the Arabic against the Chinese. Above all it checks
+  that every vowel, shadda and case ending is correct, because a learner will
+  pronounce exactly what is written.
+- **Results:** 288 rows were adjudicated, the most of any language, mostly
+  words (164) and names (56). 18 names were rejected and show in English.
+- **Where a person should look first:** the names, the adjudicated words, and
+  the vowelling throughout.
+
+Treat all three translations as a careful first draft that a fluent reader
+has not yet seen. A correction from one goes through
+`node tools/lang-settle.mjs <file> <id> --by human`, which records the person
+alongside the agents that checked the row first. See *Who verified what* in
+[content/README.md](content/README.md).
 
 Speech bubbles take the look of the chosen theme — XP's caption band, Aqua's
 stripes, the CRTs' scanlines. Six premium themes bring their own frames:
 Illuminated, Stained glass, Brass & rivets, Bog shrine, Holographic and Ink
 wash. The border is a setting of its own (Settings → *Themes* → *border*): keep the one a
 theme comes with, choose **None**, or put any of those frames on any palette.
-
-Settings has two sliders, **Bubbles stay** and **Conversations stay** (0.5×–4×,
-1.5× by default), so a sentence you are still reading does not vanish.
-
-Settings → *Language* switches back to the English grunts. The current content
-was verified by Claude; see *Who verified what* in content/README.md for how to
-find and re-check it.
 
 ## Debugging
 

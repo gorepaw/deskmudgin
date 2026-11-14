@@ -29,7 +29,7 @@ Source: [github.com/gorepaw/deskmudgin](https://github.com/gorepaw/deskmudgin).
 | Arabic — every line verified, vowelled, romanization derived | **done, verified offscreen** |
 | HSK 3 — 298 words, 464 sentences, 59 conversations, in all four languages | **done, verified offscreen** |
 | Borders chosen independently of the theme (incl. none) | **done, verified offscreen** |
-| Release: Settings in tabs, first-run hint, Arabic beta, icon, installer | **done; installer built, not yet run by the user** |
+| Release: Settings in tabs, first-run hint, verification documented, icon, installer | **done; installer built, not yet run by the user** |
 
 Content, all verified by Claude agents and marked `claude-*` in `checks` for a
 later human pass:
@@ -46,7 +46,7 @@ TS/MJS files, excluding generated courses. Checks: `npm run lang:selftest`,
 `npm run snap`** (offscreen, see *Verification tooling*) — never with a visible
 window on the user's desktop.
 
-**Known:** the installer is unsigned, so SmartScreen warns on first run. Arabic ships marked beta until a native speaker has read it.
+**Known:** the installer is unsigned, so SmartScreen warns on first run. No language has been read by a person; the README's *How each language was verified* says so and gives the counts.
 
 **Next, at the user's request:** HSK 4, one level at a time, the same way HSK 3 was done (see *HSK 3*); the tooling is level-agnostic up to `hsk6`, and a level needs one row in `shared/lang/levels.ts` and three lines in `lang-build-all.mjs`. A native Arabic speaker's pass over names and the fine word choices would help first.
 
@@ -1036,6 +1036,18 @@ Location*, and *Operation*: a Single Window / Multi-Window switch plus *Start on
 Boot* (launch at login — not the opposite of single window, which the user had
 guessed). The "all N, in front" summary and the "harder to spot" line are gone.
 Panel 440px.
+
+**Language tab, renamed.** Four labelled rows, *Your Language* first, then
+*Target Language*, *Level*, *Third Language* (`l1`, `l2`, `level`, `l1Also`).
+The "A language to learn" radio is gone: **Grunts (English)** is now a toggle,
+and unticking it turns the course back on. The "they speak" and "how long they
+stay up" headings went (a plain rule still splits the sliders off), and the
+sliders are *Bubbles Duration* / *Conversations Duration*. The Arabic beta line
+and `Language.beta` are removed at the user's request: no language has been
+read by a native speaker, so singling one out was misleading. The README now
+documents how each language was verified instead, with per-language counts
+(shipped, both keys agreed, adjudicated, rejected) taken from the `checks`
+columns.
 
 **Menu names.** The Matron's menu lost its subtitle; *Your Herd*, *Encyclopedia*,
 *Dictionary* (and the panels they open carry the same titles).

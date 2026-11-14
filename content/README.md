@@ -131,8 +131,8 @@ Chinese says nothing about a translation of it.
 
 In the app, any language a line has can be the one being learned (L2, shown
 on top with its reading) or the one it is explained in (L1, the meaning
-underneath). Settings → *they speak*: **learn**, **meaning**, and **also** for
-a second meaning. So the Arabic here is read both ways: by someone learning
+underneath). Settings → *Language*: **Target Language**, **Your Language**, and
+**Third Language** for a second meaning. So the Arabic here is read both ways: by someone learning
 Arabic, as the lesson, and by an Arabic speaker learning Chinese, as the
 meaning.
 
