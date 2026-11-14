@@ -35,6 +35,10 @@ app.whenReady().then(async () => {
   const win = new BrowserWindow({
     width: Number(w), height: Number(h),
     show: false,
+    // The icon is cut out of its background, so that one sheet is captured
+    // with alpha; the rest are judged against the wallpaper they draw.
+    ...(sheet === 'icon' && !extra.includes('grid=1')
+      ? { transparent: true, backgroundColor: '#00000000' } : {}),
     webPreferences: {
       offscreen: true,
       preload: join(__dirname, '../out/preload/preload.js'),

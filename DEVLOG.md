@@ -5,7 +5,7 @@ Working notes for whoever picks this up next. The user-facing docs are in
 [docs/plan-language-update.md](docs/plan-language-update.md); the Collection
 Update's plan predates source control and survives only as this log.
 
-**Status: Collection Update and Language Update both complete and verified.**
+**Status: released — `npm run dist` builds `release/DeskMudgin-Setup-0.1.0.exe`.**
 Source: [github.com/gorepaw/deskmudgin](https://github.com/gorepaw/deskmudgin).
 
 ---
@@ -29,6 +29,7 @@ Source: [github.com/gorepaw/deskmudgin](https://github.com/gorepaw/deskmudgin).
 | Arabic — every line verified, vowelled, romanization derived | **done, verified offscreen** |
 | HSK 3 — 298 words, 464 sentences, 59 conversations, in all four languages | **done, verified offscreen** |
 | Borders chosen independently of the theme (incl. none) | **done, verified offscreen** |
+| Release: Settings in tabs, first-run hint, Arabic beta, icon, installer | **done; installer built, not yet run by the user** |
 
 Content, all verified by Claude agents and marked `claude-*` in `checks` for a
 later human pass:
@@ -45,14 +46,14 @@ TS/MJS files, excluding generated courses. Checks: `npm run lang:selftest`,
 `npm run snap`** (offscreen, see *Verification tooling*) — never with a visible
 window on the user's desktop.
 
-**Known:** Settings is ~940px tall now (border row added) and does not fit a 768px screen; it did not before either (~870). Moving the theme and border pickers into their own panel would fix it. The user said they are low on usage, so HSK 4 was deferred.
+**Known:** the installer is unsigned, so SmartScreen warns on first run. Arabic ships marked beta until a native speaker has read it.
 
 **Next, at the user's request:** HSK 4, one level at a time, the same way HSK 3 was done (see *HSK 3*); the tooling is level-agnostic up to `hsk6`, and a level needs one row in `shared/lang/levels.ts` and three lines in `lang-build-all.mjs`. A native Arabic speaker's pass over names and the fine word choices would help first.
 
-**Open with the user:** I offered to clear the ledger's `said` entries from
-2026-09-24 — 369 lines were "shown" in an hour only because I woke 13 pets and
-made them lonely for a conversation test, which ticked 149/152 words in the
-dictionary. Not done unless they say so.
+**Settled with the user (2026-11-14):** the 369 `said` entries from the
+21:00 hour of 2026-09-24 (the lonely-pets test) were cleared from their ledger;
+the original is beside it as `ledger.backup-2026-11-14.json`. The 336 from
+14:00 that day were left: they are spread over the hour like real first use.
 
 ---
 
@@ -953,6 +954,50 @@ first, so nothing leaks between themes — the only way to mix is the setting.
 `none` is a zero-inset, zero-reach frame that draws nothing; bubbles' dirty
 rects follow (`reach`). A theme or border change invalidates every open panel.
 `npm run snap -- chrome … theme=<id> border=<id|none|theme>` renders any pair.
+
+## Release
+
+The user wants a download for their website (built by another agent; this repo
+only produces the file). Decided with them: a **one-click NSIS installer**
+rather than a portable exe, version kept at **0.1.0**, Arabic shipped **marked
+beta**.
+
+**Settings in tabs.** The single panel had reached ~970px and did not fit a
+768px screen. It is now three tabs at 480px — *Where* (layers, strangers, the
+Matron, this machine), *Speech* (languages, level, bubble timing) and *Look*
+(theme, border) — and reopens on the tab last used. Nothing was removed.
+
+**Arabic beta.** `Language.beta`; Settings → Speech says under the language rows
+that Arabic is not yet checked by a native speaker. Nothing else changes: it is
+selectable and complete.
+
+**First run.** Nothing told a new player that the Matron is the front door. The
+starter panel — the one panel everyone sees — now says to click her afterwards;
+its cards gained 10px because a four-trait Mudgin's last line sat on the edge.
+
+**Icon.** `build/icon.ico`, 16–256px, rendered by the real Mudgin art through a
+new `icon` snap sheet (`debug/iconsheet.ts`) on a transparent offscreen window —
+each size drawn at that size, the small ones cropped to the head so the eye
+survives at 16px. Seed 24: bog-purple with the green eye, the tray's palette.
+`npm run make-icon` regenerates it; `npm run snap -- icon x.png 1200 750 grid=1`
+shows candidates.
+
+**Packaging.** `npm run dist` now deletes `out/` first (tsc never removes the
+output of a deleted source), ships no sourcemaps, and drops koffi's binaries for
+the 17 platforms it never loads (only `win32_x64`); 77 MB installer. Per-user,
+so no admin prompt; desktop and Start-menu shortcuts; save data kept on
+uninstall. The packaged app's name is `DeskMudgin`, so its save folder is
+`%APPDATA%\DeskMudgin` — the same folder as the dev builds' `deskmudgin`,
+Windows paths being case-insensitive; an install picks up an existing colony.
+Checked without a visible window: metadata, asar contents, and the packaged
+koffi loading and calling user32 under Electron 33.4.11. The packaged exe has
+the run-as-node fuse off, so that check runs the same koffi files under
+`node_modules/electron`. Not checked: a real launch of the installed app, which
+would put pets on the user's desktop — that is theirs to do.
+
+**Gotcha.** Vite fails with "No matching HTML proxy module" when the shell's
+cwd has a lowercase drive (`c:\…`, which is what VS Code's bash gives). Build
+from a `C:\` cwd.
 
 ## What is not built
 

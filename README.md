@@ -23,9 +23,9 @@ A **Ganorok Matron** stands in the bottom-right corner — the app's front door.
 Click her for the menu; pets wander over and lean on her, and she warms up when
 they do.
 
-> **Build state:** the collection update and the language update are both
-> complete — they speak Chinese (HSK 1 and 2), hold conversations, carry Chinese
-> names, and the Matron keeps a dictionary. See [DEVLOG.md](DEVLOG.md).
+> **Build state:** released as a Windows installer (0.1.0). They speak Chinese
+> (HSK 1–3), English, Spanish or Arabic (beta), hold conversations, carry names,
+> and the Matron keeps a dictionary. See [DEVLOG.md](DEVLOG.md).
 
 ## Running
 
@@ -33,8 +33,15 @@ they do.
 npm install
 npm run dev      # vite + tsc --watch + electron, restarts on change
 npm start        # build once and run
-npm run dist     # NSIS installer into release/
+npm run dist     # clean build, then release/DeskMudgin-Setup-<version>.exe
 ```
+
+`npm run dist` produces a one-click, per-user installer: Start-menu and desktop
+shortcuts, launches when done, and leaves the save folder (`%APPDATA%\DeskMudgin`)
+in place on uninstall. It is **unsigned**, so Windows SmartScreen shows "Windows
+protected your PC" on first run until a code-signing certificate is added
+(*More info → Run anyway*). The icon is `build/icon.ico`, rendered from the real
+Mudgin art by `npm run make-icon`; regenerate it only if the art changes.
 
 Windows x64 only, by construction — the desktop layer is Win32 shell
 integration and there is no cross-platform equivalent of it.
@@ -150,7 +157,7 @@ because they breathe and blink every frame.
 
 ## Themes
 
-Eleven, chosen from the Matron's **Settings**:
+Eleven, chosen from the Matron's **Settings → Look**:
 
 | | |
 | --- | --- |
@@ -233,7 +240,9 @@ Click her for the menu:
   complete: the genome is continuous, so "orchid hide" is a reading of a region
   of a colour wheel rather than a card in a set. Hover a name for the day it
   first turned up.
-- **Settings** — where everyone lives, where she stands, one-window mode.
+- **Settings** — three tabs: *Where* (where everyone lives, where she stands,
+  one-window mode), *Speech* (languages, level, how long bubbles stay) and
+  *Look* (theme and border).
 
 Every so often a pet in her layer walks over and leans on her; she warms, her
 ears lift and her eye-glow steadies. She can be dragged, if you turn that on.
@@ -267,16 +276,18 @@ What there is, HSK 1 and HSK 2 (2.0):
 | **Conversations** | 60 | 58 | 59 |
 
 Any of English, Spanish, Chinese and Arabic can be the language you **learn**
-or the one its meaning is shown in (Settings → *They speak* → **learn**,
+or the one its meaning is shown in (Settings → *Speech* → **learn**,
 **meaning**, and **also** for a second meaning line). Every line, word and name
 has a verified Spanish version (neutral Latin American), and every line and
 word a verified, fully vowelled Arabic one — with a romanization derived from
 its vowel marks, never typed — and 100 of 118 names. Anything not yet verified
-falls back to English.
+falls back to English. Arabic is marked **beta** in Settings: no native
+speaker has read it yet, and its names and a few word choices are where to look
+first.
 
 Sentences are chosen by moment (hungry, sleepy, picked up) and at random while
-idle; nearby pets start conversations and answer each other. Settings → *They
-speak* → **level** picks HSK 1, 2 or 3. Levels are cumulative: at the level you pick,
+idle; nearby pets start conversations and answer each other. Settings → *Speech* →
+**level** picks HSK 1, 2 or 3. Levels are cumulative: at the level you pick,
 seven lines in ten come from it and the rest keep the lower levels in use.
 
 | | |
@@ -288,13 +299,13 @@ seven lines in ten come from it and the rest keep the lower levels in use.
 Speech bubbles take the look of the chosen theme — XP's caption band, Aqua's
 stripes, the CRTs' scanlines. Six premium themes bring their own frames:
 Illuminated, Stained glass, Brass & rivets, Bog shrine, Holographic and Ink
-wash. The border is a setting of its own (Settings → *border*): keep the one a
+wash. The border is a setting of its own (Settings → *Look* → *border*): keep the one a
 theme comes with, choose **None**, or put any of those frames on any palette.
 
 Settings has two sliders, **Bubbles stay** and **Conversations stay** (0.5×–4×,
 1.5× by default), so a sentence you are still reading does not vanish.
 
-Settings → *They speak* switches back to the English grunts. The current content
+Settings → *Speech* switches back to the English grunts. The current content
 was verified by Claude; see *Who verified what* in content/README.md for how to
 find and re-check it.
 

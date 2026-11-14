@@ -25,7 +25,7 @@ import { inLang, petName } from './tongue'
 import { Panel, PAD, UI } from './panel'
 
 const CARD_W = 168
-const CARD_H = 196
+const CARD_H = 206
 
 export class StarterPanel extends Panel {
   readonly id = 'starter'
@@ -36,7 +36,7 @@ export class StarterPanel extends Panel {
 
   private offer: PetSave[] = []
 
-  constructor() { super(PAD * 3 + CARD_W * 2, CARD_H + 106) }
+  constructor() { super(PAD * 3 + CARD_W * 2, CARD_H + 120) }
 
   override async mount(): Promise<void> {
     this.offer = await this.host.bridge.invoke('starter:offer')
@@ -53,7 +53,11 @@ export class StarterPanel extends Panel {
     }
 
     g.text('they are both this specific — nothing here comes in a standard model',
-      this.w / 2, this.h - 16, { size: 9, color: UI.dim })
+      this.w / 2, this.h - 30, { size: 9, color: UI.dim })
+    // The one thing a first run cannot discover by looking: where the rest of
+    // the app is. Said here because this is the only panel everyone sees.
+    g.text('after this, click the Matron in the corner for everything else',
+      this.w / 2, this.h - 15, { size: 10, color: UI.highlight })
   }
 
   private card(g: Painter, p: PetSave, x: number, y: number, now: number): void {

@@ -34,6 +34,9 @@ const fromT = (t: number): number =>
   Math.round((SCALE_MIN + t * (SCALE_MAX - SCALE_MIN)) * 10) / 10
 const times = (v: number): string => `${v.toFixed(1)}×`
 
+/** Settings' height: the "Where" tab, its tallest, with room for the note. */
+const SETTINGS_H = 480
+
 export class MenuPanel extends Panel {
   readonly id = 'menu'
   readonly title = 'The Matron'
@@ -82,9 +85,20 @@ export class MenuPanel extends Panel {
   }
 }
 
+/** Settings, in three tabs. One long panel ran to ~970px and did not fit a
+ *  768px laptop screen; tabs keep it about half that. */
+export type SettingsTab = 'where' | 'speech' | 'look'
+const SETTINGS_TABS: ReadonlyArray<readonly [SettingsTab, string]> = [
+  ['where', 'Where'], ['speech', 'Speech'], ['look', 'Look'],
+]
+
 export class SettingsPanel extends Panel {
   readonly id = 'settings'
   readonly title = 'Settings'
+
+  /** The tab last looked at, so reopening Settings lands where you left it. */
+  private static last: SettingsTab = 'where'
+  private tab: SettingsTab
 
   /** Only ever read for the one-line summary below. Who is where per pet is the
    *  manager's job, and duplicating it here would be a second thing to keep
@@ -92,8 +106,12 @@ export class SettingsPanel extends Panel {
   private fore = 0
   private back = 0
 
-  // Tall enough for the swatch grid, which gains a row every six themes.
-  constructor() { super(320, 794 + SettingsPanel.swatchBlock() + SettingsPanel.borderBlock()) }
+  // Tall enough for the tallest tab, "Where". The look tab gains a row of
+  // swatches every six themes; at four rows it would be the tallest.
+  constructor(tab?: SettingsTab) {
+    super(320, SETTINGS_H)
+    this.tab = tab ?? SettingsPanel.last
+  }
 
   override async mount(): Promise<void> {
     const colony = await this.host.bridge.invoke('colony:get')
@@ -105,9 +123,23 @@ export class SettingsPanel extends Panel {
   override refresh(): void { void this.mount() }
 
   protected override body(g: Painter, _now: number, top: number): void {
+    const w = this.w - PAD * 2
+    const tw = (w - 6 * (SETTINGS_TABS.length - 1)) / SETTINGS_TABS.length
+    SETTINGS_TABS.forEach(([id, label], i) => {
+      this.button(g, `tab:${id}`, PAD + i * (tw + 6), top, tw, 26, label,
+        { primary: this.tab === id, size: 12 })
+    })
+    const y = top + 34
+    if (this.tab === 'where') this.where(g, y)
+    else if (this.tab === 'speech') this.speech(g, y)
+    else this.look(g, y)
+    this.drawNote(g, this.h - 12)
+  }
+
+  /** Where they are, where strangers and the Matron go, and this machine. */
+  private where(g: Painter, y: number): void {
     const cfg = this.host.settings()
     const w = this.w - PAD * 2
-    let y = top
 
     this.rule(g, y + 4, this.w, 'send everyone')
     y += 14
@@ -168,8 +200,21 @@ export class SettingsPanel extends Panel {
     this.option(g, 'app:startup', PAD, y, w, 'Start with Windows', cfg.launchOnStartup)
     y += ROW_H + 6
 
-    this.rule(g, y, this.w, 'they speak')
-    y += 12
+    if (single) {
+      // In `single` the per-pet and per-Matron layers are stored but not
+      // honoured, so saying so beats leaving three dead controls above.
+      g.text('one window cannot hold two planes — she goes where they go',
+        this.w / 2, y + 2, { size: 9, color: UI.dim })
+    }
+  }
+
+  /** What they speak, in which language, and how long it stays up. */
+  private speech(g: Painter, y: number): void {
+    const cfg = this.host.settings()
+    const w = this.w - PAD * 2
+
+    this.rule(g, y + 4, this.w, 'they speak')
+    y += 14
     const course = cfg.voice === 'course'
     const level = levelById(cfg.level, cfg.l2)
     this.option(g, 'voice:course', PAD, y, w, 'A language to learn', course,
@@ -206,17 +251,33 @@ export class SettingsPanel extends Panel {
       this.button(g, `also:${id}`, x(i), y, bw, 22, LANGUAGES[id].label,
         { primary: cfg.l1Also === id, disabled: !course || id === cfg.l1 || id === cfg.l2, size: 11, font: LANGUAGES[id].font })
     }))
+    // Said plainly rather than hidden: a language whose lines no native
+    // speaker has read yet is offered, but not passed off as finished.
+    const beta = LANGUAGE_IDS.filter(id => LANGUAGES[id].beta).map(id => LANGUAGES[id].name)
+    if (beta.length) {
+      g.text(`${beta.join(', ')} is in beta — not yet checked by a native speaker`,
+        this.w / 2, y + 2, { size: 9, color: UI.dim })
+      y += 14
+    }
     this.option(g, 'voice:grunts', PAD, y, w, 'Grunts, in English', !course)
     y += ROW_H + 8
+
+    this.rule(g, y, this.w, 'how long they stay up')
+    y += 14
     const speech = this.drafts.get('speech') ?? cfg.speechScale
     const talk = this.drafts.get('talk') ?? cfg.talkScale
     this.slider(g, 'speech', PAD, y, w, toT(speech), 'Bubbles stay', times(speech))
     y += 38
     this.slider(g, 'talk', PAD, y, w, toT(talk), 'Conversations stay', times(talk))
-    y += 38
+  }
 
-    this.rule(g, y, this.w, 'look')
-    y += 12
+  /** The theme, and the border it wears. */
+  private look(g: Painter, y: number): void {
+    const cfg = this.host.settings()
+    const w = this.w - PAD * 2
+
+    this.rule(g, y + 4, this.w, 'theme')
+    y += 14
     this.swatches(g, PAD, y, w, cfg.theme)
     y += SettingsPanel.swatchBlock()
 
@@ -224,16 +285,6 @@ export class SettingsPanel extends Panel {
     this.rule(g, y, this.w, 'border')
     y += 12
     this.borders(g, PAD, y, w, cfg.border)
-    y += SettingsPanel.borderBlock()
-
-    if (single) {
-      // In `single` the per-pet and per-Matron layers are stored but not
-      // honoured, so saying so beats leaving three dead controls above.
-      g.text('one window cannot hold two planes — she goes where they go',
-        this.w / 2, y + 6, { size: 9, color: UI.dim })
-    }
-
-    this.drawNote(g, this.h - 12)
   }
 
   /**
@@ -382,6 +433,9 @@ export class SettingsPanel extends Panel {
   protected override onDown(_x: number, _y: number, id: string | null): void {
     const b = this.host.bridge
     switch (id) {
+      case 'tab:where': case 'tab:speech': case 'tab:look':
+        this.tab = SettingsPanel.last = id.slice(4) as SettingsTab
+        break
       case 'set:front': void b.invoke('layer:set', 'overlay'); break
       case 'set:back': void b.invoke('layer:set', 'underlay'); break
       case 'new:front': void b.invoke('settings:patch', { newcomerLayer: 'overlay' }); break

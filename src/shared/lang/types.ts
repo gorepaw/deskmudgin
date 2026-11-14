@@ -88,6 +88,8 @@ export interface Language {
   /** A glyph the font stack must be able to draw, for the boot-time check —
    *  a missing font fails silently as □, so it is probed rather than hoped. */
   readonly probe: string
+  /** Shipped, but not yet read by a native speaker — Settings says so. */
+  readonly beta?: boolean
   /**
    * How a native reader sees it, for when it is the meaning rather than the
    * lesson: Arabic without its vowel marks, the way it is printed for adults.

@@ -13,14 +13,15 @@
     "build": "npm run build:main && npm run build:web",
     "start": "npm run build && node scripts/electron.mjs",
     "typecheck": "tsc -p tsconfig.main.json --noEmit && tsc -p tsconfig.web.json --noEmit",
-    "dist": "npm run build && electron-builder --win --x64",
+    "dist": "node -e \"require('fs').rmSync('out',{recursive:true,force:true})\" && npm run build && electron-builder --win --x64",
     "zh:draft": "node tools/zh-draft.mjs",
     "lang:export": "node tools/lang-export.mjs",
     "lang:ingest": "node tools/lang-ingest.mjs",
     "lang:build": "node tools/lang-build.mjs",
     "lang:build-all": "node tools/lang-build-all.mjs",
     "lang:selftest": "node tools/lang-selftest.mjs",
-    "snap": "node tools/snap.mjs"
+    "snap": "node tools/snap.mjs",
+    "make-icon": "npm run build:web && node tools/make-icon.mjs"
   },
   "dependencies": {
     "koffi": "^2.10.0"
@@ -36,17 +37,41 @@
   "build": {
     "appId": "com.galanova.deskmudgin",
     "productName": "DeskMudgin",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
     "files": [
       "out/**/*",
-      "package.json"
+      "!out/**/*.map",
+      "package.json",
+      "!**/node_modules/koffi/build/koffi/{darwin,freebsd,linux,musl,openbsd}_*/**",
+      "!**/node_modules/koffi/build/koffi/win32_{arm64,ia32}/**",
+      "!**/node_modules/koffi/{src,vendor,doc}/**"
     ],
     "asarUnpack": [
       "**/node_modules/koffi/**"
     ],
     "win": {
       "target": [
-        "nsis"
-      ]
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "artifactName": "DeskMudgin-Setup-${version}.exe",
+      "shortcutName": "DeskMudgin",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "runAfterFinish": true,
+      "deleteAppDataOnUninstall": false
     }
   }
 }

@@ -38,7 +38,7 @@ export const LANGUAGES: Record<LanguageId, Language> = {
     // and Arial ship with every Windows. The Naskh faces that draw marks best
     // are an optional Windows feature, so they cannot be counted on.
     font: '"Segoe UI", Tahoma, Arial, sans-serif',
-    scale: 1.15, dir: 'rtl', pace: 0.08, probe: 'ع',
+    scale: 1.15, dir: 'rtl', pace: 0.08, probe: 'ع', beta: true,
     plain: s => s.replace(HARAKAT, ''),
   },
 }

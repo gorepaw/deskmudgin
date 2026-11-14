@@ -702,7 +702,13 @@ async function contactSheet(): Promise<void> {
   // DESKMUDGIN_CONTACT=chrome&theme=<id>: real panels and bubbles in one theme.
   const chromeSheet = bridge.isContact === 'chrome' ? await import('./debug/chromesheet') : null
   const page = params.get('page')
-  const build = () => bridge.isContact === 'speech'
+  // DESKMUDGIN_CONTACT=icon: one Mudgin on a clear background, for the .ico.
+  const iconSheet = bridge.isContact === 'icon' ? await import('./debug/iconsheet') : null
+  const build = () => iconSheet
+    ? new iconSheet.IconSheet(window.innerWidth, window.innerHeight, seed,
+      params.get('grid') === '1', Number(params.get('scale') ?? 0.8),
+      Number(params.get('ground') ?? 0.78))
+    : bridge.isContact === 'speech'
     ? new SpeechSheet(window.innerWidth, window.innerHeight, page === null ? null : Number(page))
     : bridge.isContact === 'themes' ? new ThemeSheet(window.innerWidth, window.innerHeight)
     : bridge.isContact === 'chrome' && chromeSheet
