@@ -32,6 +32,7 @@ import {
   loadColony, loadLedger, loadSettings, saveColony, saveLedger, saveSettings,
 } from './store'
 import { trayImage } from './trayIcon'
+import { floorArea } from './win32/taskbar'
 import { GetAsyncKeyState, VK_LBUTTON, VK_RBUTTON } from './win32/api'
 
 const isDev = process.argv.includes('--dev')
@@ -397,7 +398,7 @@ function spawn(species?: SpeciesId, layer: LayerMode = settings.layer): PetSave 
 /** Where a stranger walks on from: the very edge of the primary monitor's
  *  floor, either side. `arrive` takes it inward from there. */
 function edgeSpot(): { x: number; y: number } {
-  const wa = screen.getPrimaryDisplay().workArea
+  const wa = floorArea(screen.getPrimaryDisplay())
   return {
     x: dice.chance(0.5) ? wa.x + 4 : wa.x + wa.width - 4,
     y: wa.y + wa.height,
@@ -428,7 +429,7 @@ function adopt(id: string, pos: { x: number; y: number }): PetSave | null {
  *  so the animal on screen is the animal handed over. */
 function starterCandidates(): PetSave[] {
   if (starterOffer) return starterOffer
-  const wa = screen.getPrimaryDisplay().workArea
+  const wa = floorArea(screen.getPrimaryDisplay())
   starterOffer = SPECIES.map((kind, i) =>
     rollPet(kind, wa.x + wa.width * (i ? 0.62 : 0.38), wa.y + wa.height, settings.layer))
   return starterOffer
@@ -630,7 +631,7 @@ function contextMenu(): Menu {
       // her menu too; this stays because a tray icon cannot be lost.
       label: 'Open the Matron\'s menu',
       click: () => {
-        const d = screen.getPrimaryDisplay().workArea
+        const d = floorArea(screen.getPrimaryDisplay())
         openPanel({ panel: 'menu', x: d.x + d.width / 2, y: d.y + d.height / 2 })
       },
     },
@@ -770,7 +771,7 @@ app.whenReady().then(() => {
   // A first run has nobody, and picks its own first pet. Everyone else has the
   // visitor loop running from launch.
   if (colony.length === 0) {
-    const wa = screen.getPrimaryDisplay().workArea
+    const wa = floorArea(screen.getPrimaryDisplay())
     openPanel({ panel: 'starter', x: wa.x + wa.width / 2, y: wa.y + wa.height / 2 })
   } else {
     wild.start()
@@ -791,7 +792,7 @@ app.whenReady().then(() => {
   // machine is moving the mouse too.
   const wantPanel = process.env.DESKMUDGIN_PANEL
   if (wantPanel) {
-    const wa = screen.getPrimaryDisplay().workArea
+    const wa = floorArea(screen.getPrimaryDisplay())
     const at = { x: wa.x + wa.width / 2, y: wa.y + wa.height / 2 }
     if (wantPanel.startsWith('pet')) {
       const name = wantPanel.slice(4).toLowerCase()

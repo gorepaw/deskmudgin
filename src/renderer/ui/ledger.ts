@@ -33,7 +33,7 @@ const CHIP_PAD = 9
 
 export class LedgerPanel extends Panel {
   readonly id = 'ledger'
-  readonly title = 'What we have seen'
+  readonly title = 'Encyclopedia'
   override readonly subtitle = 'names, as they turned up'
 
   private seen: LedgerEntry[] = []

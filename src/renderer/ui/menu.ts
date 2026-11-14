@@ -40,12 +40,11 @@ const SETTINGS_H = 480
 export class MenuPanel extends Panel {
   readonly id = 'menu'
   readonly title = 'The Matron'
-  override readonly subtitle = 'she keeps the count'
 
   // Tall enough for five buttons and the rule between them. It was 250, which
   // clipped "Close DeskMudgin" off the bottom edge — the content runs to 256
   // and nothing here is scrollable.
-  constructor() { super(238, 321) }
+  constructor() { super(238, 292) }
 
   protected override body(g: Painter, _now: number, top: number): void {
     const w = this.w - PAD * 2
@@ -56,9 +55,9 @@ export class MenuPanel extends Panel {
       y += BTN_H + GAP
     }
 
-    item('open:manager', 'Who is out', true)
-    item('open:ledger', 'What we have seen')
-    item('open:dictionary', 'The dictionary')
+    item('open:manager', 'Your Herd', true)
+    item('open:ledger', 'Encyclopedia')
+    item('open:dictionary', 'Dictionary')
     item('open:settings', 'Settings')
 
     y += 4

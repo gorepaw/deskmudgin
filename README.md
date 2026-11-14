@@ -232,10 +232,10 @@ your primary monitor. She is the app's front door and its one fixture.
 
 Click her for the menu:
 
-- **Who is out** — three buckets, *In front* / *On the desktop* / *Resting*.
+- **Your Herd** — three buckets, *In front* / *On the desktop* / *Resting*.
   Drag a pet between them; click one for its card. This is how anybody gets back
   out of the desktop layer.
-- **What we have seen** — the names you have met so far. It has **no total, no
+- **Encyclopedia** — the names you have met so far. It has **no total, no
   percentage, and never shows what is missing**, because there is nothing to
   complete: the genome is continuous, so "orchid hide" is a reading of a region
   of a colour wheel rather than a card in a set. Hover a name for the day it
@@ -294,7 +294,7 @@ seven lines in ten come from it and the rest keep the lower levels in use.
 | --- | --- |
 | **Names** | 118, per species; every pet has one, with pinyin and meaning on its card |
 | **Ledger** | *what they said to you* — every line you have been shown, pinyin on hover |
-| **Dictionary** | the Matron's menu → *The dictionary*: words, phrases and conversations by level, with a ✓ on what you have been shown |
+| **Dictionary** | the Matron's menu → *Dictionary*: words, phrases and conversations by level, with a ✓ on what you have been shown |
 
 Speech bubbles take the look of the chosen theme — XP's caption band, Aqua's
 stripes, the CRTs' scanlines. Six premium themes bring their own frames:

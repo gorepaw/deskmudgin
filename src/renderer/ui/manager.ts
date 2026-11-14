@@ -42,7 +42,7 @@ const SORT_LABEL: Record<SortKey, string> = {
 
 export class ManagerPanel extends Panel {
   readonly id = 'manager'
-  readonly title = 'Who is out'
+  readonly title = 'Your Herd'
 
   private colony: PetSave[] = []
   private scroll = [0, 0, 0]

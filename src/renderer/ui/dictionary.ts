@@ -55,7 +55,7 @@ interface Row { h: number; draw: (g: Painter, y: number) => void; heading?: bool
 
 export class DictionaryPanel extends Panel {
   readonly id = 'dictionary'
-  readonly title = 'The dictionary'
+  readonly title = 'Dictionary'
   override readonly subtitle = 'everything they can say'
 
   private tab: Tab = 'words'
